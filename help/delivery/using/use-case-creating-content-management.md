@@ -20,9 +20,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1235
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Die Elemente selbst werden mithilfe eines dedizierten Schemas erstellt, welches 
 
 ## Schritt 2: Erstellen des Datenschemas {#step-2---creating-the-data-schema}
 
-Ein Datenschema ist ein XML-Dokument, das mit Inhalten verknüpft ist. Es beschreibt die XML-Struktur der Daten in diesem Inhalt.
+Ein Datenschema ist ein mit Inhalt verknüpftes XML-Dokument. Es beschreibt die XML-Struktur der Daten in diesem Inhalt.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -179,7 +179,7 @@ Das Schema stellt sich also wie folgt dar:
 
 Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe Campaign-Clientkonsole.
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas &quot;:form&quot; anwendet.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, in dem die Grammatik des Formularschemas „xtk:form“ angewendet wird.
 
 >[!NOTE]
 >
@@ -229,7 +229,7 @@ Gehen Sie wie folgt vor, um ein Formular für das Content-Management zu erstelle
 
 ## Schritt 4: Erstellen der Konstruktionsvorlage {#step-4---creating-the-construction-template}
 
-Mit der XSLT-Sprache können Sie ein XML-Dokument in ein anderes Ausgabedokument umwandeln. Diese Umwandlung wird in XML in einem Dokument beschrieben, das als Stylesheet bezeichnet wird.
+Mit der XSLT-Sprache können Sie ein XML-Dokument in ein anderes Ausgabedokument umwandeln. Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 Im vorliegenden Beispiel wird ein JavaScript-Template verwendet, um den Aufbau und das Layout des Ausgabedokuments zu definieren.
 
@@ -364,7 +364,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
 ## Schritt 5: Erstellen der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
 
-Der nächste Schritt umfasst die Erstellung einer Vorlage für die Inhaltsveröffentlichung , um das Schema, das Formular und die Inhaltserstellungsvorlage zu verknüpfen. Diese Veröffentlichungsvorlage kann mehrere Ausgabeformate aufweisen.
+Im nächsten Schritt wird eine Publikationsvorlage für Inhalte erstellt, um das Schema, das Formular und die Inhaltserstellungsvorlage zu verknüpfen. Diese Publikationsvorlage kann mehrere Ausgabeformate aufweisen.
 
 >[!NOTE]
 >
@@ -374,15 +374,15 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert. Dies bedeutet, dass bei Verwendung der E4X-Syntax auf dieses Dokument nicht zugegriffen werden kann. Wenn diese Option aktiviert ist, muss die DOM-Schnittstelle verwendet werden. Sie entspricht der empfohlenen Syntax.
+   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert, was bedeutet, dass Sie auf dieses Dokument nicht unter Verwendung der E4X-Syntax zugreifen können. Die DOM-Schnittstelle muss verwendet werden, wenn diese Option aktiviert ist und die empfohlene Syntax darstellt.
    >
-   >Sie können weiterhin die E4X-Syntax verwenden. Wenn ja, deaktivieren Sie diese Option.
+   >Sie können die E4X-Syntax trotzdem verwenden. Deaktivieren Sie in diesem Fall diese Option.
 
    Verwenden Sie die **[!UICONTROL Hinzufügen]**-Schaltfläche, wenn Sie weitere Umwandlungsvorlagen erstellen möchten.
 
@@ -410,6 +410,6 @@ Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klicken Sie auf die Registerkarte **[!UICONTROL HTML]** Vorschau, um das Rendering anzuzeigen. Sie müssen einen Empfänger auswählen, um die Personalisierung zu testen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL HTML-Vorschau]**, um das Rendering anzuzeigen. Sie müssen eine Empfängerin bzw. einen Empfänger auswählen, um die Personalisierung zu testen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

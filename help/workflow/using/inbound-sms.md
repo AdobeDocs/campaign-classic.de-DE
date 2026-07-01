@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 118
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die Aktivität **SMS-Empfang** ermöglicht den Abruf und die Verarbeitung von SM
 
 ![](assets/sms_rec_edit.png)
 
-Auf der ersten Registerkarte der Aktivität **Eingehende SMS** können Sie die Routing-Parameter für SMS-Nachrichten eingeben und das Skript eingeben, das beim Empfang jeder Nachricht ausgeführt werden soll. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen. Die dritte Registerkarte definiert die Ablaufbedingungen der Aktivität.
+Auf der ersten Registerkarte der Aktivität **SMS-Empfang** können Sie die Routing-Parameter für SMS-Nachrichten sowie das für jede empfangene Nachricht auszuführende Skript eingeben. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen und auf der dritten Registerkarte die Ablaufbedingungen der Aktivität definieren.
 
 1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für den SMS-Empfang zu verwendende externe Konto aus. Externe Konten werden im Knoten **[!UICONTROL Administration > Platform >Externe Konten]** der Baumstruktur konfiguriert.
 1. **[!UICONTROL Script]**

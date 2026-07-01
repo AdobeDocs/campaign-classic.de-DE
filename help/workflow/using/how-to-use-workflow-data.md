@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 417
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 77%
 
 ## Datenbank aktualisieren {#updating-the-database}
 
-Alle erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden. Sie können beispielsweise die Möglichkeiten der Personalisierung von Nachrichteninhalten anreichern (einschließlich der Anzahl der Verträge in der Nachricht, Angabe des durchschnittlichen Warenkorbs im letzten Jahr usw.) oder die Zielgruppenbestimmung detaillierter darstellen (eine Nachricht an die Mitversicherten senden, die 1.000 besten Abonnenten von Online-Diensten ansprechen usw.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
+Alle erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden. Sie können beispielsweise die Möglichkeiten der Personalisierung von Nachrichteninhalten anreichern (einschließlich der Anzahl der Verträge in der Nachricht, Angabe des durchschnittlichen Warenkorbs im letzten Jahr usw.) oder die Zielgruppenbestimmung detaillierter darstellen (eine Nachricht an die Mitversicherten senden, die 1.000 besten Abonnentinnen und Abonnenten von Online-Diensten ansprechen usw.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
 
 ### Listen und direkte Aktualisierungen {#lists-and-direct-updates}
 
@@ -37,7 +37,7 @@ Zur Aktualisierung der Adobe Campaign-Datenbank und von Listen stehen zwei dediz
 
 * Über die Aktivität **[!UICONTROL Listen-Update]** können Arbeitstabellen in einer Datenliste gespeichert werden.
 
-  Sie können eine vorhandene Liste auswählen oder erstellen. In diesem Fall werden der Name und ggf. der Datensatzordner berechnet.
+  Sie können eine vorhandene Liste auswählen oder eine Liste erstellen. In diesem Fall werden ihr Name und gegebenenfalls ihr Eintragsordner berechnet.
 
   ![](assets/s_user_create_list.png)
 

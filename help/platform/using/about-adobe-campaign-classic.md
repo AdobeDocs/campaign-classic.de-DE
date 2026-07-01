@@ -24,17 +24,17 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 208
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
-Um ein hohes Maß an Kundeninteraktion und großartige Erlebnisse zu bieten, müssen Marken an allen Touchpoints konsistente Kunden-Journey erstellen. Marketing-Experten können jetzt Cross-Channel-Marketing-Kampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketing-Investitionen erzielen und die Kundentreue fördern.
+Um ein hohes Maß an Kundeninteraktion und großartige Erlebnisse zu bieten, müssen Marken an allen Touchpoints konsistente Customer Journeys erstellen. Marketing-Fachleute können nun Cross-Channel-Marketing-Kampagnen effizient gestalten, planen, ausführen, verwalten und optimieren, die einen hohen Gewinn in Bezug auf Marketing-Investitionen liefern und Treue fördern.
 
-Mit Adobe Campaign können Sie die Erstellung von konversativen Marketing-Kampagnen koordinieren. Adobe Campaign verfügt über innovative Funktionen zur Modellierung, Optimierung und Automatisierung von Marketing- und Kundenkommunikationsprozessen.
+Mit Adobe Campaign können Sie die Erstellung von dialogorientierten Marketing-Kampagnen koordinieren. Adobe Campaign bietet innovative Funktionen zum Modellieren, Optimieren und Automatisieren von Marketing- und Kundenkommunikationsprozessen.
 
 
 >[!BEGINTABS]

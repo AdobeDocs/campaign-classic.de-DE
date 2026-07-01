@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 178
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -46,4 +46,4 @@ Folgende Mappings sind vorhanden:
 
 >[!NOTE]
 >
->Sie können auch neue Zielgruppen-Mappings erstellen. Dieser Vorgang ist erfahrenen Benutzern vorbehalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).
+>Sie können auch neue Zielgruppen-Mappings erstellen. Diese Option ist erfahrenen Benutzenden vorbehalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).

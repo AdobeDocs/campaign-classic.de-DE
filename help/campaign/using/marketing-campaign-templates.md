@@ -20,15 +20,15 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1187
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Konfigurieren von Kampagnenvorlagen {#campaign-templates}
 
-Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** zentralisiert. Eine Standardvorlage wird standardmäßig bereitgestellt. Sie können eine neue Kampagne unter Verwendung aller verfügbaren Module (Dokumente, Aufgaben, Testadressen usw.) erstellen. Die angebotenen Module hängen jedoch von Ihren Rechten und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
+Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** gespeichert. Eine Standardvorlage wird standardmäßig bereitgestellt. Dies ermöglicht die Erstellung einer neuen Kampagne unter Verwendung aller verfügbarer Module (Dokumente, Aufgaben, Testadressen usw.). Die angebotenen Module hängen von Ihren Berechtigungen und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
 
 ![](assets/s_ncs_user_campaign_op_template_node.png)
 
@@ -80,9 +80,9 @@ Die unterschiedlichen Registerkarten und Unterregisterkarten der Kampagnenvorlag
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Wenn keine Funktion ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) Wird nicht in der Benutzeroberfläche der Vorlage oder in auf dieser Vorlage basierenden Kampagnen angezeigt. Die Tabs links von den Kampagnendetails entsprechen in der Regel den in der Vorlage ausgewählten Prozessen. Wenn beispielsweise **Ausgaben und Budget** nicht ausgewählt ist, wird der entsprechende Tab **[!UICONTROL Budget]** nicht in Kampagnen angezeigt, die auf dieser Vorlage basieren.
+Wenn eine Funktion nicht ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) nicht in der Benutzeroberfläche der Vorlage oder in auf dieser Vorlage basierenden Kampagnen angezeigt. Die Tabs links von den Kampagnendetails entsprechen in der Regel den in der Vorlage ausgewählten Prozessen. Wenn beispielsweise **Ausgaben und Budget** nicht ausgewählt ist, wird der entsprechende Tab **[!UICONTROL Budget]** nicht in Kampagnen angezeigt, die auf dieser Vorlage basieren.
 
-Darüber hinaus werden dem Kampagnen-Dashboard Verknüpfungen zu den Konfigurationsfenstern hinzugefügt. Wenn eine Funktion aktiviert ist, ermöglicht ein direkter Link den Zugriff darauf über das Kampagnen-Dashboard.
+Im Kampagnen-Dashboard werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt. Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Kampagnen-Dashboard direkter Zugriff darauf.
 
 Beispielsweise werden mit dieser Konfiguration:
 
@@ -108,19 +108,19 @@ werden diese Links und Tabs angezeigt:
 
 * **Kontrollgruppe**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
   ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Testadressen**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zu den erweiterten Einstellungen der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Testadressen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+  Wenn dieses Modul ausgewählt wird, wird den erweiterten Einstellungen der Vorlage und den auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Die Konfiguration kann über die Vorlage oder einzeln für jede Kampagne definiert werden. Weitere Informationen zu Testadressen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
   ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Dokumente**
 
-  Wenn dieses Modul ausgewählt wird, wird eine zusätzliche Registerkarte zur Registerkarte **[!UICONTROL Bearbeitung]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+  Wenn dieses Modul ausgewählt wird, wird der Registerkarte **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen eine zusätzliche Registerkarte hinzugefügt. Anhänge können für jede Kampagne in der Vorlage oder einzeln hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
   ![](assets/s_ncs_user_op_template_activate_3.png)
 
@@ -132,7 +132,7 @@ werden diese Links und Tabs angezeigt:
 
 * **Zielgruppenbestimmungen und Workflows**
 
-  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können basierend auf dieser Vorlage auch einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [&#x200B; diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -146,7 +146,7 @@ werden diese Links und Tabs angezeigt:
 
   ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-  Sie können wählen, ob Sie die Prozessvalidierung über die Registerkarte **[!UICONTROL Genehmigungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen aktivieren möchten oder nicht. Die Vorgänge, für die die Validierung ausgewählt wird, müssen validiert werden, damit der Nachrichtenversand autorisiert wird.
+  Sie können wählen, ob Sie die Prozessvalidierung über die Registerkarte **[!UICONTROL Validierungen]** im Abschnitt mit den erweiterten Einstellungen der Vorlagen aktivieren möchten oder nicht. Die Aufträge, für die die Validierung ausgewählt wird, müssen validiert werden, damit der Nachrichtenversand autorisiert wird.
 
   Jeder aktivierten Validierung muss ein validierender Benutzer oder eine validierende Benutzergruppe zugewiesen werden.
 
@@ -171,8 +171,8 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
   >
   >Weitere Informationen zum **Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
-* Wählen Sie den **Kampagnentyp** aus: eindeutig, wiederkehrend oder regelmäßig. Standardmäßig gelten Kampagnenvorlagen für eindeutige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns) beschrieben.
-* Geben Sie die Dauer der Kampagne an, d. h. die Anzahl der Tage, über die die Kampagne stattfinden soll. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
+* Wählen Sie den **Kampagnentyp** aus: einmalig, wiederkehrend oder periodisch. Standardmäßig gelten Kampagnenvorlagen für einmalige Kampagnen. Wiederkehrende und periodische Kampagnen werden in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns) beschrieben.
+* Geben Sie die Dauer der Kampagne an. Dies ist der Zeitraum, über den sich die Kampagne erstrecken wird. Wenn Sie eine auf dieser Vorlage basierende Kampagne erstellen, werden das Start- und Enddatum der Kampagne automatisch ausgefüllt.
 
   Handelt es sich um eine wiederkehrende Kampagne, müssen Start- und Enddatum direkt in der Vorlage angegeben werden.
 
@@ -180,7 +180,7 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
 ### Ausführungsparameter der Vorlage {#template-execution-parameters}
 
-Über **[!UICONTROL Link Erweiterte Kampagneneinstellungen…]** können Sie die erweiterten Optionen der Vorlage zur Verarbeitung der Versandzielgruppe (Kontrollgruppe, Testadressen usw.) konfigurieren und die Konfiguration der Kampagnenmessung und Workflow-Ausführung.
+Über den Link **[!UICONTROL Erweiterte Kampagneneinstellungen…]** können weitere Optionen der Vorlage bezüglich Versandziel (Kontrollgruppe, Testadressen usw.) und die Konfiguration der Kampagnenmessung und Workflow-Ausführung konfiguriert werden.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
@@ -188,8 +188,8 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
 Sie können einen Zeitplan für eine Kampagne erstellen und Ergebnisse tracken, um beispielsweise ein gewisses Ereignis für ein bestimmtes Datum zu planen. Mit Kampagnenvorlagen können Sie jetzt das Startdatum einer Aufgabe anhand des Enddatums einer Kampagne berechnen.
 
-Wechseln Sie im Feld Aufgabenkonfiguration zum Bereich **[!UICONTROL Implementierungsplan]** und aktivieren Sie das Kontrollkästchen **[!UICONTROL Das Startdatum wird auf der Grundlage des Enddatums der Kampagne berechnet]**. (Hier ist „Startdatum“ das Startdatum der Aufgabe). Geben Sie im Feld **[!UICONTROL Start]** ein Intervall ein: Die Aufgabe beginnt entsprechend lange vor dem Enddatum der Kampagne. Wenn Sie einen längeren Zeitraum als die Dauer der Kampagne angeben, liegt der Aufgabenanfang vor dem Kampagnenbeginn.
+Aktivieren Sie hierzu im Konfigurationsfenster der Aufgabe im Abschnitt **[!UICONTROL Implementierungsplanung]** die Option **[!UICONTROL Das Startdatum wird vom Enddatum der Kampagne aus berechnet]**. (Hier ist „Startdatum“ das Startdatum der Aufgabe). Geben Sie im Feld **[!UICONTROL Start]** ein Intervall ein: Die Aufgabe beginnt entsprechend lange vor dem Enddatum der Kampagne. Wenn Sie einen längeren Zeitraum als die Dauer der Kampagne angeben, liegt der Aufgabenanfang vor dem Kampagnenbeginn.
 
 ![](assets/mrm_task_in_template_start_date.png)
 
-Wenn Sie eine Kampagne mithilfe dieser Vorlage erstellen, wird das Startdatum der Aufgabe automatisch berechnet. Sie können sie jedoch jederzeit später ändern.
+Wenn Sie eine Kampagne mit dieser Vorlage erstellen, wird das Startdatum der Aufgabe automatisch berechnet. Sie können es jedoch jederzeit später ändern.

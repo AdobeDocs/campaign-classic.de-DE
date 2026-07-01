@@ -22,9 +22,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 566
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 </srcSchema>
 ```
 
-Der Einstiegspunkt für das Schema ist sein Hauptelement. Sie ist einfach zu identifizieren, da sie denselben Namen wie das Schema hat und dem Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
+Der Einstiegspunkt für das Schema ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkt dem Stamm untergeordnete Element. Die Beschreibung des Inhalts beginnt mit diesem Element.
 
 In einem Content-Management-Schema entspricht das Hauptelement folgendem Muster:
 
@@ -163,7 +163,7 @@ Das Attribut **ref** des zu referenzierenden Elements muss mit dem Pfad (XPath) 
 </srcSchema>
 ```
 
-Die Kapitelstruktur wird in das Element mit dem Namen „section“ außerhalb des Hauptelements verschoben. Kapitel und Abschnitt verweisen auf das Element „section“.
+Die Struktur des Elements „Kapitel“ wird in das Element „Abschnitt“ verschoben, das außerhalb des Hauptelements liegt. Kapitel und Abschnitt verweisen auf das Element „Abschnitt“.
 
 ## Compute-String {#compute-string}
 

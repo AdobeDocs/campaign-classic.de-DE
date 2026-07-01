@@ -18,9 +18,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 967
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -66,17 +66,17 @@ Diese werden untereinander durch Pfeile - sogenannte Transitionen - verbunden.
 
 Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstruieren, müssen zunächst die nützlichen Elemente und ihre logische Aneinanderreihung identifiziert werden.
 
-1. Verwenden Sie die **[!UICONTROL Start]**-Aktivität, um den ersten zum Erstellen des Berichts auszuführenden Prozess zu materialisieren. Pro Bericht kann nur eine dieser Aktivitäten verwendet werden.
+1. Verwenden Sie die Aktivität **[!UICONTROL Start]**, um den ersten auszuführenden Prozess für das Erstellen Ihres Berichts festzulegen. Pro Bericht kann nur eine dieser Aktivitäten verwendet werden.
 
    Wenn das Diagramm eine Schleife enthält, ist die &quot;Beginn&quot;-Aktivität obligatorisch.
 
-1. Fügen Sie eine oder mehrere **[!UICONTROL Abfrage]**-Aktivitäten hinzu, um Daten zu erfassen, die für die Erstellung des Berichts nützlich sind. Die Daten können entweder direkt über eine Abfrage eines Schemas der Datenbank oder über eine importierte Liste oder einen vorhandenen Cube erfasst werden.
+1. Fügen Sie eine oder mehrere Aktivitäten des Typs **[!UICONTROL Abfrage]** hinzu, um Daten zu erfassen, die für die Erstellung des Berichts nützlich sind. Die Daten können entweder direkt über eine Abfrage eines Schemas der Datenbank oder über eine importierte Liste oder einen vorhandenen Cube erfasst werden.
 
    Weitere Informationen finden Sie unter [Erfassen der zu analysierenden Daten](../../reporting/using/collecting-data-to-analyze.md).
 
    Diese Daten werden je nach Seitenkonfiguration im Bericht angezeigt oder nicht.
 
-1. Platzieren Sie eine oder mehrere **[!UICONTROL Seiten]**-Aktivitäten, um die grafische Darstellung der erfassten Daten zu definieren. Sie können Tabellen, Diagramme und Eingabefelder einfügen und die Anzeige einer oder mehrerer Seiten oder Elemente der Seite konfigurieren. Der angezeigte Inhalt ist vollständig konfigurierbar.
+1. Platzieren Sie eine oder mehrere Aktivitäten des Typs **[!UICONTROL Seite]**, um die grafische Darstellung der erfassten Daten zu definieren. Sie können Tabellen, Diagramme sowie Eingabefelder einfügen und die Anzeige von einer oder mehrerer Seiten bzw. Elementen der Seite an Bedingungen knüpfen. Der angezeigte Inhalt ist vollständig konfigurierbar.
 
    Weitere Informationen finden Sie unter [Statische Elemente](#static-elements).
 
@@ -88,7 +88,7 @@ Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstru
 
    Weitere Informationen finden Sie unter [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Um die Lektüre komplexer Berichte zu vereinfachen, können Sie eine oder mehrere Aktivitäten vom Typ **[!UICONTROL Sprung]** einfügen. Auf diese Weise können Sie von einer Aktivität zur anderen wechseln, ohne den Übergang im Bericht zu materialisieren. Die **[!UICONTROL Sprung]**-Aktivität kann auch genutzt werden, um einen anderen Bericht anzuzeigen.
+1. Schließlich können Sie zur Verbesserung der Lesbarkeit komplexer Berichte eine oder mehrere Aktivitäten des Typs **[!UICONTROL Sprung]** einfügen.Auf diese Weise können Sie von einer Aktivität zur anderen wechseln, ohne die Transition im Bericht zu materialisieren. Die **[!UICONTROL Sprung]**-Aktivität kann auch genutzt werden, um einen anderen Bericht anzuzeigen.
 
    Weitere Informationen finden Sie unter [Sprung-Aktivität](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -108,7 +108,7 @@ Doppelklicken Sie auf das Symbol einer Aktivität, um sie zu konfigurieren.
 
 Der angezeigte Inhalt wird in Aktivitäten vom Typ **Seite** bestimmt.
 
-Ein Bericht kann eine oder mehrere Seiten enthalten. Seiten werden über einen speziellen Editor erstellt, mit dem Sie Eingabefelder, Auswahlfelder, statische Elemente, Diagramme oder Tabellen in eine Baumstruktur einfügen können. Mithilfe von Containern können Sie das Layout definieren. Weitere Informationen finden Sie unter [Elemente anordnen](../../reporting/using/element-layout.md).
+Ein Bericht kann eine oder mehrere Seiten enthalten. Seiten können über einen dedizierten Editor erstellt werden, mit dem Sie Eingabefelder, Auswahlfelder, statische Elemente, Diagramme oder Tabellen in eine Baustruktur einfügen können. Mithilfe von Containern können Sie das Layout definieren. Weitere Informationen finden Sie unter [Elemente anordnen](../../reporting/using/element-layout.md).
 
 Über die Schaltfläche &quot;Auswahldialog&quot; lassen sich verschiedene Komponenten (Radiobutton, Checkbox etc.) in die Seite einfügen.
 
@@ -129,7 +129,7 @@ Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 * **[!UICONTROL Eingabedialoge]** vom Typ Text oder Zahl.
 * **[!UICONTROL Auswahldialoge]** vom Typ Dropdown-Liste, Checkbox, Radiobutton, Multiple Choice, Datum oder Matrix.
 * **[!UICONTROL Erweiterte Dialoge]** vom Typ Link-Editor, Konstante, Ordnerauswahl.
-* Wert, Link, HTML, Bild usw **[!UICONTROL (statische Elemente]**.
+* Wert, Link, HTML, Bild usw. **[!UICONTROL Statische Elemente]**.
 * **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
 Die Konfiguration einer Seite und ihrer Elemente wird in [diesem Abschnitt](../../web/using/about-web-forms.md) erläutert.
@@ -150,11 +150,11 @@ Anhand von Eingabe- und Auswahldialogen können die im Bericht angezeigten Infor
 
 Die Erstellung und Konfiguration von Eingabe- und Auswahlfeldern werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
 
-Sie können ein oder mehrere Eingabedialoge in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die angezeigten Informationen nach einem eingegebenen Wert filtern.
+Sie können ein oder mehrere Eingabesteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die angezeigten Informationen nach einem eingegebenen Wert filtern.
 
 ![](assets/reporting_control_text.png)
 
-Sie können auch ein oder mehrere Auswahlsteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die im Bericht enthaltenen Informationen anhand der ausgewählten Werte filtern, z. B.:
+Sie können auch ein oder mehrere Auswahlsteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die im Bericht enthaltenen Informationen basierend auf den ausgewählten Werten filtern, beispielsweise:
 
 * über Radiobuttons und Checkboxen:
 
@@ -168,7 +168,7 @@ Sie können auch ein oder mehrere Auswahlsteuerelemente in Ihre Berichte integri
 
   ![](assets/reporting_control_date.png)
 
-Schließlich können Sie ein oder mehrere erweiterte Steuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie einen Link, eine Konstante oder einen Ordner einfügen.
+Schließlich können Sie ein oder mehrere erweiterte Steuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie einen Link oder eine Konstante einfügen oder einen Ordner auswählen.
 
 Im folgenden Beispiel wird der Bericht dahingehend konfiguriert, dass nur die Daten eines bestimmten Ordners des Navigationsbaums angezeigt werden:
 

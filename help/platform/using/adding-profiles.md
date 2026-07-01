@@ -22,9 +22,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 74
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 51%
 
 
 
-In den meisten Fällen werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Sie können jedoch ein oder mehrere Profile direkt über die Benutzeroberfläche hinzufügen, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken. Sie werden dann der Datenbank hinzugefügt.
+In den meisten Fällen werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Sie können jedoch ein oder mehrere Profile direkt über die Benutzeroberfläche hinzufügen, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken. Sie werden der Datenbank dann hinzugefügt.
 
 ![](assets/s_ncs_user_profile_add.png)
 

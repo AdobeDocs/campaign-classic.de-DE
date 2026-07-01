@@ -22,9 +22,9 @@ topic_v2:
 subfeature_v2:
   - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1393
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -32,14 +32,14 @@ ht-degree: 78%
 
 ## Über Simulationen {#about-simulations}
 
-Mit der Kampagnenoptimierung können Sie die Effizienz eines Kampagnenplans mithilfe von Simulationen testen. Auf diese Weise lässt sich der potenzielle Erfolg einer Kampagne messen: generierter Umsatz, Zielvolumen basierend auf den angewendeten Typologieregeln usw.
+Mit der Kampagnenoptimierung können Sie die Effizienz eines Kampagnenplans mithilfe von Simulationen testen. Dies ermöglicht Ihnen das Messen des potenziellen Erfolgs einer Kampagne: generierter Umsatz, Zielvolumen basierend auf den angewendeten Typologieregeln usw.
 
 Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen miteinander verglichen werden.
 
 >[!NOTE]
 >
 >Die im Testmodus vorbereiteten Sendungen wirken sich nicht gegenseitig aufeinander aus, beispielsweise in der Auswertung einer dezentralen Marketing-Kampagne oder solange der Eintrag der Sendungen in den Planungskalender noch nicht validiert wurde.\
->Das bedeutet, dass die Druck- und Kapazitätsregeln nur auf Sendungen im Modus **[!UICONTROL Zielgruppenschätzung und Nachrichtenpersonalisierung]** angewendet werden. Sendungen im **[!UICONTROL Schätzung und Validierung der geplanten Zielgruppe]** und im **[!UICONTROL Zielgruppenevaluierung]**-Modus werden nicht berücksichtigt.\
+>Das bedeutet, dass die Druck- und Kapazitätsregeln nur auf Sendungen im Modus **[!UICONTROL Zielgruppenschätzung und Nachrichtenpersonalisierung]** angewendet werden. Sendungen im Modus **[!UICONTROL Schätzung und Validierung der geplanten Zielgruppe]** und **[!UICONTROL Zielgruppenauswertung]** werden nicht berücksichtigt.\
 >Der Versandmodus wird in den Eigenschaften des jeweiligen Versands im Tab **[!UICONTROL Typologie]** ausgewählt.
 
 ![](assets/simu_campaign_select_delivery_mode.png)
@@ -76,7 +76,7 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_edit_scope_update.png)
 
-1. Auswahl der Elemente, die in den Simulationsumfang aufgenommen werden sollen. Bei Bedarf können Sie mit den Tasten UMSCHALT und STRG mehrere Elemente auswählen.
+1. Wählen Sie die im Simulationsumfang einzuschließenden Elemente aus. Bei Bedarf können Sie mithilfe der Umschalt- und Strg-Taste mehrere Elemente auswählen.
 
    ![](assets/simu_campaign_opti_edit_scope_select.png)
 
@@ -106,9 +106,9 @@ Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
 Im Tab **[!UICONTROL Allgemein]** der Simulation können Sie ihre Ausführungsparameter eingeben:
 
-* Mit **[!UICONTROL Option „Ausführung für]** planen“ wird der Simulationsstart je nach ausgewählter Prioritätsstufe auf einen kürzeren Zeitraum verschoben. Simulationen verwenden erhebliche Datenbankressourcen. Daher sollten nicht dringende Simulationen beispielsweise für die Ausführung in der Nacht geplant werden.
+* Mit der Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** wird der Simulationsstart auf einen weniger ausgelasteten Zeitraum verschoben, und zwar entsprechend der gewählten Prioritätsstufe. Simulationen verwenden erhebliche Datenbankressourcen. Daher sollten nicht dringende Simulationen beispielsweise für die Ausführung in der Nacht geplant werden.
 * Die **[!UICONTROL Priorität]** entspricht der Dringlichkeit, die der Simulation zugeteilt wird, um sie schnellstmöglich durchzuführen oder ihren Start zu verzögern.
-* **[!UICONTROL SQL-Abfragen im Protokoll]**. Mit SQL-Protokollen können Sie eine Simulation diagnostizieren, wenn sie mit Fehlern endet. Außerdem erfahren Sie, warum eine Simulation zu langsam ist. Die entsprechenden Logs sind nach der Simulation auf der Unterregisterkarte **[!UICONTROL SQL-Logs]** der Registerkarte **[!UICONTROL Verfolgung]** verfügbar.
+* **[!UICONTROL Speichern Sie SQL-Abfragen im Protokoll]**. Mit SQL-Protokollen können Sie eine Diagnose für eine mit Fehlern beendete Simulation durchführen. Sie können außerdem Auskunft darüber geben, wieso eine Simulation zu langsam ist. Die entsprechenden Logs sind nach der Simulation auf der Unterregisterkarte **[!UICONTROL SQL-Logs]** der Registerkarte **[!UICONTROL Verfolgung]** verfügbar.
 
 ## Ausführen einer Simulation {#executing-a-simulation}
 
@@ -124,7 +124,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 ![](assets/simu_campaign_opti_results.png)
 
-1. Die Unterregisterkarte **[!UICONTROL Sendungen]** listet alle Sendungen auf, die von der Simulation berücksichtigt wurden. Es werden zwei Zahlen angezeigt:
+1. In der Unterregisterkarte **[!UICONTROL Sendungen]** werden alle von der Simulation berücksichtigten Sendungen aufgelistet. Es werden zwei Auflistungen angezeigt:
 
    * Die **[!UICONTROL Ursprüngliche Zählung]** entspricht der Schätzung der Zielgruppe auf Ebene des Versands;
    * Die **[!UICONTROL Endgültige Zählung]** zeigt die Anzahl der nach Ausführung der Simulation verbleibenden Empfänger an.
@@ -137,8 +137,8 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
    ![](assets/simu_campaign_opti_14.png)
 
-1. Die Unterregisterkarte **[!UICONTROL Warnhinweise]** enthält alle Warnhinweise, die während der Simulation generiert wurden. Warnmeldungen können im Falle einer Kapazitätsüberlastung gesendet werden (z. B. wenn die Anzahl der Zielgruppenempfänger die festgelegte Kapazität überschreitet).
-1. Über **[!UICONTROL Unterregisterkarte Ausschlussanalyse]** Sie eine Ergebnistabelle erstellen. Der Benutzer muss Variablen in der Abszisse/Ordinatenachse angeben.
+1. Die Unterregisterkarte **[!UICONTROL Warnungen]** enthält alle Warnhinweise, die während der Simulation generiert wurden. Warnhinweise können bei Überschreitung der Kapazität gesendet werden (wenn beispielsweise die Zielgruppe mehr Empfangende enthält, als die festgelegte Kapazität zulässt).
+1. In der Unterregisterkarte **[!UICONTROL Ausschlussanalyse]** können Sie eine Tabelle zur Analyse der Ergebnisse erstellen. Benutzende müssen Variablen auf der x-/y-Achse angeben.
 
    Ein Beispiel zur Erstellung einer Analysetabelle findet sich im Anschluss an den Abschnitt [Ergebnisse analysieren](#exploring-results).
 
@@ -184,7 +184,7 @@ Klicken Sie auf den Link **[!UICONTROL Berichte]** auf dem Dashboard der entspre
 
 Bei wiederholter Ausführung einer Simulation wird das vorherige Ergebnis durch das neu berechnete Ergebnis ersetzt; die Ergebnisse unterschiedlicher Ausführungen können daher nicht angezeigt und miteinander verglichen werden.
 
-Zum Vergleichen der Ergebnisse müssen Sie Berichte verwenden. Mit Adobe Campaign können Sie einen Berichtsverlauf speichern, um ihn später erneut anzuzeigen. Dieser Verlauf wird während des gesamten Lebenszyklus der Simulation gespeichert.
+Zum Vergleichen der Ergebnisse müssen Sie Berichte verwenden. Mit Adobe Campaign können Sie einen Berichtsverlauf speichern, um ihn später erneut anzuzeigen. Dieser Verlauf wird für den gesamten Lebenszyklus der Simulation gespeichert.
 
 **Beispiel:**
 
@@ -214,14 +214,14 @@ Auf der Registerkarte **[!UICONTROL Berechnungen]** können Sie Berichtsachsen b
 
 Es soll eine zusätzliche Berichtsachse über den Empfängerstatus (&quot;Kunde&quot;, &quot;Interessent&quot; oder kein Status) erstellt werden.
 
-1. Um eine Berichtsachse zu definieren, wählen Sie die Tabelle aus, die die zu verarbeitenden Informationen im Feld **[!UICONTROL Analysedimension]** enthält. Diese Informationen sind obligatorisch.
+1. Um eine Berichtsachse zu definieren, wählen Sie die Tabelle mit den zu verarbeitenden Informationen im Feld **[!UICONTROL Analysedimension]** aus. Diese Informationen sind obligatorisch.
 1. An dieser Stelle wird das entsprechende Feld der Empfängertabelle ausgewählt.
 
    ![](assets/simu_campaign_opti_09.png)
 
 1. Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Erzeugen von Zielüberschneidungsstatistiken]** ermöglicht das Wiederherstellen aller Überschneidungsstatistiken im Simulationsbericht. Überschneidungen sind Empfänger, die in mindestens zwei Sendungen innerhalb einer Simulation angesprochen werden.
+   * **[!UICONTROL Statistiken der Zielgruppenüberschneidung erzeugen]** gibt alle Überschneidungsstatistiken im Simulationsbericht aus. Überschneidungen sind Empfangende, die innerhalb einer Simulation in mindestens zwei Sendungen angesprochen werden.
 
      >[!IMPORTANT]
      >

@@ -18,9 +18,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 277
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse gener
 >
 >Die Analysephase ist im Abschnitt [Versand analysieren](steps-validating-the-delivery.md#analyzing-the-delivery) ausführlich beschrieben.
 
-Während der Analysephase wird die Datei zwar generiert, die Empfängerinformationen (d. h. die Versandlogs) werden jedoch nicht aktualisiert. Sie können diesen Vorgang daher ohne Risiko abbrechen.
+Während der Analysephase wird die Datei generiert, es werden aber keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Sie können diesen Auftrag daher ohne Risiko abbrechen.
 
-Überprüfen Sie das Ergebnis der Analyse und den Inhalt der Ausgabedatei, bevor Sie auf **[!UICONTROL Versand bestätigen]** klicken. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
+Prüfen Sie jetzt das Ergebnis der Analyse und den Inhalt der Ausgabedatei und klicken Sie dann auf **[!UICONTROL Absendung bestätigen]**. Über eine Bestätigungsnachricht kann der Versand gestartet werden.
 
 Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Datei gestartet.
 
@@ -51,7 +51,7 @@ Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL A
 Dabei stehen zwei Modi zur Verfügung:
 
 * **[!UICONTROL Nachrichten werden nach Validierung als gesendet betrachtet]** (Standardmodus): In diesem Funktionsmodus werden alle Versandlogs aktualisiert, sobald der Benutzer den Versand bestätigt (ihr Status wechselt von &#39;Versand ausstehend&#39; zu &#39;Gesendet&#39;). Der Versand wechselt dann automatisch in den Status **[!UICONTROL Abgeschlossen]**.
-* **[!UICONTROL Eine Ergebnisdatei bestimmt die gesendeten und die fehlgeschlagenen Nachrichten]** : In diesem Modus können Sie die Broadlogs über eine externe Datei aktualisieren, die vom Dienstleister gesendet wird. In diesem Fall muss ein Workflow zur Verarbeitung dieser Informationen verwendet werden, um den Broadlog-Status zu aktualisieren.
+* **[!UICONTROL Eine Ergebnisdatei listet gesendete und fehlgeschlagene Nachrichten auf]**: Dieser Modus ermöglicht eine Aktualisierung der Broadlogs mittels einer externen Datei vom Dienstleister. In diesem Fall muss ein Workflow zur Verarbeitung dieser Informationen verwendet werden, um den Broadlog-Status zu aktualisieren.
 
   >[!NOTE]
   >

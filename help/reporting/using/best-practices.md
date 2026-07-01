@@ -20,9 +20,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 857
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 66%
 
 Welches Reporting-Tool jeweils zum Einsatz kommt, hängt von der Menge der auszuwertenden Daten, ihrer Komplexität und dem gewünschten Berichtstyp ab.
 
-Um die Erstellung, Verwendung und Dauerhaftigkeit eines Berichts zu optimieren, müssen Sie sich die Bedürfnisse, die Sie erfüllen möchten, genau ansehen. Mit dieser ersten Analyse können Sie den zu erstellenden Berichtstyp und den besten Erstellungsmodus ermitteln. Gehen Sie wie folgt vor, um den Bericht zu erstellen:
+Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts müssen zunächst die Bedarfe genau bestimmt werden. Mit dieser ersten Analyse können Sie den zu erstellenden Berichtstyp und den besten Erstellungsmodus ermitteln. Gehen Sie wie folgt vor, um den Bericht zu erstellen:
 
 1. Bedarf identifizieren
 
    Zunächst muss genau bestimmt werden, was im Bericht angezeigt werden und wozu er dienen soll (Monitoring, Analyse, Datenexport etc.).
 
-   Adobe Campaign bietet eine breite Palette von Berichtskapazitäten. Es ist wichtig, Ihren Bedarf zu analysieren, um die am besten geeignete Funktion zu identifizieren.
+   Adobe Campaign bietet eine breite Palette von Berichtsfunktionen. Es ist wichtig, Ihren Bedarf zu analysieren, damit Sie die passendste Funktion finden.
 
    Sie können zum Beispiel:
 
@@ -73,7 +73,7 @@ Um die Erstellung, Verwendung und Dauerhaftigkeit eines Berichts zu optimieren, 
 
    Sie sollten zudem die Art der verwendeten Daten (einfach, aus einer Berechnung stammend, besonders umfangreich etc.), ihre Lokalisierung (in Adobe Campaign oder einem externen System), ihr Volumen sowie ihre Aktualisierungshäufigkeit kennen, um die Berechnungsintervalle festzulegen (täglich, wöchentlich, in Echtzeit).
 
-   Die Probleme im Zusammenhang mit Datenmengen und Aktualisierungen müssen sorgfältig untersucht werden, um Probleme bei der Anzeige von Berichten zu vermeiden, insbesondere in Bezug auf die Zeit. Es wird daher empfohlen, Aggregate zu erstellen, um einige Daten außerhalb des Berichts vorab zu berechnen. Tabellen, die die Tracking- und Versandlogs enthalten, können Millionen von Datensätzen enthalten: Das bedeutet, dass die Daten über einen Workflow aggregiert werden müssen, damit sie in einem Bericht verwendet werden können.
+   Die Probleme im Zusammenhang mit Datenmengen und Aktualisierungen müssen sorgfältig untersucht werden, um Probleme bei der Anzeige von Berichten zu vermeiden, insbesondere in Bezug auf die Zeit. Daher wird empfohlen, Aggregate zu erstellen, um einige Daten außerhalb des Berichts vorab zu berechnen. Tabellen, die die Tracking- und Versandlogs enthalten, können Millionen von Einträgen enthalten: Das bedeutet, dass die Daten über einen Workflow aggregiert werden müssen, damit sie in einem Bericht verwendet werden können.
 
 ## Optimieren des Berichts-Designs{#optimizing-report-creation}
 
@@ -89,13 +89,13 @@ Folgendes ist zu beachten:
 
 * Bei der Verwendung von Marketing Analytics dürfen die gemeldeten Daten 10 Millionen Zeilen nicht überschreiten.
 
-Es wird außerdem empfohlen, die Aggregate nachts zu berechnen und diese aggregierten Daten direkt in den Berichten zu verwenden. Diese Aggregate müssen über dedizierte Daten-Management-Workflows (SQL-Abfragen) erstellt werden.
+Wie empfehlen außerdem, Aggregate nachts zu berechnen und diese aggregierten Daten direkt in Berichten zu verwenden. Diese Aggregate müssen über dedizierte Data Management-Workflows (SQL-Abfragen) erstellt werden.
 
 Sie haben auch die Möglichkeit, die Berichte nachts zu berechnen und automatisch einen Verlauf erstellen zu lassen, der jederzeit eingesehen werden kann. Diese Vorgehensweise vermeidet ebenfalls eine Überlastung der Datenbank.
 
 ### Abfragen {#queries}
 
-Es wird empfohlen, nach Möglichkeit SQL-Abfragen zu verwenden und eine Nachbearbeitung in JavaScript zu vermeiden. Verwenden Sie bei Bedarf eine Script -Aktivität in einem Workflow und löschen Sie die für die Berechnung verwendeten Daten. Sie können auch archivierte Daten verwenden, um die Verarbeitungszeit zu beschleunigen.
+Wir empfehlen, wenn möglich SQL-Abfragen zu verwenden und den JavaScript-Nachbearbeitungsprozess zu vermeiden. Verwenden Sie bei Bedarf eine Skriptaktivität in einem Workflow und löschen Sie die für die Berechnung verwendeten Daten. Sie können auch archivierte Daten verwenden, um die Verarbeitungszeit zu beschleunigen.
 
 In diesem Fall lautet die Syntax wie folgt:
 
@@ -103,7 +103,7 @@ In diesem Fall lautet die Syntax wie folgt:
 if(string(ctx@_historyId)!==""))
 ```
 
-Abfragen, mit denen Sie die in den Berichten angezeigten Daten erfassen können, dürfen nicht zu komplex sein, insbesondere dann nicht, wenn sie auf alle Daten in der Datenbank angewendet werden. Um die Leistung zu verbessern, kann es nützlich sein, die Daten zu filtern, bevor diese Abfragen ausgeführt werden: Dies bedeutet, dass die Berechnung nur einen Teil der Daten betrifft.
+Abfragen, die Ihnen die Erfassung von in Berichten angezeigten Daten ermöglichen, dürfen nicht zu komplex sein, insbesondere wenn sie sich auf alle Daten in der Datenbank beziehen. Zur Verbesserung der Leistung kann es nützlich sein, die Daten vor der Ausführung dieser Abfragen zu filtern. Dann bezieht sich die Berechnung nur auf einen Teil der Daten.
 
 ### Performance {#performances}
 
@@ -119,7 +119,7 @@ Adobe Campaign empfiehlt Ihnen zusätzlich die folgenden Verbesserungsmöglichke
 
 * Sicherstellung, dass der Bericht skalierbar ist: Das Datenvolumen kann im Laufe der Zeit erheblich wachsen.
 
-  Ebenso kann das während der Testphasen bearbeitete Datenvolumen vom tatsächlichen Datenvolumen in der Produktion abweichen. Daher sind Testphasen wichtig.
+  Außerdem kann sich das während der Testphasen verwendete Datenvolumen vom tatsächlichen Datenvolumen in der Produktion unterschieden.Daher sind Testphasen wichtig.
 
   Schließlich müssen die Fristen der Datenbereinigung bekannt sein und bei Bedarf angepasst werden, um die Informationsverarbeitung zu erleichtern.
 

@@ -15,9 +15,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 551
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 56%
 
 ## Bearbeitungsfenster {#editing-window}
 
-Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Sie ermöglichen es Ihnen, den Status des Inhalts anzuzeigen, zu ändern und zu überprüfen.
+Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Dort können Sie den Inhalt anzeigen, ändern und seinen Status prüfen.
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. Der **Oben**-Bereich ist ein Anzeigebereich für Meldungen an den Benutzer. Diese Meldungen geben den Status der Web-Anwendung für den erstellten Versand sowie Warnungen und Fehlermeldungen im Zusammenhang mit dem Inhalt an. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
-1. Der Bereich auf **linken** des Fensters ist der Bereich für die Bearbeitung von Inhalten. Von diesem Bereich aus kann der Benutzer mithilfe der Popup-Symbolleiste direkt mit dem Inhalt interagieren: Einfügen eines Links in ein Bild, Ändern der Schriftart, Löschen eines Felds usw. Weitere Informationen hierzu finden Sie unter [&#x200B; von Formularen](editing-content.md#editing-forms).
-1. Der Bereich **rechts** Fensters ist der Bereich „Systemsteuerung“. In diesem Bereich werden die verschiedenen Optionen für den Editor gruppiert, insbesondere jene, die mit der Konfiguration der Seitenüberschrift und allgemeiner Optionen für einen Block zusammenhängen: Hinzufügen eines Rahmens, Verknüpfen eines Datenbankfelds mit einem Eingabefeld, Zugreifen auf Web-Seiteneigenschaften usw. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von &#x200B;](editing-content.md)&quot;.
+1. Der **obere** Abschnitt ist ein Anzeigebereich für Nachrichten an die benutzende Person. Dies sind Hinweise zum Status der Web-Anwendung oder zum gerade erstellten Versand sowie Warnhinweise und Fehlermeldungen in Verbindung mit dem Inhalt. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
+1. Der Abschnitt **links** im Fenster ist der Bereich für die Bearbeitung von Inhalten. Hier kann die benutzende Person direkt über die Popup-Symbolleiste einen Link in ein Bild einfügen, die Schriftart ändern, ein Feld löschen etc. Weitere Informationen finden Sie unter [Bearbeiten von Formularen](editing-content.md#editing-forms).
+1. Der Abschnitt **rechts** im Fenster ist der Control Panel-Bereich. Hier werden die Optionen des Editors gruppiert dargestellt, vor allem jene zur Konfiguration der Seitenüberschrift und allgemeine Optionen für Bausteine. Sie können einen Rand hinzufügen, ein Datenbankfeld mit einem Eingabefeld verknüpfen, auf die Eigenschaften einer Web-Seite zugreifen etc. Weitere Informationen finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von Inhalten](editing-content.md).
 
 ## Globale Optionen {#global-options}
 
@@ -55,7 +55,7 @@ Dort finden Sie vier Symbole:
   >
   >Bei der Auswahl eines neuen Inhalts wird der aktuelle Inhalt automatisch ersetzt.
 
-* Mit **Symbol „Als** speichern“ können Sie den aktuellen Inhalt als Vorlage speichern. Sie müssen den Titel und den internen Namen für die Vorlage eingeben. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
+* Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
 
   ![](assets/dce_popup_savetemplate.png)
 
@@ -75,14 +75,14 @@ Dort finden Sie vier Symbole:
 
 ## Optionen für Bausteine {#block-options}
 
-Im Bereich rechts im Editor werden die wichtigsten Optionen gruppiert, mit denen Sie auf den Inhalt reagieren können. Um diese Optionen anzuzeigen, müssen Sie einen Block auswählen: Die Art dieser Optionen hängt vom ausgewählten Block ab.
+Im rechten Bereich des Editors befinden sich die wichtigsten Optionen zum Bearbeiten des Inhalts. Diese Optionen werden nur angezeigt, wenn ein Baustein ausgewählt wird. Die Art der Optionen hängt vom ausgewählten Baustein ab.
 
 ![](assets/dce_right_section.png)
 
 Sie haben folgende Möglichkeiten:
 
 * Anzeige für einen oder mehrere Blöcke festlegen, siehe [Sichtbarkeitsbedingung definieren](editing-content.md#defining-a-visibility-condition),
-* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen &#x200B;](editing-content.md#adding-a-border-and-background),
+* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen ](editing-content.md#adding-a-border-and-background),
 * Bildattribute (Größe, Beschriftung) festlegen, siehe [Bildeigenschaften bearbeiten](editing-content.md#editing-image-properties),
 * Datenbank mit einem Formularelement (Eingabefeld, Checkbox) verknüpfen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),
 * Einen Teil eines Formulars obligatorisch machen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),

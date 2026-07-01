@@ -16,9 +16,9 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 160
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 79%
 
 
 
-Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angebotsmodul die besten zu unterbreitenden Angebote anhand einer Reihe von Eignungsregeln. Um die Eignungskriterien Ihrer Angebote anzureichern, erweitern Sie das Schema **nms:interaction** .
+Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angebotsmodul die besten zu unterbreitenden Angebote anhand einer Reihe von Eignungsregeln. Um die Eignungskriterien Ihrer Angebote anzureichern, erweitern Sie das **nms:interaction**-Schema.
 
 * Um einen neuen Interaktionskontext hinzuzufügen, erweitern Sie das **nms:interaction**-Schema und erstellen Sie so viele **attribute**-Elemente wie nötig im Schema.
 

@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 450
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. Klicken Sie dann auf die Registerkarte **[!UICONTROL HTML]** Vorschau, um das Rendering anzuzeigen. Hier werden die Personalisierungsfelder aus der Datenbank nicht eingegeben.
+1. Klicken Sie nun auf die Registerkarte **[!UICONTROL HTML-Vorschau]**, um das Rendering anzuzeigen. Im vorliegenden Beispiel fehlen die Angaben in den Personalisierungsfeldern, die auf Daten aus der Datenbank zurückgreifen.
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie können die Erstellung nicht genehmigter Inhalte zulassen. Ändern Sie dazu die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
+   >Sie können die Erstellung nicht genehmigter Inhalte zulassen. Ändern Sie hierzu die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
 
    HTML- und Text-Inhalte werden standardmäßig im **Veröffentlichungs**-Ordner der Adobe Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
 

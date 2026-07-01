@@ -21,9 +21,9 @@ subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 293
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 74%
 
 In diesem Anwendungsbeispiel wird die Erstellung eines Filters beschrieben, der Newsletter-Abonnements entsprechend des von den Empfängern angegebenen E-Mail-Formats filtert.
 
-Dazu müssen wir einen vordefinierten Filter verwenden: Diese Filter sind mit einem Dokumenttyp verknüpft und sind über den Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** zugänglich. Diese Datenfilter können für jeden Editor- (oder Dokument-)Typ in der Anwendung verwendet werden.
+Hierfür wird ein vordefinierter Filter verwendet. Auf diese einem Dokumenttyp zugeordneten Filter kann über den Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** zugegriffen werden. Diese Datenfilter können für jede Art von Editor (oder Dokument) in der Anwendung verwendet werden.
 
 Datenfilter werden wie vordefinierte Filter erstellt. Ein zusätzliches Feld ermöglicht es jedoch, den Dokumenttyp auszuwählen, für den der Filter angewendet werden soll.
 
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Sie können auf diese Felder zugreifen, um Filterbedingungen im Hauptteil des Filter-Editors zu definieren. Ein Anwendungsfilter wird genau wie ein erweiterter Filter definiert. Weitere Informationen zu Filtern finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   Sie können zum Definieren der Filterbedingungen über den Hauptteil des Filtereditors auf diese Felder zugreifen.Ein Anwendungsfilter wird genau auf dieselbe Weise wie ein erweiterter Filter definiert. Weitere Informationen zu Filtern finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 1. Erstellen Sie einen neuen Abonnementfilter, um nur solche Abonnements anzuzeigen, für die kein E-Mail-Format bestimmt wurde:

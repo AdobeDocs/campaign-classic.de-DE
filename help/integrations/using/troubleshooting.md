@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 147
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Im Fall von Fehlermeldungen achten Sie darauf, dass die folgenden Elemente richt
 
 * **Externe Konten**
 
-  Stellen **[!UICONTROL unter Administration > Plattform > Externe]** sicher, dass die folgenden externen SFTP-Konten korrekt konfiguriert sind. Die genannten SFTP-Server sollten von Ihrem Berater in Adobe Experience Cloud konfiguriert worden sein.
+  Versichern Sie sich in **[!UICONTROL Administration > Plattform > Externe Konten]**, dass die folgenden externen SFTP-Konten korrekt konfiguriert sind. Die genannten SFTP-Server sollten von Ihrer Beraterin bzw. Ihrem Berater in Adobe Experience Cloud konfiguriert worden sein.
 
    * **[!UICONTROL importSharedAudience]**: SFTP-Konto für den Zielgruppen-Import.
    * **[!UICONTROL exportSharedAudience]**: SFTP-Konto für den Zielgruppen-Export.

@@ -20,16 +20,16 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 349
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # A/B-Tests: Erstellen des Skripts {#step-5--creating-the-script}
 
 
-Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Skripts. Dieses Skript ruft die Informationen zum Versand mit der höchsten Öffnungsrate ab und kopiert den Inhalt in den endgültigen Versand.
+Die Auswahl des Versandinhalts, der an die verbleibende Population gesendet wird, erfolgt mithilfe eines Skripts. Dieses Skript ruft die Informationen bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt in den endgültigen Versand.
 
 ## Script-Beispiel {#example-of-a-script}
 
@@ -172,7 +172,7 @@ Im Folgenden werden die verschiedenen Script-Abschnitte und deren Funktionsweise
 
 ## Andere Auswahlkriterien {#other-selection-criteria}
 
-Im obigen Beispiel können Sie den Inhalt eines Versands anhand der Öffnungsrate von E-Mails auswählen. Sie können ihn anpassen, sodass er sich auf andere versandspezifische Indikatoren stützt:
+Im zuvor dargestellten Beispiel wird der Versandinhalt basierend auf der Öffnungsrate der E-Mails bestimmt. Sie können ihn anpassen, um andere versandspezifische Indikatoren als Grundlage zu verwenden:
 
 * Höchste Klickrate: `[indicators/@recipientClickRatio]`,
 * Höchste Reaktionsrate (Öffnung der E-Mail und Klicks in der Nachricht): `[indicators/@reactivity]`,

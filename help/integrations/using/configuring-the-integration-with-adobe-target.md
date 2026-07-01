@@ -21,9 +21,9 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 212
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um diese Integration in Adobe Campaign zu konfigurieren
 
    ![](assets/tar_options.png)
 
-   * **[!UICONTROL TNT_EdgeServer]** : Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Beispiel: **tt.omtrdc.net/m2**.
+   * **[!UICONTROL TNT_EdgeServer]**: Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Beispiel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** - Name der Adobe-Target-Organisation. Dieser Wert entspricht dem Adobe-Target-**[!UICONTROL Client-Namen]**.
 
 

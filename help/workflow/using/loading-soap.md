@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 268
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 67%
 
 >[!CAUTION]
 >
->Die Aktivität **Laden (SOAP** ist nur verfügbar, wenn das Modul **FDA (Federated Data Access)** installiert ist. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Die Aktivität **Laden (SOAP)** erfordert die Installation des **FDA**-Moduls (Federated Data Access). Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Im Allgemeinen wird die Aktivität **Laden (SOAP)** ergänzend zur Aktivität **Laden (DBMS)** eingesetzt, für den Fall, dass der direkte Datenabruf aus einer externen Datenbank über den FDA nicht möglich ist.
 
@@ -38,9 +38,9 @@ Gehen Sie wie folgt vor:
 
    ![](assets/load_soap_002.png)
 
-1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Ergebnisbeispiel zu erstellen.
+1. Wählen Sie für ein XML-Beispiel eine Beispieldatei aus. Die Datei wird analysiert, um ein Beispielergebnis zu erzeugen.
 
-   Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann den Code-Skelett. Der ausgewählte Service und Aufruf werden automatisch aktualisiert und angezeigt.
+   Geben Sie für eine WSDL die entsprechende Zugriffs-URL ein und generieren Sie dann das Code-Skelett. Der ausgewählte Dienst und Aufruf werden automatisch aktualisiert und angezeigt.
 
    ![](assets/soap_load_003.png)
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:
 
    * **[!UICONTROL Initialisierung]**: Herstellung der SOAP-Verbindung.
-   * **[!UICONTROL Iteration]**: Führt den Aufruf des SOAP-Service aus. Die Rückgabe für diese Funktion muss ein XML-Objekt sein, das mit der Beschreibung des Beispiels oder der WSDL kompatibel ist.
+   * **[!UICONTROL Iteration]**: Aufruf des SOAP-Dienstes. Zurückgegeben werden muss ein XML-Objekt, das mit der Beispielbeschreibung oder der WSDL kompatibel ist.
 
      Der Code dieses Tabs wird von Adobe Campaign so lange in einer Schleife aufgerufen, bis ein Null-XML-Element zurückgegeben wird.
 

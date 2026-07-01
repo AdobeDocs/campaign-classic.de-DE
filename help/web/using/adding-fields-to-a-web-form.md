@@ -18,9 +18,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2466
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 72%
 
 
 
-In einem Web-Formular können Benutzer mithilfe von Feldern Informationen eingeben und Optionen auswählen. Web-Formulare können Eingabefelder, Auswahlfelder, statische und erweiterte Inhalte (Captchas, Abonnements usw.) bereitstellen.
+Über Felder in einem Web-Formular können Benutzende Informationen eingeben und Optionen auswählen. Web-Formulare können Eingabefelder, Auswahlfelder sowie statische und erweiterte Inhalte (Captchas, Abonnements usw.) enthalten.
 
 Wenn Sie über den Assistenten Felder hinzufügen, wird der Feldtyp automatisch auf der Basis des ausgewählten Felds oder der Speichervariablen erkannt. Den Feldtyp können Sie im Tab **[!UICONTROL Allgemein]** über das Dropdown-Feld **[!UICONTROL Typ]** bearbeiten.
 
@@ -40,7 +40,7 @@ Folgende Feldtypen sind verfügbar:
 
 * Text-/Zahleneingabe. Siehe [Eingabefelder hinzufügen](#adding-input-fields).
 * Auswahl per Dropdown-Liste. Siehe [Dropdown-Listen hinzufügen](#adding-drop-down-lists).
-* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen &#x200B;](#adding-checkboxes).
+* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen ](#adding-checkboxes).
 * Auswahl über Radiobuttons. Siehe [Radiobuttons hinzufügen](#adding-radio-buttons).
 * Abstimmungsoptionen in einer Tabelle. Siehe [Tabellen hinzufügen](#adding-grids).
 * Zahlen und Daten. Siehe [Datum und Zahlen hinzufügen](#adding-dates-and-numbers).
@@ -53,7 +53,7 @@ Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank ak
 
 >[!NOTE]
 >
->Standardmäßig wird das Feld am unteren Rand der aktuellen Struktur eingefügt. Verwenden Sie die Pfeile in der Symbolleiste, um sie nach oben oder unten zu verschieben.
+>Standardmäßig wird das Feld unten im aktuellen Baum eingefügt. Mit den Pfeilen in der Symbolleiste kann es nach oben oder unten bewegt werden.
 
 ## Assistent zur Felderstellung {#field-creation-assistant}
 
@@ -89,7 +89,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
   Bei der Validierung der Seite wird der Feldinhalt geprüft, um sicherzugehen, dass der eingegebene Wert mit dem Feld kompatibel ist. Weiterführende Informationen finden Sie unter [Kontrolleinstellungen definieren](form-rendering.md#defining-control-settings).
 
-* **Kennwort**: ermöglicht die Eingabe von Text in einer einzelnen Zeile. Bei der Texteingabe werden die Zeichen durch Punkte ersetzt:
+* **Passwort**: ermöglicht der Benutzerin bzw. dem Benutzer Text in einer einzigen Zeile einzugeben. Während der Texteingabe werden die Zeichen durch Punkte ersetzt:
 
   ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
@@ -103,7 +103,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
   >[!CAUTION]
   >
-  >Mehrzeilige Textfelder sind spezifische Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das einem XML-Element zugeordnet ist, nicht einem XML-Attribut.
+  >Mehrzeilige Textfelder sind spezifische Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das einem XML-Element, nicht einem XML-Attribut, zugeordnet ist.
   >   
 
 * **Angereicherter mehrzeiliger Text**: ermöglicht dem Benutzer die Eingabe von Text mit einem Layout, das im HTML-Format gespeichert wird.
@@ -126,7 +126,7 @@ Eingabefelder werden auf der Basis desselben Modus unter Verwendung der folgende
 
 Im Tab **[!UICONTROL Allgemein]** können Sie den Namen des Felds eingeben und bei Bedarf einen Standardwert zuweisen.
 
-Der Speichermodus der Antwort kann über den Link **[!UICONTROL Speicher bearbeiten…]** geändert werden. Werte können in einem vorhandenen Feld der Datenbank gespeichert werden. Sie können auch festlegen, dass keine Informationen in der Datenbank gespeichert werden (verwenden Sie eine lokale Variable).
+Der Speichermodus der Antwort kann über den Link **[!UICONTROL Speicherinformationen bearbeiten…]** geändert werden. Werte können in einem vorhandenen Feld der Datenbank gespeichert werden. Sie können sich jedoch auch dazu entscheiden, Informationen nicht in der Datenbank zu speichern (eine lokale Variable verwenden).
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ Im Tab **[!UICONTROL Erweitert]** können Sie Anzeigeparameter für das Feld def
 
 ## Dropdown-Listen hinzufügen {#adding-drop-down-lists}
 
-Sie können eine Dropdown-Liste in eine Umfrageseite einfügen. Auf diese Weise können Benutzer in einem Dropdown-Menü einen Wert aus den angebotenen auswählen.
+Sie können eine Dropdown-Liste in eine Umfrageseite einfügen. So können Benutzende einen Wert einfügen, der in einem Dropdown-Menü verfügbar ist.
 
 ![](assets/s_ncs_admin_survey_dropdown_sample.png)
 
@@ -196,13 +196,13 @@ Diese Informationen werden in die Datenbank und ein vorhandenes Feld hochgeladen
 
 ![](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
-Wenn das Kästchen „Wartung erforderlich“ aktiviert ist, **[!UICONTROL die Spalte]** Kommentar“ die Spalte „Wartung erforderlich“. Wenn das Kästchen nicht markiert ist, zeigt die Spalte „Maintenance not required“ an. Um dieses Ergebnis zu erhalten, wenden Sie die folgende Konfiguration auf das Kontrollkästchen auf der Formularseite an:
+Wenn das Kontrollkästchen „Wartung erforderlich“ aktiviert ist, wird in der Spalte **[!UICONTROL Kommentar]** der Text „Wartung erforderlich“ angezeigt. Wenn das Kontrollkästchen nicht aktiviert ist, wird in der Spalte „Wartung nicht erforderlich“ angezeigt. Um dieses Ergebnis zu erhalten, wenden Sie die folgende Konfiguration auf das Kontrollkästchen auf der Formularseite an:
 
 ![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
 ## Radiobuttons hinzufügen {#adding-radio-buttons}
 
-Mit Optionsschaltflächen können Sie Benutzenden eine Reihe exklusiver Optionen zur Auswahl anbieten. Dies sind unterschiedliche Werte für dasselbe Feld.
+Mit Optionsfeldern können Sie Benutzenden eine Reihe von exklusiven Optionen zur Auswahl anbieten. Dies sind unterschiedliche Werte für dasselbe Feld.
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
@@ -226,16 +226,16 @@ Um Radiobuttons über eine Liste hinzuzufügen, gehen Sie in der Symbolleiste de
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-Fügen Sie so viele Optionsfelder hinzu, wie Beschriftungen vorhanden sind. Der Vorteil dieser Funktion besteht darin, dass Sie Werte aus einem vorhandenen Feld importieren können (bei Einzelfeldern) und es dem Benutzer ermöglichen, eine Option auszuwählen. Das Layout der Schaltflächen ist jedoch weniger flexibel.
+Fügen Sie so viele Optionsfelder wie Titel hinzu. Der Vorteil dieser Funktion liegt darin, dass Sie Werte aus einem vorhandenen Feld importieren können (im Fall eines Auflistungsfelds) und Benutzende aus diesen eine Option auswählen können. Das Layout der Felder ist jedoch weniger flexibel.
 
 >[!NOTE]
 >
->Sie können die Mehrfachauswahl in einer Web-Anwendung nicht aktivieren.
->Es ist jedoch möglich, ein Feld vom Typ **[!UICONTROL Multiple Choice]** in eine Web-Anwendung einzufügen. Dies ermöglicht dem Benutzer jedoch nicht, mehrere Werte auszuwählen.
+>Sie können in einer Web-Anwendung keine Mehrfachauswahl aktivieren.
+>Es ist jedoch möglich, ein Feld des Typs **[!UICONTROL Multiple Choice]** in eine Web-Anwendung einzufügen. Dies ermöglicht Benutzenden jedoch nicht die Auswahl mehrerer Werte.
 
 ## Tabellen hinzufügen {#adding-grids}
 
-Raster werden zum Entwerfen von Abstimmungsseiten in Web-Anwendungen verwendet. Auf diese Weise können Sie Listen von Optionsfeldern zur Beantwortung von Web-Formularen für Umfragen oder Bewertungen anbieten, wie unten dargestellt:
+Raster werden zum Entwerfen von Abstimmungsseiten in Web-Anwendungen verwendet. Dadurch können Sie wie unten gezeigt Listen mit Optionsfeldern zum Beantworten von Umfragen oder Web-Formulare zur Abgabe von Bewertungen anbieten.
 
 ![](assets/s_ncs_admin_survey_vote_param.png)
 
@@ -255,7 +255,7 @@ Pro Tabellenzeile kann nur eine Option ausgewählt werden.
 
 ## Datum und Zahlen hinzufügen {#adding-dates-and-numbers}
 
-Der Inhalt der Formularfelder kann entsprechend den in der Datenbank gespeicherten Daten oder einer bestimmten Anforderung formatiert werden. Sie können geeignete Felder für die Eingabe von Zahlen und Daten erstellen.
+Der Inhalt eines Formularfeldes kann entsprechend den in der Datenbank gespeicherten Daten oder einer bestimmten Anforderung formatiert werden. Sie können geeignete Felder für die Eingabe von Zahlen und Datumsangaben erstellen.
 
 ### Datum hinzufügen {#adding-dates}
 
@@ -273,11 +273,11 @@ Im unteren Bereich des Fensters können Sie die Formate für Datum und Uhrzeit f
 
 Das Datum (oder die Uhrzeit) kann angezeigt oder ausgeblendet werden.
 
-Datumsangaben können über einen Kalender oder Dropdown-Felder ausgewählt werden. Sie können sie auch direkt in das Feld eingeben, sie müssen jedoch dem Format entsprechen, das im Bildschirm oben angegeben ist.
+Datumsangaben können über einen Kalender oder Dropdown-Felder ausgewählt werden. Sie können auch direkt in das Feld eingegeben werden, die Eingabe muss jedoch dem oben am Bildschirm angegebenen Format entsprechen.
 
 >[!NOTE]
 >
->Standardmäßig werden in Formularen verwendete Datumsangaben über einen Kalender eingegeben. Bei mehrsprachigen Formularen bitte überprüfen, ob die Kalender in allen verwendeten Sprachen verfügbar sind. Siehe [Webformular übersetzen](translating-a-web-form.md).
+>Standardmäßig werden in Formularen verwendete Datumsangaben über einen Kalender eingegeben. Achten Sie bei mehrsprachigen Formularen darauf, dass die Kalender in allen verwendeten Sprachen verfügbar sind. Siehe [Webformular übersetzen](translating-a-web-form.md).
 
 In manchen Fällen kann es aber einfacher sein, Dropdown-Listen zu verwenden, z. B. zur Eingabe des Geburtsdatums.
 
@@ -297,13 +297,13 @@ Sie können Felder für die Eingabe von Zahlen erstellen.
 
 ![](assets/s_ncs_admin_survey_number.png)
 
-In einem numerischen Feld können Benutzende nur Zahlen eingeben. Die Eingabedialoge werden automatisch angewendet, wenn die Seite genehmigt wird.
+In einem numerischen Feld können Benutzende nur Zahlen eingeben. Die Eingabekontrolle erfolgt automatisch bei der Validierung der Seite.
 
-Je nach Feld, in dem Daten in der Datenbank gespeichert werden, können besondere Formatierungen oder bestimmte Einschränkungen angewendet werden. Sie können auch Mindest- und Höchstwerte angeben. Dieser Feldtyp wird wie folgt konfiguriert:
+Abhängig vom Feld, in dem Daten in der Datenbank gespeichert werden, können spezielle Formatierungen oder bestimmte Einschränkungen angewendet werden. Sie können auch Mindest- und Höchstwerte angeben. Dieser Feldtyp wird wie folgt konfiguriert:
 
 ![](assets/s_ncs_admin_survey_number_edit.png)
 
-Der Standardwert ist der Wert, der bei der Veröffentlichung des Formulars im Feld angezeigt wird. Er kann vom Benutzer korrigiert werden.
+Der Standardwert ist der Wert, der bei der Veröffentlichung des Formulars im Feld angezeigt wird. Er kann von der Benutzerin bzw. dem Benutzer korrigiert werden.
 
 Sie können zum numerischen Feld über den Tab **[!UICONTROL Erweitert]** wie unten gezeigt ein Präfix und/oder Suffix hinzufügen:
 
@@ -315,7 +315,7 @@ Im Formular sieht das Rendering folgendermaßen aus:
 
 ## Abonnement-Checkboxes {#subscription-checkboxes}
 
-Sie können Steuerelemente hinzufügen, mit denen Benutzer einen oder mehrere Informationsdienste (Newsletter, Warnungen, Echtzeit-Benachrichtigungen usw.) abonnieren oder abmelden können. Um sich anzumelden, prüft der Benutzer den entsprechenden Service.
+Sie können Steuerelemente hinzufügen, über die sich Benutzende für einen oder mehrere Informationsdienste anmelden oder von diesen abmelden können (Newsletter, Warnungen, Echtzeitbenachrichtigungen usw.). Um sich anzumelden, aktivieren Benutzende den entsprechenden Dienst.
 
 Wählen Sie zum Erstellen einer Abonnement-Checkbox **[!UICONTROL Erweiterte Steuerelemente > Abonnement]** aus.
 
@@ -347,7 +347,7 @@ Um ein Captcha in ein Formular einzufügen, wählen Sie in der Symbolleiste die 
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-Geben Sie den Titel des Felds ein. Dieser Titel wird vor dem CAPTCHA-Anzeigebereich angezeigt. Sie können die Position dieses Titels im Tab **[!UICONTROL Erweitert]** ändern.
+Geben Sie den Titel des Felds ein. Dieser Titel wird vor dem Captcha-Anzeigebereich angezeigt. Sie können die Position dieses Titels im Tab **[!UICONTROL Erweitert]** ändern.
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
@@ -355,7 +355,7 @@ Geben Sie den Titel des Felds ein. Dieser Titel wird vor dem CAPTCHA-Anzeigebere
 >
 >Für Steuerelemente vom Typ **[!UICONTROL Captcha]** muss weder ein Speicherfeld noch eine Variable angegeben werden.
 
-Das Captcha wird mit einem Eingabefeld unter dem visuellen Element in die Seite eingefügt. Diese beiden Elemente sind untrennbar und werden für das Seiten-Layout als ein einziges Element betrachtet (sie belegen eine einzige Zelle).
+Das Captcha wird mit einem Eingabefeld unter dem visuellen Element in die Seite eingefügt. Diese beiden Elemente sind nicht trennbar und werden in Bezug auf das Seiten-Layout als ein einziges Objekt betrachtet (sie belegen eine einzige Zelle).
 
 ![](assets/s_ncs_admin_survey_captcha_sample.png)
 
@@ -369,19 +369,19 @@ Sie können eine Fehlermeldung zur Anzeige erstellen. Verwenden Sie dazu den Lin
 
 >[!NOTE]
 >
->Captchas sind immer 8 Zeichen lang. Dieser Wert kann nicht geändert werden.
+>Captchas sind immer 8 Zeichen lang. Dieser Wert kann nicht geändert werden.
 
 ## Datei hochladen {#uploading-a-file}
 
-Sie können ein Feld zum Hochladen zu einer Seite hinzufügen. Diese Funktion kann beispielsweise für die Freigabe von Intranet-Dateien nützlich sein.
+Sie können einer Seite ein Feld zum Hochladen von Inhalten hinzufügen. Diese Funktion kann beispielsweise zur Dateifreigabe im Intranet nützlich sein.
 
 ![](assets/s_ncs_admin_survey_download_file.png)
 
 Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche **[!UICONTROL Erweiterte Steuerelemente > Datei...]** aus.
 
-Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugänglich sind. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
+Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
 
-Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem Datenbankfeld speichern. Sie können beispielsweise das Empfängerschema erweitern, um einen Link zu dateibasierten Ressourcen hinzuzufügen.
+Sie können den Link zu diesen Dateien in einer lokalen Variable oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.
 
 >[!CAUTION]
 >

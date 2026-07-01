@@ -28,9 +28,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1340
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Geben Sie die **[!UICONTROL Identifizierungsparameter]** des Benutzers an: seinen Benutzernamen, sein Kennwort und seinen Namen. Der Benutzer verwendet seinen Benutzernamen und sein Passwort für die Anmeldung bei Adobe Campaign. Sobald die Benutzerin bzw. der Benutzer angemeldet ist, kann er oder sie das Passwort über das Menü **[!UICONTROL Tools > Passwort ändern]** ändern. Die E-Mail-Adresse der Benutzerin bzw. des Benutzers ist notwendig, um ihr oder ihm Benachrichtigungen zukommen zu lassen, beispielsweise wenn sie oder er für Validierungen verantwortlich ist.
+1. Geben Sie die **[!UICONTROL Authentifizierungsparameter]** ein, einschließlich Login, Passwort und Name. Login und Passwort werden von der benutzenden Person verwendet, um sich bei Adobe Campaign anzumelden. Sobald die Benutzerin bzw. der Benutzer angemeldet ist, kann er oder sie das Passwort über das Menü **[!UICONTROL Tools > Passwort ändern]** ändern. Die E-Mail-Adresse der Benutzerin bzw. des Benutzers ist notwendig, um ihr oder ihm Benachrichtigungen zukommen zu lassen, beispielsweise wenn sie oder er für Validierungen verantwortlich ist.
 
    In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 
@@ -108,13 +108,13 @@ Wenn das Benutzerprofil erstellt wurde, können darin enthaltende Informationen 
 
 ## Definieren der Zeitzone des Benutzers {#time-zone-of-the-operator}
 
-Auf der Registerkarte **[!UICONTROL Allgemein]** können Sie die Zeitzone des Benutzers auswählen. Standardmäßig arbeiten Benutzende in der Zeitzone des Servers. Es ist jedoch möglich, über die Dropdown-Liste eine andere Zeitzone auszuwählen.
+In der Registerkarte **[!UICONTROL Allgemein]** können Sie die Zeitzone der benutzenden Person auswählen. Standardmäßig arbeiten Benutzende in der Zeitzone des Servers. Es ist jedoch möglich, über die Dropdown-Liste eine andere Zeitzone auszuwählen.
 
 Die Konfiguration der Zeitzonen wird auf [dieser Seite](../../installation/using/time-zone-management.md) beschrieben.
 
 >[!NOTE]
 >
->Die Zusammenarbeit innerhalb verschiedener Zeitzonen erfordert die Speicherung von Daten in UTC. Datumsangaben werden in den folgenden Kontexten in die entsprechende Zeitzone konvertiert: Wenn ein Datum in der Zeitzone des Benutzers angezeigt wird, wenn Dateien importiert und exportiert werden, wenn ein E-Mail-Versand geplant wird oder wenn Aktivitäten in einem Workflow geplant sind (Planung, Wartezeit, Zeitbeschränkung usw.)
+>Die Zusammenarbeit innerhalb verschiedener Zeitzonen erfordert die Speicherung von Datumsangaben in UTC. Datumsangaben werden in folgenden Kontexten in die entsprechenden Zeitzonen umgewandelt: wenn ein Datum in der Zeitzone der Benutzenden angezeigt wird, wenn Dateien importiert und exportiert werden, wenn ein E-Mail-Versand geplant ist, wenn Aktivitäten in einem Workflow geplant sind (Planung, Warten, Zeitbegrenzung usw.)
 >
 >Beschränkungen und Empfehlungen bezüglich dieser Verwendungskontexte werden in den entsprechenden Abschnitten der Adobe Campaign-Dokumentation beschrieben.
 
@@ -148,17 +148,17 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
   >
   >Um den Zugriff auf Ihre Plattform zu sichern, ist diese Option jedoch mit Vorsicht anzuwenden.
 
-* Mit **[!UICONTROL Option Auf in Unterordnern von gefundene Informationen beschränken]** können Sie die dem Benutzer eines Ordners zugewiesenen Rechte einschränken. Nur die Unterordner des in dieser Option angegebenen Knotens sind für den Benutzer sichtbar:
+* Mit der Option **[!UICONTROL Beschränken auf Informationen in Unterordnern von:]** können Sie die Berechtigungen der Benutzerin bzw. des Benutzers für einen Ordner einschränken. Nur die Unterordner des in dieser Option angegebenen Knotens werden der Benutzerin bzw. dem Benutzer angezeigt:
 
   ![](assets/s_ncs_user_restrictions_operators.png)
 
   >[!IMPORTANT]
   >
-  >Dies ist eine sehr strenge Beschränkung, und sie muss mit Vorsicht angewendet werden. Ein Benutzer, der mit diesen Berechtigungen angemeldet ist, kann NUR den Inhalt des angegebenen Ordners sehen und über den Explorer auf keinen anderen Knoten der Baumstruktur zugreifen. Je nach den Funktionen hat dieser Benutzer jedoch Zugriff (z. B. auf Workflows). Der Benutzer kann Daten anzeigen, die normalerweise in Knoten gespeichert sind, auf die nicht zugegriffen werden kann.
+  >Dies ist eine sehr große Einschränkung und sie muss mit Vorsicht angewendet werden. Mit dieser Art von Berechtigungen angemeldete Benutzende können NUR die Inhalte des angegebenen Ordners anzeigen und sie haben über den Explorer keinen Zugriff auf andere Knoten der Baumstruktur. Je nach den Funktionen hat dieser Benutzer jedoch Zugriff (z. B. auf Workflows). Der Benutzer kann Daten anzeigen, die normalerweise in Knoten gespeichert sind, auf die nicht zugegriffen werden kann.
 
 ### Überprüfen von Einstellungen {#check-settings}
 
-Auf **[!UICONTROL Registerkarte]** Audit“ können Informationen zum Benutzer angezeigt werden. Die verschiedenen Registerkarten werden automatisch hinzugefügt, basierend auf den Einstellungen, die im Interventionsbereich des Benutzers definiert sind.
+Auf Registerkarte **[!UICONTROL Audit]** können Informationen zu Benutzerin bzw. Benutzer angezeigt werden. Die verschiedenen Registerkarten werden automatisch basierend auf den Einstellungen hinzugefügt, die im Eingriffsbereich der Benutzerin bzw. des Benutzers definiert sind.
 
 Sie haben Zugriff auf Folgendes:
 
@@ -184,11 +184,11 @@ Adobe Campaign verwendet technische Benutzer mit standardmäßig konfigurierten 
 
 >[!IMPORTANT]
 >
->Diese technischen Benutzerinnen und Benutzer werden standardmäßig benachrichtigt, wenn von der Plattform Informationsmeldungen zurückgegeben werden. Es wird dringend empfohlen, eine Kontakt-E-Mail für sie bereitzustellen.
+>Diese technischen Benutzenden werden standardmäßig benachrichtigt, wenn von der Plattform Informationsnachrichten zurückgegeben werden. Wir empfehlen dringend, eine Kontakt-E-Mail für sie bereitzustellen.
 >
 >Um eine korrekte Ausführung der Webanwendungen zu gewährleisten, empfehlen wir zudem, für den Benutzer &#39;webapp&#39; keine spezifischen regionalen Parameter anzugeben.
 
-Standardmäßig verfügt der technische Benutzer der Web-Anwendung über die spezifische Berechtigung ADMINISTRATION , was zu Sicherheitsrisiken führen kann. Um dieses Problem zu beheben, empfehlen wir, dieses Recht zu entfernen. Gehen Sie dazu wie folgt vor:
+Standardmäßig verfügt die technische Benutzerin bzw. der technische Benutzer „webapp“ über die spezifische Berechtigung ADMINISTRATION, was zu Sicherheitsrisiken führen kann. Um dieses Problem zu beheben, empfehlen wir, diese Berechtigung zu entfernen. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie über den Knoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** die Schaltfläche **[!UICONTROL Neu]** aus, um eine Berechtigung zu erstellen, die Sie z. B. WEBAPP nennen.
 

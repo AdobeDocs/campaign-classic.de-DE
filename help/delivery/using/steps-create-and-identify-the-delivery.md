@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 285
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 74%
 Die Erstellung eines Versands ist in der Übersicht oder im Menü **[!UICONTROL Erstellen > Versand]** möglich.
 
 
-Um einen Versand zu erstellen, klicken **[!UICONTROL oberhalb]** Versandliste auf „Erstellen“. Beim Erstellen eines neuen Versands müssen Sie den verwendeten Versandkanal angeben. Wählen Sie im Feld **[!UICONTROL Versandvorlage]** aus der Dropdown-Liste das dem gewünschten Kanal entsprechende Modell aus.
+Um einen Versand zu erstellen, klicken Sie über der Liste der Sendungen auf **[!UICONTROL Erstellen]**. Wenn sie einen neuen Versand erstellen, müssen Sie den zu verwendenden Versandkanal angeben.Wählen Sie im Feld **[!UICONTROL Versandvorlage]** aus der Dropdown-Liste das dem gewünschten Kanal entsprechende Modell aus.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -47,14 +47,14 @@ Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre
 
 ## Identifizieren des Versands {#identifying-the-delivery}
 
-Zur Identifizierung des Versands müssen Parameter ausgefüllt werden. Gehen Sie dazu wie folgt vor:
+Sie müssen die Parameter angeben, um den Versand zu identifizieren. Gehen Sie dazu wie folgt vor:
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Versand ein.
 
-   Dem Versand kann auch ein Versand-Code zugewiesen werden. Der Name des Versands und sein Code werden in der Versandliste angezeigt, sind für die Empfänger jedoch nicht sichtbar.
+   Außerdem kann dem Versand ein Versand-Code zugewiesen werden. Der Name des Versands und der Code werden in der Liste der Sendungen angezeigt, sind jedoch für die Empfängerinnen und Empfänger nicht sichtbar.
 
 1. Geben Sie im Feld **[!UICONTROL Beschreibung]** weitere, den Versand betreffende Informationen ein.
-1. Wählen Sie im entsprechenden Feld die Versandart aus. Diese Information ist insbesondere für die Versandverfolgung nützlich, da Sie die Sendungen in Listen und Abfragen nach diesem Kriterium filtern können.
+1. Wählen Sie die Versandart im entsprechenden Feld aus. Diese Information ist insbesondere für die Versandverfolgung nützlich, da Sie die Sendungen in Listen und Abfragen nach diesem Kriterium filtern können.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 

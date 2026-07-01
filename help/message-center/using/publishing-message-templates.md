@@ -17,9 +17,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 535
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgel�
 
 >[!NOTE]
 >
->Wenn Sie ein vorhandenes Feld der Transaktionsnachrichtenvorlage, wie z. B. die Absenderadresse, durch einen leeren Wert ersetzen, wird das entsprechende Feld in den Ausführungsinstanzen nicht aktualisiert, sobald die Transaktionsnachricht erneut veröffentlicht wurde. Er enthält weiterhin den vorherigen Wert.
+>Wenn Sie ein vorhandenes Feld der Transaktionsnachrichtenvorlage, z. B. die Absenderadresse, durch einen leeren Wert ersetzen, wird das entsprechende Feld auf der/den Ausführungsinstanz(en) nicht aktualisiert, sobald die Transaktionsnachricht erneut veröffentlicht wird. Es enthält weiterhin den vorherigen Wert.
 >
 >Wenn Sie jedoch einen nicht leeren Wert hinzufügen, wird das entsprechende Feld wie gewohnt nach der nächsten Veröffentlichung aktualisiert.
 

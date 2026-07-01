@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 532
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagramm
 
 ### Filtern von Daten {#filtering-data}
 
-Die Verwendung **[!UICONTROL Aktivität vom]** „Abfrage“ ist beim Erstellen eines Berichts nicht erforderlich. Daten können direkt in den Tabellen und Diagrammen gefiltert werden, aus denen der Bericht besteht.
+Die Verwendung einer Aktivität des Typs **[!UICONTROL Abfrage]** ist beim Erstellen eines Berichts nicht obligatorisch. Die Daten können direkt in den Tabellen und Diagrammen des Berichts gefiltert werden.
 
 Wählen Sie in diesem Fall die im Bericht anzuzeigenden Daten direkt in der **[!UICONTROL Seite]**-Aktivität des Berichts aus.
 
@@ -91,7 +91,7 @@ Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über di
 
 Geben Sie anschließend die Quelle der Daten Ihres Berichts im Feld **[!UICONTROL Kontextdaten]** an.
 
-Der Datenspeicherort wird automatisch abgeleitet. Bei Bedarf können Sie den Datenpfad erzwingen.
+Der Datenspeicherort wird automatisch abgeleitet. Bei Bedarf können Sie den Pfad für die Daten festlegen.
 
 ![](assets/s_ncs_advuser_report_datasource_4.png)
 

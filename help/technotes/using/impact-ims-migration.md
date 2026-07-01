@@ -14,9 +14,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 463
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Sie können Benutzende mit nativer Authentifizierung nicht mehr über die Client
 
 Daher wurden diese Aktionen in der Client-Konsole deaktiviert.
 
-Die Administration der Benutzenden erfolgt zentral in der Adobe Admin Console. Die folgenden Aufgaben werden nun ausschließlich über diese Konsole verwaltet. Erfahren Sie in der Dokumentation zu Campaign v8[&#x200B; wie Sie Benutzer erstellen und Berechtigungen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+Die Administration der Benutzenden erfolgt zentral in der Adobe Admin Console. Die folgenden Aufgaben werden nun ausschließlich über diese Konsole verwaltet. Informationen zum Erstellen von Benutzenden und Zuweisen von Berechtigungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Nicht verfügbare Optionen {#unavailable-migration}
 
@@ -131,4 +131,4 @@ Nach der Migration sind die folgenden Aufgaben nicht mehr in der Client-Konsole 
 >* [Migration von Endbenutzenden zu IMS](migrate-users-to-ims.md)
 >* [Migration von technischen Benutzenden zur Adobe Developer Console](ims-migration.md)
 >* [Neueste Versionshinweise zu Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Was ist das Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}
+>* [Was ist das Identitäts-Management-System (IMS) von Adobe](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}

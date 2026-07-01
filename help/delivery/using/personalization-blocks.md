@@ -23,17 +23,17 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1002
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Gestaltungsbausteine{#personalization-blocks}
 
-Gestaltungsbausteine sind dynamisch und personalisiert und enthalten ein spezifisches Rendering, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
+Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
+![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
-1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird bei der Personalisierung automatisch an das Empfängerprofil angepasst.
+1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird automatisch an das Profil der Empfängerin bzw. des Empfängers angepasst, wenn die Personalisierung generiert wird.
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
@@ -89,11 +89,11 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versandassistenten auf den **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
 1. Fügen Sie die Gestaltungsbausteine in den Nachrichtentext ein. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern. Wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
-1. Den ersten einzufügenden Block auswählen. Erneuern Sie das Verfahren, um die beiden anderen Blöcke einzubeziehen.
+1. Wählen Sie den ersten einzufügenden Baustein aus. Wiederholen Sie diesen Vorgang, um die beiden anderen Bausteine einzufügen.
 
    ![](assets/s_ncs_user_personalized_block_example.png)
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht dieses Empfängers anzuzeigen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um das Ergebnis der Personalisierung anzuzeigen. Um die Nachricht einer empfangenden Person anzuzeigen, müssen Sie diese Person auswählen.
 
    ![](assets/s_ncs_user_personalized_block_example2.png)
 
@@ -109,7 +109,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Grußformeln]** : Hiermit werden Grußformeln zum Empfängernamen hinzugefügt. Beispiel: „Sehr geehrter Herr Mustermann,“.
+* **[!UICONTROL Grußformeln]**: Hiermit werden Grußformeln mit dem Empfängernamen eingefügt. Beispiel: „Sehr geehrter Herr Mustermann,“.
 * **[!UICONTROL Logo einfügen]**: Hiermit wird ein natives Logo eingefügt, das beim Konfigurieren der Instanz definiert wurde.
 * **[!UICONTROL Powered by Adobe Campaign]**: Hiermit wird das Logo &quot;Powered by Adobe Campaign&quot; eingefügt.
 * **[!UICONTROL Mirrorseiten-URL]**: Hiermit wird die Mirrorseiten-URL eingefügt, damit Versanddesigner den Link prüfen können.
@@ -136,7 +136,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 ## Definieren von benutzerdefinierten Gestaltungsbausteinen {#defining-custom-personalization-blocks}
 
-Über das Symbol Personalisierte Felder können Sie neue Personalisierungsfelder definieren, die über das Menü **[!UICONTROL Einfügen…]** eingefügt werden sollen. Diese Felder werden in Gestaltungsbausteinen definiert.
+Sie können neue Personalisierungsfelder definieren, die dann über das entsprechende Symbol im Menü **[!UICONTROL Einfügen…]** verfügbar sind. Diese Felder werden in Gestaltungsbausteinen definiert.
 
 Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
@@ -154,7 +154,7 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Inhalt eingeben (in HTML, Text, JavaScript usw.) der Gestaltungsbausteine und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Geben Sie den Inhalt (in HTML, Text, JavaScript usw.) der Gestaltungsbausteine ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Anleitungsvideo {#personalization-blocks-video}
 

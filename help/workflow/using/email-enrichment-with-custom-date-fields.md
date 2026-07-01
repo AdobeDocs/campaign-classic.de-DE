@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 633
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 78%
 
 
 
-In diesem Beispiel möchten wir eine E-Mail mit benutzerdefinierten Datenfeldern an Empfängerinnen und Empfänger senden, die in diesem Monat Geburtstag feiern. Die E-Mail enthält einen Gutschein, der eine Woche vor und nach dem Geburtstag gültig ist.
+In diesem Beispiel möchten wir Empfangenden, die im aktuellen Monat Geburtstag haben, eine E-Mail mit benutzerdefinierten Datenfeldern senden. Die E-Mail enthält einen Coupon, der eine Woche vor und nach dem Geburtstag gültig ist.
 
-Wir müssen Empfänger aus einer Liste ansprechen, die diesen Monat ihren Geburtstag mit einer „Aufspaltung“-**[!UICONTROL feiern]**. Bei Verwendung der Aktivität **[!UICONTROL Anreicherung]** dient das benutzerdefinierte Datenfeld als Gültigkeitsdatum in der E-Mail für das Sonderangebot des Kunden.
+Wir müssen mit einer Aktivität **[!UICONTROL Aufspaltung]** Empfangende aus einer Liste ansprechen, die diesen Monat Geburtstag haben. Danach wird mit der Aktivität **[!UICONTROL Anreicherung]** das benutzerdefinierte Datenfeld zur Angabe des Gültigkeitsdatums in der Angebots-E-Mail verwendet.
 
 ![](assets/uc_enrichment.png)
 
@@ -91,7 +91,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist nun fertig.
 
-Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In diesem Fall haben wir einen E-Mail-Versand hinzugefügt, um Empfängern ein Sonderangebot mit Gültigkeitsdaten zu senden, die in diesem Monat Geburtstag feiern.
+Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfangende, die im aktuellen Monat Geburtstag haben, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 
 1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** per Drag &amp; Drop nach der Aktivität **[!UICONTROL Anreicherung]** ein.
 
@@ -109,7 +109,7 @@ Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinz
 Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gestalten, die Sie in der Aktivität **[!UICONTROL Anreicherung]** erstellt haben.
 
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**.
-1. Fügen Sie Ihre Target-Erweiterungen zu Ihrer E-Mail hinzu. Er sollte sich innerhalb des folgenden Ausdrucks befinden, um das Format Ihrer Gültigkeitsdaten zu konfigurieren:
+1. Fügen Sie Ihrer E-Mail die Zielgruppenerweiterungen zu hinzu. Diese sollten sich innerhalb des folgenden Ausdrucks befinden, damit Sie das Format der Gültigkeitsdaten konfigurieren können.
 
    ```
    <%=

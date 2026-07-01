@@ -22,9 +22,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 128
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 
 >[!CAUTION]
 >
->Auf das XML-Schema und das Formular, die Felder in der Profiltabelle betreffen, kann über den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur zugegriffen werden. Nur erfahrene Benutzer dürfen Änderungen an diesen Schemata vornehmen.
+>Auf das XML-Schema und das den Feldern der Profiltabelle entsprechende Formular kann über den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur zugegriffen werden. Nur erfahrene Benutzer dürfen Änderungen an diesen Schemata vornehmen.
 >
 >Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md).
 

@@ -17,9 +17,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1101
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 70%
 
 ## Unterbreitungsregeln – Überblick {#presentation-rules-overview}
 
-Mithilfe von Interaction können Sie den Fluss von Angebotsvorschlägen mithilfe von Unterbreitungsregeln steuern. Bei diesen Regeln, die speziell für Interaction gelten, handelt es sich um Typologieregeln. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem bestimmten Empfänger zuvor unterbreiteten Vorschläge basieren. Sie werden in der -Umgebung referenziert
+Interaction ermöglicht die Steuerung des Flusses der Angebotsvorschläge anhand von Unterbreitungsregeln. Diese Regeln, die speziell für Interaction gelten, heißen Typologieregeln. Sie ermöglichen den Ausschluss von Angeboten, die auf dem Verlauf der einem bestimmten Empfänger zuvor unterbreiteten Vorschläge basieren. Diese werden in der Umgebung referenziert.
 
 ## Unterbreitungsregeln erstellen und zuweisen {#creating-and-referencing-an-offer-presentation-rule}
 
@@ -59,7 +59,7 @@ Mithilfe von Interaction können Sie den Fluss von Angebotsvorschlägen mithilfe
 
 ### Anwendungskriterien {#application-criteria-}
 
-Über die Anwendungskriterien auf der Registerkarte **[!UICONTROL Allgemein]** können Sie die Angebote angeben, auf die die Unterbreitungsregel angewendet wird. Dazu müssen Sie wie unten beschrieben eine Abfrage erstellen und die betroffenen Angebote auswählen.
+Mit den Anwendungskriterien in der Registerkarte **[!UICONTROL Allgemein]** können Sie die Angebote angeben, für die die Unterbreitungsregel gelten soll. Dazu müssen Sie wie unten beschrieben eine Abfrage erstellen und die betroffenen Angebote auswählen.
 
 1. Klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten...]**.
 
@@ -81,11 +81,11 @@ Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle (standardmäßi
 
 >[!NOTE]
 >
->Sie können auch nicht standardmäßige Tabellen verwenden. Wenn Sie eine bestimmte Zielgruppendimension verwenden möchten, müssen Sie mithilfe des Zielgruppen-Mappings Tabellen sowie eine dedizierte Umgebung erstellen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Sie können auch nicht-standardmäßige Tabellen verwenden. Zur Nutzung einer bestimmten Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Ziel-Mapping erforderlich. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### Zeitraum {#period}
 
-Dies ist ein gleitender Zeitraum, der am Tag der Angebotsunterbreitung beginnt. Sie legt eine Frist für die Gültigkeit von Angebotsvorschlägen fest. Die Regel gilt nicht für Angebotsvorschläge, die nach diesem Zeitraum unterbreitet werden.
+Dies ist ein gleitender Zeitraum, der am Tag der Angebotsunterbreitung beginnt. Er legt eine Frist für die Gültigkeit von Angebotsvorschlägen fest. Die Regel gilt nicht für Angebotsvorschläge, die nach diesem Zeitraum unterbreitet werden.
 
 Der Zeitraum beginnt **X** Tage vor und endet **X** Tage nach der Unterbreitung, wobei **X** dem im Feld **[!UICONTROL Betroffener Zeitraum]** angegebenen Wert entspricht:
 
@@ -120,11 +120,11 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
   **[!UICONTROL Nur denselben Kanal betreffend]**: ermöglicht den Ausschluss der Vorschläge, die den im **[!UICONTROL Allgemein]**-Tab angegebenen Kanal betreffen.
 
-  Beispielsweise ist der Kanal, der für die Regel auf der Registerkarte **[!UICONTROL Allgemein]** angegeben ist, E-Mail. Wenn die Angebote, für die die Regel gilt, bisher nur im Web-Kanal angeboten wurden, kann die Interaction-Engine die Angebote in einem E-Mail-Versand darstellen. Sobald die Angebote jedoch per E-Mail unterbreitet wurden, wählt die Interaktions-Engine einen anderen Kanal für die Unterbreitung der Angebote aus.
+  Beispielsweise ist der für die Regel auf der Registerkarte **[!UICONTROL Allgemein]** angegebene Kanal E-Mail. Wenn die von der Regel betroffenen Angebote bisher nur über den Web-Kanal unterbreitet wurden, kann das Interaktionsmodul die Angebote für einen E-Mail-Versand auswählen. Sobald die Angebote jedoch per E-Mail unterbreitet wurden, wählt das Interaktionsmodul einen anderen Kanal für die Angebote aus.
 
   >[!NOTE]
   >
-  >Wir sprechen vom Kanal und nicht vom Raum. Wenn die Regel ein Angebot im Webkanal ausschließen muss, wird das Angebot, das auf einer Website in zwei Platzierungen (z. B. in einem Banner und im Hauptteil der Seite) präsentiert werden soll, nicht auf der Website angezeigt, wenn es bereits zuvor präsentiert wurde.
+  >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots über den Web-Kanal vorsieht, wird ein Angebot, das auf einer Website in zwei Platzierungen (z. B. in einem Banner und im Textkörper der Seite) unterbreitet werden soll, nicht auf der Site angezeigt, wenn es zuvor schon unterbreitet wurde.
   >
   >Im Falle eines Workflows, der eine Angebotsunterbreitung enthält, können Regeln nur korrekt berücksichtigt werden, wenn der Parameter **[!UICONTROL Alle Kanäle]** ausgewählt wurde.
 
@@ -132,7 +132,7 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
   Dieses Feld ermöglicht es, die Zählung der Angebote auf gewisse Angebotsgruppen zu beschränken.
 
-  **[!UICONTROL Alle]**: Standardwert. Auf die Angebote wird kein Filter angewendet.
+  **[!UICONTROL Alle Angebote]**: Standardwert. Die Angebote werden nicht gefiltert.
 
   **[!UICONTROL Nur das aktuell unterbreitete Angebot]**: Das im **[!UICONTROL Allgemein]**-Tab angegebene Angebot wird ausgeschlossen, wenn es zuvor bereits unterbreitet wurde.
 
@@ -140,13 +140,13 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
   **[!UICONTROL Angebote, für die die Regel Anwendung findet]**: Wenn im **[!UICONTROL Allgemein]**-Tab mehrere Angebote angegeben wurden, wird jeder einzelne Vorschlag dieser Angebotsgruppe gezählt und bei Erreichen der maximalen Vorschlagsanzahl werden alle angegebenen Angebote ausgeschlossen.
 
-  Zum Beispiel werden die Angebote 2, 3 und 5 auf der Registerkarte **[!UICONTROL Allgemein]** definiert. Die maximale Anzahl von Vorschlägen ist auf 2 festgelegt. Wenn die Angebote 2 und 5 jeweils einmal präsentiert werden, beträgt die Anzahl der gezählten Vorschläge 2. Daher wird Angebot 3 nie angezeigt.
+  Zum Beispiel werden die Angebote 2, 3 und 5 auf der Registerkarte **[!UICONTROL Allgemein]** definiert. Die maximale Anzahl von Vorschlägen ist auf 2 festgelegt. Wenn Angebot 2 und 5 jeweils einmal unterbreitet werden, beträgt die Anzahl der Vorschläge 2. Daher wird Angebot 3 nie unterbreitet.
 
 * **Vorschlagsstatusfilter**
 
   Dieses Feld ermöglicht die direkte Auswahl der gängigsten Vorschlagsstatus, die zu berücksichtigen sind, wenn sie im Verlauf erscheinen.
 
-  **[!UICONTROL Unabhängig vom Vorschlagsstatus]** : Standardwert. Auf den Vorschlagsstatus wird kein Filter angewendet.
+  **[!UICONTROL Unabhängig vom Vorschlagsstatus]**: Standardwert. Der Vorschlagsstatus wird nicht gefiltert.
 
   **[!UICONTROL Angenommene oder abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die angenommen oder abgelehnt wurden.
 

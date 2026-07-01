@@ -21,15 +21,15 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2017
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Dienstleister, Lager und Budgets{#providers-stocks-and-budgets}
 
-Mit Adobe Campaign können Sie Dienstleister definieren, die an der Ausführung der Kampagnen beteiligt sind. Informationen über die Dienstleister und die damit verbundenen Kostenstrukturen werden vom Adobe Campaign-Administrator aus der Hauptansicht definiert. Der Dienstleister wird vom Versand aus referenziert, und seine Kostenstrukturen ermöglichen die Berechnung der mit diesem Versand verbundenen Kosten sowie die Verwaltung des betroffenen Lagers.
+Mit Adobe Campaign können Sie Dienstleister definieren, die an der Ausführung der Kampagnen beteiligt sind. Informationen bezüglich dieser Dienstleister und der ihnen zugeordneten Kostenstrukturen werden von der Adobe Campaign-Administration in der allgemeinen Übersicht festgelegt. Der Dienstleister wird über den Versand referenziert: Seine Kostenstrukturen ermöglichen die Berechnung der mit dem Versand verbundenen Kosten sowie die Verwaltung der betroffenen Lager.
 
 ## Erstellung von Dienstleistern und deren Kostenstrukturen {#creating-service-providers-and-their-cost-structures}
 
@@ -59,7 +59,7 @@ Die während der Sendungen ausgeführten Aufträge werden von Dienstleistern aus
 
 #### Hinzufügen eines Dienstleisters {#adding-a-service-provider}
 
-Sie können so viele Dienstleister erstellen, wie für Ihre Sendungen erforderlich sind. Gehen Sie wie folgt vor, um einen Dienstleister hinzuzufügen:
+Sie können so viele Dienstleister erstellen, wie für Ihre Sendungen notwendig sind. Gehen Sie wie folgt vor, um einen Dienstleister hinzuzufügen:
 
 1. Machen Sie einen Rechtsklick in die Liste der Dienstleister und wählen Sie **[!UICONTROL Neu]** aus oder klicken Sie auf die Schaltlfäche **[!UICONTROL Neu]** oberhalb der Liste.
 1. Geben Sie im unteren Abschnitt des Fensters Namen und Kontaktdaten des Dienstleisters an.
@@ -70,13 +70,13 @@ Sie können so viele Dienstleister erstellen, wie für Ihre Sendungen erforderli
 
 #### Bestimmung der Kostenkategorien {#defining-cost-categories}
 
-Sie müssen jedem Dienstleister Dienstleistungsvorlagen zuordnen. In diesen Vorlagen müssen Sie zunächst die Kostenstellen und bei Bedarf den betreffenden Bestand festlegen. Anschließend müssen Sie über die Kostenstrukturen die Kostenberechnungsregeln für jede Kategorie erstellen.
+Sie müssen Dienstleistungsvorlagen mit jedem Dienstleister verknüpfen. In diesen Vorlagen müssen Sie zunächst die Kostenstellen und bei Bedarf den betreffenden Bestand festlegen. Anschließend müssen Sie über die Kostenstrukturen die Kostenberechnungsregeln für jede Kategorie erstellen.
 
 >[!NOTE]
 >
 >Lesen Sie diesbezüglich auch den Abschnitt [Bestimmung der Kostenstruktur](#defining-the-cost-structure).
 
-Eine Kostenkategorie ist eine Gruppe von Kosten, die für einen bestimmten Versandtyp (E-Mail, Briefpost usw.) anfallen. oder für eine Aufgabe. Kostenstellen sind in den mit den Dienstleistern verknüpften Dienstleistungsvorlagen zusammengefasst. Jeder Dienstleister kann auf eine oder mehrere Dienstleistungsvorlagen verweisen.
+Eine Kostenkategorie ist eine Gruppe verschiedener Kosten, die für einen bestimmten Versandtyp (E-Mail, Briefpost, SMS usw.) oder für eine Aufgabe verwendet werden können. Kostenstellen sind in den mit den Dienstleistern verknüpften Dienstleistungsvorlagen zusammengefasst. Jeder Dienstleister kann auf eine oder mehrere Dienstleistungsvorlagen verweisen.
 
 Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen Sie wie folgt vor:
 
@@ -137,7 +137,7 @@ Wenn der Betrag auf eine bestimmte Anzahl an Nachrichten angewandt wird, geben S
 
 #### Lineare Struktur mit Schwellen {#linear-structure-by-threshold}
 
-Wenn der Betrag nach Schwellenwert für jede Nachricht gilt, müssen Sie eine Berechnungsstruktur **[!UICONTROL Linear nach Schwellenwert]** definieren. Bei dieser Kostenstruktur kostet jede Nachricht 0,13, z. B. wenn die Gesamtzahl der Nachrichten zwischen 1 und 100 liegt, 0,12 bei zwischen 100 und 1.000 versendeten Nachrichten und 0,11 jenseits von 1.000 Nachrichten.
+Wenn der Betrag nach Schwellenwert für jede Nachricht gilt, müssen Sie eine Berechnungsstruktur **[!UICONTROL Linear mit Schwellen]** definieren. Mit dieser Art von Kostenstruktur kostet zum Beispiel jede Nachricht 0,13, wenn die Gesamtzahl der Nachrichten zwischen 1 und 100 liegt, 0,12 bei zwischen 100 und 1.000 versendeten Nachrichten und 0,11 jenseits von 1.000 Nachrichten.
 
 Die Konfiguration stellt sich wie folgt dar:
 
@@ -163,17 +163,17 @@ Klicken Sie auf den Tab **[!UICONTROL Vorgänge]**, um die Übermittlung von Inf
 
   ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* Im Abschnitt **[!UICONTROL Benachrichtigungs-E]** können Sie die Vorlage angeben, die Service-Provider nach dem Versand von Dateien benachrichtigen soll. Wählen Sie die Vorlage, mit der die Warnmeldung erstellt wird, und die Empfängergruppe aus.
+* Im Abschnitt **[!UICONTROL Benachrichtigungs-E-Mail]** können Sie die Vorlage für die Benachrichtigung von Dienstleistern nach dem Versand von Dateien angeben. Wählen Sie die Vorlage, mit der die Warnmeldung erstellt werden soll, und die Gruppe der Empfängerinnen und Empfänger.
 
   Die Versandvorlagen der Benachrichtigungen werden standardmäßig im Knoten **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** des Explorers gespeichert.
 
-* Im **[!UICONTROL Anschlussvorgang]** können Sie den Workflow auswählen, der nach der Genehmigung des Versands gestartet werden soll. Wenn eine Workflow-Vorlage eingegeben wird, wird automatisch eine Workflow-Instanz erstellt und gestartet, sobald die Genehmigung wirksam wird. Dieser Workflow kann die Extraktionsdatei beispielsweise zur Verarbeitung an einen externen Dienstleister senden.
+* Im Abschnitt **[!UICONTROL Anschlussvorgang]** können Sie den Workflow auswählen, der nach der Genehmigung des Versands gestartet werden soll. Wenn eine Workflow-Vorlage eingegeben wird, wird automatisch eine Workflow-Instanz erstellt und gestartet, sobald die Genehmigung wirksam wird. Dieser Workflow kann die Extraktionsdatei beispielsweise zur Verarbeitung an einen externen Dienstleister senden.
 
 ### Zuordnung von Dienstleistungen zu Kampagnen {#associating-a-service-with-a-campaign}
 
-Services werden über Sendungen oder Aufgaben mit Kampagnen verknüpft. Dienstleister werden mit Versandvorlagen verknüpft, um ihre Services in den über diese Vorlage erstellten Sendungen anzubieten.
+Dienste werden über Sendungen oder Aufgaben mit Kampagnen verknüpft. Dienstleister werden mit Versandvorlagen verknüpft, um ihre Dienste in den über diese Vorlage erstellten Sendungen anzubieten.
 
-Wenn ein Service ausgewählt wird, die Kostenkategorien, die dem Versandtyp entsprechen (Briefpost, E-Mail usw.) werden automatisch in der zentralen Tabelle zusammen mit den definierten Verarbeitungsoptionen angezeigt.
+Wenn ein Dienst ausgewählt wird, werden die Kostenkategorien entsprechend dem Versandtyp (Briefpost, E-Mail usw.) automatisch in der zentralen Tabelle angegeben, ebenso wie die bereits definierten Verarbeitungsoptionen.
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um die Parameter d
 
   ![](assets/s_ncs_user_stocks_create_line.png)
 
-* Geben Sie im Feld „Alarmstufe“ den Schwellenwert an **[!UICONTROL ab dem Benutzer auf]** gewarnt werden sollen. Wenn die Warnstufe erreicht wird, wird im Validierungsfenster von Sendungen, die diese Lagerhaltung verwenden, eine Warnmeldung angezeigt.
+* Geben Sie im Feld **[!UICONTROL Meldebestand]** den Schwellenwert an, bei dem die Benutzenden über eine notwendige Lagerergänzung benachrichtigt werden sollen. Beim Erreichen des Meldebestands wird im Validierungsfenster der Sendungen, die auf dieses Lager zugreifen, ein Warnhinweis angezeigt.
 
 #### Lagerpositionen zu Kostenkategorien zuordnen {#associating-a-stock-with-cost-categories}
 
@@ -265,7 +265,7 @@ Folgendes Beispiel zeigt, wie Lagerpositionen in Dienstleistungen über die Kost
 
 #### Benachrichtigung bei unzureichendem Bestand {#alerting-operators}
 
-Ein Warnhinweis wird angezeigt, wenn ein Bestand, auf den in einem Versand verwiesen wird, nicht ausreicht. Beispielsweise wird folgender Warnhinweis angezeigt, wenn eine Extraktionsdatei validiert wurde:
+Bei einem Versand, der auf eine Lagerposition mit unzureichendem Bestand zugreift, wird ein Warnhinweis angezeigt. Das unten stehende Beispiel zeigt die Meldung, die bei Validierung einer Extraktionsdatei erscheint:
 
 ![](assets/s_ncs_user_stocks_valid_alert.png)
 
@@ -281,11 +281,11 @@ Um eine neue Ergänzung zu speichern, öffnen Sie die entsprechende Lagerpositio
 
 >[!NOTE]
 >
->Sobald das Lieferdatum erreicht ist, verschwindet die bestellte Lagerposition automatisch und die im Feld **[!UICONTROL Menge auf Bestellung]** eingegebene Menge wird der Registerkarte **[!UICONTROL Tracking]** hinzugefügt. Diese Menge wird automatisch zum Lagerbestand hinzugefügt.
+>Bei Erreichen des Versanddatums verschwindet die Lagerergänzungszeile automatisch und die im Feld **[!UICONTROL Menge]** angegebene Ergänzung wird in der Registerkarte **[!UICONTROL Tracking]** angezeigt. Diese Menge wird automatisch zum Lagerbestand hinzugefügt.
 
 ![](assets/s_ncs_user_stocks_node_08.png)
 
-Die **[!UICONTROL Verbrauchswerte]** enthält das pro Kampagne verbrauchte Volumen. Die Informationen auf dieser Registerkarte werden automatisch entsprechend den durchgeführten Sendungen eingegeben. Klicken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten]**, um die betroffene Kampagne zu öffnen.
+Die Registerkarte **[!UICONTROL Entnahmen]** enthält das pro Kampagne entnommene Volumen. Die Informationen in dieser Registerkarte werden entsprechend den durchgeführten Sendungen automatisch angegeben. Klicken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten]**, um die betroffene Kampagne zu öffnen.
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 
@@ -293,13 +293,13 @@ Die **[!UICONTROL Verbrauchswerte]** enthält das pro Kampagne verbrauchte Volum
 
 ### Funktionsprinzip {#principle}
 
-Kosten werden für Sendungen und Kampagnen verwaltet. Je nach Fortschritt werden diese Kosten den Haushalten zugewiesen.
+Kosten werden für Sendungen und Kampagnen verwaltet. Je nach Fortschritt werden diese Kosten den Budgets zugewiesen.
 
-Die Versandkosten für eine Kampagne werden auf Kampagnenebene konsolidiert, und die Kosten aller Kampagnen eines Programms werden an das Programm weitergegeben, mit dem sie verknüpft sind. Mit speziellen Berichten können Sie die Budgets für die gesamte Plattform oder für jeden Plan und jedes Programm verfolgen.
+Die Versandkosten einer Kampagne werden auf Kampagnenebene konsolidiert und die Kosten aller Kampagnen eines Programms werden an das Programm übergeben, mit dem sie verknüpft sind. Mit speziellen Berichten können Sie die Budgets für die gesamte Plattform oder für jeden Plan und jedes Programm verfolgen.
 
 ### Umsetzung {#implementation}
 
-Wenn Sie in einer Kampagne das Budget auswählen, müssen Sie den Ausgangsbetrag eingeben. Die berechneten Kosten werden automatisch entsprechend der Höhe der Mittelbindung der angegebenen Beträge aktualisiert (getätigte, erwartete, reservierte, gebundene Ausgaben). Siehe [Betragsberechnung](../../mrm/using/controlling-costs.md#calculating-amounts).
+Wenn Sie in einer Kampagne das Budget auswählen, müssen Sie den Ausgangsbetrag eingeben. Die berechneten Kosten werden entsprechend dem Verbindlichkeitsniveau der angegebenen Beträge automatisch aktualisiert (realisierte, geplante, reservierte, eingesetzte Ausgaben). Siehe [Betragsberechnung](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >

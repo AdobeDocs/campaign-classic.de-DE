@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 914
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ The detailed process when validating and sending a delivery is presented in the 
 
 ## Erweiterte Parameter {#advanced-parameters}
 
-Die **[!UICONTROL Eigenschaften]** ermöglicht den Zugriff auf den erweiterten Versandparameter. Die für SMS-Sendungen spezifischen Parameter finden Sie **[!UICONTROL Abschnitt „SMS]** Parameter“ auf der Registerkarte **[!UICONTROL Versand]**.
+Mit der Schaltfläche **[!UICONTROL Eigenschaften]** können Sie auf den erweiterten Versandparameter zugreifen. Die für SMS-Sendungen spezifischen Parameter befinden sich im Abschnitt **[!UICONTROL SMS-Parameter]** in der Registerkarte **[!UICONTROL Versand]**.
 
 Folgende Optionen stehen zur Verfügung:
 
@@ -56,7 +56,7 @@ Folgende Optionen stehen zur Verfügung:
 
   >[!IMPORTANT]
   >
-  >Überprüfen Sie die Gesetze in Ihrem Land bezüglich der Bearbeitung von Absendernamen. Sie sollten auch mit Ihrem Operator überprüfen, ob er diese Funktion anbietet.
+  >Prüfen Sie die Gesetze in Ihrem Land bezüglich der Bearbeitung von Absendernamen. Stellen Sie außerdem sicher, dass der Provider diese Funktionalität anbietet.
 
 * **Übermittlungsmodus**: Art der SMS-Übermittlung.
 * **Priorität**: Einer Nachricht zugewiesene Wichtigkeit. **[!UICONTROL Normal]** ist standardmäßig ausgewählt. Fragen Sie Ihren Provider nach den Kosten für mit der Priorität **[!UICONTROL Hoch]** versendete SMS.
@@ -72,7 +72,7 @@ Folgende Optionen stehen zur Verfügung:
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **Maximale Anzahl von SMS pro Nachricht**: Mit dieser Option können Sie die Anzahl der SMS festlegen, die zum Senden einer Nachricht verwendet werden soll. Wenn die Zahl auf 0 gesetzt ist, können Sie eine SMS verwenden, um Ihre Nachricht zu versenden. Wenn die Anzahl der SMS beispielsweise auf 1 oder 2 eingestellt ist und die Nachricht diesen Schwellenwert überschreitet, wird sie nicht gesendet.
+* **Maximale Anzahl an SMS pro Nachricht**: Diese Option bietet die Möglichkeit, die Anzahl von SMS-Nachrichten festzulegen, die zum Senden einer Nachricht verwendet werden sollen. Wenn die Zahl auf 0 gesetzt ist, können Sie eine SMS verwenden, um Ihre Nachricht zu versenden. Wenn die Zahl auf 1 oder 2 gesetzt ist und die Nachricht diese Schwelle überschreitet, wird sie nicht gesendet.
 
 <!--
 ## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
@@ -86,13 +86,13 @@ After sending messages, you can monitor and track your deliveries. For more on t
 
 ## Eingehende Nachrichten verarbeiten {#processing-inbound-messages}
 
-Das **nlserver sms**-Modul fragt den SMS-Router in regelmäßigen Abständen ab. Auf diese Weise kann Adobe Campaign den Fortschritt von Sendungen verfolgen und Statusberichte sowie Abmeldeanfragen von Empfängern verarbeiten.
+Das **nlserver sms**-Modul fragt den SMS-Router in regelmäßigen Abständen ab. Dadurch kann Adobe Campaign den Fortschritt von Sendungen nachverfolgen und die Statusberichte und Empfängerabmeldungen bearbeiten.
 
 * **Empfangsbestätigungen**: Der Status Ihrer Sendungen kann in den Versandlogs eingesehen werden.
 
   >[!NOTE]
   >
-  >Jede gesendete SMS ist mit einem externen Konto und seinem Primärschlüssel verknüpft. Auf diese Weise:
+  >Jede gesendete SMS ist mit einem externen Konto über dessen Primärschlüssel verknüpft. Dies bedeutet, dass:
   >
   > * Empfangsbestätigungen eines externen Kontos für gelöschte SMS nicht korrekt verarbeitet werden können.
   > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
@@ -101,7 +101,7 @@ Das **nlserver sms**-Modul fragt den SMS-Router in regelmäßigen Abständen ab.
 
 ## InSMS-Schema {#insms-schema}
 
-Das InSMS-Schema enthält Informationen zu eingehenden SMS. Eine Beschreibung dieser Felder ist über das Attribut desc verfügbar.
+Das InSMS-Schema enthält Informationen zu eingehenden SMS. Eine Beschreibung dieser Felder ist über das Attribut „desc“ verfügbar.
 
 * **message**: Inhalt der erhaltenen SMS.
 * **origin**: Mobiltelefonnummer des Nachrichtenabsenders.
@@ -137,7 +137,7 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 >
 >Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen hierzu finden Sie im Abschnitt [Externes SMPP-Konto erstellen](sms-set-up.md#creating-an-smpp-external-account).
 >
->Es ist Teil des Zertifizierungsprozesses, der von amerikanischen Betreibern für Marketingkampagnen in den USA durchgeführt wird. Diese Antworten auf Abonnenten-SMS-Nachrichten, die das Keyword enthalten, müssen sofort nach Erhalt einer Nachricht von ihnen an den Abonnenten zurückgesendet werden.
+>Es ist Teil des Zertifizierungsprozesses, der von amerikanischen Betreibern für Marketing-Kampagnen in den USA durchgeführt wird. Insbesondere müssen diese SMS Abonnentinnen bzw. Abonnenten, die ein entsprechendes Schlüsselwort gesendet haben, unverzüglich nach Erhalt einer Nachricht zugestellt werden.
 
 1. Erstellen Sie eine XML-Datei nach folgendem Muster:
 
@@ -182,6 +182,6 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Diese Arten von automatischen Nachrichten behalten keinen Verlauf. Daher werden sie nicht im Versand-Dashboard angezeigt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>Für diese Arten von automatischen Nachrichten wird kein Verlauf erstellt. Daher werden sie nicht im Versand-Dashboard angezeigt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
 >Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=de){target="_blank"}.

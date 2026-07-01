@@ -20,9 +20,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 375
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -48,11 +48,11 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
 1. Web-Anwendungen
 
-   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzer auf authentifizierte Benutzer (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf der Grundlage verschiedener Kriterien einrichten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-applications.md).
+   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder in einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzenden auf authentifizierte Benutzende (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf Basis verschiedener Kriterien einrichten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-applications.md).
 
 1. Landingpages
 
-   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website verfügbar ist und auf der Benutzer Informationen eingeben können, die in der Adobe Campaign-Datenbank gespeichert werden sollen. Der Inhalt dieser Art von Seite wird in der Regel von einer spezialisierten Web-Agentur erstellt, bevor er zur Veröffentlichung, Verwaltung und Nachverfolgung in Adobe Campaign importiert wird. Weitere Informationen hierzu finden Sie auf [dieser Seite](creating-a-landing-page.md).
+   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzende Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden sollen. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Web-Agentur erstellt und danach in Adobe Campaign zur Veröffentlichung, Verwaltung und Nachverfolgung importiert. Weitere Informationen hierzu finden Sie auf [dieser Seite](creating-a-landing-page.md).
 
 1. Umfragen
 
@@ -60,7 +60,7 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
    >[!CAUTION]
    >
-   >**Survey Manager** ist ein optionales Adobe Campaign-Modul. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+   >**Survey Manager** ist ein optionales Modul von Adobe Campaign. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 1. Facebook-Anwendungen
 
@@ -68,6 +68,6 @@ Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstelle
 
    >[!CAUTION]
    >
-   >**Social Marketing** ist ein optionales Adobe Campaign-Modul. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+   >**Social Marketing** ist ein optionales Modul von Adobe Campaign. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-forms.md).

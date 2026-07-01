@@ -24,9 +24,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 675
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -66,21 +66,21 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 
 1. Geben Sie die folgenden Details an:
 
-   * **[!UICONTROL AWS S3-Kontoserver]**
-URL Ihres Servers, sollte sie wie folgt ausgefüllt werden:
+   * **[!UICONTROL AWS-S3-Konto-Server]**
+Die URL Ihres Servers sollte wie folgt ausgefüllt werden:
 
      ```
      <S3bucket name>.s3.amazonaws.com/<s3object path>
      ```
 
    * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**
-Informationen dazu, wo Sie Ihre AWS-Zugriffsschlüssel-ID finden, finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Informationen darüber, wo Sie die AWS-Zugriffsschlüssel-ID finden, erhalten Sie [auf dieser Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
    * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**
-Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [&#x200B; finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Informationen darüber, wo Sie Ihren geheimen AWS-Zugriffsschlüssel finden, erhalten Sie [auf dieser Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS-Region]**
-Weitere Informationen zur Region AWS finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+Weiterführende Informationen zur AWS-Region finden Sie [auf dieser Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
    ![](assets/aam_config_2.png)
 
@@ -90,7 +90,7 @@ Ihre externen Konten sind somit konfiguriert.
 
 ## Schritt 2: Konfigurieren Sie die Datenquellen. {#step-2--configure-the-data-source}
 
-Der **Empfänger - Besucher-ID** wird in Audience Manager erstellt. Dies ist eine vorkonfigurierte Datenquelle, die standardmäßig für die Besucher-ID konfiguriert ist. Die in Campaign erstellten Segmente werden Teil dieser Datenquelle sein.
+**Empfänger – Besucher-ID** wird in Audience Manager erstellt. Dies ist eine native Datenquelle, die standardmäßig für die Besucher-ID konfiguriert ist. Die in Campaign erstellten Segmente werden Teil dieser Datenquelle sein.
 
 So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 

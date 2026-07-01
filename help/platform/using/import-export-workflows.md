@@ -22,9 +22,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 98
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 64%
 
 ## Daten erheben {#collecting-data-workflows}
 
-Workflows können eine nützliche Methode sein, um einige Ihrer Importprozesse zu automatisieren. Unabhängig davon, ob Sie Daten aus einer lokalen Datei oder aus einem SFTP-Server importieren, können Sie Workflows verwenden, um Ihre Datenverwaltungsverfahren zu standardisieren.
+Workflows können eine nützliche Möglichkeit darstellen, einige Ihrer Importprozesse zu automatisieren. Sie können Workflows zum Standardisieren ihrer Daten-Management-Prozesse verwenden, egal ob Sie Daten aus einer lokalen Datei oder von SFTP importieren.
 
 >[!NOTE]
 >

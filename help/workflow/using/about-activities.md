@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 98
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 50%
 
 In diesem Abschnitt werden alle verfügbaren Aktivitäten beschrieben. Je nach Knoten oder Kontext, in dem der Workflow erstellt/bearbeitet wird, können die verfügbaren Aktivitäten variieren. Die in einer Kampagne erstellten Workflows weisen beispielsweise kanalspezifische Versandaktivitäten auf.
 
-Workflow-Aktivitäten sind in Kategorien gruppiert. Es stehen vier Registerkarten gleichzeitig zur Verfügung.
+Workflow-Aktivitäten sind in Kategorien gruppiert. Jeweils vier Registerkarten stehen gleichzeitig zur Verfügung:
 
 In den Kampagnen-Workflows wird der Tab **[!UICONTROL Ereignisse]** durch den Tab **[!UICONTROL Versand]** ersetzt. Die Aktivitäten auf diesem Tab werden im Abschnitt [Aktionsaktivitäten](about-action-activities.md) beschrieben.
 

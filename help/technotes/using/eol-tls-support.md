@@ -19,9 +19,9 @@ feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 880
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe unterstützt jetzt niedrigere Versionen von TLS (einschließlich TLS 1.0 u
 
 ## Was kann ich tun, um den Service wieder aufzunehmen?
 
-Moderne Webbrowser unterstützen TLS 1.2. Durch ein Upgrade Ihres Browsers können Sie auf diese Apps und Dienste zugreifen.
+Moderne Webbrowser unterstützen TLS 1.2. Durch eine Aktualisierung Ihres Browsers können Sie auf diese Anwendungen und Dienste zugreifen.
 
 Sie können einen der folgenden gängigen Browser herunterladen und installieren:
 
@@ -50,7 +50,7 @@ Sie können einen der folgenden gängigen Browser herunterladen und installieren
 
 Wenn Sie einen anderen Browser verwenden möchten, stellen Sie sicher, dass dieser TLS 1.2 unterstützt.
 
-Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn die Aktualisierung Ihres Browsers Ihr Problem nicht behebt, stellen Sie sicher, dass Ihr Computer die in der [Campaign-Kompatibilitätsmatrix“ aufgeführten Systemanforderungen &#x200B;](../../rn/using/compatibility-matrix.md).
+Auch ihr Betriebssystem und Ihre Anwendungen müssen TLS 1.2 unterstützen. Wenn die Aktualisierung des Browsers das Problem nicht behebt, stellen Sie sicher, dass Ihr Computer die in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführten Systemanforderungen erfüllt.
 
 ## Häufig gestellte Fragen{#faq}
 
@@ -76,7 +76,7 @@ Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn
 
 * **Ist TLS anfällig für Hacker?**
 
-  Es wurden Angriffe auf TLS 1.0 mit einer älteren Verschlüsselungsmethode dokumentiert, und die älteren Versionen sind anfälliger als TLS 1.2. Weitere Informationen finden Sie unter Angriffe auf TLS/SSL.
+  Für TLS 1.0 mit seiner älteren Verschlüsselungsmethode wurden Angriffe dokumentiert und die älteren Versionen sind anfälliger als TLS 1.2. Weitere Informationen finden Sie unter „Angriffe auf TLS/SSL“.
 
 * **Warum deaktiviert Adobe die Unterstützung für TLS 1.0 und 1.1?**
 
@@ -96,7 +96,7 @@ Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn
 
 * **Welche Fehlermeldung wird angezeigt, wenn ich einen Browser verwende, der nicht für TLS 1.2 konfiguriert ist?**
 
-  Das hängt vom verwendeten Browser ab. Alle in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) genannten Browser sind für die Verwendung von TLS 1.2 konfiguriert. Wenn Sie einen Browser oder eine Version verwenden, die nicht in der Liste aufgeführt ist, aktualisieren Sie Ihren Browser.
+  Das hängt vom verwendeten Browser ab. Alle in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) genannten Browser sind für die Verwendung von TLS 1.2 konfiguriert. Wenn Sie eine Browser-Version verwenden, die nicht in der Liste aufgeführt ist, aktualisieren Sie Ihren Browser.
 
   Adobe hat keine Kontrolle über Fehlermeldungen, die von der SSL-Kommunikationsschicht generiert wurden. Der Browser generiert diese Nachrichten, bevor er eine Verbindung zu Anwendungen und Services von Adobe herstellt. Hier ist ein Beispiel für einen Fehler, der mit Internet Explorer 11 unter Windows 7 auftreten kann:
 

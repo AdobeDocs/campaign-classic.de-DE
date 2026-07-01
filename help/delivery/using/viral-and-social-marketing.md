@@ -21,9 +21,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 622
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Damit können Empfängerinnen und Empfänger eines Versands oder Website-Besuche
 
 >[!CAUTION]
 >
->Damit hinzugefügte Links ordnungsgemäß funktionieren, muss die entsprechende Mirrorseite verfügbar sein. Fügen Sie dazu den Link zur Mirrorseite in den Versand ein.
+>Damit diese Links korrekt funktionieren, muss die der entsprechende Mirrorseite verfügbar sein. Fügen Sie dazu den Link zur Mirrorseite im Versand ein.
 
 ## Soziale Netzwerke: Teilen von Links {#social-networks--sharing-a-link}
 
@@ -47,7 +47,7 @@ Um den Versandempfängern die Möglichkeit zu geben, den Inhalt der Nachrichten 
 
 >[!NOTE]
 >
->Standardmäßig wird dieser Link nicht in der Blockliste angeboten. Sie können darauf zugreifen, indem Sie auf **[!UICONTROL Sonstige…]** klicken und den **[!UICONTROL Link zur Freigabe in sozialen Netzwerken]** auswählen.
+>Standardmäßig wird dieser Link nicht in der Liste der Bausteine angeboten. Sie können auf ihn zugreifen, indem Sie auf **[!UICONTROL Sonstige…]** klicken und den Baustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** auswählen.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -55,15 +55,15 @@ Der nachfolgende Screenshot zeigt das Ergebnis der Bausteineinfügung.
 
 ![](assets/s_ncs_user_viral_add_link_rendering.png)
 
-Wenn der Empfänger auf das Symbol eines der angezeigten sozialen Netzwerke klickt, wird er automatisch zu seinem Konto weitergeleitet und kann den Nachrichteninhalt über einen Link teilen. Auf diese Weise können die Mitglieder ihres Netzwerks auf die Kommunikation zugreifen.
+Wenn eine Person auf das Symbol von einem der angezeigten sozialen Netzwerke klickt, wird sie automatisch zu ihrem Konto weitergeleitet und kann den Nachrichteninhalt über einen Link teilen. Auf diese Weise können die Mitglieder ihres Netzwerks auf die Kommunikation zugreifen.
 
 >[!NOTE]
 >
->Dieser Gestaltungsbaustein enthält alle Links (zum Senden von Nachrichten und zum Teilen mit allen sozialen Netzwerken). Es kann an Ihre Bedürfnisse angepasst werden. Die Konfiguration ist jedoch erfahrenen Benutzern vorbehalten. Auf den Baustein kann im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden.
+>Dieser Gestaltungsbaustein enthält alle Links (zum Senden von Nachrichten und zum Teilen in allen sozialen Netzwerken). Er kann an Ihre Bedürfnisse angepasst werden. Die Konfiguration ist jedoch erfahrenen Benutzenden vorbehalten. Auf den Baustein kann im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden.
 
 ## Weiterleiten von Nachrichten {#viral-marketing--forward-to-a-friend}
 
-Ein viraler Dienst ermöglicht die Ausführung von Aktionen vom Typ „Empfehlung“: Diese Aktionen ermöglichen es Ihnen, eine Nachricht an einen Freund weiterzuleiten. Das Profil des/der Schiedsrichter(s) wird vorübergehend in der Datenbank (in einer dedizierten Tabelle) gespeichert. Weitergeleitete Nachrichten enthalten einen Link, über den der Schiedsrichter abonnieren kann: Wenn sie dies tun, werden sie der Adobe Campaign-Datenbank hinzugefügt.
+Ein viraler Dienst ermöglicht die Ausführung von Aktionen zur Empfehlung. Mit diesen Aktionen können Sie eine Nachricht an eine Freundin bzw. einen Freund weiterleiten. Das Profil der Person, der etwas empfohlen wird, wird vorübergehend in der Datenbank gespeichert (in einer entsprechenden Tabelle). Weitergeleitete Nachrichten enthalten einen Link zum Abonnieren für die Person, der etwas empfohlen wurde. Wenn sie dies tut, wird sie der Adobe Campaign-Datenbank hinzugefügt.
 
 Gehen Sie zur Ermöglichung der Weiterleitung wie bei der Einfügung des Teilen-Links der sozialen Netzwerke vor.
 
@@ -86,7 +86,7 @@ Folgende Schritte sind dazu nötig:
    >
    >Sie können außerdem das Weiterleitungsformular Ihren Wünschen entsprechend ändern. Dies geschieht über die Webanwendung **Teilen-Formular**, auf die Sie im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** zugreifen können.
 
-1. In der weitergeleiteten Nachricht ermöglicht ein Link dem Schiedsrichter, sein Profil in der Datenbank zu speichern. Hierfür wird ein Anmeldeformular bereitgestellt.
+1. Über einen Link in der weitergeleiteten Nachricht kann die Person, der etwas empfohlen wurde, das Profil in der Datenbank speichern. Hierfür wird ein Eingabeformular bereitgestellt.
 
    ![](assets/s_ncs_user_viral_create_account_form.png)
 
@@ -102,7 +102,7 @@ Folgende Schritte sind dazu nötig:
 
 ## Teilen in sozialen Netzwerken tracken {#tracking-social-network-sharing}
 
-Die Freigabe und der Zugriff auf freigegebene Informationen werden verfolgt. Diese von Adobe Campaign erfassten Informationen sind an zwei Stellen verfügbar:
+Das Teilen und der Zugriff auf geteilte Informationen werden nachverfolgt. Es gibt zwei Möglichkeiten, auf die in Adobe Campaign erfassten Informationen zuzugreifen:
 
 * im **[!UICONTROL Tracking]**-Tab des Versands (oder des Empfängerprofils):
 

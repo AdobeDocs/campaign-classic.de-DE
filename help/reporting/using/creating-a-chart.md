@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 565
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 85%
 
 
 
-Die Daten in der Datenbank können auch erfasst und in einem Diagramm angezeigt werden. Adobe Campaign bietet eine Reihe grafischer Darstellungen. Ihre Konfiguration wird unten beschrieben.
+Die Daten in der Datenbank können auch erfasst und in einem Diagramm angezeigt werden. Adobe Campaign bietet verschiedene Möglichkeiten zur grafischen Darstellung. Ihre Konfiguration wird nachfolgend beschrieben.
 
 Grafiken werden wie Tabellen direkt in eine Berichtseite eingefügt, über das Kontextmenü oder die Symbolleiste.
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
    ![](assets/s_advuser_report_page_activity_04.png)
 
-1. Geben Sie einen Namen und eine Beschriftung ein. Bei Bedarf können Sie die Position der Beschriftung mithilfe der Dropdown-Liste ändern.
+1. Geben Sie einen Namen und eine Beschriftung ein. Bei Bedarf können Sie die Position der Beschriftung über die Dropdown-Liste verändern.
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
 ## Grafiktypen und ihre Parameter {#chart-types-and-variants}
 
-Adobe Campaign bietet verschiedene Arten von grafischen Darstellungen. Sie werden im Folgenden beschrieben.
+Adobe Campaign bietet drei verschiedene Möglichkeiten zur grafischen Darstellung. Diese werden nachfolgend beschrieben.
 
 Der Grafiktyp wird beim Einfügen in die Seite ausgewählt.
 
@@ -143,7 +143,7 @@ Sie können in den Grafiken Statistiken über die abgerufenen Daten anzeigen.
 
 Diese Statistiken werden im Bereich **[!UICONTROL Serienparameter]** des Tabs **[!UICONTROL Daten]** definiert.
 
-Um eine neue Statistik zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und konfigurieren Sie das entsprechende Fenster. Die verfügbaren Berechnungstypen werden im Folgenden beschrieben.
+Um eine neue Statistik zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und nehmen Sie im entsprechenden Fenster Konfigurationen vor. Die verfügbaren Berechnungstypen werden nachfolgend beschrieben.
 
 ![](assets/reporting_add_statistics.png)
 

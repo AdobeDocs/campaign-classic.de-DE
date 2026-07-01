@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1064
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 89%
 
 
 
-In diesem Anwendungsbeispiel wird die Erstellung eines Workflows beschrieben, mit dem Sie nach dem Erfassen von Dateien und mehreren Anreicherungen eine zusammenfassende Liste erstellen können. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
+Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Das Beispiel basiert auf einer Liste von Kontakten, die in einem Geschäft Einkäufe getätigt haben.
 
 ![](assets/uc2_enrich_overview.png)
 
@@ -125,7 +125,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
-Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.**&#x200B;**
+Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
 1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
@@ -147,7 +147,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 
 ## Schritt 3: Anreicherung der &quot;Kontakt&quot;-Daten {#step-3--enriching--contact--data-}
 
-Das Schema „Kontakte“ ist physisch mit dem Schema „Bestellungen“ verknüpft. Dies bedeutet, dass Sie eine andere Option der Option „Anreicherung“ verwenden können: Hinzufügen von Daten, die mit der Filterdimension verknüpft sind.
+Das Schema „Kontakte“ ist physisch mit dem Schema „Käufe“ verknüpft. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich das Hinzufügen von mit der Filterdimension verbundenen Daten.
 
 Ziel dieser zweiten Anreicherung ist es, ein Aggregat von Verkaufsdaten zu erstellen, um den Gesamtumsatz pro identifiziertem Kontakt zu berechnen.
 
@@ -185,9 +185,9 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
-1. Fügen Sie **Workflow die Aktivität** Listen-Update“ hinzu. Diese Aktivität muss mit der ausgehenden Transition der zweiten Anreicherungsaktivität verknüpft sein.
+1. Fügen Sie dem Workflow eine Aktivität **Liste aktualisieren** hinzu. Diese Aktivität muss mit der ausgehenden Transition der zweiten Anreicherungsaktivität verknüpft werden.
 1. Aktivieren Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]**.
-1. Wählen Sie einen Wert für den berechneten Namen. Für die Liste wurde das aktuelle Datum ausgewählt: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y„) %>.
+1. Wählen Sie einen Wert für den berechneten Namen aus. Im vorliegenden Beispiel wird das aktuelle Datum als Titel für die Liste verwendet: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
 
 Nach Ausführung des Workflows enthält die Liste folgende Informationen:
 

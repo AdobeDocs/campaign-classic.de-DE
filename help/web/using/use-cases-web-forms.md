@@ -16,9 +16,9 @@ subfeature_v2:
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1013
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -28,16 +28,16 @@ ht-degree: 64%
 
 ## Abonnement-Formular mit zweifacher Bestätigung erstellen {#create-a-subscription--form-with-double-opt-in}
 
-Wenn Sie Informationsdienste anbieten, müssen sich Empfänger für den Empfang aller verknüpften Nachrichten anmelden. Um unsachgemäße Kommunikation zu vermeiden und sicherzustellen, dass der Empfänger sich absichtlich angemeldet hat, empfehlen wir, eine Anmeldebestätigungsanfrage zu senden, um ein doppeltes Opt-in zu erstellen. Das Abonnement wird erst wirksam, wenn der Benutzer auf den in der Bestätigungsnachricht enthaltenen Link klickt.
+Wenn Sie Informationsdienste anbieten, müssen sich Empfangende für den Empfang aller verknüpften Nachrichten anmelden. Um unsachgemäße Kommunikation zu vermeiden und sicherzustellen, dass die empfangende Person sich absichtlich angemeldet hat, empfehlen wir, eine Anmeldebestätigungsanfrage zu senden, um ein doppeltes Opt-in zu erstellen. Das Abonnement wird erst wirksam, wenn die Person auf den in der Bestätigungsnachricht enthaltenen Link klickt.
 
 Es wird von folgendem Szenario ausgegangen:
 
-1. Erstellen eines Newsletter-Abonnementformulars auf einer Website, das ein Kontrollkästchen zum Abonnieren eines temporären Services enthält. Dieser Service ermöglicht den Versand von Bestätigungsnachrichten zu Abonnements.
-1. Erstellen des Abonnementbestätigungsversands mit einer mit dem Web-Formular verknüpften Versandvorlage Sie enthält den Bestätigungs-Link, über den das Formular für die Newsletter-Anmeldung aufgerufen wird, und zeigt eine Meldung zur Abonnementgenehmigung an.
+1. Ein Newsletter-Abonnement soll auf einer Website erstellt werden, die ein Kontrollkästchen enthält, über das die Anmeldung für einen temporären Dienst möglich ist. Dieser Dienst ermöglicht den Versand von Bestätigungsnachrichten zu Abonnements.
+1. Der Versand einer Abonnementbestätigung soll mit einer Versandvorlage erstellt werden, die mit einem Web-Formular verknüpft ist. Dieses enthält den Bestätigungs-Link, mit dem das Formular zur Newsletter-Anmeldung aufgerufen und eine Validierungsnachricht für die Anmeldung angezeigt wird.
 
 ### Schritt 1: Erstellen von Informationsdiensten {#step-1---creating-information-services}
 
-1. Erstellen Sie den Newsletter-Abonnementdienst, der Ihren Empfängern angeboten werden soll. Weiterführende Informationen zur Erstellung eines Newsletters finden Sie in [diesem Abschnitt](../../delivery/using/about-services-and-subscriptions.md).
+1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden.Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](../../delivery/using/about-services-and-subscriptions.md).
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -67,11 +67,11 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
    >
    >Diese Option darf nur in diesem Kontext deaktiviert werden.
 
-1. Personalisieren Sie Ihren Versand und fügen Sie den Bestätigungs-Link in den Nachrichteninhalt ein. Über diesen Link können Sie auf das Web-Formular zugreifen, um Anmeldebestätigungen aufzuzeichnen.
+1. Passen Sie Ihren Versand an und fügen Sie den Bestätigungs-Link in den Nachrichteninhalt ein. Über diesen Link können Sie auf das Web-Formular zugreifen, um Anmeldebestätigungen aufzuzeichnen.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
-1. Verknüpfen Sie mit dem DCE Ihre URL mit dem Web-Formular. Da das Web-Formular noch nicht erstellt wurde, ersetzen Sie den Wert, sobald Sie ihn erstellen.
+1. Verknüpfen Sie mithilfe des DCE Ihre URL mit dem Web-Formular. Da das Web-Formular noch nicht erstellt wurde, ersetzen Sie den entsprechenden Wert unmittelbar bei seiner Erstellung.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
@@ -99,13 +99,13 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
-   Wenn der Benutzer also über den Link in der Bestätigungsnachricht auf dieses Formular zugreift, werden seine Profilinformationen geladen. Wenn sie über eine Seite der Website auf das Web-Formular zugreifen, werden keine Informationen geladen.
+   Wenn die Benutzerin bzw. der Benutzer über den Link in der Bestätigungsnachricht auf dieses Formular zugreift, werden die Profilinformationen geladen. Wenn der Zugriff auf das Web-Formular über eine Seite der Website erfolgt, werden keine Informationen geladen.
 
 1. Fügen Sie eine **[!UICONTROL Test]**-Aktivität zu Ihrem Workflow hinzu.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   Die **[!UICONTROL Test]**-Aktivität kann die Empfänger-E-Mail betreffen. Konfigurieren Sie ihn in diesem Fall wie folgt:
+   Die Aktivität **[!UICONTROL Test]** kann sich auf die Empfänger-E-Mail beziehen. Konfigurieren Sie sie in diesem Fall wie folgt:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
@@ -121,7 +121,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Benutzer genehmigt. Außerdem werden diese zum Newsletter angemeldet. Die letzten beiden Zeilen des Skripts ermöglichen es Ihnen, Ihre Empfänger vom temporären Ordner in einen anderen Ordner zu übertragen und mit vorhandenen Profilen abzustimmen, sobald sie das Abonnement bestätigt haben.
+   Mit der zweiten Aktivität **[!UICONTROL Skript]** werden Sendungen an die Benutzenden genehmigt und die Anmeldung beim Newsletter wird ermöglicht. Die letzten beiden Zeilen des Skripts ermöglichen Ihnen den Transfer Ihrer Empfangenden aus dem temporären Ordner in einen anderen Ordner und die Abstimmung mit vorhandenen Profilen, sobald die Anmeldung bestätigt wurde.
 
    ```
    ctx.recipient.@blackList=0
@@ -197,7 +197,7 @@ Die Anmeldung zum Newsletter beinhaltet die folgenden Schritte:
 
 ## Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen {#displaying-different-options-depending-on-the-selected-values}
 
-Im folgenden Beispiel wird der Benutzer aufgefordert, einen Fahrzeugtyp auszuwählen. Je nach ausgewähltem Typ können die verfügbaren Fahrzeugkategorien angezeigt werden. Das bedeutet, dass die in der rechten Spalte angezeigten Elemente von der Auswahl des Benutzers abhängen:
+Im folgenden Beispiel wird die Person aufgefordert, einen Fahrzeugtyp auszuwählen. Je nach ausgewähltem Typ können die verfügbaren Fahrzeugkategorien angezeigt werden. Das bedeutet, dass die in der rechten Spalte angezeigten Elemente von der Auswahl der Person abhängen:
 
 ![](assets/s_ncs_admin_survey_condition_sample0.png)
 

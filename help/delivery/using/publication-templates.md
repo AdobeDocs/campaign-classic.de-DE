@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 844
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Die Publikationsvorlage verweist auf die im Veröffentlichungsprozess verwendete
 
 Eine Veröffentlichungsvorlage wird über ihren Namen und Namespace identifiziert.
 
-Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt (z. B. **cus:newsletter**.
+Der Identifikationsschlüssel eines Stylesheets ist ein String, der den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **cus:newsletter**).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Die Option **Zur Erstellung des Inhalts Status prüfen** stellt sicher, dass die
 
 Für jedes Ausgabedokument muss eine Umwandlungsvorlage hinzugefügt werden. Sie können so viele Umwandlungsvorlagen wie nötig erstellen.
 
-Das **[!UICONTROL Name der Vorlage]** ist eine freie Beschriftung, die den Rendertyp an der Ausgabe beschreibt. Für jede Umwandlungsvorlage sind die Veröffentlichungseinstellungen auf den Registerkarten verfügbar.
+Im Feld **[!UICONTROL Vorlagenname]** wird ein frei wählbarer Titel angegeben, der das Rendering des Ausgabedokuments beschreibt. Für jede Umwandlungsvorlage sind die Veröffentlichungseinstellungen in den Registerkarten verfügbar.
 
 ### Rendering {#rendering}
 
@@ -83,9 +83,9 @@ Veröffentlichung bezeichnet den Vorgang der Erzeugung des Ausgabedokuments in F
 
 Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
-* Der Zeichensatz für die Ausgabedateicodierung kann über das Feld **[!UICONTROL Codierung]** erzwungen werden. Der Zeichensatz Latin 1 (1252) wird standardmäßig verwendet.
-* Mit **[!UICONTROL Option zur Erzeugung mehrerer]** wird ein spezieller Modus für die Veröffentlichung von Dokumenten aktiviert. Bei dieser Option wird am Anfang jeder Seite des Ausgabedokuments ein Partitionierungs-Tag eingefügt. Durch Generieren des Inhalts wird eine Datei für jedes ausgefüllte Partitionierungs-Tag erstellt. Dieser Modus wird verwendet, um aus einem Inhaltsbaustein Mini-Sites zu generieren. Weitere Informationen hierzu finden Sie im Abschnitt [Multidatei-Erzeugung](#multi-file-generation).
-* Das **[!UICONTROL Speicherort]**-Feld enthält den Namen der Ausgabedatei. Der Name kann aus Variablen bestehen, um einen automatischen Dateinamen zu generieren.
+* Den Zeichensatz für die Codierung der Ausgabedatei können Sie mithilfe des Felds **[!UICONTROL Codierung]** erzwingen. Standardmäßig wird der Zeichensatz „Latin 1 (1252)“ verwendet.
+* Mit der Option **[!UICONTROL Multidatei-Erzeugung]** wird ein spezieller Modus für die Veröffentlichung von Dokumenten aktiviert. Bei dieser Option wird am Anfang jeder Seite des Ausgabedokuments ein Partitionierungs-Tag eingefügt. Durch Generieren des Inhalts wird eine Datei für jedes ausgefüllte Partitionierungs-Tag erstellt. Dieser Modus wird verwendet, um aus einem Inhaltsbaustein Mini-Sites zu generieren. Weitere Informationen hierzu finden Sie im Abschnitt [Multidatei-Erzeugung](#multi-file-generation).
+* Das Feld **[!UICONTROL Speicherort]** enthält den Namen der Ausgabedatei. Sie können den Namen aus Variablen zusammensetzen, um den Dateinamen automatisch zu generieren.
 
   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`**, wobei **`<xpath>`** den Pfad eines Felds des der Veröffentlichungsvorlage zugrunde liegenden Datenschemas bezeichnet.
 
@@ -105,7 +105,7 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
 ### Versand {#delivery}
 
-Auf dieser Registerkarte können Sie ein Szenario auswählen, um einen Versand direkt mit dem Inhalt zu starten. Der Inhalt der E-Mail wird automatisch anhand des Ausgabeformats (HTML oder Text) ausgefüllt.
+In dieser Registerkarte können Sie ein Szenario auswählen, um einen Versand direkt mit dem Inhalt zu starten. Der Inhalt der E-Mail wird automatisch basierend auf dem Ausgabeformat (HTML oder Text) ausgefüllt.
 
 ![](assets/d_ncs_content_model3.png)
 
@@ -115,23 +115,23 @@ Auf dieser Registerkarte können Sie ein Szenario auswählen, um einen Versand d
 
 ### Aggregator {#aggregator}
 
-Durch das Aggregieren der Daten aus einem Skript oder einer Abfrageliste können Sie das XML-Dokument mit den Inhaltsdaten anreichern. Ziel ist es, bestimmte durch Links referenzierte Informationen zu ergänzen oder Elemente aus der Datenbank hinzuzufügen.
+Sie können das XML-Ausgabedokument durch die Aggregation von Daten mithilfe eines Skripts oder einer Abfrageliste anreichern. Ziel ist es, bestimmte durch Links referenzierte Informationen zu ergänzen oder Elemente aus der Datenbank hinzuzufügen.
 
 ### Multidatei-Erzeugung {#multi-file-generation}
 
-Um die Generierung mehrerer Dateien zu aktivieren, wählen **[!UICONTROL im Veröffentlichungsmodell die Option]** Generierung mehrerer Dateien“ aus. Mit dieser Option können Sie die Aufteilung von Tags im Stylesheet für den Anfang jeder Seite des Ausgabedokuments festlegen. Bei der Inhaltserstellung wird für jedes aufgetretene Partitionierungs-Tag eine Datei erstellt.
+Um die Generierung mehrerer Dateien zu aktivieren, wählen Sie im Veröffentlichungsmodell die Option **[!UICONTROL Multidatei-Erzeugung]** aus. Mit dieser Option können Sie im Stylesheet Partitionierungs-Tags für den Beginn jeder Seite des Ausgabedokuments angeben. Bei der Inhaltserstellung wird für jedes vorhandene Partitionierungs-Tag eine Datei erstellt.
 
 Das zu verwendende Trennzeichen stellt sich wie folgt dar:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`**, wobei **`<name_of_file>`** der Dateiname der zu erzeugenden Seite ist.
 
-**Beispiel** Mehrfache Dateigenerierung mithilfe des Schemas „cus:book.
+**Beispiel:** Multidatei-Erzeugung mit dem Schema „cus:book“.
 
 Ziel ist es, eine Hauptseite zu erzeugen, die die Kapitel auflistet und die Möglichkeit bietet, die Details der Kapitel in einer externen Seite anzuzeigen.
 
 ![](assets/d_ncs_content_chunk.png)
 
-Das entsprechende Stylesheet („cus:book.xsl„) lautet wie folgt:
+Das entsprechende Stylesheet („cus:book.xsl“) lautet wie folgt:
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -154,7 +154,7 @@ Das entsprechende Stylesheet („cus:book.xsl„) lautet wie folgt:
 </xsl:stylesheet>
 ```
 
-Ein zweites Stylesheet („cus:chapter.xsl„) ist erforderlich, um die Details der Kapitel zu generieren:
+Ein zweites Stylesheet („cus:chapter.xsl“) ist erforderlich, um die Details der Kapitel zu generieren:
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>

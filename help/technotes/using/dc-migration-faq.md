@@ -22,9 +22,9 @@ topic_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2269
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Gibt es Unterschiede in der Größe des Pakets zwischen dem alten Rechenzentrum und der Public Cloud?**
 
-  Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in alten Rechenzentren über einen Anwendungs-Server verfügt, kann er je nach Paketdefinitionen über zwei Anwendungs-Server in der Public Cloud (AWS) verfügen.
+  Die Bereitstellung erfolgt in der Public Cloud (AWS) mit neuen Paketdefinitionen basierend auf der aktuellen Datenbankgröße, Festplattengröße etc. Wenn Kundinnen oder Kunden beispielsweise einen Anwendungs-Server in alten Rechenzentren haben, können sie je nach Paketdefinitionen zwei Anwendungs-Server in der Public Cloud (AWS) verwenden.
 
 * **Wird sich die Build-Nummer oder die Campaign-Version ändern?**
 

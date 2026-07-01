@@ -22,15 +22,15 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 400
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Über Testadressen{#about-seed-addresses}
 
-Testadressen ermöglichen die Auswahl von Empfängern, die nicht den definierten Zielgruppenkriterien entsprechen. Auf diese Weise können Empfänger, die außerhalb des Versandbereichs liegen, den Versand wie jeder andere Zielgruppenempfänger erhalten.
+Testadressen werden verwendet, um Empfangende anzusprechen, die nicht den definierten Zielgruppenkriterien entsprechen. Auf diese Weise können Empfängerinnen und Empfänger, die außerhalb des Versandumfangs liegen, die Nachricht ebenso wie jede andere Person innerhalb der Zielgruppe erhalten.
 
 Einer der Hauptgründe für ihre Verwendung ist **der Schutz der Mailing-Liste**. Wenn Sie Testadressen in Ihre Mailing-Liste einfügen, können Sie feststellen, ob sie von einem Drittanbieter verwendet wird. Die Testadressen, die darin enthalten sind, erhalten die Sendungen an Ihre Mailing-Liste.
 
@@ -48,7 +48,7 @@ Testadressen werden entweder durch Importieren zur Versandzielgruppe hinzugefüg
 
 >[!NOTE]
 >
->Testadressen gehören nicht zur Empfängertabelle, sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern. Andernfalls werden erweiterte Felder für Testadressen nicht berücksichtigt.
+>Testadressen gehören nicht zur Empfängertabelle. Sie werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle um neue Daten erweitern, müssen Sie die Testadressen-Tabelle ebenfalls um die gleichen Daten erweitern. Andernfalls werden erweiterte Felder für Testadressen nicht berücksichtigt.
 >
 >In diesem Abschnitt wird ein Beispiel für die Erweiterung der Tabelle mit Testadressen dargestellt: [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md).
 

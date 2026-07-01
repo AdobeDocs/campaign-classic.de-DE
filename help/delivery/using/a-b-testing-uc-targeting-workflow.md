@@ -19,15 +19,15 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 198
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # A/B-Tests: Erstellen eines Zielgruppenbestimmungs-Workflows {#step-1--creating-a-targeting-workflow}
 
-Sie müssen Ihren Workflow auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einer Kampagne erstellen. Sie besteht aus einer **[!UICONTROL Abfrage]**-Aktivität, einer **[!UICONTROL Aufspaltung]**-Aktivität, die mit zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, einer **[!UICONTROL Warten]**-Aktivität, einer **[!UICONTROL JavaScript-Code]**-Aktivität und einer **[!UICONTROL Versand]**-Aktivität verknüpft ist.
+Sie müssen in der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einer Kampagne einen Workflow erstellen. Er besteht aus einer **[!UICONTROL Abfrage]**-Aktivität, einer **[!UICONTROL Aufspaltung]**-Aktivität, die mit zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten verknüpft ist, einer **[!UICONTROL Warten]**-Aktivität, einer **[!UICONTROL JavaScript-Code]**-Aktivität und einer **[!UICONTROL Versand]**-Aktivität.
 
 1. Erstellen Sie eine Kampagne, falls noch nicht geschehen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}.
 
@@ -41,7 +41,7 @@ Sie müssen Ihren Workflow auf der Registerkarte **[!UICONTROL Zielgruppenbestim
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Ziehen Sie mit der Maus die Aktivitäten in das Workflow-Diagramm und zwar aus der Registerkarte **[!UICONTROL Zielgruppenbestimmung]** eine **[!UICONTROL Abfrage]** und eine **[!UICONTROL Aufspaltung]**, aus der Registerkarte **[!UICONTROL Sendungen]** zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, aus der Registerkarte **[!UICONTROL Steuerung]** eine **[!UICONTROL Warten]**-Aktivität und aus der Registerkarte **[!UICONTROL Aktionen]** eine **[!UICONTROL JavaScript-Code]**-Aktivität sowie einen **[!UICONTROL Versand]**.**&#x200B;**&#x200B;**&#x200B;**
+1. Ziehen Sie mit der Maus die Aktivitäten in das Workflow-Diagramm und zwar aus der Registerkarte **[!UICONTROL Zielgruppenbestimmung]** eine **[!UICONTROL Abfrage]** und eine **[!UICONTROL Aufspaltung]**, aus der Registerkarte **[!UICONTROL Sendungen]** zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, aus der Registerkarte **[!UICONTROL Steuerung]** eine **[!UICONTROL Warten]**-Aktivität und aus der Registerkarte **[!UICONTROL Aktionen]** eine **[!UICONTROL JavaScript-Code]**-Aktivität sowie einen **[!UICONTROL Versand]**.********
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 

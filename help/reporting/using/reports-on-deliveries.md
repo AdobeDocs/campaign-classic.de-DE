@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 220
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Folgende Berichttypen stehen zur Verfügung:
 * Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
 * Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
 
-Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Berichte-Dashboard oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die Liste der Hauptberichte ist auf der Startseite verfügbar und ermöglicht den schnellen Zugriff auf Versanddaten. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
+Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Dashboard für Berichte oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Auf der Startseite ist eine Liste der Hauptberichte verfügbar, mit denen Sie schnell auf Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
 
 Im Bericht-Dashboard ermöglicht ein Filterfeld das schnelle Auffinden eines bestimmten Berichts aus der Liste.
@@ -56,6 +56,6 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Einige Berichte enthalten Diagramme (Kurve, Balken, funnel usw.). Bewegen Sie den Cursor über ein Diagramm, um dessen Werte anzuzeigen.
+>Einige Berichte enthalten Diagramme (Kurve, Balken, Trichter usw.). Bewegen Sie den Cursor über ein Diagramm, um dessen Werte anzuzeigen.
 
 Weiterführende Informationen zu diesen Optionen erfahren Sie in [diesem Abschnitt](../../reporting/using/about-adobe-campaign-reporting-tools.md).

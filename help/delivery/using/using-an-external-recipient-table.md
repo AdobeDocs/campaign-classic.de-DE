@@ -17,9 +17,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 92
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,4 +35,4 @@ Geben Sie in diesem Fall die Testadressen-Daten direkt in den jeweiligen Feldern
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-Die **nms:seedMember**-Schemaerweiterung lautet [dieser Abschnitt](../../configuration/using/seed-addresses.md).
+Die **nms:seedMember**-Schemaerweiterung ist [dieser Abschnitt](../../configuration/using/seed-addresses.md).

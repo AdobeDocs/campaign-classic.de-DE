@@ -20,15 +20,15 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 200
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Versandvorlagen {#about-templates}
 
-Eine Versandkonfiguration kann in einer Versandvorlage gespeichert werden, um sie wiederzuverwenden. Die Vorlage kann eine vollständige oder teilweise Konfiguration des Versands enthalten.
+Eine Versandkonfiguration kann in einer Vorlage gespeichert werden, um zu einem späteren Zeitpunkt erneut verwendet zu werden. Der Versand in Vorlagen kann vollständig oder nur teilweise konfiguriert sein.
 
 ![](assets/s_user_template_list.png)
 

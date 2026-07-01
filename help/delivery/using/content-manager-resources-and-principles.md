@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 247
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 
 Für jeden Inhalt muss eine Veröffentlichungsvorlage mit entsprechenden Umwandlungsvorlagen erstellt werden.
 
-Ein Inhaltsbaustein ist zur Datenspeicherung in einem XML-Dokument strukturiert. Eine Bearbeitungsschnittstelle wird verwendet, um den Inhalt über die Adobe Campaign-Client-Konsole oder einen Webbrowser einzugeben. Der Inhalt kann auch automatisch über die Erfassung von XML-Datenflüssen oder aggregierten Daten in einer Datenbank eingegeben werden.
+Ein Inhaltsbaustein ist zur Datenspeicherung in einem XML-Dokument strukturiert. Eine Bearbeitungsoberfläche wird verwendet, um den Inhalt über die Adobe Campaign-Client-Konsole oder einen Webbrowser einzugeben. Der Inhalt kann auch automatisch über die Erfassung von XML-Flüssen oder in einer Datenbank aggregierten Daten eingegeben werden.
 
 Es ist die Kombination aus einem XML-Dokument mit XSL-Stylesheets oder JavaScript-Templates, die die automatische Umwandlung des Inhalts in die verschiedenen Formate (HTML, Text) der Veröffentlichungsvorlage ermöglicht.
 

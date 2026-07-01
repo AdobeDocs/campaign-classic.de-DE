@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1106
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Gehen Sie dazu wie folgt vor:
 
    Der von Ihnen ausgewählte Provider nennt Ihnen danach den Wert für das Feld **[!UICONTROL Name der SMSC-Implementierung]**.
 
-   Sie können die Anzahl der Verbindungen zum Provider pro untergeordnetem MTA-Element definieren. Standardmäßig ist dies auf 1 festgelegt.
+   Sie können die Anzahl der Verbindungen mit dem Dienstleister per untergeordnetem MTA definieren. Standardmäßig ist dieser Zeitraum auf 1 festgelegt.
 
 1. Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM zur Anwendung.
 
@@ -153,7 +153,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/mid_external_account_5.png)
 
-1. Auf der Registerkarte **[!UICONTROL Durchsatz und Verzögerungen]** können Sie den maximalen Durchsatz ausgehender Nachrichten („MT“, Mobile beendet) in MT pro Sekunde angeben. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
+1. In der Registerkarte **[!UICONTROL Durchsatz und Verzögerungen]** können Sie den maximalen Durchsatz für ausgehende Nachrichten („MT“, Mobile Terminated) festlegen. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
 
    Werte, die eine Dauer angeben, sind in Sekunden auszudrücken.
 
@@ -161,7 +161,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](sms-set-up.md#about-text-encodings).
 
-1. Auf der Registerkarte **[!UICONTROL SMSC]** Besonderheiten“ ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie das SMPP-Protokoll einhalten und nur Ziffern an den Server des SMS-Anbieters (SMSC) übertragen möchten.
+1. In der Registerkarte **[!UICONTROL SMSC-Besonderheiten]** ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie die Konformität mit dem SMPP-Protokoll wahren und nur Zahlen an den Server des SMS-Anbieters (SMSC) übertragen möchten.
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 

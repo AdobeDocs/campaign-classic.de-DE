@@ -18,9 +18,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 135
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 79%
 
 
 
-Die Aktivität **[!UICONTROL Segmente]** bietet eine Ansicht der verschiedenen Teilmengen in Form von Datenspalten. Es erleichtert die Bearbeitung von Teilmengen und soll auch die Personalisierung fördern.
+Die Aktivität **[!UICONTROL Zellen]** bietet eine Ansicht der verschiedenen Teilmengen in Form von Datenspalten. Dies erleichtert die Bearbeitung von Teilmengen und fördert die Nutzung von Personalisierungsoptionen.
 
 ![](assets/wf_split_cells.png)
 

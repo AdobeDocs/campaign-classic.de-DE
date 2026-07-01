@@ -24,9 +24,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1350
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ Die Grundlagen der Personalisierung werden in [diesem Abschnitt](personalization
 
 Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit der Personalisierung in Verbindung stehende Fehler zu verhindern.
 
-**Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um dies zu vermeiden, überprüfen Sie Syntax, Verwendung von Tags, Zeichen usw. Beispielsweise hat ein Adobe Campaign-Personalisierungs-Tag immer die folgende Form: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-personalization.md).
+**Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um dies zu vermeiden, prüfen Sie die Syntax und die verwendeten Tags, Zeichen etc. Ein Adobe Campaign-Personalisierungs-Tag sieht stets wie folgt aus: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-personalization.md).
 
-Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann ein Problem darstellen. Variablen in JavaScript sollten beispielsweise wie folgt verwendet werden:
+Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise wie folgt verwendet werden:
 
 ```
     <%
@@ -113,8 +113,8 @@ Testen Sie alle Änderungen vor dem endgültigen Senden.
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
-Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen im GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingefügt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie das entsprechende Kontrollkästchen auf der Registerkarte „Einstellungen für SMPP-Kanal“ des entsprechenden **[!UICONTROL Externes Konto]** aktivieren.
-Weitere Informationen [in diesem Abschnitt](sms-set-up.md#creating-an-smpp-external-account).
+Die Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch das Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingeführt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Zeichentransliteration zulassen, indem Sie das entsprechende Feld in der Registerkarte mit den SMPP-Kanaleinstellungen des zugehörigen **[!UICONTROL externen Kontos]** aktivieren.
+Weitere Informationen finden Sie [in diesem Abschnitt](sms-set-up.md#creating-an-smpp-external-account)..
 
 **Tipps**:
 
@@ -170,7 +170,7 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 * Sie können eine HTML-Seite mit Bildern über den Versandassistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
 
-* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf die Registerkarte Source . Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Webbrowser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihre bzw. Ihren IT-Admin oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
+* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie hierzu auf die Registerkarte „Quelle“ in Ihrem Versand. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Webbrowser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihre bzw. Ihren IT-Admin oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
 
 ## Sehen Sie sich Ihre Nachricht in der Vorschau an {#preview-msg}
 

@@ -23,9 +23,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 674
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Haben Sie ein Problem mit der Zustellbarkeit? Vielleicht finden Sie hier die Lö
 
 Diese Meldung bedeutet, dass Sie das Limit für einen gewissen MX (Mail eXchanger) erreicht haben und warten müssen, bis Sie wieder eine E-Mail an diesen Anbieter senden können.
 
-In Adobe Campaign gibt es eine Konfiguration für die Anzahl der E-Mails pro Stunde, die gesendet werden können. Diese Konfiguration muss mit Vorsicht verwendet werden, da die in der Instanz definierte Zahl die Anzahl der Verbindungen betrifft, die mit dem ISP durchgeführt werden, und nicht die Anzahl der tatsächlich gesendeten E-Mails.
+In Adobe Campaign gibt es eine Konfiguration für die Anzahl der E-Mails pro Stunde, die gesendet werden können. Bei dieser Konfiguration ist Vorsicht geboten, weil sich die in der Instanz definierte Anzahl nicht auf die Anzahl tatsächlich gesendeter E-Mails, sondern auf die mit den ISP erfolgten Verbindungen bezieht.
 
-Das bedeutet, dass eine Verbindung eine MX-Regel verwenden kann, ohne erfolgreich eine E-Mail zu senden. In diesem Fall muss eine Konfiguration mit einer IP-Adresse oder einer Domain mit geringer Reputation mehrere Verbindungen ausprobieren, bevor eine E-Mail gesendet wird. Für jeden Versuch wird eine Gutschrift pro Stunde verwendet. Dadurch wird die Leistung der Marketing-Kampagne erheblich beeinträchtigt.
+Das bedeutet, dass eine Verbindung eine MX-Regel verwenden kann, ohne erfolgreich eine E-Mail zu senden. In diesem Fall muss eine Konfiguration mit IP oder einer Domain von schwacher Reputation mehrere Verbindungen ausprobieren, bevor die E-Mail erfolgreich versendet wird. Für jeden Versuch wird eine Nachricht auf das stundenbasierte Kontingent angerechnet. Dadurch wird die Leistung der Marketing-Kampagne erheblich beeinträchtigt.
 
 Somit ist &quot;Kontingente ausgeschöpft&quot; nicht nur eine Frage der Konfiguration, sondern kann auch mit der Reputation zusammenhängen. Fehlermeldungen im [SMTP-Protokoll](../../production/using/monitoring-processes.md#smtp-errors-per-domain) sollten unbedingt analysiert werden.
 
@@ -51,7 +51,7 @@ Weiterführende Informationen zur MX-Konfiguration finden Sie in [diesem Abschni
 
 **Warum erhalte ich bei einem bestimmten ISP immer dieselbe Fehlermeldung?**
 
-Wenn Sie immer dieselbe Fehlermeldung für einen ISP erhalten, wurde Ihre E-Mail oder IP möglicherweise vom ISP als fehlerhaft erkannt. Führen Sie die folgenden Empfehlungen aus:
+Wenn Sie bei einem ISP immer dieselbe Fehlermeldung erhalten, hat der ISP möglicherweise festgestellt, dass Ihre E-Mail- oder IP-Adresse fehlerhaft ist. Wir empfehlen in diesem Fall folgende Schritte:
 * Prüfen Sie, ob Sie eine große Menge an Fehlschlägen in Verbindung mit nicht bestehenden E-Mail-Adressen erhalten (**Unbekannter Nutzer**).
 * Aktualisieren Sie Ihre Anmeldeformulare und achten Sie auf etwaige Fehler im Domain-Namen (z. B. gmaul.com oder yaho.com).
 * Wenn Fehlermeldungen auftreten, die Ihre E-Mails als Spam einstufen, oder wenn Ihre E-Mails blockiert werden, versuchen Sie, alle Empfänger auszuschließen, die innerhalb von 12 Monaten ab dem Versand ihre E-Mail nicht geöffnet oder darauf geklickt haben.
@@ -94,4 +94,4 @@ Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen 
 
   >[!NOTE]
   >
-  >Der Löschvorgang kann je nach Website variieren. Bei einigen Sites müssen Sie ein Konto erstellen, während andere nur die IP-Adresse angeben müssen.
+  >Das Verfahren zum Entfernen aus der Liste kann je nach Website variieren. Auf manchen Websites müssen Sie ein Konto erstellen, während andere nur die Angabe der IP-Adresse verlangen.

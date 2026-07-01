@@ -21,9 +21,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 841
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Dies sind die Tabellen, die bei der Durchführung von Datenschutzanfragen standa
 * Abonnements (subscription)
 * Angebotsvorschlag für einen Empfänger (propositionRcp)
 
-Wenn Sie benutzerdefinierte Tabellen mit einer Relation zur Empfängertabelle (vom Typ „own„) erstellt haben, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine mit der Empfängertabelle verknüpfte Transaktionstabelle und eine mit der Transaktionstabelle verknüpfte Transaktionsdetailtabelle haben, werden beide berücksichtigt.
+Wenn Sie benutzerdefinierte Tabellen erstellt haben, die über einen Link zur Empfängertabelle (eigener Typ) verfügen, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine Transaktionstabelle haben, die mit der Empfängertabelle verknüpft ist, und eine Transaktionsdetails-Tabelle, die mit der Transaktionstabelle verknüpft ist, werden beide berücksichtigt.
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ Dies sind die unterschiedlichen Status einer Datenschutzanfrage:
 * **[!UICONTROL Verarbeitung läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
 * **[!UICONTROL Ausstehende löschen]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
-* **[!UICONTROL Löschbestätigung ausstehend]** (Löschanfrage im 2-stufigen Prozessmodus): Der Workflow hat die Zugriffsanfrage verarbeitet. Zum Löschen wird eine manuelle Bestätigung angefordert. Die Schaltfläche ist 15 Tage lang verfügbar.
+* **[!UICONTROL Löschbestätigung steht aus]** (Löschanfrage im zweistufigen Prozessmodus): Der Workflow hat die Zugriffsanfrage verarbeitet. Zum Löschen wird eine manuelle Bestätigung angefordert. Die Schaltfläche ist 15 Tage lang verfügbar.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.
 * **[!UICONTROL Fehler]**: Workflow ist fehlerhaft. Die Ursache wird in der Liste der Datenschutzanfragen in der Spalte **[!UICONTROL Anfragestatus]** angezeigt. Beispielsweise bedeutet **[!UICONTROL Fehlerdaten nicht gefunden]**, dass in der Datenbank keine Empfängerdaten gefunden wurden, die dem **[!UICONTROL Abstimmwert]** der betroffenen Person entsprechen.
 
@@ -108,7 +108,7 @@ Wenn der zweistufige Modus aktiviert ist, ändert sich der Status einer neuen L�
 
 ## JSSP-URL {#jspp-url}
 
-Bei der Verarbeitung von Zugriffsanfragen generiert Adobe Campaign ein JSSP, das die Empfängerdaten aus der Datenbank abruft und in eine auf dem lokalen Computer gespeicherte XML-Datei exportiert. Die JSSP-URL wird wie folgt definiert:
+Bei der Verarbeitung von Zugriffsanfragen generiert Adobe Campaign ein JSSP, mit dessen Hilfe die Empfängerdaten aus der Datenbank abgerufen und in eine auf dem lokalen Gerät gespeicherte XML-Datei exportiert werden. Die JSSP-URL wird wie folgt definiert:
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -118,7 +118,7 @@ wobei @id die Kennung der Datenschutzanfrage ist.
 
 Die URL wird im Feld **[!UICONTROL &quot;Speicherort der Datei&quot; (@urlFile)]** des Schemas der **[!UICONTROL Datenschutzanfragen (gdprRequest)]** gespeichert.
 
-Die Informationen sind 90 Tage lang in der Datenbank verfügbar. Sobald der technische Workflow die Anfrage bereinigt hat, werden die Informationen aus der Datenbank entfernt und die URL wird veraltet. Bitte überprüfen Sie, ob die URL noch gültig ist, bevor Sie die Daten von einer Web-Seite herunterladen.
+Die Informationen sind 90 Tage lang in der Datenbank verfügbar. Wenn die Anfrage durch den technischen Workflow bereinigt wird, werden die Daten aus der Datenbank entfernt und die URL wird ungültig. Prüfen Sie, ob die URL noch gültig ist, bevor Sie die Daten von einer Web-Seite herunterladen.
 
 Hier ist ein Beispiel für die Datendatei einer betroffenen Person:
 

@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1260
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 74%
 
 Mit der Aktivität **[!UICONTROL Laden (Datei)]** können Sie direkt auf eine Quelle externer Daten zugreifen und diese in Adobe Campaign nutzen. So befinden sich nicht immer alle für Targeting-Vorgänge erforderlichen Daten in der Adobe Campaign-Datenbank; sie können aber in externen Dateien verfügbar gemacht werden.
 
-Die zu ladende Datei kann durch die Transition angegeben oder während der Ausführung dieser Aktivität berechnet werden. Beispielsweise kann es sich um die Liste der 10 Lieblingsprodukte eines Kunden handeln, deren Käufe in einer externen Datenbank verwaltet werden.
+Die zu ladende Datei kann in der Transition angegeben oder bei Ausführung der Aktivität berechnet werden. Es kann sich beispielsweise um die Liste der zehn meistgekauften Artikel einer Kundin bzw. eines Kunden handeln, wobei die Kaufhandlungen in einer externen Datenbank verwaltet werden.
 
 Im oberen Bereich des Konfigurationsfensters für diese Aktivität können Sie das Dateiformat definieren. Verwenden Sie dazu eine Beispieldatei mit demselben Format wie die zu importierende Datei. Diese Datei kann lokal oder auf dem Server gespeichert werden.
 
@@ -53,9 +53,9 @@ Wählen Sie dazu die Option **[!UICONTROL Datei vorab bearbeiten]** aus und wäh
 
 ## Datei formatieren {#defining-the-file-format}
 
-Beim Laden einer Datei wird das Spaltenformat automatisch mit den Standardparametern für jeden Datentyp erkannt. Diese Standardparameter können angepasst werden, um einen bestimmten Umgang mit gewissen Daten vorzuschreiben, insbesondere in Bezug auf Fehler oder Leerwerte.
+Beim Laden einer Datei wird das Spaltenformat automatisch erkannt und jedem Datentyp werden Standardparameter zugewiesen. Diese Standardparameter können angepasst werden, um einen bestimmten Umgang mit gewissen Daten vorzuschreiben, insbesondere in Bezug auf Fehler oder Leerwerte.
 
-Wählen Sie dazu im Hauptfenster der Aktivität **&#x200B;**&#x200B;Laden (Datei)“ die Option **[!UICONTROL Hier klicken, um das Dateiformat zu ändern…]** aus. Daraufhin wird das Fenster mit den Formatdetails geöffnet.
+Verwenden Sie in diesem Fall im Hauptfenster der Aktivität **[!UICONTROL Laden (Datei)]** den Link **[!UICONTROL Zur Formatänderung hier klicken…]**. Das Detailfenster des Formats wird geöffnet.
 
 ![](assets/file_loading_columns_format.png)
 
@@ -74,7 +74,7 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
 * **[!UICONTROL NULL erlauben]**: Angabe des Umgangs mit leeren Werten.
 
    * **[!UICONTROL Adobe Campaign-Standardeinstellung]**: Erzeugt nur bei numerischen Feldern einen Fehler. Fügt bei anderen Feldern den Wert NULL ein.
-   * **[!UICONTROL Leerer Wert zulässig]**: Autorisiert leere Werte. Der Wert NULL wird eingefügt.
+   * **[!UICONTROL Leer erlaubt]**: Leere Werte sind zulässig. Der Wert NULL wird eingefügt.
    * **[!UICONTROL Leer nicht erlaubt]**: Erzeugung eines Fehlers bei leeren Werten.
 
 * **[!UICONTROL Länge]**: Angabe der maximal zulässigen Anzahl an Zeichen für den Datentyp **String**.
@@ -96,17 +96,17 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
    * **[!UICONTROL Bei fehlender Neukodifizierung Standardwert verwenden]**: Der den Fehler verursachende Wert wird durch den im Feld **[!UICONTROL Standardwert]** gespeicherten Wert ersetzt, es sei denn, für den fehlerhaften Wert wurde ein Mapping definiert (siehe nachfolgend die Option **[!UICONTROL Mapping]**).
 
 * **[!UICONTROL Standardwert]**: Angabe des Standardwerts, der im Bezug auf den jeweils definierten Umgang mit Fehlern zum Tragen kommt.
-* **[!UICONTROL Zuordnung]**: Dieses Feld ist nur in der Spaltendetailkonfiguration verfügbar (Zugriff erfolgt per Doppelklick oder über die Optionen rechts neben der Spaltenliste). Dadurch werden bestimmte Werte beim Importieren umgewandelt. Sie können beispielsweise &quot;drei&quot; in &quot;3&quot; umwandeln.
+* **[!UICONTROL Mapping]**: Auf dieses Feld kann nur in der Detailkonfiguration einer Spalte zugegriffen werden (entweder per Doppelklick oder mithilfe der Optionen rechts der Spaltenliste). Dadurch werden bestimmte Werte beim Importieren umgewandelt. Sie können beispielsweise &quot;drei&quot; in &quot;3&quot; umwandeln.
 
 ## Anwendungsbeispiel: Daten abrufen und in die Datenbank laden {#example--collecting-data-and-loading-it-in-the-database}
 
-Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, ihren Inhalt laden und die Daten in der Datenbank entsprechend den enthaltenen Informationen aktualisieren. Die zu erhebende Datei enthält Informationen über Kunden, die möglicherweise Einkäufe getätigt haben (für mehr oder weniger als 3.000 Euro), eine Rückerstattung bei einem Kauf beantragt haben oder den Shop besucht haben, ohne etwas zu kaufen. Abhängig von diesen Informationen werden verschiedene Prozesse auf ihr Profil in der Datenbank angewendet.
+Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, ihren Inhalt laden und die Daten in der Datenbank entsprechend den enthaltenen Informationen aktualisieren. Die zu erfassende Datei enthält Informationen über Kundinnen und Kunden, die möglicherweise Einkäufe getätigt haben (für mehr oder weniger als 3.000 Euro), eine Rückerstattung bei einem Kauf beantragt haben oder den Shop besucht haben, ohne etwas zu kaufen. Abhängig von diesen Informationen werden verschiedene Prozesse auf ihr Profil in der Datenbank angewendet.
 
 ![](assets/s_advuser_load_file_sample_0.png)
 
 1. Die Datei-Wächter-Aktivität dient dazu, in definierten Zeitabständen die in einem bestimmten Verzeichnis gespeicherten Dateien abzurufen.
 
-   Die Registerkarte **[!UICONTROL Verzeichnis]** enthält Informationen zu den Dateien, die wiederhergestellt werden sollen. In unserem Beispiel werden alle Dateien im Textformat wiederhergestellt, deren Namen das Wort „Kunden“ enthalten und die im Verzeichnis tmp/Adobe/Data/Files des Servers gespeichert sind.
+   Die Registerkarte **[!UICONTROL Verzeichnis]** enthält Informationen zu den Dateien, die wiederhergestellt werden sollen. Im vorliegenden Beispiel sollen alle Dateien im Textformat abgerufen werden, deren Name das Wort „Kunden“ enthält und die im Verzeichnis „tmp/Adobe/Data/files“ des Servers gespeichert sind.
 
    Weiterführende Informationen zum Thema **[!UICONTROL Datei-Wächter]** finden Sie im Abschnitt [Datei-Wächter](file-collector.md).
 
@@ -122,7 +122,7 @@ Im folgenden Beispiel können Sie täglich eine Datei auf dem Server erfassen, i
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Planung](scheduler.md).
 
-1. Konfigurieren Sie dann die Aktivität Laden (Datei) , um anzugeben, wie die erfassten Dateien gelesen werden sollen. Wählen Sie dazu eine Beispieldatei mit derselben Struktur wie die zu ladenden Dateien aus.
+1. Konfigurieren Sie anschließend die Aktivität „Laden (Datei)“, um anzugeben, wie die abgerufenen Dateien zu lesen sind. Wählen Sie hierzu eine Beispieldatei aus, die dieselbe Struktur aufweist, wie die zu ladenden Dateien.
 
    ![](assets/s_advuser_load_file_sample_3.png)
 

@@ -16,9 +16,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 124
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 77%
 
 Der Digital Content Editor bietet **Standardvorlagen** für Webanwendungen und Sendungen.
 
-Beim Erstellen einer Web-Anwendung vom Typ Landingpage kann der Benutzer eine dieser Vorlagen auswählen. Sie können auch eine HTML-Vorlage importieren, die außerhalb von Adobe Campaign erstellt wurde.
+Bei der Erstellung einer Web-Anwendung des Typs „Landingpage“ können Sie eine dieser Vorlagen auswählen. Sie können auch eine HTML-Vorlage importieren, die außerhalb von Adobe Campaign erstellt wurde.
 
 ![](assets/dce_popup_templatechoice.png)
 

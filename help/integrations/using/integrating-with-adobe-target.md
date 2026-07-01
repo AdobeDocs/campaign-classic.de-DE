@@ -19,9 +19,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 209
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Die Integration erfolgt beim Öffnen der E-Mail. Wenn der Kunde die E-Mail öffn
 
 >[!NOTE]
 >
->Im Rahmen der Integration werden nur statische Bilder unterstützt. Der Rest des Inhalts kann nicht personalisiert werden.
+>Im Rahmen der Integration werden nur statische Bilder unterstützt. Der restliche Inhalt kann nicht personalisiert werden.
 
 Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz kommen:
 

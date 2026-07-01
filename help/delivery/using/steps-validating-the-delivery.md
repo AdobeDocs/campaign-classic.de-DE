@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1800
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie dazu wie folgt vor:
 
    Die während der Analyse angewendeten Regeln werden in [diesem Abschnitt](#validation-process-with-typologies) erläutert. Die verfügbaren Validierungsmodi werden im Abschnitt [Ändern des Validierungsmodus](#changing-the-approval-mode) detailliert beschrieben.
 
-1. **Testsendungen durchführen**: Dieser Schritt ermöglicht die Steuerung von Inhalten, URLs, Personalisierung usw. Weitere Informationen finden Sie unter [Testversand durchführen](steps-validating-the-delivery.md#sending-a-proof) und [eine bestimmte Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Durchführen von Testsendungen**: In diesem Schritt können Sie Inhalte, URLs, Personalisierung usw. steuern. Weitere Informationen finden Sie unter [Durchführen eines Testversands](steps-validating-the-delivery.md#sending-a-proof) und [Definieren einer spezifischen Testversand-Zielgruppe](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >
@@ -98,7 +98,7 @@ Nachdem Sie das Ergebnis der Analyse geprüft haben, können Sie auf **[!UICONTR
 
 >[!NOTE]
 >
->Klicken Sie auf **[!UICONTROL Link Hauptzielgruppe des Versands ändern]** wenn die Anzahl der zu sendenden Nachrichten nicht Ihrer Konfiguration entspricht. Auf diese Weise können Sie die Definition der Zielpopulation ändern und die Analyse neu starten.
+>Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihrer Konfiguration entspricht. Damit können Sie die Definition der Zielgruppenpopulation ändern und die Analyse erneut starten.
 
 ### Analyseeinstellungen {#analysis-parameters}
 
@@ -112,9 +112,9 @@ Folgende Optionen stehen zur Verfügung:
 * **[!UICONTROL Validierungsmodus]**: In diesem Feld können Sie nach Abschluss der Analyse einen manuellen oder automatischen Versand definieren. Die Validierungsmodi werden im Abschnitt [Validierungsmodus ändern](#changing-the-approval-mode) angezeigt.
 * **[!UICONTROL Versandteile in der Datenbank vorbereiten]**: Mit dieser Option können Sie die Performance bei Versandanalysen verbessern. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#improving-delivery-analysis).
 * **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]**: Mit dieser Option können Sie die Personalisierungsdaten, die in Ihrem Versand enthalten sind, in einem automatischen Workflow vorbereiten, wodurch Sie bei der Verwendung der Personalisierungsfunktion deutlich mehr Performance erzielen können. Weiterführende Informationen dazu finden Sie unter [Optimieren der Personalisierung](personalization-fields.md#optimizing-personalization).
-* **[!UICONTROL Vorgang in einem separaten Prozess starten]** : Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungs-Server vollständig durchgeführt wird.
+* **[!UICONTROL Auftrag in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungs-Server vollständig durchgeführt wird.
 * **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]**: Schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
-* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]** : Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert. Sie werden so angezeigt, wie es in den bereitgestellten Inhalten ist. Diese Richtlinien werden mit dem Tag **&lt;%=** eingeleitet).
+* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option wird die Interpretation von im HTML-Inhalt enthaltenen JavaScript-Anweisungen umgangen.Sie werden so, wie sie sind, in den bereitgestellten Inhalten angezeigt. Diese Richtlinien werden mit dem Tag **&lt;%=** eingeleitet).
 
 ### Performance bei Versandanalysen verbessern {#improving-delivery-analysis}
 
@@ -131,9 +131,9 @@ Diese Option ist derzeit nur verfügbar, wenn folgende Bedingungen erfüllt sind
 
 ### Analysepriorität konfigurieren {#analysis-priority-}
 
-Wenn der Versand Teil einer Kampagne ist, bietet die Registerkarte **[!UICONTROL Erweitert]** eine zusätzliche Option. Auf diese Weise können Sie die Verarbeitungsreihenfolge für Sendungen in derselben Kampagne organisieren.
+Wenn Ihr Versand Teil einer Kampagne ist, bietet die Registerkarte **[!UICONTROL Erweitert]** eine zusätzliche Option. Diese ermöglicht die Hierarchisierung der Sendungen innerhalb derselben Kampagne.
 
-Vor dem Versand wird jeder Versand analysiert. Die Analysedauer hängt von der Versandextraktionsdatei ab. Je größer die Datei ist, desto länger dauert die Analyse, sodass die folgenden Sendungen warten.
+Vor dem Senden wird jeder Versand analysiert. Die Analysedauer hängt von der Versandextraktionsdatei ab. Je größer die Datei, desto länger die Analyse. Nachfolgende Sendungen werden verzögert.
 
 Die Optionen im Bereich **[!UICONTROL Nachrichtenvorbereitung durch die Steuerung]** erlauben die Priorisierung der Versandanalysen eines Kampagnen-Workflows.
 
@@ -174,15 +174,15 @@ Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
    ![](assets/s_ncs_user_email_del_send_proof_formats.png)
 
-Möglicherweise möchten Sie den Inhalt des Versands aufgrund von Kommentaren der Validierungsgruppe ändern, die den Testversand erhält. Nachdem Sie Ihre Änderungen vorgenommen haben, müssen Sie die Analyse neu starten und dann einen weiteren Testversand durchführen. Jeder neue Korrekturabzug wird nummeriert und im Versandprotokoll protokolliert.
+Sie möchten möglicherweise den Inhalt des Versands aufgrund von Kommentaren der Validierungsgruppe des Testversands anpassen. Nachdem Sie Ihre Änderungen vorgenommen haben, müssen Sie die Analyse neu starten und dann einen weiteren Testversand durchführen. Jeder neue Testversand wird nummeriert und im Versandprotokoll protokolliert.
 
 Klicken Sie auf den Tab **[!UICONTROL Testsendungen]** des Protokolls (Rubrik **[!UICONTROL Verfolgung]**), um einen Überblick über die gesamte Testversandliste zu erhalten.
 
 ![](assets/s_ncs_user_delivery_validation_cycle_03.png)
 
-Sie müssen so viele Testsendungen wie nötig durchführen, bis der Inhalt des Versands abgeschlossen ist. Danach können Sie den Versand an die Hauptzielgruppe senden und den Validierungszyklus schließen.
+Sie müssen so viele Testsendungen wie nötig durchführen, bis der Inhalt des Versands fertiggestellt ist. Danach können Sie den Versand an die Hauptzielgruppe senden und den Validierungszyklus beenden.
 
-Auf **[!UICONTROL Registerkarte]** Erweitert“ der Versandeigenschaften können Sie die Eigenschaften des Testversands definieren. Bei Bedarf können Sie die Regeln zum Ausschluss von Empfängern außer Kraft setzen.
+Auf der Registerkarte **[!UICONTROL Erweitert]** der Versandeigenschaften können Sie die Eigenschaften des Testversands definieren. Bei Bedarf können Sie die Regeln zum Ausschluss von Empfangenden überschreiben.
 
 ![](assets/s_ncs_user_wizard_email01_145.png)
 
@@ -227,7 +227,7 @@ Die Registerkarte **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden T
 
 ## Ändern des Genehmigungsmodus {#changing-the-approval-mode}
 
-Auf **[!UICONTROL Registerkarte]** Analyse“ der Versandeigenschaften können Sie den Validierungsmodus auswählen. Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen mit einem Akzent versehen wurden usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
+Auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften können Sie den Validierungsmodus auswählen. Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen mit einem Akzent versehen wurden usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
 
 In der Dropdown-Liste des entsprechenden Felds
 

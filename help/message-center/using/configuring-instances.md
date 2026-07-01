@@ -20,9 +20,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1312
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Alle Schritte für die Konfiguration und Verbindung der Kontroll- und Ausführun
 
 >[!IMPORTANT]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
+>Die Kontrollinstanz und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
 
 ## Kontrollinstanz konfigurieren {#control-instance}
 
@@ -56,7 +56,7 @@ Wenn Sie mehrere Ausführungsinstanzen verwenden, müssen Sie so viele externe K
 >
 >Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Benutzer unterteilt werden. Weiterführende Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
 
-### Erstellen eines externen Kontos
+### Externes Konto erstellen
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 
    >[!NOTE]
    >
-   >**mc1** und **mc2** Benutzer müssen über **[!UICONTROL Message Center-]** verfügen und sie können nicht auf die Adobe Campaign-Client-Konsole zugreifen. Ein Operator muss immer mit einer Sicherheitszone verknüpft sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
+   >Die Benutzenden **mc1** und **mc2** müssen über Berechtigungen des Typs **[!UICONTROL Message Center Ausführung]** verfügen und dürfen über keinen Zugriff auf die Client-Console von Adobe Campaign verfügen.Eine Benutzerin bzw. ein Benutzer muss immer mit einer Sicherheitszone verknüpft sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 1. Kreuzen Sie für jeden Benutzer die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** an und wählen Sie den dem jeweiligen Benutzer entsprechenden Ordner aus (**Ordner 1** für den Benutzer **mc1** und **Order 2** für den Benutzer **mc2**).
 

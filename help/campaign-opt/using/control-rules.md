@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 397
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 82%
 
 Kontrollregeln dienen dazu, vor dem Versand die Gültigkeit und Qualität der Nachrichten (korrekte Anzeige aller Zeichen, SMS-Größe, Adressenformat etc.) sicherzustellen.
 
-Mit einer Reihe von vordefinierten Regeln können Sie die üblichen Prüfungen durchführen. Diese Prüfungen (in der Benutzeroberfläche fett gedruckt) sind:
+Mit einer Reihe von vordefinierten Regeln können Sie die üblichen Prüfungen durchführen. Diese Prüfungen (in der Benutzeroberfläche in fetter Schrift) sind folgende:
 
 * **[!UICONTROL Betreffvalidierung]** (E-Mail): stellt sicher, dass Betreff und Absenderadresse keine Sonderzeichen enthalten, die bei gewissen E-Mail-Programmen Probleme bereiten könnten.
 * **[!UICONTROL Validierung der URL-Titel]** (E-Mail): stellt sicher, dass jede Tracking-URL über einen Titel verfügt.
@@ -49,7 +49,7 @@ Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Er
 
 **Beispiel:**
 
-Im folgenden Beispiel wird eine Regel erstellt, um zu verhindern, dass ein SMS-Angebot an mehr als 100 Empfänger gesendet wird. Diese Regel wird mit einer Kampagnentypologie und dann mit den SMS-Sendungen verknüpft, für die das betreffende Angebot verfügbar ist.
+Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines SMS-Angebots auf 100 Empfangende begrenzt. Diese Regel wird mit einer Kampagnentypologie verknüpft und anschließend mit den SMS-Sendungen, für die das entsprechende Angebot gilt.
 
 Gehen Sie wie folgt vor:
 

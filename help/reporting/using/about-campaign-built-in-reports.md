@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 286
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 73%
 
 
 
-Dieses Kapitel enthält die Liste der integrierten Berichte von Adobe Campaign, ihren Inhalt und ihren Kontext. Mit den folgenden Informationen können Sie vermeiden, Berichte zu erstellen, die bereits in der Plattform verfügbar sind.
+In diesem Kapitel finden Sie eine Liste der in Adobe Campaign integrierten Berichte sowie den Inhalt und Kontext dieser Berichte. Mit den folgenden Informationen können Sie vermeiden, Berichte zu erstellen, die bereits auf der Plattform verfügbar sind.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Folgende Berichttypen stehen zur Verfügung:
 * Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
 * Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
 
-Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Berichte-Dashboard oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die Liste der Hauptberichte ist auf der Startseite verfügbar und ermöglicht den schnellen Zugriff auf Versanddaten. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
+Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Dashboard für Berichte oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Auf der Startseite ist eine Liste der Hauptberichte verfügbar, mit denen Sie schnell auf Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
 Zugriff auf native Campaign-Berichte:
 

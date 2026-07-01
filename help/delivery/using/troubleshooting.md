@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 109
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 63%
 
 Wenn Ihr Mobilgerät mit einem WLAN verbunden ist und Sie keine Benachrichtigungen erhalten, stellen Sie sicher, dass die FCM/APNS-Ports nicht von Ihrer Firewall gesperrt werden.
 
-**Android**: Das Mobilgerät stellt eine Verbindung zu den FCM-Servern an den Ports 5228 bis 5230 her. Daher müssen Sie Ihre Firewall so konfigurieren, dass sie die Verbindung mit FCM autorisiert. Die zu öffnenden Ports sind: 5228 (am häufigsten verwendet), 5229 und 5230.
+**Android**: Das Mobilgerät stellt eine Verbindung zu den FCM-Servern an den Ports 5228 bis 5230 her. Daher müssen Sie Ihre Firewall so konfigurieren, dass sie die Verbindung mit FCM autorisiert. Die zu öffnenden Ports sind 5228 (am häufigsten verwendet), 5229 und 5230.
 
 **iOS**:
 

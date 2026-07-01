@@ -19,9 +19,9 @@ subfeature_v2:
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1443
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Wählen Sie für das Beispiel die Vorlage **[!UICONTROL Qualitative Verteilung]*
 
 Im nächsten Schritt werden die in der Tabelle anzuzeigenden Daten ausgewählt.
 
-Klicken Sie auf den **[!UICONTROL Hinzufügen…]**, um die Variable auszuwählen, die die anzuzeigenden Daten enthält. Hier möchten wir die Städte unserer Versandempfänger in einer Zeile anzeigen:
+Klicken Sie auf den Link **[!UICONTROL Hinzufügen…]**, um die Variable auszuwählen, die die anzuzeigenden Daten enthält. Hier möchten wir die Städte der Empfangenden unseres Versands in einer Zeile anzeigen:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
@@ -194,19 +194,19 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden &#x200B;](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
+1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden ](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
 
    Die weitere Konfiguration entspricht der der zuvor dargestellten deskriptiven Analysen.
 
 ### Empfehlungen zur Analyse von Zielgruppen {#target-analyze-recommendations}
 
-Die Analyse einer Population in einem Workflow setzt voraus, dass die Population in der Transition noch vorhanden ist. Wenn der Workflow gestartet wird, wird das die Population betreffende Ergebnis möglicherweise aus der Transition gelöscht. Zum Ausführen einer Analyse haben Sie folgende Möglichkeiten:
+Die Analyse einer Population in einem Workflow setzt voraus, dass die Population noch in der Transition vorhanden ist. Wenn der Workflow gestartet wurde, kann es sein, dass die Transition und damit die Population bereinigt wird. Zum Ausführen einer Analyse haben Sie folgende Möglichkeiten:
 
 * die Transition von ihrer Zielaktivität lösen und den Workflow starten, um sie zu aktivieren. Sobald die Transition blinkt, können Sie den Assistenten wie gewohnt starten.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
-* Ändern Sie die Eigenschaften des Workflows, indem Sie die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** auswählen. Auf diese Weise können Sie eine Analyse der Transition Ihrer Wahl starten, selbst wenn der Workflow abgeschlossen ist.
+* Ändern Sie die Eigenschaften des Workflows, indem Sie die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** auswählen. Auf diese Weise können Sie auch nach Abschluss des Workflows eine Analyse auf der Transition Ihrer Wahl starten.
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 

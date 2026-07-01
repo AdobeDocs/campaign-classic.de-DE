@@ -15,9 +15,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 288
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 85%
 
 Die Aktivität **[!UICONTROL Datenquelle ändern]** ermöglicht es Ihnen, die Datenquelle des Workflows **[!UICONTROL Arbeitstabelle]** zu ändern. Dies bietet mehr Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen wie FDA, FFDA und lokalen Datenbanken.
 
-Die **[!UICONTROL Arbeitstabelle]** ermöglicht es dem Adobe Campaign Classic-Workflow, Daten zu verarbeiten und für die Workflow-Aktivitäten freizugeben.
+Die **[!UICONTROL Arbeitstabelle]** ermöglicht dem Adobe Campaign Classic-Workflow die Verarbeitung von Daten und deren Freigabe mit den Workflow-Aktivitäten.
 Standardmäßig wird die **[!UICONTROL Arbeitstabelle]** in derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.
 
 Wenn Sie beispielsweise die Tabelle **[!UICONTROL Profile]** in der Cloud-Datenbank abfragen, erstellen Sie eine **[!UICONTROL Arbeitstabelle]** in derselben Cloud-Datenbank.
-Um dies zu ändern, können Sie die Aktivität **[!UICONTROL Daten-Source ändern]** hinzufügen, um eine andere Datenquelle für Ihre **[!UICONTROL Arbeitstabelle“]**.
+Um dies zu ändern, können Sie mit der Aktivität **[!UICONTROL Datenquelle ändern]** eine andere Datenquelle für Ihre **[!UICONTROL Arbeitstabelle]** wählen.
 
 Beachten Sie, dass Sie bei Verwendung der Aktivität **[!UICONTROL Datenquelle ändern]** zur Cloud-Datenbank zurückkehren müssen, um die Ausführung des Workflows fortzusetzen.
 

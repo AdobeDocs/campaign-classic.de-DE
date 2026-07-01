@@ -21,9 +21,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 521
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -96,13 +96,13 @@ Führen Sie einen Neustart des Servers durch, falls Änderungen an den obigen Ei
 
   Überprüfen Sie anhand der vorherigen Schritte die Perimeterkonfiguration.
 
-**Probleme mit dem WebView2-Cache**
+**Probleme mit WebView2-Cache**
 
-Wenn bei der Anmeldung bei der **[!UICONTROL Client-Konsole) mit Ihrer Adobe ID Probleme auftreten]** löschen Sie den lokalen WebView2-Cache. In den meisten Fällen löst dies das Problem. Gehen Sie wie folgt vor:
+Wenn bei der Anmeldung mit Ihrer Adobe ID bei der **[!UICONTROL Client-Konsole]** Probleme auftreten, versuchen Sie, den lokalen WebView2-Cache zu löschen. In den meisten Fällen löst dies das Problem. Gehen Sie wie folgt vor:
 
-1. Schließen Sie die **[!UICONTROL Client-Konsole]** und stoppen Sie alle laufenden `nlclient`.
+1. Schließen Sie die **[!UICONTROL Client-Konsole]** und stoppen Sie alle laufenden `nlclient`-Prozesse.
 
-1. Löschen Sie alle `webview2` und `webview2Cache` Ordner aus den folgenden Speicherorten:
+1. Löschen Sie alle `webview2`- und `webview2Cache`-Ordner an den folgenden Speicherorten:
 
    * `C:\ProgramData\Neolane\NL_5\nlclient\`
    * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`

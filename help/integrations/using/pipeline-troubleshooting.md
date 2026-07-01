@@ -23,9 +23,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 703
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
 **Pipeline schlägt fehl mit der Fehlermeldung &quot;aurait dû kommencer par `[` ou `{` (iRc=16384)&quot;**
 
-Die **NmsPipeline_Config**-Option ist nicht festgelegt. Es ist tatsächlich ein JSON-Parsing-Fehler.
-Legen Sie die JSON-Konfiguration in der Option **NmsPipeline_Config** fest. Siehe „Routing-Option“ auf dieser Seite.
+Die Option **NmsPipeline_Config** ist nicht festgelegt. Dies ist ein JSON-Parsing-Fehler.
+Legen Sie in der Option **NmsPipeline_Config** die JSON-Konfiguration fest. Siehe „Routing-Option“ auf dieser Seite.
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;the subject must be a valid organization or client&quot;**
 
@@ -51,7 +51,7 @@ Die Konfiguration der Organisations-ID ist nicht gültig.
 
 1. Überprüfen Sie, ob die Organisations-ID (ImsOrgId) in der Datei serverConf.xml festgelegt ist.
 1. Überprüfen Sie, ob eine leere Organisations-ID in der Konfigurationsdatei der Instanz die standardmäßige überschreiben könnte. Wenn vorhanden, entfernen Sie sie.
-1. Überprüfen Sie, ob die Organisations-ID korrekt ist. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
+1. Überprüfen Sie, ob die Organisations-ID korrekt ist. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden.
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;invalid key&quot;**
 

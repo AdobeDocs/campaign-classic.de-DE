@@ -17,9 +17,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 907
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Gehen Sie dazu wie folgt vor:
 
 Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Bereitstellungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-assistant) konfiguriert werden.
 
-Die Ereignislöschung wird automatisch vom Workflow [Datenbankbereinigung“ &#x200B;](../../production/using/database-cleanup-workflow.md). Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
+Die Ereignisbereinigung wird automatisch vom [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) durchgeführt. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
 
 Um die Bereinigungsparameter zu ändern, nutzen Sie die aufsteigenden und absteigenden Pfeile.
 
@@ -88,7 +88,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### Workflows der Ausführungsinstanz {#execution-instance-workflows}
 
-Auf den Ausführungsinstanzen können Sie über den Ordner **Administration > Produktion > Message Center“ auf die technischen Workflows für** zugreifen. Man muss sie nur starten. Die Workflows in der Liste sind:
+Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows erfolgt in den Ausführungsinstanzen im Knoten **Administration > Betreibung > Message Center**. Sie müssen sie lediglich starten. Die Workflows in der Liste sind:
 
 * **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): dieser Workflow teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
 * **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
@@ -96,12 +96,12 @@ Auf den Ausführungsinstanzen können Sie über den Ordner **Administration > Pr
 
   Folgende Status sind möglich:
 
-   * **[!UICONTROL Ausstehend]** : Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
+   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
    * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
-   * **[!UICONTROL Gesendet]** : Dieser Status wird aus den Versandlogs kopiert. Dies bedeutet, dass der Versand durchgeführt wurde.
-   * **[!UICONTROL Vom Versand ignoriert]** : Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
-   * **[!UICONTROL Versand fehlgeschlagen]** : Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
-   * **[!UICONTROL Ereignis wurde nicht]**: Das Ereignis konnte keiner Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.
+   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand erfolgt ist.
+   * **[!UICONTROL Vom Versand ignoriert]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
+   * **[!UICONTROL Versandfehler]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
+   * **[!UICONTROL Ereignis wurde nicht übernommen]**: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.
 
 ### Zeitplan des Archivierungs-Workflows
 
@@ -184,7 +184,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 

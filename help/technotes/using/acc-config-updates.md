@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

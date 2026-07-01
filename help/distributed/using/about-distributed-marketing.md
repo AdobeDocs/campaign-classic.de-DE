@@ -13,9 +13,9 @@ feature_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 150
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 20%
 
 
 
-Adobe Campaign bietet eine **dezentrales Marketing**-Anwendung zur Implementierung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch Kampagnenkit-**[!UICONTROL genannt,]** dem den lokalen Entitäten die zentral erstellten Kampagnenvorlagen und Instanzen angeboten werden.
+Adobe Campaign bietet eine Anwendung für **verteiltes Marketing** zum Implementieren kooperativer Kampagnen zwischen Zentralstellen (Hauptsitz, Marketing-Abteilungen usw.) und Lokalstellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **[!UICONTROL Liste der Kampagnenkits]** genannt, in dem Lokalstellen zentral erstellte Kampagnenvorlagen und -instanzen zur Verfügung gestellt werden.
 
-Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kampagnen werden durch Pakete materialisiert, die entweder lokale oder partizipative Kampagnen darstellen. Um eine Kampagne verwenden zu können, muss sie von der Lokalstelle bestellt und anschließend genehmigt werden.
+Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kampagnen werden durch Kits materialisiert, die entweder lokale oder partizipative Kampagnen darstellen. Um eine Kampagne verwenden zu können, muss die Lokalstelle sie bestellen und die Bestellung muss validiert werden.
 
 >[!CAUTION]
 >
->Das Modul Dezentrales Marketing ist eine Option **Kampagne**. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Das Modul „Verteiltes Marketing“ ist eine Option von **Campaign**. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 >[!NOTE]
 >
->Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

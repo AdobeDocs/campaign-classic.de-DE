@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1420
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -56,13 +56,13 @@ Die Implementierung des Enhanced MTA kann sich auf einige der bestehenden Campai
 
 **Was ist der Enhanced MTA?**
 
-Adobe Campaign kann jetzt auf den **Enhanced MTA** (Mail Transfer Agent) aktualisiert werden, eine leistungsstarke E-Mail-Versand-Engine.
+Adobe Campaign kann jetzt auf das leistungsstarke E-Mail-Versandmodul **Enhanced MTA** (Mail Transfer Agent) aktualisiert werden.
 
-Der Enhanced MTA beinhaltet eine intelligentere Handhabung von Bounces und eine automatische Zustellbarkeitsoptimierung, die Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und beizubehalten.
+Der Enhanced MTA umfasst intelligentere Handhabung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung, die den Absenderinnen und Absendern hilft, optimale Versandraten im Posteingang zu erreichen und beizubehalten.
 
 **Was sind die Vorteile?**
 
-* Adobe Campaign-Clients, die den Enhanced MTA verwenden, verzeichnen <!--300%-->einen massiven Anstieg der Gesamtdurchsatzgeschwindigkeit und eine deutliche Verringerung der Softbounces.
+* Adobe Campaign-Kundschaft, die den Enhanced MTA einsetzt, stellt eine <!--300%-->massive Steigerung der Gesamtdurchsatzgeschwindigkeit und eine deutliche Reduzierung der Softbounces fest.
   <!--90%+-->
 * Der Enhanced MTA nutzt die neueste MTA-Technologie, um Ihnen optimale Durchsatzgeschwindigkeiten für Ihren E-Mail-Versand zu bieten.
 * Durch die sofortige und automatische Anpassung an die Rückmeldungen, die er erhält, sorgt er außerdem für einen genaueren und intelligenteren E-Mail-Versand mit Versanddaten in Echtzeit.
@@ -156,8 +156,8 @@ Weitere Informationen zum Gültigkeitszeitraum finden Sie auf dieser [Seite](com
 
 ### DKIM-Signierung
 
-Die E-Mail-Authentifizierungssignatur für DKIM (DomainKeys Identified Mail) wird vom Enhanced MTA durchgeführt. Die DKIM-Signierung durch den nativen Campaign-MTA wird im Rahmen der Aktualisierung des Enhanced MTA in der Domain-Management-Tabelle deaktiviert.
-Weiterführende Informationen zu DKIM finden Sie im [Handbuch von Adobe mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
+Die DKIM-Authentifizierung (DomainKeys Identified Mail) von E-Mails erfolgt durch den Enhanced MTA. Die DKIM-Signierung durch den nativen Campaign MTA wird im Rahmen des Enhanced MTA-Upgrades in der Tabelle „Domain-Verwaltung“ deaktiviert.
+Weitere Informationen zu DKIM finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 
 ### Berichte zum Versanderfolg
 

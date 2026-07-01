@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 114
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Campaign Optimization ist das Adobe Campaign-Modul, mit dem Sie die Durchführun
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#typologies-video).
 
-Je nach Angebot kann die Kampagnenoptimierung enthalten sein oder als Add-on hinzugefügt werden. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+Abhängig von Ihrem Abonnement ist die Kampagnenoptimierung entweder im Lieferumfang enthalten oder als Add-on verfügbar. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 >[!NOTE]
 >

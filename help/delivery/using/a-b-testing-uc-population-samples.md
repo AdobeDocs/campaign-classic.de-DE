@@ -18,9 +18,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 206
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 82%
 
 ## Konfigurieren der Aufspaltungsaktivität {#configuring-the-split-activity}
 
-Mithilfe dieser Aktivität können Sie mehrere Populationen erstellen: die Population, die Versand A erhält, die Population, die Versand B erhält, und die verbleibende Population. Durch die Auswahl per Zufallsauswahl können Sie nur einen Teil der Population jedes Versands auswählen.
+Mit dieser Aktivität können Sie mehrere Populationen erstellen: eine für den Empfang von Versand A, eine für den Empfang von Versand B und die Restpopulation. Wenn die Zufallsauswahl verwendet wird, können Sie nur einen Teil der Population für jeden Versand ansprechen.
 
 1. Erstellung der Testpopulation A:
 

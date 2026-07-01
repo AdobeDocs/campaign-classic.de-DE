@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1179
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Um einen vorhandenen Dienst zu bearbeiten, klicken Sie auf seinen Namen. Um eine
 * Sie haben die Möglichkeit, bei An- und Abmeldungen **Bestätigungsnachrichten** zu versenden. Wählen Sie in diesem Fall neben den Feldern **[!UICONTROL Anmeldung]** und **[!UICONTROL Abmeldung]** die jeweils zu verwendenden Versandvorlagen aus. Die Vorlagen müssen mit einem Zielgruppen-Mapping des Typs **[!UICONTROL Abonnements]** und ohne Angabe einer Zielgruppe konfiguriert werden. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).
 * Standardmäßig sind Abonnements unbegrenzt. Sie können jedoch die Option **[!UICONTROL Unbegrenzt]** abwählen und eine Gültigkeitsdauer für den Dienst festlegen. Die Gültigkeitsdauer kann in Tagen (**[!UICONTROL T]**) oder Monaten (**[!UICONTROL M]**) festgelegt werden.
 
-Nachdem der Dienst gespeichert wurde, wird er der Liste Dienste und Abonnements hinzugefügt: Klicken Sie auf seinen Namen, um ihn zu bearbeiten. Mehrere Registerkarten sind verfügbar. Die Registerkarte **[!UICONTROL Abonnements]** wird die Liste aller angemeldeten Benutzer (Unterregisterkarte **[!UICONTROL Aktive Abonnements]**) bzw. aller An- und Abmeldungen (Unterregisterkarte **[!UICONTROL Verlauf]**) angezeigt. Sie haben an dieser Stelle auch die Möglichkeit, Abonnenten hinzuzufügen oder zu entfernen. Siehe [Abonnenten hinzufügen und löschen](#adding-and-deleting-subscribers).
+Nachdem der Dienst gespeichert wurde, wird er der Liste „Dienste und Abonnements“ hinzugefügt: Klicken Sie auf seinen Namen, um ihn zu bearbeiten. Mehrere Registerkarten sind verfügbar. Die Registerkarte **[!UICONTROL Abonnements]** wird die Liste aller angemeldeten Benutzer (Unterregisterkarte **[!UICONTROL Aktive Abonnements]**) bzw. aller An- und Abmeldungen (Unterregisterkarte **[!UICONTROL Verlauf]**) angezeigt. Sie haben an dieser Stelle auch die Möglichkeit, Abonnenten hinzuzufügen oder zu entfernen. Siehe [Abonnenten hinzufügen und löschen](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -138,7 +138,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 * Dienst manuell hinzufügen. Klicken Sie im Tab **[!UICONTROL Abonnements]** des Empfängerprofils auf **[!UICONTROL Hinzufügen]** und wählen Sie den gewünschten Dienst aus.
 
-* Eine Gruppe von Empfängern automatisch für diesen Dienst anmelden. Die Empfängerliste kann aus einem Filtervorgang, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl mithilfe der Maus stammen. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
+* Melden Sie eine Gruppe von Empfangenden automatisch für diesen Service an. Die Empfängerliste kann aus einem Filtervorgang, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl per Mausklick erstellt werden. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
 * Importieren Sie Empfängerinnen und Empfänger und abonnieren Sie sie automatisch für einen Informationsdienst. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
@@ -157,7 +157,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 #### Manuelle Abmeldung {#manual-unsubscribing}
 
-E-Mail-Sendungen müssen per Gesetz einen Abmelde-Link enthalten. Empfänger und Empfängerinnen können auf diesen Link klicken, um ihr Profil zu aktualisieren und von den Zielgruppen künftiger Sendungen ausgeschlossen zu werden.
+E-Mail-Sendungen müssen per Gesetz einen Abmelde-Link enthalten. Die Empfängerinnen und Empfänger können auf diesen Link klicken, um ihr Profil zu aktualisieren und von künftigen Sendungen ausgeschlossen zu werden.
 
 Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versandassistenten bereitgestellt wird (siehe [Über die Personalisierung](about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Blockierungsliste aufgenommen (Opt-out); der Empfänger wird also von keiner Versandaktion mehr als Ziel ausgewählt.
 
@@ -169,7 +169,7 @@ Eine andere Möglichkeit ist die Abmeldung eines oder mehrerer Empfänger direkt
 
 #### Automatische Abmeldung {#automatic-unsubscription}
 
-Ein Informationsdienst kann eine begrenzte Dauer haben. Das Abo wird automatisch beendet, wenn die Gültigkeitsdauer abgelaufen ist. Die Dauer der Gültigkeit wird auf der Registerkarte **[!UICONTROL Bearbeiten]** der Diensteigenschaften konfiguriert. Sie wird in Tagen definiert.
+Ein Informationsdienst kann von begrenzter Dauer sein. Die Empfängerinnen und Empfänger werden automatisch abgemeldet, wenn die Gültigkeitsdauer abgelaufen ist. Die Dauer der Gültigkeit wird auf der Registerkarte **[!UICONTROL Bearbeiten]** der Diensteigenschaften konfiguriert. Sie wird in Tagen definiert.
 
 ![](assets/s_ncs_user_services_delay.png)
 

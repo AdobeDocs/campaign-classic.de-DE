@@ -20,9 +20,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: tm+mt
-source-wordcount: 842
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: 837
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Gestalten von E-Mail-Inhalten</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de" target="_blank">Best Practices für den Versand</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de" target="_blank">Best Practices beim Versand</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -101,7 +101,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
 
 ### Was ist das Control Panel?
 
-Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign Classic effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen.
+Das Control Panel von Campaign ermöglicht Ihnen effizienteres Arbeiten als Produktadmin von Campaign Classic. Sie können damit Einstellungen verwalten und die Nutzung von jeder Ihrer Instanzen verfolgen.
 [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), um weitere Informationen zu erhalten.
 
 >[!NOTE]
@@ -134,7 +134,7 @@ Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informat
 Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf den folgenden Seiten:
 * [Fügen Sie IP-Adressen zur Zulassungsliste hinzu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de), um auf Ihre Campaign-Instanzen zuzugreifen
 * [Verwalten von URL-Berechtigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
-* [Zugriff auf Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
+* [Aufrufen der Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
 * [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
 
 ## Hilfe anfordern {#support}

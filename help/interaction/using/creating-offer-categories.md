@@ -14,9 +14,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 292
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 60%
 
 
 
-Die Erstellung von Angebotskategorien kann nur in der Umgebung **[!UICONTROL Design]** erfolgen. Sie werden automatisch in der **[!UICONTROL Live]**-Umgebung bereitgestellt, sobald die darin enthaltenen erstellten/geänderten Angebote validiert wurden. Standardmäßig enthält die Umgebung **[!UICONTROL Design]** eine Kategorie, in der alle Angebote empfangen werden sollen. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
+Die Erstellung von Angebotskategorien kann nur in der **[!UICONTROL Design]**-Umgebung erfolgen. Sie werden automatisch in der **[!UICONTROL Live]**-Umgebung entwickelt (bereitgestellt), sobald die darin enthaltenen Angebote validiert wurden. Standardmäßig enthält die **[!UICONTROL Design]**-Umgebung eine Kategorie für den Empfang aller Angebote. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
 
-Für jede Kategorie können Sie ein Eignungsdatum festlegen, d. h. einen Zeitraum, nach dem die in der Kategorie enthaltenen Angebote ihrer Zielgruppe nicht mehr unterbreitet werden dürfen. Wenn Sie möchten, dass die Angebote einer bestimmten Kategorie von der Angebotsmodul-Engine als Priorität ausgewählt werden, um beispielsweise ein Produkt besser verfügbar zu machen, können Sie deren Gewichtung für einen bestimmten Zeitraum erhöhen, indem Sie eine Multiplikationsgewichtung zur Kategorie hinzufügen.
+Für jede Kategorie können Sie eine Gültigkeit definieren. Dies ist der Zeitraum, außerhalb dessen die in der Kategorie enthaltenen Angebote ihrer Zielgruppe nicht mehr unterbreitet werden können. Sie haben weiterhin die Möglichkeit, Angeboten einer bestimmten Kategorie bei der Auswahl durch das Angebotsmodul den Vorzug einzuräumen, beispielsweise um ein Produkt zeitlich begrenzt besonders hervorzuheben. 
 
 Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 

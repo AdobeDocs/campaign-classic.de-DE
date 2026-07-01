@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 442
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Zusätzlich zu den verschiedenen Diagrammen, die [hier](../../reporting/using/cr
 
 Sie können beispielsweise Container verwenden: Diese ermöglichen es, mehrere Elemente einer Seite zu gruppieren und in Spalten oder Zellen anzuordnen. Nähere Informationen zu ihrer Konfiguration werden in [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#creating-containers) erläutert.
 
-Sie können das Berichtslayout am Stamm der Baumstruktur konfigurieren und für jeden Container überschreiben. Die Seiten werden in Spalten sortiert. Container werden auch in Spalten sortiert. Nur die statischen und grafischen Elemente werden in Zellen sortiert.
+Sie können das Berichts-Layout am Stamm der Baumstruktur konfigurieren und für jeden Container überschreiben. Die Seiten werden in Spalten sortiert. Container werden auch in Spalten sortiert. Nur die statischen und grafischen Elemente werden in Zellen sortiert.
 
 ## Definieren der Optionen für jede Seite {#defining-the-options-for-each-page}
 
@@ -73,4 +73,4 @@ Fügen Sie die Kennungen in den HTML-Inhalt des Berichts ein:
 
 Sie werden bei der Anzeige des Berichts automatisch durch den entsprechenden Inhalt ersetzt.
 
-Wie bei HTML-Texten können Sie bei diesem Betriebsmodus die im Bericht verwendeten Texte zentral zusammenführen und ihre Übersetzung verwalten. Die auf dieser Registerkarte erstellten Texte werden automatisch vom integrierten Übersetzungs-Tool von Adobe Campaign erfasst.
+Wie bei HTML-Texten ermöglicht es dieser Betriebsmodus, die im Bericht verwendeten Texte zu zentralisieren und ihre Übersetzungen zu verwalten. Die in dieser Registerkarte erstellten Texte werden automatisch vom integrierten Übersetzungs-Tool von Adobe Campaign erfasst.

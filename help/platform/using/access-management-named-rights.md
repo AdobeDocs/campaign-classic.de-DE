@@ -28,15 +28,15 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 711
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Spezifische Berechtigungen zum Einrichten von Zugriffsberechtigungen verwenden{#named-rights}
 
-Standardmäßig bietet Adobe Campaign eine Reihe von spezifischen Berechtigungen, mit denen Sie die den Benutzenden und Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** bearbeitet werden.
+Adobe Campaign bietet standardmäßig eine Reihe an spezifischen Berechtigungen, mit denen Sie die Autorisierung für Benutzende und Benutzergruppen definieren können. Diese Berechtigungen können über den Knoten **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** in der Struktur bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
@@ -46,13 +46,13 @@ Es handelt sich um folgende Berechtigungen:
 
   >[!IMPORTANT]
   >
-  >**Nach der Migration zu IMS:** Sobald Sie zu Adobe Identity Management System (IMS) migriert haben, alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.) gewährt automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
+  >**Nach der Migration zu IMS:** Sobald Sie zu Adobe-Identitäts-Management-System (IMS) migriert sind, gewähren alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „Administratoren“, „Admin“, „Admins“ usw.), automatisch Zugriff auf das Control Panel von Campaign. Wir empfehlen, das Wort „admin“ in spezifischen Berechtigungen oder Rollennamen zu vermeiden, außer diese Benutzenden sollen über Zugriff auf das Control Panel verfügen. Erfahren Sie mehr über die [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und das [Verwalten des Zugriffs auf das Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 * **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
 
   >[!IMPORTANT]
   >
-  >**Nach der Migration zu IMS:** gewähren Produktprofile oder spezifische Berechtigungen, die das Wort „Admin“ enthalten (z. B. „Genehmigungsadministrator„), Zugriff auf das Campaign Control Panel. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
+  >**Nach der Migration zu IMS:** Produktprofile oder spezifische Berechtigungen, die das Wort „admin“ enthalten (z. B. „Validierungsadmin“), gewähren Zugriff auf das Control Panel von Campaign. Erfahren Sie mehr über die [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und das [Verwalten des Zugriffs auf das Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 * **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 

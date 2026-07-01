@@ -13,9 +13,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 288
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Die folgenden Schritte sollten von einem Profil des **Versandverantwortlichen** ausgeführt werden. Sie können Angebote nur in Live-Umgebungen bearbeiten.
+>Die folgenden Schritte müssen von Personen mit dem Profil **Versandverantwortlicher** durchgeführt werden. Diese können Angebote nur in Live-Umgebungen bearbeiten.
 
 1. Kampagnen erstellen.
 1. Verweis auf ein Angebot in einer Kampagne oder im gebündelten Versand einer Kampagne. Weitere Informationen hierzu finden Sie im Abschnitt [Über ausgehende Kanäle](../../interaction/using/about-outbound-channels.md).

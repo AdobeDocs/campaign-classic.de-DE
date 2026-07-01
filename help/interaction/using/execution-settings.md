@@ -15,9 +15,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 171
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 56%
 
 
 
-Beim Erstellen einer Simulation können Sie bei Bedarf Ausführungseinstellungen festlegen. Mit diesen Einstellungen können Sie die Simulation in einer Zeit geringer Aktivität ausführen, je nach ihrer Priorität, oder SQL-Abfragen im Protokoll aufzeichnen. Dieser Schritt ist optional.
+Beim Erstellen einer Simulation können Sie bei Bedarf Ausführungseinstellungen festlegen. Auf diese Weise können Sie die Ausführung der Simulation in Abhängigkeit von ihrer Prioritätsstufe auf einen Zeitpunkt mit geringer Auslastung verschieben und die SQL-Abfragen im Protokoll speichern. Diese Stufe ist optional.
 
 Eine Änderung dieser Parameter ist im späteren Verlauf im Tab **[!UICONTROL Allgemein]** des Simulationsfensters möglich.
 
@@ -33,4 +33,4 @@ Eine Änderung dieser Parameter ist im späteren Verlauf im Tab **[!UICONTROL Al
 
 * **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**: plant den Simulationsstart in Abhängigkeit von der angegebenen Priorität (Niedrig, Mittel, Hoch) mit dem Ziel, die Performance von Adobe Campaign zu optimieren.
 * **[!UICONTROL Priorität]**: auf die Simulation angewendete Dringlichkeit, die den Ausführungsbeginn entsprechend verschiebt. Wenn die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** aktiviert wurde, wählt der Workflow der Kampagnenvorgänge einen Zeitpunkt mit geringer Aktivität, um die Simulation zu starten.
-* **[!UICONTROL SQL-Abfragen im Protokoll speichern]** : Diese Funktion ist nur für erfahrene Benutzer. Auf diese Weise können Sie dem Protokoll eine Registerkarte hinzufügen, auf der SQL-Abfragen angezeigt werden, um mögliche Fehlfunktionen zu erkennen, falls die Simulation mit Fehlern abgeschlossen wird.
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion ist erfahrenen Benutzenden vorbehalten. Bei Aktivierung wird dem Protokoll eine Registerkarte hinzugefügt, in der die SQL-Abfragen angezeigt werden. Dies erleichtert die Fehlerbehebung, wenn die Simulation fehlschlägt.

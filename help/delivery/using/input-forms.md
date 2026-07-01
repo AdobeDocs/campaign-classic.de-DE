@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 845
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen
 
 Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im Attribut **entity-schema** des **`<form>`**-Elements ein.
 
-Um die Struktur eines Formulars zu veranschaulichen, wird eine Schnittstelle anhand unseres Beispielschemas „cus“ :book:
+Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir hier eine Schnittstelle basierend auf unserem Beispielschema „cus:book“:
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -89,7 +89,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 
 ## Formatierung {#formatting}
 
-Die Anordnung der Bedienelemente zueinander ähnelt der in HTML-Tabellen verwendeten Anordnung, mit der Möglichkeit, eine Steuerung in mehrere Spalten zu unterteilen, Verschlusselemente zu bilden oder die Belegung des verfügbaren Platzes festzulegen. Beachten Sie jedoch, dass durch die Formatierung nur die Verteilung der Proportionen zulässig ist; Sie können keine festen Abmessungen für ein Objekt angeben.
+Die Anordnung der Steuerelemente untereinander ähnelt dem in einer HTML-Tabelle verwendeten Layout. Sie haben die Möglichkeit, ein Steuerelement in mehrere Spalten aufzuteilen, Elemente zu verschachteln oder die Verwendung des vorhandenen Platzes zu definieren. Beachten Sie jedoch, dass durch die Formatierung nur die Verteilung der Proportionen zulässig ist. Sie können keine festen Abmessungen für ein Objekt angeben.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/form-structure.md#formatting).
 
@@ -162,7 +162,7 @@ Dies ist in folgenden Fällen zu empfehlen:
 
 Die Definition des Bearbeitungsformulars erfolgt über das **`<form>`**-Element unter dem Listenelement. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars.
 
-Eine **[!UICONTROL Detail]**-Schaltfläche wird automatisch hinzugefügt, wenn das **zoom=„true“**-Attribut in die Listendefinition eingegeben wird. Auf diese Weise können Sie das Bearbeitungsformular in der ausgewählten Zeile öffnen.
+Eine Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in der Definition der Liste angegeben ist.Damit können Sie das Bearbeitungsformular der ausgewählten Zeile öffnen.
 
 >[!NOTE]
 >

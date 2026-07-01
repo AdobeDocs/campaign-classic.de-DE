@@ -22,15 +22,15 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 284
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # SpamAssassin{#spamassassin}
 
-Adobe Campaign kann für die Verwendung mit [SpamAssassin](https://spamassassin.apache.org) konfiguriert werden, einem Drittanbieterdienst, der zum Filtern von E-Mail-Spam verwendet wird. Auf diese Weise können Sie E-Mails bewerten, um festzustellen, ob bei einer Nachricht das Risiko besteht, dass sie von den Anti-Spam-Tools, die beim Empfang verwendet werden, als Spam eingestuft wird.
+Adobe Campaign kann für die Verwendung mit [SpamAssassin](https://spamassassin.apache.org) konfiguriert werden, einem Drittanbieterdienst zum Filtern von E-Mail-Spam. Damit können Sie bei E-Mails bewerten, ob für eine Nachricht das Risiko besteht, dass sie von Anti-Spam-Tools der Empfangenden als Spam eingestuft wird.
 
 SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 
@@ -61,7 +61,7 @@ Weiterführende Informationen zur Erstellung und Konzeption eines Versands finde
    >
    >Wenn Sie keinen Empfänger auswählen, kann die Anti-Spam-Prüfung nicht durchgeführt werden.
 
-1. Eine Warnmeldung gibt das Ergebnis des Tests aus. Wenn ein hohes Risiko festgestellt wird, wird die folgende Warnmeldung angezeigt:
+1. Eine Warnmeldung gibt Auskunft über das Ergebnis des Tests. Wenn ein hohes Risiko erkannt wird, wird die folgende Warnmeldung angezeigt:
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
@@ -73,4 +73,4 @@ Weiterführende Informationen zur Erstellung und Konzeption eines Versands finde
 
 >[!NOTE]
 >
->Jedes Mal, wenn Sie auf **[!UICONTROL Anti-Spam-Überprüfung]** klicken, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut auf Anti-Spam-Erkennung analysiert. Stellen Sie sicher, dass Sie Ihren Inhalt geändert haben, bevor Sie die Anti-Spam-Analyse erneut ausführen.
+>Jedes Mal, wenn Sie **[!UICONTROL Anti-Spam-Prüfung]** auswählen, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut analysiert. Stellen Sie sicher, dass Sie Ihren Inhalt geändert haben, bevor Sie die Anti-Spam-Analyse erneut ausführen.

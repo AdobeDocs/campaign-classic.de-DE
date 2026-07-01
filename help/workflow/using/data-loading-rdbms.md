@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 203
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   Der Name der in das entsprechende Feld eingegebenen Tabelle wird als Vorlage für die Datenerfassung in der externen Datenbank verwendet. Der Name der vom Workflow verarbeiteten Tabelle kann durch die eingehende Transition der Aktivität Laden berechnet oder übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert..]** und wählen Sie die Option **[!UICONTROL In der Transition angegeben]** oder **[!UICONTROL Explizit]** aus.
+   Der im zugehörigen Feld eingegebene Name der Tabelle dient als Vorlage zum Erfassen der Daten in der externen Datenbank. Der Name der vom Workflow verarbeiteten Tabelle kann berechnet oder von der eingehenden Transition der Datenladeaktivität übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert…]** und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]** aus.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 

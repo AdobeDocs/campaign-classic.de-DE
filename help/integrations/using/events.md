@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1015
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -94,8 +94,8 @@ Beispiel:
 >
 >Es handelt sich hierbei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
-Der Inhalt wird für jeden Trigger im JSON-Format in Adobe Analytics definiert.
-Beispiel: In einem Trigger „LogoUpload_Upload_Visits“:
+Der Inhalt wird für jeden Auslöser in Adobe Analytics im JSON-Format definiert:
+Beispiel: In einem Auslöser „LogoUpload_uploading_Visits“:
 
 * **[!UICONTROL eVar01]** kann die Käufer-ID im Zeichenfolgenformat (&quot;String&quot;) enthalten, die zur Abstimmung mit Adobe Campaign-Empfängern verwendet wird. <br>Sie muss abgestimmt werden, um die Käufer-ID zu ermitteln, die den Primärschlüssel darstellt.
 
@@ -139,8 +139,8 @@ Derzeit gibt es keine Möglichkeit, unterschiedliche Warteschlangen für separat
 
 ### Protokollierung und Fehlerbehandlung {#logging-error-handling}
 
-Protokolle wie logInfo() werden an das [!DNL pipelined] weitergeleitet. Fehler wie logError() werden in das [!DNL pipelined]-Protokoll geschrieben und führen dazu, dass das Ereignis in eine Warteschlange für weitere Zustellversuche gestellt wird. In diesem Fall sollten Sie das Pipeline-Protokoll überprüfen.
-Bei fehlerhaften Nachrichten wird in der in den [!DNL pipelined] Optionen festgelegten Dauer mehrmals ein neuer Zustellversuch unternommen.
+Protokolle wie logInfo() werden an das [!DNL pipelined]-Protokoll weitergeleitet. Fehler wie logError() werden in das [!DNL pipelined]-Protokoll geschrieben und führen dazu, dass das Ereignis in eine Warteschlange für weitere Zustellversuche gestellt wird. In diesem Fall sollten Sie das Pipeline-Protokoll überprüfen.
+Bei fehlerhaften Nachrichten wird in der in den [!DNL pipelined]-Optionen festgelegten Dauer mehrmals ein neuer Zustellversuch unternommen.
 
 Zu Debugging- und Überwachungszwecken werden die vollständigen Auslöserdaten im Feld &quot;data&quot; der Auslösertabelle im XML-Format geschrieben. Alternativ dazu sind die Auslöserdaten auch in &quot;logInfo()&quot; verfügbar.
 
@@ -166,7 +166,7 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 Seien Sie beim Analysieren vorsichtig, um Fehler zu vermeiden.
-Da dieser Code für alle Trigger verwendet wird, sind die meisten Daten nicht erforderlich. Daher kann es leer gelassen werden, wenn es nicht vorhanden ist.
+Da dieser Code für alle Auslöser verwendet wird, sind die meisten Daten nicht erforderlich. Daher kann er leer gelassen werden, wenn er nicht vorhanden ist.
 
 ### Speichern des Auslösers {#storing-triggers-js}
 
@@ -212,9 +212,9 @@ Um eine schnellere Verarbeitung zu ermöglichen, werden mehrere Threads des Skri
 
 ### Pipeline-Ereignisschema {#pipeline-event-schema}
 
-Ereignisse werden in einer Datenbanktabelle gespeichert. Er wird von Marketing-Kampagnen verwendet, um Kundinnen und Kunden anzusprechen und E-Mails mithilfe von Triggern anzureichern.
-Obwohl jeder Trigger eine eigene Datenstruktur haben kann, können alle Trigger in einer einzigen Tabelle zusammengefasst werden.
-Das Feld triggerType gibt an, von welchem Trigger die Daten stammen.
+Ereignisse werden in einer Datenbanktabelle gespeichert. Diese wird von Marketing-Kampagnen verwendet, um Kundinnen und Kunden anzusprechen und E-Mails mithilfe von Auslösern anzureichern.
+Obwohl jeder Auslöser eine eigene Datenstruktur haben kann, können alle Auslöser in einer einzigen Tabelle zusammengefasst werden.
+Das Feld „triggerType“ gibt an, von welchem Auslöser die Daten stammen.
 
 Hier ist ein Beispiel für einen Schema-Code für diese Tabelle:
 
@@ -245,8 +245,8 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 Bei der Abstimmung gleicht Adobe Analytics den Kunden mit der Adobe Campaign-Datenbank ab. Das Kriterium für die Abstimmung kann beispielsweise &quot;shopper_id&quot; sein.
 
-Aus Leistungsgründen muss der Abgleich im Batch-Modus durch einen Workflow erfolgen.
-Die Häufigkeit muss auf 15 Minuten eingestellt sein, um die Arbeitslast zu optimieren. Infolgedessen beträgt die Verzögerung zwischen dem Ereignisempfang in Adobe Campaign und der Verarbeitung durch einen Marketing-Workflow bis zu 15 Minuten.
+Aus Leistungsgesichtspunkten muss die Abstimmung im Stapelmodus durch einen Workflow erfolgen.
+Die Frequenz muss auf 15 Minuten eingestellt werden, um den Workflow zu optimieren. Daher kann die Verzögerung zwischen dem Empfang eines Ereignisses in Adobe Campaign und dessen Verarbeitung durch einen Marketing-Workflow bis zu 15 Minuten betragen.
 
 ### Optionen zur Abstimmung von Einheiten in JavaScript {#options-unit-reconciliation}
 
@@ -260,5 +260,5 @@ Trigger werden innerhalb der jeweiligen Stunde verarbeitet. Das Volumen kann etw
 
 ### Kampagnen-Workflow {#campaign-workflow}
 
-Der Kampagnen-Workflow für Trigger ähnelt häufig anderen wiederkehrenden Kampagnen, die verwendet wurden.
-Sie kann beispielsweise mit einer Abfrage der Trigger beginnen, die im letzten Tag nach bestimmten Ereignissen suchen. Diese Zielgruppe wird zum Senden der E-Mail verwendet. Anreicherungen oder Daten können vom Trigger stammen. Es kann vom Marketing sicher verwendet werden, da es keine Konfiguration erfordert.
+Der Workflow für Kampagnenauslöser ähnelt häufig anderen wiederkehrenden Kampagnen, die verwendet wurden.
+Er kann beispielsweise mit einer Abfrage der Auslöser beginnen, die im letzten Tag nach bestimmten Ereignissen sucht. Diese Zielgruppe wird zum Senden der E-Mail verwendet. Anreicherungen oder Daten können vom Auslöser stammen. Er kann vom Marketing sicher verwendet werden, da er keine Konfiguration erfordert.

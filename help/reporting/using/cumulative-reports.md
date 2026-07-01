@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 82
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 50%
 
 
 
-Sie können kumulierte Berichte zu Sendungen anzeigen. Wählen Sie dazu die zu vergleichenden Sendungen aus, um die Liste der Berichte für diese Sendungen zu erhalten.
+Sie können kumulierte Berichte zu Sendungen anzeigen. Wählen Sie dazu die zu vergleichenden Sendungen aus, um eine Liste mit Berichten für diese Sendungen zu erhalten.
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 
 Drücken Sie die Strg-Taste, um nicht direkt aufeinanderfolgende Sendungen zu markieren.
 
-Um Sendungen auszuwählen, die in einem anderen Ordner gespeichert sind, klicken Sie **[!UICONTROL Unterordner anzeigen]** (Zugriff über die Symbolleiste). Sie werden dann in derselben Liste angezeigt.
+Um Sendungen auszuwählen, die in einem anderen Ordner gespeichert sind, klicken Sie auf **[!UICONTROL Unterordner anzeigen]** (Zugriff über die Symbolleiste). Sie werden dann in derselben Liste angezeigt.
 
 ![](assets/s_ncs_user_display_children_icon.png)

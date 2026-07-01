@@ -15,9 +15,9 @@ topic_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 549
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 Adobe Campaign arbeitet mit Tools von Drittanbietern zusammen. Diese Kompatibilität wird regelmäßig aktualisiert, damit Sie nur unterstützte Versionen implementieren und von den neuesten Korrekturen und Verbesserungen profitieren können.
 
-Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Sicherheitslücken, die es einem Angreifer ermöglichen können, die Kontrolle über ein betroffenes System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 - Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
+Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die ermöglichen könnten, dass über Fernangriff Kontrolle über ein betroffenes System übernommen wird. Weitere Informationen finden Sie unter [Apache 2.4.53 – Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade der Apache-Version durchführen, um diese Apache-Sicherheitslücke zu schließen und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Kunden von Campaign Classic v7 Managed Services, Campaign v8 und Campaign Standard, die mit einer anfälligen Version von Apache HTTP Server arbeiten. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
 

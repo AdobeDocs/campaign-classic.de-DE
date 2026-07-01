@@ -20,9 +20,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 670
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -74,11 +74,11 @@ Führen Sie zuerst die Authentifizierung über die API durch.
 
 1. Laden Sie die **xtk:session**-WSDL über diese URL herunter: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
-1. Verwenden Sie die „Anmelden“-Methode und übergeben Sie einen Benutzernamen und ein Kennwort als Parameter in der Anfrage. Sie erhalten eine Antwort mit einem Sitzungs-Token. Im Folgenden finden Sie ein Beispiel zur Verwendung von SoapUI.
+1. Verwenden Sie die Anmeldemethode und geben Sie in der Anfrage einen Benutzernamen und ein Passwort als Parameter ein. Sie erhalten eine Antwort mit einem Sitzungs-Token. Dies ist ein Beispiel mit SoapUI.
 
    ![](assets/do-not-localize/privacy-api.png)
 
-1. Verwenden Sie das zurückgegebene Sitzungs-Token als Authentifizierung für alle Subsequenz-API-Aufrufe. Er läuft nach 24 Stunden ab.
+1. Verwenden Sie dieses Sitzungs-Token zur Authentifizierung für alle folgenden API-Aufrufe. Es läuft nach 24 Stunden ab.
 
 Rufen Sie dann die Datenschutz-API auf:
 

@@ -17,9 +17,9 @@ feature_v2: []
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 212
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -39,4 +39,4 @@ Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von
 
 >[!NOTE]
 >
->Weitere Informationen zu MRM für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Weitere Informationen über MRM für Adobe Campaign und die Verwendung davon finden Sie in der [Dokumentation von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

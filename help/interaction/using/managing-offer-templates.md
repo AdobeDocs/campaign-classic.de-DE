@@ -15,9 +15,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 180
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 
 
 
-Angebotsvorlagen sind standardmäßig in Adobe Campaign verfügbar. Sie können sie verwenden, nachdem Sie Ihre Angebote erstellt, dupliziert oder ihre Konfiguration an Ihre Anforderungen angepasst haben. Sie können auch eigene Vorlagen erstellen. Vorlagenangebote werden im Ordner **Ressourcen** > **Vorlagen** > **Angebotsvorlagen** gespeichert.
+Angebotsvorlagen sind standardmäßig in Adobe Campaign verfügbar. Sie können sie verwenden, nachdem Sie Ihre Angebote erstellt, dupliziert oder ihre Konfiguration an Ihre Anforderungen angepasst haben. Sie können auch eigene Vorlagen erstellen. Vorlagenangebote werden im Knoten **Ressourcen** > **Vorlagen** > **Angebotsvorlagen** gespeichert.
 
 ## Angebotsvorlagen erstellen {#creating-an-offer-template}
 

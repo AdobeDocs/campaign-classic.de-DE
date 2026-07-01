@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 372
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von
 
 ![](assets/email_rec_edit_1.png)
 
-Auf der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die Parameter des POP3-Servers eingeben und das Skript eingeben, das bei Erhalt jeder Nachricht ausgeführt werden soll. Auf der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen. Auf der dritten Registerkarte werden die Ablaufbedingungen für die Aktivität definiert.
+In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie die POP3-Parameter sowie das bei Empfang jeder Nachricht auszuführende Skript angeben. In der zweiten Registerkarte können Sie der Aktivität einen Zeitplan zuweisen und in der dritten Registerkarte die Ablaufbedingungen der Aktivität definieren.
 
 1. **[!UICONTROL E-Mail-Empfang]**
 
@@ -58,11 +58,11 @@ Auf der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie d
 
    * **[!UICONTROL Stoppen, sobald eine E-Mail verarbeitet wurde]**
 
-     Mit dieser Option können Sie E-Mails einzeln verarbeiten. Die Aktivität aktiviert ihre Transition nur einmal und beendet dann die Verarbeitung, sodass nicht verarbeitete Nachrichten auf dem Server bleiben.
+     Mit dieser Option können Sie E-Mails einzeln verarbeiten. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
 
 1. **[!UICONTROL Script]**
 
-   Mit dem Skript können Sie die Nachricht verarbeiten und verschiedene Vorgänge ausführen, die vom Inhalt der Nachricht abhängen. Das Script wird für jede Nachricht ausgeführt und kann den für die Nachricht auszuführenden Vorgang (Nachricht hinterlassen oder löschen) und die Aktivierung der ausgehenden Transition festlegen.
+   Die Angabe eines Skripts ermöglicht die Verarbeitung der Nachricht und die Ausführung von verschiedenen Vorgängen, je nach Nachrichteninhalt. Das Skript wird auf jede Nachricht angewendet und entscheidet, welcher Vorgang auszuführen ist (Nachricht in der Mailbox belassen oder löschen) und ob die ausgehende Transition zu aktivieren ist.
 
    Der Rückgabe-Code muss einem der folgenden Werte entsprechen:
 

@@ -21,9 +21,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 808
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,10 +60,10 @@ Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie in
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wählen **[!UICONTROL in der Dropdown]** Liste „Dienst“ den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
-Die **[!UICONTROL Anwendungsvariablen]** werden automatisch hinzugefügt, je nachdem, was während der Konfigurationsschritte hinzugefügt wurde.
+1. Wählen Sie im Dropdown-Menü **[!UICONTROL Dienst]** den zuvor erstellten Dienst und die Anwendung aus und klicken Sie auf **[!UICONTROL Beenden]**.
+Je nach den während der Konfigurationsschritte hinzugefügten Elementen werden die **[!UICONTROL Anwendungsvariablen]** automatisch hinzugefügt.
 
    ![](assets/nmac_android_6.png)
 
@@ -97,7 +97,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 

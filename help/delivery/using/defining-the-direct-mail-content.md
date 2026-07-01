@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 192
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 72%
 
 ## Extraktionsdatei {#extraction-file}
 
-Der Name der Datei, die die extrahierten Daten enthält, wird im Feld **[!UICONTROL Datei]** definiert. Über die Schaltfläche rechts neben dem Feld können Sie Personalisierungsfelder verwenden, um den Dateinamen zu erstellen.
+Im Feld **[!UICONTROL Datei]** wird der Name der die extrahierten Daten enthaltenden Datei definiert. Die Schaltfläche rechts daneben ermöglicht die Verwendung von Personalisierungsfeldern zur Erstellung des Dateinamens.
 
-Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können es auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
+Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können sie auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 

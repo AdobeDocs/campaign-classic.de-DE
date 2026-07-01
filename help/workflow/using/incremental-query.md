@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 379
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 61%
 
 Inkrementelle Abfragen ermöglichen die regelmäßig wiederkehrende Auswahl einer Zielgruppe nach bestimmten Kriterien unter Ausschluss der Population, die in früheren Durchgängen bereits aufgrund dieser Kriterien ausgewählt wurde.
 
-Die bereits ausgewählte Population wird sowohl nach Workflow-Instanz als auch nach Aktivität im Speicher gespeichert. Das bedeutet, dass zwei Workflows, die aus derselben Vorlage gestartet wurden, nicht dasselbe Protokoll verwenden. Zwei Aufgaben, die auf derselben inkrementellen Abfrage für dieselbe Workflow-Instanz basieren, verwenden hingegen dasselbe Protokoll.
+Die zuvor ausgewählte Population wird nach Workflow-Instanz und nach Aktivität gespeichert. Dies bedeutet, dass zwei von derselben Vorlage gestartete Workflows nicht dasselbe Protokoll verwenden. Zwei Aufgaben, die auf derselben inkrementellen Abfrage im selben Workflow basieren, verwenden jedoch dasselbe Protokoll.
 
 Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausführung wird geplant.
 
@@ -37,11 +37,11 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 >[!CAUTION]
 >
->Wenn das Ergebnis einer inkrementellen Abfrage während einer ihrer Ausführungen **0** beträgt, wird der Workflow bis zur nächsten programmierten Ausführung der Abfrage angehalten. Die Übergänge und Aktivitäten, die der inkrementellen Abfrage folgen, werden daher nicht vor der folgenden Ausführung verarbeitet.
+>Wenn das Ergebnis einer inkrementellen Abfrage bei einer ihrer Ausführungen gleich **0** ist, wird der Workflow bis zur nächsten planmäßigen Ausführung der Abfrage ausgesetzt. Die auf die inkrementelle Abfrage folgenden Transitionen und Aktivitäten werden nicht vor der nachfolgenden Ausführung verarbeitet.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Wählen Sie auf **[!UICONTROL Registerkarte]** Planung und Verlauf **[!UICONTROL die Option Ausführung]**. Die Aufgabe bleibt nach ihrer Erstellung aktiv und wird nur zu den Zeiten ausgelöst, die im Zeitplan für die Ausführung der Abfrage festgelegt sind. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
+1. Wählen Sie in der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich Fenster **[!UICONTROL Planungsassistent]** können Sie den Ausführungsrhythmus, das Intervall und den Gültigkeitszeitraum des Ereignisses definieren.
@@ -58,7 +58,7 @@ Gehen Sie dazu wie folgt vor:
 
    * **[!UICONTROL Verlaufsumfang (Tage)]**
 
-     Bereits ausgewählte Empfänger können eine maximale Anzahl von Tagen ab dem Tag protokolliert werden, an dem sie angesprochen wurden. Wenn dieser Wert null ist, werden die Empfangenden nie aus dem Protokoll gelöscht.
+     Die bereits angesprochenen Empfangenden können ab dem Tag, an dem sie angesprochen wurden, bis zu einer Höchstzahl von Tagen protokolliert werden. Wenn dieser Wert null ist, werden die Empfangenden nie aus dem Protokoll gelöscht.
 
    * **[!UICONTROL Verlauf beim Start beibehalten]**
 

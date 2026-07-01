@@ -15,9 +15,9 @@ subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 239
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 
 
 
-Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
+Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen gemeinsam mit Web-Anwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]** gespeichert.
 
 Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular in eine Vorlage umwandeln.
 
@@ -35,7 +35,7 @@ Ein Formular kann in eine Vorlage umgewandelt und seine Konfiguration wiederverw
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
-Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Sie können den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem die Vorlage gespeichert werden soll.
+Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Dort können Sie den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem sie gespeichert werden soll.
 
 ## Neue Formularvorlage erstellen {#create-a-new-form-template}
 

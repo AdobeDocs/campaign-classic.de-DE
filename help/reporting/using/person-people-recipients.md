@@ -17,9 +17,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 800
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 56%
 
 
 
-Dieses Beispiel hilft Ihnen, den Unterschied zwischen einer Person/einer Person und einer Empfängerin bzw. einem Empfänger in Adobe Campaign zu verstehen. Wir senden eine Lieferung an mehrere Personen, um den Unterschied zwischen Personen und Empfängern hervorzuheben, während wir die Berechnungsmethode für die folgenden Indikatoren detailliert beschreiben:
+Dieses Beispiel soll Ihnen helfen, den Unterschied zwischen einer Person und einer Empfängerin bzw. einem Empfänger in Adobe Campaign zu verstehen. Wir führen einen Versand an mehrere Personen durch, um den Unterschied zwischen Personen und Empfangenden hervorzuheben und gleichzeitig die Berechnungsmethode für folgende Indikatoren zu erläutern:
 
 * **[!UICONTROL Klicks]**
 * **[!UICONTROL Unique Clicks der erreichten Population]**
@@ -39,14 +39,14 @@ Dieses Beispiel hilft Ihnen, den Unterschied zwischen einer Person/einer Person 
 >
 >Diese Indikatoren werden im Bericht **[!UICONTROL Trackingindikatoren]** verwendet. Weitere Informationen hierzu finden Sie unter [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-Einem Versand werden drei Links hinzugefügt. Es wird an 4 Empfänger gesendet:
+Einem Versand werden drei Links hinzugefügt. Es wird an 4 Empfangende gesendet:
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
 * **[!UICONTROL John Davis]** öffnet die E-Mail nicht und klickt demzufolge auf keinen der Links.
 * **[!UICONTROL Marie Stuart]** öffnet die E-Mail, klickt jedoch auf keinen der Links.
-* **[!UICONTROL Florian David]** : öffnet die E-Mail und klickt 9 Mal auf die Links. Er leitet die E-Mail auch an jemanden weiter, der sie öffnet und zweimal klickt.
-* **[!UICONTROL Henry Macdonald]** : Dieser Empfänger hat seinen Internet-Browser so konfiguriert, dass Cookies abgelehnt werden. Er öffnet die E-Mail und klickt viermal auf die Links.
+* **[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail darüber hinaus an eine Person weiter, die sie öffnet und zweimal darin klickt.
+* **[!UICONTROL Henry Macdonald]** akzeptiert keine Browser-Cookies. Er öffnet die E-Mail und klickt viermal auf die Links. 
 
 Folgende Trackinglogs werden ausgegeben:
 
@@ -79,7 +79,7 @@ Maries Öffnung der E-Mail erscheint in folgendem Log:
 
 ![](assets/s_ncs_user_indicators_example_4bis.png)
 
-Die offene Stelle wurde einer Empfängerin bzw. einem Empfänger zugewiesen: Marie. Adobe Campaign fügt daher einen neuen Empfänger zur Zählung hinzu.
+Die Öffnung wird einer Empfängerin zugewiesen: Marie. Adobe Campaign zählt also eine neue Empfängerin bzw. einen neuen Empfänger.
 
 **Zwischenrechnung:**
 
@@ -91,7 +91,7 @@ Die offene Stelle wurde einer Empfängerin bzw. einem Empfänger zugewiesen: Mar
 
 ## &#x200B;3. Schritt: Florian {#step-3--florian}
 
-**[!UICONTROL Florian David]** öffnet die E-Mail und klickt 9 Mal auf die Links. Er leitet die E-Mail auch an jemanden weiter, der sie öffnet und zweimal klickt.
+**[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail darüber hinaus an eine Person weiter, die sie öffnet und zweimal darin klickt.
 
 ![](assets/s_ncs_user_indicators_example_9.png)
 
@@ -99,9 +99,9 @@ Florians Handlungen (eine Öffnung, neun Klicks) erscheinen in folgenden Logs:
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**Empfänger**: Die Öffnungen und Klicks werden demselben Empfänger (Florian) zugewiesen. Da sich dieser Empfänger vom vorherigen unterscheidet (Marie), fügt Adobe Campaign einen neuen Empfänger zur Zählung hinzu.
+**Empfangende**: Die Öffnung und die Klicks werden demselben Empfänger (Florian) zugeordnet. Da dieser nicht mit der ersten Empfängerin (Marie) identisch ist, zählt Adobe Campaign einen neuen Empfänger.
 
-Personen: Da der Browser dieses Empfängers Cookies akzeptiert, können wir sehen, dass allen Klickprotokollen dieselbe Kennung (UUID) zugewiesen wird: **`fe37a503 [...]`**. Adobe Campaign kennzeichnet diese Klicks korrekt als zu derselben Person gehörend. und zählt eine neue Person.
+Personen: Dank der Cookies lässt sich beobachten, dass allen Klick-Logs dieselbe Kennung (UUID) zugeordnet ist, nämlich **`fe37a503 [...]`**. Adobe Campaign kennzeichnet diese Klicks korrekt als zur selben Person gehörend und zählt eine neue Person.
 
 **Zwischenrechnung:**
 
@@ -116,11 +116,11 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 
 ![](assets/s_ncs_user_indicators_example_6bis.png)
 
-**Empfänger**: Die Öffnungen und Klicks werden dem Empfänger zugewiesen, der die E-Mail weitergeleitet hat (Florian). Da dieser Empfänger bereits gezählt wurde, bleibt die Empfängeranzahl gleich.
+**Empfangende**: Die Öffnung und die Klicks werden dem Empfänger zugeordnet, der die E-Mail weitergeleitet hat (Florian). Da dieser Empfänger bereits gezählt wurde, ändert sich die Empfängeranzahl nicht.
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Personen**: Bei Klicks können wir sehen, dass allen Protokollen dieselbe Kennung (UUID) zugewiesen ist: **`9ab648f9 [...]`**. Diese Kennung wurde noch nicht gezählt. Es wird daher eine neue Person gezählt.
+**Personen**: In Bezug auf Klicks sehen wir, dass allen Logs dieselbe Kennung (UUID) zugewiesen ist: **`9ab648f9 [...]`**. Diese Kennung wurde noch nicht gezählt. Es wird daher eine neue Person gezählt.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -136,7 +136,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 
 ## &#x200B;4. Schritt: Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** hat seinen Internet-Browser so konfiguriert, dass Cookies abgelehnt werden. Er öffnet die E-Mail und klickt viermal auf die Links.
+**[!UICONTROL Henry Macdonald]** akzeptiert keine Browser-Cookies. Er öffnet die E-Mail und klickt viermal auf die Links. 
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
@@ -144,7 +144,7 @@ Henrys Handlungen (eine Öffnung, vier Klicks) erscheinen in folgenden Logs:
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**Empfänger**: Die Öffnungen und Klicks werden demselben Empfänger (Henry) zugewiesen. Da dieser Empfänger noch nicht gezählt wurde, fügt Adobe Campaign einen Empfänger zur Anzahl hinzu.
+**Empfangende**: Die Öffnung und die Klicks werden demselben Empfänger (Henry) zugeordnet. Da dieser zum ersten Mal auftritt, zählt Adobe Campaign einen neuen Empfänger hinzu.
 
 **Personen**: Da Henrys Browser keine Cookies akzeptiert, wird für jeden Klick eine neue Kennung (UUID) generiert. Jeder der vier Klicks wird als von einer anderen Person kommend interpretiert. Da diese Kennungen noch nicht gezählt wurden, werden sie der Anzahl hinzugefügt.
 

@@ -17,9 +17,9 @@ subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 471
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   Sie können sehen, dass eines der Personalisierungsfelder leer ist. Da die Testadresse keine Daten für dieses Feld enthält, kann die HTML-Inhaltsvorschau keinen Wert anzeigen.
+   Sie können sehen, dass eines der Personalisierungsfelder leer ist. Da die Testadresse keinen Wert im entsprechenden Feld aufweist, wird in der HTML-Vorschau kein Wert angezeigt.
 
    Die zufällige Wertersetzung erfolgt erst **zum Zeitpunkt der Absendung**.
 

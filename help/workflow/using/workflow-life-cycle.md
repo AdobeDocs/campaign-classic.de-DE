@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 269
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Der Lebenszyklus eines Workflows gestaltet sich in drei Hauptetappen:
 
 * **In Bearbeitung**
 
-  Dies ist die anfängliche Design-Phase: Wenn ein neuer Workflow erstellt wird, lautet sein Status „In Bearbeitung“. Der Workflow wird noch nicht vom Server verarbeitet und kann ohne Risiko geändert werden.
+  Hierbei handelt es sich um die Phase der Erstellung. Wenn ein Workflow neu erstellt wird, ist er im Bearbeitungsstatus. Ein solcher Workflow wurde noch nicht vom Server übernommen und kann daher problemlos geändert werden.
 
 * **Gestartet**
 
-  Sobald die anfängliche Design-Phase abgeschlossen ist, kann der Workflow gestartet werden. In dieser Phase wird die Instanz vom Server verarbeitet und die einzelnen Aufgaben werden ausgeführt. Der Workflow kann dennoch mit bestimmten Vorsichtsmaßnahmen geändert werden.
+  Nach Abschluss der Erstellungsphase kann der Workflow gestartet werden. In dieser Phase wird die Instanz vom Server verarbeitet und die einzelnen Aufgaben werden ausgeführt. Der Workflow kann – mit bestimmten Vorsichtsmaßnahmen – immer noch geändert werden.
 
 * **Abgeschlossen**
 
@@ -44,7 +44,7 @@ Beispielsweise sind im unten stehenden Workflow die Aktivitäten **Beginn** und 
 
 Dies bedeutet, dass die ersten beiden Aktivitäten erfolgreich ausgeführt wurden und dass die Validierungsaktivität in Gang ist, d. h. sie wurde erstellt, ist aber noch nicht abgeschlossen.
 
-Die Zeichen **574 -Ok**, die oberhalb der Transition nach der Aktivität **Versand** angezeigt werden, bedeuten, dass die Versandvorbereitung 574 Empfängerinnen und Empfänger angesprochen hat und dass der Vorgang erfolgreich abgeschlossen wurde. Diese Informationen, die den Transitionen bei ihrer Ausführung hinzugefügt werden, werden von den Aktivitäten berechnet, die Daten verarbeiten.
+Oberhalb der Transition nach der Aktivität **Versand** werden die Zeichen **574 - OK** angezeigt. Daran ist erkennbar, dass bei der Versandvorbereitung 574 Empfängerinnen und Empfänger ausgewählt wurden und dass der Vorgang korrekt abgeschlossen wurde. Diese Informationen, die den Transitionen bei ihrer Ausführung hinzugefügt werden, werden von den Aktivitäten berechnet, die Daten verarbeiten.
 
 Der Workflow wartet also auf die Entscheidung eines Benutzers, der der Gruppe angehört, welche in der **Validierung**-Aktivität ausgewählt wurde. Gruppenmitglieder, deren E-Mail-Adresse oder Mobiltelefonnummer in ihrem Profil gespeichert sind, werden über die entsprechenden Kanäle benachrichtigt.
 

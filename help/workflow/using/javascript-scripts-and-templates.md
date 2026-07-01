@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1272
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Scripts dienen zur Berechnung von Werten, dem Austausch von Daten zwischen versc
 
 In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 
-* Alle Aktivitäten verfügen über Initialisierungsskripte. Ein Initialisierungsskript wird ausgeführt, wenn die Aktivität aktiviert ist, und kann verwendet werden, um Variablen zu initialisieren und die Eigenschaften zu ändern.
+* Alle Aktivitäten verfügen über Initialisierungsskripte. Ein Initialisierungsskript wird ausgeführt, wenn die Aktivität aktiviert wird, und kann zum Initialisieren von Variablen und Anpassen der Eigenschaften verwendet werden.
 * Die &#39;JavaScript-Code&#39;-Aktivität dient einzig der Ausführung eines Scripts.
 * Die &#39;Test&#39;-Aktivität wertet JavaScript-Ausdrücke aus, um die richtige Transition zu aktivieren.
-* Die meisten Textfelder sind JavaScript-Vorlagen: JavaScript-Ausdrücke können zwischen &lt;%= und %> eingefügt werden. Diese Felder enthalten eine Schaltfläche, über die eine Dropdown-Liste geöffnet werden kann, in die Sie Ausdrücke eingeben können.
+* Die meisten Textfelder sind JavaScript-Vorlagen: JavaScript-Ausdrücke können zwischen &lt;%= und %> eingefügt werden. Diese Felder enthalten eine Schaltfläche, über die eine Dropdown-Liste zum Eingeben von Ausdrücken geöffnet werden kann.
 
   ![](assets/script-button.png)
 
@@ -51,7 +51,7 @@ Die verfügbaren Eigenschaften dieser Objekte sind über die Dropdown-Liste rech
 >
 >Die Objekteigenschaften sind schreibgeschützt mit Ausnahme der Unter-Eigenschaften der vars-Eigenschaft.
 >  
->Die meisten dieser Eigenschaften werden erst aktualisiert, nachdem eine elementare Aufgabe ausgeführt oder die Instanz passiviert wurde. Die gelesenen Werte stimmen nicht unbedingt mit dem aktuellen Status überein, sondern mit dem vorherigen Status.
+>Die meisten dieser Eigenschaften werden erst nach Ausführung einer elementaren Aufgabe aktualisiert, oder wenn die Instanz passiviert ist.Die gelesenen Werte stimmen womöglich nicht mit dem aktuellen Status überein, sondern mit dem vorherigen Status.
 
 **Beispiel**
 
@@ -76,15 +76,15 @@ Variablen sind freie Eigenschaften der Objekte **[!UICONTROL instance]**, **[!UI
 
 ### Instanzvariablen {#instance-variables}
 
-Die Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit globalen Variablen vergleichbar. Sie werden von allen Aktivitäten geteilt.
+Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit globalen Variablen vergleichbar. Sie werden von allen Aktivitäten geteilt.
 
 ### Aufgabenvariablen {#task-variables}
 
-Die Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen vergleichbar. Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten verwendet, um Daten beizubehalten, und manchmal zum Austausch von Daten zwischen den verschiedenen Skripten einer Aktivität.
+Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen vergleichbar. Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten zum Aufbewahren von Daten verwendet und manchmal genutzt, um Daten zwischen den verschiedenen Skripten derselben Aktivität auszutauschen.
 
 ### Ereignisvariablen {#event-variables}
 
-Die Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Datenaustausch zwischen den elementaren Aufgaben eines Workflow-Prozesses. Diese Variablen werden von der Aufgabe übergeben, die die in Bearbeitung befindliche Aufgabe aktiviert hat. Es ist möglich, sie zu ändern und neue zu definieren. Sie werden dann an die folgenden Aktivitäten weitergeleitet.
+Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Daten zwischen den elementaren Aufgaben eines Workflow-Prozesses. Diese Variablen werden von der Aufgabe übergeben, die die in Bearbeitung befindliche Aufgabe aktiviert hat. Es ist möglich, sie zu ändern und neue zu definieren. Sie werden dann an die folgenden Aktivitäten weitergeleitet.
 
 >[!CAUTION]
 >
@@ -92,7 +92,7 @@ Die Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Datenaustausc
 
 Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden durch die verschiedenen Aktivitäten geändert oder gelesen. Dies sind alles Variablen vom Typ Zeichenfolge. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
+Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alles String-Variablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
 ### Anwendungsfälle {#example}
 
@@ -176,7 +176,7 @@ Beispiel:
 
    ![](assets/wkf_js_activity_1.png)
 
-1. Erstellen Sie eine Abfrage , deren Zielgruppen- und Filterdimensionen die Empfänger sind. Geben Sie in den Bedingungen an, dass Sie alle Empfänger finden möchten, die an den von der Variablen angegebenen Versand gesendet wurden.
+1. Erstellen Sie eine Abfrage, deren Zielgruppenbestimmungs- und Filterdimensionen die Empfängerinnen und Empfänger sind. Geben Sie in den Bedingungen an, dass Sie alle Empfängerinnen und Empfänger suchen möchten, denen der durch die Variable spezifizierte Versand gesendet wurde.
 
    Hinweis: Diese Informationen werden in den Versandlogs gespeichert.
 
@@ -192,9 +192,9 @@ Neben den Standard-JavaScript-Funkionen stehen spezifische Funktionen zur Verfü
 
 ### Protokoll {#journal}
 
-**[!UICONTROL logInfo(message)]** wurde in den obigen Beispielen beschrieben. Diese Funktion fügt dem Protokoll eine Informationsmeldung hinzu.
+**[!UICONTROL logInfo(message)]** wurde bereits in den obigen Beispielen erläutert. Diese Funktion fügt dem Protokoll eine Informationsnachricht hinzu.
 
-**[!UICONTROL logError(message)]** fügt dem Protokoll eine Fehlermeldung hinzu. Das Skript unterbricht seine Ausführung, und der Workflow wechselt in den Fehlerstatus (standardmäßig wird die Instanz angehalten).
+**[!UICONTROL logError(message)]** fügt dem Protokoll eine Fehlermeldung hinzu. Die Ausführung des Skripts wird unterbrochen und der Workflow wechselt in den Fehlerstatus (standardmäßig wird die Instanz pausiert).
 
 ## Initialisierungsskript {#initialization-script}
 

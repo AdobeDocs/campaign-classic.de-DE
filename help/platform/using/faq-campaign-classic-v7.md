@@ -25,9 +25,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1522
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 80%
 
 ## Architektur und Bereitstellung von Campaign Classic v7 {#v7-architecture}
 
-Hier finden Sie Antworten auf Fragen zu Hosting-Modellen, Bereitstellungsunterschieden und Migrationspfaden für Campaign Classic v7. Diese Fragen konzentrieren sich auf Infrastrukturentscheidungen und damit verbundene Verantwortlichkeiten.
+Hier finden Sie Antworten auf Fragen zu Hosting-Modellen, Bereitstellungsunterschieden und Migrationspfaden für Campaign Classic v7. Diese Fragen konzentrieren sich auf Infrastrukturentscheidungen und damit verbundene Verantwortlichkeiten.
 
-+++ Welche Hosting-Modelle sind in Campaign Classic v7 verfügbar? {#what-are-the-hosting-models-available-in-campaign-classic-v7}
++++ Welche Hosting-Modelle sind in Campaign Classic v7 verfügbar? {#what-are-the-hosting-models-available-in-campaign-classic-v7}
 
 Adobe Campaign Classic v7 bietet drei Bereitstellungsmodelle:
 
@@ -59,7 +59,7 @@ Jedes Bereitstellungsmodell verfügt über verschiedene Funktionen und Managemen
 
 +++
 
-+++ Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Umgebung? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
++++ Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Version? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
 Adobe Campaign Classic v7 verfügt über eine Reihe von Modulen und Optionen. Die Verfügbarkeit dieser Module und ihre Konfiguration können von der [Art der Bereitstellung](../../installation/using/hosting-models.md) Ihrer Installation abhängen: gehostet (Managed Services), hybrid oder On-Premise.
 
@@ -90,7 +90,7 @@ Erfahren Sie mehr zur [Migration zu Managed Services](https://experienceleagueco
 
 +++
 
-+++ Sollte ich von Campaign Classic v7 zu Campaign v8 migrieren? {#should-i-migrate-to-v8}
++++ Soll ich von Campaign Classic v7 zu Campaign v8 migrieren? {#should-i-migrate-to-v8}
 
 Campaign v8 ist die strategische Plattform von Adobe, die sich ideal für Unternehmen eignet, die Kampagnen mit hohem Volumen, eine moderne Web-Benutzeroberfläche, Cloud-native Vorteile und langfristigen Support benötigen. Der Support für Campaign Classic v7 wird in den nächsten Jahren enden.
 
@@ -112,8 +112,8 @@ Campaign v8 ist die strategische Plattform von Adobe, die sich ideal für Untern
 
 Mehr dazu:
 
-* [Übersicht über Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}
-* [Wechsel von Campaign Classic v7 zu v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=de){target="_blank"}
+* [Campaign v8 – Überblick](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}
+* [Wechseln von Campaign Classic v7 zu v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=de){target="_blank"}
 * [Ausführliche Sammlung häufig gestellter Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de){target="_blank"}
 
 **Ausführliche Antworten auf häufig gestellte Fragen zu Campaign bezüglich Workflows, Sendungen, Zielgruppen, Berichten, Personalisierung und mehr** finden Sie in der [ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de){target="_blank"}.
@@ -122,13 +122,13 @@ Mehr dazu:
 
 ## Build-Upgrades (Campaign Classic v7) {#build-upgrades-v7}
 
-Anleitungen zu Build-Upgrades und zugehörige FAQs finden Sie in den [häufig gestellte Fragen zu Build](faq-build-upgrade.md) und [Dokumentation zu Build-Upgrades](../../production/using/build-upgrade.md).
+Anleitungen zu Build-Upgrades und zugehörige FAQs finden Sie unter [Häufig gestellte Fragen zum Build-Upgrade](faq-build-upgrade.md) und in der [Dokumentation zu Build-Upgrades](../../production/using/build-upgrade.md).
 
 ## Campaign Classic v7-Konfiguration {#v7-configuration}
 
-Diese Fragen betreffen gängige Konfigurationsaufgaben und Richtlinien in Campaign Classic v7, von Spracheinstellungen bis hin zu Sicherheitsabsicherung. Verwenden Sie sie, um Einrichtungsoptionen und betriebliche Verfahren zu validieren.
+Diese Fragen betreffen gängige Konfigurationsaufgaben und Richtlinien in Campaign Classic v7, von Spracheinstellungen bis hin zu Sicherheitsabsicherung. Verwenden Sie sie, um Einrichtungsoptionen und betriebliche Verfahren zu validieren.
 
-+++ Kann ich die Sprache der Benutzeroberfläche von Campaign Classic v7 ändern? {#can-i-change-language-v7}
++++ Kann ich die Sprache der Benutzeroberfläche von Campaign Classic v7 ändern? {#can-i-change-language-v7}
 
 Die Sprache von Campaign Classic v7 wird zum Zeitpunkt der Instanzerstellung ausgewählt. **Anschließend kann sie nicht mehr geändert werden.**
 
@@ -142,7 +142,7 @@ Für Englisch können Sie bei der Installation von Campaign v7 entweder amerika
 
 +++
 
-+++ Wie kann ich Sicherheitszonen in Campaign Classic v7 konfigurieren? {#how-can-i-configure-security-zones-v7}
++++ Wie kann ich Sicherheitszonen in Campaign Classic v7 konfigurieren? {#how-can-i-configure-security-zones-v7}
 
 Die Konfiguration der VPN-Sicherheitszone in Adobe Campaign Classic v7 kann über die Self-Service-Benutzeroberfläche durch die oder den Admin erfolgen. Dies ist vor allem für On-Premise- und Hybridbereitstellungen relevant.
 
@@ -154,7 +154,7 @@ Lesen Sie [diesen Abschnitt](../../installation/using/security-zones.md), um meh
 
 +++
 
-+++ Kann Adobe Campaign Classic v7 mit LDAP integriert werden? {#can-campaign-classic-integrate-with-ldap}
++++ Kann Adobe Campaign Classic v7 mit LDAP integriert werden? {#can-campaign-classic-integrate-with-ldap}
 
 Ja. **On-Premise/Hybrid-Kundschaft** kann Campaign Classic v7 für zentralisierte Authentifizierung und Benutzerverwaltung in ihr LDAP-Verzeichnis integrieren.
 
@@ -171,7 +171,7 @@ Diese Integration ermöglicht Folgendes:
 
 +++
 
-+++ Was sind die Best Practices für die Sicherheit bei On-Premise-Bereitstellungen? {#security-best-practices-on-premise}
++++ Was sind die Best Practices für Sicherheit bei On-Premise-Bereitstellungen? {#security-best-practices-on-premise}
 
 On-Premise- und Hybridbereitstellungen erfordern im Vergleich zu gehosteten Umgebungen eine zusätzliche Sicherheitskonfiguration und Absicherung.
 
@@ -191,7 +191,7 @@ Lesen Sie die [Checkliste zur Sicherheitskonfiguration](https://experienceleague
 
 +++
 
-+++ Wie lösche ich den Cache der Client-Konsole? {#how-do-i-clear-console-cache}
++++ Wie leere ich den Cache der Client-Konsole? {#how-do-i-clear-console-cache}
 
 Durch Leeren des Cache der Campaign-Client-Konsole werden viele gängige Anzeige- und Funktionsprobleme behoben. Der Cache speichert lokale Konfigurationsdateien, die gelegentlich beschädigt oder veraltet sein können.
 
@@ -226,23 +226,23 @@ Weitere Informationen finden Sie in der [Dokumentation zur Campaign-Client-Konso
 
 +++
 
-+++ Wo können gehostete Kunden Instanzeinstellungen verwalten? {#where-to-manage-instance-settings}
++++ Wo können gehostete Kundinnen und Kunden Instanzeinstellungen verwalten? {#where-to-manage-instance-settings}
 
-Das [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"} hilft Produktadministratoren bzw. Produktadministratorinnen in Adobe Campaign, die Einstellungen zu verwalten und die Nutzung für jede Instanz zu verfolgen. Dank der intuitiven Benutzeroberfläche können wichtige Assets überwacht und administrative Aufgaben ausgeführt werden, z. B. Aktualisierungen der IP-Zulassungsliste, Überwachung des SFTP-Speichers, Schlüsselverwaltung und mehr.
+Das [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de){target="_blank"} hilft Produktadmins in Adobe Campaign, die Einstellungen zu verwalten und die Nutzung für jede Instanz nachzuverfolgen. Dank der intuitiven Benutzeroberfläche können Sie wichtige Assets überwachen und administrative Aufgaben durchführen, zum Beispiel IP-Zulassungslisten aktualisieren, den Speicher von SFTP-Servern überwachen, Schlüssel verwalten etc.
 
 **Wichtigste Vorteile:**
 
-* Schnelles Ändern von Einstellungen, ohne sich an die Kundenunterstützung wenden zu müssen.
-* Konfigurieren Sie Einstellungen entsprechend den unterschiedlichen Geschäftsanforderungen zu unterschiedlichen Zeiten.
+* Nehmen Sie rasch selbst Änderungen an Einstellungen vor, ohne die Kundenunterstützung zu kontaktieren.
+* Konfigurieren Sie die Einstellungen entsprechend Ihren Unternehmensanforderungen zu unterschiedlichen Zeiten.
 * Erhöhen Sie die Sicherheit, indem Sie die Zugriffseinstellungen nach Bedarf steuern.
 
 +++
 
 ## Anfordern von Hilfe {#getting-help}
 
-Hier finden Sie die wichtigsten Dokumentationen, FAQs und Support-Kanäle für Campaign Classic v7, einschließlich Links zu Community-Foren und Adobe-Support.
+Hier finden Sie die wichtigsten Dokumentationen, FAQs und Support-Kanäle für Campaign Classic v7, einschließlich Links zu Community-Foren und Adobe-Support.
 
-+++ Wo finde ich die Dokumentation zu Campaign Classic v7? {#where-to-find-more-info-v7}
++++ Wo finde ich die Dokumentation zu Campaign Classic v7? {#where-to-find-more-info-v7}
 
 **Dokumentation und Ressourcen:**
 
@@ -266,7 +266,7 @@ In der [**ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8**](ht
 
 +++
 
-+++ Wie erhalte ich Community- oder Adobe-Support für Campaign Classic v7? {#where-to-get-support-v7}
++++ Wie erhalte ich Community- oder Adobe-Support für Campaign Classic v7? {#where-to-get-support-v7}
 
 **Community und Support:**
 

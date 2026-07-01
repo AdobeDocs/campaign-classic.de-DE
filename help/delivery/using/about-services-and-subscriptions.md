@@ -20,17 +20,17 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 168
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Über Services und Abonnements{#about-services-and-subscriptions}
 
-Mit Adobe Campaign können Sie Informations-Services wie Newsletter erstellen und verwalten und die Abonnements für diese Services verwalten. Dabei können mehrere Services parallel definiert werden, z. B. spezialisierte Newsletter für bestimmte Kategorien, Themen oder Bereiche einer Website, Abonnements zu verschiedenen Arten von Warnmeldungen und Echtzeitbenachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
+Mit Adobe Campaign können Sie Informationsdienste wie Newsletter erstellen und verwalten und die Abonnements für diese Dienste verwalten. Dabei können mehrere Services parallel definiert werden, z. B. spezialisierte Newsletter für bestimmte Kategorien, Themen oder Bereiche einer Website, Abonnements zu verschiedenen Arten von Warnmeldungen und Echtzeitbenachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
 
-Sie können es Ihren Versandempfängern auch ermöglichen, sie mit Mitgliedern ihres sozialen oder beruflichen Netzwerks zu teilen. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten verfolgen. Weiterführende Informationen finden Sie unter [Virale Marketing-Strategien](viral-and-social-marketing.md).
+Sie können es den empfangenden Personen Ihres Versands auch ermöglichen, ihn mit Mitgliedern ihres sozialen oder beruflichen Netzwerks zu teilen. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten verfolgen. Weiterführende Informationen finden Sie unter [Virale Marketing-Strategien](viral-and-social-marketing.md).
 
 >[!NOTE]
 >

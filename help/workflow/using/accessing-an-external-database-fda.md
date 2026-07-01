@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 97
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -35,4 +35,4 @@ Verschiedene Workflow-Aktivitäten bieten die Option, Daten aus einer externen D
 * Anreicherung
 * Laden von Daten.
 
-Die Verwendung der FDA-Option hängt von Ihrer Adobe Campaign-Lizenz ab. Die Konfiguration dieser Option sowie die Best Practices und Einschränkungen im Zusammenhang mit ihrer Verwendung werden in diesem [Abschnitt](../../installation/using/about-fda.md) im Detail beschrieben.
+Die Verwendung der FDA-Option hängt von Ihrer Adobe Campaign-Lizenz ab. Das Konfigurieren dieser Option sowie die Best Practices und Einschränkungen im Zusammenhang mit ihrer Verwendung werden in diesem [Abschnitt](../../installation/using/about-fda.md) detailliert beschrieben.

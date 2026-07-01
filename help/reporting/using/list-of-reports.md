@@ -19,9 +19,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1024
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -352,7 +352,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
 
 ## Andere Standardberichte {#other-ootb-reports}
 
-Die folgenden Berichte sind ebenfalls integriert. Weitere Informationen hierzu finden Sie im Dokument zu den Funktionen, die sie betreffen.
+Die folgenden Berichte sind ebenfalls integriert. Weitere Informationen erhalten Sie im Handbuch der zugehörigen Anwendung.
 
 <table> 
  <tbody> 

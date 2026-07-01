@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 544
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 54%
 
 
 
-Der Eigenschaftenbildschirm einer Aktivität enthält die Registerkarte **[!UICONTROL Erweitert]** auf der Sie das Verhalten im Fehlerfall und die Ausführungsdauer der Aktivität festlegen und ein Initialisierungsskript eingeben können. Es gibt zwei Versionen dieser Registerkarte:
+Der Bildschirm mit den Eigenschaften der Aktivität enthält eine Registerkarte **[!UICONTROL Erweitert]**, die beispielsweise die Konfiguration des Verhaltens bei Fehlern und die Ausführungsdauer der Aktivität sowie die Eingabe eines Initialisierungsskripts erlaubt. Es gibt zwei Versionen dieser Registerkarte:
 
 * vereinfacht für die Aktivität **[!UICONTROL Start]** und **[!UICONTROL Ende]**;
 
@@ -48,31 +48,31 @@ In diesem Feld können Sie das mit einer Aktivität verknüpfte Bild ändern. We
 
 ## Ausführung {#execution}
 
-In diesem Feld können Sie festlegen, welche Aktion ausgeführt werden soll, wenn die Aufgabe ausgelöst wird. Es gibt drei mögliche Optionen:
+In diesem Feld definieren Sie die beim Auslösen der Aufgabe auszuführende Aktion. Es gibt drei mögliche Optionen:
 
 In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivität ausgewählt.
 
 * **[!UICONTROL Normal]** - die Aufgabe wird ausgeführt.
 * **[!UICONTROL Nicht aktivieren]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden nicht ausgeführt.
-* **[!UICONTROL Aktivieren, aber nicht ausführen]**: Diese Aufgabe und alle folgenden Aufgaben (in derselben Verzweigung) werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Start der Aufgabe dabei sein möchten. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
+* **[!UICONTROL Aktivieren, aber nicht ausführen]** – die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Starten der Aufgabe anwesend sein möchten. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
 
 ## Affinität {#affinity}
 
-Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Computer erzwingen. Dazu müssen Sie eine oder mehrere Tendenzen auf Workflow- oder Aktivitätsebene definieren.
+Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Computer erzwingen. Hierzu müssen ein oder mehrere Neigungswerte auf Workflow- oder Aktivitätsniveau definiert werden.
 
 Die Konfiguration von Workflows mit hoher Disponibilität wird in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities) erläutert.
 
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
-In diesem Feld können Sie eine Warnung festlegen, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** vorbei ist, zeigt das **[!UICONTROL Monitoring der Instanz]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.
+In diesem Feld können Sie eine Warnung einrichten, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** vorbei ist, zeigt das **[!UICONTROL Monitoring der Instanz]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.
 
 ## Verhalten {#behavior}
 
-In diesem Feld können Sie das Verhalten definieren, das bei der Verwendung asynchroner Aufgaben angewendet werden soll. Es gibt zwei mögliche Optionen:
+In diesem Feld wird das Verhalten des Workflows im Fall von asynchronen Aufgaben bestimmt. Sie haben zwei Möglichkeiten:
 
 * **[!UICONTROL Mehrere autorisierte Aufgaben]** - mehrere Aufgaben können gleichzeitig ausgeführt werden.
-* **[!UICONTROL Die aktuelle Aufgabe hat Priorität]**: laufende Aufgaben haben Priorität. Solange eine Aufgabe ausgeführt wird, wird keine andere Aufgabe ausgeführt.
+* **[!UICONTROL Laufende Aufgabe hat Vorrang]** – laufende Aufgaben haben Priorität. Solange eine Aufgabe läuft, wird keine neue Aufgabe gestartet.
 
 ## Zeitzone {#time-zone}
 
@@ -80,10 +80,10 @@ In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weiterführen
 
 ## Fehler {#in-case-of-errors}
 
-In diesem Feld können Sie festlegen, welche Aktion ausgeführt werden soll, wenn bei der Aktivität Fehler auftreten. Es gibt zwei mögliche Optionen:
+In diesem Feld wird angegeben, wie mit Fehlern bei der Aktivität umgegangen werden soll. Sie haben zwei Möglichkeiten:
 
 * **[!UICONTROL Prozess aussetzen]**: Der Workflow wird automatisch angehalten. Der Status ändert sich in **[!UICONTROL Fehlgeschlagen]**. Nach Lösung des Problems kann der Workflow neu gestartet werden.
-* **[!UICONTROL Ignorieren]**: Diese Aufgabe und alle folgenden Aufgaben (in derselben Verzweigung) werden nicht ausgeführt. Dies kann für wiederkehrende Aufgaben nützlich sein. Wenn die Verzweigung im Vorfeld eine Planung platziert hat, wird sie wie gewohnt am nächsten Ausführungsdatum gestartet.
+* **[!UICONTROL Ignorieren]** – die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden nicht ausgeführt. Dies kann für wiederkehrende Aufgaben nützlich sein. Wenn der Zweig eine Planungsaktivität enthält, wird diese wie üblich zum nächsten geplanten Ausführungszeitpunkt gestartet.
 * **[!UICONTROL Abbruch bei Fehler]**: Der Workflow wird automatisch angehalten und kann nicht neu gestartet werden. Der Status ändert sich in **[!UICONTROL Fehlgeschlagen]**.
 
 ## Initialisierungsskript {#initialization-script}
@@ -92,4 +92,4 @@ In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschafte
 
 ## Kommentar {#comment}
 
-Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.**&#x200B;**
+Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.****

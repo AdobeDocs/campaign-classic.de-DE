@@ -16,9 +16,9 @@ topic_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1700
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 78%
 
 
 
-Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wird, auf die in der Liste der **[!UICONTROL Kampagnenkits]** mit einer **Ausführungsplanung verwiesen**. Ziel ist es, den lokalen Kommunikationsbedarf mithilfe einer Kampagnenvorlage zu decken, die von der Zentralstelle eingerichtet und konfiguriert wurde. Die wichtigsten Etappen für die Durchführung eines lokalen Vorhabens sind:
+Eine lokale Kampagne ist eine über eine in der Liste der **[!UICONTROL Kampagnenkits]** referenzierte Vorlage erstellte Kampagneninstanz mit einer **spezifischen Ausführungsplanung**. Lokale Kampagnen ermöglichen es, mit einer von der Zentralstelle formalisierten und konfigurierten Vorlage auf lokale Kommunikationsbedürfnisse zu reagieren. Die wichtigsten Phasen für die Implementierung eines lokalen Vorgangs sind folgende:
 
 **Zentralstellenseitig**
 
@@ -68,11 +68,11 @@ Wählen Sie den Web-Schnittstellentyp aus, der für die auf dieser Vorlage basie
 
 Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
-* **[!UICONTROL By Brief]** : Die Lokalstellen müssen eine Beschreibung der Kampagnenkonfigurationen bereitstellen. Nachdem die Bestellung genehmigt wurde, konfiguriert und führt die Zentralstelle die Kampagne als Ganzes aus.
+* **[!UICONTROL Briefing]**: Die Lokalstelle muss eine Beschreibung der Kampagnenkonfigurationen bereitstellen. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie insgesamt aus.
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Nach Formular]** : Lokalstellen haben Zugriff auf ein Web-Formular, in dem sie je nach verwendeter Vorlage den Inhalt, die Zielgruppe, die Maximalgröße sowie das Erstellungs- und Extraktionsdatum mithilfe von Personalisierungsfeldern bearbeiten können. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe auszuwerten und den Inhalt in einer Vorschau zu überprüfen.
+* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Web-Formular, in dem sie je nach verwendeter Vorlage Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe auszuwerten und den Inhalt in einer Vorschau zu überprüfen.
 
   ![](assets/mkt_distr_8.png)
 
@@ -80,7 +80,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
   >[!NOTE]
   >
-  >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Um ein Formular verwenden zu können, müssen Sie eine bestimmte Web-Anwendung erstellen. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
+  >Die in diesem Beispiel verwendete Web-Anwendung ist ein Beispiel. Damit Sie ein Formular verwenden können, müssen Sie eine spezifische Web-Anwendung erstellen. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
 
   ![](assets/mkt_distr_7.png)
 
@@ -91,7 +91,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
 ### Standardwerte {#default-values}
 
-Wählen Sie die **[!UICONTROL Standardwerte]** die von den Lokalstellen vervollständigt werden sollen. Beispiel:
+Wählen Sie die **[!UICONTROL Standardwerte]** aus, die von den Lokalstellen angegeben werden sollen. Beispiel:
 
 * Kontakt- und Extraktionsdatum,
 * Zielgruppeneigenschaften (Altersgruppe etc.).
@@ -116,7 +116,7 @@ Wenn keine Angabe validierungsverantwortlicher Benutzer für die Kampagnen gewü
 
 ### Dokumente {#documents}
 
-Sie können Lokalstellen erlauben, Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen usw.) zu verknüpfen zur lokalen Kampagne bei der Erstellung der Bestellung hinzufügen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
+Sie können Benutzenden von Lokalstellen erlauben, beim Erstellen der Bestellung Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen etc.) mit der lokalen Kampagne zu verknüpfen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -170,7 +170,7 @@ Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICO
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
-Damit die Kampagnenvorlage für Lokalstellen verfügbar wird, muss sie der Liste hinzugefügt werden. Dazu muss die Zentralbehörde ein neues Paket schnüren.
+Damit die Kampagnenvorlage für die Lokalstellen zur Verfügung zu steht, muss sie der Liste hinzugefügt werden. Dazu muss die zentrale Agentur ein neues Paket erstellen.
 
 Gehen Sie wie folgt vor:
 
@@ -231,11 +231,11 @@ Wenn eine Kampagne verfügbar ist oder der Anmeldeschluss erreicht ist, erhalten
 
 ## Kampagne bestellen {#ordering-a-campaign}
 
-Kampagnenkits stehen lokalen Entitäten zur Verfügung, sobald sie genehmigt wurden und ihr Implementierungszeitraum begonnen hat. Lokalstellen erhalten eine E-Mail, die sie darüber informiert, dass ein neues Kampagnenkit verfügbar ist (sobald das Verfügbarkeitsdatum erreicht ist).
+Kampagnenkits stehen Lokalstellen zur Verfügung, sobald sie validiert wurden und ihr Implementierungszeitraum begonnen hat. Lokalstellen werden per E-Mail informiert, wenn ein neues Kampagnenkit verfügbar ist (sobald dessen Verfügbarkeitsdatum erreicht ist).
 
 >[!NOTE]
 >
->Wenn bei der Erstellung des Kampagnenkits einige Lokalstellen angegeben wurden, erhalten nur diese eine Benachrichtigung. Wenn keine Lokalstelle angegeben wurde, erhalten alle Lokalstellen eine Benachrichtigung.
+>Wenn bei der Erstellung des Kampagnenkits bestimmte Lokalstellen angegeben wurden, erhalten nur diese eine Benachrichtigung. Anderenfalls werden alle Lokalstellen benachrichtigt.
 
 ![](assets/mkg_dist_local_op_notification.png)
 
@@ -245,7 +245,7 @@ Gehen Sie wie folgt vor:
 
 1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe Campaign-Konsole.
 
-   Geben Sie Ihre ID und Ihr Passwort ein, um die Kampagne zu bestellen. Die Benutzeroberfläche besteht aus einer Reihe von Seiten, die in einer Web-Anwendung definiert sind.
+   Geben Sie Ihre ID und Ihr Passwort ein, um die Kampagne zu bestellen. Die Schnittstelle umfasst eine Reihe von Seiten, die in einer Web-Anwendung definiert sind.
 
    >[!NOTE]
    >
@@ -261,7 +261,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
-1. Die Informationen werden an die lokalen und zentralen Entitäten zurückgegeben. Während Lokalstellen nur ihre eigenen Bestellungen anzeigen können, kann die Zentralstelle wie unten dargestellt alle Bestellungen einer Lokalstelle anzeigen:
+1. Die Informationen werden an die Lokal- und Zentralstelle zurückgegeben. Während jede Lokalstelle nur ihre eigenen Bestellungen sieht, kann die Zentralstelle alle Bestellungen aller Lokalstellen einsehen, wie im folgenden Beispiel gezeigt:
 
    ![](assets/mkg_dist_subscribe_central_view.png)
 
@@ -335,7 +335,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign-Konsole haben, werden die Lokalstellen über diese Ablehnung informiert.
+Informationen werden auf der Seite mit der Liste der Kampagnenkits oder auf der Kampagnenbestellseite angezeigt. Wenn sie Zugriff auf die Adobe Campaign-Client-Konsole haben, werden die Lokalstellen über diese Zurückweisung informiert.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
@@ -355,7 +355,7 @@ Für jede Lokalstelle werden Validierungsverantwortliche für die Kampagnenbeste
 
 ### Abbruch einer Bestellung {#canceling-an-order}
 
-Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.**&#x200B;**
+Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.****
 
 ![](assets/mkg_dist_local_op_cancel.png)
 

@@ -20,9 +20,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1118
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Abstimmung
 
-   * Navigieren Sie zur **Empfänger (nms:recipient)** Tabelle.
+   * Navigieren Sie zur Tabelle **Empfänger (nms:recipient)**.
    * Wählen Sie in der Dropdown-Liste des Felds Abstimmoptionen **[!UICONTROL Einfügen]** aus und behalten Sie die anderen Standardeinstellungen bei.
 
      ![](assets/s_ncs_user_import_example04_01.png)
@@ -115,7 +115,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 ## Aktualisieren und Hinzufügen von Empfängern {#example--update-and-insert-recipients}
 
-Wir möchten die vorhandenen Datensätze in der Datenbank aktualisieren und neue aus einer Textdatei erstellen. Im Folgenden finden Sie ein Beispiel für das Verfahren:
+Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Einträge zu aktualisieren und neue Einträge in der Datenbank zu erstellen. Hier ein Beispiel für das Verfahren:
 
 1. Vorlage auswählen
 
@@ -157,7 +157,7 @@ Wir möchten die vorhandenen Datensätze in der Datenbank aktualisieren und neue
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei jedoch die bereits in der Datenbank enthaltenen Werte Vorrang haben sollen.
 
-In diesem Beispiel können Sie sehen, dass bestimmte Felder in Ihrer Textdatei einen Wert aufweisen, während die entsprechenden Felder in der Datenbank leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank enthaltene.
+Im folgenden Beispiel enthalten bestimmte Felder der Textdatei Werte, während die entsprechenden Felder in der Datenbank leer sind. Andere Felder enthalten einen Wert, der von dem in der Datenbank abweicht.
 
 * Inhalt der zu importierenden Textdatei
 
@@ -208,7 +208,7 @@ Gehen Sie wie folgt vor:
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei die in der Textdatei enthaltenen Werte Vorrang vor bereits in der Datenbank enthaltenen Werten haben sollen.
 
-In diesem Beispiel sehen Sie, dass bestimmte Felder in Ihrer Textdatei einen leeren Wert aufweisen, während die entsprechenden Felder in der Datenbank nicht leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank.
+Im folgenden Beispiel sind bestimmte Felder in Ihrer Textdatei leer, während die entsprechenden Felder in der Datenbank Werte enthalten. Andere Felder enthalten einen Wert, der von dem in der Datenbank abweicht.
 
 * Inhalt der zu importierenden Textdatei
 

@@ -16,9 +16,9 @@ feature_v2:
 subfeature_v2:
   - id: a79c82df-714a-4b22-beac-74500b5e034f
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 99
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 87%
 
 Mit der Anwendung **Social Marketing** zur Verwaltung sozialer Netzwerke können Sie über Facebook und X (früher bekannt als Twitter) mit der Kundschaft sowie interessierten Personen interagieren.
 
-Erfahren Sie wichtige Schritte zur Integration von Campaign und X in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de){target="_blank"}.
+Wichtige Schritte zur Integration von Campaign und X finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de){target="_blank"}.
 
 Wenn Sie On-Premise- oder Hybrid-Kundin oder -Kunde sind, muss Ihr externes X-Konto konfiguriert und aktiviert sein. Bei Hybridkonfigurationen muss die Registerkarte **Mid-Sourcing** auch mit einer aktiven Verbindung zur Mid-Sourcing-Plattform eingerichtet werden.
 

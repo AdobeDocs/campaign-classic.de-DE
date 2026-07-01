@@ -24,9 +24,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 351
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 [!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
-![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
 
 Wenn Sie Campaign als Hybrid- oder gehostete Bereitstellung nutzen, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Zugriff auf den Kanal für Push-Benachrichtigungen in Campaign zu erhalten.
 
@@ -82,8 +82,8 @@ Die Installationsschritte sind:
 
 1. **[!UICONTROL Schließen]** Sie das Installationsfenster.
 
-Sobald dieser Schritt abgeschlossen ist, können Sie Ihre Android- und iOS-Apps konfigurieren.
-Siehe diese Abschnitte:
+Nach Abschluss dieses Schritts können Sie Ihre Android- und iOS-Apps konfigurieren.
+Siehe folgende Abschnitte:
 
 * [Konfigurationsschritte für iOS](configuring-the-mobile-application.md)
 

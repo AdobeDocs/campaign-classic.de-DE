@@ -27,9 +27,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1801
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 >Die Verwendung desselben Kontos und Kennworts für mehrere externe SMS-Konten kann zu Konflikten und Überschneidungen zwischen den Konten führen. Siehe die [Seite zur SMS-Fehlerbehebung](troubleshooting-sms.md#external-account-conflict).
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
-Weiterführende Informationen zum SMS-Protokoll und zu Einstellungen finden Sie auf [Seite](sms-protocol.md).
+Weitere Informationen zum SMS-Protokoll und den Einstellungen finden Sie [auf dieser Seite](sms-protocol.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -78,7 +78,7 @@ Gehen Sie dazu wie folgt vor:
 
    Der von Ihnen ausgewählte Provider nennt Ihnen danach den Wert für das Feld **[!UICONTROL Name der SMSC-Implementierung]**.
 
-   Sie können die Anzahl der Verbindungen zum Provider pro untergeordnetem MTA-Element definieren. Standardmäßig ist dies auf 1 festgelegt.
+   Sie können die Anzahl der Verbindungen mit dem Dienstleister per untergeordnetem MTA definieren. Standardmäßig ist dieser Zeitraum auf 1 festgelegt.
 
 1. Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM zur Anwendung.
 
@@ -96,7 +96,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-character-transliteration).
 
-1. Auf der Registerkarte **[!UICONTROL Durchsatz und Verzögerungen]** können Sie den maximalen Durchsatz ausgehender Nachrichten („MT“, Mobile beendet) in MT pro Sekunde angeben. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
+1. In der Registerkarte **[!UICONTROL Durchsatz und Verzögerungen]** können Sie den maximalen Durchsatz für ausgehende Nachrichten („MT“, Mobile Terminated) in MT pro Sekunde festlegen. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
 
    Werte, die eine Dauer angeben, sind in Sekunden auszudrücken.
 
@@ -104,7 +104,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-text-encodings).
 
-1. Auf der Registerkarte **[!UICONTROL SMSC]** Besonderheiten“ ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie das SMPP-Protokoll einhalten und nur Ziffern an den Server des SMS-Anbieters (SMSC) übertragen möchten.
+1. In der Registerkarte **[!UICONTROL SMSC-Besonderheiten]** ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie die Konformität mit dem SMPP-Protokoll wahren und nur Zahlen an den Server des SMS-Anbieters (SMSC) übertragen möchten.
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
@@ -131,7 +131,7 @@ Die Transliteration von Zeichen ist standardmäßig deaktiviert. Es wird empfohl
 
 Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die dem Unicode-Zeichensatz entstammen, können Sie diese Option wählen, um Ihre Versandkosten zu begrenzen.
 
-In der folgenden Tabelle sind die Zeichen aufgeführt, die vom GSM-Standard berücksichtigt werden. Jedes im Nachrichteninhalt enthaltene Zeichen, das nicht in der unten stehenden Tabelle aufgeführt ist, führt zur Konvertierung der gesamten Nachricht in das Binärformat (Unicode) und zur Splittung der SMS in Teilnachrichten, sobald sie 70 Zeichen überschreitet.
+Die folgende Tabelle zeigt die vom GSM-Standard berücksichtigten Zeichen. Jedes im Nachrichteninhalt enthaltene Zeichen, das nicht in der unten stehenden Tabelle aufgeführt ist, führt zur Konvertierung der gesamten Nachricht in das Binärformat (Unicode) und zur Splittung der SMS in Teilnachrichten, sobald sie 70 Zeichen überschreitet.
 
 **Einfache Zeichen**
 
@@ -335,7 +335,7 @@ Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung i
 >
 >Die Reihenfolge der Deklarierung ist entscheidend. Wir empfehlen Ihnen, die Liste aufsteigend nach den entstehenden **Kosten** zu ordnen, um die Kodierungen zu favorisieren, die eine größere Anzahl von Zeichen pro SMS erlauben.
 >
->Deklarieren Sie nur die Kodierungen, die Sie tatsächlich verwenden möchten. Wenn einige der vom SMSC bereitgestellten Kodierungen nicht Ihrem Verwendungszweck entsprechen sollten, deklarieren Sie sie nicht in der Liste.
+>Deklarieren Sie nur die Kodierungen, die Sie tatsächlich verwenden möchten. Deklarieren Sie hingegen keine vom SMSC angebotenen Codierungen in der Liste, die nicht Ihrer Verwendung entsprechen.
 
 ## Automatische Antwort {#automatic-reply}
 
@@ -349,7 +349,7 @@ Im Bereich **[!UICONTROL Automatische Antwort auf MO]** können Sie Benachrichti
 
 Geben Sie für jedes Schlüsselwort eine Kurzwahlnummer (short code) an, d. h. eine als Absendername fungierende Nummer, die gewöhnlich für den Nachrichtenversand verwendet wird, sowie die an den Abonnenten zu sendende Nachricht.
 
-Sie können eine Aktion auch mit Ihrer automatischen Antwort verknüpfen: **[!UICONTROL In Quarantäne senden]** oder **[!UICONTROL Aus Quarantäne entfernen]**. Wenn ein Empfänger beispielsweise das Keyword „STOP“ sendet, erhält er automatisch eine Abmeldebestätigung und wird unter Quarantäne gestellt.
+Sie können auch eine Aktion mit Ihrer automatischen Antwort verknüpfen: **[!UICONTROL Unter Quarantäne stellen]** oder **[!UICONTROL Aus der Quarantäne entfernen]**. Wenn eine Person beispielsweise das Wort „STOP“ sendet, erhält sie automatisch eine Abmeldebestätigung und ihr Profil wird unter Quarantäne gestellt.
 
 ![](assets/extended_smpp_reply.png)
 
@@ -359,10 +359,10 @@ Die Empfänger sind in der Tabelle **[!UICONTROL Adressen unzustellbarer Sendung
 
 * Lassen Sie die Spalte **[!UICONTROL Kurzwahlnummer]** leer, wenn unabhängig von der Kurzwahlnummer dieselbe Nachricht gesendet werden soll.
 * Lassen Sie die Spalte **[!UICONTROL Schlüsselwort]** leer, wenn unabhängig vom Schlüsselwort dieselbe Nachricht gesendet werden soll.
-* Um eine Aktion auszuführen, ohne eine Antwort zu senden, lassen Sie die Spalte **[!UICONTROL Antwort]** leer. Auf diese Weise können Sie beispielsweise einen Benutzer, der mit einer anderen Nachricht als „STOP“ antwortet, aus der Quarantäne entfernen.
+* Lassen Sie die Spalte **[!UICONTROL Antwort]** leer, wenn nur eine Aktion ausgeführt, aber keine Antwort gesendet werden soll. Dies ermöglicht beispielsweise das Entfernen einer Person aus der Quarantäne, wenn sie eine andere Nachricht als „STOP“ sendet.
 
-Wenn Sie über mehrere externe Konten verfügen, die den erweiterten allgemeinen SMPP-Connector mit demselben Anbieterkonto verwenden, kann das folgende Problem auftreten: Wenn Sie eine Antwort auf eine Kurzwahlnummer senden, kann diese über jede Ihrer externen Kontoverbindungen empfangen werden. Daher konnte die automatisch gesendete Antwort nicht die erwartete Nachricht sein.
-Um dies zu vermeiden, wenden Sie je nach verwendetem Anbieter eine der folgenden Lösungen an:
+Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Daher ist die automatisch versendete Antwort möglicherweise nicht die erwartete Nachricht.
+Um dies zu vermeiden, setzen Sie je nach verwendetem Provider eine der folgenden Lösungen ein:
 
 * Erstellen Sie für jedes externe Konto ein Provider-Konto.
 * Verwenden Sie das Feld **[!UICONTROL Systemtyp]** im Tab **[!UICONTROL Mobiltelefon]** > **[!UICONTROL Verbindungsparameter]**, um jede Kurzwahlnummer zu unterscheiden. Bitten Sie Ihren Provider um einen anderen Wert für jedes Konto.

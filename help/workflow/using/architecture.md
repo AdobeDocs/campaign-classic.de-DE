@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 116
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 19%
 
 
 
-Workflows werden von einem bestimmten Modul verarbeitet. Dieses Modul kann auf mehreren Servern gestartet werden, um die Verarbeitungslast zu teilen.
+Workflows werden von einem bestimmten Modul verarbeitet. Dieses kann zur besseren Lastverteilung simultan auf mehreren Servern gestartet werden.
 
 ![](assets/architecture.png)
 
-* Der Prozess &#39;Workflow-Instanz-Runner&#39; (runwf) führt alle Aufgaben einer bestimmten Workflow-Instanz aus. Wenn vorerst keine auszuführenden Aufgaben vorhanden sind, wird sie „passiv“, das heißt sie speichert ihren Status in der Datenbank und stoppt dann.
-* Das Modul &#39;Workflow-Server&#39; (wfserver) überwacht aktuelle Workflow-Instanzen. Wenn eine Aufgabe ausgeführt werden soll, erstellt dieses Modul einen Prozess zum Aktivieren (oder Reaktivieren) der entsprechenden Instanz.
+* Der Prozess „Workflow Instance Runner“ (runwf) führt alle Aufgaben einer bestimmten Workflow-Instanz aus. Sobald keine Aufgaben mehr zur unmittelbaren Verarbeitung anstehen, wird der Prozess passiviert, d. h. er speichert seinen derzeitigen Status in der Datenbank und hält an.
+* Das Modul „Workflow Server“ (wfserver) überwacht aktuelle Workflow-Instanzen. Wenn Aufgaben zur Ausführung anstehen, erstellt das Modul einen Prozess, um die entsprechende Instanz zu aktivieren oder zu reaktivieren.

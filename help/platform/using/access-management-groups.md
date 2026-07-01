@@ -27,9 +27,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 620
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]**
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten: Über sie können Sie auf die mit Kampagnen verknüpften Objekte zugreifen (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
+   Die Benutzenden in dieser Gruppe können Marketing-Kampagnen verwalten. Sie erhalten Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
@@ -99,7 +99,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Autoren]**
 
-   Die Benutzer dieser Gruppe können auf die Inhaltsordner im Rahmen von **[!UICONTROL Content-Management“ zugreifen]** optionales Adobe Campaign-Modul). Diese Gruppe gewährt keine zusätzlichen Rechte.
+   Die Benutzenden in dieser Gruppe können im Rahmen von **[!UICONTROL Content-Management]** (optionales Adobe Campaign-Modul) auf die Inhaltsordner zugreifen.Diese Gruppe verfügt über keine zusätzlichen Berechtigungen.
 
 1. **[!UICONTROL Berichtzugriff]**
 
@@ -119,8 +119,8 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Angebotsverantwortliche Benutzer]**
 
-   Die Benutzer dieser Gruppe können Angebote erstellen und verwalten. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../interaction/using/operator-profiles.md).
-Diese Gruppe enthält die folgenden spezifischen Berechtigungen:
+   Die Benutzenden in dieser Gruppe können Angebote erstellen und verwalten. Weitere Informationen dazu finden Sie auf dieser [Seite](../../interaction/using/operator-profiles.md).
+Diese Gruppe verfügt über die folgenden spezifischen Berechtigungen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * **[!UICONTROL BEARBEITUNG VON ORDNERN]**: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.

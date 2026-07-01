@@ -24,16 +24,16 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 481
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
-Die im Popup-Fenster angezeigte Emoticon-Liste wird von einer Auflistung gesteuert, mit der Sie Werte in einer Liste anzeigen können, um die Auswahl zu beschränken, die der Benutzer für ein bestimmtes Feld hat.
-Die Reihenfolge der Emoticon-Listen kann angepasst werden. Sie können Ihrer Liste auch weitere Emoticons hinzufügen.
+Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgezählt. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
+Sie können die Reihenfolge der Emoticons in der Liste anpassen und der Liste auch weitere Emoticons hinzufügen.
 
 Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfügbar sind. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#inserting-emoticons){target="_blank"}.
 
@@ -46,7 +46,7 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
 1. Wählen Sie ein neues Emoticon, das Sie hinzufügen möchten, von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html) aus. Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
 
-1. Wählen Sie im **[!UICONTROL Explorer]**&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
+1. Wählen Sie im **[!UICONTROL Explorer]****[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
 
    >[!NOTE]
    >
@@ -58,15 +58,15 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
 1. Füllen Sie die Felder aus:
 
-   * **[!UICONTROL U+]**: Code des neuen Emoticons. Die Liste der Codes von Emoticons finden Sie auf dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html).
-Um Kompatibilitätsprobleme zu vermeiden, empfehlen wir Ihnen, Emoticons auszuwählen, die auf Browsern und auf jedem Betriebssystem unterstützt werden.
+   * **[!UICONTROL U+]**: Code Ihres neuen Emoticons. Die Liste der Emoticon-Codes finden Sie [auf dieser Seite](https://unicode.org/emoji/charts/full-emoji-list.html).
+Zur Vermeidung von Kompatibilitätsproblemen empfehlen wir Ihnen, Emoticons auszuwählen, die in allen Browsern und Betriebssystemen unterstützt werden.
 
    * **[!UICONTROL Titel]**: Bezeichnung für Ihr neues Emoticon.
 
    ![](assets/emoticon_5.png)
 
-1. Klicken Sie auf **[!UICONTROL OK]** und dann **[!UICONTROL Speichern]**, wenn Ihre Konfiguration abgeschlossen ist.
-Ihr neues Emoticon wird automatisch im Shop platziert.
+1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**, wenn Sie die Konfiguration abgeschlossen haben.
+Das neue Emoticon wird automatisch im Store abgelegt.
 
 1. Um es im Fenster **[!UICONTROL Emoticon einfügen]** Ihrer Sendungen anzuzeigen, wählen Sie das neu erstellte Emoticon aus, indem Sie darauf doppelklicken.
 

@@ -18,9 +18,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 116
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -40,6 +40,6 @@ Nach Verarbeitung der Testsendungen besteht die Möglichkeit im Kampagnen-Dashbo
 
   ![](assets/use_case_abtesting_analysis_003.png)
 
-In unserem Beispiel erzielte Versand B die höchste Öffnungsrate. Das bedeutet, dass Inhalt B für den endgültigen Versand verwendet wird.
+In unserem Beispiel erzielte Versand B die höchste Öffnungsrate. Daher wurde Inhalt B für den endgültigen Versand ausgewählt.
 
 ![](assets/use_case_abtesting_analysis_004.png)

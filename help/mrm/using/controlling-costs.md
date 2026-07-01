@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2560
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 59%
 
 Adobe Campaign ermöglicht mit dem MRM-Modul die Kontrolle der geplanten, eingesetzten und berechneten Marketing-Kosten sowie ihre Verteilung nach Kategorie.
 
-Die für die verschiedenen Prozesse einer Kampagne gebundenen Kosten werden auf ein Budget angerechnet, das vorab von der Marketing-Abteilung festgelegt wurde. Die Beträge können in verschiedene Kategorien unterteilt werden, um die Informationen lesbarer zu gestalten und eine detailliertere Berichterstattung über Marketinginvestitionen zu ermöglichen.
+Die für die unterschiedlichen Kampagnenvorgänge anfallenden Kosten werden einem zuvor von der Marketing-Abteilung festgesetzten Budget zugeteilt. Die Beträge können auf verschiedene Kategorien verteilt werden, um eine bessere Lesbarkeit und detailliertere Berichte der Marketing-Kosten zu ermöglichen.
 
-Die Budgetverwaltung und -verfolgung wird in einem dedizierten Knoten der Adobe Campaign-Struktur zentralisiert. Auf diese Weise können Sie die zugewiesenen, reservierten, gebundenen und ausgegebenen Beträge in derselben Ansicht und für alle Budgets überwachen.
+Die Budgetverwaltung und -nachverfolgung wird in einem dedizierten Knoten der Adobe Campaign-Struktur zentralisiert. Von hier aus können Sie alle Budgets sowie die zugeteilten, reservierten, eingesetzten und verbrauchten Beträge kontrollieren.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 
@@ -56,7 +56,7 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
    gemäß dem Erfüllungsstatus der Aufgaben, Sendungen und Kampagnen werden die Kosten berechnet und dem entsprechenden Budget übermittelt.
 
-   Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Fortschrittsstatus des Kampagnenbudgets in &quot;**[!UICONTROL &quot;]** werden. Die berechneten Kosten des Programms werden dann automatisch mit den berechneten Kosten der Kampagne erfasst. Siehe [Entstehung, Berechnung und Anrechnung von Kosten](#cost-commitment--calculation-and-charging).
+   Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Erfüllungsstatus des Kampagnenbudgets in **[!UICONTROL Angegeben]** geändert werden. Die berechneten Kosten des Programms werden daraufhin automatisch mit den berechneten Kosten der Kampagnen konsolidiert. Siehe [Entstehung, Berechnung und Anrechnung von Kosten](#cost-commitment--calculation-and-charging).
 
 ## Erstellen eines Budgets {#creating-a-budget}
 
@@ -68,11 +68,11 @@ Budgets werden in der Karte im Knoten **[!UICONTROL Kampagnenverwaltung > Budget
 
 * Zugeteilten Betrag eingeben
 
-  Geben Sie den zugewiesenen Betrag im entsprechenden Feld an. Die anderen Beträge werden automatisch angegeben. Siehe [Beträge berechnen](#calculating-amounts).
+  Geben Sie im entsprechenden Feld den zugewiesenen Betrag an. Die anderen Beträge werden automatisch angegeben. Siehe [Beträge berechnen](#calculating-amounts).
 
 * Gültigkeitszeitraum bestimmen
 
-  Geben Sie das Start- und Enddatum an. Diese Informationen sind lediglich als Hinweis zu verstehen.
+  Geben Sie Start- und Enddatum ein. Diese Informationen sind lediglich als Hinweis zu verstehen.
 
 * Ausgaben
 
@@ -88,7 +88,7 @@ Budgets werden in der Karte im Knoten **[!UICONTROL Kampagnenverwaltung > Budget
 
 ### Beträge berechnen {#calculating-amounts}
 
-Jedes Budget ist durch einen Ausgangsbetrag definiert, der sich von den Kosten der verschiedenen Kampagnen, Sendungen oder Aufgaben, die mit ihnen in Verbindung stehen, nach ihrer Planung oder Durchführung verringert. Der Status der Beträge (geplant, reserviert, gebunden, ausgegeben oder fakturiert) hängt von der Art der Kosten und dem Umfang der Verpflichtung ab, die in der Kampagne, dem Versand oder der Aufgabe definiert wurden.
+Der Anfangsbestand eines Budgets verringert sich im Zuge der ihm zugeordneten Kampagnen, Sendungen oder Aufgaben um die anfallenden Kosten, sobald diese geplant oder realisiert wurden. Der Status der Beträge (Geplant, Reserviert, Eingesetzt, Verbraucht, Fakturiert) hängt vom Kostentyp und dem Verbindlichkeitsniveau ab, die in der Kampagne, dem Versand oder der Aufgabe festgelegt wurden.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ In Kampagnen können je nach Verbindlichkeitsniveau Kosten für eine zukünftige
 >
 >Bei der Erstellung einer Kampagne muss der Fortschrittsstatus im **[!UICONTROL Budget]** auf **[!UICONTROL Angegeben]** eingestellt sein, damit die Kosten bei der Ausführung berücksichtigt werden. Wenn der Status **[!UICONTROL In Bearbeitung]** ist, werden die Kosten nicht konsolidiert.
 >   
->Die Option **[!UICONTROL Verpflichtungsgrad]** stellt eine Prognose der Kosten für die Zukunft dar, bevor sie dem Haushalt angelastet werden. Je nach Fortschritt einer Kampagne, Aufgabe oder eines Versands können Sie festlegen, ob eine höhere oder eine niedrigere Verbindlichkeitsstufe zugewiesen wird (1. Geplant, 2. Reserviert, 3. Übergeben) mithilfe des Kombinationsfelds an.
+>Die Option **[!UICONTROL Verbindlichkeitsniveau]** stellt eine Prognose der Kosten für die Zukunft dar, bevor sie dem Budget angelastet werden. Je nach Fortschritt einer Kampagne, Aufgabe oder Sendung können Sie festlegen, ob ein höheres oder ein niedrigeres Verbindlichkeitsniveau zugewiesen wird (1. Geplant, 2. Reserviert, 3. Eingesetzt). Verwenden Sie das Kombinationsfeld.
 
 Beispiel: Die Kosten einer Web-Kampagne werden auf 45 000 Euro geschätzt.
 
@@ -116,7 +116,7 @@ Je nach Verbindlichkeitsniveau der Kampagne wird der Betrag in das Feld **[!UICO
 
 Das Verbindlichkeitsniveau kann geändert werden:
 
-* auf **Ebene** Kampagne) im Fenster **[!UICONTROL Budget]** auf der Registerkarte **[!UICONTROL Bearbeiten]**. Hier werden Budgets, Kosten und Ausgaben konfiguriert.
+* auf der **Kampagnenebene** im Fenster **[!UICONTROL Budget]** der Registerkarte **[!UICONTROL Bearbeiten]**. Hier werden Budgets, Kosten und Ausgaben konfiguriert.
 * in einer **Aufgabe** im Fenster **[!UICONTROL Ausgaben und Einnahmen]**.
 
 ![](assets/s_user_op_engagement_level_costs.png)
@@ -139,7 +139,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im unteren Abschn
 
 ![](assets/s_user_budget_category.png)
 
-Sie können eine Kategorie aus den vorhandenen auswählen oder eine neue Kategorie definieren, indem Sie sie direkt in das Feld eingeben. Wenn Sie Ihre Eingabe bestätigen, können Sie diese Kategorie mit einer Bestätigungsmeldung zur Liste der vorhandenen Kategorien hinzufügen und sie bei Bedarf mit einer Art verknüpfen. Diese Informationen werden in den Haushaltsberichten verwendet.
+Sie können eine Kategorie aus den vorhandenen auswählen oder eine neue Kategorie definieren, indem Sie sie direkt in das Feld eingeben. Bei der Bestätigung Ihrer Eingabe wird Ihnen ermöglicht, die Kategorie der Liste der existierenden Kategorien hinzuzufügen und sie bei Bedarf einer Art zuzuordnen. Diese Informationen werden in den Budgetberichten verwendet.
 
 ### Zuordnung von Budgets untereinander {#linking-a-budget-to-another}
 
@@ -155,11 +155,11 @@ Diese Informationen werden in den Budgetberichten ausgewertet.
 
 ## Ausgabenzeilen hinzufügen {#adding-expense-lines}
 
-Ausgabenzeilen werden automatisch zum Budget hinzugefügt. Sie werden bei der Versandanalyse und nach Abschluss einer Aufgabe erstellt.
+Ausgabenzeilen werden automatisch zum Budget hinzugefügt. Sie werden bei der Versandanalyse und beim Abschluss einer Aufgabe erstellt.
 
 ![](assets/s_ncs_user_budget_line_edit.png)
 
-Für jede Kampagne, jeden Versand oder jede Aufgabe werden die generierten Kosten in den Ausgabenzeilen des Budgets gruppiert, dem sie belastet werden. Diese Ausgabenzeilen werden entsprechend den Kostenzeilen des betreffenden Dienstleisters erstellt und über die zugehörigen Kostenstrukturen berechnet.
+Die für Kampagnen, Sendungen oder Aufgaben anfallenden Kosten werden in den Ausgabenzeilen des Budgets zusammengefasst, dem sie zugeteilt sind. Diese Ausgabenzeilen werden abhängig von den Kostenkategorien des beteiligten Dienstleisters erstellt und ausgehend von den verbundenen Kostenstrukturen berechnet.
 
 Damit enthält jede Ausgabenzeile folgende Informationen:
 
@@ -175,7 +175,7 @@ Als Grundlage der Kostenberechnung für diesen Versand dienen die für den betro
 
 ![](assets/s_user_edit_del_supplier_costs.png)
 
-Je nach den ausgewählten Kostenkategorien werden die entsprechenden Kostenstrukturen zur Berechnung der Kostenzeilen angewendet. In diesem Beispiel sind für den betroffenen Dienstleister die Kostenstrukturen wie folgt:
+Abhängig von diesen Kostenkategorien werden die entsprechenden Kostenstrukturen zur Berechnung der Kostenzeilen angewandt. Im vorliegenden Beispiel handelt es sich um folgende Kostenstrukturen für den betroffenen Dienstleister:
 
 ![](assets/s_user_edit_node_supplier_costs.png)
 
@@ -185,7 +185,7 @@ Je nach den ausgewählten Kostenkategorien werden die entsprechenden Kostenstruk
 
 ## Entstehung, Berechnung und Anrechnung von Kosten {#cost-commitment--calculation-and-charging}
 
-Kosten können für Sendungen und Aufgaben entstehen. Je nach Fortschritt des Prozesses, mit dem er verbunden ist, wird der Status der Kosten aktualisiert.
+Kosten können für Sendungen und Aufgaben eingesetzt werden. Abhängig vom Bearbeitungsfortschritt des jeweiligen Vorgangs wird der Kostenstatus aktualisiert.
 
 ### Kostenarten {#cost-calculation-process}
 
@@ -193,7 +193,7 @@ Kosten werden in drei Kategorien eingeteilt:
 
 1. Plankosten
 
-   Die geschätzten vorläufigen Kosten sind eine Schätzung der Kosten für die Prozesse der Kampagne. Solange sie bearbeitet wird, werden die Eingabebeträge nicht konsolidiert. Der Status **[!UICONTROL Angegeben]** ist hier nötig, damit die eingegebenen Beträge in den Berechnungen berücksichtigt werden.
+   Die Plankosten entsprechen einer Schätzung der Kosten für die Kampagnenprozesse. Solange sie bearbeitet werden, werden die eingegebenen Beträge nicht konsolidiert. Der Status **[!UICONTROL Angegeben]** ist hier nötig, damit die eingegebenen Beträge in den Berechnungen berücksichtigt werden.
 
    Dieser Betrag wird manuell eingegeben und kann in mehrere Ausgabenkategorien unterteilt werden. Klicken Sie zum Aufschlüssen von Kosten auf den Link **[!UICONTROL Aufschlüsselung…]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um einen neuen Betrag zu definieren.
 
@@ -203,14 +203,14 @@ Kosten werden in drei Kategorien eingeteilt:
 
 1. Berechnete Kosten
 
-   Die berechneten Kosten hängen von den jeweiligen Elementen ab (Kampagne, Versand, Aufgabe usw.) und dessen Status (in Bearbeitung, in Bearbeitung, in Bearbeitung, abgeschlossen). Wenn die tatsächlichen Kosten angegeben werden, verwenden die berechneten Kosten in jedem Fall diesen Betrag.
+   Die berechneten Kosten hängen von den jeweiligen Elementen ab (Kampagne, Versand, Aufgabe usw.) und dessen Status (In Bearbeitung, Abgeschlossen). Wenn die tatsächlichen Kosten angegeben werden, verwenden die berechneten Kosten in jedem Fall diesen Betrag.
 
    Wenn die tatsächlichen Kosten nicht angegeben sind, gelten folgende Regeln:
 
-   * Für eine bearbeitete Kampagne entsprechen die berechneten Kosten den geschätzten vorläufigen Kosten der Kampagne. Wenn diese Kosten nicht definiert sind, entsprechen die berechneten Kosten der Summe aller vorläufigen Kosten der Sendungen und Aufgaben der Kampagne. Ist die Kampagne abgeschlossen, entsprechen die berechneten Kosten der Kampagne der Summe aller berechneten Kosten.
-   * Bei einem Versand, der noch nicht analysiert wurde, entsprechen die berechneten Kosten den geschätzten vorläufigen Kosten. Wenn die Analyse bereits durchgeführt wurde, entsprechen die berechneten Kosten der Summe aller aus den Kostenstrukturen der Dienstleister berechneten Kosten und der Anzahl der Zielgruppenempfänger.
-   * Für eine laufende Aufgabe verwenden die berechneten Kosten die geschätzten vorläufigen Kosten. Wenn die Aufgabe abgeschlossen ist, entsprechen die berechneten Kosten der Summe aller aus den Kostenstrukturen des Dienstleisters berechneten Kosten und der Anzahl der abgeschlossenen Tage.
-   * Für den Marketing-Plan sind die berechneten Kosten wie für das Programm die Summe der für die Kampagnen berechneten Kosten. Wenn diese Kosten nicht angegeben werden, werden die geschätzten vorläufigen Kosten für die berechneten Kosten verwendet.
+   * In einer sich in Bearbeitung befindenden Kampagne entsprechen die berechneten Kosten dem Betrag der Plankosten der Kampagne. Wenn diese nicht global für die Kampagne angegeben wurden, setzen sich die berechneten Kosten aus der Summe der Plankosten der einzelnen Sendungen und Aufgaben der Kampagne zusammen. Nach Abschluss der Kampagne entsprechen die berechneten Kampagnenkosten der Summe aller berechneten Kosten.
+   * In einem noch nicht analysierten Versand entsprechen die berechneten Kosten dem Betrag der Plankosten. Wenn die Analyse bereits stattgefunden hat, setzen sich die berechneten Kosten aus den basierend auf den Kostenstrukturen des Dienstleisters und der Anzahl der ausgewählten Empfangenden berechneten Beträgen zusammen.
+   * Für eine laufende Aufgabe verwenden die berechneten Kosten die Plankosten. Nach Abschluss der Aufgabe entsprechen die berechneten Kosten der Summe aller basierend auf den Kostenstrukturen des Dienstleisters und – falls zutreffend – der Anzahl an insgesamt benötigten Tagen berechneten Kosten.
+   * Sowohl für Marketing-Pläne als auch für Programme entsprechen die berechneten Kosten der Summe der für die verknüpften Kampagnen berechneten Kosten. Wenn diese nicht angegeben sind, werden die Plankosten anstelle der berechneten Kosten verwendet.
 
    >[!NOTE]
    >
@@ -224,7 +224,7 @@ Kosten werden in drei Kategorien eingeteilt:
 
 Kosten werden mithilfe der Kostenstrukturen berechnet und auf die in den betroffenen Kampagnen, Sendungen oder Aufgaben ausgewählten Budgets angerechnet.
 
-Über die Budgetvalidierung kann eine Prüfung der an Kampagnen gebundenen Beträge durchgeführt werden. In einer Kampagne können zusätzliche Checkpoint-artige Aufgaben erstellt werden, um andere Validierungen einzurichten. Siehe [Aufgabenarten](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
+Über die Budgetvalidierung kann eine Prüfung der an Kampagnen gebundenen Beträge durchgeführt werden. Zusätzlich ist die Erstellung von Kontrollaufgaben ein weiteres Mittel, um einzelne Bereiche einer Kampagne zur Validierung zu unterbreiten. Siehe [Aufgabenarten](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
 
 ### Beispiel {#example}
 
@@ -238,7 +238,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 1. Erstellen Sie ein neues Budget über den Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]**.
 
-1. Definieren Sie ein Budget von 10.000 Euro im Feld **[!UICONTROL Zugeteilt]** des Abschnitts **[!UICONTROL Beträge]**. Fügen Sie im unteren Bereich des Fensters zwei Ausgabenkategorien hinzu:
+1. Definieren Sie ein Budget von 10.000 Euro im Feld **[!UICONTROL Zugeteilt]** des Abschnitts **[!UICONTROL Beträge]**. Fügen Sie drei Ausgabenkategorien im unteren Abschnitt des Fensters hinzu:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
@@ -246,7 +246,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   Erstellen Sie für die Briefpost-Sendungen Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **&#x200B;**&#x200B;und **[!UICONTROL Drucken]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+   Erstellen Sie für Briefpost-Sendungen die Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **[!UICONTROL Porto]** und **[!UICONTROL Druck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -278,7 +278,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. Klicken Sie auf **[!UICONTROL OK]** und dann **[!UICONTROL Speichern]**, um diese Informationen zu bestätigen. Die berechneten Kosten der Kampagne werden dann mit den geschätzten vorläufigen Kosten aktualisiert.
+1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**, um diese Informationen zu bestätigen. Die berechneten Kosten der Kampagne werden daraufhin mit den Plankosten aktualisiert.
 
 #### Schritt 4: Briefpost-Versand erstellen {#step-4---creating-the-direct-mail-delivery}
 
@@ -298,11 +298,11 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
    ![](assets/s_user_cost_mgmt_sample_10.png)
 
-1. Wenn die Budgetvalidierung für diese Kampagne aktiviert ist, validieren Sie das Budget über das Dashboard. Sie können die Validierung der Kostenkategorien überprüfen.
+1. Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie das Budget über das Dashboard. Sie können die Validierung der Kostenkategorien überprüfen.
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-Die den Versand betreffende Ausgabenzeile wird der Registerkarte **[!UICONTROL Bearbeiten > Budget]** der Kampagne hinzugefügt. Bearbeiten Sie ihn, um die Details der Berechnung anzuzeigen.
+Die den Versand betreffende Ausgabenzeile wird in der Registerkarte **[!UICONTROL Bearbeiten > Budget]** der Kampagne hinzugefügt. Bearbeiten Sie diese, um die Details der Berechnung anzuzeigen.
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -316,7 +316,7 @@ Beim Bearbeiten der berechneten Kosten können Sie die Aufschlüsselung der Kost
 
 Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [Schritt 2: Dienstleister konfigurieren und Kostenstrukturen festlegen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
 
-1. Die Aufgabe wird dann der Aufgabenliste hinzugefügt. Sie müssen sie bearbeiten, um sie zu konfigurieren.
+1. Die Aufgabe wird dann zur Aufgabenliste hinzugefügt. Sie müssen sie bearbeiten, um sie zu konfigurieren.
 
 1. Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenkategorie auszuwählen:
 
@@ -328,7 +328,7 @@ Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstru
 
    Mit Speicherung der Aufgabe übernehmen die berechneten Kosten den für die Plankosten angegebenen Wert.
 
-   Wenn die Aufgabe abgeschlossen ist (Status **[!UICONTROL Abgeschlossen]** ), werden die berechneten Kosten automatisch mit den Kosten des großen Raums aktualisiert, wie sie in der Kostenstruktur angegeben sind. Diese Kosten werden auch in dieser Kategorie in der Aufschlüsselung angezeigt.
+   Nach Abschluss der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des großen Saals entsprechend der Angabe in seiner Kostenstruktur aktualisiert. Diese Kosten werden auch in dieser Kategorie in der Aufschlüsselung angezeigt.
 
 1. Erstellen Sie auf die gleiche Weise eine zweite Aufgabe mit einer Planung über fünf Tage und verbinden Sie sie mit der zuvor erstellen Kostenstruktur.
 
@@ -340,13 +340,13 @@ Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstru
 
 #### Schritt 6: Status des Kampagnenbudgets aktualisieren {#step-6---update-the-campaign-budget-status}
 
-Wenn die Kampagne konfiguriert ist, kann ihr Status aktualisiert werden, indem sie auf &quot;**[!UICONTROL &quot;]**. Die berechneten Kosten der Kampagne geben dann die Summe der berechneten Kosten des Versands und der Aufgaben der Kampagne an:
+Wenn die Kampagne konfiguriert ist, kann ihr Status durch Festlegen von **[!UICONTROL Angegeben]** aktualisiert werden. Die berechneten Kosten der Kampagne zeigen dann die Summe der berechneten Kosten des Versands und der Aufgabe der Kampagne an:
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
 #### Validierung von Budgets {#budget-approval}
 
-Wenn die Validierung aktiviert ist, können Sie über einen speziellen Link das Budget im Kampagnen-Dashboard validieren. Dieser Link wird angezeigt, wenn der Zielgruppenbestimmungs-Workflow gestartet wurde und ein Briefpost-Versand genehmigt werden muss.
+Bei aktivierter Validierung können Sie das Budget über einen speziellen Link im Kampagnen-Dashboard validieren. Der Link wird angezeigt, sobald der Zielgruppenbestimmungs-Workflow gestartet wurde und ein Briefpostversand validiert werden muss.
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
@@ -356,7 +356,7 @@ Nach Budgetvalidierung und Abschluss des Versands werden die Kosten automatisch 
 
 ## Lagerergänzungen und Rechnungen {#orders-and-invoices}
 
-Im Kontext von MRM können Sie Bestellungen bei einem Dienstleister speichern und Rechnungen ausstellen. Der gesamte Lebenszyklus dieser Bestellungen und Rechnungen kann über die Benutzeroberfläche von Adobe Campaign verwaltet werden.
+Im Kontext von MRM können Sie bei Dienstleistern aufgegebene Bestellungen und zugehörige Rechnungen erfassen. Der gesamte Kreislauf dieser Bestellungen und Rechnungen kann über die Adobe Campaign-Oberfläche verwaltet werden.
 
 ### Lagerergänzungen {#order-creation}
 

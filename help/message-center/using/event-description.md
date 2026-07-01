@@ -13,9 +13,9 @@ product_v2:
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 759
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -31,21 +31,21 @@ Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwende
 
 In diesem Abschnitt werden die in Zusammenhang mit den Schemata des Transaktionsnachrichten-Moduls verwendeten SOAP-Methoden beschrieben.
 
-Zwei **PushEvent** oder **PushEvents** SOAP-Methoden sind mit den beiden **nms:rtEvent** und **nms:BatchEvent**-Datenschemata verknüpft. Das Informationssystem bestimmt hierbei, ob es sich um ein &quot;Batch&quot;- oder &quot;Echtzeit&quot;-Ereignis handelt.
+Zwei **PushEvent**- oder **PushEvents**-SOAP-Methoden werden mit zwei **nms:rtEvent**- und **nms:BatchEvent**-Datenschemata verknüpft. Das Informationssystem bestimmt hierbei, ob es sich um ein &quot;Batch&quot;- oder &quot;Echtzeit&quot;-Ereignis handelt.
 
 * **PushEvent** ermöglicht das Einfügen eines einzelnen Ereignisses in eine Nachricht,
 * **PushEvents** ermöglicht das Einfügen einer Kollektion von Ereignissen in eine Nachricht.
 
 Die WSDL-Zugriffspfade der zwei Methoden lauten:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Typschema zuzugreifen.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Stapeltypschema zuzugreifen.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** für den Zugriff auf das Schema des Typs „Echtzeit“.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** für den Zugriff auf das Schema des Typs „Batch“.
 
 Weitere Informationen zum Generieren einer WSDL-Datei finden Sie in [diesem Abschnitt](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Beide Methoden enthalten ein **`<urn:sessiontoken>`**-Element zum Anmelden beim Modul für den Transaktionsnachrichtenversand. Wir empfehlen die Verwendung einer Authentifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Aufruf zur Anmeldung und dann ein GET-Token gefolgt von einer Abmeldung durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Sitzungstoken-Methode, wobei es sich um das empfohlene Verfahren handelt.
 
-Falls Sie einen LoadBalancing-Server verwenden, können Sie die Benutzer-/Kennwortauthentifizierung verwenden (auf der Ebene der RT-Nachricht). Beispiel:
+Wenn Sie einen Server mit Lastenausgleich verwenden, können Sie die Benutzer-/Passwort-Authentifizierung (auf der Ebene der RT-Nachricht) verwenden. Beispiel:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -127,13 +127,13 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 
 In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie einen Ereignisversand verschieben möchten, fügen Sie das Feld **[!UICONTROL Geplant]** hinzu, gefolgt vom bevorzugten Datum. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
+Wenn Sie einen Ereignisversand nach hinten verschieben möchten, fügen Sie das Feld **[!UICONTROL Geplant]** gefolgt vom gewünschten Datum hinzu. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
 
-Es wird empfohlen, die Attribute @wishedChannel und @emailFormat mit numerischen Werten auszufüllen. Die Funktionstabelle, die numerische Werte und Beschriftungen verknüpft, finden Sie in der Beschreibung des Datenschemas.
+Es wird empfohlen, die Attribute „@wishedChannel“ und „@emailFormat“ mit numerischen Werten auszufüllen. Die Funktionstabelle für die Verknüpfung von numerischen Werten und Titeln befindet sich in der Beschreibung des Datenschemas.
 
 >[!NOTE]
 >
->Eine ausführliche Beschreibung aller autorisierten Attribute sowie deren Werte finden Sie in der Beschreibung des Datenschemas **nms:rtEvent** und **nms:BatchEvent** .
+>Eine ausführliche Beschreibung aller autorisierten Attribute sowie deren Werte finden Sie in der Beschreibung des **nms:rtEvent**- und **nms:BatchEvent**-Datenschemas.
 
 Das **`<ctx>`**-Element enthält die Nachrichtendaten. Der XML-Inhalt ist offen, d. h. er kann je nach zu sendendem Inhalt konfiguriert werden.
 
@@ -168,7 +168,7 @@ Wenn ein Ereignis eingeht, generiert Adobe Campaign eine eindeutige Rückgabe-ID
 
 >[!IMPORTANT]
 >
->Beim Empfang von SOAP-Aufrufen überprüft Adobe Campaign das Format der E-Mail-Adresse. Wenn eine E-Mail-Adresse falsch formatiert ist, wird ein Fehler zurückgegeben.
+>Beim Empfang von SOAP-Aufrufen überprüft Adobe Campaign das Format der E-Mail-Adresse. Wenn die E-Mail-Adresse falsch formatiert ist, wird ein Fehler zurückgegeben.
 
 * Beispiel einer von der Methode zurückgegebenen Kennung bei der erfolgreichen Verarbeitung eines Ereignisses:
 

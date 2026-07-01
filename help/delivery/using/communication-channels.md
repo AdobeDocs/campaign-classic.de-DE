@@ -23,9 +23,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1113
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -89,9 +89,9 @@ Diese Option ist derzeit nur verfügbar, wenn folgende Bedingungen erfüllt sind
 
 **Konfigurieren der Analysepriorität**
 
-Wenn der Versand Teil einer Kampagne ist, bietet die Registerkarte **[!UICONTROL Erweitert]** eine zusätzliche Option. Auf diese Weise können Sie die Verarbeitungsreihenfolge für Sendungen in derselben Kampagne organisieren.
+Wenn Ihr Versand Teil einer Kampagne ist, bietet die Registerkarte **[!UICONTROL Erweitert]** eine zusätzliche Option. Diese ermöglicht die Hierarchisierung der Sendungen innerhalb derselben Kampagne.
 
-Vor dem Versand wird jeder Versand analysiert. Die Analysedauer hängt von der Versandextraktionsdatei ab. Je größer die Datei ist, desto länger dauert die Analyse, sodass die folgenden Sendungen warten.
+Vor dem Senden wird jeder Versand analysiert. Die Analysedauer hängt von der Versandextraktionsdatei ab. Je größer die Datei, desto länger die Analyse. Nachfolgende Sendungen werden verzögert.
 
 Die Optionen im Bereich **[!UICONTROL Nachrichtenvorbereitung durch die Steuerung]** erlauben die Priorisierung der Versandanalysen eines Kampagnen-Workflows.
 

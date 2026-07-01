@@ -25,9 +25,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 677
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Relationen ermöglichen den Abruf von externen, mit dem Inhalt verknüpften Date
 
 Man unterscheidet zwischen zwei Typen verknüpfter Daten:
 
-* Inhaltsverknüpfungen: Dies ist der native Inhaltsverwaltungsmodus. Der Inhalt des Links wird automatisch in das XML-Ausgabedokument integriert.
+* Inhaltsrelationen: Dies ist der native Content-Management-Modus.Der Inhalt der Relation wird automatisch in das XML-Ausgabedokument integriert.
 * Relationen zu externen Tabellen: Sie ermöglichen den Zugriff auf alle anderen Tabellen der Datenbank, erfordern jedoch die Verwendung eines Aggregators, um die Daten abzurufen.
 
 ### Relation zu einem Inhaltsschema {#link-to-a-content-schema}

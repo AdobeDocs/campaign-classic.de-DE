@@ -25,9 +25,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 901
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Was sind die Unterschiede in der Benutzeroberfläche zwischen Campaign Standard und Campaign v7?**
 
-  Campaign Standard und Campaign v7 funktionieren sehr ähnlich. Die meisten Konzepte sind identisch, aber in einigen Fällen kann der Ansatz geringfügig abweichen. Im Folgenden finden Sie einige Konzepte, die sich im Kontext des ACS-Connectors unterscheiden können:
+  Campaign Standard und Campaign v7 funktionieren sehr ähnlich. Die meisten Konzepte sind identisch, aber in einigen Fällen kann der Ansatz geringfügig abweichen. Hier sind einige der Begriffe, die im Zusammenhang mit dem ACS-Connector anders sein können:
 
 <table> 
  <thead> 
@@ -84,9 +84,9 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Hierfür gibt es mehrere mögliche Gründe:
 
-   * Empfänger wurden soeben in Campaign v7 erstellt oder aktualisiert. Die Synchronisierung wird alle 15 Minuten Trigger. Das bedeutet, dass aktualisierte oder neu erstellte Empfängerinnen und Empfänger nach der nächsten Synchronisierung in Campaign Standard angezeigt werden.
-   * Ihre Implementierung kann so eingestellt worden sein, dass nur Empfänger aus bestimmten Ordnern synchronisiert werden. Empfänger aus anderen Ordnern werden nicht synchronisiert.
-   * Die Empfängerin bzw. der Empfänger kann synchronisiert, aber in Campaign Standard nicht angezeigt werden. Überprüfen Sie die Ordner-Rechtezuordnung.
+   * Empfangende wurden gerade erst in Campaign v7 erstellt oder aktualisiert. Die Synchronisierung wird alle 15 Minuten ausgelöst. Deshalb sind aktualisierte oder neu erstellte Empfangende erst nach der nächsten Synchronisierung in Campaign Standard sichtbar.
+   * Ihre Implementierung ist möglicherweise so konfiguriert, dass nur Empfangende aus bestimmten Ordnern synchronisiert werden. Empfangende aus anderen Ordnern werden nicht synchronisiert.
+   * Die empfangende Person wird möglicherweise synchronisiert, ist aber nicht in Campaign Standard sichtbar. Prüfen Sie die Berechtigungszuordnung für Ordner.
 
 * **Ich kann die Profilfelder nicht finden, mit denen ich meine Abfrage in Campaign Standard erstelle.**
 
@@ -94,15 +94,15 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Um zu überprüfen, ob das gewünschte Feld verfügbar ist, sehen Sie sich die Definition der Profilressource in **[!UICONTROL Administration > Entwicklung > Prüfung > Datenschemata]** an.
 
-  Außerdem werden alle an Empfänger angehängten und in mit nms:recipients verknüpften Tabellen gespeicherten Daten nicht standardmäßig mit Campaign Standard synchronisiert.
+  Außerdem werden alle an Empfangende angehängten und in mit nms:recipients verknüpften Tabellen gespeicherten Daten nicht standardmäßig mit Campaign Standard synchronisiert.
 
   Um dennoch verknüpfte Daten verwenden zu können, nehmen Sie die Zielgruppenbestimmung in Campaign v7 vor und fügen Sie zusätzliche Daten wie in Abschnitt  [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md) beschrieben hinzu. Andernfalls können Sie sich auch an Ihren Berater wenden, um Anpassungsmöglichkeiten zu prüfen.
 
-* **Ich verwende in Campaign v7 eine andere Profildimension als :recipient standardmäßige nms. Wie kann ich diese mit Campaign Standard synchronisieren?**
+* **Ich verwende in Campaign v7 eine andere Profildimension als die standardmäßige nms:recipient. Wie kann ich diese mit Campaign Standard synchronisieren?**
 
-  Campaign Standard verwendet eine eindeutige Zielgruppenbestimmungsressource mit dem Namen **profiles**. Die Standardimplementierung der Campaign Standard Connect-Funktion bietet eine standardmäßige Zuordnung zwischen Campaign v7-Empfängerinnen und -Empfängern und Campaign Standard-Profilen.
+  Campaign Standard verwendet eine eindeutige Zielgruppenbestimmungsressource namens **Profile**. Die einfache Implementierung der Funktion „Campaign Standard Connect“ beinhaltet eine standardmäßige Zuordnung zwischen Campaign v7-Empfangenden und Campaign Standard-Profilen.
 
-  Wenn Sie eine andere Profildimension in Campaign v7 verwenden oder mehrere Profildimensionen verwenden, müssen diese allen Campaign Standard-Profilen zugeordnet werden. Wenden Sie sich an Ihren Berater, um diese spezielle Anforderung zu erfüllen.
+  Wenn Sie in Campaign v7 eine andere Profildimension oder mehrere Profildimensionen verwenden, müssen alle zu Campaign Standard-Profilen zugeordnet werden. Wenden Sie sich an Ihre Beratungsfachkraft, um diese spezielle Anforderung zu erfüllen.
 
 * **Ich möchte mit einem Workflow eine Profilliste nach Campaign Standard übertragen, kann aber in Campaign Standard meine Zielgruppe nicht finden**.
 
@@ -112,7 +112,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Vergewissern Sie sich außerdem, dass die Option **[!UICONTROL In ACS freigeben]** in der Aktivität **[!UICONTROL Listen-Update]** mit einem Häkchen versehen ist und dass der Workflow korrekt ausgeführt wurde.
 
-  Die in der Liste enthaltenen Empfängerprofile müssen vor der Ausführung des Workflows mit Campaign Standard synchronisiert worden sein. Nach der Freigabe für Campaign Standard werden die Empfänger der Liste mit Campaign Standard-Profilen abgeglichen, d. h. sie müssen dort vorhanden sein. Empfänger aus der Liste, die nicht mit Profilen in Campaign Standard abgeglichen werden können, werden ignoriert.
+  Beachten Sie, dass vor dem Workflow die in der Liste enthaltenen Empfängerprofile mit Campaign Standard synchronisiert worden sein müssen. Nach der Übertragung der Empfangenden an Campaign Standard werden diese mit Campaign Standard-Profilen abgestimmt, d. h. sie müssen dort vorhanden sein. Empfangende aus der Liste, die nicht mit Profilen in Campaign Standard abgeglichen werden können, werden ignoriert.
 
   Wird eine Liste mit Profilen übertragen, von denen keines mit Campaign Standard synchronisiert wird, wird in Campaign Standard eine leere Abfrage-Zielgruppe erstellt, die nicht verwendet werden kann.
 
@@ -125,11 +125,11 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Beim Mapping von Ordnern zwischen Campaign v7 und Campaign Standard ist keine Sicherheitsgruppe verfügbar.**
 
-  Sie müssen zunächst Ihre Sicherheitsgruppen über **[!UICONTROL Administration > ACS Connector > Rights Management > Sicherheitsgruppen“]**. Diese Aktion überprüft die in Campaign Standard verfügbaren Sicherheitsgruppen. Nach der Synchronisierung können Sie die Sicherheitsgruppen beim Konfigurieren der Ordnerzuordnung finden.
+  Sie müssen zunächst Ihre Sicherheitsgruppen über **[!UICONTROL Administration > ACS-Connector > Berechtigungs-Management > Sicherheitsgruppen]** synchronisieren. Diese Aktion überprüft die in Campaign Standard verfügbaren Sicherheitsgruppen. Nach der Synchronisierung können Sie die Sicherheitsgruppen beim Konfigurieren der Ordnerzuordnung finden.
 
 * **Ich kann in Campaign Standard weder ein Profil noch eine Zielgruppe oder Landingpage bearbeiten. Was bedeutet das?**
 
-  Aus Campaign v7 synchronisierte Ressourcen befinden sich in Campaign Standard im schreibgeschützten Modus, um die Datenkonsistenz sicherzustellen. Wenn Sie eines dieser Elemente bearbeiten müssen, können Sie dies in Campaign v7 tun und dann die Änderung in Campaign Standard replizieren.
+  Alle von Campaign v7 synchronisierten Ressourcen sind in Campaign Standard im schreibgeschützten Modus vorhanden, um Datenkonsistenz zu gewährleisten. Wenn Sie eines dieser Elemente bearbeiten müssen, tun Sie dies in Campaign v7 und replizieren Sie dann die Änderung nach Campaign Standard.
 
 * **Im Workflow [ACS] Replikation von Versandlog eines Profils treten Fehler auf. Was soll ich tun?**
 

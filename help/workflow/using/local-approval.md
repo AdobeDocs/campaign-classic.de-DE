@@ -17,9 +17,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 702
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL L
 
 >[!CAUTION]
 >
->Um diese Aktivität verwenden zu können, müssen Sie das Modul Dezentrales Marketing erworben haben, bei dem es sich um eine Campaign-Option handelt. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Zur Verwendung dieser Aktivität benötigen Sie das Modul „Dezentrales Marketing“ (eine Campaign-Option). Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Lokale Validierung verwenden](using-the-local-approval-activity.md).
 
@@ -59,14 +59,14 @@ In diesem Fall sind folgende Felder zu konfigurieren:
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Verteilungskontext]**: Wählen Sie die Option **[!UICONTROL In der Transition angegeben]**, wenn Sie eine **[!UICONTROL vom Typ]** verwenden, um die Zielpopulation zu begrenzen. In diesem Fall wird die Verteilungsvorlage in die Aufspaltungsaktivität eingegeben. Wenn Sie die Zielpopulation nicht begrenzt möchten, wählen Sie die Option **[!UICONTROL Explizit]** aus und geben Sie im Feld **[!UICONTROL Datenverteilung]** die Verteilungsvorlage an.
+* **[!UICONTROL Verteilungskontext]**: Wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]**, wenn Sie eine Aktivität vom Typ **[!UICONTROL Aufspaltung]** zur Begrenzung der Zielpopulation verwenden. In diesem Fall wird die Verteilungsvorlage in der Aktivität „Aufspaltung“ eingegeben. Wenn Sie die Zielpopulation nicht begrenzt möchten, wählen Sie die Option **[!UICONTROL Explizit]** aus und geben Sie im Feld **[!UICONTROL Datenverteilung]** die Verteilungsvorlage an.
 
   Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Validierungsverwaltung:]**
 
    * Wählen Sie die Versandvorlage und den Betreff für die E-Mail-Benachrichtigung aus. Eine Standardvorlage ist verfügbar: **[!UICONTROL Benachrichtigung bezüglich lokaler Validierungen]**. Sie können auch eine Beschreibung hinzufügen, die oberhalb der Empfängerlisten in den Validierungs- und Feedback-Benachrichtigungen erscheint.
-   * Geben Sie den **[!UICONTROL Genehmigungstyp]** an, der der Genehmigungsfrist (Datum oder Frist ab Beginn der Genehmigung) entspricht. An diesem Datum wird der Workflow erneut gestartet und die nicht genehmigten Empfängerinnen und Empfänger werden bei der Zielgruppenbestimmung nicht berücksichtigt. Nachdem die Benachrichtigungen gesendet wurden, wird die Aktivität in die Warteschlange gestellt, damit die lokalen Supervisoren ihre Kontakte genehmigen können.
+   * Geben Sie den **[!UICONTROL Validierungstyp]** an, der der Validierungsfrist entspricht (Datum oder Frist ab Beginn der Vaidierung). An diesem Datum wird der Workflow erneut gestartet und die nicht genehmigten Empfängerinnen und Empfänger werden bei der Zielgruppenbestimmung nicht berücksichtigt. Nachdem die Benachrichtigungen gesendet wurden, wird die Aktivität in die Warteschlange gestellt, damit die lokalen Verantwortlichen ihre Kontakte genehmigen können.
 
      >[!NOTE]
      >
@@ -101,7 +101,7 @@ Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu v
 
 * Validierung über Webzugriff
 
-  Die an Benutzer der Administratorgruppe gesendete E-Mail ermöglicht die Validierung der Versandzielgruppe. Die Nachricht verwendet den definierten Text, und der JavaScript-Ausdruck wird durch den berechneten Wert ersetzt (in diesem Fall „574„)
+  Die an Benutzende der Administratorgruppe gesendete E-Mail ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier „574“) ersetzt wird.
 
   Klicken Sie zur Validierung auf den entsprechenden Link in der Benachrichtigung und verbinden Sie sich mit der Adobe Campaign-Konsole.
 
@@ -113,14 +113,14 @@ Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu v
 
 * Validierung in der Clientkonsole
 
-  In der Verzeichnisstruktur enthält der Knoten **[!UICONTROL Administration > Produktion > Automatisch erstellte Objekte > Ausstehende Genehmigungen]** die Liste der Aufgaben, die vom derzeit verbundenen Benutzer genehmigt werden müssen. Die Liste sollte eine Zeile anzeigen. Doppelklicken Sie auf diese Zeile, um zu antworten. Das folgende Fenster wird angezeigt:
+  Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der aktuell von der verbundenen validierenden Person zu prüfenden Aufgaben. Die Liste sollte eine Zeile anzeigen. Doppelklicken Sie auf diese Zeile, um zu reagieren. Das folgende Fenster wird angezeigt:
 
 ![](assets/new-workflow-7.png)
 
-Wählen Sie **Ja** und klicken Sie dann auf **[!UICONTROL Genehmigen]**. Eine Meldung informiert Sie darüber, dass die Antwort aufgezeichnet wurde.
+Wählen Sie **Ja** aus und klicken Sie dann auf **[!UICONTROL Validieren]**. Eine Nachricht informiert Sie darüber, dass Ihre Antwort gespeichert wurde.
 
 Wenn Sie nach einigen Sekunden zum Workflow-Diagramm zurückkehren, stellt es sich wie folgt dar:
 
 ![](assets/new-workflow-8.png)
 
-Der Workflow hat die Aufgabe **[!UICONTROL Versandkontrolle]** ausgeführt, was in diesem Fall den Start des zuvor erstellten Versands bedeutet. Der Workflow wurde fehlerfrei abgeschlossen.
+Der Workflow hat die Aufgabe **[!UICONTROL Versand bearbeiten]** ausgeführt, was in diesem Fall bedeutet, dass der zuvor erstellte Versand gestartet wurde. Der Workflow wurde fehlerfrei abgeschlossen.

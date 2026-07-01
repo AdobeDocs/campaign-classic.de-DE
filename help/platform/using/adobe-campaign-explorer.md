@@ -19,16 +19,16 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 120
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign-Explorer verwenden
 
 
-Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Sie ermöglicht den Zugriff auf die Adobe Campaign mit allen Adobe Campaign-Funktionen, Konfigurationsbildschirmen und einer detaillierteren Ansicht einiger Plattformelemente.
+Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Damit können Sie auf alle Adobe Campaign-Funktionen, Konfigurationsbildschirme und eine detailliertere Ansicht einiger Plattformelemente zugreifen.
 
 >[!NOTE]
 >

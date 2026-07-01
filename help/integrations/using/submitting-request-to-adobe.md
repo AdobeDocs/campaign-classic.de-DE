@@ -21,9 +21,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 146
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 76%
 >
 >Damit Sie als v7-Benutzer fortfahren können, müssen Sie sicherstellen, dass Adobe Identity Management System (IMS) auf Ihrem System aktiviert ist. [Weitere Informationen](../../integrations/using/about-adobe-id.md).
 
-Sobald Adobe Identity Management Service (IMS) für Ihr Unternehmen aktiviert ist, können Sie die Bereitstellung der Integration der [Experience Cloud Audience](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} mit Campaign anfordern. Wenden Sie sich dazu an Ihre Adobe-Kontaktperson und stellen Sie die folgenden Informationen bereit:
+Sobald das Identitäts-Management-System (IMS) von Adobe für Ihr Unternehmen aktiviert ist, können Sie die Bereitstellung der Integration von [Experience Cloud Audience](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} mit Campaign anfordern. Wenden Sie sich dazu an Ihre Adobe-Kontaktperson und stellen Sie die folgenden Informationen bereit:
 
 <table> 
  <tbody> 
@@ -47,7 +47,7 @@ Sobald Adobe Identity Management Service (IMS) für Ihr Unternehmen aktiviert is
   </tr> 
   <tr> 
    <td> <strong>Organization ID</strong><br /> (Organisationskennung) </td> 
-   <td> Ihre Organisations-ID. <br> Auf <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de"> Seite erfahren Sie, wie Sie Ihre Organisations-ID finden</a></td> 
+   <td> Ihre Organisations-ID. <br> Auf <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de">dieser Seite</a> erfahren Sie, wie Sie Ihre Organisations-ID finden.</td> 
   </tr> 
   <tr> 
    <td> <strong>Umgebung</strong><br /> </td> 

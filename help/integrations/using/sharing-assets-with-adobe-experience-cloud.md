@@ -19,15 +19,15 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 190
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Freigeben von Assets mit Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} bietet ein zentrales Repository Marketing-fähiger Assets, die Sie in allen Lösungen gemeinsam nutzen können. Ein Asset ist ein digitales Dokument, Bild, Video oder Audiodatei.
+[Experience Cloud Assets](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} bietet ein zentrales Repository Marketing-fähiger Elemente, die Sie in allen Lösungen gemeinsam nutzen können. Ein Asset ist ein digitales Dokument, Bild, Video oder eine Audiodatei.
 
 Die Asset-Dienste sind:
 

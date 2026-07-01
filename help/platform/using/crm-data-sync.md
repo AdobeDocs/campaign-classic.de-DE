@@ -18,9 +18,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1628
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 ![](assets/crm_task_select_obj.png)
 
-Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden im Folgenden beschrieben.
+Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden nachfolgend beschrieben.
 
 ## Import aus dem CRM {#importing-from-the-crm}
 
@@ -75,7 +75,7 @@ Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie fo
 
    >[!IMPORTANT]
    >
-   >Die Kennung des CRM-Datensatzes ist für die Verknüpfung von Objekten im CRM und in Adobe Campaign obligatorisch. Es wird automatisch hinzugefügt, wenn das Feld genehmigt wird.
+   >Die Kennung des Eintrags in CRM ist notwendig für das Verknüpfen von Objekten in CRM und in Adobe Campaign. Sie wird automatisch hinzugefügt, wenn das Feld validiert wird.
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 
@@ -116,7 +116,7 @@ Unten stehende Felder kommen (in der angegebenen Reihenfolge) zur Anwendung:
 * Bei Microsoft Dynamics: **modifiedon**,
 * Bei Salesforce.com: **LastModifiedDate**, **SystemModstamp**.
 
-Durch Aktivieren der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisations-Workflow über eine Aktivität vom Typ **[!UICONTROL JavaScript-]** verwendet werden können. Diese Aktivitäten sind:
+Durch die Aktivierung der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisierungs-Workflow über eine Aktivität des Typs **[!UICONTROL JavaScript-Code]** verwendet werden können. Diese Aktivitäten sind:
 
 * **vars.crmOptionName**: entspricht dem Datum des letzten Imports.
 * **vars.crmStartImport**: entspricht dem Startdatum des letzten Datenabrufs (einschließlich).
@@ -132,10 +132,10 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 
 * Jedes Filterniveau darf nur einen Operatortyp verwenden.
 * Der AND-NOT-Operator wird nicht unterstützt.
-* Vergleiche dürfen nur Nullwerte (&#39;is empty&#39;/&#39;is not empty&#39; type) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche von JOIN-Typen werden daher nicht unterstützt.
+* Vergleiche dürfen nur Null-Werte (des Typs „ist leer“/„ist nicht leer“) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche vom Typ „JOIN“ werden also nicht unterstützt.
 * Der in der rechten Spalte angegebene Wert wird in JavaScript ausgewertet.
 * Vergleiche vom Typ JOIN werden nicht unterstützt.
-* Der Ausdruck in der linken Spalte muss ein -Feld sein. Es kann sich nicht um eine Kombination aus mehreren Ausdrücken, einer Zahl usw. handeln.
+* Der Ausdruck in der linken Spalte muss ein Feld sein. Er darf keine Kombination aus mehreren Ausdrücken, eine Zahl usw. sein.
 
 So wären z. B. folgende Filterbedingungen im Rahmen eines CRM-Imports UNGÜLTIG, da der ODER-Operator auf demselben Niveau wie die UND-Operatoren verwendet wird:
 
@@ -199,7 +199,7 @@ Gehen Sie für einen Export bei der Konfiguration der **[!UICONTROL CRM-Connecto
 
    >[!NOTE]
    >
-   >Die Liste der zu exportierenden Einträge und das Ergebnis des Exports werden in einer temporären Datei gespeichert, auf die zugegriffen werden kann, bis der Workflow abgeschlossen oder neu gestartet wurde. Auf diese Weise können Sie den Prozess im Falle von Fehlern erneut starten, ohne das Risiko einzugehen, denselben Datensatz mehrmals zu exportieren oder Daten zu verlieren.
+   >Die Liste der zu exportierenden Einträge und das Ergebnis des Exports werden in einer temporären Datei gespeichert, auf die zugegriffen werden kann, bis der Workflow abgeschlossen oder neu gestartet wurde. Die ermöglicht es Ihnen, den Prozess im Fehlerfall erneut zu starten, ohne Gefahr zu laufen, denselben Eintrag mehrmals zu exportieren oder Daten zu verlieren.
 
 ## Ergänzende Konfigurationen {#additional-configurations}
 
@@ -211,7 +211,7 @@ Wählen Sie hierzu in der entsprechenden Spalte die anzuwendende Konvertierung a
 
 ![](assets/crm_task_import.png)
 
-Der **[!UICONTROL Standard]**-Modus wendet die automatische Datenkonvertierung an, die in den meisten Fällen einer Kopie/Einfügung der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
+Im Modus **[!UICONTROL Standard]** wird eine automatische Datenkonvertierung durchgeführt, die in den meisten Fällen einem Kopieren und Einfügen der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
 
 Darüber hinaus sind folgende Konvertierungen möglich:
 
@@ -249,13 +249,13 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Import der im CRM gelöschten Objekte]** aus.
 1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
-1. Geben Sie den zu berücksichtigenden Löschzeitraum in den Feldern **[!UICONTROL Startdatum]** und **[!UICONTROL Enddatum]** an. Diese Daten werden in den Zeitraum einbezogen.
+1. Geben Sie den zu berücksichtigenden Löschzeitraum in den Feldern **[!UICONTROL Startdatum]** und **[!UICONTROL Enddatum]** ein. Diese Daten werden in den Zeitraum einbezogen.
 
    ![](assets/crm_import_deleted_obj.png)
 
    >[!IMPORTANT]
    >
-   >Der Zeitraum für die Löschung des Elements muss mit den CRM-spezifischen Einschränkungen übereinstimmen. Das bedeutet, dass für Salesforce.com beispielsweise Elemente, die vor mehr als 30 Tagen gelöscht wurden, nicht wiederhergestellt werden können.
+   >Der Löschzeitraum des Elements muss mit den für CRM spezifischen Einschränkungen übereinstimmen. Dies bedeutet, dass bei Salesforce.com beispielsweise Elemente, die vor mehr als 30 Tagen gelöscht wurden, nicht wiederhergestellt werden können.
 
 ## Löschung von Objekten im CRM {#deleting-objects-in-the-crm}
 

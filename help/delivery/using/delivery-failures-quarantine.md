@@ -23,9 +23,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1771
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Asynchrone Fehlermeldungen werden von der Adobe Campaign-Plattform über das Bou
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, erhält der Adobe Campaign-Versand-Server eine Fehlermeldung vom Messaging-Server oder dem Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste der Fehler besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Nachricht enthalten sind. Jeder Fehlermeldung sind Fehlertypen und Gründe zugeordnet.
 
-Diese Liste ist über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** verfügbar. Es enthält alle von Adobe Campaign verwendeten Regeln, um fehlgeschlagene Sendungen zu qualifizieren. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
+Diese Liste ist über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Verwaltung unzustellbarer Nachrichten > Versandlogqualifizierung]** verfügbar. Sie enthält alle von Adobe Campaign verwendeten Regeln, um fehlgeschlagene Sendungen zu qualifizieren. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch von Benutzenden verwaltet werden.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -70,17 +70,17 @@ Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Na
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den Inhalt der Variablen zu löschen (z. B. IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der Spalte &quot;**[!UICONTROL &quot;]**. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
+Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen, und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]** an. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 
 >[!NOTE]
 >
->Das Feld **[!UICONTROL Anzahl der]**&quot; zeigt die Anzahl der Vorkommnisse der Nachricht in der Liste an. Sie ist auf 100.000 Vorkommnisse beschränkt. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
+>Im Feld **[!UICONTROL Trefferanzahl]** wird die Anzahl der Vorkommen der Nachricht in der Liste angezeigt. Sie ist auf 100.000 Vorkommen beschränkt. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
 
 Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
-* **[!UICONTROL Zu qualifizieren]**: Die Bounce Message konnte nicht qualifiziert werden. Dem Zustellbarkeits-Team muss eine Qualifizierung zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce Message nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln verwendet.
+* **[!UICONTROL Zu qualifizieren]**: Die Bounce-E-Mail konnte nicht qualifiziert werden. Dem Zustellbarkeits-Team muss eine Qualifizierung zugewiesen werden, um eine effiziente Zustellbarkeit auf der Plattform zu gewährleisten. Nicht qualifizierte Bounce-E-Mails werden nicht zur Anreicherung der Liste mit E-Mail-Verwaltungsregeln herangezogen.
 * **[!UICONTROL Beibehalten]**: Die Bounce-E-Mail wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
 * **[!UICONTROL Ignorieren]**: Die Bounce-E-Mail wird vom Campaign MTA ignoriert, was bedeutet, dass diese Bounce-E-Mail nie dazu führt, dass die Adresse der Empfängerin bzw. des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
@@ -92,7 +92,7 @@ Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
 ### Konfiguration von E-Mail-Verwaltungsregeln {#email-management-rules}
 
-Der Zugriff auf E-Mail-Regeln erfolgt über **[!UICONTROL Knoten Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > E-Mail]** Regelsätze . E-Mail-Verwaltungsregeln werden im unteren Bereich des Fensters angezeigt.
+Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Verwaltung unzustellbarer Nachrichten > E-Mail-Regeln]** zugegriffen werden. E-Mail-Verwaltungsregeln werden im unteren Bereich des Fensters angezeigt.
 
 ![](assets/tech_quarant_rules.png)
 

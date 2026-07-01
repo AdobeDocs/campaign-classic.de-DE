@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 854
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Befolgen Sie beim Entwerfen Ihrer Nachrichteninhalte die folgenden Grundsätze:
 * [Absenderadresse](#sender-address): Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und auf ihn registriert sein. Die Domain-Registrierung darf nicht privat erfolgen.
 * [Personalisierung](#personalization): Die Personalisierung von Inhalten und das Definieren einer Sendezeit pro Empfänger erhöhen die Wahrscheinlichkeit, dass Ihre Nachricht geöffnet wird.
 * Bilder und Text: Achten Sie auf ein angemessenes Verhältnis zwischen Text und Bildern (z. B. 60 % Text und 40 % Bilder).
-* [Abmelde-Link](#opt-out) und -Landingpage: Der Abmelde-Link ist unverzichtbar. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
+* [Abmeldelink](#opt-out) und Landingpage: Der Abmeldelink muss vorhanden sein. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
 * Vorschau: Verwenden Sie die von Adobe Campaign angebotenen Tools, um den Inhalt Ihrer E-Mails zu überprüfen und zu optimieren ([Inbox Rendering](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=de).
@@ -48,9 +48,9 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 ## Absenderadresse {#sender-address}
 
-Bestimmte ISPs überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL From]**), bevor sie Nachrichten akzeptieren. Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden.
+Bestimmte ISPs überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL Von]**), bevor sie Nachrichten annehmen. Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden.
 
-Sie müssen sicherstellen, dass auf Instanzebene eine korrekte Adresse angegeben wird (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungsassistent…]**) oder in den am häufigsten verwendeten Szenarien.
+Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungsassistent…]**) oder in den am häufigsten verwendeten Szenarien eine korrekte Adresse angegeben ist.
 
 Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de){target="_blank"}.
 
@@ -70,7 +70,7 @@ Weitere Informationen zum Einfügen eines Abmelde-Links finden Sie in der [Dokum
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 
-Generell sollten Sie nicht versuchen, Empfängerinnen und Empfängern, die sich abmelden möchten, in die Quere zu kommen, indem Sie von ihnen verlangen, Felder wie beispielsweise ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur über eine einzige Validierungsschaltfläche verfügen und die Abstimmung sollte nur mit der verschlüsselten Kennung durchgeführt werden.
+In der Regel sollten Sie Empfängerinnen und Empfängern, die sich abmelden möchten, dies nicht erschweren, indem Sie sie etwa dazu verpflichten, Felder wie ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur über eine einzige Validierungsschaltfläche verfügen und die Abstimmung sollte nur mit der verschlüsselten Kennung durchgeführt werden.
 
 Das Anfordern einer zusätzlichen Bestätigung ist keine zuverlässige Methode: Ein Benutzer kann zwei E-Mail-Adressen in dasselbe Postfach umgeleitet haben (z. B. Vorname.Nachname@club.com und Vorname.Nachname@internet-club.com). Wenn sich der Empfänger nur an die erste Adresse erinnert und sich über eine an die andere Adresse gesendete Nachricht abmelden möchte, würde das Formular dies ablehnen, da die verschlüsselte Kennung und die eingegebene E-Mail-Adresse nicht übereinstimmen.
 
@@ -84,8 +84,8 @@ Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](inb
 
 ## SpamAssassin {#spamassassin}
 
-Adobe Campaign kann so konfiguriert werden, dass es mit SpamAssassin funktioniert. Auf diese Weise können E-Mails bewertet werden, um festzustellen, ob eine Nachricht von den Anti-Spam-Tools, die beim Empfang verwendet werden, möglicherweise als Spam eingestuft wird.
+Adobe Campaign kann für die Nutzung von SpamAssassin konfiguriert werden. Dies ermöglicht die Bewertung von E-Mails zur Bestimmung, ob für eine Nachricht das Risiko besteht, bei Empfang von Anti-Spam-Tools als Spam eingeordnet zu werden.
 
-Vor Beginn eines Versands können Sie auf **[!UICONTROL Registerkarte]** Vorschau“ die Risiken bewerten. Eine Warnmeldung gibt das Ergebnis des Tests aus.
+Die Risiken können vor Versandstart in der Registerkarte **[!UICONTROL Vorschau]** evaluiert werden. Eine Warnmeldung gibt Auskunft über das Ergebnis des Tests.
 
 Weitere Informationen finden Sie in diesem [Abschnitt](spamassassin.md).

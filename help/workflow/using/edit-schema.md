@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 118
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 59%
 
 
 
-Daten können im Workflow mithilfe der Aktivität „Schema bearbeiten **[!UICONTROL transformiert, normalisiert und bei Bedarf]** werden. Sie wird im Allgemeinen zur Normalisierung der Datenstruktur verwendet: Sie können die Ausgabespalten umbenennen oder ihren Inhalt ändern, indem Sie z. B. die Durchschnittswerte eines Felds oder Aggregats berechnen.
+Daten können mit der Aktivität **[!UICONTROL Schema bearbeiten]** im Workflow umgewandelt, normalisiert und bei Bedarf angereichert werden. Dies wird in der Regel zum Normalisieren der Datenstruktur gemacht: Sie können die Ausgabespalten umbenennen oder ihren Inhalt verändern, indem Sie beispielsweise die Durchschnittswerte eines Felds oder Aggregats berechnen.
 
 Diese Aktivität verändert nicht die Daten der Arbeitstabelle, sondern nur ihr Schema, d. h. die logische Darstellung der Daten.
 

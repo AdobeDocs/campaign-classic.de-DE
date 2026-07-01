@@ -24,9 +24,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 865
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes vorhanden ist:
 
 * Ein Adobe Developer-Projekt
-* Eine gültige Organisations-ID. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Eine gültige Organisations-ID – Wie Sie Ihre Organisations-ID finden, erfahren Sie [auf dieser Seite](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 
@@ -141,7 +141,7 @@ Die Liste der optionalen Parameter lautet:
 | dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im `var/INSTANCE/pipelined.json.` <br> Der interne Status ist hier auch auf Abruf verfügbar: `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
 | monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: `http://INSTANCE:PORT/pipelined/status`. <br>Der Standardwert ist 7781. |
-| pointerFlushMessageCount | Wenn diese Anzahl von Nachrichten verarbeitet wird, werden die Offsets in der Datenbank gespeichert. <br> Der Standardwert lautet 1000 |
+| pointerFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. <br> Der Standardwert ist 1.000. |
 | pointerFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
 | processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br> Der Standardwert ist 4 |
 | processingThreads | Anzahl der dedizierten Threads, die Nachrichten mit nativem Code verarbeiten. <br>Der Standardwert ist 4. |

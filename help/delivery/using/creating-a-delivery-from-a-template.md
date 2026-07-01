@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 199
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versand
 
 Geben Sie die Versandparameter an und klicken Sie auf **[!UICONTROL Senden]**.
 
-Dadurch wird ein Versand in dem Ordner erzeugt, der an die Vorlage angehängt ist. Der Name dieses Versands ist der Name der Versandvorlage, aus der er erstellt wurde.
+Durch diese Aktion wird ein Versand im mit der Vorlage verknüpften Ordner generiert. Der Name dieses Versands ist der Name der Versandvorlage, aus der er erstellt wurde.
 
 >[!NOTE]
 >

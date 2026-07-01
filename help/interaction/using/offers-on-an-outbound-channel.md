@@ -15,9 +15,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 478
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ In unserer Datenbank gibt es eine Kategorie von Reiseangeboten nach Afrika. Die 
 
    ![](assets/offer_simulation_example_002.png)
 
-1. Speichern Sie die Simulation. Dieser wird dann in einer neuen Registerkarte geöffnet.
+1. Speichern Sie die Simulation. Sie wird anschließend in einem neuen Tab geöffnet.
 
    ![](assets/offer_simulation_example_003.png)
 
@@ -96,7 +96,7 @@ In unserer Datenbank gibt es eine Kategorie von Reiseangeboten nach Afrika. Die 
 
    ![](assets/offer_simulation_example_006.png)
 
-1. Gültigkeitsdaten eingeben. Sie müssen mindestens ein Startdatum eingeben. Auf diese Weise kann das Angebotsmodul Angebote filtern und diejenigen auswählen, die zu einem bestimmten Datum gültig sind.
+1. Geben Sie Gültigkeitsdaten ein. Sie müssen mindestens ein Startdatum eingeben. Dies ermöglicht es dem Angebotsmodul, Angebote zu filtern und nur jene zu berücksichtigen, die zum angegebenen Zeitpunkt tatsächlich verfügbar sind.
 1. Geben Sie bei Bedarf Themen an, um die Anzahl der Angebote zu begrenzen.
 
    Im vorliegenden Beispiel enthält die Kategorie **Finanzdienstleistungen** zwei Unterkategorien mit je einem unterschiedlichen Thema. Die Simulation soll sich nur auf die Kategorie mit dem Anwendungsthema **Kunden > 1 Jahr** beziehen.

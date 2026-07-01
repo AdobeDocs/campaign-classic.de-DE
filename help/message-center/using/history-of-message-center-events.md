@@ -15,9 +15,9 @@ topic_v2:
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 151
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 73%
 
 Der Bericht **[!UICONTROL Ereignisverlauf]** bietet eine Übersicht über die Message-Center-Aktivitäten, d. h. die Anzahl der verarbeiteten Ereignisse und der versendeten Transaktionsnachrichten.
 
-Wenn der Bericht geöffnet wird, entsprechen die standardmäßig angezeigten Informationen der Rate der erfolgreich gesendeten Transaktionsnachrichten. Um weitere Ebenen anzuzeigen, können Sie die verschiedenen Knoten öffnen und den Cursor auf der entsprechenden Ebene platzieren, um sie auszuwählen.
+Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der Rate der erfolgreich gesendeten Transaktionsnachrichten. Sie können die unterschiedlichen Knoten aufklappen, um weitere Ebenen anzuzeigen. Wenn Sie mit dem Mauszeiger über eine Ebene fahren, wird sie ausgewählt.
 
 ![](assets/messagecenter_reporting_001.png)
 

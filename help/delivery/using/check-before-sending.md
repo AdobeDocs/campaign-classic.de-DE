@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 914
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Mit Inbox Rendering können Sie sich eine Vorschau Ihrer Nachrichten in den gän
 
 * Sie können sich ansehen, wie Nachrichten je nach verwendetem Empfangsmedium (Mobilgeräte, Web-Clients etc.) beim Empfänger dargestellt werden.
 
-* Inbox Rendering-Funktionen sind entscheidend, um zu ermitteln, ob Ihre E-Mail-Kampagnen erfolgreich über die Filter der wichtigsten ISPs (Internet Service Provider) und Webmail-Services hinauskommen. Solche Tools senden eine Pre-Flight-Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, sodass Sie sehen können, wie die Nachricht über diese Dienste hinweg angezeigt oder gerendert wird. Sie können auch Berichte und Optionen zur Code-Korrektur enthalten, mit denen Sie schnell Korrekturen zur Verbesserung der Zustellbarkeit ermitteln und vornehmen können.
+* Inbox-Rendering-Funktionen sind von entscheidender Bedeutung, um festzustellen, ob Ihre E-Mail-Kampagnen die Filter der wichtigsten ISPs (Internet Service Provider) und Webmail-Dienste erfolgreich passieren. Solche Tools senden eine Pre-Flight-Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, sodass Sie sehen können, wie die Nachricht über diese Dienste hinweg angezeigt oder gerendert wird. Sie können auch Berichte und Optionen zur Code-Korrektur enthalten, mit denen Sie schnell Korrekturen zur Verbesserung der Zustellbarkeit ermitteln und vornehmen können.
 
 Weitere Informationen finden Sie in [diesem Abschnitt](inbox-rendering.md).
 
@@ -102,7 +102,7 @@ Sie können die Reihenfolge der Sendungen durch Angabe der Versandpriorität fes
 
 ### Einrichten von IP-Affinitäten
 
-Um den ausgehenden SMTP-Traffic besser zu steuern, können Sie für jede Affinität die Verwendung bestimmter IP-Adressen festlegen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen. Sie können beispielsweise eine Affinität pro Land oder Subdomain verwenden. Anschließend können Sie für jedes Land eine Typologie erstellen und jede Affinität mit der entsprechenden Typologie verknüpfen.
+Um den ausgehenden SMTP-Traffic besser zu steuern, können Sie für jede Affinität die Verwendung bestimmter IP-Adressen festlegen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen. Sie können beispielsweise eine Affinität pro Land oder Subdomain verwenden. Dann können Sie für jedes Land eine Typologie erstellen und jede Affinität mit der entsprechenden Typologie verknüpfen.
 
 Sie haben folgende Möglichkeiten:
 
@@ -112,7 +112,7 @@ Sie haben folgende Möglichkeiten:
 
 * Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign-opt/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
-* Überprüfen Sie nach dem Versand der E-Mail in der Kopfzeile, von welcher IP-Adresse der Versand gesendet wurde. Ihr E-Mail-Administrator sollte Ihnen beim Abrufen der Kopfzeileninformationen behilflich sein.
+* Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihre E-Mail-Administration kann Sie beim Abrufen der Header-Informationen unterstützen.
 
 * Stellen Sie bei SMS-Sendungen sicher, dass der SMS-Kanal über eine dedizierte Affinität verfügt, die auf **einen** Anwendungs-Server-Container beschränkt ist. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 

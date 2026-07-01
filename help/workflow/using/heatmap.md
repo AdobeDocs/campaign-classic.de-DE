@@ -18,9 +18,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1200
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Jede Zeile stellt eine Stunde des Tages dar und jede Zelle entspricht 5 Minuten 
 
 Die Tabelle zeigt alle Workflows an, die für jeden dieser 5-Minuten-Zeiträume gleichzeitig ausgeführt werden.
 
-Im folgenden Beispiel werden zwischen 8:00 und :05am:00 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
+Im folgenden Beispiel werden zwischen 8:00 Uhr (8am) und 8:05 Uhr (8:05am) drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

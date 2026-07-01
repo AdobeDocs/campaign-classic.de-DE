@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 377
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 70%
 
 
 
-Mit **Aktion** fortlaufender Versand“ können Sie einem bestehenden Versand neue Empfänger hinzufügen. Durch diesen Versand müssen Sie nicht jedes Mal einen neuen Versand erstellen. Dieser Modus ist häufig effizienter, insbesondere bei Warnungen oder Benachrichtigungen mit geringem Volumen, die bei Bedarf gesendet werden.
+Eine Aktivität des Typs **Versand (fortlaufend)** ermöglicht das Hinzufügen neuer Empfänger bzw. Empfängerinnen zu einem bestehenden Versand. Bei diesem Versandtyp muss nicht jedes Mal ein neuer Versand erstellt werden. Dieser Modus ist häufig effizienter, besonders für Warnhinweise für geringes Volumen oder Benachrichtigungen, die bei Bedarf gesendet werden.
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
@@ -53,7 +53,7 @@ Dies gilt nur, wenn die Option **[!UICONTROL Wird durch das Eingangsereignis ang
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen speichert, **[!UICONTROL schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch den unmittelbaren Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppenempfangenden speichert, **[!UICONTROL schema]** ist das Schema der Population, (normalerweise „nms:recipient“) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 

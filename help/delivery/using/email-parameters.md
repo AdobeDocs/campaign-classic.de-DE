@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 998
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 * **[!UICONTROL Empfängerangaben berücksichtigen]** (Standardmodus)
 
-  Das Nachrichtenformat wird anhand der im Empfängerprofil gespeicherten Daten definiert und standardmäßig im Feld **[!UICONTROL E-Mail-Format]** gespeichert (@emailFormat). Falls ein Empfänger Nachrichten in einem bestimmten Format erhalten möchte, werden sie in diesem Format gesendet. Wenn das Feld nicht ausgefüllt ist, wird eine Multipart-Alternative-Nachricht gesendet (siehe unten).
+  Das Nachrichtenformat wird auf der Grundlage der im Empfängerprofil gespeicherten Daten definiert und standardmäßig im Feld **[!UICONTROL E-Mail-Format]** (@emailFormat) gespeichert. Falls ein Empfänger Nachrichten in einem bestimmten Format erhalten möchte, werden sie in diesem Format gesendet. Ohne Angabe in diesem Feld wird eine Nachricht des Typs „multipart-alternative“ gesendet, wie im Anschluss erläutert.
 
 * **[!UICONTROL E-Mail-Programm des Empfängers das beste Format wählen lassen]**
 
@@ -83,11 +83,11 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
   >[!IMPORTANT]
   >
-  >Diese Option umfasst beide Versionen der Nachricht. Dies wirkt sich daher auf die Versandrate aus, da die Nachricht größer ist.
+  >Diese Option umfasst beide Versionen der Nachricht. Dies hat Auswirkungen auf die Versandrate, da die Nachricht dadurch größer wird.
 
 * **[!UICONTROL Alle Nachrichten im Textformat senden]**
 
-  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, wenn der Empfänger auf die Nachricht klickt.
+  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern lediglich für die Mirrorseite verwendet, wenn die Empfängerin bzw. der Empfänger auf die Nachricht klickt.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 ## Erzeugen der Mirrorseite {#generating-mirror-page}
 
-Die Mirrorseite ist eine HTML-Seite, auf die online über einen Webbrowser zugegriffen werden kann. Ihr Inhalt ist identisch mit dem der E-Mail.
+Bei der Mirrorseite handelt es sich um eine HTML-Seite, auf die online über einen Webbrowser zugegriffen werden kann. Sie hat denselben Inhalt wie die E-Mail.
 
 Standardmäßig wird die Mirrorseite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zu Gestaltungsbausteinen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 

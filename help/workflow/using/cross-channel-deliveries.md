@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 301
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail o
 
 1. Erstellen Sie eine Kampagne.
 1. Fügen Sie in Ihrer Kampagne dem Workflow im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]** hinzu.
-1. Konfigurieren Sie Ihre Abfrage. Hier wählen wir beispielsweise als Zieldimension die Empfänger aus, die Push-Benachrichtigungen abonniert haben.
+1. Konfigurieren Sie Ihre Abfrage. In unserem Beispiel wählen wir als Zieldimension die Empfängerinnen und Empfänger aus, die Push-Benachrichtigungen abonniert haben.
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail o
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. Fügen Sie die Filterbedingungen zu Ihrer Abfrage hinzu. In diesem Fall wählen wir Empfänger aus, die eine Mobiltelefonnummer oder E-Mail-Adresse haben.
+1. Fügen Sie Ihrer Abfrage die Filterbedingungen hinzu. In diesem Fall wählen wir Empfängerinnen und Empfänger aus, die über eine Mobiltelefonnummer oder E-Mail-Adresse verfügen.
 
    ![](assets/cross_channel_delivery_2.png)
 

@@ -26,9 +26,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1009
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -320,7 +320,7 @@ Die Registrierungsfunktion ermöglicht
 
 +++**Tracking von stillen Benachrichtigungen**
 
-Mit iOS können Sie stille Benachrichtigungen, eine Benachrichtigung oder Daten senden, die direkt an eine Mobile App gesendet werden, ohne sie anzuzeigen. Mit Adobe Campaign können Sie sie verfolgen.
+Unter iOS können Sie stille Benachrichtigungen senden. Das sind Benachrichtigungen oder Daten, die direkt an eine App gesendet werden, ohne sie anzuzeigen. Mit Adobe Campaign können Sie sie nachverfolgen.
 
 Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel vor:
 
@@ -376,7 +376,7 @@ Der **registerDeviceStatus**-Prototyp ist:
 
 **Status** ermöglicht festzustellen, ob eine Registrierung erfolgreich war oder ob ein Fehler aufgetreten ist.
 
-**ErrorReason** liefert weitere Informationen zu den aufgetretenen Fehlern. Weitere Informationen zu verfügbaren Fehlern und ihren Beschreibungen finden Sie in der folgenden Tabelle.
+**ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der Tabelle unten.
 
 <table> 
  <thead>
@@ -652,7 +652,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Ordnen Sie Ihre Inhaltserweiterung der von Adobe Campaign gesendeten Kategorie zu:
 
-  Wenn Ihre Mobile App ein Bild anzeigen soll, können Sie den Kategoriewert in Adobe Campaign auf „Bild“ setzen und in Ihrer Mobile App eine Benachrichtigungserweiterung erstellen, für die der Parameter **UNNotificationExtensionCategory** auf „Bild“ gesetzt ist. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert aufgerufen.
+  Wenn Ihre App ein Bild anzeigen soll, können Sie in Adobe Campaign den Kategoriewert „image“ wählen und in der App eine Benachrichtigungserweiterung mit dem durch „image“ festgelegten Parameter **UNNotificationExtensionCategory** erstellen. Wenn die Push-Benachrichtigung auf dem Gerät empfangen wird, wird die Erweiterung entsprechend dem definierten Kategoriewert aufgerufen.
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
@@ -660,7 +660,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Stellen Sie Ihre Medien dar.
 
-  Sie müssen Code hinzufügen, um die Mediendaten an das Widget weiterzuleiten. Im Folgenden finden Sie ein Beispiel für Code für ein Bild:
+  Sie müssen entsprechenden Code hinzufügen, um die Mediendaten an das Widget zu übertragen. Hier folgt ein Beispiel-Code für ein Bild:
 
   ```
   #import "NotificationViewController.h"

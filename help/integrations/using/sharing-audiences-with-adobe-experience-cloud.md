@@ -19,9 +19,9 @@ subfeature_v2:
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 256
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Mit Adobe Campaign können Sie Zielgruppen und Segmente für Adobe Experience Cl
 
 1. Integrieren Sie **Adobe Campaign** mit **Experience Cloud Audiences** oder **Adobe Audience Manager**. Anschließend können Sie:
 
-   * Importieren Sie freigegebene Audiences/Segmente aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
+   * Importen Sie Zielgruppen/Segmente aus den verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
 
    * Exportieren Sie Listen in Form von freigegebenen Adobe Experience Cloud-Zielgruppen. Diese Zielgruppen können dann in den anderen von Ihnen verwendeten Adobe Experience Cloud-Lösungen genutzt werden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
 

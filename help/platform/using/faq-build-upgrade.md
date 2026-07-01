@@ -25,9 +25,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2096
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -216,13 +216,13 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 * Können Sie sich beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
 * Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
 * Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und
-Überprüfen, ob neue Datensätze über die API eingefügt werden können.
-* Können Sie eine Test-E-Mail versenden? Neuen Versand mit einer bekannten Vorlage erstellen und an senden
-Ein Testempfänger, Überprüfung der Personalisierung, Unterlink aufheben, Mirrorseite, alles funktioniert.
-* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Workflows überprüfen, Workflow-Journal öffnen, überprüfen
+überprüfen Sie, ob neue Einträge per API hinzugefügt werden können.
+* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand basierend auf einer bekannten Vorlage, senden Sie ihn an
+eine Testempfängerin bzw. einen Testempfänger und überprüfen Sie, ob Personalisierung, Abmelde-Link und Mirrorseite funktionieren.
+* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher,
 dass keine Fehler vorliegen.
-* Sind alle Ihre Ordner vorhanden, sichtbar und zugänglich? Durchsuchen Sie verschiedene Ordner und überprüfen Sie sie.
-Alle Inhalte werden angezeigt und sind vorhanden.
+* Sind alle Ihre Ordner vorhanden, sichtbar und zugänglich? Navigieren Sie durch verschiedene Ordner und überprüfen Sie,
+ob alle Inhalte angezeigt werden und vorhanden sind.
 * Werden Ihre Sendungen mit der richtigen Zeitzone zugestellt?
 
    * Überprüfen Sie das Erstellungsdatum und das Änderungsdatum einschließlich Zeitstempel und Zeitzone.

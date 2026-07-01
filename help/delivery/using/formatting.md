@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1471
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 84%
 
 ## JavaScript-Templates {#javascript-templates}
 
-Eine JavaScript-Vorlage ist ein HTML- oder Textdokument, das JavaScript-Code enthält. Sie wird auf die gleiche Weise wie der E-Mail-Inhalt in einer Versandaktion erstellt.
+Eine JavaScript-Vorlage ist ein HTML- oder Textdokument, das JavaScript-Code enthält. Sie wird auf dieselbe Weise wie der E-Mail-Inhalt in einer Versandaktion erstellt.
 
 ### Identifizierung von JavaScript-Templates {#identification-of-a-javascript-template}
 
-Eine JavaScript-Vorlage wird wie Schemata und Formulare über ihren Namen und Namespace identifiziert. Es wird jedoch empfohlen, die Option **.js** zum Vorlagennamen hinzuzufügen.
+Eine JavaScript-Vorlage wird wie Schemata oder Formulare über ihren Namen und Namespace identifiziert. Es wird jedoch empfohlen, die Option **.js** zum Vorlagennamen hinzuzufügen.
 
 ### Struktur von JavaScript-Templates {#structure-of-a-javascript-template}
 
@@ -84,9 +84,9 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: Ruft den Wert des Attributs „name“ des Hauptelements ab
-* **content.@`['name']`**: identisch mit der Syntax **content.@name**
+* **content.@`['name']`**: Identisch mit der Syntax **content.@name**
 * **content.chapter.length**: gibt die Anzahl an Elementen des Sammlungselements `<chapter` aus
-* **content.chapter`[0]`.@name**: Ruft den Namen des ersten `<chapter>` ab
+* **content.chapter`[0]`.@name**: Ruft den Namen des ersten `<chapter>`-Elements ab
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
 * **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>` aus
 
@@ -96,7 +96,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 >
 >Beispiel: `content.@['offer-id']`.
 
-Die gesamte Leistungsfähigkeit einer Programmiersprache (Variablen, Schleifen, bedingte Tests, Funktionen usw.) steht zum Erstellen des Ausgabedokuments zur Verfügung. Auf die SOAP-APIs kann über das Ausgabedokument zugegriffen werden.
+Zur Erstellung des Ausgabedokuments stehen alle üblichen Programmiersprachen-Elemente (Variablen, Schleifen, bedingte Tests, Funktionen usw.) zur Verfügung. Zur Anreicherung des Ausgabedokuments sind SOAP-APIs verfügbar.
 
 Beispiele:
 
@@ -385,7 +385,7 @@ Gehen Sie wie folgt vor:
 
 ## XSL-Stylesheets {#xsl-stylesheets}
 
-Mit der XSLT-Sprache können Sie ein XML-Dokument in ein Ausgabedokument ändern. Je nach Ausgabemethode des Stylesheets kann das resultierende Dokument in HTML, im Nur-Text-Format oder in einer anderen XML-Struktur generiert werden.
+Mit der XSLT-Sprache können Sie ein XML-Dokument in ein Ausgabedokument ändern. Je nach Ausgabemethode des Sytlesheets kann das resultierende Dokument in HTML, Text oder wieder in XML generiert werden.
 
 Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
@@ -512,7 +512,7 @@ Die Anweisung **`<xsl:include>`** verweist auf den Namen des in das Dokument ein
 
 >[!NOTE]
 >
->Der Name des Namespace darf nicht in der Referenz des einzuschließenden Stylesheets eingegeben werden. Standardmäßig wird dieses Stylesheet mit dem Namespace des Benutzers erstellt.
+>Der Namespace-Name darf in der Referenz des einzufügenden Stylesheets nicht eingegeben werden. Standardmäßig wird dieses Stylesheet mit dem Namespace der Benutzerin bzw. des Benutzers erstellt.
 
 ### Bearbeitung eines Stylesheets {#editing-a-stylesheet}
 
@@ -534,7 +534,7 @@ Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie ein
 
 Die im HTML-Ausgabedokument angegebenen Bilder können mit relativen oder absoluten Pfadangaben adressiert werden.
 
-Mit der relativen Referenzierung können Sie die URL des Servers eingeben, der die Bilder in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** enthält. Diese Optionen enthalten den Speicherort der Bilder für die Veröffentlichung und Vorschau in der Adobe Campaign-Client-Konsole.
+Bei der relativen Referenzierung können Sie die URL für den Server, auf dem die Bilder gespeichert sind, in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** angeben. Die Optionen enthalten den Speicherort der Bilder für die Veröffentlichung und die Vorschau in der Adobe Campaign-Client-Konsole.
 
 Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administration > Plattform > Optionen]** zugegriffen werden.
 
@@ -559,7 +559,7 @@ Beispiel für die Adressierung eines Bilds mit Pfadangabe:
 
 Eine weitere Möglichkeit ist die Verwendung der **[!UICONTROL öffentlichen Ressourcen]**, um die Bilder zu deklarieren und entsprechend der im Bereitstellungsassistenten konfigurierten Instanzparameter auf den Server zu laden.
 
-Sie können diese Bilder dann im Inhalt aufrufen. Verwenden Sie dazu die folgende Syntax im Content-Management-Schema:
+Sie können diese Bilder dann im Inhalt aufrufen. Verwenden Sie hierfür die folgende Syntax im Content-Management-Schema:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>

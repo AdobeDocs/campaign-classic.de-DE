@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 775
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 92%
 
 
 
-Dieses Anwendungsbeispiel zeigt einen Workflow für einen kanalübergreifenden Versand. Das allgemeine Konzept von kanalübergreifenden Sendungen wird in [diesem Abschnitt) &#x200B;](cross-channel-deliveries.md).
+In diesem Anwendungsfall wird ein Beispiel eines Workflows eines Cross-Channel-Versands beschrieben. Das allgemeine Konzept von Cross-Channel-Sendungen wird in [diesem Abschnitt](cross-channel-deliveries.md) erläutert.
 
 Das Ziel besteht darin, aus den Empfängern der Datenbank eine Zielgruppe auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
 
@@ -48,8 +48,8 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
-1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Elemente als Zieldimension aus.
-1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfänger mit einer E-Mail-Adresse und einer Mobiltelefonnummer aus.
+1. Definieren Sie die Empfängerinnen und Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise „Gold“-Mitglieder als Zieldimension aus.
+1. Fügen Sie Ihrer Abfrage Filterbedingungen hinzu. Wählen Sie in diesem Beispiel Empfängerinnen und Empfänger aus, die über eine E-Mail-Adresse und eine Mobiltelefonnummer verfügen.
 
    ![](assets/wkf_cross-channel_3.png)
 

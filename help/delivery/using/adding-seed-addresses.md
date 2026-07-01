@@ -20,9 +20,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 355
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Eingabe einzelner Testadressen.
 
-   Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und definieren Sie den Inhalt der Adressfelder. Für jede Adresse wiederholen.
+   Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und definieren Sie den Inhalt der Adressfelder. Wiederholen Sie dies für jede Adresse.
 
 1. Import von Adressenvorlagen, die je nach Bedarf angepasst werden können.
 
@@ -48,17 +48,17 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Dynamische Auswahl der Testadressen durch Erstellen einer Filterbedingung.
 
-   Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Testadressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
+   Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
    Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->Diese Option wird verwendet, wenn es sich bei der verwendeten Empfängertabelle nicht um die standardmäßige **nms:recipient**-Tabelle handelt und Sie die im Adobe Campaign-Modul **[!UICONTROL Zustellbarkeit]** bereitgestellte Inbox Rendering-Funktion verwenden.
+>Diese Option wird verwendet, wenn es sich bei der verwendeten Empfängertabelle nicht um die standardmäßige **nms:recipient**-Tabelle handelt und Sie die im Adobe Campaign-Modul **[!UICONTROL Zustellbarkeit]** bereitgestellte Inbox-Rendering-Funktion verwenden.
 >
 >Weitere Informationen hierzu finden Sie im Abschnitt [Externe Empfängertabelle verwenden](using-an-external-recipient-table.md) und in der Dokumentation zum [Inbox Rendering](inbox-rendering.md).
 
-Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in der Sortierreihenfolge der Ausgabedatei eingefügt. Sie können sie jedoch auch am Ende oder am Anfang der Datei oder nach dem Zufallsprinzip zwischen den Empfängerinnen und Empfängern der Hauptzielgruppe einfügen.
+Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in die Sortierreihenfolge der Ausgabedatei eingefügt. Sie können jedoch auch angeben, dass sie am Anfang oder Ende der Datei eingefügt oder zufällig zwischen den Empfangenden der Hauptzielgruppe eingefügt werden.
 
 ![](assets/s_ncs_user_edit_del_addresses_sort.png)
 

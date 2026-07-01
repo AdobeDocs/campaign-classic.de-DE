@@ -20,9 +20,9 @@ subfeature_v2:
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 179
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 82%
 
 
 
-Um Statistiken zu den Daten in Ihrer Campaign-Datenbank zu erstellen, können Sie Berichte erstellen und ihren Inhalt sowie ihr Layout Ihren Bedürfnissen entsprechend anpassen. Diese Berichte können für andere Benutzer freigegeben werden.
+Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Berichte erstellen und ihren Inhalt sowie ihr Layout nach Bedarf anpassen. Diese Berichte können anderen Benutzenden freigegeben werden.
 
 >[!NOTE]
 >

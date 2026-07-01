@@ -16,9 +16,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 565
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 56%
 
 
 
-Der **Datei-Wächter** überwacht das Eintreffen einer oder mehrerer Dateien in einem Verzeichnis und aktiviert für jede empfangene Datei deren Transition. Für jedes Ereignis enthält **[!UICONTROL Variable &quot;]**&quot; den vollständigen Namen der empfangenen Datei. Die gesammelten Dateien werden zu Archivierungszwecken in ein anderes Verzeichnis verschoben, um sicherzustellen, dass sie nur einmal gezählt werden.
+Der **Datei-Wächter** überwacht ein Verzeichnis und aktiviert die Transition der Aktivität bei jedem neuen Eingang von Dateien. Für jedes Ereignis ist der vollständige Name der empfangenen Datei in einer **[!UICONTROL filename]**-Variablen angegeben. Die erfassten Dateien werden zu Archivierungszwecken in ein anderes Verzeichnis verschoben, um sicherzustellen, dass sie nur einmal gezählt werden.
 
 Standardmäßig ist der Datei-Wächter eine persistente Aufgabe, die zu den in der Planung definierten Zeitpunkten das Verzeichnis auf das Vorhandensein von Dateien prüft.
 
-Die Dateien müssen sich auf dem Server befinden, auf dem das für diesen Workflow verantwortliche wfserver-Modul ausgeführt wird. Wenn mehrere wfserver-Module auf einer einzigen Instanz bereitgestellt werden, muss entweder die Affinität der Aktivitäten, die diese Dateien verwenden, oder die Gesamtaffinität des Workflows angegeben werden.
+Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des betreffenden Workflows ausgeführt wird. Wenn verschiedene wfserver-Module auf derselben Instanz bereitgestellt werden, muss entweder die Affinität der die Dateien verwendenden Aktivitäten oder die des Workflows angegeben werden.
 
 ## Eigenschaften {#properties}
 
@@ -42,11 +42,11 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Verzeichnis]**
 
-     Ordner, der die herunterzuladenden Dateien enthält. Dieses Verzeichnis muss zuvor auf dem Server erstellt werden: Wenn es nicht existiert, wird ein Fehler ausgelöst.
+     Ordner, der die herunterzuladende(n) Datei(en) enthält. Das Verzeichnis muss zuvor auf dem Server erstellt worden sein. Wenn es nicht existiert, wird ein Fehler ausgelöst.
 
    * **[!UICONTROL Filter]**
 
-     Nur Dateien, die diesem Filter entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn der Filter leer ist, werden alle Dateien im Verzeichnis berücksichtigt. Filterbeispiele: **&#42;.zip**, **import-&#42;.txt**.
+     Nur Dateien, die diesem Filter entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien berücksichtigt. Filterbeispiele: **&#42;.zip**, **import-&#42;.txt**.
 
    * **[!UICONTROL Stoppen, sobald eine Datei bearbeitet wurde]**
 
@@ -70,7 +70,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Fehler verarbeiten]**
 
-     Mit dieser Option wird ein spezieller Übergang angezeigt, der aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall ändert sich der Workflow nicht in den Fehlerstatus und wird weiter ausgeführt
+     Mit dieser Option wird eine spezielle Transition angezeigt, die aktiviert wird, wenn ein Fehler generiert wird. In diesem Fall ändert sich der Workflow nicht in den Fehlerstatus und wird weiter ausgeführt.
 
      Dies gilt für Fehler des Dateisystems (Datei kann nicht verschoben werden, Zugriff auf das Verzeichnis nicht möglich usw.).
 

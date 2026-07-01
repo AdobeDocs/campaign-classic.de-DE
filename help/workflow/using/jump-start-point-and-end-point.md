@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 119
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Sie springen von einer Aktivität zur nächsten, wie im folgenden Beispiel gezei
 
 Für jeden Sprung (Start) muss ein Sprung (Ziel) im Diagramm positioniert werden.
 
-Sie können mehrere Start- und Endpunktsprünge in denselben Workflow einfügen. Sie werden durch eine Zahl identifiziert, die in den Parametern eingegeben werden muss:
+Sie können mehrere Sprünge zum Start- und Endpunkt in denselben Workflow einfügen. Diese werden durch eine Zahl identifiziert, die in den Parametern eingegeben werden muss:
 
 ![](assets/s_user_segmentation_jump_in.png)
 

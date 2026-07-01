@@ -21,9 +21,9 @@ subfeature_v2:
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 104
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 62%
 
 ## Definition einer Liste {#about-lists-in-adobe-campaign}
 
-Eine Liste ist ein statischer Satz von Profilen, die als Zielgruppe für Sendungen verwendet oder während des Imports oder Workflows aktualisiert werden können. Beispielsweise kann eine Population, die über eine Abfrage aus der Datenbank extrahiert wird, eine Liste bereitstellen.
+Eine Liste ist ein statischer Satz von Profilen, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei der Workflow-Ausführung aktualisiert werden können. So kann beispielsweise eine Population, die über eine Abfrage aus der Datenbank extrahiert wurde, eine Liste darstellen.
 
 Listen werden über den Link **[!UICONTROL Listen]** auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet.
 

@@ -18,9 +18,9 @@ topic_v2:
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1446
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 77%
 
 
 
-Mit Adobe Campaign können Sie die am Kampagnenlebenszyklus beteiligten Marketing-Ressourcen verwalten und verfolgen. Bei diesen Marketingressourcen kann es sich um eine Broschüre, eine visuelle Hilfe oder ein anderes Kommunikationsmedium handeln, an dem mehrere Benutzende beteiligt sind.
+Mit Adobe Campaign können Sie die am Lebenszyklus der Kampagne beteiligten Marketing-Ressourcen verwalten und nachverfolgen. Bei diesen Marketing-Ressourcen kann es sich um eine Broschüre, eine visuelle Hilfe oder ein anderes Kommunikationsmedium handeln, an dem mehrere Benutzende beteiligt sind.
 
 Status, Verlauf und aktuelle Version der über Adobe Campaign verwalteten Marketing-Ressourcen können jederzeit angezeigt werden.
 
@@ -46,14 +46,14 @@ Um eine Ressource auf dem Adobe Campaign-Server verfügbar zu machen, legen Sie 
 
 Über eine Bestätigungsnachricht kann der Upload gestartet werden.
 
-Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt. Sie steht Adobe Campaign-Benutzern zur Verfügung. die Datei auf dem Server aktualisieren.**&#x200B;**&#x200B;**&#x200B;**
+Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt. Sie steht Adobe Campaign-Benutzenden zur Verfügung. die Datei auf dem Server aktualisieren.********
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
 Klicken Sie auf **[!UICONTROL Allgemein]** zur Auswahl der Benutzer oder Benutzergruppen, die für die Überwachung, Verfolgung und Validierung dieser Ressource zuständig sind. Bestimmen Sie in den Rubriken **[!UICONTROL Erweiterte Parameter]** die für Kontrolle, Verfolgung und Validierung der Ressource verantwortlichen Benutzer oder Benutzergruppen.
 
 * Der Benutzer, dem die Ressource zugeordnet wurde, ist für ihre Verfolgung verantwortlich.
-* Der genehmigende Benutzer ist für die Genehmigung der Marketing-Ressource verantwortlich. Sie werden benachrichtigt, wenn der Ressourcenvalidierungsprozess gestartet wird.
+* Für die Validierung der Marketing-Ressource ist eine Person verantwortlich. Sie wird benachrichtigt, wenn der Validierungsprozess der Ressource gestartet wird.
 
   Wenn kein validierungsverantwortlicher Benutzer ausgewählt wurde, **[!UICONTROL kann]** die Ressource nicht zur Validierung unterbreitet werden.
 
@@ -63,7 +63,7 @@ Sie können ein unverbindliches Verfügbarkeitsdatum für die Ressource festlege
 
 ## Kollaboratives Arbeiten an Ressourcen {#collaborative-work-on-resources}
 
-Sie können eine Marketing-Ressource ändern und aktualisieren und bei Bedarf andere Adobe Campaign-Benutzer darüber informieren. Sie haben folgende Möglichkeiten:
+Sie können eine Marketing-Ressource ändern und aktualisieren sowie bei Bedarf andere Adobe Campaign-Benutzende davon in Kenntnis setzen. Sie haben folgende Möglichkeiten:
 
 * Ressourcen lokal herunterladen, um sie zu bearbeiten;
 * Dateien auf dem Server aktualisieren und für andere Benutzer zugänglich machen;
@@ -77,7 +77,7 @@ Sie können eine Marketing-Ressource ändern und aktualisieren und bei Bedarf an
 
 Nach ihrer Erstellung sind die Ressourcen für die Benutzer im Dashboard der Marketing-Ressourcen verfügbar und sie können bearbeitet und verändert werden.
 
-Wenn ein Benutzer an einer Ressource arbeiten möchte, ist es besser, sie vor dem Beginn der Arbeit zu sperren, damit andere Benutzer sie nicht gleichzeitig ändern können. Die Ressource wird dann reserviert. Sie bleibt verfügbar, kann jedoch von einem anderen Benutzer nicht veröffentlicht oder auf dem Server aktualisiert werden.
+Wenn eine Person an einer Ressource Änderungen vornehmen möchte, empfiehlt es sich, diese zuvor zu sperren, damit andere Personen sie nicht zur selben Zeit bearbeiten können. Die Ressource wird dann reserviert: Sie bleibt verfügbar, kann jedoch von einer anderen Person nicht veröffentlicht oder auf dem Server aktualisiert werden.
 
 Folgende Nachricht informiert Benutzer, die auf eine reservierte Ressource zugreifen möchten:
 
@@ -113,7 +113,7 @@ Die Funktionsweise von Foren in Adobe Campaign wird im Abschnitt [Diskussionfore
 
 ## Lebenszyklus von Marketing-Ressourcen {#life-cycle-of-a-marketing-resource}
 
-Wenn die Ressource erstellt wird, werden Adobe Campaign-Benutzende damit beauftragt, die Ressource zu entwerfen, zu prüfen, zu genehmigen und zu veröffentlichen. Für diese Kampagnen kann eine Dauer festgelegt werden.
+Bei der Erstellung einer Ressource werden Adobe Campaign-Benutzende für den Entwurf sowie die Korrektur, Validierung und Veröffentlichung der Ressource bestimmt. Für diese Kampagnen kann eine Dauer festgelegt werden.
 
 Der Tab **[!UICONTROL Verfolgung]** ermöglicht die Überprüfung der an der Ressource vorgenommenen Änderungen: Validierungen, Validierungsablehnungen, Kommentare und Veröffentlichungen.
 
@@ -143,7 +143,7 @@ Im Tab **[!UICONTROL Verfolgung]** können alle Benutzer die unterschiedlichen E
 
 ### Ressourcen veröffentlichen {#publishing-a-resource}
 
-Nach der Genehmigung muss die Marketing-Ressource veröffentlicht werden. Der Publikationsprozess muss entsprechend den Anforderungen des Unternehmens spezifisch implementiert werden. Das bedeutet, dass Ressourcen in einem Extranet oder auf einem anderen Server veröffentlicht werden können, bestimmte Informationen an einen externen Dienstleister gesendet werden können usw.
+Nach der Validierung muss die Marketing-Ressource veröffentlicht werden. Der Veröffentlichungsprozess muss entsprechend den Anforderungen des Unternehmens spezifisch implementiert werden. So können Ressourcen in einem Extranet oder auf einem beliebigen anderen Server veröffentlicht, bzw. an einen externen Dienstleister übermittelt werden usw.
 
 Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** in ihrem Dashboard klicken.
 
@@ -151,7 +151,7 @@ Geben Sie den Zugriff auf eine Ressource frei, indem Sie auf die Schaltfläche *
 
 Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert werden.
 
-Ressourcen veröffentlichen bedeutet, sie zur Verwendung bereitzustellen (z. B. durch eine andere Aufgabe). Die Veröffentlichung als solche hängt von der Art Ihrer Ressource ab: Für einen Flyer kann die Veröffentlichung bedeuten, dass die Datei an einen Drucker gesendet wird, für eine Web-Agentur, dass sie auf einer Website veröffentlicht wird usw.
+Das Veröffentlichen einer Ressource bedeutet, sie zur Verwendung bereitzustellen (z. B. durch eine andere Aufgabe). Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Website online gestellt werden.
 
 Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie hierzu den Link **[!UICONTROL Erweiterte Parameter]** der Ressource und wählen Sie den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
 
@@ -172,7 +172,7 @@ Marketing-Ressourcen können mit Kampagnen verknüpft werden, sofern diese Optio
 
 >[!NOTE]
 >
->Erstellung und Konfiguration der Kampagnenvorlagen werden im Abschnitt [&#128279;](../../campaign/using/marketing-campaign-templates.md#campaign-templates)kampagnenvorlagen dargestellt.
+>Erstellung und Konfiguration der Kampagnenvorlagen werden im Abschnitt ](../../campaign/using/marketing-campaign-templates.md#campaign-templates)kampagnenvorlagen[ dargestellt.
 
 Gehen Sie hierzu im Dashboard der Kampagne zum Tab **[!UICONTROL Bearbeiten > Dokumente > Ressourcen]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Ressource auszuwählen.
 
@@ -204,9 +204,9 @@ Sie können eine Marketing-Ressource mit einem oder mehreren Lagern verknüpfen,
 
 >[!NOTE]
 >
->Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
+>Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung ](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
-Um eine Marketing-Ressource mit einem Lager zu verknüpfen, bearbeiten Sie die Lagerzuordnung und bearbeiten oder erstellen Sie ein Lager. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
+Um eine Marketing-Ressource mit einem Lager zu verknüpfen, öffnen Sie die Lagerübersicht und bearbeiten oder erstellen Sie ein Lager. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 
@@ -222,7 +222,7 @@ Wenn der Lagerbestand unzureichend ist, wird den zuständigen Benutzern ein Warn
 
 ## Erweiterte Funktionen {#advanced-functions}
 
-Im Dashboard Marketing-Ressourcen können Sie die üblichen Arten von Vorgängen ausführen: Hinzufügen, Bearbeiten, Sperren/Entsperren, Genehmigen, Veröffentlichen. Über die Adobe Campaign-Baumstruktur können Sie andere Arten von Marketing-Ressourcen erstellen und auf erweiterte Funktionen zugreifen. Klicken Sie hierzu auf der Adobe Campaign-Startseite auf die **[!UICONTROL Explorer]**-Schaltfläche.
+Über das Dashboard der Marketing-Ressourcen können gängige Prozesse ausgeführt werden: Hinzufügen, Bearbeiten, Sperren/Entsperren, Genehmigen, Veröffentlichen. Über die Adobe Campaign-Baumstruktur können Sie andere Typen von Marketing-Ressourcen erstellen und auf erweiterte Funktionen zugreifen. Klicken Sie hierzu auf der Adobe Campaign-Startseite auf die **[!UICONTROL Explorer]**-Schaltfläche.
 
 Marketing-Ressourcen werden standardmäßig im Knoten **[!UICONTROL MRM > Marketing-Ressourcen]** des Navigationsbaums gespeichert.
 

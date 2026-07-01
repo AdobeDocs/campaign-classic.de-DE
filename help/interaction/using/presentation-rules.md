@@ -17,9 +17,9 @@ feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 487
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 84%
 
 ## Unterbreitungsregeln erstellen {#creating-a-presentation-rule}
 
-In unserer Datenbank gibt es mehrere Reiseangebote für Europa, Afrika, die Vereinigten Staaten und Kanada. Wir möchten Angebote für eine Reise nach Kanada senden, aber wenn der Empfänger dieses Angebot ablehnt, möchten wir es nicht erneut an ihn senden
+In unserer Datenbank gibt es mehrere Reiseangebote für Europa, Afrika, die Vereinigten Staaten und Kanada. Wir möchten Angebote für eine Reise nach Kanada versenden. Wenn die Empfängerin bzw. der Empfänger diesen Angebotstyp jedoch ablehnt, sollen sie nicht noch einmal versendet werden.
 
 Die zu erstellende Regel muss somit sicherstellen, dass Reisen nach Kanada jedem Empfänger nur einmal unterbreitet werden, sollte er sie bei der ersten Unterbreitung ablehnen.
 
@@ -92,7 +92,7 @@ Die zu erstellende Regel muss somit sicherstellen, dass Reisen nach Kanada jedem
 
 Nachfolgend wird aufgezeigt, wie die zuvor erstellte Typologieregel arbeitet.
 
-Wir möchten einen ersten Angebotsvorschlag der Kategorie Kanada versenden. Wenn das Angebot einmal von einem der Empfänger abgelehnt wird, wird es ihm nicht erneut angeboten.
+Wir möchten einen ersten Angebotsvorschlag der Kategorie „Kanada“ versenden. Wenn das Angebot einmal von einer Empfängerin bzw. einem Empfänger abgelehnt wird, wird es ihr bzw. ihm nicht noch einmal unterbreitet.
 
 1. Wählen Sie ein Profil aus dem Empfängerordner **Vielreisende** aus und prüfen Sie, für welche Angebote dieser Empfänger infrage kommt. Klicken Sie hierfür auf den Tab **[!UICONTROL Vorschläge]** und dann auf **[!UICONTROL Vorschau]**:
 

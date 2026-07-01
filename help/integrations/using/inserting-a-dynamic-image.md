@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 909
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ In Adobe Campaign gibt es zwei Möglichkeiten, ein dynamisches Bild von Target i
 ### Definieren der Bildparameter {#defining-image-parameters}
 
 * URL des **[!UICONTROL Standardbilds]**: Dieses Bild wird angezeigt, wenn keine der Bedingungen erfüllt ist. Sie können auch ein Bild aus Ihrer Assets-Bibliothek verwenden.
-* Der **[!UICONTROL Zielspeicherort]**: Geben Sie einen Namen für den Speicherort Ihres dynamischen Angebots ein. Sie müssen diesen Speicherort in Ihrer Target-Aktivität auswählen.
+* **[!UICONTROL Speicherort in Target]**: Geben Sie einen Namen für den Speicherort Ihres dynamischen Angebots ein. Sie müssen diesen Speicherort später in Ihrer Target-Aktivität auswählen.
 * **[!UICONTROL Landingpage]**: Wenn das Standardbild zu einer standardmäßigen Landingpage umleiten soll. Diese URL gilt nur dann, wenn das Standardbild in der letzten E-Mail angezeigt wird und optional ist.
 * Stellen Sie im Bereich **[!UICONTROL Zusätzliche Entscheidungsparameter]** das Mapping zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign her. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
 
@@ -109,7 +109,7 @@ Erstellen Sie in Target die zwei Zielgruppen, in die die Besucher Ihres Angebots
 
    ![](assets/audiences_2.png)
 
-1. Klicken Sie **[!UICONTROL Regel hinzufügen]** und wählen Sie eine Kategorie aus. Die Regel verwendet bestimmte Kriterien, um die Besucher anzusprechen. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
+1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie eine Kategorie aus. Die Regel verwendet bestimmte Kriterien, um die Besuchenden anzusprechen. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
 
 1. Führen Sie dieselben Schritte für die anderen Zielgruppen durch.
 
@@ -155,7 +155,7 @@ Fügen Sie für jede Zielgruppe Inhalt hinzu:
 
 ### Definieren der Aktivität {#defining-activity}
 
-Das **[!UICONTROL Target]**-Fenster fasst Ihre Aktivität zusammen. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
+Im Fenster **[!UICONTROL Ziel]** finden Sie einen Überblick über Ihre Aktivität. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
 
 ![](assets/target_experience.png)
 

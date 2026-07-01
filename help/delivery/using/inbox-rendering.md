@@ -23,9 +23,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 709336f05e114ae380d71381bef4b2e7a776b402
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 952
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 72%
 
 Bevor Sie die Schaltfläche **Senden** betätigen, sollten Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
 
-Um dies zu ermöglichen, nutzt Adobe Campaign die [Litmus](https://litmus.com/email-testing) Web-basierte E-Mail-Testlösung, um die Renderings zu erfassen und in einem dedizierten Bericht verfügbar zu machen. Auf diese Weise können Sie eine Vorschau der gesendeten Nachricht in den verschiedenen Kontexten anzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit den wichtigsten Desktops und Anwendungen überprüfen.
+Zu diesem Zweck nutzt Adobe Campaign die Web-basierte E-Mail-Test-Software [Litmus](https://litmus.com/email-testing), mit der die Darstellung des Posteingangs sichtbar und in einem eigenen Bericht verfügbar gemacht werden kann. So können Sie eine Vorschau der Nachricht in den verschiedenen Kontexten anzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit gängigen Desktops und Anwendungen prüfen.
 
 >[!CAUTION]
 >Inbox Rendering ist nicht kompatibel mit dem [wiederkehrenden Versand](communication-channels.md#recurring-delivery).
 >
 
-Litmus ist eine funktionsreiche E-Mail-Validierungs- und Vorschau-Anwendung. Damit können Ersteller von E-Mail-Inhalten ihren Nachrichteninhalt in über 70 E-Mail-Renderern in der Vorschau anzeigen, z. B. im Gmail-Posteingang oder im Apple Mail-Client.
+Litmus ist eine E-Mail-Validierungs- und Vorschau-Anwendung mit großem Funktionsumfang. Sie ermöglicht es E-Mail-Inhaltserstellenden, ihren Nachrichteninhalt in über 70 E-Mail-Renderern als Vorschau anzuzeigen, darunter der Gmail-Posteingang oder der Apple Mail-Client.
 
 Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mobilgeräte, SMS und Webmail finden Sie auf der Litmus-[Website](https://litmus.com/email-testing) (wählen Sie dazu die Option zum **Anzeigen aller E-Mail-Clients** aus).
 
@@ -88,13 +88,13 @@ Gehen Sie bei On-Premise-Installationen wie folgt vor, um das Inbox Rendering zu
 
 ## Über Litmus-Token {#about-litmus-tokens}
 
-Da Litmus ein Drittanbieterdienst ist, funktioniert es nach einem Kredit-pro-Nutzung-Modell. Jedes Mal, wenn ein Benutzer die Litmus-Funktion aufruft, wird eine Gutschrift abgezogen.
+Da Litmus ein Dienst eines Drittanbieters ist, wird für jede Nutzung eine Gebühr erhoben. Jedes Mal, wenn eine Person die Litmus-Funktion aufruft, wird ein bestimmter Betrag vom Guthaben abgezogen.
 
 In Adobe Campaign entspricht das Guthaben der Anzahl der verfügbaren Renderings (auch Tokens genannt).
 
 >[!NOTE]
 >
->Die Anzahl der verfügbaren Litmus-Token hängt von der von Ihnen erworbenen Campaign-Lizenz ab. Überprüfen Sie Ihre Lizenzvereinbarung.
+>Die Anzahl der verfügbaren Litmus-Token hängt von der von Ihnen erworbenen Campaign-Lizenz ab. Details finden Sie in Ihrem Lizenzvertrag.
 
 Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]** verwenden, wird die verfügbare Anzahl der Token um jeweils eins verringert.
 
@@ -110,7 +110,7 @@ Die Anzahl der restlichen verfügbaren Token wird im [Inbox-Rendering-Bericht](#
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-Normalerweise wird die Rendering-Funktion für den Posteingang verwendet, um das HTML-Framework einer neu entworfenen E-Mail zu testen. Für jedes Rendering sind etwa 70 Token erforderlich (je nach der Anzahl der Umgebungen, in denen im Allgemeinen getestet wird). In einigen Fällen benötigen Sie jedoch möglicherweise mehrere Inbox Rendering-Berichte, um Ihren Versand vollständig zu testen. Daher kann es mehr Token erfordern, um mehrere Prüfungen durchzuführen.
+Normalerweise wird die Funktion zum Rendern des Posteingangs verwendet, um das HTML-Framework einer neu entworfenen E-Mail zu testen. Für jedes Rendering sind etwa 70 Token erforderlich (je nach der Anzahl der Umgebungen, in denen üblicherweise getestet wird). In einigen Fällen benötigen Sie jedoch möglicherweise mehrere Berichte über das Rendering des Posteingangs, um Ihren Versand vollständig zu testen. Daher könnten mehr Token erforderlich sein, um mehrere Prüfungen durchzuführen.
 
 ## Inbox-Rendering-Bericht aufrufen {#accessing-the-inbox-rendering-report}
 
@@ -123,9 +123,9 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ein Testversand wird durchgeführt. Die Rendering-Miniaturen können in diesem Korrekturabzug einige Minuten nach dem Senden der E-Mails aufgerufen werden. Weitere Informationen zum Durchführen eines Testversands finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
+   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weitere Informationen zum Durchführen eines Testversands finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
-1. Nach dem Versand wird der Testversand in der Versandliste angezeigt. Doppelklicken Sie darauf.
+1. Nach dem Absenden erscheint der Testversand in der Versandliste. Doppelklicken Sie darauf.
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
@@ -137,7 +137,7 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
 ## Inbox-Rendering-Bericht {#inbox-rendering-report}
 
-Dieser Bericht zeigt die Inbox Renderings so an, wie sie dem Empfänger angezeigt werden. Die Renderings können je nachdem, wie der Empfänger den E-Mail-Versand öffnet, unterschiedlich sein: im Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung.
+Dieser Bericht zeigt das Rendering des Posteingangs an, so wie es für die Empfängerin bzw. den Empfänger aussieht. Das Rendering kann unterschiedlich aussehen, je nachdem, ob die Empfängerin bzw. der Empfänger den E-Mail-Versand im Browser, auf einem Mobilgerät oder über ein E-Mail-Programm öffnet.
 
 Im oberen Bereich wird in einer grafischen, farbcodierten Darstellung die Aufteilung der Anzahl der empfangenen, unerwünschten (Spam) und nicht empfangenen Nachrichten angezeigt und die Anzahl der Nachrichten, deren Empfang aussteht.
 

@@ -14,9 +14,9 @@ subfeature_v2:
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 450
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie **[!UICONTROL Tools > Generischer Abfrage-Editor…]** und wählen Sie die **Empfänger**-Tabelle (**nms:recipient**) aus. Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Klicken Sie auf **[!UICONTROL Tools > Generischer Abfrage-Editor…]** und wählen Sie die Tabele **Empfänger** (**nms:recipient**). Klicken Sie nun auf **[!UICONTROL Weiter]**.
 1. Wählen Sie: **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Ort]** und **[!UICONTROL Kundennummer]**. Diese Felder werden zu **[!UICONTROL Ausgabespalten]**. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_03.png)
 
-1. Sortieren Sie die Spalten, um sie in der richtigen Reihenfolge anzuzeigen. Hier möchten wir die Kontonummern in absteigender Reihenfolge und die Namen in alphabetischer Reihenfolge sortieren. Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Sortieren Sie die Spalten, um sie in der richtigen Reihenfolge anzuzeigen. Hier möchten wir die Kundennummer in absteigender und die Namen in alphabetischer Reihenfolge sortieren. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_04.png)
 
@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_05.png)
 
-1. Klicken Sie bei Bedarf auf die **[!UICONTROL Werteverteilung]**, um eine Verteilung auf der Grundlage der E-Mail-Domain potenzieller Kunden anzuzeigen. Für jede E-Mail-Domain in der Datenbank ist ein Prozentsatz verfügbar. Andere Domains als &quot;orange.co.uk&quot; werden angezeigt, bis der Filter angewendet wird.
+1. Bei Bedarf können Sie auf die Schaltfläche **[!UICONTROL Werteverteilung]** klicken, um eine Verteilung basierend auf der E-Mail-Domain interessierter Personen anzuzeigen. Für jede E-Mail-Domain in der Datenbank ist ein Prozentsatz verfügbar. Andere Domains als „orange.co.uk“ werden angezeigt, bis der Filter angewendet wird.
 
    Die Zusammenfassung der Abfrage wird unten im Fenster angezeigt, hier also **E-Mail-Domain gleich web.de**.
 
@@ -74,17 +74,17 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_08.png)
 
-1. Dadurch gelangen Sie zum Fenster **[!UICONTROL Datenformatierung]**. Überprüfen Sie die Spaltenreihenfolge. Verschieben Sie die Spalte „Ort“ nach oben in die Spalte „Kontonummer“.
+1. Dadurch gelangen Sie zum Fenster **[!UICONTROL Datenformatierung]**. Überprüfen Sie die Spaltenreihenfolge. Verschieben Sie die Spalte „Ort“ nach oben unter die Spalte „Kundennummer“.
 
    Entfernen Sie das Kreuz aus der &quot;Vorname&quot;-Checkbox, um dieses Feld im Ergebnis nicht anzuzeigen.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Klicken Sie **[!UICONTROL Fenster]** Datenvorschau“ auf **[!UICONTROL Vorschau der Daten starten]**. Diese Funktion berechnet das Ergebnis der Abfrage.
+1. Klicken Sie im Fenster **[!UICONTROL Datenvorschau]** auf **[!UICONTROL Datenvorschau starten]**. Diese Funktion berechnet das Ergebnis der Abfrage.
 
    Im Tab **[!UICONTROL Ergebnis in Spalten]** wird das Ergebnis der Abfrage in Spaltenform angezeigt.
 
-   Das Ergebnis zeigt alle Empfänger mit der E-Mail-Domain &quot;orange.co.uk&quot;, die nicht in London leben. Die Spalte „Vorname“ wird nicht angezeigt, da sie im vorherigen Schritt deaktiviert wurde. Die Kontonummern werden in absteigender Reihenfolge sortiert.
+   Das Ergebnis zeigt alle Empfangenden mit der E-Mail-Domain „orange.co.uk“, die nicht in London leben. Die Spalte „Vorname“ wird nicht angezeigt, da sie im vorherigen Schritt deaktiviert wurde. Die Kundennummern werden in absteigender Reihenfolge sortiert.
 
    ![](assets/query_editor_nveau_12.png)
 

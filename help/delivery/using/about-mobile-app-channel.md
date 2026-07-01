@@ -22,9 +22,9 @@ subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 751
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Die folgenden Informationen gelten spezifisch für Campaign Classic.
 
 +++ **Paket-Installation**
 
-![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
 
 Wenn Sie Campaign als Hybrid- oder gehostete Bereitstellung nutzen, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Zugriff auf den Kanal für Push-Benachrichtigungen in Campaign zu erhalten.
 
@@ -109,7 +109,7 @@ Nach Abschluss dieses Schritts können Sie Ihre Android- und iOS-Apps konfigurie
 
 Wenn Ihr Mobilgerät mit einem WLAN verbunden ist und Sie keine Benachrichtigungen erhalten, stellen Sie sicher, dass die FCM/APNS-Ports nicht von Ihrer Firewall gesperrt werden.
 
-**Android**: Das Mobilgerät stellt eine Verbindung zu den FCM-Servern an den Ports 5228 bis 5230 her. Daher müssen Sie Ihre Firewall so konfigurieren, dass sie die Verbindung mit FCM autorisiert. Die zu öffnenden Ports sind: 5228 (am häufigsten verwendet), 5229 und 5230.
+**Android**: Das Mobilgerät stellt eine Verbindung zu den FCM-Servern an den Ports 5228 bis 5230 her. Daher müssen Sie Ihre Firewall so konfigurieren, dass sie die Verbindung mit FCM autorisiert. Die zu öffnenden Ports sind 5228 (am häufigsten verwendet), 5229 und 5230.
 
 **iOS**:
 
