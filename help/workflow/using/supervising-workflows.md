@@ -6,21 +6,14 @@ feature: Workflows
 hide: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 TQID: https://experienceleague.adobe.com/mcgxBQd1FMGyw6MiTBsp05X91sZzx93RbnFta9MNgvI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 655
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +43,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 ## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
-Der Workflow-Ordner, den wir überwachen werden, ist der Ordner **CustomWorkflows**, der im Knoten **Administration > Produktion > Technische Workflows** gespeichert ist. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
+Der zu überwachende Workflow-Ordner ist **„CustomWorkflows“** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
 
 Der **Monitoring-Workflow** wird im Stammverzeichnis des Ordners der technischen Workflows gespeichert. Das verwendete Label ist **Monitoring**.
 

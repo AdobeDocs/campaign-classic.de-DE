@@ -6,19 +6,14 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 TQID: https://experienceleague.adobe.com/VrAHuf0Go-6f8-cL-kuZrttoGWUzxkBMUbhDaj-gJRc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 949
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -74,13 +69,13 @@ Wenn Sie die Option **[!UICONTROL Hinzufügen oder aktualisieren]** gewählt hab
 
 Die Felder **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** und **[!UICONTROL createdBy]** werden im Zuge der Daten-Update-Aktivität automatisch aktualisiert, es sei denn, in der Tabelle der zu aktualisierenden Felder wird explizit etwas anderes konfiguriert.
 
-Die Aktualisierung von Datensätzen wird nur für Datensätze durchgeführt, die mindestens eine Differenz enthalten. Wenn die Werte identisch sind, wird keine Aktualisierung durchgeführt.
+Die Aktualisierung von Einträgen wird nur für Einträge durchgeführt, die mindestens einen Unterschied aufweisen. Wenn die Werte gleich sind, wird keine Aktualisierung vorgenommen.
 
-Über **[!UICONTROL Link]** Erweiterte Parameter“ können Sie zusätzliche Optionen für die Aktualisierung von Daten und die Verwaltung von Duplikaten angeben. Sie können auch:
+Über den Link **[!UICONTROL Erweiterte Parameter]** können Sie weitere Optionen zum Umgang mit der Datenaktualisierung und Duplikatverwaltung angeben. Sie haben außerdem folgende Möglichkeiten:
 
 * **[!UICONTROL Automatische Schlüsselverwaltung deaktivieren]**;
 * **[!UICONTROL Audit deaktivieren]**;
-* **[!UICONTROL Den Zielwert leeren, wenn der Quellwert leer ist (NULL)]**. Diese Option ist standardmäßig automatisch aktiviert.
+* **[!UICONTROL Zielwert löschen, wenn Quellwert leer ist (NULL)]** (diese Option ist standardmäßig automatisch aktiviert);
 * **[!UICONTROL Alle Spalten mit übereinstimmenden Namen aktualisieren]**;
 * Angabe von Bedingungen bezüglich der Quellelemente mithilfe eines Ausdrucks im Feld **[!UICONTROL Berücksichtigung]**;
 * Angabe von Bedingungen zur Berücksichtigung von Dubletten mithilfe eines Ausdrucks. Wenn die Option **[!UICONTROL Den gleichen Zielkontakt betreffende Datensätze ignorieren]** aktiviert ist, wird nur der erste Datensatz der Ausdruckliste berücksichtigt.
@@ -91,21 +86,21 @@ Erstellt eine ausgehende Transition, die am Ende der Ausführung aktiviert wird.
 
 **[!UICONTROL Ausgehende Transition für die Zurückweisungen erzeugen]**
 
-Erstellt eine ausgehende Transition, die Datensätze enthält, die nach der Aktualisierung nicht korrekt verarbeitet wurden (z. B. wenn ein Duplikat vorliegt). Die Aktualisierung markiert im Allgemeinen das Ende eines Zielgruppen-Workflows, weshalb die Option standardmäßig nicht aktiviert ist.
+Erzeugt eine ausgehende Transition mit Einträgen, die nach der Aktualisierung nicht korrekt verarbeitet wurden (z. B. wenn es ein Duplikat gibt). Die Aktualisierung bedeutet in der Regel das Ende eines Zielgruppenbestimmungs-Workflows, weshalb die Option standardmäßig nicht aktiviert ist.
 
 ## Aktualisierung und Zusammenführung von Sammlungen {#updating-and-merging-collections}
 
-Durch das Aktualisieren von Daten und das Zusammenführen von Sammlungen können Sie die in einem Datensatz enthaltenen Daten mithilfe von Daten aus einem oder mehreren sekundären Datensätzen aktualisieren, um nur einen Datensatz zu behalten, falls gewünscht. Diese Aktualisierungen werden durch einen Regelsatz verwaltet.
+Das Aktualisieren und Zusammenführen von Sammlungen ermöglicht Ihnen das Aktualisieren von Daten in einem Eintrag, indem Sie Daten von einem oder mehreren sekundären Einträgen verwenden, und zwar mit dem Ziel, bei Bedarf nur einen zu behalten. Diese Aktualisierungen werden durch einen Regelsatz verwaltet.
 
 >[!NOTE]
 >
->Mit dieser Option können Sie auch Verweise auf sekundäre Datensätze aus Workflow-Arbeitstabellen (targetWorkflow), Sendungen (targetDelivery) und Listen (targetList) verarbeiten. Bei Bedarf werden diese Links in der Liste angezeigt, in der Sie Felder und Sammlungen auswählen.
+>Mit dieser Option können Sie auch Verweise auf sekundäre Einträge aus Workflow-Arbeitstabellen (targetWorkflow), Sendungen (targetDelivery) und Listen (targetList) verarbeiten. Bei Bedarf werden diese Links in der Liste angezeigt, in der Sie Felder und Sammlungen auswählen.
 
 1. Wählen Sie die Option **[!UICONTROL Sammlungen aktualisieren und zusammenführen]**.
 
    ![](assets/update_and_merge_collections1.png)
 
-1. Wählen Sie die Reihenfolge der Priorität für die Links aus. Auf diese Weise können Sie den Hauptdatensatz identifizieren. Die verfügbaren Links variieren je nach eingehender Transition.
+1. Wählen Sie die Reihenfolge der Priorität für die Links aus. Auf diese Weise können Sie den Haupteintrag identifizieren. Die verfügbaren Links variieren je nach eingehender Transition.
 
    ![](assets/update_and_merge_collections2.png)
 
@@ -115,15 +110,15 @@ Durch das Aktualisieren von Daten und das Zusammenführen von Sammlungen können
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
-   Geben Sie abschließend die Art der durchzuführenden Aktualisierung an. Sie können beispielsweise die sekundären Datensätze löschen, nachdem Sie die Daten aktualisiert haben.
+   Geben Sie abschließend die Art der durchzuführenden Aktualisierung an. Sie können sich beispielsweise dazu entscheiden, die sekundären Einträge nach der Aktualisierung der Daten zu löschen.
 
-   Sie können beispielsweise das Zusammenführen von Sammlungen konfigurieren, die heterogene Daten enthalten, z. B. die Liste der Abonnements für eine Empfängerin oder einen Empfänger. Mithilfe von Regeln können Sie auch neue Abonnementverläufe aus sekundären Datensatzabonnements erstellen oder sogar die Liste der Abonnements von einem sekundären Datensatz in einen primären Datensatz verschieben.
+   Sie können beispielsweise die Zusammenführung von Sammlungen mit heterogenen Daten wie der Liste von Abonnements für eine Empfängerin bzw. einen Empfänger konfigurieren. Mithilfe von Regeln können Sie außerdem neue Abonnementverläufe basierend auf sekundären Einträgen in Bezug auf Abonnements erstellen oder sogar die Liste der Abonnements von einem sekundären Eintrag zu einem primären Eintrag verschieben.
 
 1. Auf der Registerkarte **[!UICONTROL Duplikate]** der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
 
    ![](assets/update_and_merge_collections3.png)
 
-Daten für sekundäre Datensätze werden mit dem Hauptdatensatz verknüpft, wenn die definierten Regeln anwendbar sind. Je nach ausgewähltem Aktualisierungstyp können die sekundären Datensätze gelöscht werden.
+Die Daten für sekundäre Einträge sind mit dem Haupteintrag verknüpft, wenn die definierten Regeln zutreffen. Je nach ausgewähltem Aktualisierungstyp können die sekundären Einträge gelöscht werden.
 
 ## Anwendungsbeispiel: Daten-Update nach einer Anreicherung {#example--update-data-following-an-enrichment}
 

@@ -7,23 +7,15 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 TQID: https://experienceleague.adobe.com/1fiKNiq5Q2q4cN-wCMLSnZdW-IDA-bw6KwJGhSJYZkY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1576
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +25,7 @@ Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow o
 
 Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#create-email-video).
+![](assets/do-not-localize/how-to-video.png)[Funktion im Video kennenlernen](#create-email-video).
 
 ## Erstellen von Sendungen {#creating-deliveries}
 
@@ -49,13 +41,13 @@ Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
-Sobald alle Validierungsanfragen bestätigt wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe Campaign-Benutzer (oder die Benutzergruppe), der bzw. die als Validierungsverantwortlicher für den Start des Versands ernannt wurde, darüber informiert, dass ein Versand startbereit ist.
+Sobald alle Validierungsanfragen bestätigt wurden, ändert sich der Versandstatus zu **[!UICONTROL Ausstehende Bestätigung]** und kann von einer Benutzerin bzw. einem Benutzer gestartet werden. Gegebenenfalls wird die Adobe Campaign-Benutzerin bzw. der Adobe Campaign-Benutzer (oder die Benutzergruppe), die bzw. der als prüfende Person ernannt wurde, zum Starten des Versands aufgefordert, sobald ein Versand startbereit ist.
 
 >[!NOTE]
 >
 >Wenn in den Versandeigenschaften ein spezifischer Benutzer oder eine Benutzergruppe zur Validierung des Versandstarts angegeben wurden, besteht die Möglichkeit, dieses Recht auch dem versandverantwortlichen Benutzer einzuräumen. Aktivieren Sie in diesem Fall die Option **NMS_ActivateOwnerConfirmation**, indem Sie den Wert **1** angeben. Die Verwaltung der Optionen erfolgt über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** im Adobe Campaign-Explorer.
 >  
->Um diese Option zu deaktivieren, geben Sie **0** als Wert ein. Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen.
+>Um diese Option zu deaktivieren, geben Sie als Wert **0** ein. Der Prozess der Versandbestätigung ist dann der Standardprozess. Nur die in den Versandeigenschaften zum Senden ernannte Person oder Benutzergruppe (oder eine bzw. ein Admin) kann den Versand bestätigen und ausführen.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
@@ -81,7 +73,7 @@ Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei
 
 **Schritt 2: Validieren der Nachricht an den Dienstleister**
 
-* Nachdem die Extraktionsdatei validiert wurde, können Sie den Testversand der Benachrichtigungs-E-Mail für den Router generieren. Diese E-Mail-Nachricht basiert auf einer Versandvorlage. Sie muss genehmigt werden.
+* Nachdem die Extraktionsdatei validiert wurde, können Sie den Testversand der Router-Benachrichtigungs-E-Mail generieren. Diese E-Mail-Nachricht basiert auf einer Versandvorlage. Sie muss validiert werden.
 
   >[!NOTE]
   >
@@ -114,15 +106,15 @@ Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei
 
 ### Kosten- und Lagerberechnung {#calculation-of-costs-and-stocks}
 
-Die Dateiextraktion startet zwei Vorgänge: Budgetberechnung und Bestandsberechnung. Die Budgeteinträge werden aktualisiert.
+Durch die Dateiextraktion werden zwei Vorgänge gestartet: Budgetberechnung und Bestandsberechnung. Die Budgeteinträge werden aktualisiert.
 
 * Die Registerkarte **[!UICONTROL Budget]** ermöglicht die Budgetverwaltung der Kampagne. Die Summe der Kostenzeilen wird im Feld **[!UICONTROL Berechnete Kosten]** des Haupttabs der Kampagne und des übergeordneten Programms angezeigt. Die Beträge werden auch im Kampagnenbudget angezeigt.
 
-  Die tatsächlichen Kosten werden letztendlich anhand der vom Router gelieferten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
+  Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet. Nur tatsächlich gesendete Nachrichten werden fakturiert.
 
 * Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnen > Lager]** und die Kostenstrukturen im Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]** des Navigationsbaums bestimmt.
 
-  Lagerpositionen werden im Lagerteil angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
+  Lagerpositionen werden im Bestandsabschnitt angezeigt. Um den Anfangsbestand zu definieren, öffnen Sie eine Lagerposition. Der Bestand verringert sich mit jedem Versand. Sie können eine Warnstufe und Benachrichtigungen definieren.
 
 >[!NOTE]
 >
@@ -130,7 +122,7 @@ Die Dateiextraktion startet zwei Vorgänge: Budgetberechnung und Bestandsberechn
 
 ## Verwalten der zugehörigen Dokumente {#managing-associated-documents}
 
-Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Webseite, Diagramm usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
+Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
 
 >[!IMPORTANT]
 >
@@ -148,7 +140,7 @@ Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 
-* Die Liste aller für den Inhalt erforderlichen Dokumente (Vorlage, Bilder usw.) die von Adobe Campaign-Benutzern mit entsprechenden Berechtigungen lokal heruntergeladen werden können,
+* Die Liste aller für den Inhalt erforderlichen Dokumente (Vorlage, Bilder usw.), die von Adobe Campaign-Benutzenden mit entsprechenden Berechtigungen lokal heruntergeladen werden können,
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
 
 Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.
@@ -175,9 +167,9 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 >
 >Versandentwürfe werden ausschließlich im Rahmen von Briefpost-Kampagnen verwendet.
 
-Ein Versandentwurf bezeichnet einen strukturierten Satz von Elementen (Dokumente, Zweigstellen/Geschäfte, Werbegutscheine usw.), im Unternehmen und für eine bestimmte Kampagne erstellt haben.
+Ein Versandentwurf stellt eine strukturierte Gruppe von Elementen dar (Dokumente, Zweigstellen/Shops, Werbe-Coupons usw.), die im Unternehmen und für eine bestimmte Kampagne erstellt wurden.
 
-Diese Elemente sind in Versandentwürfen gruppiert und ein bestimmter Versandentwurf ist mit einem Versand verbunden. Auf diesen Versand wird in der an den **Dienstleister“ gesendeten Extraktionsdatei verwiesen** damit diese Elemente an den Versand angehängt werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Filiale und die von ihr verwendeten Marketing-Prospekte bezieht.
+Diese Elemente werden in Versandentwürfen gruppiert und ein bestimmter Versandentwurf wird mit einem Versand verknüpft. Dieser wird in der an den **Dienstleister** gesendeten Extraktionsdatei referenziert, um an den Versand angehängt werden zu können. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Filiale und die von ihr verwendeten Marketing-Prospekte bezieht.
 
 Versandentwürfe ermöglichen es, in Kampagnen externe Elemente zu strukturieren, die einem Versand nach bestimmten Kriterien hinzugefügt werden: bewilligtes Sonderangebot, Einladung zu einem lokalen Event etc.
 
@@ -187,7 +179,7 @@ Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL
 
 >[!NOTE]
 >
->Wenn diese Registerkarte nicht vorhanden ist, ist diese Funktion für diese Kampagne nicht verfügbar. Siehe Konfiguration von Kampagnenvorlagen.
+>Wenn diese Registerkarte nicht vorhanden ist, ist diese Funktion für diese Kampagne nicht verfügbar. Weitere Informationen finden Sie im Abschnitt zur Konfiguration von Kampagnenvorlagen.
 >   
 >Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -203,7 +195,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Personalisierungsfelder ermöglichen es Ihnen, Personalisierungselemente zu erstellen, die sich auf Sendungen und nicht auf Empfangende beziehen. So ist es möglich, Werte zu erstellen, die in Sendungen für eine bestimmte Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Versandentwurf importiert.
+* Personalisierungsfelder ermöglichen es Ihnen, Personalisierungselemente zu erstellen, die sich auf Sendungen und nicht auf Empfangende beziehen. Daher ist das Erstellen von Werten möglich, die in Sendungen für eine bestimmte Zielgruppe (Willkommensangebot, Rabatt usw.) verwendet werden können. Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -225,7 +217,7 @@ Sie können für jeden Versand über den Bereich der Extraktionskonfiguration ei
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
-Der ausgewählte Umriss wird dann im unteren Bereich des Fensters angezeigt. Sie kann über das Symbol rechts neben dem Feld oder über die Dropdown-Liste bearbeitet werden:
+Der ausgewählte Entwurf wird dann im unteren Abschnitt des Fensters angezeigt. Er kann über das Symbol rechts im Fenster oder mithilfe der Dropdown-Liste bearbeitet werden:
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
@@ -235,7 +227,7 @@ Diese Information wird ebenfalls im Tab **[!UICONTROL Zusammenfassung]** des Ver
 
 #### Extraktionsergebnis {#extraction-result}
 
-in der extrahierten und an den Dienstleister gesendeten Datei den Namen des Versandentwurfs und gegebenenfalls seine Merkmale (Kosten, Beschreibung usw.) werden dem Inhalt entsprechend den Informationen in der Exportvorlage hinzugefügt, die mit dem Dienstleister verknüpft ist.
+In der extrahierten und an den Dienstleister gesendeten Datei werden dem Inhalt der Name des Entwurfs und gegebenenfalls die Eigenschaften (Kosten, Beschreibung usw.) hinzugefügt und zwar entsprechend der Informationen in der mit dem Dienstleister verknüpften Exportvorlage.
 
 Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung des dem Versand zugeordneten Entwurfs der Extraktionsdatei hinzugefügt.
 
@@ -251,7 +243,7 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/27488?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

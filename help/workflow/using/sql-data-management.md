@@ -6,21 +6,14 @@ feature: Workflows
 hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 TQID: https://experienceleague.adobe.com/69utVGZghklulU5x5HcHF-hA-UKbSgGLQZ-CtlVanL0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a658c786-869b-4194-a780-2594d663adda
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 454
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +31,9 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-  ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+  ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 * Für den Operator, der den Workflow ausführt, muss die **[!UICONTROL ANGEBOTSAKTIVITÄT SQL-DATEN-MANAGEMENT VERWENDEN (useSqlDmActivity)]** richtig benannt sein. [Weitere Informationen](../../platform/using/access-management-named-rights.md).
@@ -58,7 +51,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
    >[!CAUTION]
    >
-   >Es liegt in der Verantwortung des SQL-Skriptverfassers, sicherzustellen, dass das SQL-Skript funktionsfähig ist und dass seine Referenzen (Feldnamen usw.) sind mit dem Outbound-Schema konform.
+   >Die Person, die das SQL-Skript erstellt, ist dafür verantwortlich, dass das SQL-Skript funktioniert und seine Verweise (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
    Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
@@ -75,14 +68,14 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
      >
      >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
-1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deaktivieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, sobald der Workflow ausgeführt wird.
+1. Wenn das SQL-Skript bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deaktivieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Anderenfalls wird automatisch eine Arbeitstabelle erstellt, sobald der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
-Der Aktivität ist jetzt konfiguriert. Sie kann jetzt im Workflow ausgeführt werden.
+Der Aktivität ist jetzt konfiguriert. Sie ist zur Ausführung im Workflow bereit.
 
 >[!CAUTION]
 >
->Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der Datensätze in der ausgehenden Transition nur als Hinweis zu verstehen. Er kann je nach Komplexität des SQL-Scripts variieren.
+>Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der Einträge in der ausgehenden Transition nur als Richtwert zu betrachten. Sie kann je nach Komplexität des SQL-Skripts variieren.
 >  
 >Wenn die Aktivität neu gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 

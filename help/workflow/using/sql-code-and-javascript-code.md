@@ -6,17 +6,13 @@ feature: Workflows
 hide: true
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 TQID: https://experienceleague.adobe.com/B-OWeBTtXSxSD1k-qgRq06ymp00LvVH2U7k9yRAN3YE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 300
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +22,13 @@ ht-degree: 86%
 
 ## SQL-Code {#sql-code}
 
-Eine **[!UICONTROL SQL-Code]**-Aktivität führt ein SQL-Script aus. Das Skript ist eine JST-Vorlage.
+Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Skript aus. Das Skript ist eine JST-Vorlage.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  Der zentrale Bereich des Editors enthält das auszuführende Script. Dieses Skript ist eine JST-Vorlage und kann daher entsprechend dem Workflow-Kontext konfiguriert werden.
+  Das auszuführende Skript wird im zentralen Bereich des Editors angezeigt. Da es sich beim Skript um eine JST-Vorlage handelt, kann es entsprechend dem Workflow-Kontext konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 

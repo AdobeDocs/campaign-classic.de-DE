@@ -7,33 +7,27 @@ feature: Campaigns
 hide: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 TQID: https://experienceleague.adobe.com/ZHqo0izYPVfaxPIShcjgPpg-5SIGkdQAwbD6dV1r6bE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 788
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Verwalten der zugehörigen Dokumente {#managing-associated-documents}
 
-Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Webseiten, Diagramme usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.).
+Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Web-Seiten, Diagramme usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.).
 
 >[!IMPORTANT]
 >
 >Diese Funktion ist für kleine Assets und Dokumente vorgesehen.
 
-In einer Kampagne können Sie auch auf andere Elemente verweisen, z. B. Werbegutscheine, Sonderangebote für eine bestimmte Marke oder einen bestimmten Store usw. Wenn diese Elemente in einem Versandentwurf enthalten sind, können sie mit einem Briefpost-Versand verknüpft werden. Lesen Sie diesbezüglich [Ressourcen in einem Versandentwurf verknüpfen](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Sie können auch externe Elemente in Kampagnen referenzieren, wie zum Beispiel Werbe-Coupons, marken- oder verkaufsstellenspezifische Angebote etc. Diese können in einem Versandentwurf zusammengefasst und einem Briefpost-Versand zugeordnet werden. Lesen Sie diesbezüglich [Ressourcen in einem Versandentwurf verknüpfen](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
@@ -45,7 +39,7 @@ Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 
-* Die Liste aller für den Inhalt erforderlichen Dokumente (Vorlage, Bilder usw.) die von Adobe Campaign-Benutzern mit entsprechenden Berechtigungen lokal heruntergeladen werden können,
+* Die Liste aller für den Inhalt erforderlichen Dokumente (Vorlage, Bilder usw.), die von Adobe Campaign-Benutzenden mit entsprechenden Berechtigungen lokal heruntergeladen werden können,
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
 
 Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.
@@ -72,7 +66,7 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 >
 >Versandentwürfe werden ausschließlich im Rahmen von Briefpost-Kampagnen verwendet.
 
-Ein Versandentwurf bezeichnet einen strukturierten Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), vom Unternehmen und für eine bestimmte Kampagne erstellt.
+Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Werbe-Coupons usw.), die vom Unternehmen und für eine bestimmte Kampagne erstellt wurden.
 
 Diese Elemente sind in Versandentwürfen gruppiert und jedem Versandentwurf wird ein Versand zugeordnet. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, um an den Versand angehängt zu werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Filiale und die von ihr verwendeten Marketing-Prospekte bezieht.
 
@@ -84,7 +78,7 @@ Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL
 
 >[!NOTE]
 >
->Wenn diese Registerkarte nicht vorhanden ist, ist diese Funktion für diese Kampagne nicht verfügbar. Siehe Konfiguration von Kampagnenvorlagen.
+>Wenn diese Registerkarte nicht vorhanden ist, ist diese Funktion für diese Kampagne nicht verfügbar. Weitere Informationen finden Sie im Abschnitt zur Konfiguration von Kampagnenvorlagen.
 >   
 >Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
@@ -100,7 +94,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Personalisierungsfelder ermöglichen es Ihnen, Personalisierungselemente zu erstellen, die sich auf Sendungen und nicht auf Empfangende beziehen. So ist es möglich, Werte zu erstellen, die in Sendungen für eine bestimmte Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Versandentwurf importiert.
+* Personalisierungsfelder ermöglichen es Ihnen, Personalisierungselemente zu erstellen, die sich auf Sendungen und nicht auf Empfangende beziehen. Daher ist das Erstellen von Werten möglich, die in Sendungen für eine bestimmte Zielgruppe (Willkommensangebot, Rabatt usw.) verwendet werden können. Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -122,7 +116,7 @@ Sie können für jeden Versand über den Bereich der Extraktionskonfiguration ei
 
 ![](assets/s_ncs_user_op_select_composition.png)
 
-Der ausgewählte Umriss wird dann im unteren Bereich des Fensters angezeigt. Sie kann über das Symbol rechts neben dem Feld oder über die Dropdown-Liste bearbeitet werden:
+Der ausgewählte Entwurf wird dann im unteren Abschnitt des Fensters angezeigt. Er kann über das Symbol rechts im Fenster oder mithilfe der Dropdown-Liste bearbeitet werden:
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
@@ -132,7 +126,7 @@ Diese Information wird ebenfalls im Tab **[!UICONTROL Zusammenfassung]** des Ver
 
 ### Extraktionsergebnis {#extraction-result}
 
-in der extrahierten und an den Dienstleister gesendeten Datei den Namen des Versandentwurfs und gegebenenfalls seine Merkmale (Kosten, Beschreibung usw.) werden dem Inhalt entsprechend den Informationen in der Exportvorlage hinzugefügt, die mit dem Dienstleister verknüpft ist.
+In der extrahierten und an den Dienstleister gesendeten Datei werden dem Inhalt der Name des Entwurfs und gegebenenfalls die Eigenschaften (Kosten, Beschreibung usw.) hinzugefügt und zwar entsprechend der Informationen in der mit dem Dienstleister verknüpften Exportvorlage.
 
 Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung des dem Versand zugeordneten Entwurfs der Extraktionsdatei hinzugefügt.
 
