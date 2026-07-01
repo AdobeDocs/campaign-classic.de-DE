@@ -5,27 +5,14 @@ description: Empfehlungen zur Hardware-Dimensionierung für Campaign Classic v7
 feature: Technote
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 TQID: https://experienceleague.adobe.com/lHuaRF5IduJcVWIKDqnkgYirPrhHDi4ro9SkCAw3nZE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: fb2a841f-c522-491f-9901-a1b939d252df
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a7760dfc-5c44-4d77-bb68-c50b1e265c93id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: ac9c0a9c-8a76-4419-bd64-9c34c5782666id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: fb2a841f-c522-491f-9901-a1b939d252dfid: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2637
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -232,31 +219,31 @@ Schätzungsweise benötigt die Datenbank zum Speichern aller technischen Adobe C
 
 Die Annahmen für diese Szenarien wirken sich alle erheblich auf die Hardware-Empfehlungen und die Bereitstellungsarchitektur aus. In diesem Abschnitt werden Richtlinien zu verschiedenen Annahmen erläutert. Wenden Sie sich an das Adobe Campaign-Consulting-Team, um spezielle Empfehlungen für Ihre Anforderungen zu erhalten.
 
-* **Anzahl der Empfänger**
-Aktive Empfängerinnen und Empfänger benötigen sowohl Speicherplatz als auch Datenbankpufferspeicher, sodass mehr Empfängerinnen und Empfänger im Allgemeinen mehr Speicher und CPU-Kapazität auf dem Datenbankserver benötigen. Die Speichererhöhungen sind für die Empfängerinnen und Empfänger selbst relativ gering, können aber für die Ereignis-Tracking-Daten von E-Mail-Kampagnen erheblich sein.
+* **Anzahl der Empfangenden**
+Aktive Empfangende benötigen sowohl Speicherplatz als auch Datenbankpufferspeicher, sodass bei mehr Empfangenden im Allgemeinen auch mehr Speicher und mehr CPU-Kapazität auf dem Datenbank-Server erforderlich sind. Die Speichererhöhungen sind für die Empfängerinnen und Empfänger selbst relativ gering, können aber für die Ereignis-Tracking-Daten von E-Mail-Kampagnen erheblich sein.
 
 * **Größe der E-Mail-Kampagne**
-Die Häufigkeit von Kampagnenstarts hat Auswirkungen auf die Anforderungen des Datenbankserver-CPU. In Kombination mit Briefpost, eingehenden Interaktionen und anderen Workflows belasten Segmentierungsvorgänge für E-Mail-Kampagnen den Datenbank-Server erheblich.
+Die Häufigkeit von Kampagnenstarts hat Auswirkungen auf die CPU-Anforderungen des Datenbank-Servers. In Kombination mit Briefpost, eingehenden Interaktionen und anderen Workflows belasten Segmentierungsvorgänge für E-Mail-Kampagnen den Datenbank-Server erheblich.
 
-* **Häufigkeit der Briefpost**
-Die Häufigkeit von Briefpost kann sich auf die Anforderungen des Datenbankserver-CPU auswirken. In Kombination mit Kampagnen-Launches und anderen Workflows belasten Segmentierungsvorgänge für Briefpost den Datenbank-Server erheblich.
+* **Häufigkeit von Briefpost**
+Die Häufigkeit von Briefpost kann sich auf die CPU-Anforderungen des Datenbank-Servers auswirken. In Kombination mit Kampagnen-Launches und anderen Workflows belasten Segmentierungsvorgänge für Briefpost den Datenbank-Server erheblich.
 
 * **Anzahl der SMS-Nachrichten**
 Wie die Größe von E-Mail-Kampagnen bedeutet auch die Anzahl von SMS-Nachrichten keine große Belastung für Campaign-On-Premise-Server. Belastet werden hier vor allem die Adobe Cloud Messaging-Server in der Cloud. Die Segmentierung für SMS-Kampagnen wie E-Mail und Briefpost kann die Marketing-Datenbank erheblich belasten. Deshalb sind die Häufigkeit von SMS-Kampagnen-Launches und die Komplexität der Segmentierung relevanter als die Anzahl der SMS-Nachrichten.
 
 * **Komplexität des Datenbankschemas**
-Die Datenmenge für jede aktive Empfängerin und jeden aktiven Empfänger erfordert sowohl Speicherplatz als auch Datenbankpufferspeicher, sodass bei mehr Empfängerinnen und Empfängern im Allgemeinen mehr Speicher und CPU auf dem Datenbankserver erforderlich sind. Bei komplexen Schemata müssen auch mehr Tabellen für die Segmentierung zusammengefügt werden, sodass Segmentierungsvorgänge unter Umständen deutlich langsamer durchgeführt werden und mehr Datenbank-CPU und Arbeitsspeicher erforderlich sind, wenn Daten über mehrere Tabellen verteilt sind.
+Die Datenmenge für jede aktive Empfängerin und jeden aktiven Empfänger erfordert sowohl Speicherplatz als auch Datenbankpuffer, sodass mehr Empfangende im Allgemeinen mehr Speicher und CPU auf dem Datenbank-Server benötigen. Bei komplexen Schemata müssen auch mehr Tabellen für die Segmentierung zusammengefügt werden, sodass Segmentierungsvorgänge unter Umständen deutlich langsamer durchgeführt werden und mehr Datenbank-CPU und Arbeitsspeicher erforderlich sind, wenn Daten über mehrere Tabellen verteilt sind.
 
   Der Arbeitsspeicher für den Datenbank-Server wird geschätzt, indem sichergestellt wird, dass der Datenbankpuffer-Pool groß genug für alle Empfängerdaten sowie die temporären Tabellen für aktive Workflows ist und dazu noch eine gewisse Reserve für andere Datenbankvorgänge hat.
 
-* **Nutzung ausgehender Interaktionen**
-Interaktionsregeln im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Performance-Faktor.
+* **Nutzung ausgehender Interaktion**
+Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Performance-Faktor.
 
 * **Nutzung von eingehenden Interaktionen oder SOAP-APIs**
-Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenbank ausgewertet, wodurch die Ressourcen des Datenbank-Servers, insbesondere CPU, in erheblichem Maße in Anspruch genommen werden. Eine starke Nutzung von eingehenden Interaktionen oder SOAP-APIs setzt separate Webserver voraus, um die Arbeitslast von der Ausführung von Campaign-Workflows zu trennen.
+Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenbank ausgewertet, wodurch die Ressourcen des Datenbank-Servers, insbesondere die CPU, in erheblichem Maße in Anspruch genommen werden. Eine starke Nutzung von eingehenden Interaktionen oder SOAP-APIs setzt separate Webserver voraus, um die Arbeitslast von der Ausführung von Campaign-Workflows zu trennen.
 
 * **Aufbewahrungszeitraum der Tracking-Daten**
-Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher erforderlich. Außerdem kann das System dadurch langsamer werden, da neue Tracking-Daten in große Tabellen eingefügt werden. Das Tracking von Daten ist nach 90 Tagen nicht mehr für die Kampagnensegmentierung nützlich. Daher wird eine kürzere Aufbewahrungsfrist empfohlen.
+Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher erforderlich. Außerdem kann das System dadurch langsamer werden, da neue Tracking-Daten in größere Tabellen eingefügt werden. Das Tracking von Daten ist nach 90 Tagen nicht mehr für die Kampagnensegmentierung nützlich. Daher wird eine kürzere Aufbewahrungsfrist empfohlen.
 
   Tracking-Daten sollten in Adobe Analytics oder ein anderes Analysesystem verschoben werden, wenn Sie auf eine langfristige Analyse des Marketing-Erlebnisses der Empfängerinnen und Empfänger angewiesen sind.
 
@@ -265,10 +252,10 @@ Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher
 Alle Campaign-Server eignen sich gut zur Virtualisierung. Es müssen verschiedene Punkte berücksichtigt werden, um eine angemessene Verfügbarkeit und Performance sicherzustellen.
 
 * **Failover-Konfiguration**
-Cluster-Server, z. B. redundante Anwendungs-Server unter einem Proxy mit Lastenausgleich, müssen auf separater Hardware bereitgestellt werden, um sicherzustellen, dass bei einem Hardware-Fehler nicht beide VMs ausfallen.
+Cluster-Server, z. B. redundante Anwendungs-Server unter einem Proxy mit Lastenausgleich, müssen auf separater Hardware bereitgestellt werden, um sicherzustellen, dass bei einem Hardware-Fehler nicht beide VMs ausfallen.
 
 * **I/O-Konfiguration**
-Die empfohlene RAID-Konfiguration muss zwecks Datenbanksicherheit beibehalten werden, damit bei Verlust eines Speichergeräts keine Daten verloren gehen.
+Die empfohlene RAID-Konfiguration muss aus Gründen der Datenbanksicherheit beibehalten werden, damit bei Verlust eines Speichergeräts keine Daten verloren gehen.
 
 * **E/A-Leistung**
 Die empfohlene IOPS-Bewertung für den Datenbankspeicher muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Performance und müssen sorgfältig ausgewertet werden. Beispielsweise liefern von Amazon EC2 bereitgestellte SSD-Volumes derzeit jeweils 20.000 IOPS. Weitere Informationen finden Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html). Eine RAID-Konfiguration mit vier Volumes entspräche also 80.000 IOPS, was unter Umständen nicht ausreicht.

@@ -7,24 +7,15 @@ role: User
 hide: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 TQID: https://experienceleague.adobe.com/ENt9cwc7OjXcMr5tbkg2f3BxpPBNtVytVTw70NQZPyI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 473
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +51,7 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_sms01_139.png)
 
-   Sie können die SMS-Nachricht genehmigen. Sie können den Inhalt der SMS auch auf dem Mobiltelefonbildschirm anzeigen, der rechts neben dem Inhaltseditor angezeigt wird. Klicken Sie auf den Bildschirm und verwenden Sie die Maus, um durch den Inhalt zu scrollen.
+   Sie können die SMS-Nachricht validieren. Sie können auch den Nachrichteninhalt auf dem rechts im Content-Editor angezeigten Mobiltelefon-Display prüfen. Klicken Sie auf den Bildschirm und scrollen Sie mit der Maus durch den Inhalt.
 
    ![](assets/s_ncs_user_wizard_sms01_140.png)
 
@@ -72,7 +63,7 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
    >
    >SMS-Nachrichten sind auf eine Länge von 160 Zeichen beschränkt, wenn die Code-Seite Latin-1 (ISO-8859-1) verwendet wird. Wenn die Nachricht in Unicode geschrieben ist, darf sie 70 Zeichen nicht überschreiten. Bestimmte Sonderzeichen können sich auf die Nachrichtenlänge auswirken. Weitere Informationen zur Nachrichtenlänge finden Sie im Abschnitt [Transliteration von SMS-Zeichen](#about-character-transliteration).
    >
-   >Wenn Personalisierungsfelder oder bedingte Inhaltsfelder vorhanden sind, variiert die Größe der Nachricht von einem Empfänger zum anderen. Die Länge der Nachricht muss nach der Personalisierung ausgewertet werden.
+   >Wenn die Nachricht Personalisierungsfelder oder Felder für bedingte Inhalte enthält, kann die Länge von einer empfangenden Person zur anderen variieren. Die Länge der Nachricht muss nach der Personalisierung ausgewertet werden.
    >
    >Während der Analysephase wird die Nachrichtenlänge geprüft und im Falle eines Überschreitens ein Warnhinweis erzeugt.
 

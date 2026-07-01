@@ -6,17 +6,13 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 TQID: https://experienceleague.adobe.com/04KSAxQjavqf-LzX7Ued7pPpggSDfgueZAAqHT6X81M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 993
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -46,13 +42,13 @@ Um eine neue Umfrage zu erstellen, rufen Sie die Registerkarte **[!UICONTROL Kam
 
 ## Schritt 2: Auswählen der Vorlage {#step-2---selecting-the-template}
 
-Wählen Sie eine Umfragevorlage aus und benennen Sie die Umfrage. Dieser Name wird den Endbenutzern nicht angezeigt, er ermöglicht jedoch die Identifizierung der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Web-Anwendungen hinzuzufügen.
+Wählen Sie eine Umfragevorlage aus und benennen Sie die Umfrage. Dieser Name ist für die Endbenutzenden unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Web-Anwendungen hinzuzufügen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
 ## Schritt 3: Zusammenstellen der Umfrage {#step-3---building-the-survey}
 
-Umfragen werden in einem Diagramm erstellt, in dem die folgenden Elemente positioniert sind: die Seite(n), auf der/denen der Inhalt erstellt wird, die Schritte zum Vorabladen und Speichern von Daten und die Testphasen. Skripte und Abfragen können auch eingefügt werden.
+Umfragen werden in einer Grafik durch Platzierung der folgenden Elemente erstellt: die Seite(n), wo der Inhalt erstellt wird, die Schritte zum Vorausfüllen der Daten und zum Speichern sowie die Testphasen. Skripte und Abfragen können auch eingefügt werden.
 
 Um die Grafik zu erstellen, wählen Sie das **[!UICONTROL Bearbeitungsformular]** der Umfrage aus.
 
@@ -79,17 +75,17 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-  Klicken Sie auf **[!UICONTROL Weiter]**, um das Feld für die Datenspeicherung in der Datenbank auszuwählen. In diesem Fall das Feld „Nachname“.
+  Klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**, um das Feld für die Datenspeicherung in der Datenbank festzulegen. In diesem Fall das Feld „Nachname“.
 
   ![](assets/s_ncs_admin_survey_choose_field.png)
 
   Wählen Sie zur Bestätigung der Felderstellung die Option **[!UICONTROL Beenden]**.
 
-  Wenn die Informationen in einem Feld gespeichert werden, das bereits in der Datenbank vorhanden ist, übernimmt das Feld standardmäßig den Namen des ausgewählten Felds, in diesem Beispiel also „Nachname“. Sie können diese Beschriftung wie unten gezeigt ändern:
+  Wenn die Informationen in einem bereits in der Datenbank vorhandenen Feld gespeichert werden, nimmt das Feld standardmäßig den Namen des ausgewählten Felds an, in diesem Beispiel also „Nachname“. Sie können diesen Titel wie unten gezeigt ändern:
 
   ![](assets/s_ncs_admin_survey_change_label.png)
 
-  Erstellen Sie nun ein Eingabefeld für die Benutzerkontonummer. Wiederholen Sie den Vorgang und wählen Sie das Feld &#39;Kontonummer&#39; aus.
+  Erstellen Sie nun ein Eingabefeld für die Kundenummer. Wiederholen Sie den Vorgang und wählen Sie das Feld „Kundennummer“ aus.
 
   Wiederholen Sie dieselben Schritte, um ein Feld für die E-Mail-Adresse des Benutzers hinzuzufügen.
 
@@ -99,7 +95,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterzweig der Frage ein. Dazu muss beim Erstellen des Antwortfelds der mit der Frage verknüpfte Knoten ausgewählt werden. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahldialog]** oder durch Rechtsklicken wie unten gezeigt hinzu:
+  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahldialog]** oder durch Rechtsklicken wie unten gezeigt hinzu:
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -123,11 +119,11 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
 ## Schritt 5: Speichern der Umfragedaten {#step-5---storing-the-survey-data-}
 
-Im Feld „Speicherung“ können Sie die Benutzerantworten in der Datenbank speichern. Sie müssen einen Abstimmschlüssel auswählen, um die bereits in der Datenbank enthaltenen Profile zu identifizieren.
+Mit dem Speicherfeld können Sie Benutzerantworten in der Datenbank speichern. Sie müssen einen Abstimmschlüssel auswählen, um die bereits in der Datenbank vorhandenen Profile zu identifizieren.
 
 Bearbeiten Sie dazu die Box und wählen Sie das Feld aus, das bei der Datenspeicherung als Abstimmschlüssel verwendet wird.
 
-Im folgenden Beispiel wird beim Speichern (Bestätigung) das Profil aktualisiert, wenn es in der Datenbank mit derselben Kontonummer wie die Eingabe im Formular gespeichert wird. Wenn das Profil nicht vorhanden ist, wird es erstellt.
+Im nachfolgenden Beispiel wird das Profil aktualisiert, wenn beim Speichern (Bestätigen) ein Profil in der Datenbank gespeichert wird, dessen Kontonummer der Eingabe im Formular entspricht. Wenn das Profil nicht vorhanden ist, wird es erstellt.
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
@@ -135,7 +131,7 @@ Wählen Sie zum Bestätigen **[!UICONTROL OK]** und danach **[!UICONTROL Speiche
 
 ## Schritt 6: Veröffentlichen der Seiten {#step-6---publishing-the-pages}
 
-Damit Anwender auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Sie darf sich nicht mehr im Bearbeitungsstadium befinden, sondern in der Produktion. Um eine Umfrage in die Produktion zu übernehmen, müssen Sie sie veröffentlichen. Gehen Sie dazu wie folgt vor:
+Damit Benutzende auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Sie darf sich nicht mehr in der Bearbeitungsphase befinden, sondern muss in der Produktion bereitstehen. Um eine Umfrage in die Produktion zu übernehmen, müssen Sie sie veröffentlichen. Gehen Sie dazu wie folgt vor:
 
 * Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** oberhalb des Umfrage-Dashboards.
 * Klicken Sie auf **[!UICONTROL Start]**, um die Veröffentlichung zu starten und den Assistenten zu schließen.
@@ -148,7 +144,7 @@ Damit Anwender auf die HTML-Seiten zugreifen können, muss die Anwendung verfüg
 
 ## Schritt 7: Freigeben Ihrer Online-Umfrage {#step-7---sharing-your-online-survey}
 
-Sobald die Umfrage in der Produktion ist, kann sie auf dem Server abgerufen und bereitgestellt werden. Die URL für den Zugriff auf die Umfrage wird im Dashboard angezeigt.
+Sobald eine Umfrage in der Produktion veröffentlicht wurde, kann sie am Server aufgerufen und von Ihnen bereitgestellt werden. Die URL für den Zugriff auf die Umfrage wird im Dashboard angezeigt.
 
 ![](assets/survey_url_from_dashboard.png)
 
@@ -158,6 +154,6 @@ Sie können die Antworten der Benutzer dann mit Berichten und Logs überwachen. 
 
 >[!CAUTION]
 >
->Die öffentliche URL enthält den internen Namen der Umfrage. Wenn der interne Name geändert wird, wird die URL automatisch aktualisiert: Alle Links zur Umfrage müssen ebenfalls aktualisiert werden.
+>Die öffentliche URL enthält den internen Namen der Umfrage. Wenn dieser geändert wird, wird die URL automatisch aktualisiert und alle Links zur Umfrage müssen ebenfalls aktualisiert werden.
 >
 >Wenn Nachrichten mit dem Link zur Umfrage bereits versendet wurden, funktioniert dieser Link nicht mehr.

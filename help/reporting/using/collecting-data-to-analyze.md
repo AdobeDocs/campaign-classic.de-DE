@@ -6,20 +6,14 @@ feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 TQID: https://experienceleague.adobe.com/fk2YgX6UDVDTKH7v2Lcq01QAK7tElhnPkSvrpn25nzk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-feature_v2:
-  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2:
-  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
-  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
-  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 533
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +35,13 @@ In jedem Fall werden die Daten über eine Aktivität vom Typ **[!UICONTROL Abfra
 
 ![](assets/reporting_query_edit.png)
 
-Dieser Datenauswahlmodus ist relevant, wenn die Daten im Bericht mithilfe der Daten in der Datenbank erfasst oder erstellt werden müssen. In einigen Fällen können Sie die Daten auch direkt aus den im Bericht verwendeten Elementen auswählen. Beispielsweise können Sie beim Einfügen eines Diagramms die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
+Dieser Datenauswahlmodus ist relevant, wenn die Daten im Bericht basierend auf den Daten in der Datenbank erfasst oder erzeugt werden müssen. In einigen Fällen können Sie die Daten auch direkt aus den im Bericht verwendeten Elementen auswählen. Beispielsweise können Sie beim Einfügen eines Diagramms die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
 
 ## Verwenden der Daten aus einem Schema {#using-the-data-from-a-schema}
 
 Um direkt die mit einem Schema der Datenbank verbundenen Daten zu verwenden, wählen Sie die entsprechende Option im Abfrage-Editor aus und konfigurieren Sie die anzuwendende Abfrage.
 
-Im folgenden Beispiel wird die Anzahl der Empfängerinnen und Empfänger für jedes Land unter den Profilen in der Datenbank erfasst. Sie können dann in einem Bericht in Form einer Tabelle angezeigt werden.
+Im folgenden Beispiel können Sie die Empfängeranzahl pro Land aus den Profilen der Datenbank erfassen. Sie können dann in einem Bericht in Form einer Tabelle angezeigt werden.
 
 ![](assets/reporting_query_from_schema.png)
 
@@ -81,7 +75,7 @@ Um zu vermeiden, dass die Abfragen sich auf die gesamte Datenbank beziehen, müs
 
 Sie können die Option **[!UICONTROL Automatisch mit dem Kontext filtern]** aktivieren, um den Bericht in einem bestimmten Knoten des Navigationsbaums (Liste, Empfänger, Versand) zugänglich zu machen.
 
-Mit **[!UICONTROL Option „Mit Ordner filtern]** können Sie einen Ordner angeben und nur dessen Inhalt berücksichtigen. Auf diese Weise können Sie die Berichtsdaten so filtern, dass nur die Daten aus einem der Ordner in der Baumstruktur angezeigt werden, wie unten dargestellt:
+Mit der Option **[!UICONTROL Mit dem Ordner filtern]** können Sie einen Ordner angeben, sodass nur dessen Inhalte berücksichtigt werden. Auf diese Weise können Sie die Berichtsdaten filtern, sodass nur die Daten von einem Ordner in der Struktur angezeigt werden, wie unten gezeigt:
 
 ![](assets/reporting_control_folder.png)
 

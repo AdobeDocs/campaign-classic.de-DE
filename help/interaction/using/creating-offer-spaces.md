@@ -8,15 +8,13 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 TQID: https://experienceleague.adobe.com/sfD2AC1pBRsuvD-SScCQRjB1oL5ok55ZOEaoGuLhzmQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1038
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 69%
 
 
 
-Die Erstellung einer Platzierung darf nur von einem **technischen Administrator** mit Zugriff auf den Unterordner der Platzierung durchgeführt werden. Platzierungen können nur in der Design-Umgebung erstellt werden und werden bei der Angebotsvalidierung automatisch in die Live-Umgebung dupliziert.
+Die Erstellung von Platzierungen erfolgt durch **technische Admins** mit Zugriff auf den Platzierungs-Unterordner. Die Platzierungen eines Angebots werden automatisch in die Live-Umgebung dupliziert, sobald das entsprechende Angebot validiert wurde.
 
 Der Inhalt der im Katalog enthaltenen Angebote wird in den Platzierungen konfiguriert. Standardmäßig kann der Content **[!UICONTROL die folgenden Felder enthalten: Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Angebotsplatzierung konfiguriert.
 
@@ -61,13 +59,13 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    >[!NOTE]
    >
-   >Diese Konfiguration wird für die Vorschau verwendet und macht die Platzierungen bei der Veröffentlichung ungültig, wenn eines der obligatorischen Elemente im betreffenden Angebot fehlt. Wenn jedoch ein Angebot bereits auf einer Platzierung live ist, werden diese Kriterien nicht berücksichtigt.
+   >Diese Konfiguration wird in der Vorschau verwendet und macht die Platzierungen bei der Veröffentlichung ungültig, wenn eines der obligatorischen Elemente des Angebots fehlt. Wenn jedoch ein Angebot bereits auf einer Platzierung live ist, werden diese Kriterien nicht berücksichtigt.
 
    ![](assets/offer_space_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
-   Diese Funktionen werden verwendet, um Angebotsdarstellungen in einer Platzierung zu generieren. Es gibt verschiedene mögliche Formate: HTML oder Text für ausgehende Interaktionen und XML für eingehende Interaktionen.
+   Diese Funktionen dienen der Erzeugung von Angebotsdarstellungen auf einer Platzierung. Sie haben die Wahl zwischen verschiedenen Formaten: HTML oder Text für ausgehende Interaktionen und XML für eingehende Interaktionen.
 
    ![](assets/offer_space_create_006.png)
 
@@ -76,11 +74,11 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_007.png)
 
-Bei Bedarf können Sie die XML-Rendering-Funktionen für eingehende Interaktionen überschreiben. Sie können auch die HTML- und Text-Rendering-Funktionen für ausgehende Interaktionen überschreiben. Weitere Informationen finden Sie unter [Über Inbound-Kanäle](../../interaction/using/about-inbound-channels.md).
+Für eingehende Interaktionen können Sie bei Bedarf die XML-Rendering-Funktionen überschreiben. Für ausgehende Interaktionen können auch die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über Inbound-Kanäle](../../interaction/using/about-inbound-channels.md).
 
 ## Vorschlagsstatus {#offer-proposition-statuses}
 
-Ein Angebotsvorschlag kann je nach Interaktion mit der Zielpopulation verschiedene Status aufweisen. Interaction enthält eine Reihe von Werten, die während des gesamten Lebenszyklus auf den Angebotsvorschlag angewendet werden können. Sie müssen die Plattform jedoch so konfigurieren, dass sich der Status ändert, wenn der Angebotsvorschlag erstellt und akzeptiert wird.
+Der Status eines Angebotsvorschlags ändert sich entsprechend den Interaktionen mit der Zielpopulation. Interaction enthält eine Reihe von Werten, die während des gesamten Lebenszyklus auf den Angebotsvorschlag angewendet werden können. Die Plattform muss jedoch so konfiguriert werden, dass sich der Status bei der Erstellung und Annahme des Angebotsvorschlags ändert.
 
 >[!NOTE]
 >
@@ -118,7 +116,7 @@ Gehen Sie dazu wie folgt vor:
 
 ### Konfiguration des Status bei Annahme des Vorschlags {#configuring-the-status-when-the-proposition-is-accepted}
 
-Sobald ein Angebotsvorschlag akzeptiert wurde, können Sie einen der standardmäßig bereitgestellten Werte verwenden, um den neuen Vorschlagsstatus zu konfigurieren. Die Aktualisierung ist wirksam, wenn ein Empfänger auf einen Link im Angebot klickt, wodurch das Interaction-Modul aufgerufen wird.
+Sobald ein Angebotsvorschlag akzeptiert wurde, können Sie den neuen Vorschlagsstatus mit einem der standardmäßig verfügbaren Werte konfigurieren. Die Aktualisierung tritt in Kraft, sobald eine empfangende Person auf einen Link im Angebot klickt, wodurch das Interaktionsmodul aufgerufen wird.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -129,7 +127,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Eingehende Interaktionen**
 
-Auf der Registerkarte **[!UICONTROL Speicherung]** können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status der Angebotsvorschläge direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden und nicht über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
+In der Registerkarte **[!UICONTROL Speicherung]** können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status der Angebotsvorschläge direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden und nicht über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -159,7 +157,7 @@ Bei ausgehenden Interaktionen besteht die Möglichkeit, dem Angebotsvorschlag au
 
 ## Angebotsvorschau in der Platzierung {#offer-preview-per-space}
 
-Auf dieser Registerkarte können Sie die Angebote anzeigen, die basierend auf einer zuvor ausgewählten Methode für den Empfänger infrage kommen. Beim folgenden Beispiel kommt der Empfänger für drei Angebote per Briefpost infrage.
+In dieser Registerkarte können Sie die Angebote anzeigen, die basierend auf einer zuvor ausgewählten Methode für die empfangende Person infrage kommen. Beim folgenden Beispiel kommt der Empfänger für drei Angebote per Briefpost infrage.
 
 ![](assets/offer_space_overview_002.png)
 

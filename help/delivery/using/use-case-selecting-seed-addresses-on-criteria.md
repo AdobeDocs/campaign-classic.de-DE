@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 TQID: https://experienceleague.adobe.com/vVOd7BFN-EgiwiYk-ssMDkkmcUnRyI62tpMk2R-FVAQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 935
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +31,7 @@ Um das Endergebnis der Zusammenarbeit mit ihnen zu teilen, entscheidet der Versa
 Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 * einen vollständig konfigurierten Versand,
-* Testadressen mit einem gemeinsamen Wert. Dieser Wert kann ein Feld sein, das bereits in Adobe Campaign vorhanden ist. In diesem Beispiel verwenden Testadressen im Feld „Abteilung“ den Wert „Einkauf“, der in der Anwendung standardmäßig nicht vorhanden ist.
+* Testadressen mit einem gemeinsamen Wert. Dieser Wert kann ein Feld sein, das bereits in Adobe Campaign vorhanden ist. In diesem Beispiel besteht die Gemeinsamkeit der Testadressen im Wert „Einkauf“ des Felds „Abteilung“, das nicht standardmäßig in der Anwendung enthalten ist.
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
@@ -105,7 +98,7 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Trennen Sie die Verbindung und stellen Sie erneut eine Verbindung zu Adobe Campaign her. Die im Testadressen-Datenschema vorgenommenen Änderungen sind jetzt wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
+1. Trennen Sie die Verbindung und stellen Sie die Verbindung zu Adobe Campaign erneut her. Die im Testadressen-Schema vorgenommenen Änderungen sind nun wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 
 #### Erweitern des Datenschemas ausgehend von einer verknüpften Tabelle {#extending-the-data-schema-from-a-linked-table}
 
@@ -166,7 +159,7 @@ Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformular
 
 ## Schritt 3: Definieren der Bedingung {#step-3---defining-the-condition}
 
-Sie können jetzt die dynamische Bedingung der Testadressen für den Versand angeben. Gehen Sie dazu wie folgt vor:
+Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definieren. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie den zuvor erstellten Versand.
 
@@ -186,7 +179,7 @@ Sie können jetzt die dynamische Bedingung der Testadressen für den Versand ang
 
    >[!NOTE]
    >
-   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.**&#x200B;**
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 

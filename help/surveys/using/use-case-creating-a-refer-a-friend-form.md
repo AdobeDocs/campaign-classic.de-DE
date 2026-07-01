@@ -6,22 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 TQID: https://experienceleague.adobe.com/n0qp8Q0p18fMbRYxAOu5Qj-0TCf8YgL5vF71F-ZGjbM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 644
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +21,7 @@ ht-degree: 66%
 
 
 
-In diesem Beispiel möchten wir den Empfängern in der Datenbank einen Wettbewerb anbieten. Das Web-Formular enthält einen Abschnitt für die Eingabe von Antworten und einen weiteren für den Verweis auf einen Freund durch Eingabe seiner E-Mail-Adresse.
+In diesem Beispiel möchten wir den Empfangenden in der Datenbank einen Wettbewerb anbieten. Das Web-Formular soll einen Abschnitt zur Eingabe der Antworten enthalten und einen anderen zur Eingabe der E-Mail-Adresse eines Freundes.
 
 ![](assets/s_ncs_admin_survey_viral_sample_0.png)
 
@@ -41,7 +33,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Im **Ihre Nachricht** können Sie eine Nachricht für den Schiedsrichter eingeben. Der Referrer muss auch seinen **Nachnamen**, **Vornamen** und **E-Mail** eingeben.
+   Im Feld **Ihre Nachricht** können Sie eine Nachricht für die angeworbene Person eingeben. Die werbende Person muss auch ihren **Nachnamen**, **Vornamen** und ihre **E-Mail-Adresse** eingeben.
 
    Die in den Feldern eingegebenen Informationen werden in einer speziellen Tabelle, der Besuchertabelle, gespeichert.
 
@@ -49,7 +41,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    >
    >Solange der Angeworbene noch nicht sein Einverständnis gegeben hat, können Sie ihn nicht gemeinsam mit den Werbern in der Datenbank speichern. Er wird deshalb vorübergehend in der **Besuchertabelle** (**nms:visitor**) gespeichert, die für virale Marketing-Kampagnen verwendet wird. Diese Tabelle wird regelmäßig durch **Bereinigungsprozesse** geleert.
    >
-   >In diesem Beispiel möchten wir Empfängerinnen und Empfänger ansprechen, damit sie an dem von ihrem Referrer empfohlenen Wettbewerb teilnehmen. In dieser Nachricht möchten wir ihnen jedoch auch ein Abonnement für einen unserer Informationsdienste anbieten. Wenn sie sich anmelden, können sie in der Datenbank gespeichert werden.
+   >In diesem Beispiel möchten wir Empfangende dazu bewegen, an dem von ihren Werbenden empfohlenen Wettbewerb teilzunehmen. In dieser Nachricht möchten wir ihnen jedoch auch ein Abonnement für einen unserer Informationsdienste anbieten. Wenn sie sich anmelden, können sie in der Datenbank gespeichert werden.
 
    ![](assets/s_ncs_admin_survey_viral_sample_5.png)
 
@@ -69,7 +61,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    ctx.recipient.visitor.@referrerLastName = ctx.recipient.@lastName
    ```
 
-   Nachname, Vorname und E-Mail-Adresse, die im Seitenidentifizierungsblock eingegeben wurden, werden als Nachname, Vorname und E-Mail-Adresse des Referrers identifiziert. Diese Felder werden erneut in den Nachrichtentext eingefügt, der an den Schiedsrichter gesendet wird.
+   Der Nachname, der Vorname und die E-Mail-Adresse, die in den Identifizierungsbereich der Seite eingegeben werden, werden als Nachname, Vorname und E-Mail-Adresse des Werbers identifiziert. Diese Felder werden erneut in den Nachrichtentext eingefügt, der an die angeworbene Person gesendet wird.
 
    Der APP5-Wert entspricht dem internen Namen des Webformulars: Mit dieser Information können Sie den Ursprung des Angeworbenen ermitteln, d. h. den Besucher mit dem zu seiner Erstellung verwendeten Webformular verbinden.
 
@@ -89,7 +81,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
      ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
-   * Die Kontaktinformationen des Referrers sowie die Referrer-Informationen werden der Besuchertabelle entnommen. Sie wird mithilfe der Schaltfläche Personalisierung eingefügt.
+   * Die Kontaktinformationen der angeworbenen Person sowie die Informationen der werbenden Person werden der Besuchertabelle entnommen. Sie werden mithilfe der Schaltfläche „Personalisierung“ eingefügt.
 
      ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
@@ -138,4 +130,4 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
-   Ihr Profil enthält die Informationen, die von der verweisenden Stelle eingegeben wurden. Er wird basierend auf den im Formularskript eingegebenen Konfigurationen gespeichert. Wenn sich der Empfänger für den Newsletter entscheidet, wird er in der Empfängertabelle gespeichert.
+   Das Profil enthält die Informationen, die von der werbenden Person eingegeben wurden. Es wird basierend auf den im Formularskript eingegebenen Konfigurationen gespeichert. Wenn sich die angeworbene Person für ein Abonnement des Newsletters entscheidet, wird sie in der Empfängertabelle gespeichert.

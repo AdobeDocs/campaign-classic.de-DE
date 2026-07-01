@@ -5,9 +5,9 @@ description: Mobile-App-Kanal (Mobile App Channel)
 hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 51%
 
 
 
-Der folgende Workflow wird standardmäßig mit dem Modul **Mobile-App** Kanal) installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../delivery/using/about-mobile-app-channel.md).
+Der unten beschriebene Workflow wird standardmäßig mit dem Modul **App-Kanal** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 

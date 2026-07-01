@@ -6,19 +6,14 @@ feature: Workflows, Data Management
 hide: true
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
 TQID: https://experienceleague.adobe.com/G82StaXeELHRHF4C1qMnRK0IekJoF0n-r6xQi63KPlk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 304
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 70%
 
 Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows, mit dem begleitende Aktualisierungen bei der mehrmaligen Ausführung eines Workflows verwaltet werden können.
 
-Dadurch soll überprüft werden, ob der Aktualisierungsprozess beendet wurde, bevor ein weiterer Aktualisierungsvorgang ausgeführt wird. Zu diesem Zweck richten wir eine Instanzvariable ein und lassen den Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll oder nicht.
+Dadurch soll überprüft werden, ob der Aktualisierungsprozess beendet wurde, bevor ein weiterer Aktualisierungsvorgang ausgeführt wird. Wir werden zu diesem Zweck eine Instanzvariable erstellen und im Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
 
 ![](assets/uc_dataupdate_wkf.png)
 
@@ -46,11 +41,11 @@ Gehen Sie zur Erstellung des Workflows wie folgt vor:
 
    >[!NOTE]
    >
-   >„isRunning“ ist der Name der Instanzvariablen, den wir für dieses Beispiel ausgewählt haben. Dies ist keine integrierte Variable.
+   >„isRunning“ ist die für dieses Beispiel ausgewählte Instanzvariable. Dies ist keine integrierte Variable.
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Fügen Sie eine **Ende**-Aktivität zur **Nein** Verzweigung hinzu. Auf diese Weise wird nichts ausgeführt, wenn der Workflow bereits ausgeführt wird.
+1. Fügen Sie eine Aktivität **Ende** zur **Nein**-Verzweigung hinzu. Dadurch erfolgt keine Ausführung, falls der Workflow bereits ausgeführt wird.
 1. Fügen Sie die gewünschten Aktivitäten zur **Ja**-Verzweigung hinzu. Für unser Beispiel sind dies die Aktivitäten **Abfrage** und **Daten-Update**.
 1. Öffnen Sie die erste Aktivität und fügen Sie den Befehl **instance.vars.isRunning = true** auf dem Tab **[!UICONTROL Erweitert]** hinzu. Auf diese Weise wird die Instanzvariable auf „wird ausgeführt“ gesetzt.
 

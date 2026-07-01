@@ -6,17 +6,13 @@ feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 TQID: https://experienceleague.adobe.com/mc1GRKb345bJX0ConrlwvLbPeeFK8YLDQIhs2Gp7h68
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 443
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 70%
 
 Die Aktivität **Schnittmenge** erzeugt ausgehend von den eingehenden Aktivitäten eine neue Population.
 
-Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind. Die Zielgruppe wird mit allen erhaltenen Ergebnissen erstellt: Alle vorherigen Aktivitäten müssen daher abgeschlossen sein, bevor die Schnittmenge ausgeführt werden kann. Um diese Aktivität zu konfigurieren, müssen Sie einen Titel für sie sowie die Optionen für das Ergebnis eingeben.
+Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind. Die Zielgruppe wird mit allen eingehenden Ergebnissen erstellt. Alle vorherigen Aktivitäten müssen daher abgeschlossen sein, bevor die Schnittmenge ausgeführt werden kann. Um diese Aktivität zu konfigurieren, müssen Sie einen Titel für sie sowie die Optionen für das Ergebnis eingeben.
 
 ![](assets/s_user_segmentation_inter.png)
 
@@ -50,10 +46,10 @@ Im vorliegenden Beispiel werden drei Abfragen erstellt. Gesucht werden die in je
 1. Konfigurieren Sie die Schnittmenge. Wählen Sie als Abstimmoption **[!UICONTROL Nur die Schlüssel]**, da im vorliegenden Beispiel die aus den Abfragen stammenden Populationen homogen sind.
 1. Falls Sie in den Abfragen Zusatzdaten verwenden, können Sie sich dafür entscheiden, nur gemeinsame Daten beizubehalten, indem Sie die entsprechende Option ankreuzen.
 1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie die Ergebnisse der Abfragen (abzüglich der Schnittmenge) im weiteren Verlauf des Workflows verwenden möchten.
-1. Fügen Sie nach dem Ergebnis der Schnittmenge die Aktivität Listen-Update hinzu. Sie können dem Komplement auch eine Liste hinzufügen, die aktualisiert wird, wenn Sie dieses Tool verwenden möchten.
-1. Führt den Workflow aus. Hier wenden zwei Empfänger gleichzeitig auf alle drei eingegebenen Abfragen an. Das Komplement besteht aus fünf Empfängern, die sich nur auf eine oder zwei der drei Abfragen beziehen.
+1. Fügen Sie nach dem Ergebnis der Schnittmenge eine Aktivität des Typs „Listen-Update“ hinzu. Sie können ein Listen-Update auch einem Komplement hinzufügen, wenn Sie dies möchten.
+1. Führen Sie den Workflow aus. Hier entsprechen zwei Empfangende gleichzeitig allen drei eingegebenen Abfragen. Das Komplement besteht aus bis zu fünf Empfangenden, die nur einer oder zwei der drei Abfragen entsprechen.
 
-   Das Ergebnis der Schnittmenge wird an die erste Listenaktualisierung gesendet. Wenn Sie sich für die Verwendung des Komplements entschieden haben, wird es auch an die zweite Listenaktualisierung gesendet.
+   Das Ergebnis der Schnittmenge wird an das erste Listen-Update gesendet. Wenn Sie sich für die Verwendung des Komplements entschieden haben, wird es auch an das zweite Listen-Update gesendet.
 
    ![](assets/intersection_example.png)
 

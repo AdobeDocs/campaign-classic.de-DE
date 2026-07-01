@@ -8,21 +8,14 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 TQID: https://experienceleague.adobe.com/Ao7kTRz1lHY0sDhOLoWIZNkHEXnL2wIv-0BU0e-2cOs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-feature_v2:
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 797
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +41,7 @@ Sie haben die Wahl zwischen einer gebündelten Aktualisierung der ausgewählten 
 
 ### Gebündelte Aktualisierung {#mass-update}
 
-Für die Massenaktualisierung verwenden Sie **[!UICONTROL Aktion > Massenaktualisierung ausgewählter Positionen…]**. Der Assistent unterstützt Sie beim Konfigurieren und Ausführen des Updates.
+Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktion > Ausgewählte Zeilen gebündelt aktualisieren…]**. Der Assistent unterstützt Sie beim Konfigurieren und Ausführen der Aktualisierung.
 
 Im ersten Schritt des Assistenten sind die zu aktualisierenden Felder anzugeben.
 
@@ -68,7 +61,7 @@ Wenn Sie auf die Schaltfläche **[!UICONTROL Werteverteilung]** klicken, wird an
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
-Sie können Filter definieren, um die Werteverteilung in diesem Fenster anzuzeigen, oder den aktuellen Ordner ändern, um die Werteverteilung in einem anderen Ordner anzuzeigen. Dies sind schreibgeschützte Aktionen, die sich nicht auf die Konfiguration des definierten Updates auswirken.
+Sie können Filter definieren, um die Werteverteilung in diesem Fenster anzuzeigen, oder den aktuellen Ordner anpassen, um die Werteverteilung in einem anderen Ordner anzuzeigen. Dies sind schreibgeschützte Aktionen, die sich nicht auf die Konfiguration der definierten Aktualisierung auswirken.
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
@@ -78,11 +71,11 @@ Schließen Sie das Fenster und klicken Sie auf die Schaltfläche **[!UICONTROL W
 
 In der oberen Hälfte des Assistenten werden Informationen zur Durchführung des Updates angezeigt.
 
-Mit **[!UICONTROL Stopp]** können Sie die Aktualisierung abbrechen, aber bestimmte Datensätze wurden möglicherweise aktualisiert, und durch das Anhalten des Prozesses werden diese Aktualisierungen nicht abgebrochen. Die Fortschrittsleiste zeigt an, wie weit der Vorgang fortgeschritten ist.
+Mit der Schaltfläche **[!UICONTROL Stoppen]** können Sie die Aktualisierung abbrechen. Es ist jedoch möglich, dass einzelne Einträge bereits verarbeitet wurden, und diese Aktualisierungen werden durch den Abbruch nicht rückgängig gemacht. Die Fortschrittsleiste zeigt an, wie weit der Vorgang fortgeschritten ist.
 
 ### Daten zusammenführen {#merge-data}
 
-Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen…]**, um die Zusammenführung zweier Empfängerprofile zu starten. Die zusammenzuführenden Profile müssen ausgewählt werden, bevor Sie die Option auswählen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
+Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen…]** aus, um zwei zuvor ausgewählte Empfängerprofile zusammenzuführen. Die Profile, die zusammengeführt werden sollen, müssen vor Auswahl dieser Option ausgewählt werden. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
 Der Assistent zeigt die Werte an, die für jedes in einem oder mehreren Quellprofilen ausgefüllte Feld abgerufen werden sollen. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Sie können dann das Standardprofil mithilfe der Optionsfelder unter der Liste auswählen, wie im folgenden Beispiel gezeigt:
 
@@ -103,7 +96,7 @@ Der Inhalt einer Liste kann exportiert werden. So konfigurieren Sie den Export u
 
    ![](assets/s_ncs_user_export_list.png)
 
-1. Wählen Sie dann die zu extrahierenden Daten aus. Standardmäßig werden alle angezeigten Spalten den Ausgabespalten hinzugefügt.
+1. Wählen Sie dann die zu extrahierenden Daten aus. Standardmäßig werden den Ausgabespalten alle angezeigten Spalten hinzugefügt.
 
    ![](assets/s_ncs_user_export_list_start.png)
 
@@ -111,7 +104,7 @@ Der Inhalt einer Liste kann exportiert werden. So konfigurieren Sie den Export u
 
 ## Für einen Service anmelden {#subscribing-to-a-service}
 
-In den meisten Fällen können Empfänger einen Newsletter über eine spezielle Landingpage abonnieren, wie in [diesem Abschnitt) &#x200B;](../../delivery/using/managing-subscriptions.md). Die Profile gefilterter Empfänger können jedoch manuell für einen Dienst (Newsletter oder Viraler Dienst) abonniert werden. Gehen Sie dazu wie folgt vor:
+Normalerweise melden sich Empfangende über eine spezielle Landingpage für einen Newsletter an, wie [in diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschrieben. Für die Profile von gefilterten Empfängerinnen und Empfänger kann jedoch manuell ein Dienst (Newsletter oder viraler Dienst) abonniert werden. Gehen Sie dazu wie folgt vor:
 
 1. Markieren Sie die gewünschten Empfänger und wählen Sie sie mit der rechten Maustaste aus.
 1. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**.
@@ -126,7 +119,7 @@ In den meisten Fällen können Empfänger einen Newsletter über eine spezielle 
    >
    >Der Assistent erlaubt auch die Erstellung eines neuen Dienstes. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-1. Sie können **[!UICONTROL eine Bestätigungsnachricht senden]** an Empfänger. Der Inhalt dieser Nachricht kann im Anmeldeszenario konfiguriert werden, das mit dem ausgewählten Service verknüpft ist.
+1. Sie können für Empfängerinnen und Empfänger **[!UICONTROL Benachrichtigung versenden]** auswählen. Der Inhalt dieser Nachricht wird im dem Dienst zugeordneten Anmeldeszenario konfiguriert.
 1. Klicken Sie nun zur Ausführung des Vorgangs auf die Schaltfläche **[!UICONTROL Starten]**.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
@@ -135,7 +128,7 @@ In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausfü
 
 Wenn Sie die Option **[!UICONTROL Auftrag nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Auftrag betreffenden Protokollnachrichten gespeichert werden.
 
-Im Tab **[!UICONTROL Abonnements]**&#x200B;**&#x200B;**, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
+Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

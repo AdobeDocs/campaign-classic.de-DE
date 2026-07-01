@@ -6,17 +6,13 @@ feature: Workflows
 hide: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 TQID: https://experienceleague.adobe.com/AhEp-fucKo-UN8M9kzPxqpbHU2ichyv1LHa-qeN9qRc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 374
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +22,7 @@ ht-degree: 78%
 
 In diesem Beispiel möchten wir einem Benutzer eine Warnung senden, die den Namen der Profile enthält, die einen Newsletter geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
 
-Die Felder „Vor- und Nachname“ der Profile sind mit der Zielgruppendimension **[!UICONTROL Empfänger]** verknüpft, während die Aktivität **[!UICONTROL Warnhinweis]** mit der Zielgruppendimension **[!UICONTROL Benutzer]** verknüpft ist. Daher steht zwischen den beiden Zielgruppendimensionen kein Feld zur Verfügung, um eine Abstimmung durchzuführen, die Vor- und Nachnamenfelder abzurufen und sie in der Aktivität Warnhinweis anzuzeigen.
+Die Felder für Vor- und Nachname der Profile sind mit der Zielgruppendimension **[!UICONTROL Empfänger]** verknüpft, während die Aktivität **[!UICONTROL Warnung]** mit der Zielgruppendimension **[!UICONTROL Operator]** verknüpft ist. Deshalb ist bei den beiden Zielgruppendimensionen kein Feld verfügbar, um eine Abstimmung vorzunehmen, die Felder für Vor- und Nachname abzurufen und in der Warnungsaktivität anzuzeigen.
 
 Deshalb muss der folgende Workflow erstellt werden:
 
@@ -103,7 +99,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die der Instanzvariablen über die Aktivität **[!UICONTROL JavaScript-Code&rbrace;]** wurden.\
+>Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die mit der Aktivität **[!UICONTROL JavaScript-Code]** in der Instanzvariablen gespeichert wurden.\
 >Sie können beliebig viele Felder hinzufügen, vorausgesetzt diese wurden in den JavaScript-Code eingefügt.
 
 ![](assets/uc_operator_8.png)

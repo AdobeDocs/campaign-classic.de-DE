@@ -8,26 +8,15 @@ role: User
 hide: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 TQID: https://experienceleague.adobe.com/OLbxTTT7EiAqXlQIwou9t-s62Z3TWibfiG7fPg-9KfE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1093
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -47,8 +36,8 @@ So ersetzt Adobe Campaign das Personalisierungsfeld **&lt;%= recipient.LastName 
 
 Je nach ausgewähltem Versandmodus können die Personalisierungsfelder auf zwei verschiedene Datenquellen zurückgreifen:
 
-* Die Adobe Campaign-Datenbank ist die Datenquelle. Dies ist der häufigste Fall, zum Beispiel mit „Empfänger-Personalisierungsfeldern“. Dies sind alle in der Empfängertabelle definierten Felder, unabhängig davon, ob es sich um Standardfelder handelt (normalerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
-* Eine externe Datei ist die Datenquelle. Hierbei handelt es sich um alle Felder, die in den Spalten der Datei definiert sind, welche als Eingabe während eines Versands mithilfe der in einer externen Datei gefundenen Daten präsentiert werden.
+* Die Adobe Campaign-Datenbank ist die Datenquelle. Dies ist der häufigste Fall, zum Beispiel mit „Empfänger-Personalisierungsfeldern“. Dies sind alle in der Empfängertabelle definierten Felder, ob Standardfelder (Nachname, Vorname, Anschrift, Geburtsdatum usw.) oder benutzerdefinierte Felder.
+* Eine externe Datei ist die Datenquelle. Dies sind alle Felder der während eines Versands als Eingabe angezeigten Spalten, die Daten aus einer externen Datei verwenden.
 
 >[!NOTE]
 >
@@ -64,7 +53,7 @@ Nach der Auswahl der Datenquelle - Empfängerfeld oder Dateifeld - präsentiert 
 
 ## Beispiel für Personalisierungsfelder {#personalization-fields-example}
 
-Wir erstellen eine E-Mail, in der wir zunächst den Namen des Empfängers einfügen und dann das Erstellungsdatum des Profils in den Nachrichtentext einfügen. Gehen Sie dazu wie folgt vor:
+In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betreff und das Datum der Profilerstellung im Nachrichten-Textkörper eingefügt werden soll. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versandassistenten auf den **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
@@ -72,9 +61,9 @@ Wir erstellen eine E-Mail, in der wir zunächst den Namen des Empfängers einfü
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
-1. Wiederholen Sie den Vorgang, um den Namen des Empfängers einzufügen. Fügen Sie Leerzeichen zwischen allen Personalisierungsfeldern ein.
+1. Wiederholen Sie den Vorgang, um den Namen der empfangenden Person einzufügen. Fügen Sie Leerzeichen zwischen allen Personalisierungsfeldern ein.
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
-1. Fügen Sie die Personalisierung in den Nachrichtentext ein. Klicken Sie dazu auf den Nachrichteninhalt und dann auf die Schaltfläche zum Einfügen des Felds.
+1. Fügen Sie die Personalisierung in den Nachrichtentext ein. Klicken Sie hierzu in den Inhalt der Nachricht und danach auf die Schaltfläche zum Einfügen.
 1. Wählen Sie **[!UICONTROL Empfänger > Sonstige...]**.
 
    ![](assets/s_ncs_user_insert_custom_field_b.png)
@@ -83,7 +72,7 @@ Wir erstellen eine E-Mail, in der wir zunächst den Namen des Empfängers einfü
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht dieses Empfängers anzuzeigen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um das Ergebnis der Personalisierung anzuzeigen. Um die Nachricht einer empfangenden Person anzuzeigen, müssen Sie diese Person auswählen.
 
    ![](assets/s_ncs_user_insert_custom_field_d.png)
 
@@ -114,9 +103,9 @@ Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 Nach Abschluss der Analyse werden die Personalisierungsdaten mithilfe eines technischen Workflows, der während der Analyse eingerichtet wird, in einer temporären Tabelle gespeichert.
 
-Dieser Workflow ist in der Benutzeroberfläche von Adobe Campaign nicht sichtbar. Es soll lediglich ein technisches Mittel zur schnellen Speicherung und Verarbeitung von Personalisierungsdaten sein.
+Dieser Workflow ist in der Benutzeroberfläche von Adobe Campaign nicht sichtbar. Er ist lediglich ein technisches Hilfsmittel, um Personalisierungsdaten rasch zu speichern und zu verwenden.
 
-Nachdem die Analyse abgeschlossen ist, wechseln Sie zum Workflow **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Variablen]** aus. Dort sehen Sie den Namen der temporären Tabelle, mit der Sie einen SQL-Aufruf ausführen können, um die darin enthaltenen IDs anzuzeigen.
+Gehen Sie nach dem Abschluss der Analyse zu den **[!UICONTROL Eigenschaften]** des Workflows und wählen Sie die Registerkarte **[!UICONTROL Variablen]** aus. Dort wird der Name der temporären Tabelle angezeigt. Mit diesem Namen können Sie einen SQL-Aufruf durchführen, um die darin enthaltenen IDs anzuzeigen.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -158,6 +147,6 @@ Durch Hinzufügen des Objektschemas können Sie die Felder auswählen, die Sie d
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/30081?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

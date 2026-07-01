@@ -6,17 +6,13 @@ feature: Workflows, Targeting Activity
 hide: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
 TQID: https://experienceleague.adobe.com/JvMYAW0wwlFrAa8QIVcVdF7EYivhr2otLlVrIi0Axj4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 547
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +26,11 @@ Das **Listen-Update** speichert die Ergebnisse der eingehenden Aktivitäten in e
 
 Die Liste kann bereits existieren.
 
-Sie kann auch mithilfe der Optionen **[!UICONTROL Liste bei Bedarf erstellen (berechneter Name)]** und **[!UICONTROL Liste bei Bedarf erstellen (berechneter Ordner und Name)]** erstellt werden. Mit diesen Optionen können Sie den Titel Ihrer Wahl auswählen, um eine Liste zu erstellen, und später den Ordner, in dem sie gespeichert werden soll. Der Titel kann auch automatisch durch Einfügen dynamischer Felder oder eines Skripts generiert werden. Die verschiedenen dynamischen Felder sind im Popup-Menü rechts neben der Beschriftung verfügbar.
+Sie kann auch mit den Optionen **[!UICONTROL Wenn nötig, Liste erstellen (Name berechnet)]** und **[!UICONTROL Wenn nötig, Liste erstellen (Ordner und Name berechnet)]** erstellt werden. Mit diesen Optionen können Sie den Titel Ihrer Wahl auswählen, um eine Liste und später den Ordner, in dem sie gespeichert werden soll, zu erstellen. Der Titel kann auch automatisch durch Einfügen dynamischer Felder oder eines Skripts generiert werden. Die verschiedenen dynamischen Felder sind im Popup-Menü rechts neben dem Titel verfügbar.
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 
-Wenn die Liste bereits vorhanden ist, werden die Empfänger bzw. Empfängerinnen zum vorhandenen Inhalt hinzugefügt, es sei denn, Sie aktivieren die Option **[!UICONTROL Wenn sie vorhanden ist, Liste löschen (andernfalls zur Liste hinzufügen]**. In diesem Fall wird der Inhalt der Liste vor der Aktualisierung gelöscht.
+Wenn die Liste bereits existiert, werden Empfangende zum bestehenden Inhalt hinzugefügt, es sei denn, Sie aktivieren die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]**. In diesem Fall wird der Inhalt der Liste vor der Aktualisierung gelöscht.
 
 Kreuzen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder verwenden]** an, wenn die erstellte oder aktualisierte Liste nicht die Empfängertabelle verwenden soll.
 
@@ -46,7 +42,7 @@ Im Allgemeinen stellt die Speicherung einer Zielgruppe in einer Liste das Ende e
 
 ## Anwendungsbeispiel Listen-Update {#example--list-update}
 
-Im folgenden Beispiel folgt die Aktivität Listen-Update einer Abfrage, die sich an Männer über 30 richtet, die in Frankreich leben. Die Liste wird zunächst aus den Ergebnissen der Abfrage erstellt. Er wird dann jedes Mal aktualisiert, wenn er vom Workflow gestartet wird. Sie kann beispielsweise regelmäßig für zielgerichtete Werbeangebote für Kampagnen genutzt werden.
+Im folgenden Beispiel folgt die Aktivität „Listen-Update“ einer Abfrage, die sich an Männer über 30 richtet, die in Frankreich leben. Die Liste wird zunächst aus den Ergebnissen der Abfrage erstellt. Sie wird dann jedes Mal aktualisiert, wenn sie vom Workflow gestartet wird. Sie kann beispielsweise regelmäßig für zielgerichtete Werbeangebote für Kampagnen genutzt werden.
 
 1. Schließen Sie an eine Abfrage ein **[!UICONTROL Listen-Update]** an und öffnen Sie die Aktivität.
 
@@ -55,7 +51,7 @@ Im folgenden Beispiel folgt die Aktivität Listen-Update einer Abfrage, die sich
 1. Benennen Sie die Aktivität.
 1. Kreuzen Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]** an, damit die Liste bei Ausführung des ersten Workflows erstellt und später jeweils aktualisiert wird.
 1. Wählen Sie den Ordner aus, in dem die Liste gespeichert werden soll.
-1. Geben Sie einen Titel für die Liste ein. Sie können dynamische Felder einfügen, um den Namen automatisch aus der Liste zu generieren. In diesem Beispiel hat die Liste denselben Namen wie die Abfrage, um ihren Inhalt leicht identifizieren zu können.
+1. Geben Sie einen Titel für die Liste ein. Sie können dynamische Felder einfügen, um den Namen automatisch aus der Liste zu generieren. Im vorliegenden Beispiel hat die Liste denselben Namen wie die Abfrage, damit der Inhalt leichter identifiziert werden kann.
 1. Lassen Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]** aktiv, damit die Empfänger, die nicht mehr den Targeting-Kriterien entsprechen, gelöscht und die neuen Empfänger eingfügt werden.
 1. Lassen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder verwenden]** ebenfalls aktiv.
 1. Lassen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** deaktiviert.
@@ -80,6 +76,6 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 In diesem Video wird gezeigt, wie man vom Explorer aus eine Liste von Empfängern erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/27502?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

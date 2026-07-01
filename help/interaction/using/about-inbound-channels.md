@@ -5,15 +5,13 @@ description: Über Inbound-Kanäle
 feature: Interaction, Offers
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
 TQID: https://experienceleague.adobe.com/xOrs5M2yPLGEDpVwYhaylXRtSRxxzFq8AvdDehWGe3M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 215
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +27,7 @@ Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor v
 
 Bei eingehenden Kontakten gibt es zwei mögliche Ergebnisse: Der Benutzer, der Seiten durchsucht, kann entweder von der Website identifiziert werden oder nicht. Je nachdem, ob der Benutzer identifiziert wird, bietet das Angebotsmodul verschiedene Angebote an.
 
-Um Angebote auf einem eingehenden Kanal unterbreiten zu können, müssen Sie die Abfrage des Angebotsmoduls so konfigurieren, dass die Angebote unterbreitet werden sollen. In den meisten Fällen für eingehende Interaktionen ist dies die Web-Seite.
+Um in eingehenden Kanälen Angebote vorschlagen zu können, muss die Abfrage an das Angebotsmodul an der Stelle konfiguriert werden, an der die Angebote unterbreitet werden sollen. In den meisten Fällen ist dies für eingehende Interaktionen die Web-Seite.
 
 >[!NOTE]
 >

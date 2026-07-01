@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Additional data
+title: Zusätzliche Daten
 description: Additional data
 feature: Interaction, Offers
 audience: interaction
@@ -8,21 +8,14 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 TQID: https://experienceleague.adobe.com/OU8fQxcH3HXoSJbG-N-9DplMjkDVAT6tLXY-FWzPuwE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
-subfeature_v2:
-  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+subfeature_v2: id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 733
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +23,15 @@ ht-degree: 46%
 
 
 
-Während eines Aufrufs an das Interaction-Modul können Sie zusätzliche kontextuelle Informationen übertragen. Diese Daten können aus den Zielgruppendaten stammen, die in der Arbeitstabelle eines Workflows (ausgehender Kanal) gespeichert sind, oder aus den Anrufdaten, die von der Website während des Anrufs gesendet werden (eingehender Kanal). Sie können diese zusätzlichen Daten in den Eignungsregeln und in der Personalisierung von Angeboten verwenden und sie auch in einer Vorschlagstabelle speichern.
+Während eines Aufrufs an das Interaktionsmodul können Sie zusätzliche kontextuelle Informationen übertragen. Diese Daten können entweder aus der Arbeitstabelle eines Workflows stammende Daten der Zielgruppe (ausgehender Kanal) oder von der Website zum Zeitpunkt der Abfrage gesendete Aufrufdaten (eingehender Kanal) sein. Sie können diese zusätzlichen Daten in den Eignungsregeln und in der Angebotspersonalisierung verwenden und sie auch in einer Vorschlagstabelle speichern.
 
-Für den eingehenden Kanal kann es nützlich sein, Informationen wie die Browser-Sprache der Personen, die das Angebot konsultieren, oder den Namen des Callcenter-Agenten abzurufen. Sie können diese Aufrufdaten dann in den Eignungsregeln verwenden, um ein Angebot nur denjenigen Personen anzubieten, die die Web-Seite in französischer oder englischer Sprache anzeigen.
+Bei eingehenden Interaktionen kann es beispielsweise interessant sein, die Browser-Sprache der interessierten Personen oder den Namen der Callcenter-Fachkraft abzufragen, die einen Anruf entgegengenommen hat. Sie können diese Aufrufdaten dann in den Eignungsregeln verwenden, um ein Angebot nur denjenigen Personen anzubieten, die die Web-Seite in französischer oder englischer Sprache anzeigen.
 
-In einem Zielgruppen-Workflow (ausgehender Kanal) können Sie die Zielgruppendaten während eines Aufrufs an die Engine verwenden. Sie können die Zielgruppe beispielsweise mit Daten aus einer mit einem Empfänger verknüpften Transaktion oder einer externen Datenbank über die FDA anreichern.
+In einem Zielgruppenbestimmungs-Workflow (ausgehender Kanal) können Sie die Zielgruppendaten während eines Aufrufs des Moduls nutzen. Die Zielgruppe kann so z. B. mit Transaktionsdaten der Empfangenden oder mit einer externen Datenbank über den FDA angereichert werden.
 
 ## Weitere Konfigurationsmöglichkeiten {#additional-data-configuration}
 
-Sie müssen das **nms:interaction**-Schema erweitern, das mit der Umgebung verknüpft ist, und die Liste der zusätzlichen Felder deklarieren, die während eines Aufrufs an die Interaction-Engine verwendet werden. Beim Erstellen der Eignungsregel oder Personalisieren eines Angebots können diese Felder über den Knoten **Interaction** aufgerufen werden (siehe [Verwendung zusätzlicher Daten](#using-additional-data)).
+Sie müssen das **nms:interaction**-Schema erweitern, das mit der Umgebung verknüpft ist, und die Liste der zusätzlichen Felder deklarieren, die während eines Aufrufs an das Interaktionsmodul verwendet werden. Beim Erstellen der Eignungsregel oder Personalisieren eines Angebots können diese Felder über den Knoten **Interaction** aufgerufen werden (siehe [Verwendung zusätzlicher Daten](#using-additional-data)).
 
 Für eingehende Kanäle müssen im Knoten **Interaction** die Aufrufdaten eingefügt werden.
 
@@ -66,7 +59,7 @@ Für ausgehende Kanäle muss im Knoten **Interaction** ein die zusätzlichen Fel
 >
 >Sammlungen werden für den ausgehenden Kanal nicht unterstützt. Sie können jedoch Links zu anderen Schemata erstellen.
 
-Wenn Sie diese Daten in der Vorschlagstabelle speichern möchten, müssen Sie auch das Schema **nms:propositionRcp** erweitern und diese Felder deklarieren.
+Wenn Sie diese Daten in der Vorschlagstabelle speichern möchten, müssen Sie auch das **nms:propositionRcp**-Schema erweitern und diese Felder deklarieren.
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -79,7 +72,7 @@ Wenn Sie diese Daten in der Vorschlagstabelle speichern möchten, müssen Sie au
 
 ### Eingehender Kanal (Webseite) {#input-channel--web-page-}
 
-Um bei der Angebotsmodul-Abfrage zusätzliche Daten zu übergeben, muss der JavaScript-Code der Web-Seite um die Variable **interactionGlobalCtx** ergänzt werden. Fügen Sie in diese Variable den die Aufrufdaten enthaltenden **Interaction**-Knoten ein. Sie müssen dieselbe XML-Struktur wie im Schema **nms:interaction** berücksichtigen. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+Um bei der Angebotsmodul-Abfrage zusätzliche Daten zu übergeben, muss der JavaScript-Code der Web-Seite um die Variable **interactionGlobalCtx** ergänzt werden. Fügen Sie in diese Variable den die Aufrufdaten enthaltenden **Interaction**-Knoten ein. Sie müssen dieselbe XML-Struktur wie im **nms:interaction**-Schema berücksichtigen. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -87,7 +80,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Ausgehender Kanal {#output-channel}
 
-Es muss ein Zielgruppen-Workflow erstellt werden, mit dem zusätzliche Daten in die Arbeitstabelle geladen werden. Dabei müssen dieselbe XML-Struktur und dieselben internen Namen wie im **nms:interaction**-Schema beachtet werden. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+Sie müssen einen Zielgruppenbestimmungs-Workflow erstellen, mit dem zusätzliche Daten in die Arbeitstabelle geladen werden. Dabei müssen dieselbe XML-Struktur und dieselben internen Namen wie im **nms:interaction**-Schema beachtet werden. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 ## Verwendung der zusätzlichen Daten {#using-additional-data}
 
@@ -111,9 +104,9 @@ Sie können diese zusätzlichen Daten auch bei der Personalisierung eines Angebo
 
 >[!NOTE]
 >
->Sie müssen die Personalisierung der Kanäle, für die die Daten definiert sind, einschränken. In unserem Beispiel schränken wir die Regel für den eingehenden Web-Kanal ein.
+>Die Personalisierung muss sich auf die Kanäle beziehen, für die die Daten definiert wurden. Im vorliegenden Beispiel wurde die Regel auf den eingehenden Web-Kanal begrenzt. 
 
-Wenn Sie ein Angebot mit zusätzlichen Daten personalisieren, werden diese nicht automatisch in der Angebotsvorschau angezeigt, da sie nicht in der Datenbank enthalten sind. Fügen Sie daher im Tab **[!UICONTROL Aufrufdatenbeispiel]** Musterwerte ein, die in der Vorschau verwendet werden können. Beachten Sie dieselbe XML-Struktur wie in der Schemaerweiterung **nms:interaction**. Lesen Sie diesbezüglich auch den Abschnitt [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+Wenn Sie ein Angebot mit zusätzlichen Daten personalisieren, werden diese nicht automatisch in der Angebotsvorschau angezeigt, da sie nicht in der Datenbank enthalten sind. Fügen Sie daher im Tab **[!UICONTROL Aufrufdatenbeispiel]** Musterwerte ein, die in der Vorschau verwendet werden können. Beachten Sie dieselbe XML-Struktur wie in der **nms:interaction**-Schemaerweiterung. Lesen Sie diesbezüglich auch den Abschnitt [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
@@ -123,11 +116,11 @@ Klicken Sie im Vorschau-Tab auf **[!UICONTROL Personalisierungsoptionen für die
 
 ### Speicherung {#storage}
 
-Bei einem Aufruf des Moduls können Sie zusätzliche Daten in der Vorschlagstabelle speichern, um die Datenbank anzureichern. Diese Daten können beispielsweise in Berichten, in ROI-Berechnungen oder für spätere Prozesse verwendet werden.
+Zum Zeitpunkt des Aufrufs des Moduls können Sie zusätzliche Daten in der Vorschlagstabelle speichern, um die Datenbank anzureichern. Diese Daten können beispielsweise in Berichten, in ROI-Berechnungen oder für spätere Prozesse verwendet werden.
 
 >[!NOTE]
 >
->Sie müssen das Schema **nms:propositionRcp** erweitert und die Felder deklariert haben, die die zu speichernden Daten enthalten werden. Weitere Informationen hierzu finden Sie unter [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+>Sie müssen das **nms:propositionRcp**-Schema erweitert und die Felder deklariert haben, die die zu speichernden Daten enthalten werden. Weitere Informationen hierzu finden Sie unter [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 Gehen Sie in den Tab **[!UICONTROL Speicherung]** der Platzierung und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 

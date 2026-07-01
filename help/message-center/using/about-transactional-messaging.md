@@ -5,16 +5,13 @@ description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrich
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 TQID: https://experienceleague.adobe.com/n4w2hZkuzHlD3Axc1tUCGfBQ13D28j3Xpmdh07tVr4g
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: d3b34fea-a110-482f-adb2-aae8d686bac8
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 664
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +27,11 @@ Bei einer Transaktionsnachricht handelt es sich um eine individuell zugeschnitte
 
 Transaktionsnachrichten zeichnen sich durch Skalierbarkeit aus und sind rund um die Uhr verfügbar.
 
-* **Wann ist es fällig?** Da diese Nachricht wichtige Informationen enthält, erwartet der Benutzer, dass sie in Echtzeit gesendet wird. Folglich muss die Verzögerung zwischen der Auslösung des Ereignisses und dem Eintreffen der Nachricht sehr kurz sein.
+* **Wann wird diese Nachricht gesendet?** Da diese Nachricht wichtige Informationen enthält, erwartet die Benutzerin bzw. der Benutzer, dass sie in Echtzeit gesendet wird. Folglich muss die Verzögerung zwischen der Auslösung des Ereignisses und dem Eintreffen der Nachricht sehr kurz sein.
 
 * **Warum ist das wichtig?** Im Allgemeinen hat eine Transaktionsnachricht hohe Öffnungsraten. Sie sollte daher sorgfältig gestaltet werden, da sie einen starken Einfluss auf das Kundenverhalten und die Kundenbeziehung im Allgemeinen haben kann.
 
-* **Zum Beispiel?** Es kann sich um eine Begrüßungsnachricht nach der Erstellung eines Kontos, eine Bestätigung, dass eine Bestellung versandt wurde, eine Rechnung, eine Nachricht zur Bestätigung einer Passwortänderung, eine Benachrichtigung nach dem Besuch einer Website durch einen Kunden, eine Kommunikation bezüglich der Nichtverfügbarkeit eines Produkts, einen Kontoauszug usw. handeln.
+* **Beispiel:** Es kann sich um eine Begrüßungsnachricht nach der Erstellung eines Kontos, eine Bestätigung, dass eine Bestellung versandt wurde, eine Rechnung, eine Nachricht zur Bestätigung einer Passwortänderung, eine Benachrichtigung nach dem Besuch einer Website durch eine Person, eine Kommunikation bezüglich der Nichtverfügbarkeit eines Produkts, einen Kontoauszug usw. handeln.
 
 >[!IMPORTANT]
 >

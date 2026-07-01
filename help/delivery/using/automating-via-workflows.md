@@ -7,23 +7,14 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 TQID: https://experienceleague.adobe.com/1SOn2SJRorjHHnLSjPM16K5lFSkRcWvm9wpiEI7WsQk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1241
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +39,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Wird durch die Transition angegeben**
 
-  Der zu verwendende Inhalt wurde zuvor erstellt. Die Prozesse beziehen sich auf die vom eingehenden Ereignis propagierte Inhaltsinstanz. Der Zugriff auf die Inhaltskennung erfolgt über die Variable „contentId“ des Ereignisses.
+  Der zu verwendende Inhalt wurde zuvor erstellt. Die Prozesse beziehen sich auf die vom eingehenden Ereignis übernommene Inhaltsinstanz. Auf die Inhaltskennung kann über die Variable „contentId“ des Ereignisses zugegriffen werden.
 
 * **Explizit**
 
@@ -60,7 +51,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
 
-  Erstellt einen neuen Inhalt über eine Veröffentlichungsvorlage. Die Inhaltsinstanz wird im befüllten Ordner „String“ gespeichert.
+  Erstellt neue Inhalte über eine Publikationsvorlage. Die Inhaltsinstanz wird im angegebenen Ordner „String“ gespeichert.
 
 ### Inhalt aktualisieren {#update-the-content}
 
@@ -70,7 +61,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Zugriff auf Daten eines XML-Streams**
 
-  Der Inhalt wird über einen XML-Feed aus einer externen Quelle aktualisiert. Um Daten herunterzuladen, muss eine URL eingegeben werden.
+  Der Inhalt wird mit einem XML-Stream aktualisiert, der aus einer externen Quelle stammt. Um Daten herunterzuladen, muss eine URL eingegeben werden.
 
   Mithilfe eines XSL-Stylesheets können dann die eingehenden XML-Daten umgewandelt werden.
 
@@ -78,15 +69,15 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Speichern**
 
-  Speichert den erstellten oder geänderten Inhalt. Die Kennung des gespeicherten Inhalts wird in die Variable „contentId“ des ausgehenden Ereignisses übertragen.
+  Speichert den erstellten oder geänderten Inhalt. Die Kennung des gespeicherten Inhalts wird in die Variable „contentId“ des ausgehenden Ereignisses übernommen.
 
 * **Erzeugen**
 
-  Erzeugt die Ausgabedateien für jede Umwandlungsvorlage mit einer Publikation vom Typ „Datei“. Die ausgehende Transition wird für jede erzeugte Datei mit den folgenden Parametern aktiviert: die Kennung des in der Variablen „contentId“ gespeicherten Inhalts und der Dateiname in der Variablen „filename“.
+  Erzeugt die Ausgabedateien für jede Umwandlungsvorlage mit einer Veröffentlichung vom Typ „Datei“. In diesem Fall wird die ausgehende Transition für jede erzeugte Datei mit folgenden Parametern aktiviert: die Kennung des gespeicherten Inhalts in der Variablen „contentId“ und der Dateiname in der Variablen „filename“.
 
 ### Transition {#transition}
 
-Mit **Option „Ausgabetransition erzeugen** können Sie eine Ausgabetransition zur Aktivität **[!UICONTROL Content-Management“ hinzufügen]** um eine neue Aktivität mit der Workflow-Ausführung zu verknüpfen. Wenn Sie diese Option aktivieren, geben Sie einen Titel für die Transition ein.
+Mit der Option **Ausgehende Transition erzeugen** können Sie eine ausgehende Transition zur Aktivität **[!UICONTROL Content-Management]** hinzufügen, um eine neue Aktivität mit der Workflow-Ausführung zu verknüpfen. Geben Sie nach Aktivierung dieser Option einen Titel für die Transition ein.
 
 ## Beispiele {#examples}
 
@@ -164,7 +155,7 @@ Die Konfiguration des Versands erfolgt in der **Versand**-Aktion:
 
 Bei Erstellung eines neuen Versands ist die Angabe der Vorlage erforderlich.
 
-Die Versandvorlage der Aktivität wird zur Auswahl der Umwandlungsvorlagen der Veröffentlichungsvorlage verwendet. Bei der Inhaltserstellung werden alle HTML- und Textvorlagen ohne Versandvorlagen berücksichtigt oder diejenigen, auf die mit derselben Vorlage wie die Aktivität verwiesen wird.
+Die Versandvorlage der Aktivität wird zum Auswählen der Umwandlungsvorlagen der Publikationsvorlage verwendet. Die Inhaltsgenerierung berücksichtigt alle HTML- und Textvorlagen ohne Versandvorlagen oder jene, die mit derselben Vorlage wie die Aktivität referenziert werden.
 
 Empfänger und Inhalt des Versands
 
@@ -238,7 +229,7 @@ Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar 
 
 ## Halbautomatische Aktualisierung {#semi-automatic-update}
 
-Inhaltsdaten können im „halbautomatischen“ Modus aktualisiert werden. Die Daten werden von einem XML-Feed über eine URL abgerufen.
+Inhaltsdaten können im „halbautomatischen“ Modus aktualisiert werden. Die Daten werden von einem XML-Stream über eine URL abgerufen.
 
 Die Aktivierung des Datenabrufs geschieht manuell über ein Formular.
 

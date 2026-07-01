@@ -9,20 +9,14 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 TQID: https://experienceleague.adobe.com/NkKTg-a9jjxPxMawe-IUgd9V99qaoxUwWaM3-h4aUf0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: e739ee2b-6228-412e-878f-45de0791417d
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: e739ee2b-6228-412e-878f-45de0791417d
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1118
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +78,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Abstimmung
 
-   * Navigieren Sie zur **Empfänger (nms:recipient)** Tabelle.
+   * Navigieren Sie zur Tabelle **Empfänger (nms:recipient)**.
    * Wählen Sie in der Dropdown-Liste des Felds Abstimmoptionen **[!UICONTROL Einfügen]** aus und behalten Sie die anderen Standardeinstellungen bei.
 
      ![](assets/s_ncs_user_import_example04_01.png)
@@ -115,7 +109,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 ## Aktualisieren und Hinzufügen von Empfängern {#example--update-and-insert-recipients}
 
-Wir möchten die vorhandenen Datensätze in der Datenbank aktualisieren und neue aus einer Textdatei erstellen. Im Folgenden finden Sie ein Beispiel für das Verfahren:
+Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Einträge zu aktualisieren und neue Einträge in der Datenbank zu erstellen. Hier ein Beispiel für das Verfahren:
 
 1. Vorlage auswählen
 
@@ -157,7 +151,7 @@ Wir möchten die vorhandenen Datensätze in der Datenbank aktualisieren und neue
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei jedoch die bereits in der Datenbank enthaltenen Werte Vorrang haben sollen.
 
-In diesem Beispiel können Sie sehen, dass bestimmte Felder in Ihrer Textdatei einen Wert aufweisen, während die entsprechenden Felder in der Datenbank leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank enthaltene.
+Im folgenden Beispiel enthalten bestimmte Felder der Textdatei Werte, während die entsprechenden Felder in der Datenbank leer sind. Andere Felder enthalten einen Wert, der von dem in der Datenbank abweicht.
 
 * Inhalt der zu importierenden Textdatei
 
@@ -208,7 +202,7 @@ Gehen Sie wie folgt vor:
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei die in der Textdatei enthaltenen Werte Vorrang vor bereits in der Datenbank enthaltenen Werten haben sollen.
 
-In diesem Beispiel sehen Sie, dass bestimmte Felder in Ihrer Textdatei einen leeren Wert aufweisen, während die entsprechenden Felder in der Datenbank nicht leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank.
+Im folgenden Beispiel sind bestimmte Felder in Ihrer Textdatei leer, während die entsprechenden Felder in der Datenbank Werte enthalten. Andere Felder enthalten einen Wert, der von dem in der Datenbank abweicht.
 
 * Inhalt der zu importierenden Textdatei
 

@@ -8,18 +8,14 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 TQID: https://experienceleague.adobe.com/3EnUxwwGdhqG7vmysgbDBwiCbbBIl2bG1byaRe3j6O8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1210
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -31,14 +27,14 @@ ht-degree: 75%
 
 In diesem Abschnitt werden Best Practices für die Verwaltung des Interaction-Moduls in Adobe Campaign Classic vorgestellt, einschließlich Eignungsregeln, vordefinierter Filter, Workflow-Aktivitäten und Datenbankoptionen.
 
-Interaktion in Adobe Campaign erfordert sorgfältige Verwaltung, um effizient zu funktionieren. Sie müssen ein Gleichgewicht zwischen der Anzahl der Kontakte und der Anzahl der Angebotskategorien und Angebote finden. Wenn diese Faktoren nicht sorgfältig gehandhabt werden, kann es zu Problemen in Ihrer Adobe Campaign-Instanz kommen.
+Interaction in Adobe Campaign erfordert für einen effizienten Betrieb sorgfältige Verwaltung. Sie müssen ein Gleichgewicht zwischen der Anzahl der Kontakte und der Anzahl der Angebotskategorien und Angebote finden. Wenn diese Faktoren nicht sorgfältig geplant werden, kann es zu Problemen in Ihrer Adobe Campaign-Instanz kommen.
 
 ### Implementierung {#implementation}
 
 Im Folgenden sind wichtige Elemente aufgelistet, die bei der Implementierung und Konfiguration von Interaktionen beachtet werden sollten.
 
-* Bei Batch-Modulen (die in der Regel in ausgehenden Kommunikationen wie E-Mails verwendet werden) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass ist die Datenbankleistung.
-* Die wichtigste Einschränkung für eine einheitliche Engine (wird normalerweise in eingehenden Kommunikationen wie einem Banner auf einer Website verwendet) ist Latenz, da jemand eine Antwort erwartet. Der typische Engpass ist die Leistung von CPU.
+* Beim Batch-Modul (in der Regel für ausgehende Kommunikation wie E-Mails verwendet) muss vor allem der Durchsatz berücksichtigt werden, da mehrere Kontakte zur selben Zeit verarbeitet werden können. Der typische Engpass ist die Datenbankleistung.
+* Die Haupteinschränkung des Einzel-Moduls (in der Regel für eingehende Kommunikation wie Banner auf einer Website verwendet) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass ist die CPU-Leistung.
 * Der Aufbau des Angebotskatalogs hat einen großen Einfluss auf die Performance von Adobe Campaign Classic.
 * Wenn es viele Angebote gibt, teilen Sie diese in mehrere Angebotskataloge auf.
 
@@ -46,14 +42,14 @@ Im Folgenden sind wichtige Elemente aufgelistet, die bei der Implementierung und
 
 Nachfolgend sind einige Best Practices zu den Eignungsregeln aufgeführt.
 
-* Vereinfachung der Regeln. Die Komplexität von Regeln wirkt sich auf die Leistung aus, da sie die Suche erweitert. Eine komplexe Regel ist jede Regel mit mehr als fünf Bedingungen.
+* Vereinfachen Sie die Regeln. Die Komplexität von Regeln wirkt sich auf die Leistung aus, da dies die Suche erweitert. Als komplexe Regeln gelten alle Regeln, die mehr als fünf Bedingungen enthalten.
 * Um die Performance zu verbessern, können Regeln in verschiedenen vordefinierten Filtern aufgelöst werden, die von mehreren Angebote gemeinsam verwendet werden.
-* Platzieren Sie die restriktivsten Regeln für Angebotskategorien an der höchstmöglichen Position im Baum. Dadurch filtern sie zuerst die meisten Kontakte heraus, reduzieren die Anzahl der Zielkontakte und verhindern, dass sie von weiteren Regeln verarbeitet werden.
-* Setzen Sie die teuersten Regeln in Bezug auf Zeit oder Verarbeitung am unteren Ende des Baums. Dadurch werden diese Regeln nur für die verbleibende Zielgruppe ausgeführt.
+* Platzieren Sie die restriktivsten Regeln für Angebotskategorien an der höchstmöglichen Position in der Struktur. Auf diese Weise filtern sie zuerst die meisten Kontakte heraus, wodurch die Zielgruppe verkleinert wird und diese Kontakte nicht mehr von den anderen Regeln verarbeitet werden müssen.
+* Positionieren Sie die umfassendsten Regeln in Bezug auf Zeit oder Verarbeitung ganz unten in der Struktur. Auf diese Weise werden diese Regeln nur für die verbleibende Zielgruppe ausgeführt.
 * Beginnen Sie bei einer bestimmten Kategorie, um zu vermeiden, dass der gesamte Baum durchsucht wird.
-* Um Verarbeitungszeit zu sparen, berechnen Sie Aggregate vorab, anstatt komplexe Regeln mit Joins zu erstellen. Versuchen Sie dazu, Kundendaten in einer Referenztabelle zu speichern, die innerhalb der Eignungsregeln nachgeschlagen werden kann.
+* Berechnen Sie zur Reduzierung der Verarbeitungszeit Aggregate vorab, anstatt komplexe Regeln mit Joins zu erstellen. Speichern Sie dazu Kundendaten in einer Referenztabelle, die anhand von Eignungsregeln durchsucht werden kann.
 * Verwenden Sie eine minimale Anzahl von Gewichtungen, um die Anzahl der Abfragen zu begrenzen.
-* Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Platzierung zu haben. Dadurch wird ein schnellerer Abruf von Angeboten in beliebiger Platzierung gewährleistet.
+* Es wird empfohlen, eine begrenzte Anzahl von Angeboten pro Platzierung zu verwenden. Dadurch wird ein schnellerer Abruf von Angeboten in allen Platzierungen gewährleistet.
 * Verwenden Sie Indizes, insbesondere für häufig verwendete Suchspalten.
 
 ### Vorschlagstabelle {#proposition-table}
@@ -63,7 +59,7 @@ Nachfolgend sind einige Best Practices bezüglich der Vorschlagstabelle aufgefü
 * Verwenden Sie möglichst wenige Regeln, um die Verarbeitung so schnell wie möglich zu gestalten.
 * Beschränken Sie die Anzahl der Datensätze in der Vorschlagstabelle: Bewahren Sie nur die Datensätze auf, die zum Tracken der Statusaktualisierung und für die Regeln erforderlich sind, und archivieren Sie sie dann in einem anderen System.
 * Führen Sie eine intensive Datenbankwartung für die Vorschlagstabelle durch, wie z. B. eine Neuerstellung des Index oder der Tabelle.
-* Anzahl der pro Zielgruppe abgefragten Vorschläge begrenzen Legen Sie nicht mehr fest, als Sie tatsächlich verwenden werden.
+* Begrenzen Sie die Anzahl an pro Zielgruppe abgefragten Vorschlägen. Legen Sie nicht mehr als die tatsächlich verwendete Anzahl fest.
 * Vermeiden Sie möglichst Joins in den Regelbedingungen.
 
 ## Tipps und Tricks zur Verwaltung von Angeboten {#tips-managing-offers}
@@ -132,7 +128,7 @@ Bei Verwendung von Interaction und manueller Auswahl von Angeboten können beide
 
 ### Erweitern des nms:offer-Schemas {#extending-nms-offer-schema}
 
-Achten Sie bei der Erweiterung :offer nms-Schemas darauf, dass Sie die bereits eingerichtete vordefinierte Struktur befolgen:
+Achten Sie bei der Erweiterung des nms:offer-Schemas darauf, dass Sie die bereits eingerichtete vordefinierte Struktur befolgen:
 * Definieren Sie ein neues Feld für die Inhaltsspeicherung unter `<element name="view">`.
 * Jedes neue Feld muss zweimal definiert werden: einmal als normales XML-Feld und einmal als CDATA-XML-Feld mit „_jst“ an den Namen angehängt. Beispiel:
 

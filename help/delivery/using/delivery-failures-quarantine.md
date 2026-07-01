@@ -6,26 +6,15 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 TQID: https://experienceleague.adobe.com/JPAKipxGVdTfSKfmCm-4xgoaOe6sC257Spc00ddNnRY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1771
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +51,7 @@ Asynchrone Fehlermeldungen werden von der Adobe Campaign-Plattform über das Bou
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, erhält der Adobe Campaign-Versand-Server eine Fehlermeldung vom Messaging-Server oder dem Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste der Fehler besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Nachricht enthalten sind. Jeder Fehlermeldung sind Fehlertypen und Gründe zugeordnet.
 
-Diese Liste ist über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** verfügbar. Es enthält alle von Adobe Campaign verwendeten Regeln, um fehlgeschlagene Sendungen zu qualifizieren. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
+Diese Liste ist über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Verwaltung unzustellbarer Nachrichten > Versandlogqualifizierung]** verfügbar. Sie enthält alle von Adobe Campaign verwendeten Regeln, um fehlgeschlagene Sendungen zu qualifizieren. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch von Benutzenden verwaltet werden.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -70,17 +59,17 @@ Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Na
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den Inhalt der Variablen zu löschen (z. B. IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der Spalte &quot;**[!UICONTROL &quot;]**. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
+Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen, und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]** an. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 
 >[!NOTE]
 >
->Das Feld **[!UICONTROL Anzahl der]**&quot; zeigt die Anzahl der Vorkommnisse der Nachricht in der Liste an. Sie ist auf 100.000 Vorkommnisse beschränkt. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
+>Im Feld **[!UICONTROL Trefferanzahl]** wird die Anzahl der Vorkommen der Nachricht in der Liste angezeigt. Sie ist auf 100.000 Vorkommen beschränkt. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
 
 Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
-* **[!UICONTROL Zu qualifizieren]**: Die Bounce Message konnte nicht qualifiziert werden. Dem Zustellbarkeits-Team muss eine Qualifizierung zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce Message nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln verwendet.
+* **[!UICONTROL Zu qualifizieren]**: Die Bounce-E-Mail konnte nicht qualifiziert werden. Dem Zustellbarkeits-Team muss eine Qualifizierung zugewiesen werden, um eine effiziente Zustellbarkeit auf der Plattform zu gewährleisten. Nicht qualifizierte Bounce-E-Mails werden nicht zur Anreicherung der Liste mit E-Mail-Verwaltungsregeln herangezogen.
 * **[!UICONTROL Beibehalten]**: Die Bounce-E-Mail wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
 * **[!UICONTROL Ignorieren]**: Die Bounce-E-Mail wird vom Campaign MTA ignoriert, was bedeutet, dass diese Bounce-E-Mail nie dazu führt, dass die Adresse der Empfängerin bzw. des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
@@ -92,7 +81,7 @@ Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
 ### Konfiguration von E-Mail-Verwaltungsregeln {#email-management-rules}
 
-Der Zugriff auf E-Mail-Regeln erfolgt über **[!UICONTROL Knoten Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > E-Mail]** Regelsätze . E-Mail-Verwaltungsregeln werden im unteren Bereich des Fensters angezeigt.
+Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Verwaltung unzustellbarer Nachrichten > E-Mail-Regeln]** zugegriffen werden. E-Mail-Verwaltungsregeln werden im unteren Bereich des Fensters angezeigt.
 
 ![](assets/tech_quarant_rules.png)
 

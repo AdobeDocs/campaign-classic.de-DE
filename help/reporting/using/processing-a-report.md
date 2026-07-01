@@ -6,22 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 TQID: https://experienceleague.adobe.com/031f3x-e6Az-CQMGiQVY0n7xazEo8ijHPz8VEsTbgt0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
-  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
-  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: c309ee4e-82e4-4f7e-b608-ef345678c34e
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 905
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +51,7 @@ Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen a
 
 ### Anzeigemodus des Analyseberichts {#analysis-report-display-mode}
 
-Wenn Sie einen Bericht mit der Vorlage **[!UICONTROL Qualitative Verteilung]** erstellen, sind standardmäßig die Anzeigemodi Tabelle und Diagramm ausgewählt. Wenn Sie nur einen Anzeigemodus verwenden möchten, deaktivieren Sie das entsprechende Kontrollkästchen. Dies bedeutet, dass nur die Registerkarte des aktivierten Anzeigemodus verfügbar ist.
+Wenn Sie einen Bericht mit der Vorlage **[!UICONTROL Qualitative Verteilung]** erstellen, sind standardmäßig die Anzeigemodi „Tabelle“ und „Diagramm“ ausgewählt. Wenn Sie nur einen Anzeigemodus verwenden möchten, deaktivieren Sie das entsprechende Kontrollkästchen. Dies bedeutet, dass nur die Registerkarte des aktivierten Anzeigemodus verfügbar ist.
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
@@ -85,7 +77,7 @@ Wenn Sie die Anzeigeoption der Titel und Zwischensummen jedoch abwählen, ersche
 
 ![](assets/s_ncs_advuser_report_display_08.png)
 
-Standardmäßig werden die Statistiken online angezeigt. Um die Ausrichtung zu ändern, wählen Sie die entsprechende Option in der Dropdown-Liste aus.
+Standardmäßig werden die Statistiken online angezeigt. Um die Ausrichtung zu ändern, wählen Sie die gewünschte Option in der Dropdown-Liste aus.
 
 ![](assets/s_ncs_advuser_report_wizard_035a.png)
 
@@ -119,7 +111,7 @@ Folgende Optionen stehen zur Verfügung:
 * Im oberen Abschnitt des Fensters kann der Anzeigebereich der Grafik verändert werden.
 * Standardmäßig werden die Titel in der Grafik angezeigt. Um sie auszublenden, deaktivieren Sie die Option **[!UICONTROL Werte anzeigen]**.
 * Die Option **[!UICONTROL Werte kumulieren]** ermöglicht das Addieren der unterschiedlichen, von einer Serie zur anderen zurückgegebenen Werte.
-* Sie können entscheiden, ob die Diagrammlegende angezeigt werden soll oder nicht: Deaktivieren Sie zum Ausblenden die entsprechende Option. Standardmäßig wird die Legende außerhalb des Diagramms in der oberen rechten Ecke angezeigt.
+* Die Legende der Grafik kann durch Deaktivieren der entsprechenden Option ausgeblendet werden. Die Legende wird standardmäßig rechts oben außerhalb des Diagramms angezeigt.
 
   Die Legende kann auch über der Grafik angezeigt werden, um den Anzeigebereich zu sparen. Wählen Sie dazu die Option **[!UICONTROL In die Grafik einschließen]**
 
@@ -144,7 +136,7 @@ Informationen zum Speichern deskriptiver Analysen finden Sie unter [Analyseberic
 Um einen deskriptiven Analysebericht zu erstellen, muss der Assistent für deskriptive Analysen über einen Workflow oder das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** ausgeführt werden.
 
 1. Wählen Sie **[!UICONTROL Existierende Analysen und Berichte]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Auf diese Weise können Sie auf die Liste der verfügbaren Berichte zugreifen. Wählen Sie den Bericht aus, den Sie generieren möchten.
+1. Die Liste der verfügbaren Berichte wird angezeigt. Wählen Sie den Bericht aus, den Sie generieren möchten.
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 

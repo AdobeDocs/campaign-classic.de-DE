@@ -6,17 +6,13 @@ feature: Query Editor, Workflows
 hide: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 TQID: https://experienceleague.adobe.com/8G-OgPkxSAbN0bDOslzC8hMtx6TNa03rn2r-KXAmT3o
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 483
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +20,9 @@ ht-degree: 66%
 
 
 
-In diesem Beispiel möchten wir Empfänger wiederherstellen, die in den letzten 7 Tagen nicht kontaktiert wurden. Diese Abfrage betrifft alle Sendungen.
+In diesem Beispiel werden die Empfangenden gesucht, die innerhalb der letzten sieben Tage nicht kontaktiert wurden. Diese Abfrage betrifft alle Sendungen.
 
-Dieses Beispiel zeigt auch, wie Sie einen Filter konfigurieren, der mit der Auswahl eines Sammlungselements (oder orangefarbenen Knotens) verbunden ist. Sammlungselemente stehen im Fenster **[!UICONTROL Feld zur Auswahl]** zur Verfügung.
+Außerdem wird die Konfiguration eines von einem Sammlungselement (orangefarbener Knoten) ausgehenden Filters gezeigt. Sammlungselemente stehen im Fenster **[!UICONTROL Feldauswahl]** zur Verfügung.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -42,7 +38,7 @@ Dieses Beispiel zeigt auch, wie Sie einen Filter konfigurieren, der mit der Ausw
 
 Gehen Sie wie folgt vor:
 
-1. Öffnen Sie den generischen Abfrage-Editor und wählen Sie die Empfängertabellen-**[!UICONTROL (nms:recipient)]**.
+1. Öffnen Sie den generischen Abfrage-Editor und wählen Sie die Empfängertabelle **[!UICONTROL (nms:recipient)]** aus.
 1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** die Felder **[!UICONTROL Primärschlüssel]**, **[!UICONTROL Vorname]**, **[!UICONTROL Nachname]** und **[!UICONTROL E-Mail]**.
 
    ![](assets/query_editor_nveau_33.png)
@@ -52,13 +48,13 @@ Gehen Sie wie folgt vor:
    ![](assets/query_editor_nveau_34.png)
 
 1. Wählen Sie dann im **[!UICONTROL Datenfilter]**-Fenster die Option **[!UICONTROL Filterbedingungen]**.
-1. Im Fenster **[!UICONTROL Zielelement]** umfasst die Filterbedingung für die Extraktion von Profilen ohne Trackinglog für die letzten 7 Tage zwei Schritte. Bei dem Element, das Sie auswählen müssen, handelt es sich um einen n:n-Link.
+1. Anschließend wird im Fenster **[!UICONTROL Zielelement]** in zwei Schritten die gesuchte Filterbedingung zum Extrahieren von Profilen ohne Trackinglogs in den letzten 7 Tagen erstellt. Das Element, das Sie auswählen müssen, ist eine n:n-Relation.
 
    * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Sammlungselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
 
      ![](assets/query_editor_nveau_67.png)
 
-     Wählen Sie den Operator **[!UICONTROL existiert nicht als]**. Es ist nicht erforderlich, einen zweiten Wert in dieser Zeile auszuwählen.
+     Wählen Sie den Operator **[!UICONTROL existiert nicht als]**. Sie müssen keinen zweiten Wert in dieser Zeile auswählen.
 
    * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird das Feld **[!UICONTROL Ereignisdatum]** aus der Tabelle **[!UICONTROL Versandlogs der Empfänger]** vorgeschlagen, da eine Relation mit dieser Tabelle besteht.
 
@@ -91,6 +87,6 @@ Gehen Sie wie folgt vor:
 
    Weiterführende Informationen zum Hinzufügen berechneter Felder finden Sie in diesem Abschnitt.
 
-1. Das Ergebnis wird im Fenster **[!UICONTROL Datenvorschau“]**. Empfänger, die in den letzten 7 Tagen nicht kontaktiert wurden, werden in alphabetischer Reihenfolge angezeigt. Namen werden in Großbuchstaben angezeigt und die Spalte mit Vor- und Nachnamen wurde erstellt.
+1. Das Ergebnis wird im Fenster **[!UICONTROL Datenvorschau]** angezeigt. Empfangende, die in den letzten 7 Tagen nicht kontaktiert wurden, werden in alphabetischer Reihenfolge angezeigt. Namen werden in Großbuchstaben angezeigt und die Spalte mit Vor- und Nachnamen wurde erstellt.
 
    ![](assets/query_editor_nveau_41.png)

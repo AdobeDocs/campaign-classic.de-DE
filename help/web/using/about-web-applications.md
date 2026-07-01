@@ -6,28 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 TQID: https://experienceleague.adobe.com/GP-1vCAYzcgjaOyUs-Zkx6rXOLSNbpF7962OEMsw5YM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a7760dfc-5c44-4d77-bb68-c50b1e265c93id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 730
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +23,7 @@ ht-degree: 73%
 
 Adobe Campaign ermöglicht Ihnen, mit Daten aus der Datenbank dynamische und interaktive Webanwendungen zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
-Sie können Seiten erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
+Sie können Seiten erstellen, wie ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare mit Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. Diese Funktionalität ermöglicht Ihnen das Entwerfen und Posten von Web-Seiten, auf denen Benutzende Informationen suchen oder eingeben können.
 
 Dabei kann es sich um ein Anmeldeformular handeln, dessen Felder wie unten dargestellt mit Daten aus der Adobe Campaign-Datenbank vorausgefüllt wurden:
 
@@ -64,10 +50,10 @@ Web-Anwendungen in Adobe Campaign bieten folgende Funktionen:
 * Anzeige von Umfragefeldern entsprechend den Antworten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-fields-conditional-display).
 * Zufällige Anzeige von Fragen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/building-a-survey.md#adding-questions).
 * Bedingte Anzeige von Seiten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
-* Informationsüberprüfung vor der Validierung abhängig vom erwarteten Datentyp (Nummer, E-Mail-Adresse, Datum usw.) und die Pflichtfelder. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-control-settings).
+* Informationsüberprüfung vor der Validierung abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum usw.) und von den Pflichtfeldern. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-control-settings).
 * Einladungen oder Benachrichtigungen per E-Mail. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalisierung von Fehler- und Beendigungsnachrichten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#setting-up-an-error-page).
-* Verwendung von Bildern, Videos, Hypertext-Links, CAPTCHA usw. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
+* Verwendung von Bildern, Videos, Hypertext-Links, Captcha usw. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
 * Überwachung der Antworten in Echtzeit Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
@@ -98,10 +84,10 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwendungen]** in den Tabs **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]**.
 
-Web-Anwendungen werden im Knoten **[!UICONTROL Ressourcen > Online > Web]** der Adobe Campaign-Baumstruktur gespeichert. Konfigurationen sind in die folgenden Ordner unterteilt:
+Web-Anwendungen werden im Knoten **[!UICONTROL Ressourcen > Online > Web-Anwendungen]** der Adobe Campaign-Struktur gespeichert.Konfigurationen sind in die folgenden Ordner unterteilt:
 
-* **[!UICONTROL Administration > Konfiguration > Formularwiedergaben]**: Enthält die Rendering-Vorlagen für die Web-Formularpräsentation (Programme und Umfragen). Mit der Vorlage können Sie das Formular generieren. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Um ein Formular oder eine Web-Anwendung zu erstellen, müssen Sie von einer Vorlage ausgehen.
+* **[!UICONTROL Administration > Konfiguration > Formular-Renderings]**: Enthält die Rendering-Vorlagen für die Darstellung von Web-Formularen (Anwendungen und Umfragen). Mit der Vorlage können Sie das Formular generieren. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]**: Enthält Formularvorlagen. Ein Formular oder eine Web-Anwendung muss auf Grundlage einer Vorlage erstellt werden.
 
 ## Web-Anwendungsvorlagen {#web-application-templates}
 
@@ -109,7 +95,7 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 
 >[!NOTE]
 >
->Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern…]** aus.
+>Sie können eine vorhandene Web-Anwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern…]** aus.
 
 Sie können neue Vorlagen über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]** im Adobe Campaign-Baum erstellen.
 

@@ -5,24 +5,14 @@ feature: Technote, Privacy, Privacy Tools
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2083
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,8 +48,8 @@ Archivieren Sie Ihre Trackinglogs über den Aufbewahrungszeitraum von Adobe Camp
 
 ### Bewertung des aktuellen Trends bei den Öffnungsraten
 
-Bestimmen Sie, welcher Anteil Ihrer Audience die Apple-E-Mail-App auf einem iOS-Gerät verwendet.
-Mithilfe dieser Bewertung können Sie potenzielle anomale Lücken und deren Ursache identifizieren. Sie können feststellen, ob eine Lücke aufgrund von Leistungsproblemen in Campaign oder aufgrund der Datenschutzfunktion von Apple besteht. Lesen Sie die [Tipps und Tricks](#measure-ios-footprint).
+Ermitteln Sie, welcher Anteil Ihrer Zielgruppe die E-Mail-App von Apple auf einem iOS-Gerät verwendet.
+Mithilfe dieser Evaluierung können Sie potenzielle anomale Lücken und deren Ursache identifizieren. Sie können feststellen, ob eine Lücke aufgrund von Leistungsproblemen der Kampagne oder aufgrund der Datenschutzfunktion von Apple besteht. Weitere Informationen finden Sie unter [Tipps und Tricks](#measure-ios-footprint).
 
 ### Kampagnenstrategie und Leistungsmetriken neu bewerten
 
@@ -392,8 +382,8 @@ Dieses Beispiel zeigt, wie Sie Tracking-Daten aus Adobe Campaign exportieren kö
 
 1. Erstellen Sie einen Workflow, der mit einer Abfrage beginnt.
 
-   Die ursprüngliche Abfrage wird verwendet, um die Trackinglogs der letzten drei Monate abzurufen.
-Sie können eine inkrementelle Abfrage verwenden, um nur die Datensätze zu extrahieren, die Sie noch nicht exportiert haben.
+   Die anfängliche Abfrage wird zum Abrufen von Trackinglogs für die letzten drei Monate verwendet.
+Sie können eine inkrementelle Abfrage zum Extrahieren der noch nicht exportierten Einträge verwenden.
 
    Fügen Sie alle erforderlichen Informationen aus dem Knoten **[!UICONTROL Zusätzliche Daten]** hinzu.
 

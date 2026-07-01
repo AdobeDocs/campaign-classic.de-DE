@@ -6,20 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 TQID: https://experienceleague.adobe.com/xFtDxJJKoG88QlTs6AFZtHuxOEGfGtEHqEfnEarJYwY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-feature_v2:
-  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2:
-  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
-  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
-  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 532
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +27,7 @@ Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagramm
 
 ### Filtern von Daten {#filtering-data}
 
-Die Verwendung **[!UICONTROL Aktivität vom]** „Abfrage“ ist beim Erstellen eines Berichts nicht erforderlich. Daten können direkt in den Tabellen und Diagrammen gefiltert werden, aus denen der Bericht besteht.
+Die Verwendung einer Aktivität des Typs **[!UICONTROL Abfrage]** ist beim Erstellen eines Berichts nicht obligatorisch. Die Daten können direkt in den Tabellen und Diagrammen des Berichts gefiltert werden.
 
 Wählen Sie in diesem Fall die im Bericht anzuzeigenden Daten direkt in der **[!UICONTROL Seite]**-Aktivität des Berichts aus.
 
@@ -91,7 +85,7 @@ Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über di
 
 Geben Sie anschließend die Quelle der Daten Ihres Berichts im Feld **[!UICONTROL Kontextdaten]** an.
 
-Der Datenspeicherort wird automatisch abgeleitet. Bei Bedarf können Sie den Datenpfad erzwingen.
+Der Datenspeicherort wird automatisch abgeleitet. Bei Bedarf können Sie den Pfad für die Daten festlegen.
 
 ![](assets/s_ncs_advuser_report_datasource_4.png)
 

@@ -9,19 +9,13 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 TQID: https://experienceleague.adobe.com/YkFgnO67JZr1NK1OuVeVSNT4343nji7QDwFh-B4Z5q0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1053
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +25,7 @@ ht-degree: 80%
 
 Mit Exportaufträgen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kundinnen und Kunden, Listen, Segmente usw.
 
-Beispielsweise kann es nützlich sein, Tracking-Daten für Kampagnen zu verwenden (Tracking-Verlauf usw.) in einer Tabelle. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
+So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
@@ -48,7 +42,7 @@ Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden
 
 1. Klicken Sie zur Auswahl der gewünschten Vorlage rechts vom Feld **[!UICONTROL Exportvorlage]** entweder auf den Pfeil oder auf **[!UICONTROL Verknüpftes Element auswählen]**, um den Navigationsbaum zu durchsuchen.
 
-   Die native Vorlage lautet **[!UICONTROL Neuer Textexport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage zu konfigurieren. Standardmäßig werden Exportvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
+   Die native Vorlage ist **[!UICONTROL Neuer Textexport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage zu konfigurieren. Standardmäßig werden Exportvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein. Sie können eine Beschreibung hinzufügen.
 1. Wählen Sie den Exporttyp aus. Es gibt zwei mögliche Exporttypen: **[!UICONTROL Einfacher Export]**, um nur eine Datei zu exportieren, und **[!UICONTROL Mehrfacher Export]**, um mehrere Dateien in einer Ausführung zu exportieren, u. U. mit verschiedenen Quelldokumenttypen.
@@ -73,22 +67,22 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
   ![](assets/s_ncs_user_export_wizard02_b.png)
 
-  Sie müssen das Datum der letzten Änderung eingeben. Sie kann aus einem Feld abgerufen oder berechnet werden.
+  Sie müssen das Datum der letzten Änderung eingeben. Dies kann aus einem Feld abgerufen oder berechnet werden.
 
 ## &#x200B;3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
 
-Wählen Sie ein Ausgabeformat für die Exportdatei aus. Die folgenden Formate können verwendet werden: Text, Text mit festen Spalten, CSV und XML.
+Wählen Sie ein Ausgabeformat für die Exportdatei aus. Mögliche Formate sind Text, Text in festen Spalten, CSV und XML.
 
 ![](assets/s_ncs_user_export_wizard03.png)
 
 * Beim Format **[!UICONTROL Text]** sind die Spaltentrennzeichen (Tabstopp, Komma, Semikolon oder Sonstige) sowie die Zeichenfolgen-Qualifizierer (Ohne, Doppelte Anführungszeichen, Einfache Anführungszeichen) anzugeben.
 * Bei den Formaten **[!UICONTROL Text]** und **[!UICONTROL CSV]** besteht die Möglichkeit, die Option **[!UICONTROL Erste Zeile enthält die Spaltentitel]** anzukreuzen.
 * Geben Sie das Format von Datum und Zahl an. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bearbeiten]** für das entsprechende Feld und verwenden Sie den Editor.
-* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Beispielsweise kann der Titel in der Form gespeichert werden **1=Herr**, **2=**, **3=Frau**. Wenn diese Option ausgewählt ist **werden**, **Miss** und **Mrs.** exportiert.
+* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Der Titel kann beispielsweise im Format **1=Mr.**, **2=Miss**, **3=Mrs.** gespeichert werden. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
 
 ## &#x200B;4. Schritt – Daten auswählen {#step-4---data-selection}
 
-Auswahl der zu exportierenden Felder. Gehen Sie dazu wie folgt vor:
+Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie per Doppelklick die gewünschten Felder in der Liste **[!UICONTROL Verfügbare Felder]** aus, um sie zum Bereich **[!UICONTROL Ausgabespalten]** hinzuzufügen.
 1. Mit den Pfeilen rechts neben der Liste können Sie die Reihenfolge der Felder in der Ausgabedatei festlegen.
@@ -114,8 +108,8 @@ Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedi
 An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihre Titel festgelegt sowie die Schreibweise der Quelldaten angepasst werden.
 
 * Die Reihenfolge der zu exportierenden Spalten lässt sich mithilfe der blauen Pfeile rechts von der Tabelle ändern.
-* Um den Titel eines Felds zu ändern, klicken Sie in die Zelle der Spalte **[!UICONTROL Titel]**, die dem zu ändernden Feld entspricht, und geben Sie den neuen Titel ein. Drücken Sie zur Bestätigung die Eingabetaste auf der Tastatur.
-* Um eine Groß-/Kleinschreibung auf den Inhalt eines Felds anzuwenden, wählen Sie diese aus der Spalte **[!UICONTROL Umwandlung]** aus. Sie können Folgendes auswählen:
+* Der Titel eines Felds lässt sich ändern, indem Sie in der Spalte **[!UICONTROL Titel]** in die Zelle klicken, die dem zu ändernden Feld entspricht, und den neuen Titel eingeben. Drücken Sie zur Bestätigung die Eingabetaste auf der Tastatur.
+* In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- und Kleinschreibung zu verändern. Sie können Folgendes auswählen:
 
    * Alles in Großbuchstaben
    * Alles in Kleinbuchstaben
@@ -131,7 +125,7 @@ Wenn Sie eine Sammlung von Elementen exportieren (beispielsweise Abonnements von
 
 ## &#x200B;8. Schritt – Datenvorschau {#step-8---data-preview}
 
-Klicken Sie **[!UICONTROL Vorschau der Daten starten]** um eine Vorschau des Exportergebnisses anzuzeigen. Standardmäßig werden die ersten 200 Zeilen angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
+Klicken Sie auf **[!UICONTROL Datenvorschau starten]**, um eine Vorschau der Exportergebnisse anzuzeigen. Standardmäßig werden die ersten 200 Zeilen angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 

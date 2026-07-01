@@ -7,25 +7,15 @@ role: User, Developer
 hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 TQID: https://experienceleague.adobe.com/aA0JGU2WkqRg5jjJ0HIeQVEoSZ0iKTO6mb2ORC3kvcg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1100
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +127,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    >[!NOTE]
    >
-   >Der Benachrichtigungsstil (Banner oder Warnhinweis) ist in Adobe Campaign nicht definiert. Dies hängt von der vom Benutzer in den iOS-Einstellungen ausgewählten Konfiguration ab. Adobe Campaign ermöglicht jedoch die Vorschau jedes Benachrichtigungstyps. Klicken Sie auf den Pfeil unten rechts, um von einem Stil zu einem anderen zu wechseln.
+   >Der Benachrichtigungsstil (Banner oder Warnhinweis) ist in Adobe Campaign nicht definiert. Dies hängt von der durch die benutzende Person in den iOS-Einstellungen ausgewählten Konfiguration ab. Adobe Campaign ermöglicht jedoch die Vorschau jedes Benachrichtigungstyps. Klicken Sie auf den Pfeil unten rechts, um von einem Stil zu einem anderen zu wechseln.
    >
    >In der Vorschau wird das Erscheinungsbild von iOS 10 verwendet.
 
@@ -151,7 +141,7 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
 
 ## Erstellen einer Rich-Benachrichtigung für iOS {#creating-ios-delivery}
 
-Mit iOS 10 oder höher können Rich-Benachrichtigungen generiert werden. Adobe Campaign kann Benachrichtigungen mithilfe von Variablen senden, die es dem Gerät ermöglichen, eine Rich-Benachrichtigung anzuzeigen.
+Mit iOS 10 oder höher können Rich-Benachrichtigungen generiert werden. Adobe Campaign kann mithilfe von Variablen Benachrichtigungen versenden, durch die das Gerät eine Rich-Benachrichtigung anzeigen kann.
 
 Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen erstellten Mobile App.
 

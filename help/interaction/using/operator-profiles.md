@@ -8,19 +8,14 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 TQID: https://experienceleague.adobe.com/B-itT3gDb6FELHi2NUfFUL18s3eKPg4-wWAFkCzN8wI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
-subfeature_v2:
-  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 408
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 91%
 
 
 
-Es gibt zwei Typen von Benutzern, die Interaction verwenden: Angebotsverantwortliche und Versandverantwortliche. Sie haben jeweils spezifische Rechte, die ihnen nur Zugriff auf einige Teile des Baums und der Plattform gewähren.
+Zwei Arten von Benutzenden können Interaction verwenden: Angebotsverantwortliche und Versandverantwortliche. Sie verfügen über spezifische Berechtigungen, die ihnen nur Zugriff auf bestimmte Teile der Struktur und der Plattform ermöglichen.
 
 * **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote. Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer in der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** sein muss, um den Workflow auszuführen.
 * **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote.

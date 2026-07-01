@@ -6,22 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 TQID: https://experienceleague.adobe.com/5j2bwBpCx4WAyHD4jyypi5EMhw3NS-11-HkoTQ9AnU4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504edid: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 804
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +44,7 @@ Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kam
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-a-template}
 
-Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht für Ihre Empfängerinnen und Empfänger. Diese Überschrift wird jedoch in Ihrer Versandliste angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
+Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht aber für die Empfangenden. Die Bezeichnung wird aber in der Liste der Sendungen angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -68,7 +60,7 @@ Darüber hinaus besteht die Möglichkeit, außerhalb von Adobe Campaign erstellt
 
 ![](assets/dce_select_from_file_template.png)
 
-Sie können diesen Inhalt als Vorlage für die zukünftige Verwendung speichern. Nachdem Sie eine personalisierte Inhaltsvorlage erstellt haben, können Sie sie aus der Liste der Vorlagen in der Vorschau anzeigen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
+Sie können diesen Inhalt zur künftigen Verwendung als Vorlage speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
 
 >[!CAUTION]
 >

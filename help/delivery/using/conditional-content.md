@@ -8,30 +8,21 @@ role: User
 hide: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 TQID: https://experienceleague.adobe.com/S8pQz1eOVkbkBKFzhPwzEfj50cPnBBOeYNGFg-R6EZ4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 517
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Bedingter Inhalt{#conditional-content}
 
-Durch die Konfiguration bedingter Inhalte können Sie beispielsweise eine dynamische Personalisierung erstellen, die auf dem Empfängerprofil basiert. Textblöcke und/oder Bilder werden ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
+Durch die Konfiguration bedingter Inhalte können Sie eine dynamische Personalisierung basierend auf dem Empfängerprofil erstellen. Textblöcke und/oder Bilder werden ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#conditionnal-content-video).
 
@@ -40,7 +31,7 @@ Durch die Konfiguration bedingter Inhalte können Sie beispielsweise eine dynami
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine Nachricht erstellen und entsprechend dem Geschlecht und den Interessen des Empfängers dynamisch personalisieren können.
 
-* Anzeige von „Mr.“ oder „ms.“ entsprechend dem Wert im Feld **[!UICONTROL Geschlecht]** der Datenquelle (männlich bzw. weiblich).
+* Anzeige von „Herr“ oder „Frau“ entsprechend dem Wert im Feld **[!UICONTROL Geschlecht]** der Datenquelle (männlich bzw. weiblich).
 * Individuell auf den Empfänger zugeschnittene Zusammenstellung eines Newsletters oder eines Angebots in Abhängigkeit von seinen angegebenen oder erkannten Interessen:
 
    * Interessen 1 -- > Baustein 1
@@ -54,7 +45,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
-   Die Personalisierungselemente werden in den Nachrichtentext eingefügt. Jetzt müssen Sie sie konfigurieren.
+   Die Personalisierungselemente werden in den Nachrichten-Textkörper eingefügt. Jetzt müssen Sie sie konfigurieren.
 
 1. Konfigurieren Sie nun den **If**-Ausdruck.
 
@@ -65,7 +56,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
      ![](assets/s_ncs_user_conditional_content03.png)
 
    * Ersetzen Sie **`<value>`** durch den Wert des Feldes, für das die Bedingung erfüllt wird. Dieser Wert muss in Anführungszeichen gesetzt werden.
-   * Geben Sie den Inhalt an, der eingefügt werden soll, wenn die Bedingung erfüllt ist. Diese kann aus Text, einem Bild, einem Formular, einem Hypertext-Link usw. bestehen.
+   * Geben Sie den Inhalt an, der eingefügt werden soll, wenn die Bedingung erfüllt ist. Dabei kann es sich um einen Text, ein Bild, ein Formular, einen Hypertext-Link usw. handeln.
 
      ![](assets/s_ncs_user_conditional_content04.png)
 
@@ -127,6 +118,6 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/30082?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

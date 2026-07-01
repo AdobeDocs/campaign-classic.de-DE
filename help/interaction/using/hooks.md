@@ -8,17 +8,14 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 TQID: https://experienceleague.adobe.com/5c1H4pAOdsA6Tysv6SBuvl83fDWaFZ6KWZtrZCU60dw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 532
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +37,7 @@ Auf Ebene der Gewichtung ist der Erweiterungspunkt **[!UICONTROL Dynamisches Ang
 
 Dieser Erweiterungspunkt erlaubt die Anreicherung des (durch die native Abfrage geladenen) Kontaktprofils mit zusätzlichen Daten aus externen Systemen.
 
-Erfasste Daten müssen in den Aufruf-Datenknoten (Interaction-Knoten) eingefügt werden. Der Integrator muss das Aufrufdatenschema zuvor erweitert haben, um die Struktur der erfassten Daten zu definieren. Der Benutzer kann auf diese Daten auf die gleiche Weise zugreifen wie für Standardaufrufdaten (auf Eignungsregeln und Personalisierungsebene).
+Erfasste Daten müssen in den Aufrufdatenknoten (Interaktionsknoten) eingefügt werden. Der Integrator muss das Aufrufdatenschema zuvor erweitert haben, um die Struktur der erfassten Daten zu definieren. Die Benutzerin bzw. der Benutzer kann auf diese Daten auf die gleiche Weise zugreifen wie auf Standardaufrufdaten (auf Eignungsregel- und Personalisierungsebene).
 
 **Eingabeparameter:**
 
@@ -68,7 +65,7 @@ Erfasste Daten müssen in den Aufruf-Datenknoten (Interaction-Knoten) eingefügt
 
 ## Vorschlags-Anschlussvorgang {#proposition-post-processing-}
 
-Mit diesem Hook können Sie die Konsistenz und Kompatibilität der geeigneten Vorschläge in einer bestimmten Interaktion überprüfen. Außerdem können Sie eine neue Scoring- oder Wahrscheinlichkeitsberechnungsfunktion definieren.
+Dieser Erweiterungspunkt ermöglicht es, Konsistenz und Kompatibilität der geeigneten Vorschläge innerhalb einer Interaktion zu prüfen. Außerdem können Sie eine neue Scoring- oder Wahrscheinlichkeitsberechnungsfunktion definieren.
 
 Anwendungsbeispiel für Kohärenzregeln:
 
@@ -79,14 +76,14 @@ Der Anschlussvorgang wird nach Anwendung der Typologieregeln und der Sortierung 
 
 **Eingabeparameter:**
 
-* Vorschlag: Tabelle der zulässigen Vorschläge. Beispiel für die Struktur eines Elements in dieser Tabelle
+* aProposition: Tabelle der geeigneten Vorschläge. Ein Element dieser Tabelle weist folgende Struktur auf
 
   ```
   { offer_id:1234,
     weight:2}
   ```
 
-* dicOffer (XML-Typ): Wörterbuch aller Attribute der geeigneten Angebote (Angebotscode, Kategorie-ID, vollständiger Kategoriename, Startdatum, Enddatum, Titel, interner Name, Angebots-ID, zusätzliche Angebotsfelder). Beispiel
+* dicOffer (xml type): Zusammenfassung aller Attribute der geeigneten Angebote (Angebots-Code, Kategorie-ID, vollständiger Name der Kategorie, Startdatum, Enddatum, Titel, interner Name, Angebots-ID, zusätzliche Angebotsfelder). Zum Beispiel
 
   ```
   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
@@ -126,7 +123,7 @@ return aReturnedProps;
 
 ## Dynamische Angebote {#dynamic-offer}
 
-Mit diesem Hook können Sie eine externe Engine aufrufen, um eine Liste von Produkten auszuwählen, die mit einem Angebot verknüpft sind. Sie wird im Angebot nach den Eignungsregeln und vor der Anwendung der Typologieregeln konfiguriert.
+Dieser Erweiterungspunkt ermöglicht die Abfrage einer externen Engine, um eine Liste an mit einem Angebot verknüpften Produkten auszuwählen. Sie wird im Angebot nach den Eignungsregeln und vor der Anwendung der Typologieregeln konfiguriert.
 
 Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem Vorschlag zu speichernden zusätzlichen Produktdaten erweitern. Über die Relation **[!UICONTROL Aktueller Vorschlag]** auf der Registerkarte **[!UICONTROL Speicherung]** der Platzierung lässt sich die Speicherung dieser Daten (z. B. Produktnummer) definieren.
 
@@ -141,7 +138,7 @@ Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem
 
 **Ausgabeparameter:**
 
-Eine Tabelle mit zu erzeugenden Vorschlägen wird zurückgegeben. Jedes Element dieser Tabelle besteht aus den folgenden Informationen:
+Eine Tabelle mit zu erzeugenden Vorschlägen wird zurückgegeben. Jedes Element dieser Tabelle enthält folgende Informationen:
 
 * Angebotskennung;
 * zusätzliche Produktdaten (z. B. Produktcode);

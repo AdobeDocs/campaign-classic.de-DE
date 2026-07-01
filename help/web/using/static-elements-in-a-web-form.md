@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 TQID: https://experienceleague.adobe.com/X32IQAVVq68tRjHIXaHN99S-EbL3vqP0j7gTL0fvmNA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1092
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +30,7 @@ Folgende Feldtypen sind verfügbar:
 * Wert auf der Basis der zuvor eingegebenen Antworten (im Kontext des Formulars) oder der Datenbank.
 * Hypertext-Link, HTML, horizontaler Balken. Siehe [HTML-Inhalt einfügen](#inserting-html-content).
 * Bild, das in der Ressourcenbibliothek oder auf einem für Benutzer zugänglichen Server gespeichert ist. Siehe [Bilder einfügen](#inserting-images).
-* Script, das Client- und/oder Server-seitig ausgeführt wird Sie muss in JavaScript geschrieben sein und mit den meisten Browsern kompatibel sein, um eine korrekte Ausführung auf Client-Seite sicherzustellen.
+* Skript, das Client- und/oder Server-seitig ausgeführt wird Es muss in JavaScript verfasst und mit den gängigen Browsern kompatibel sein, um die korrekte Ausführung auf dem Client zu gewährleisten.
 
   >[!NOTE]
   >
@@ -49,7 +42,7 @@ Sie können in eine Formularseite HTML-Inhalte einfügen, wie z. B. Hypertext-L
 
 Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite eingefügt werden soll. Um den Editor zu öffnen, klicken Sie auf **[!UICONTROL Statische Elemente]** > **[!UICONTROL HTML]**.
 
-Sie können Ihre Inhalte direkt eingeben und formatieren oder das Quellcodefenster anzeigen, um sie in externe Inhalte einzufügen. Um in den Modus „Quell-Code“ zu wechseln, klicken Sie auf das erste Symbol in der Symbolleiste:
+Sie können Inhalte direkt eingeben und formatieren oder das Fenster mit dem Quell-Code öffnen, um externen Code einzufügen. Um in den Modus „Quell-Code“ zu wechseln, klicken Sie auf das erste Symbol in der Symbolleiste:
 
 ![](assets/s_ncs_admin_survey_html_editor.png)
 
@@ -59,7 +52,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 
 >[!NOTE]
 >
->Die im HTML-Editor eingegebenen Zeichenfolgen werden nur übersetzt, wenn sie auf der Unterregisterkarte **[!UICONTROL Texte]** definiert sind. Andernfalls werden sie nicht gesammelt. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
+>Die im HTML-Editor eingegebenen Strings werden nur übersetzt, wenn sie in der Unterregisterkarte **[!UICONTROL Texte]** definiert sind. Anderenfalls werden sie nicht erfasst. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
 
 ### Links einfügen {#inserting-a-link}
 
@@ -71,7 +64,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
 * Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
-* Im Feld **[!UICONTROL Fenster]** können Sie den Anzeigemodus für den Link im Fall einer Site auswählen. Sie können den Link in einem neuen Fenster, im aktuellen Fenster oder in einem anderen Fenster öffnen.
+* Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
 * Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
   ![](assets/s_ncs_admin_survey_send_an_email.png)
@@ -124,17 +117,17 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
 ### HTML-Inhalt personalisieren {#personalizing-html-content}
 
-Sie können den HTML-Inhalt einer Formularseite mit Daten personalisieren, die auf einer vorherigen Seite aufgezeichnet wurden. Sie können beispielsweise ein Web-Formular für Kfz-Versicherungen erstellen, auf dessen erster Seite Sie Kontaktinformationen und die Marke des Fahrzeugs angeben können.
+Sie können den HTML-Inhalt einer Formularseite mit Daten personalisieren, die auf einer vorherigen Seite aufgezeichnet wurden. So können Sie beispielsweise ein Web-Formular für eine Kfz-Versicherung erstellen, auf dessen erster Seite Sie die Möglichkeit haben, Kontaktinformationen und die Automarke einzugeben.
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Verwenden Sie Personalisierungsfelder, um den Benutzernamen und die ausgewählte Marke erneut in die nächste Seite einzufügen. Die zu verwendende Syntax hängt vom Informationsspeichermodus ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
+Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte Marke nochmals auf der nächsten Seite einfügen. Die zu verwendende Syntax hängt vom Informationsspeichermodus ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
 >Aus Sicherheitsgründen wird der in die Formel **`<%=`** eingegebene Wert durch Maskierungszeichen ersetzt.
 
-In unserem Beispiel werden der Vor- und Nachname des Empfängers in einem Feld der Datenbank gespeichert, während die Marke seines Autos in einer Variablen gespeichert wird. Die Syntax der auf Seite 2 personalisierten Nachricht sieht wie folgt aus:
+In unserem Beispiel werden der Vor- und Nachname der empfangenden Person in einem Feld der Datenbank gespeichert, während das Automodell in einer Variablen gespeichert wird. Die Syntax der auf Seite 2 personalisierten Nachricht sieht wie folgt aus:
 
 ![](assets/webapp_perso_vars_include.png)
 
@@ -168,7 +161,7 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    >[!CAUTION]
    >
-   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **&#x200B;**&#x200B;durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
+   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **** durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
 
 1. Öffnen Sie den Titel **[!UICONTROL Vorschau]** des Formulars, um den in HTML eingegebenen Wert anzuzeigen:
 
@@ -186,6 +179,6 @@ Wählen Sie die Quelle des Bildes aus, das eingefügt werden soll: Es kann in ei
 
 ![](assets/s_ncs_admin_survey_add_img.png)
 
-Wenn es sich um ein Bild aus der Bibliothek handelt, wählen Sie es im Kombinationsfeld des Felds aus. Wenn es sich in einer externen Datei befindet, geben Sie den Zugriffspfad ein. Die Beschriftung wird angezeigt, indem der Cursor über das Bild bewegt wird (entspricht einem ALT-Feld in HTML) oder wenn das Bild nicht angezeigt wird.
+Wenn das Bild aus einer Bibliothek stammt, wählen Sie es in der Dropdown-Liste des Felds aus. Wenn es in einer externen Datei gespeichert ist, geben Sie den Zugriffspfad ein. Der Titel wird angezeigt, wenn Sie den Cursor über das Bild bewegen (entspricht einem ALT-Feld in HTML) oder wenn das Bild nicht dargestellt wird.
 
 Das Bild kann im mittleren Bereich des Editors angezeigt werden.

@@ -8,18 +8,14 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 TQID: https://experienceleague.adobe.com/-Q0o3Wq57hsb8ApehXe-CD2MbzkIftqPq21DWKDuauE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 872
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +26,11 @@ ht-degree: 54%
 Zwei Möglichkeiten stehen zur Verfügung, um Angebote zum Zeitpunkt der Versanderstellung zu integrieren:
 
 * durch Abfrage des Angebotsmoduls im Nachrichten-Textkörper;
-* Referenzieren von Angeboten über die Versandentwürfe einer Kampagne Diese Methode wird im Allgemeinen für Papierkampagnen verwendet.
+* durch Referenzieren von Angeboten über die Versandentwürfe einer Kampagne. Diese Methode wird im Allgemeinen für Papierkampagnen verwendet.
 
 ## Versand mit Abfrage des Angebotsmoduls {#delivering-with-a-call-to-the-offer-engine}
 
-Um ein Angebot während einer Marketing-Kampagne zu präsentieren, erstellen Sie einfach eine klassische Versandaktion auf Basis des ausgewählten Kanals. Das Angebotsmodul wird bei der Definition des Versandinhalts aufgerufen, indem Sie auf das Symbol **[!UICONTROL Angebote]** in der Symbolleiste klicken.
+Um ein Angebot während einer Marketing-Kampagne zu unterbreiten, erstellen Sie einfach eine klassische Versandaktion auf Basis des ausgewählten Kanals. Die Abfrage des Angebotsmoduls erfolgt beim Definieren des Versandinhalts, wenn Sie in der Symbolleiste auf das Symbol **[!UICONTROL Angebote]** klicken.
 
 ![](assets/offer_delivery_009.png)
 
@@ -52,7 +48,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in Sendungen einzufügen:
 
    ![](assets/offer_delivery_002.png)
 
-1. Um die Angebotsauswahl des Moduls zu verfeinern, wählen Sie entweder die Kategorie, zu der die zu unterbreitenden Angebote gehören, oder ein/mehrere Themen aus. Es wird empfohlen, jeweils nur eines dieser Felder gleichzeitig zu verwenden, um eine Überlastung der Einschränkungen zu vermeiden.
+1. Wählen Sie zum Eingrenzen der Angebotsauswahl des Moduls entweder die Kategorie der zu unterbreitenden Angebote oder ein Thema/mehrere Themen aus. Es wird empfohlen, jeweils nur eines dieser Felder gleichzeitig zu verwenden, um eine Überlastung der Einschränkungen zu vermeiden.
 
    ![](assets/offer_delivery_003.png)
 
@@ -81,15 +77,15 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in Sendungen einzufügen:
 ### Parameter der Abfragen an das Angebotsmodul {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Platzierung]**: Zur Aktivierung des Angebotsmoduls ist die Angabe einer Platzierung aus der Angebotsumgebung zwingend erforderlich.
-* **[!UICONTROL Kategorie]** : spezifischer Ordner, in dem Angebote sortiert werden. Wenn keine Kategorie angegeben wird, werden alle in der Umgebung enthaltenen Angebote vom Angebotsmodul berücksichtigt, es sei denn, ein Design wird ausgewählt.
-* **[!UICONTROL Themes]** : Schlüsselwörter, die zuvor in den Kategorien definiert wurden. Diese dienen als Filter und ermöglichen es Ihnen, die Anzahl der zu unterbreitenden Angebote zu verfeinern, indem Sie sie in einer Reihe von Kategorien auswählen.
-* **[!UICONTROL Anzahl der Vorschläge]** : Anzahl der vom Modul zurückgegebenen Angebote, die in den Versandtext eingefügt werden können. Wenn sie nicht in die Nachricht eingefügt werden, werden die Angebote weiterhin generiert, aber nicht angezeigt.
-* **[!UICONTROL Nicht geeignete Empfänger ausschließen]** : Mit dieser Option können Sie den Ausschluss von Empfängern aktivieren oder deaktivieren, für die nicht genügend geeignete Angebote vorhanden sind. Die Anzahl der geeigneten Vorschläge kann kleiner sein als die angeforderte Anzahl von Vorschlägen. Wenn diese Option aktiviert ist, werden Empfänger, für die nicht genügend Vorschläge vorhanden sind, vom Versand ausgeschlossen. Wenn Sie diese Option nicht auswählen, werden diese Empfänger nicht ausgeschlossen, erhalten jedoch nicht die angeforderte Anzahl an Vorschlägen.
-* **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]** : Mit dieser Option wählen Sie aus, wie die Nachricht verarbeitet werden soll, wenn ein Vorschlag nicht existiert. Wenn dieses Kontrollkästchen aktiviert ist, wird die Darstellung des fehlenden Vorschlags nicht angezeigt und es wird kein Inhalt in der Nachricht für diesen Vorschlag angezeigt. Wenn das Kontrollkästchen nicht aktiviert ist, wird die Nachricht selbst während des Versands abgebrochen und die Empfänger erhalten keine Nachrichten mehr.
+* **[!UICONTROL Kategorie]**: Konkreter Ordner, in dem die Angebote sortiert werden. Wenn keine Kategorie angegeben wird, berücksichtigt das Angebotsmodul alle in der Umgebung enthaltenen Angebote, es sei denn, es wird ein Thema ausgewählt.
+* **[!UICONTROL Themen]**: Schlüsselwörter, die zuvor in den Kategorien definiert wurden. Sie dienen als Filter und ermöglichen es Ihnen, die Anzahl der zu unterbreitenden Angebote durch Auswahl in einer Reihe von Kategorien zu verfeinern.
+* **[!UICONTROL Anzahl der Vorschläge]**: Anzahl der vom Modul zurückgegebenen Angebote, die in den Versandtext eingefügt werden können. Wenn sie nicht in die Nachricht eingefügt werden, werden die Angebote weiterhin generiert, aber nicht unterbreitet.
+* **[!UICONTROL Nicht qualifizierte Empfangende ausschließen]**: Mit dieser Option können Sie den Ausschluss von Empfängerinnen und Empfängern aktivieren oder deaktivieren, für die nicht genügend geeignete Angebote vorhanden sind. Die Anzahl der geeigneten Vorschläge kann kleiner sein als die angeforderte Anzahl von Vorschlägen. Wenn diese Option aktiviert ist, werden Empfängerinnen und Empfänger, für die nicht genügend Vorschläge vorhanden sind, vom Versand ausgeschlossen. Wenn Sie diese Option nicht auswählen, werden diese Empfängerinnen und Empfänger nicht ausgeschlossen, erhalten jedoch nicht die angeforderte Anzahl an Vorschlägen.
+* **[!UICONTROL Leere Darstellung anzeigen, wenn kein Angebot ausgewählt wurde]**: Mit dieser Option können Sie festlegen, wie die Nachricht verarbeitet werden soll, wenn einer der Vorschläge nicht existiert. Wenn diese Option aktiviert ist, wird keine Darstellung des fehlenden Vorschlags angezeigt und es wird auch kein Inhalt für diesen Vorschlag in der Nachricht angezeigt. Wenn die Option deaktiviert ist, wird der Versand der Nachricht selbst abgebrochen und die Empfängerinnen und Empfänger erhalten keine Nachrichten mehr.
 
 ### Angebotsvorschläge in einen Versand einfügen {#inserting-an-offer-proposition-into-a-delivery}
 
-Die Darstellung der zu unterbreitenden Angebote wird über die Zusammenführungsfelder in den Versandkörper eingefügt. Die Anzahl der Vorschläge wird in den Parametern der Angebotsmodul-Abfrage definiert.
+Die Darstellung der zu unterbreitenden Angebote wird mithilfe der Zusammenführungsfelder in den Text des Versands eingefügt. Die Anzahl der Vorschläge wird in den Parametern der Angebotsmodulabfrage definiert.
 
 Die Nachrichtenpersonalisierung kann entweder über Felder des Angebots oder im Fall von E-Mails über Rendering-Funktionen geschehen.
 

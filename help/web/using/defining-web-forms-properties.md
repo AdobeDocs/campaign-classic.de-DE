@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 TQID: https://experienceleague.adobe.com/noM8sS3EYxAkGQdb3nLaXLIIXZ-jIKvD56BCz-pNhj0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1443
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +23,7 @@ ht-degree: 67%
 
 Sie können Web-Formulare vollständig Ihren Anforderungen entsprechend konfigurieren und personalisieren. Die Parameter müssen im Eigenschaftenfenster eingegeben werden.
 
-Auf das Eigenschaftenfenster kann über die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste des Web-Formulars zugegriffen werden. In diesem Fenster können Sie auf eine Reihe von Einstellungen zugreifen, die für das Web-Formular spezifisch sind. Einige Einstellungen stammen möglicherweise aus der Vorlagenkonfiguration.
+Auf das Eigenschaftenfenster können Sie über die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste des Web-Formulars zugreifen. In diesem Fenster können Sie auf eine Reihe von Einstellungen zugreifen, die für das Web-Formular spezifisch sind. Einige Einstellungen stammen möglicherweise aus der Vorlagenkonfiguration.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
@@ -78,9 +71,9 @@ Sie können zwischen der Navigation per Link oder Schaltfläche wählen.
 
 Schaltflächen sind standardmäßig die Navigationselemente. Sie ermöglichen Ihnen die folgenden Aktionen:
 
-* Genehmigen Sie die aktuelle Seite und zeigen Sie die nächste Seite an, indem Sie auf **[!UICONTROL Weiter]** klicken. Diese Schaltfläche wird auf allen Seiten mit Ausnahme der letzten angezeigt.
-* Zeigen Sie die vorherige Seite an, indem Sie auf **[!UICONTROL Zurück]** klicken. Diese Schaltfläche wird mit Ausnahme der ersten auf allen Seiten angezeigt.
-* Speichern Sie die Formularantworten, indem Sie auf die Schaltfläche **[!UICONTROL Genehmigen]** klicken. Diese Schaltfläche wird nur auf der letzten Seite angezeigt.
+* Die aktuelle Seite validieren und durch Auswahl von **[!UICONTROL Weiter]** die nächste Seite anzeigen. Diese Schaltfläche wird auf allen Seiten mit Ausnahme der letzten angezeigt.
+* Durch Auswahl von **[!UICONTROL Zurück]** die vorherige Seite anzeigen. Diese Schaltfläche wird auf allen Seiten mit Ausnahme der ersten angezeigt.
+* Die Formularantworten durch Auswahl der Schaltfläche **[!UICONTROL Validieren]** speichern. Diese Schaltfläche wird nur auf der letzten Seite angezeigt.
 
 Diese Elemente werden unten auf jeder Seite angezeigt. Ihre Positionen können geändert werden. Dazu müssen Sie das Stylesheet ändern.
 
@@ -132,7 +125,7 @@ Dort können Sie auch Übersetzungen verwalten. Siehe [Webformular übersetzen](
 
 Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Veröffentlichungsphase (siehe [Formular veröffentlichen](publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
 
-Der Gültigkeitszeitraum reicht vom **[!UICONTROL Start]** Datum bis zum **[!UICONTROL Enddatum]**. Wenn in diesen Feldern keine Daten angegeben sind, hat das Formular eine permanente Gültigkeit.
+Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum **[!UICONTROL Enddatum]**. Wenn in diesen Feldern keine Daten angegeben sind, hat das Formular permanente Gültigkeit.
 
 ![](assets/s_ncs_admin_survey_properties_date.png)
 
@@ -154,15 +147,15 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/access-management.md).
 
-Mit **[!UICONTROL Option „Spezifisches Konto verwenden]** können Sie die Lese- oder Schreibberechtigung des Benutzers einschränken, der auf das Formular zugreift. Verwenden Sie das Dropdown-Feld, um einen Benutzer oder eine Benutzergruppe auszuwählen, der bzw. die für die Erteilung dieser Berechtigungen zuständig sein soll.
+Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte der Person einschränken, die auf das Formular zugreift. Wählen Sie in der Dropdown-Liste eine Person oder eine Benutzergruppe aus, die für die Vergabe dieser Berechtigungen zuständig sein soll.
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
 ## Parameter der Formular-URL {#form-url-parameters}
 
-Sie können der URL eines Formulars zusätzliche Parameter hinzufügen, um dessen Inhalt zu personalisieren und einen Kontext zu initialisieren (Sprache, verschlüsselte Empfänger-ID, Unternehmen, in einer Variablen gespeicherte berechnete Formel usw.). Auf diese Weise können Sie über mehrere verschiedene URLs Zugriff auf ein Formular gewähren und den Seiteninhalt basierend auf dem Wert der in der URL angegebenen Parameter personalisieren.
+Sie können zur URL eines Formulars zusätzliche Parameter hinzufügen, um seinen Inhalt zu personalisieren und einen Kontext zu initialisieren (Sprache, verschlüsselte Empfänger-ID, Unternehmen, berechnete, in einer Variablen gespeicherte Formel etc.). Dadurch können Sie über mehrere URLs Zugriff auf ein Formular gewähren und den Seiteninhalt basierend auf dem in der URL angegebenen Parameterwert anpassen.
 
-Standardmäßig bietet Adobe Campaign Parameter zur Vorschau des Formulars und zur Fehlerüberprüfung. Sie können neue mit dem Formular verknüpfte Einstellungen erstellen, die die Werte eines Felds in der Datenbank oder einer lokalen Variablen verwenden können.
+Standardmäßig bietet Adobe Campaign Parameter zur Vorschau des Formulars und zur Fehlerüberprüfung. Sie können neue, mit dem Formular verknüpfte Einstellungen definieren, die die Werte eines Datenbankfelds oder einer lokalen Variablen verwenden können.
 
 ## Standardparameter {#standard-parameters}
 
@@ -171,13 +164,13 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 * **id** zur Darstellung der verschlüsselten Kennung
 * **lang** zur Änderung der Anzeigesprache
 * **origin** zur Spezifizierung der Herkunft des reagierenden Kontakts
-* **_uuid** Aktiviert die Anzeige von Formularen vor der Veröffentlichung und die Fehlerverfolgung. Dieser Parameter ist für den internen Gebrauch bestimmt (Erstellung und Debugging): Wenn Sie über diese URL auf das Web-Formular zugreifen, werden die erstellten Datensätze bei der Verfolgung nicht berücksichtigt (Berichte). Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
+* **_uuid** aktiviert die Anzeige von Formularen vor der Veröffentlichung und das Fehler-Tracking. Dieser Parameter ist nur für die interne Nutzung vorgesehen (Erstellung und Debugging): Wenn Sie ein Web-Formular über diese URL aufrufen, werden beim Tracking (in Berichten) die erzeugten Einträge nicht berücksichtigt. Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
 
   Dieser Parameter wird gemeinsam mit den Parametern **_preview** und/oder **_debug** verwendet:
 
-  **_preview** um die zuletzt gespeicherte Version anzuzeigen. Dieser Parameter darf nur in der Testphase verwendet werden.
+  **_preview** zur Anzeige der zuletzt gespeicherten Version. Dieser Parameter darf nur in der Testphase verwendet werden.
 
-  **_debug**, um die Spur der eingegebenen Daten anzuzeigen oder auf den Seiten des Formulars zu berechnen. Damit können Sie weitere Informationen zu Fehlern abrufen, u. a. nach der Veröffentlichung des Formulars.
+  **_debug** zur Anzeige der Spur der eingegebenen oder auf den Formularseiten berechneten Daten. Damit können Sie weitere Informationen zu Fehlern abrufen, u. a. nach der Veröffentlichung des Formulars.
 
   >[!CAUTION]
   >
@@ -185,13 +178,13 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 
 ## Parameter hinzufügen {#adding-parameters}
 
-Parameter können über die Registerkarte **[!UICONTROL Parameter…]** im Fenster Eigenschaften des Formulars hinzugefügt werden. Sie können wie unten dargestellt obligatorisch gemacht werden:
+Parameter können im Eigenschaftenfenster des Formulars über die Registerkarte **[!UICONTROL Parameter…]** hinzugefügt werden. Sie können wie unten dargestellt obligatorisch gemacht werden:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
 Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
 
-Der Status der Auskunftsperson (0, 1 oder ein beliebiger anderer Wert) kann dann der URL für den Zugriff auf das Formular hinzugefügt werden. Diese Informationen können auf den Seiten des Formulars oder in einem Testfeld wiederverwendet werden. Die angezeigten Seiten können entsprechend dem Wert des Kontexts konditioniert werden, wie unten dargestellt:
+Der Status der reagierenden Kontakte (0, 1 oder ein beliebiger anderer Wert) kann dann der URL für den Zugriff auf das Formular hinzugefügt werden. Diese Informationen können auf den Seiten des Formulars oder in einem Testfeld wiederverwendet werden. Die angezeigten Seiten können entsprechend dem Wert des Kontexts mit Bedingungen versehen werden, wie unten dargestellt:
 
 1. Startseite für Kunden (**Status = 1**):
 

@@ -6,22 +6,14 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 TQID: https://experienceleague.adobe.com/xSG6-FShBqzQfEkFVf4bjadhcwGNzfxhIWvfFpMgFzg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2:
-  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
-  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
-  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2534
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +21,11 @@ ht-degree: 78%
 
 
 
-Diese Berichte beziehen sich auf die Aktivität der Daten in der gesamten Datenbank. Um das Berichte-Dashboard anzuzeigen, gehen Sie zur Registerkarte **[!UICONTROL Berichte]** .
+Diese Berichte beziehen sich auf Aktivitäten im Zusammenhang mit Daten der gesamten Datenbank. Um das Berichts-Dashboard anzuzeigen, navigieren Sie zur Registerkarte **[!UICONTROL Berichte]**.
 
 ![](assets/s_ncs_user_report_delivery_link.png)
 
-Um Berichte anzuzeigen, klicken Sie auf ihre Namen. Die folgenden Berichte sind standardmäßig verfügbar:
+Um Berichte anzuzeigen, klicken Sie auf ihren Namen. Standardmäßig sind die folgenden Berichte verfügbar:
 
 ![](assets/s_ncs_user_report_global_list.png)
 
@@ -57,11 +49,11 @@ Um Berichte anzuzeigen, klicken Sie auf ihre Namen. Die folgenden Berichte sind 
 
 ## Versanddurchsatz {#delivery-throughput}
 
-Dieser Bericht enthält Informationen zum Versanddurchsatz der gesamten Plattform für einen bestimmten Zeitraum. Zur Messung der Versandgeschwindigkeit von Nachrichten werden als Kriterien die Anzahl der pro Stunde gesendeten Nachrichten und die Größe der Nachrichten (in Bit pro Sekunde) herangezogen. Im folgenden Beispiel zeigt das erste Diagramm die erfolgreichen Sendungen in Blau und die Anzahl der fehlerhaften Sendungen in Orange an.
+Dieser Bericht enthält Informationen zum Versanddurchsatz der gesamten Plattform für einen bestimmten Zeitraum. Die Kriterien zur Messung der Versandgeschwindigkeit von Nachrichten sind die Anzahl der pro Stunde gesendeten Nachrichten und die Größe der Nachrichten (in Bits pro Sekunde). Im folgenden Beispiel zeigt das erste Diagramm die erfolgreichen Sendungen in Blau und die Anzahl der fehlerhaften Sendungen in Orange an.
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klicken Sie **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Sie können die angezeigten Werte konfigurieren, indem Sie die Zeitskala ändern: 1-Stunden-Ansicht, 3-Stunden-Ansicht, 24-Stunden-Ansicht usw. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 >[!NOTE]
 >
@@ -79,15 +71,15 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Öffnungen]** : Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
+* **[!UICONTROL Öffnungen]**: Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmeldungs-Links und Mirrorseiten werden nicht berücksichtigt.
-* **[!UICONTROL Transaktionen]** : Gesamtzahl der Transaktionen, nachdem eine Nachricht empfangen wurde. Damit eine Transaktion berücksichtigt wird, muss ein Webtracking-Tag vom Typ Transaktion in die entsprechende Web-Seite eingefügt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
+* **[!UICONTROL Transaktionen]**: Gesamtzahl der Transaktionen, nachdem eine Nachricht empfangen wurde. Damit die Transaktionen berücksichtigt werden können, muss auf der entsprechenden Webseite ein Web-Tracking-Tag vom Typ „Transaktion“ gesetzt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
 
 ## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces}
 
 Dieser Bericht zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ und nach Domain.
 
-Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** gibt die Gesamtzahl der vom Versand-Server verarbeiteten Nachrichten an. Dieser Wert ist kleiner als die Anzahl der Nachrichten, die versendet werden sollen, wenn einige Sendungen gestoppt oder angehalten wurden (bevor sie vom Server verarbeitet werden).
+Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** stellt die Gesamtzahl der vom Versand-Server verarbeiteten Nachrichten dar. Wenn einige Sendungen gestoppt oder pausiert wurden (bevor sie vom Server verarbeitet wurden), ist dieser Wert niedriger als die Anzahl der zu sendenden Nachrichten.
 
 ![](assets/s_ncs_user_errors_report.png)
 
@@ -119,7 +111,7 @@ Folgende Indikatoren werden angezeigt:
   >
   >Dieser Fehler betrifft nur Sendungen über Mobile-Kanäle. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sms-channel.md).
 
-  Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das `[+]` klicken. Für jeden Fehlertyp können Sie die Aufschlüsselung der Fehlermeldungen nach Domain anzeigen.
+  Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol `[+]` klicken.Damit kann für jeden Fehlertyp die Aufschlüsselung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
   ![](assets/s_ncs_user_errors_report_detail.png)
 
@@ -133,7 +125,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] klicken. Sie können für jeden Domain-Typ die Aufschlüsselung der Fehlermeldungen nach Fehlertyp anzeigen.
+Sie können jede Zeile der Wertetabelle öffnen, indem Sie auf das Symbol [+] klicken.Damit kann für jeden Domain-Typ die Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp angezeigt werden.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
@@ -169,7 +161,7 @@ In der Tabelle der allgemeinen Statistiken können Sie auf die Browser-Namen kli
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
-Die **[!UICONTROL Verlauf]**-Kurve stellt die Anwesenheitsrate dieses Browsers pro Tag dar. Die Rate ist das Verhältnis zwischen der Anzahl der Besucher pro Tag (in diesem Browser) und der Anzahl der Besucher, die an dem Tag mit der höchsten Anwesenheitsrate gemessen wird.
+Die Kurve **[!UICONTROL Verlauf]** stellt die Anwesenheitsrate dieses Browsers pro Tag dar. Bei der Rate handelt es sich um das Verhältnis der Anzahl an Besuchenden pro Tag (über diesen Browser) im Vergleich zur Anzahl an Besuchenden gemessen am Tag mit der höchsten Anwesenheitsrate.
 
 Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
 
@@ -180,9 +172,9 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ### Teilen über soziale Netzwerke {#sharing-to-social-networks}
 
-Empfänger von Sendungen können im Rahmen von Viral-Marketing Informationen mit ihrem Kontaktnetzwerk teilen: Sie können ihrem Profil einen Link hinzufügen (Facebook, X - früher als Twitter bezeichnet). oder senden Sie eine Nachricht an einen Freund. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
+Mit viralem Marketing können Empfängerinnen und Empfänger eines Versands Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen, etwa Facebook, X (ehemals Twitter) usw. oder eine Nachricht an eine Freundin oder einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
-Dieser Bericht zeigt die Aufschlüsselung der freigegebenen und geöffneten Nachrichten nach sozialen Netzwerken (Facebook, X usw.) und/oder pro E-Mail.
+Dieser Bericht zeigt in sozialen Netzwerken (Facebook, X etc.) und/oder per E-Mail geteilte und geöffnete Nachrichten.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -215,7 +207,7 @@ Dieser Bereich veranschaulicht in zwei Diagrammen die Aufschlüsselung von Teilu
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
-Dieser Bericht zeigt die Entwicklung von Freigaben für soziale Netzwerke (Facebook, X - früher bekannt als Twitter, E-Mail, etc.) rechtzeitig.
+Dieser Bericht zeigt die Entwicklung von in sozialen Netzwerken wie Facebook, X (ehemals Twitter) usw. geteilten Nachrichten im Zeitverlauf.
 
 Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
@@ -226,7 +218,7 @@ Die Statistiken werden in Form von Diagrammen und Tabellen dargestellt.
 Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Neue Kontakte]** : Anzahl neuer Anmeldungen infolge des Erhalts einer per E-Mail geteilten Nachricht. Der Wert entspricht der Anzahl an Personen, die per E-Mail eine weitergeleitete Nachricht erhalten, auf den **[!UICONTROL Anmelde-Link]** geklickt und das Formular ausgefüllt haben.
-* **[!UICONTROL Öffnungen]** : Gesamtzahl der Nachrichten, die von Personen geöffnet wurden, an die die Nachricht übertragen wurde (über den **[!UICONTROL Link für die Freigabe in sozialen Netzwerken]** Personalisierungsblock). Der Wert entspricht der Anzahl der Mirrorseiten-Öffnungen. Öffnungen durch Versandempfänger werden nicht berücksichtigt.
+* **[!UICONTROL Öffnungen]**: Anzahl der Nachrichten, die von Personen geöffnet wurden, an die die Nachricht (über den Gestaltungsbaustein **[!UICONTROL Link zum Teilen in sozialen Netzwerken]**) weitergeleitet wurde. Der Wert entspricht der Anzahl der Mirrorseiten-Öffnungen. Öffnungen durch Versandempfänger werden nicht berücksichtigt.
 * **[!UICONTROL Teilungen]**: Anzahl der in sozialen Netzwerken geteilten Nachrichten. Dieser Wert entspricht der Zahl der Klicks auf das dem Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** entsprechende Symbol.
 
 ## Betriebssysteme {#operating-systems}
@@ -257,7 +249,7 @@ In der Tabelle der allgemeinen Statistiken können Sie auf die Namen der einzeln
 
 Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
-Die **[!UICONTROL Verlauf]**-Kurve stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Diese Rate ist das Verhältnis der Anzahl der Besucher pro Tag (auf diesem Betriebssystem) in Bezug auf die Anzahl der Besucher, die an dem Tag mit der höchsten Anwesenheitszahl gemessen werden.
+Die Kurve **[!UICONTROL Verlauf]** stellt die Nutzungsrate dieses Betriebssystems pro Tag dar. Bei der Rate handelt es sich um das Verhältnis der Anzahl an Besuchenden pro Tag (unter diesem Betriebssystem) im Vergleich zur Anzahl an Besuchenden gemessen am Tag mit der höchsten Anwesenheit.
 
 Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
 
@@ -268,7 +260,7 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ## Abonnement-Verfolgung {#subscription-tracking}
 
-Dieser Bericht ermöglicht die Überwachung von Abonnements für Informations-Services. Hier werden An- und Abmeldungen angezeigt.
+Mit diesem Bericht können Sie die Abonnements für Informationsdienste überwachen. Es werden An- und Abmeldungen angezeigt.
 
 ![](assets/s_ncs_user_services_report.png)
 
@@ -285,7 +277,7 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 * **[!UICONTROL Angemeldet]**: Anzahl der Abonnenten insgesamt für den entsprechenden Zeitraum.
 * **[!UICONTROL Anmeldungen]**: Anzahl der Anmeldungen für den entsprechenden Zeitraum.
 * **[!UICONTROL Abmeldungen]**: Anzahl der Abmeldungen für den entsprechenden Zeitraum.
-* **[!UICONTROL Entwicklung]** : Anzahl der Abmeldungen abzüglich der Anzahl der Abonnements. Der Tarif wird anhand der Gesamtzahl der Abonnenten berechnet.
+* **[!UICONTROL Entwicklung]**: Anzahl der Abmeldungen abzüglich der Anzahl der Anmeldungen. Die Rate wird basierend auf der Gesamtzahl der Abonnentinnen und Abonnenten berechnet.
 * **[!UICONTROL Treue]**: Treuerate der Abonnenten über den entsprechenden Zeitraum.
 
 **[!UICONTROL Kurven zur Anmeldeentwicklung]**
@@ -315,7 +307,7 @@ Folgende Indikatoren werden angezeigt:
 
 ## Aufschlüsselung der Öffnungen {#breakdown-of-opens}
 
-Dieser Bericht zeigt die Aufschlüsselung der Öffnungen nach Betriebssystem, Gerät und Browser im betreffenden Zeitraum. Für jede Kategorie werden zwei Diagramme verwendet. Das erste zeigt Statistiken zu Öffnungen auf Computern und Mobilgeräten. Die zweite zeigt Statistiken an, die sich nur auf Öffnungen auf Mobilgeräten beziehen.
+Dieser Bericht zeigt die Aufschlüsselung von Öffnungen nach Betriebssystem, Gerät und Browser für den entsprechenden Zeitraum an. Für jede Kategorie werden zwei Diagramme verwendet. Das erste zeigt Statistiken zu Öffnungen auf Computern und Mobilgeräten. Das zweite zeigt nur Statistiken zu Öffnungen auf Mobilgeräten an.
 
 Die Anzahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
 

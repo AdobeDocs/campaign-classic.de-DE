@@ -8,24 +8,14 @@ audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 TQID: https://experienceleague.adobe.com/9IREhm2ZwMGCGIMbTQYOpSA4PiLxoJOVPQty4WreUWY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 600
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +33,7 @@ Führen Sie die unten aufgeführten Schritte aus, um die Konfiguration in Adobe 
 1. [Konfigurieren Sie das externe Konto.](#configure-the-external-account)
 1. [Konfigurieren Sie AEM-Ressourcenfilter.](#configure-aem-resources-filtering)
 
-Für erweiterte Konfigurationen wie die Verwaltung von Personalisierungsfeldern und -bausteinen. Siehe Adobe Experience Manager [Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/campaignonpremise.html).
+Erweiterte Konfigurationen wie die Verwaltung von Personalisierungsfeldern und -bausteinen. Weitere Informationen finden Sie in der [Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/campaignonpremise.html) zu Adobe Experience Manager.
 
 ### Installieren Sie das AEM-Integrations-Package in Adobe Campaign. {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -59,11 +49,11 @@ Installieren Sie zunächst das **[!UICONTROL AEM-Integrations]**-Package.
 
    ![](assets/aem_config_2.png)
 
-1. Klicken Sie im nächsten Fenster auf die Schaltfläche **[!UICONTROL Starten]**, um die Installation Ihres Pakets zu starten. Schließen Sie das Fenster, sobald die Installation abgeschlossen ist.
+1. Klicken Sie im nächsten Fenster auf die Schaltfläche **[!UICONTROL Starten]**, um mit der Installation des Pakets zu starten. Schließen Sie das Installationsfenster, wenn die Installation abgeschlossen ist.
 
 ### Sicherheitszone für AEM-Operator konfigurieren {#configure-the-security-zone-for-aem-operator}
 
-Das Package Integration mit AEM **&#x200B;**&#x200B;legt den **[!UICONTROL aemserver]**-Operator in Campaign fest. Dieser Operator wird verwendet, um den Adobe Experience Manager-Server mit Adobe Campaign zu verbinden.
+Das **[!UICONTROL AEM-Integrationspaket]** legt den Operator **[!UICONTROL aemserver]** in Campaign fest. Mit diesem Operator wird der Adobe Experience Manager-Server mit Adobe Campaign verbunden.
 
 Sie müssen für diesen Operator eine Sicherheitszone konfigurieren, um über Adobe Experience Manager eine Verbindung mit Adobe Campaign herzustellen.
 
@@ -80,7 +70,7 @@ Wenn Ihre Campaign-Instanz von Adobe gehostet wird, wenden Sie sich an das Team 
 
 ### Externes Konto konfigurieren {#configure-the-external-account}
 
-Mit dem Package **[!UICONTROL AEM-Integration]** wurde das externe Konto für Adobe Experience Cloud erstellt. Jetzt müssen Sie es konfigurieren, um eine Verbindung mit Ihrer Adobe Experience Manager-Instanz herzustellen.
+Das **[!UICONTROL AEM-Integrationspaket]** hat das externe Konto für Adobe Experience Cloud erstellt. Jetzt müssen Sie es konfigurieren, um eine Verbindung mit Ihrer Adobe Experience Manager-Instanz herzustellen.
 
 Gehen Sie zur Konfiguration des externen AEM-Kontos folgendermaßen vor:
 
@@ -107,7 +97,7 @@ Gehen Sie zur Konfiguration des externen AEM-Kontos folgendermaßen vor:
 
 ### AEM-Ressourcenfilter konfigurieren {#configure-aem-resources-filtering}
 
-Die Option **AEMResourceTypeFilter** wird verwendet, um Typen von Experience Manager-Ressourcen zu filtern, die in Adobe Campaign verwendet werden können. Dadurch kann Adobe Campaign Experience Manager-Inhalte abrufen, die speziell für die Verwendung in Adobe Campaign entwickelt wurden.
+Die Option **AEMResourceTypeFilter** wird zum Filtern von Typen von Experience Manager-Ressourcen verwendet, die in Adobe Campaign genutzt werden können. Dadurch kann Adobe Campaign Inhalte von Experience Manager abrufen, die speziell für die Verwendung in Adobe Campaign konzipiert sind.
 
 So prüfen Sie, ob die Option **[!UICONTROL AEMResourceTypeFilter]** konfiguriert ist:
 

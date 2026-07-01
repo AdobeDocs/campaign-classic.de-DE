@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 TQID: https://experienceleague.adobe.com/8JCloZIvg2WQsoFoEq6zYnDcrUOSBXCXlrkF2hY0xhc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-subfeature_v2:
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167id: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+subfeature_v2: id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 518
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +35,7 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 
 >[!NOTE]
 >
->Dieser Anwendungsfall kann nur implementiert werden, wenn Sie die Option **Umfrage-Manager** erhalten haben. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Dieses Anwendungsbeispiel kann nur implementiert werden, wenn Sie die Option **Survey Manager** erworben haben. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ## Schritt 1: Erstellung des Workflows für Datenabruf und -speicherung {#step-1---creating-the-data-collection-and-storage-workflow}
 
@@ -54,7 +47,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. Zu extrahierende Spalten auswählen (in diesem Fall: Alle archivierten Felder auswählen). Dies sind die Felder, die die Antworten enthalten.
+1. Wählen Sie die zu extrahierenden Spalten aus (hier: Alle archivierten Felder). Dies sind die Felder, die die Antworten enthalten.
 
    ![](assets/reporting_usecase_1_02.png)
 
@@ -62,7 +55,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](assets/reporting_usecase_1_04.png)
 
-   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Löschen und ggf. erneut verwenden der Liste (andernfalls zur Liste hinzufügen)]** : Antworten werden der vorhandenen Tabelle hinzugefügt. Mit dieser Option können Sie auf die Liste in einem Cube verweisen. Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu generiert, was die Integrität des Cubes garantiert, der diese Liste verwendet.
+   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]**: Die Antworten werden so der vorhandenen Tabelle hinzugefügt. Mit dieser Option können Sie auf die Liste in einem Cube verweisen. Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu generiert. Dadurch wird die Integrität des Cubes garantiert, der diese Liste verwendet.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -84,7 +77,7 @@ Im vorliegenden Beispiel basiert der Cube auf den Daten der Liste, die im zuvor 
 
 ![](assets/reporting_usecase_2_01.png)
 
-Definieren Sie die Dimensionen und Kennzahlen, die im Bericht angezeigt werden sollen. Hier möchten wir das Vertragsdatum und das Land des Befragten anzeigen.
+Definieren Sie die im Bericht anzuzeigenden Dimensionen und Kennzahlen. Im Beispiel werden das Vertragsdatum und das Land des Antwortenden angezeigt.
 
 ![](assets/reporting_usecase_2_02.png)
 

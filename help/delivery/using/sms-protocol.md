@@ -6,27 +6,15 @@ feature: SMS
 role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 TQID: https://experienceleague.adobe.com/-e39I2kK3veYtZTufN0ZZrnZPAAco47dU8HFlCtlIxY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 8283
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +32,7 @@ SMS ist zwar auf das Senden kurzer Textnachrichten ohne Formatierung beschränkt
 Es gibt zwei Möglichkeiten, eine SMS zu senden:
 
 * Manuell von einem Telefon aus (die übliche Art und Weise, wie Personen direkt kommunizieren),
-* Versenden über das Internet - so wie Adobe Campaign Nachrichten sendet. Dazu benötigen Sie einen SMS-Dienstleister, der das Internet mit dem Mobilfunknetz verbindet.
+* Versenden Sie über das Internet, so wie Adobe Campaign Nachrichten sendet. Dazu benötigen Sie einen SMS-Dienstleister, der das Internet mit dem Mobilfunknetz verbindet.
 Adobe Campaign verwendet das SMPP-Protokoll, um SMS an einen Dienstleister zu senden.
 
 In diesem Dokument wird die Einrichtung einer Verbindung zwischen Adobe Campaign und einem SMPP-Provider erläutert.
@@ -89,14 +77,14 @@ Eine SMS enthält mehr Informationen als Text. Hier ist eine Liste der Informati
 
 ## SMPP-Protokoll {#smpp-protocol}
 
-Adobe Campaign Classic unterstützt das SMPP-Protokoll Version 3.4. Dies ist ein weit verbreitetes Protokoll, das den Versand von SMS an einen Provider (SMSC) und den Empfang von SMS sowie von Quittungen ermöglicht. Weitere Informationen finden Sie in der [SMPP-Dokumentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+Adobe Campaign Classic unterstützt die Version 3.4 des SMPP-Protokolls. SMPP ist ein weit verbreitetes Protokoll, das den Versand von SMS an einen Anbieter (SMSC) sowie den Empfang von SMS und Empfangsbestätigungen ermöglicht. Weitere Informationen finden Sie in der [SMPP-Dokumentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 
 Die Netzwerkgeräte auf der Seite des SMS-Dienstleisters werden oft als SMSC bezeichnet.
 
 ### SMPP-Verbindungen {#smpp-connections}
 
-Adobe Campaign stellt über TCP eine Verbindung zur Netzwerkausrüstung des SMS-Dienstleisters her. Das SMPP-Protokoll legt permanente TCP-Verbindungen von Adobe Campaign zum Provider fest. TCP-Verbindungen werden immer von Adobe Campaign initiiert, auch für den Empfang von Nachrichten.
-SMPP öffnet 1 oder 2 TCP-Verbindungen, je nach Modus. Alle Verbindungen werden immer von Adobe Campaign initiiert.
+Adobe Campaign stellt über TCP eine Verbindung zu den Netzwerkgeräten des SMS-Dienstleisters her. Das SMPP-Protokoll legt permanente TCP-Verbindungen von Adobe Campaign zum Anbieter fest. TCP-Verbindungen werden immer von Adobe Campaign initiiert, auch für den Empfang von Nachrichten.
+SMPP öffnet 1 oder 2 TCP-Verbindungen, je nach Modus. Alle Verbindungen werden immer von Adobe Campaign initiiert.
 
 Das SMPP-Protokoll kann in zwei Modi verwendet werden:
 
@@ -530,9 +518,8 @@ Beispiel einer Übertragung mit einem maximalen Fenster von 4:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-Das Fenster trägt dazu bei, den Durchsatz zu erhöhen, wenn die Netzwerkverbindung eine hohe Latenz aufweist.  Der Wert des Fensters muss mindestens der Anzahl der SMS/s entsprechen, multipliziert mit der Latenz des Links
-In Sekunden, sodass der Connector nie auf einen `SUBMIT_SM_RESP` wartet, bevor er die nächste Nachricht sendet.
-Wenn das Fenster zu groß ist, können Sie bei Verbindungsproblemen weitere doppelte Nachrichten senden. Außerdem haben die meisten Anbieter eine sehr strenge Begrenzung für das Fenster und lehnen Nachrichten ab, die das Limit überschreiten.
+Das Fenster hilft, den Durchsatz zu erhöhen, wenn der Netzwerk-Link eine hohe Latenz aufweist. Der Wert des Fensters muss mindestens der Anzahl der SMS multipliziert mit der Latenz des Links in Sekunden entsprechen, damit der Connector nicht auf ein `SUBMIT_SM_RESP` wartet, bevor die nächste Nachricht gesendet wird.
+Wenn das Fenster zu groß ist, kann es bei Verbindungsproblemen dazu kommen, dass Sie mehr doppelte Nachrichten versenden. Außerdem haben die meisten Anbieter sehr strenge Beschränkungen für das Fenster und lehnen Nachrichten ab, die diese Grenze überschreiten.
 
 Berechnung der optimalen Formel für das Übertragungsfenster:
 
@@ -578,7 +565,7 @@ Einzelheiten zur Textkodierung finden Sie im Abschnitt [SMS-Textkodierung](sms-p
 
 Mit dieser Einstellung können Sie ein benutzerdefiniertes Kodierungs-Mapping definieren, das von der Spezifikation abweicht. Sie können eine Liste von Kodierungen zusammen mit ihrem `data_coding`-Wert deklarieren.
 
-Der MTA versucht, die Kodierung mit der ersten Kodierung in der Liste durchzuführen. Wenn dies fehlschlägt, wird versucht, die nächste Kodierung auf der Liste zu verwenden, usw. Wenn zur Kodierung der Nachricht keine Kodierung verwendet werden kann, tritt ein Fehler auf. Sobald die Kodierung gefunden wurde, erstellt der MTA die `SUBMIT_SM PDU` mit dem kodierten Text und dem `data_coding`-Feld mit dem in der Tabelle angegebenen Wert.
+Der MTA versucht, die Kodierung mit der ersten Kodierung in der Liste durchzuführen. Wenn dies fehlschlägt, versucht er, die nächste Kodierung in der Liste zu verwenden. Wenn keine Kodierung zum Verschlüsseln verwendet werden kann, tritt ein Fehler auf. Sobald die Kodierung gefunden wurde, erstellt der MTA die `SUBMIT_SM PDU` mit dem kodierten Text und dem `data_coding`-Feld mit dem in der Tabelle angegebenen Wert.
 
 Die Reihenfolge der Elemente in der Tabelle ist wichtig: Kodierungen werden von oben nach unten ausprobiert. Sie sollten die günstigste oder am meisten empfohlene Kodierung ganz oben auf die Liste setzen, gefolgt von immer teureren Kodierungen.
 
@@ -689,7 +676,7 @@ Dies zeigt das Format der ID an, die im Feld `message_id` der `SUBMIT_SM_RESP PD
 
 * **Dezimalzahl**: Die ID wird als Dezimalzahl in ASCII-Form erwartet. Führende und nachfolgende Leerzeichen und führende Nullen werden bei dieser Einstellung entfernt.
 
-* **Hexadezimalzahl**: Es wird erwartet, dass die ID eine hexadezimale Zahl im ASCII-Format ist, ohne vorangestelltes 0x oder nachgestelltes h. Die ID wird dann in eine Dezimalzahl konvertiert, bevor sie in der Datenbank gespeichert wird.
+* **Hexadezimalzahl**: Die ID wird als Hexadezimalzahl in ASCII-Form erwartet, ohne führendes 0x und nachgestelltes h. Die ID wird dann in eine Dezimalzahl umgewandelt, bevor sie in der Datenbank gespeichert wird.
 
 * **Hexadezimaler String**: Die ID muss ein ASCII-kodierter Text sein, der selbst eine Zeichenfolge ist, die als Hexadezimalwert kodiert wurde. In der PDU finden Sie beispielsweise `0x34 0x31 0x34 0x32 0x34 0x33`, was in ASCII &quot;414243&quot; bedeutet. Diese Zeichenfolge wird dann als hexadezimaler String von Bytes dekodiert und Sie erhalten &quot;ABC&quot;: Die ID &quot;ABC&quot; wird in der Datenbank gespeichert.
 
@@ -848,21 +835,21 @@ Wenn Sie mehrere Konten in derselben Adobe Campaign-Instanz haben, die eine Verb
 ### Aktivieren der ausführlichen SMPP-Verfolgung während der Prüfungen {#enable-verbose}
 
 Sie sollten während der Prüfungen immer die ausführliche SMPP-Verfolgung aktivieren.
-Selbst wenn Sie die Protokolle nicht selbst überprüfen können, wird es für die [Adobe-Kundenunterstützung einfacher sein](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Ihnen zu helfen.
+Sie können die Protokolle zwar nicht selbst überprüfen, aber die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) kann Ihnen leichter helfen.
 
 ### Testen Ihrer SMS {#test}
 
 * **Senden von SMS mit allen Arten von Zeichen**
-Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit so vielen verschiedenen Zeichen wie möglich zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
+Wenn Sie eine SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
 
-* **Sicherstellen, dass SR ordnungsgemäß verarbeitet werden**
-Die SMS sollte im Versandprotokoll als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
+* **Überprüfen, ob SR ordnungsgemäß verarbeitet werden**
+Die SMS sollte im Versandlog als empfangen gekennzeichnet sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
 
-* **Vergewissern Sie sich, dass MO verarbeitet werden**
-Wenn Sie MO verarbeiten müssen (automatische Antworten, Speicherung von MO in der Datenbank usw.), versuchen Sie einige Tests durchzuführen. Senden Sie einige SMS für alle Schlüsselwörter für die automatische Antwort und überprüfen Sie, ob die Antwort schnell genug ist, nicht mehr als ein paar Sekunden.
-Überprüfen Sie das Protokoll, das Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP` antwortet (command_status=0).
+* **Überprüfen, ob MO verarbeitet werden**
+Wenn Sie MO verarbeiten müssen (automatische Antworten, Speichern von MO in der Datenbank), führen Sie einige Tests durch. Senden Sie ein paar SMS für alle Keywords für automatische Antworten und überprüfen Sie, ob die Antwort schnell genug erfolgt, d. h. innerhalb weniger Sekunden.
+Überprüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP` antwortet (command_status=0).
 
 ### Überprüfen der PDUs {#check-pdus}
 
@@ -874,7 +861,7 @@ Dieser Schritt ist erforderlich, wenn eine Verbindung zu einem Provider hergeste
 
 Vergewissern Sie sich, dass die `BIND_* PDUs` korrekt gesendet wurden. Am wichtigsten ist es zu prüfen, dass der Provider immer erfolgreiche `BIND_*_RESP PDUs` zurückgibt (command_status = 0).
 
-Sieh zu, dass es nicht zu viele `BIND_* PDU` gibt. Wenn es zu viele sind, kann das darauf hinweisen, dass die Verbindung instabil ist. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
+Stellen Sie sicher, dass nicht zu viele `BIND_* PDU`s vorhanden sind. Wenn es zu viele sind, kann das darauf hinweisen, dass die Verbindung instabil ist. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
 
 #### ENQUIRE_LINK {#enquire-link-pdus}
 

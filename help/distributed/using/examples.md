@@ -6,18 +6,13 @@ feature: Distributed Marketing
 hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 TQID: https://experienceleague.adobe.com/76BtaM1C72-GcMxXoFHtIFV4-dIQTzcNoamtyQ9-gcg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-subfeature_v2:
-  - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
-  - id: e739ee2b-6228-412e-878f-45de0791417d
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2
+subfeature_v2: id: a6187aac-0a00-4394-8937-e8d4c1a40aa4id: e739ee2b-6228-412e-878f-45de0791417d
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1378
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +22,13 @@ ht-degree: 76%
 
 ## Erstellen einer lokalen Kampagne (Formular) {#creating-a-local-campaign--by-form-}
 
-Die Web **Schnittstelle vom Typ &quot;**&quot; umfasst die Verwendung einer **Web-Anwendung**. Je nach Konfiguration kann diese Web-Anwendung jeden Typ definierter personalisierter Elemente enthalten. Sie können beispielsweise Links vorschlagen, um die Zielgruppe, das Budget, den Inhalt usw. über dedizierte APIs auszuwerten.
+Die Web-Schnittstelle vom Typ **Standardformular** erfordert die Verwendung einer **Web-Anwendung**.Je nach Konfiguration kann diese Web-Anwendung jeden Typ definierter personalisierter Elemente enthalten. Sie können beispielsweise Links vorschlagen, um die Zielgruppe, das Budget, den Inhalt usw. über dedizierte APIs auszuwerten.
 
 >[!NOTE]
 >
 >Die APIs werden in einem eigenen Dokument beschrieben. [Weitere Informationen](../../configuration/using/about-web-services.md).
 >
->Die in diesem Beispiel verwendete Web-Anwendung ist keine in Adobe Campaign vorkonfigurierte Web-Anwendung. Um ein Formular in einer Kampagne verwenden zu können, müssen Sie die entsprechende Web-Anwendung erstellen.
+>Die in diesem Beispiel verwendete Web-Anwendung ist keine Web-Anwendung, die in Adobe Campaign vorkonfiguriert vorhanden ist. Um ein Formular in einer Kampagne zu verwenden, müssen Sie die dedizierte Web-Anwendung erstellen.
 
 Klicken Sie beim Erstellen der Kampagnenvorlage auf die **[!UICONTROL Lupe]** in der Option **[!UICONTROL Web-Schnittstelle]** des Links **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf die Details der Web-Anwendung zuzugreifen.
 
@@ -85,7 +80,7 @@ Im vorliegenden Beispiel werden die folgenden APIs verwendet:
 
 ### Einleitung {#introduction}
 
-Sie sind Marketing Manager für eine große Bekleidungsmarke, die einen Online-Shop und mehrere Boutiquen in den gesamten USA hat. Jetzt, da der Frühling gekommen ist, entscheiden Sie sich, ein spezielles Angebot zu erstellen, das Ihren besten Kunden 50% Rabatt auf alle Kleider in Ihrem Katalog gibt.
+Sie sind Marketing-Führungskraft für eine große Modemarke, die über einen Online-Shop und mehrere Geschäfte in den USA verfügt. Zum Frühlingsanfang möchten Sie Ihre besten Kundinnen und Kunden von einem Sonderangebot profitieren lassen – 50 % Rabatt auf alle Kleider in Ihrem Katalog.
 
 Dieses Angebot soll nur den Kunden unterbreitet werden, die seit Jahresbeginn für mehr als 300 € in einer Ihrer Filialen eingekauft haben.
 
@@ -173,8 +168,8 @@ Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hin
 
 1. Wählen Sie **[!UICONTROL Referenzkampagne]**. Auf der Registerkarte **[!UICONTROL Bearbeiten]** des Kits können Sie den **[!UICONTROL Validierungsmodus]** für Ihre Kampagne wählen:
 
-   * Im **Manuell**-Modus nehmen die Lokalstellen an der Kampagne teil, wenn sie die Einladung der Zentralstelle annehmen. Er kann vorab ausgewählte Kontakte löschen, wenn er dies wünscht. Die Zustimmung des Managers ist erforderlich, um seine Teilnahme an der Kampagne zu bestätigen.
-   * Im **Automatisch**-Modus müssen die Lokalstellen an der Kampagne teilnehmen, es sei denn, sie heben ihre Registrierung für die Kampagne auf. Kontakte können gelöscht werden, ohne dass eine Genehmigung erforderlich ist.
+   * Im Modus **Manuell** nehmen die Lokalstellen an der Kampagne teil, wenn Sie die Einladung der Zentralstelle akzeptieren. Sie können bei Bedarf die vorausgewählten Kontakte löschen. Eine Validierung der Kampagnenteilnahme durch eine vorgesetzte Person ist zwingend erforderlich.
+   * Im Modus **Automatisch** sind die Lokalstellen verpflichtet, an der Kampagne teilzunehmen, sofern sie sich nicht manuell abmelden. Sie können Kontakte löschen, ohne dass eine Genehmigung erforderlich ist.
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
@@ -190,9 +185,9 @@ Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hin
 
 ### Einleitung {#introduction-1}
 
-Sie sind Marketing Manager für eine große Make-up-Marke, die einen Online-Shop und mehrere Boutiquen in den gesamten USA hat. Um Ihren Wintervorrat zu entladen und Platz für Ihren neuen Vorrat zu schaffen, erstellen Sie ein spezielles Angebot, das zwei Kundenkategorien anspricht: die über 30er Jahre, denen Sie altersempfindliche Hautpflegeprodukte anbieten, und die unter 30er Jahre, denen Sie die einfacheren Hautpflegeprodukte anbieten werden.
+Sie sind zuständig für das Marketing einer großen Make-up-Marke, die einen Online-Shop und mehrere Geschäfte in den gesamten USA hat. Um Ihr Lager zu räumen, möchten Sie ein Sonderangebot für zwei unterschiedliche Kundenkategorien erstellen: Die erste Kategorie enthält alle Personen, die älter als 30 sind und Produkte für reifere Haut angeboten bekommen sollen. Die zweite Kategorie enthält Personen unter 30 Jahren, die Angebote für Produkte erhalten sollen, die für unreine oder normale Haut geeignet sind.
 
-Sie entscheiden sich daher für das verteilte Marketing, um eine partizipative Kampagne (mit Formular) zu erstellen, mit der Sie Kunden aus Ihren verschiedenen Geschäften nach Altersgruppen auswählen können. Diese Kunden erhalten einen E-Mail-Versand mit einem speziellen Angebot, das entsprechend ihrer Altersgruppe personalisiert wurde.
+Sie entschließen sich daher, mithilfe der Option „Dezentrales Marketing“ eine kollaborative Kampagne mit Formular zu erstellen. Diese ermöglicht es Ihnen, die Kundinnen und Kunden der unterschiedlichen Filialen nach Altersgruppen auszuwählen. Diese Personen erhalten einen E-Mail-Versand mit einem speziellen Angebot, das entsprechend ihrer Altersgruppe personalisiert wurde.
 
 Der erste Teil des Beispiels stellt die Perspektive der Lokalstellen dar: Sie erhalten bei der Erstellung der Kampagne eine Benachrichtigungs-E-Mail, über die sie die Kampagne konfigurieren, auswerten und bestellen können.
 

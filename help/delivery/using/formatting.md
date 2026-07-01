@@ -7,26 +7,15 @@ feature: Email Design
 role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 TQID: https://experienceleague.adobe.com/CqXXVNL83qq35qW9j52Vqm46yBIMo8T1J-fF1aC5TCE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1471
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +23,11 @@ ht-degree: 84%
 
 ## JavaScript-Templates {#javascript-templates}
 
-Eine JavaScript-Vorlage ist ein HTML- oder Textdokument, das JavaScript-Code enthält. Sie wird auf die gleiche Weise wie der E-Mail-Inhalt in einer Versandaktion erstellt.
+Eine JavaScript-Vorlage ist ein HTML- oder Textdokument, das JavaScript-Code enthält. Sie wird auf dieselbe Weise wie der E-Mail-Inhalt in einer Versandaktion erstellt.
 
 ### Identifizierung von JavaScript-Templates {#identification-of-a-javascript-template}
 
-Eine JavaScript-Vorlage wird wie Schemata und Formulare über ihren Namen und Namespace identifiziert. Es wird jedoch empfohlen, die Option **.js** zum Vorlagennamen hinzuzufügen.
+Eine JavaScript-Vorlage wird wie Schemata oder Formulare über ihren Namen und Namespace identifiziert. Es wird jedoch empfohlen, die Option **.js** zum Vorlagennamen hinzuzufügen.
 
 ### Struktur von JavaScript-Templates {#structure-of-a-javascript-template}
 
@@ -84,9 +73,9 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: Ruft den Wert des Attributs „name“ des Hauptelements ab
-* **content.@`['name']`**: identisch mit der Syntax **content.@name**
+* **content.@`['name']`**: Identisch mit der Syntax **content.@name**
 * **content.chapter.length**: gibt die Anzahl an Elementen des Sammlungselements `<chapter` aus
-* **content.chapter`[0]`.@name**: Ruft den Namen des ersten `<chapter>` ab
+* **content.chapter`[0]`.@name**: Ruft den Namen des ersten `<chapter>`-Elements ab
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
 * **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>` aus
 
@@ -96,7 +85,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 >
 >Beispiel: `content.@['offer-id']`.
 
-Die gesamte Leistungsfähigkeit einer Programmiersprache (Variablen, Schleifen, bedingte Tests, Funktionen usw.) steht zum Erstellen des Ausgabedokuments zur Verfügung. Auf die SOAP-APIs kann über das Ausgabedokument zugegriffen werden.
+Zur Erstellung des Ausgabedokuments stehen alle üblichen Programmiersprachen-Elemente (Variablen, Schleifen, bedingte Tests, Funktionen usw.) zur Verfügung. Zur Anreicherung des Ausgabedokuments sind SOAP-APIs verfügbar.
 
 Beispiele:
 
@@ -385,7 +374,7 @@ Gehen Sie wie folgt vor:
 
 ## XSL-Stylesheets {#xsl-stylesheets}
 
-Mit der XSLT-Sprache können Sie ein XML-Dokument in ein Ausgabedokument ändern. Je nach Ausgabemethode des Stylesheets kann das resultierende Dokument in HTML, im Nur-Text-Format oder in einer anderen XML-Struktur generiert werden.
+Mit der XSLT-Sprache können Sie ein XML-Dokument in ein Ausgabedokument ändern. Je nach Ausgabemethode des Sytlesheets kann das resultierende Dokument in HTML, Text oder wieder in XML generiert werden.
 
 Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
@@ -512,7 +501,7 @@ Die Anweisung **`<xsl:include>`** verweist auf den Namen des in das Dokument ein
 
 >[!NOTE]
 >
->Der Name des Namespace darf nicht in der Referenz des einzuschließenden Stylesheets eingegeben werden. Standardmäßig wird dieses Stylesheet mit dem Namespace des Benutzers erstellt.
+>Der Namespace-Name darf in der Referenz des einzufügenden Stylesheets nicht eingegeben werden. Standardmäßig wird dieses Stylesheet mit dem Namespace der Benutzerin bzw. des Benutzers erstellt.
 
 ### Bearbeitung eines Stylesheets {#editing-a-stylesheet}
 
@@ -534,7 +523,7 @@ Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie ein
 
 Die im HTML-Ausgabedokument angegebenen Bilder können mit relativen oder absoluten Pfadangaben adressiert werden.
 
-Mit der relativen Referenzierung können Sie die URL des Servers eingeben, der die Bilder in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** enthält. Diese Optionen enthalten den Speicherort der Bilder für die Veröffentlichung und Vorschau in der Adobe Campaign-Client-Konsole.
+Bei der relativen Referenzierung können Sie die URL für den Server, auf dem die Bilder gespeichert sind, in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** angeben. Die Optionen enthalten den Speicherort der Bilder für die Veröffentlichung und die Vorschau in der Adobe Campaign-Client-Konsole.
 
 Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administration > Plattform > Optionen]** zugegriffen werden.
 
@@ -559,7 +548,7 @@ Beispiel für die Adressierung eines Bilds mit Pfadangabe:
 
 Eine weitere Möglichkeit ist die Verwendung der **[!UICONTROL öffentlichen Ressourcen]**, um die Bilder zu deklarieren und entsprechend der im Bereitstellungsassistenten konfigurierten Instanzparameter auf den Server zu laden.
 
-Sie können diese Bilder dann im Inhalt aufrufen. Verwenden Sie dazu die folgende Syntax im Content-Management-Schema:
+Sie können diese Bilder dann im Inhalt aufrufen. Verwenden Sie hierfür die folgende Syntax im Content-Management-Schema:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>

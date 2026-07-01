@@ -6,18 +6,13 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 TQID: https://experienceleague.adobe.com/WPVKOgF2ilspLhbrTd-s6x8MEX254boeoSzJsgZVaTE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 907
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +21,7 @@ ht-degree: 59%
 
 ## Speicherfelder für Antworten {#response-storage-fields}
 
-Antworten auf Formulare können in einem Feld der Datenbank oder vorübergehend in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird bei der Felderstellung ausgewählt. Er kann über den Link **[!UICONTROL Speicher bearbeiten…]** bearbeitet werden.
+Antworten in Formularen können in einem Feld der Datenbank oder temporär in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird bei der Felderstellung ausgewählt. Er kann über den Link **[!UICONTROL Speicherinformationen bearbeiten…]** geändert werden. 
 
 Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen verfügbar:
 
@@ -38,7 +33,7 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 * **[!UICONTROL Variable]**
 
-  Wenn Sie keine Informationen in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können zuvor deklariert werden. Siehe [Daten in einer lokalen Variablen speichern](#storing-data-in-a-local-variable).
+  Wenn Sie Informationen nicht in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können zuvor deklariert werden. Siehe [Daten in einer lokalen Variablen speichern](#storing-data-in-a-local-variable).
 
 ### Speichern von Daten in der Datenbank {#storing-data-in-the-database}
 
@@ -48,13 +43,13 @@ Um Daten in einem vorhandenen Datenbankfeld zu speichern, wählen Sie das Symbol
 
 >[!NOTE]
 >
->Das standardmäßige Referenzdokument ist das Schema **nms:recipient**. Wenn Sie es anzeigen oder ein neues auswählen möchten, wählen Sie das Formular in der Liste und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
+>Das standardmäßige Referenzdokument ist das **nms:recipient**-Schema. Wenn Sie es anzeigen oder ein neues auswählen möchten, wählen Sie das Formular in der Liste und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
 
 ### Daten in einer lokalen Variablen speichern {#storing-data-in-a-local-variable}
 
 Durch die Verwendung lokaler Variablen können Daten auf derselben oder einer anderen Seite wiederverwendet werden, auch wenn sie nicht in der Datenbank gespeichert werden. Dies kann beispielsweise hilfreich sein, um die Anzeige eines Felds an eine Bedingung zu knüpfen oder um eine Nachricht anzupassen.
 
-Dies bedeutet, dass Sie den Wert eines nicht gespeicherten Felds verwenden können, um die Anzeige einer Gruppe von Optionen auf der Seite zu autorisieren. Auf der folgenden Seite wird der Fahrzeugtyp nicht in der Datenbank gespeichert:
+Das bedeutet, dass Sie den Wert eines nicht gespeicherten Felds verwenden können, um die Anzeige einer Gruppe von Optionen auf der Seite zu autorisieren. Auf der folgenden Seite wird der Fahrzeugtyp nicht in der Datenbank gespeichert:
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
@@ -92,7 +87,7 @@ Wenn der Benutzer ein Nutzfahrzeug auswählt, bietet das Webformular folgende Op
 
 ## Erfasste Informationen verwenden {#using-collected-information}
 
-Für jedes Formular können die angegebenen Antworten in den Feldern oder Beschriftungen wiederverwendet werden. Die folgenden Syntaxen müssen verwendet werden:
+Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titeln wiederverwendet werden. Die folgenden Syntaxen müssen verwendet werden:
 
 * Für Inhalte, die in einem Datenbankfeld gespeichert werden:
 
@@ -126,23 +121,23 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
 * Wenn auf das Webformular über einen in einer E-Mail gesendeten Link zugegriffen wird und der Benutzer, der auf die Anwendung zugreift, bereits in der Datenbank gespeichert ist, können Sie die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](publishing-a-web-form.md#delivering-a-form-via-email).
 
-  In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils, eine eindeutige Kennung, die jedem Profil von Adobe Campaign zugewiesen wird. Sie müssen die Informationen konfigurieren, die vorab über das Feld „Vorausfüllen“ geladen werden sollen. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
+  In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die jedem Profil von Adobe Campaign zugewiesen wird.Sie müssen die Informationen konfigurieren, die vorab über das Feld „Vorausfüllen“ geladen werden sollen. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
 
   >[!CAUTION]
   >
-  >Diese Option überschreibt die Benutzerdaten, einschließlich der E-Mail-Adresse, wenn ein Feld vorhanden ist, in das Sie sie eingeben können. Sie kann nicht zum Erstellen neuer Profile verwendet werden und erfordert die Verwendung eines Felds zum Vorausfüllen im Formular.
+  >Mit dieser Option werden die Benutzerdaten überschrieben, einschließlich der E-Mail-Adresse, wenn ein Feld zur Eingabe vorhanden ist. Diese Option kann nicht zur Erstellung neuer Profile verwendet werden und erfordert die Verwendung eines Felds zum Vorausfüllen im Formular.
 
-* Um die Empfängerdaten in der Datenbank anzureichern, bearbeiten Sie das Speicherfeld und wählen Sie den Abstimmschlüssel aus. Für die interne Verwendung (normalerweise ein Intranet-System) oder für ein Formular, das z. B. zum Erstellen neuer Profile verwendet wird, können Sie die Abstimmfelder auswählen. Das Feld enthält alle Felder der Datenbank, die auf den verschiedenen Seiten der Web-Anwendung verwendet werden:
+* Um Daten von Empfängerinnen und Empfängern in der Datenbank anzureichern, bearbeiten Sie das Speicherfeld und wählen Sie den Abstimmschlüssel aus. Für die interne Verwendung (normalerweise ein Intranet-System) oder für ein Formular zum Erstellen neuer Profile können Sie die Abstimmfelder auswählen. Das Feld enthält alle Felder der Datenbank, die auf den verschiedenen Seiten der Web-Anwendung verwendet werden:
 
   ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Standardmäßig werden die Daten über den Vorgang **[!UICONTROL Aktualisieren oder einfügen]** in die Datenbank importiert: Wenn ein Element bereits in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn sie nicht vorhanden ist, werden die Informationen hinzugefügt.
+Standardmäßig werden Daten über einen Vorgang des Typs **[!UICONTROL Aktualisieren oder Einfügen]** in die Datenbank importiert. Wenn ein Element in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der auswählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn die Informationen nicht vorhanden sind, werden sie hinzugefügt.
 
-Sie können dieses Verhalten jedoch ändern. Wählen Sie dazu den Stamm des Elements und den auszuführenden Vorgang aus der Dropdown-Liste aus:
+Sie können dieses Verhalten jedoch ändern. Wählen Sie dazu die Wurzel des Elements und danach den auszuführenden Vorgang aus der Dropdown-Liste aus.
 
 ![](assets/s_ncs_admin_survey_save_operation.png)
 
-Sie können einen Suchordner für die Abstimmung und den Erstellungsordner für neue Profile auswählen. Wenn diese Felder leer sind, werden die Profile im Standardordner des Benutzers gesucht und erstellt.
+Sie können einen Suchordner für die Abstimmung und den Erstellungsordner für neue Profile auswählen. Wenn diese Felder leer sind, wird nach den Profilen gesucht und sie werden im Standardordner der Benutzerin bzw. des Benutzers erstellt.
 
 >[!NOTE]
 >

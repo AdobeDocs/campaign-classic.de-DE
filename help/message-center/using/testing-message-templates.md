@@ -8,16 +8,14 @@ content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 TQID: https://experienceleague.adobe.com/jcmXX4aMPaTBatt4m3s-IAaAeoXnjmPaEE4oqIDoIOI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 607
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +27,7 @@ Führen Sie nach Fertigstellung Ihrer [Nachrichtenvorlage](../../message-center/
 
 ## Testadressen in Transaktionsnachrichten verwalten {#managing-seed-addresses-in-transactional-messages}
 
-Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand durchführen und die Personalisierung der Nachricht vor dem E-Mail- oder SMS-Versand testen. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
+Mit einer Testadresse können Sie vor dem E-Mail- oder SMS-Versand eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 
 Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie folgt vor:
 
@@ -45,7 +43,7 @@ Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie fol
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name + E-Mail usw.) Dies ist bei allen Anwendungen auf Ihrer Website üblich, mit denen Ihre Profile identifiziert werden. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
+1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name und E-Mail usw.), den alle Anwendungen auf Ihrer Website gemeinsam verwenden und zur Identifikation von Profilen nutzen. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
@@ -67,9 +65,9 @@ Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und
 
 ## Personalisierungsdaten {#personalization-data}
 
-Es ist möglich, Daten in der Nachrichtenvorlage zu verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Mit dieser Funktion wird eine Vorschau generiert oder ein Testversand gesendet. Ebenfalls können Sie anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Mit dieser Funktion wird eine Vorschau generiert oder ein Testversand gesendet. Ebenfalls können Sie anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
-Der Zweck dieser Daten besteht darin, Ihre Nachrichten vor ihrem endgültigen Versand zu testen. Diese Nachrichten stimmen nicht mit den tatsächlich zu verarbeitenden Daten überein. Die XML-Struktur muss jedoch identisch mit der des in der Ausführungsinstanz gespeicherten Ereignisses sein, wie unten dargestellt:
+Der Zweck dieser Daten besteht darin, Ihre Nachrichten vor dem endgültigen Versand zu testen. Bei diesen Nachrichten handelt es sich nicht um tatsächlich zu verarbeitende Daten. Die XML-Struktur muss jedoch identisch mit der des in der Ausführungsinstanz gespeicherten Ereignisses sein, wie unten dargestellt:
 
 ![](assets/messagecenter_create_custo_006.png)
 
@@ -124,7 +122,7 @@ Gehen Sie zur Durchführung des Testversands wie folgt vor:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie in der [&#x200B; Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
+Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie in der [ Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

@@ -8,15 +8,13 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 TQID: https://experienceleague.adobe.com/-f0NEfvLKh0PfgkB-c4SiPUyQrGuKx55yXOBfmYMmHs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 326
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 65%
 
 
 
-Die für die Angebotsverwaltung bereitgestellten SOAP-Web-Services unterscheiden sich von den in Adobe Campaign üblicherweise verwendeten. Sie können über die im vorherigen Abschnitt beschriebene Interaktions-URL aufgerufen werden, über die Sie Angebote für einen bestimmten Kontakt unterbreiten oder aktualisieren können.
+Die für die Angebotsverwaltung bereitgestellten SOAP-Web-Dienste unterscheiden sich von den in Adobe Campaign üblicherweise verwendeten. Sie sind über die im vorangehenden Kapitel beschriebene Interaktions-URL zugänglich und ermöglichen es, ein Angebot für einen spezifischen Kontakt vorzuschlagen oder zu aktualisieren.
 
 ## Angebotsvorschläge {#offer-proposition}
 
@@ -32,7 +30,7 @@ Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#
 
 * **targetId** – Primärschlüssel des Kontakts (es kann sich um einen zusammengesetzten Schlüssel handeln).
 * **maxCount** - gibt die Anzahl an Angebotsvorschlägen für den Kontakt an.
-* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
+* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
 * **categories** - bezeichnet die Kategorie, der die vorgeschlagenen Angebote angehören müssen.
 * **themes** - bezeichnet die Themen, denen die vorgeschlagenen Angebote entsprechen müssen.
 * **uuid** - Wert des permanenten Adobe Campaign-Cookies (&quot;uuid230&quot;).
@@ -41,7 +39,7 @@ Fügen Sie für einen Angebotsvorschlag über SOAP den Befehl **nms:proposition#
 
 >[!NOTE]
 >
->Die Einstellungen **targetId** und **maxCount** sind obligatorisch. Die anderen sind optional.
+>**targetId** und **maxCount** sind Pflichtparameter. Die übrigen sind optional.
 
 Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
@@ -50,11 +48,11 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
 ## Angebotsaktualisierung {#offer-update}
 
-Fügen Sie den **nms:interaction#UpdateStatus**-Befehl zur URL hinzu, gefolgt von diesen Parametern:
+Fügen Sie den Befehl **nms:interaction#UpdateStatus** zur URL hinzu, gefolgt von diesen Parametern:
 
 * **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenfolge. Siehe [Angebotsvorschläge](#offer-proposition).
 * **status** - Zeichenfolge, die den neuen Status des Angebots angibt. Die möglichen Werte werden in der Auflistung **propositionStatus** im Schema **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
-* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema &quot;**&quot;:interaction**, sollte **`<empty>`** hinzugefügt werden.
+* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
 
 ## Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}
 

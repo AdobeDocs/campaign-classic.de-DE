@@ -6,19 +6,14 @@ feature: Reporting, Monitoring
 hide: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 TQID: https://experienceleague.adobe.com/Xz3bnoS9EL84A5hx6WSqQlQC0G-sq-mO0j1-HTWsQac
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4f31b249b9f4dc3a10205a3f03cecdbc23b3a6e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 749
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +32,7 @@ Ein Cube wird in folgenden Schritten konfiguriert:
 
 Das nachstehende Beispiel zeigt, wie schnell ein einfacher Cube in einem Bericht erstellt werden kann, um dessen Kennzahlen zu exportieren.
 
-Die Implementierungsschritte werden im Folgenden beschrieben. In den anderen Abschnitten dieses Kapitels sind umfassende Optionen und Beschreibungen verfügbar.
+Die Implementierungsschritte werden im Folgenden beschrieben. Ausführliche Informationen und Beschreibungen werden in den anderen Abschnitten dieses Kapitels erläutert.
 
 ## Wählen der Arbeitstabelle {#selecting-the-work-table}
 
@@ -57,7 +52,7 @@ Klicken Sie auf den Link **[!UICONTROL Quelldaten filtern...]**, wenn Sie die Be
 
 ## Definieren von Dimensionen {#defining-dimensions}
 
-Dimensionen entsprechen den Analyseachsen, die für jeden Cube auf der Grundlage seines zugehörigen Faktenschemas definiert wurden. Dies sind die Dimensionen, die in der Analyse untersucht werden, z. B. Zeit (Jahr, Monat, Datum …), eine Klassifizierung von Produkten oder Verträgen (Familie, Referenz usw.), ein Populationssegment (nach Stadt, Altersgruppe, Status usw.).
+Dimensionen entsprechen den Analyseachsen, die für jeden Cube basierend auf dem zugehörigen Faktenschema definiert werden. Dabei handelt es sich um die in der Analyse untersuchten Dimensionen, zum Beispiel Zeit (Jahr, Monat, Datum), eine Klassifizierung von Produkten oder Verträgen (Familie, Referenz usw.) und ein Populationssegment (nach Stadt, Altersgruppe, Status usw.).
 
 Diese Analyseachsen werden im Tab **[!UICONTROL Dimensionen]** des Cubes festgelegt.
 
@@ -65,19 +60,19 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
 ![](assets/s_advuser_cube_wz_04.png)
 
-* Wählen Sie zunächst den Empfänger **Alter** aus. Für dieses Feld können Sie eine Klassierung definieren, um Altersgruppen zu gruppieren und dadurch die Lesbarkeit der Informationen zu vereinfachen. Es wird empfohlen, die Klassierung immer dann zu verwenden, wenn die Wahrscheinlichkeit mehrerer separater Werte besteht.
+* Wählen Sie zunächst das **Alter** der empfangenden Person aus. Für dieses Feld können Sie eine Klassierung definieren, um Altersgruppen zu gruppieren und dadurch die Lesbarkeit der Informationen zu vereinfachen. Es wird empfohlen, die Klassierung immer dann zu verwenden, wenn die Wahrscheinlichkeit mehrerer separater Werte besteht.
 
   Kreuzen Sie hierzu die Option **[!UICONTROL Klassierung aktivieren]** an. Klassierungsmodi werden im Abschnitt [Daten klassieren](../../reporting/using/concepts-and-methodology.md#data-binning) detailliert beschrieben.
 
   ![](assets/s_advuser_cube_wz_05.png)
 
-* Fügen Sie **Dimension** Datum“ hinzu. Hier sollen die Erstellungsdaten der Empfängerprofile angezeigt werden
+* Fügen Sie eine Dimension vom Typ **Datum** hinzu. Im Beispiel sollen die Erstellungsdaten der Empfängerprofile angezeigt werden.
 
   Klicken Sie hierzu auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL Erstellungsdatum]** in der Empfängertabelle aus.
 
   ![](assets/s_advuser_cube_wz_06.png)
 
-  Es ist möglich, den Anzeigemodus für das Datum zu wählen. Wählen Sie dazu die zu verwendende Hierarchie und die zu erzeugenden Ebenen aus:
+  Es ist möglich, den Anzeigemodus für das Datum auszuwählen. Wählen Sie dazu die zu verwendende Hierarchie und die zu erzeugenden Ebenen aus:
 
   ![](assets/s_advuser_cube_wz_07.png)
 
@@ -103,12 +98,12 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
 ## Erstellen von Indikatoren {#building-indicators}
 
-Sobald die Dimensionen definiert sind, müssen Sie den Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen auf der gleichnamigen Registerkarte: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.**&#x200B;**
+Sobald die Dimensionen definiert sind, müssen Sie den Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen auf der gleichnamigen Registerkarte: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
 
 Gehen Sie hierzu wie folgt vor:
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-1. Wählen Sie den Kennzahlentyp und die anzuwendende Formel aus. Hier wollen wir die Anzahl der Frauen unter den Empfängern zählen.
+1. Wählen Sie den Kennzahlentyp und die anzuwendende Formel aus. Hier möchten wir die Anzahl an Frauen unter den Empfangenden zählen.
 
    Die Kennzahl basiert auf dem Faktenschema und verwendet den Operator **[!UICONTROL Zählung]**.
 
@@ -136,11 +131,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Erstellen]**: Der Bildschirm zur Konfiguration und Ansicht des Berichts wird geöffnet.
 
-   Standardmäßig werden die ersten beiden verfügbaren Dimensionen in Zeilen und Spalten angeboten, aber es wird kein Wert in der Tabelle angezeigt. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
+   Die ersten beiden verfügbaren Dimensionen werden standardmäßig in Zeilen und Spalten angezeigt, die Tabelle enthält jedoch keine Werte. Um die Tabelle zu generieren, klicken Sie auf das Hauptsymbol:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Sie können die Achsen der Dimension wechseln, löschen, neue Kennzahlen hinzufügen usw. Die möglichen Operationen werden auf [dieser Seite](../../reporting/using/using-cubes-to-explore-data.md) beschrieben.
+1. Sie können die Achsen der Dimension umtauschen, sie löschen, neue Kennzahlen einfügen usw. Die Möglichkeiten werden auf [dieser Seite](../../reporting/using/using-cubes-to-explore-data.md) beschrieben.
 
    Verwenden Sie hierzu die entsprechenden Symbole.
 

@@ -6,21 +6,15 @@ role: User
 feature: Campaigns
 exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 TQID: https://experienceleague.adobe.com/rxyAXKDrxdMJWdXAwbbkleIoRHf03mvC5sHZbXZ1H5M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 362
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +22,9 @@ ht-degree: 52%
 
 Adobe Campaign umfasst mehrere Lösungen, mit denen Sie Kampagnen personalisieren und auf allen Online- und Offline-Kanälen versenden können. Sie können Marketing-Kampagnen erstellen, konfigurieren, ausführen und analysieren. Die Anwendung stellt somit ein einheitliches Kontrollzentrum dar, über das alle Marketing-Kampagnen verwaltet werden können.
 
-Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Importieren oder Extrahieren von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
+Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
-Weitere Informationen zur Kampagnenverwaltung finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Weitere Informationen zur Kampagnenverwaltung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 
@@ -38,19 +32,19 @@ Lernen Sie die wichtigsten Schritte zur Kampagnenverwaltung kennen:
 
 * [Erste Schritte](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}: Erfahren Sie Schritt für Schritt, wie Sie eine Marketing-Kampagne in Adobe Campaign erstellen und ausführen.
 
-* [Erstellen der ersten Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target=_blank} Erfahren Sie, wie Sie die Logik zur Orchestrierung Ihrer Kampagnen planen und einrichten. In einer Kampagne werden alle Elemente im Zusammenhang mit einer Marketing-Kampagne zusammengefasst: Versand, Zielgruppenbestimmungsregeln, Kosten, Exportdateien, zugehörige Dokumente usw.
+* [Erstellen der ersten Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target=_blank}: Erfahren Sie, wie Sie die Logik zur Orchestrierung Ihrer Kampagnen planen und einrichten. In einer Kampagne werden alle Elemente im Zusammenhang mit einer Marketing-Kampagne zusammengefasst: Versand, Zielgruppenbestimmungsregeln, Kosten, Exportdateien, zugehörige Dokumente usw.
 
-* [Nachrichten in einer Kampagne senden](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target=_blank}: Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie Ihre Kommunikation mit Adobe Campaign durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten.
+* [Senden von Sendungen in Kampagnen](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target=_blank}: Orchestrieren Sie Ihre kanalübergreifenden Sendungen in Ihren Kampagnen: Optimieren Sie mit Adobe Campaign Ihre Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten.
 
 ![](assets/do-not-localize/add-on.jpg){width="40%"}
 
 Für die Kampagnenverwaltung stehen drei Add-ons zur Verfügung:
 
-* [Kampagnenoptimierung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target=_blank} Dieses Modul ermöglicht die Steuerung, Filterung und Überwachung des Versands von Sendungen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
+* [Kampagnenoptimierung](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target=_blank}: Mit diesem Modul können Sie Sendungen steuern, filtern und überwachen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-* [Marketing-Ressourcen-](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=de){target=_blank}: Dieses Modul ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine umfassende Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
+* [Marketing Ressource Management](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=de){target=_blank}: Dieses Modul ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine vollständige Verwaltung und Echtzeit-Nachverfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
 
-* [Dezentrales Marketing](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target=_blank} Dieses Modul ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine umfassende Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
+* [Dezentrales Marketing](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target=_blank}: Dieses Modul ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine vollständige Verwaltung und Echtzeit-Nachverfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
 
 <!--
 
@@ -105,8 +99,8 @@ The following concepts need to be known in the context of Campaign:
 
 This video presents the key concepts of marketing campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

@@ -6,23 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 TQID: https://experienceleague.adobe.com/8N-zb5Qx4LHl9iDh0fdAQfzVmA7Lsc5gIwT8tuu0Dfc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: e739ee2b-6228-412e-878f-45de0791417d
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: e739ee2b-6228-412e-878f-45de0791417d
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1235
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +58,7 @@ Die Elemente selbst werden mithilfe eines dedizierten Schemas erstellt, welches 
 
 ## Schritt 2: Erstellen des Datenschemas {#step-2---creating-the-data-schema}
 
-Ein Datenschema ist ein XML-Dokument, das mit Inhalten verknüpft ist. Es beschreibt die XML-Struktur der Daten in diesem Inhalt.
+Ein Datenschema ist ein mit Inhalt verknüpftes XML-Dokument. Es beschreibt die XML-Struktur der Daten in diesem Inhalt.
 
 >[!NOTE]
 >
@@ -97,7 +88,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -179,7 +170,7 @@ Das Schema stellt sich also wie folgt dar:
 
 Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe Campaign-Clientkonsole.
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas &quot;:form&quot; anwendet.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, in dem die Grammatik des Formularschemas „xtk:form“ angewendet wird.
 
 >[!NOTE]
 >
@@ -229,7 +220,7 @@ Gehen Sie wie folgt vor, um ein Formular für das Content-Management zu erstelle
 
 ## Schritt 4: Erstellen der Konstruktionsvorlage {#step-4---creating-the-construction-template}
 
-Mit der XSLT-Sprache können Sie ein XML-Dokument in ein anderes Ausgabedokument umwandeln. Diese Umwandlung wird in XML in einem Dokument beschrieben, das als Stylesheet bezeichnet wird.
+Mit der XSLT-Sprache können Sie ein XML-Dokument in ein anderes Ausgabedokument umwandeln. Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 Im vorliegenden Beispiel wird ein JavaScript-Template verwendet, um den Aufbau und das Layout des Ausgabedokuments zu definieren.
 
@@ -364,7 +355,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
 ## Schritt 5: Erstellen der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
 
-Der nächste Schritt umfasst die Erstellung einer Vorlage für die Inhaltsveröffentlichung , um das Schema, das Formular und die Inhaltserstellungsvorlage zu verknüpfen. Diese Veröffentlichungsvorlage kann mehrere Ausgabeformate aufweisen.
+Im nächsten Schritt wird eine Publikationsvorlage für Inhalte erstellt, um das Schema, das Formular und die Inhaltserstellungsvorlage zu verknüpfen. Diese Publikationsvorlage kann mehrere Ausgabeformate aufweisen.
 
 >[!NOTE]
 >
@@ -374,15 +365,15 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert. Dies bedeutet, dass bei Verwendung der E4X-Syntax auf dieses Dokument nicht zugegriffen werden kann. Wenn diese Option aktiviert ist, muss die DOM-Schnittstelle verwendet werden. Sie entspricht der empfohlenen Syntax.
+   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert, was bedeutet, dass Sie auf dieses Dokument nicht unter Verwendung der E4X-Syntax zugreifen können. Die DOM-Schnittstelle muss verwendet werden, wenn diese Option aktiviert ist und die empfohlene Syntax darstellt.
    >
-   >Sie können weiterhin die E4X-Syntax verwenden. Wenn ja, deaktivieren Sie diese Option.
+   >Sie können die E4X-Syntax trotzdem verwenden. Deaktivieren Sie in diesem Fall diese Option.
 
    Verwenden Sie die **[!UICONTROL Hinzufügen]**-Schaltfläche, wenn Sie weitere Umwandlungsvorlagen erstellen möchten.
 
@@ -410,6 +401,6 @@ Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klicken Sie auf die Registerkarte **[!UICONTROL HTML]** Vorschau, um das Rendering anzuzeigen. Sie müssen einen Empfänger auswählen, um die Personalisierung zu testen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL HTML-Vorschau]**, um das Rendering anzuzeigen. Sie müssen eine Empfängerin bzw. einen Empfänger auswählen, um die Personalisierung zu testen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

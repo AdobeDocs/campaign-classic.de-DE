@@ -7,30 +7,23 @@ feature: Typology Rules, Campaigns
 hide: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 TQID: https://experienceleague.adobe.com/4EMN3dCYWlCIIevYAbZsBxH1u2EaPl-izrzCKqyr1eA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 530
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Filterregeln{#filtering-rules}
 
-Mit Filterregeln können Sie die auszuschließenden Nachrichten auf der Grundlage von in einer Abfrage definierten Kriterien definieren. Diese Regeln sind mit einer Zielgruppendimension verknüpft.
+Filterregeln ermöglichen es, auszuschließende Nachrichten nach in einer Abfrage definierten Kriterien zu bestimmen. Diese Regeln sind mit einer Zielgruppendimension verknüpft.
 
-Filterregeln können mit anderen Regeltypen (Kontrolle, Druck usw.) verknüpft werden in Typologien oder in einer eigenen Typologie **Filterung** zusammengefasst. Weitere Informationen finden Sie unter [Filtertypologien erstellen und anwenden](#creating-and-using-a-filtering-typology).
+Filterregeln können mit anderen Regeltypen (Kontrollregeln, Druckregeln usw.) in Typologien verknüpft oder in einer dedizierten **Filtertypologie** gruppiert werden. Weitere Informationen finden Sie unter [Filtertypologien erstellen und anwenden](#creating-and-using-a-filtering-typology).
 
 ## Erstellen einer Filterregel {#creating-a-filtering-rule}
 
@@ -74,7 +67,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 ## Erstellen und Verwenden einer Filtertypologie {#creating-and-using-a-filtering-typology}
 
-Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.**&#x200B;**
+Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
@@ -84,7 +77,7 @@ Diese spezifischen Typologien können bei der Zielgruppenbestimmung einem Versan
 
 Wählen Sie dann die Filtertypologie aus, die auf den Versand angewendet werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Typologien aus, die angewendet werden sollen.
 
-Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne sie in einer Typologie zu gruppieren. Verwenden Sie dazu den unteren Bereich des Fensters.
+Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne dass sie in eine Typologie gruppiert werden. Verwenden Sie dazu den unteren Abschnitt des Fensters.
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
@@ -97,7 +90,7 @@ Sie können Filterregeln auch direkt über diese Registerkarte verknüpfen, ohne
 
 ## Standardmäßige Ausschlussregeln für Zustellbarkeit {#default-deliverability-exclusion-rules}
 
-Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Adressen ausschließen]** ( **[!UICONTROL addressExclusions]** ) und **[!UICONTROL Domains ausschließen]** ( **[!UICONTROL domainExclusions]** ). Während der E-Mail-Analyse vergleichen diese Regeln die E-Mail-Adressen der Empfänger mit den unzulässigen Adressen oder Domain-Namen aus einer verschlüsselten globalen Unterdrückungsliste, die in der Zustellbarkeitsinstanz verwaltet wird. Im Falle einer Übereinstimmung wird die Nachricht nicht an den jeweiligen Empfänger gesendet.
+Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Adressen ausschließen]** (**[!UICONTROL addressExclusions]**) und **[!UICONTROL Domains ausschließen]** (**[!UICONTROL domainExclusions]**). Während der E-Mail-Analyse vergleichen diese Regeln die E-Mail-Adressen der Empfänger mit den unzulässigen Adressen oder Domain-Namen aus einer verschlüsselten globalen Unterdrückungsliste, die in der Zustellbarkeitsinstanz verwaltet wird. Im Falle einer Übereinstimmung wird die Nachricht nicht an den jeweiligen Empfänger gesendet.
 
 Auf diese Weise soll das Hinzufügen zur Blockierungsliste aufgrund von schädlichen Aktivitäten, insbesondere durch die Verwendung von Spamtraps, vermieden werden. Wenn beispielsweise für die Anmeldung über ein Web-Formular eine Spamtrap verwendet wird, wird automatisch eine Bestätigungs-E-Mail an diese Spamtrap gesendet. Als Folge davon wird Ihre Adresse automatisch auf die Blockierungsliste gesetzt.
 

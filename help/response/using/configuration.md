@@ -9,22 +9,14 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 TQID: https://experienceleague.adobe.com/P89PBe23uuRmGX5vb6lCNd8kTd24peaZcKsTRAj2pnw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 796
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +24,11 @@ ht-degree: 35%
 
 
 
-Dieser Abschnitt richtet sich an Personen, die für die Konfiguration der Reaktionsverwaltung zuständig sind. Sie setzt ein gewisses Maß an Wissen über die Erweiterung von Schemata, die Definition von Workflows und die SQL-Programmierung voraus.
+Dieser Abschnitt richtet sich an Personen, die für die Konfiguration der Reaktionsverwaltung zuständig sind. Er setzt ein gewisses Maß an Wissen über die Erweiterung von Schemata, die Definition von Workflows und die SQL-Programmierung voraus.
 
-Auf diese Weise können Sie verstehen, wie Sie das Standarddatenmodell an die spezifische Natur einer Transaktionstabelle außerhalb von Adobe Campaign mit der Individuentabelle anpassen. Diese Individuentabelle kann mit der Individuentabelle in Adobe Campaign oder mit einer anderen Tabelle übereinstimmen
+Er erläutert, wie das Standard-Datenmodell an die Besonderheiten einer Transaktionstabelle außerhalb von Adobe Campaign mit der Tabelle der Personen angepasst wird. Diese Tabelle der Personen kann mit der Tabelle der Personen in Adobe Campaign oder mit einer anderen Tabelle übereinstimmen.
 
-Die Messhypothese wird durch den Vorgangsprozess-Workflow ( **[!UICONTROL operationMgt]** ) gestartet. Jede Hypothese stellt einen separaten Prozess dar, der asynchron mit einem Ausführungsstatus ausgeführt wird (bearbeitet, ausstehend, beendet, fehlgeschlagen usw.) und wird von einer Planung gesteuert, die Prioritätsbeschränkungen, die Begrenzung der Anzahl der gleichzeitigen Prozesse, die Seite mit geringer Aktivität und die automatische Ausführung mit Häufigkeit verwaltet.
+Die Messhypothese wird durch den Vorgangsprozess-Workflow ( **[!UICONTROL operationMgt]** ) gestartet. Jede Hypothese stellt einen separaten Prozess dar, der asynchron mit einem Ausführungsstatus ausgeführt wird (In Bearbeitung, Ausstehend, Beendet, Fehlgeschlagen usw.), und wird von einer Planung gesteuert, die Prioritätsbeschränkungen, die Begrenzung der Anzahl gleichzeitiger Prozesse, die Seite mit geringer Aktivität und die automatische Ausführung mit Häufigkeit verwaltet.
 
 ## Schemata konfigurieren {#configuring-schemas}
 
@@ -48,21 +40,21 @@ Vor dem Einsatz des Reaktionsmoduls ist eine Anwendungsintegration erforderlich,
 
 ### Standardschemata {#standard-schemas}
 
-Das vorkonfigurierte Schema **[!UICONTROL nms:remaMatch]** enthält die Reaktionslog-Tabelle, d. h. die Beziehung zwischen Personen, Hypothese und Transaktionstabelle. Dieses Schema wird als Vererbungsschema für die endgültige Zieltabelle der Reaktionslogs verwendet.
+Das vorkonfigurierte **[!UICONTROL nms:remaMatch]**-Schema enthält die Tabelle der Reaktionsprotokolle, d. h. die Beziehung zwischen Personen, Hypothese und Transaktionstabelle. Dieses Schema wird als Vererbungsschema für die endgültige Zieltabelle der Reaktionsprotokolle verwendet.
 
-Das **[!UICONTROL nms:remaMatchRcp]**-Schema wird standardmäßig bereitgestellt und enthält die Speicherung von Reaktionslogs für Adobe Campaign-Empfänger ( **[!UICONTROL nms:recipient]** ). Damit sie verwendet werden kann, muss sie erweitert werden, um einer Transaktionstabelle (mit Käufen usw.) zugeordnet zu werden.
+Das **[!UICONTROL nms:remaMatchRcp]**-Schema wird standardmäßig bereitgestellt und enthält den Speicher für Reaktionsprotokolle für Adobe Campaign-Empfangende (**[!UICONTROL nms:recipient]**). Damit er verwendet werden kann, muss es erweitert und einer Transaktionstabelle (mit Käufen usw.) zugeordnet werden.
 
 ### Transaktionstabellen und -details {#transaction-tables-and-transaction-details}
 
 Die Transaktionstabelle muss über eine direkte Relation mit den Individuen verfügen.
 
-Sie können auch eine Tabelle mit Transaktionsdetails hinzufügen. Dies steht in keinem direkten Zusammenhang mit Einzelpersonen.
+Sie können auch eine Tabelle mit Transaktionsdetails hinzufügen. Diese ist nicht direkt mit Einzelpersonen verknüpft.
 
-Wenn wir z.B. einen Wareneingang nehmen, ist eine Transaktionstabelle mit einem Kontakt (Wareneingangstabelle) verknüpft und eine Wareneingangspositionstabelle nur mit der Wareneingangstabelle (Detailtabelle). Anschließend können Sie die Hypothese direkt auf der Ebene konfigurieren, auf der die Zahlungsposition mit der Zahlungstabelle verknüpft ist.
+Im Fall eines Belegs zum Beispiel ist eine Transaktionstabelle mit dem Kontakt verknüpft (Belegtabelle) und eine zweite Tabelle (Detailtabelle), die die Belegzeilen enthält, ist nur mit der Belegtabelle verknüpft. So können Sie die Hypothese direkt auf der Ebene konfigurieren, auf der die Belegzeilentabelle mit der Belegtabelle verknüpft ist.
 
 >[!NOTE]
 >
->Wenn Sie die Wareneingangskennung beibehalten möchten, die das erwartete Verhalten in den Hypothesen beschreibt, können Sie die Tabellenvorlage nms:remaMatchRcp erweitern, um ihr die Kennung hinzuzufügen (in diesem Fall ist keine ROI-Berechnung mit diesen Feldern verknüpft).
+>Wenn Sie die Belegkennung beibehalten möchten, die das erwartete Verhalten in den Hypothesen beschreibt, können Sie die Tabellenvorlage „nms:remaMatchRcp“ erweitern, um ihr die Kennung hinzuzufügen (in diesem Fall ist keine ROI-Berechnung mit diesen Feldern verknüpft).
 
 Es wird zudem dringend empfohlen, ein Ereignisdatum hinzuzufügen.
 
@@ -72,9 +64,9 @@ Das folgende Schema stellt die Relationen der unterschiedlichen Tabellen nach er
 
 ### Reaktionsverwaltung und Empfänger {#response-management-with-adobe-campaign-recipients}
 
-In diesem Beispiel wird unter Verwendung der in Adobe Campaign integrierten Empfängertabelle (nms) eine Tabelle mit Käufen in **[!UICONTROL Reaktionsverwaltungsmodul:recipient]**.
+In diesem Beispiel wird mithilfe der in Adobe Campaign integrierten Empfängertabelle „**[!UICONTROL nms:recipient]**“ eine Tabelle mit Käufen in das Reaktionsverwaltungsmodul integriert.
 
-Die Tabelle mit Antwortprotokollen bei einem **[!UICONTROL nms:remaMatchRcp]**-Empfänger wird erweitert, um einen Link zum Kauftabellen-Schema hinzuzufügen. Im folgenden Beispiel wird die Kauftabelle als &quot;**&quot;:purchase**.
+Die Tabelle mit Reaktionsprotokollen bei **[!UICONTROL nms:remaMatchRcp]**-Empfangenden wird erweitert, um eine Verknüpfung zum Kauftabellen-Schema hinzuzufügen. Im folgenden Beispiel heißt die Kauftabelle **demo:purchase**.
 
 1. Gehen Sie im Adobe Campaign-Explorer in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**.
 1. Machen Sie einen Rechtsklick auf **Empfänger** und wählen Sie **[!UICONTROL Aktionen]** und **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
@@ -119,9 +111,9 @@ name="remaMatchRcp" namespace="cus">
 
 In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der Adobe Campaign-Empfängertabelle, eine Tabelle mit Kaufdaten in die Reaktionsverwaltung integriert.
 
-* Erstellen Sie ein neues Reaktionslog-Schema, das vom **[!UICONTROL nms:remaMatch]**-Schema abgeleitet ist.
+* Erstellen Sie ein neues Reaktionsprotokollschema, das vom **[!UICONTROL nms:remaMatch]**-Schema abgeleitet ist.
 
-  Da sich die Individuentabelle von der Empfängertabelle in Adobe Campaign unterscheidet, muss ein neues Schema der Antwortprotokolle basierend auf dem Schema **[!UICONTROL nms:remaMatch]** erstellt werden. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
+  Da sich die Tabelle der Personen von der Empfängertabelle in Adobe Campaign unterscheidet, muss ein neues Schema der Reaktionsprotokolle basierend auf dem **[!UICONTROL nms:remaMatch]**-Schema erstellt werden. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
 
   Im folgenden Beispiel verwenden wir das Schema **demo:broadLogPers** und die Transaktionstabelle **demo:purchase**:
 
@@ -144,7 +136,7 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
 
 * Ändern Sie das Hypothesenformular im **[!UICONTROL nms:remaHypothesis]**-Schema.
 
-  Standardmäßig ist die Liste der Antwortprotokolle in den Empfängerprotokollen sichtbar. Sie müssen daher das Hypothesenformular ändern, um die im vorherigen Schritt erstellten neuen Antwortprotokolle anzeigen zu können.
+  Standardmäßig wird die Liste der Reaktionsprotokolle in den Empfängerprotokollen angezeigt. Um die im vorherigen Schritt erstellten neuen Reaktionsprotokolle anzuzeigen, müssen Sie daher das Hypothesenformular ändern.
 
   Beispiel:
 
@@ -161,7 +153,7 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
 
 ## Indikatoren verwalten {#managing-indicators}
 
-Das Modul Antwort-Manager enthält eine Liste vordefinierter Indikatoren. Sie können jedoch weitere personalisierte Messindikatoren hinzufügen.
+Das Response Manager-Modul verfügt über eine Liste an vordefinierten Indikatoren.Sie können jedoch weitere personalisierte Messindikatoren hinzufügen.
 
 Erweitern Sie hierzu die Hypothesentabelle, indem Sie zwei Felder für jeden neuen Indikator hinzufügen:
 

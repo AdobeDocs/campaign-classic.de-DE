@@ -8,17 +8,14 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 TQID: https://experienceleague.adobe.com/o78NLFSbsXqQgJQEU5KSN5PkheQHtHlPh2KdB0RBINA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1164
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +23,7 @@ ht-degree: 79%
 
 
 
-Um das Interaction-Modul in einer Web-Seite aufzurufen, fügen Sie einen Aufruf an einen JavaScript-Code direkt in die Seite ein. Dieser Aufruf gibt den Angebotsinhalt in einer Zielgruppe zurück
+Um das Interaktionsmodul in einer Web-Seite aufzurufen, fügen Sie einen JavaScript-Aufruf direkt in die Seite ein. Die Rückgabe dieses Aufrufs ist der Angebotsinhalt in einem Ziel-
 
 Element.
 
@@ -60,8 +57,8 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
    Die HTML-Seite muss ein
 
-   -Element mit einem „@id“-Attribut enthalten, das den Wert des internen Namens der erstellten Platzierung hat („i_internal name space“). Das Angebot wird in dieses eingefügt.
--Element durch Interaktion.
+   -Element mit einem „@id“-Attribut enthalten, das den Wert des internen Namens der erstellten Platzierung hat („i_internal name space“). Das Angebot wird in dieses
+Element nach Interaktion eingefügt.
 
    Im vorliegenden Beispiel nimmt das Attribut @id den Wert &quot;i_SPC12&quot; an, wobei &quot;SPC12&quot; der interne Name der zuvor erstellten Platzierung ist:
 
@@ -125,7 +122,7 @@ Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess
 
    Im vorliegenden Beispiel handelt es sich um einen zusammengesetzten Identifikationsschlüssel, da er sowohl auf die E-Mail-Adresse als auch auf den Namen des Kontakts Bezug nimmt.
 
-1. Während der Anzeige der Web-Seite ermöglicht die Skriptauswertung die Weitergabe der Empfänger-ID an das Angebotsmodul. Wenn es sich um eine zusammengesetzte ID handelt, werden die Schlüssel in der gleichen Reihenfolge angezeigt wie in den erweiterten Einstellungen und durch ein | getrennt.
+1. Bei der Anzeige der Web-Seite ermöglicht die Skriptauswertung die Übergabe der Empfänger-ID an das Angebotsmodul. Bei einer zusammengesetzten ID werden die Schlüssel in derselben Reihenfolge wie in den erweiterten Einstellungen angezeigt und durch | getrennt.
 
    In folgendem Beispielcode hat sich der Kontakt auf der Webseite mit seinen Kundendaten angemeldet. Er wurde somit bei der Abfrage des Angebotsmodul mithilfe seiner E-Mail-Adresse und seines Familiennamens identifiziert:
 
@@ -151,7 +148,7 @@ Die Verwendung einer HTML-Rendering-Funktion bietet den Vorteil, das die HTML-Da
 
 ### Angebote unterbreiten {#presenting-an-offer}
 
-Mit Interaction können Sie einen XML-Knoten an die HTML-Seite zurückgeben, die das Angebotsmodul aufruft. Dieser XML-Knoten kann von Funktionen verarbeitet werden, die auf Kundenseite entwickelt werden.
+Mit dem Interaktionsmodul können Sie einen XML-Knoten an die HTML-Seite zurückgeben, die das Angebotsmodul aufruft. Dieser XML-Knoten kann von Funktionen verarbeitet werden, die auf Kundenseite entwickelt werden.
 
 Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
@@ -161,15 +158,15 @@ Die Angebotsmodul-Abfrage stellt sich wie folgt dar:
 
 Der Parameter &quot;**env**&quot; erhält den internen Namen der Live-Umgebung.
 
-Der Parameter **cb** erhält den Namen der Funktion, die den XML-Knoten liest, der von der Engine mit den (Callback) Vorschlägen zurückgegeben wird. Dieser Parameter ist optional.
+Der Parameter „**cb**“ erhält den Namen der Funktion, die den vom Modul zurückgegebenen XML-Knoten mit den (Callback-)Vorschlägen liest. Dieser Parameter ist optional.
 
 Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden. Dieser Parameter ist optional.
 
-Der Parameter &quot;**c**&quot; empfängt die Liste der internen Namen der Kategorien. Dieser Parameter ist optional.
+Der Parameter „**c**“ erhält die Liste interner Namen der Kategorien. Dieser Parameter ist optional.
 
-Der **.** empfängt die Liste der Designs. Dieser Parameter ist optional.
+Der Parameter „**th**“ erhält die Liste an Themen.Dieser Parameter ist optional.
 
-Der Parameter **gctx** empfängt die Aufrufdaten global (context) für die gesamte Seite. Dieser Parameter ist optional.
+Der Parameter „**gctx**“ erhält die globalen Abfragedaten (Kontext) der gesamten Seite. Dieser Parameter ist optional.
 
 Der zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -194,7 +191,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Das Schema definiert die Felder Titel 2 und Preis.
 
-   Der Name des Schemas im Beispiel lautet **cus:offer**
+   Der Name des Schemas im Beispiel lautet **cus:offer**.
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2 AAAA-MM-DD HH:MM:SS.762Z" createdBy-id="0"
@@ -221,7 +218,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    >[!IMPORTANT]
    >
-   >Jedes Element muss zweimal definiert werden. Elemente vom Typ „CDATA“ („_jst„) können Personalisierungsfelder enthalten.
+   >Jedes Element muss zweimal definiert werden. Elemente vom Typ „CDATA“ („_jst“) können Personalisierungsfelder enthalten.
    >
    >Vergessen Sie nicht, die Datenbankstruktur zu aktualisieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/updating-the-database-structure.md).
 
@@ -298,7 +295,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der Parameter &quot;**env**&quot; nimmt als Wert den internen Namen der Live-Umgebung an.
 
-   Der Wert des Parameters &quot;**cb**&quot; ist der Name der Funktion, die den von der Engine zurückgegebenen XML-Knoten interpretieren muss. In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
+   Der Wert des Parameters „**cb**“ ist der Name der Funktion, die den vom Modul zurückgegebenen XML-Knoten interpretieren muss.In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
 
    Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 
@@ -320,7 +317,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
 ### Verwendung einer Rendering-Funktion {#using-a-rendering-function-}
 
-Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktion zu erstellen. Diese Funktion ändert den XML-Knoten, der beim Aufruf der Engine an die HTML-Seite zurückgegeben wird.
+Es ist möglich, eine Angebotsunterbreitung mithilfe einer XML-Rendering-Funktion zu erstellen. Diese Funktion ändert den XML-Knoten, der beim Abfragen des Angebotsmoduls an die HTML-Seite zurückgegeben wird.
 
 1. Klicken Sie in der Angebotsplatzierung auf den Link **[!UICONTROL Funktionen bearbeiten...]**.
 1. Kreuzen Sie die Option **[!UICONTROL XML-Rendering-Funktion überschreiben]** an.

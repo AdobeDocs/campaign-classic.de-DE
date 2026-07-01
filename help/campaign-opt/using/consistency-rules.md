@@ -7,24 +7,15 @@ feature: Typology Rules, Campaigns
 hide: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 TQID: https://experienceleague.adobe.com/rkCdxvBXQAvuM0hpIt2nQ35lxDBK2XpS-0tHN7NzQVI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 830
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +23,9 @@ ht-degree: 69%
 
 ## Über Kohärenzregeln {#about-consistency-rules}
 
-Adobe Campaign garantiert konsistente Kommunikation dank einer Reihe von Regeln, die in Kampagnentypologien enthalten sind. Sie dienen der Kontrolle der an Empfängerinnen und Empfänger gesendeten Sendungen, z. B. Menge, Art, Relevanz usw.
+Adobe Campaign garantiert konsistente Kommunikation dank einer Reihe von Regeln, die in Kampagnentypologien enthalten sind. Sie dienen der Steuerung der an Empfängerinnen und Empfänger gesendeten Sendungen, z. B. hinsichtlich Menge, Art, Relevanz usw.
 
-**Kapazitätsregeln** können beispielsweise verhindern, dass die vom Nachrichtenversand betroffene Plattform überlastet wird. Beispielsweise dürfen Sonderangebote mit einem Download-Link nicht an zu viele Personen gleichzeitig gesendet werden, um den Server nicht zu überlasten; Telefonkampagnen dürfen die Verarbeitungskapazität von Callcentern usw. nicht überschreiten. Weitere Informationen hierzu finden Sie unter [Kontrollieren der Kapazität](#controlling-capacity).
+**Kapazitätsregeln** können beispielsweise verhindern, dass die vom Nachrichtenversand betroffene Plattform überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an zu viele Personen gleichzeitig gesendet werden, um den Server nicht zu überlasten; eine Telefonkampagne darf die Verarbeitungskapazität von Callcentern nicht überschreiten usw. Weitere Informationen zu diesem Theme finden Sie unter [Kontrollieren der Kapazität](#controlling-capacity).
 
 ## Kontrollieren der Kapazität {#controlling-capacity}
 
@@ -42,7 +33,7 @@ Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihre physische Infrastr
 
 Erstellen Sie hierfür Typologieregeln vom Typ **[!UICONTROL Kapazität]**.
 
-Im folgenden Beispiel erstellen wir eine Typologieregel für eine Telefonloyalitätskampagne. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, was der täglichen Verarbeitungskapazität eines Callcenters entspricht. Nachdem die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Logs überwachen.
+Im folgenden Beispiel erstellen wir eine Typologieregel für eine telefonische Treuekampagne. Wir beschränken die Anzahl der Nachrichten auf 20 pro Tag, was der täglichen Verarbeitungskapazität eines Callcenters entspricht. Nachdem die Regel auf zwei Sendungen angewendet wurde, können wir den Verbrauch über Logs überwachen.
 
 Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
@@ -51,7 +42,7 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    ![](assets/campaign_opt_create_capacity_01.png)
 
-1. Erstellen Sie auf **[!UICONTROL Registerkarte]** Kapazität“ die Verfügbarkeitszeilen: In unserem Beispiel handelt es sich um Zeiträume, in denen Anrufe getätigt werden können. Wählen Sie einen Zeitraum von 24 Stunden aus und geben Sie 150 in die Anfangsmenge ein, was bedeutet, dass das Callcenter 150 Anrufe pro Tag verarbeiten kann.
+1. Erstellen Sie in der Registerkarte **[!UICONTROL Kapazität]** die Verfügbarkeitszeilen. In unserem Beispiel sind dies Zeiträume, in denen Anrufe getätigt werden können. Wählen Sie einen Zeitraum von 24 Stunden aus und geben Sie als anfängliche Menge 150 ein, was bedeutet, dass das Callcenter 150 Anrufe pro Tag verarbeiten kann.
 
    ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -74,7 +65,7 @@ Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen fest
 
 ### Verfügbarkeitszeilen einzeln hinzufügen {#adding-availability-lines-one-by-one}
 
-Um eine Verfügbarkeitszeile zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie **[!UICONTROL Verfügbarkeitszeile hinzufügen]** aus. Geben Sie den Verfügbarkeitszeitraum und die verfügbare Last ein.
+Um eine einzelne Verfügbarkeitszeile zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Eine Verfügbarkeitszeile hinzufügen]** aus. Geben Sie den Verfügbarkeitszeitraum und die mögliche Belastung ein.
 
 ![](assets/campaign_opt_create_capacity_02.png)
 
@@ -82,13 +73,13 @@ Sie können die Ihrer Verarbeitungskapazität entsprechende Anzahl an Zeilen hin
 
 ### Mehrere Verfügbarkeitszeilen hinzufügen {#add-a-set-of-availability-lines}
 
-Um Verfügbarkeitszeiträume für einen bestimmten Zeitraum festzulegen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Mehrere Verfügbarkeitszeilen hinzufügen]** aus. Geben Sie eine Dauer für jeden Zeitraum und die Anzahl der zu erstellenden Zeiträume an.
+Um Verfügbarkeitszeiträume für einen bestimmten Zeitraum zu definieren, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Mehrere Verfügbarkeitszeilen hinzufügen]** aus. Geben Sie eine Dauer für jeden Zeitraum und die Anzahl der zu erstellenden Zeiträume an.
 
 Um die Zeitraumerstellung zu automatisieren, klicken Sie auf die Schaltfläche **[!UICONTROL Ändern]** und legen Sie die Planung der Zeiträume fest.
 
 ![](assets/campaign_opt_create_capacity_07.png)
 
-Definieren wir beispielsweise einen Zeitplan, um Verfügbarkeitszeiträume für alle Arbeitstage mit einer Rate von 10 Aufrufen pro Stunde zwischen 9 Uhr und 17 Uhr zu erstellen. Gehen Sie hierzu wie folgt vor:
+Definieren wir beispielsweise einen Zeitplan zur Erstellung von Verfügbarkeitszeiträumen für alle Werktage mit einer Kapazität von 10 Anrufen pro Stunde zwischen 9 und 17 Uhr. Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Häufigkeitstyp und die Gültigkeitszeiträume aus:
 

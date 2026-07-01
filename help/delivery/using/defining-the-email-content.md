@@ -8,26 +8,15 @@ role: User
 hide: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 TQID: https://experienceleague.adobe.com/NWs-NqNfnkyoj0XJfy5-BvKwJofom-V0iSQJI3-F-38
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2055
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -39,14 +28,14 @@ Klicken Sie auf **[!UICONTROL Von]**, um den Namen und die Adresse des Absenders
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-In diesem Fenster können Sie alle Informationen eingeben, die zum Erstellen der E-Mail-Nachrichtenkopfzeilen erforderlich sind. Diese Informationen können personalisiert werden. Verwenden Sie dazu die Schaltflächen rechts neben den Eingabefeldern, um Personalisierungsfelder einzufügen.
+In diesem Fenster können Sie alle Informationen eingeben, die für das Erstellen von E-Mail-Nachrichten-Headern erforderlich sind. Diese Informationen können personalisiert werden. Verwenden Sie dazu die Schaltflächen rechts neben den Eingabefeldern, um Personalisierungsfelder einzufügen.
 
 Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Sie im Abschnitt [Über die Personalisierung](about-personalization.md).
 
 >[!NOTE]
 >
 >* Die Absenderadresse wird standardmäßig auch als Antwortadresse verwendet.
->* Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Bereitstellungsassistenten eingegeben werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
+>* Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten Sie die Werte, die beim Konfigurieren des Bereitstellungsassistenten eingegeben werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 >* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich (gemäß RFC-Standard).
 >* Adobe Campaign führt eine Syntax-Prüfung der angegebenen E-Mail-Adressen durch.
 
@@ -82,7 +71,7 @@ Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoti
 
 Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurationsfensters erfasst.
 
-Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Empfängerpräferenz. Wir empfehlen, Inhalte in beiden Formaten zu erstellen, um sicherzustellen, dass Nachrichten in jedem E-Mail-System korrekt angezeigt werden können. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
+Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Voreinstellung der Empfängerin bzw. des Empfängers. Wir empfehlen Inhalte in beiden Formaten zu erstellen, damit Nachrichten in jedem E-Mail-System korrekt angezeigt werden können. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
 
@@ -90,9 +79,9 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Em
 
   >[!IMPORTANT]
   >
-  >Der HTML-Inhalt muss zuvor erstellt und dann in Adobe Campaign importiert werden. Der HTML-Editor ist nicht für die Inhaltserstellung vorgesehen.
+  >Der HTML-Inhalt muss vorab erstellt und anschließend in Adobe Campaign importiert werden. Der HTML-Editor ist nicht für die Inhaltserstellung vorgesehen.
 
-  Auf **[!UICONTROL Unterregisterkarte]** Vorschau“ können Sie das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.
+  In der Unterregisterkarte **[!UICONTROL Vorschau]** können Sie das Rendering der einzelnen Inhalte für eine Empfängerin bzw. einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.
 
   Über die verschiedenen Schaltflächen der Symbolleiste haben Sie Zugriff auf die Standard-Parameter für die Seitenaufmachung im HTML-Format.
 
@@ -114,11 +103,11 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Em
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
-  Sie können die HTML-Nachricht validieren. Sie können auch den Inhalt der E-Mail-Kopfzeile anzeigen.
+  Sie können die HTML-Nachricht valdieren. Sie können auch den Inhalt des E-Mail-Headers anzeigen.
 
   ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* Um einen Textinhalt zu importieren, verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]** oder die Registerkarte **[!UICONTROL Textinhalt]**, um den Inhalt der Nachricht einzugeben, wenn sie im Textformat angezeigt wird. Verwenden Sie die Schaltflächen der Symbolleiste, um auf Aktionen im Inhalt zuzugreifen. Mit der letzten Schaltfläche können Sie Personalisierungsfelder einfügen.
+* Verwenden Sie zum Importieren von Textinhalten die Schaltfläche **[!UICONTROL Öffnen]** oder die Registerkarte **[!UICONTROL Textinhalt]**, um den Inhalt einer im Textformat angezeigten Nachricht einzugeben.Verwenden Sie die Schaltflächen der Symbolleiste, um auf Aktionen im Inhalt zuzugreifen. Mit der letzten Schaltfläche können Sie Personalisierungsfelder einfügen.
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
@@ -131,7 +120,7 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Em
 
 Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
-Weitere Informationen hierzu finden Sie in der [&#x200B; Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=de){target="_blank"}.
+Weitere Informationen hierzu finden Sie in der [ Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=de){target="_blank"}.
 
 ## Verwenden von Content-Management {#using-content-management}
 
@@ -178,7 +167,7 @@ Diese Bilder können:
 * lokal gespeichert sein oder von einem Server abgerufen werden;
 * aus der Bibliothek der öffentlichen Ressourcen in Adobe Campaign stammen;
 
-  Öffentliche Ressourcen sind über den Knoten **[!UICONTROL Ressourcen > Online]** der Adobe Campaign-Hierarchie zugänglich. Sie sind in einer Bibliothek gruppiert und können in E-Mail-Nachrichten enthalten sein, können aber auch für Kampagnen oder Aufgaben oder für das Content-Management verwendet werden.
+  Auf öffentliche Ressourcen kann über den Knoten **[!UICONTROL Ressourcen > Online]** der Adobe Campaign-Hierarchie zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mail-Nachrichten eingefügt und auch für Kampagnen oder Aufgaben bzw. für das Content-Management verwendet werden.
 
 * Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in [diesem Abschnitt](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
@@ -237,7 +226,7 @@ Für jedes erkannte Bild können Sie den Status prüfen:
 
 Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von außerhalb zugänglich zu sein. Dies gilt nicht für lokal gespeicherte Bilder, die im Vorfeld hochzuladen sind.
 
-Sie können weiterarbeiten und Bilder hochladen, damit sie von anderen Adobe Campaign-Benutzern angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
+Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von anderen Adobe Campaign-Benutzenden angezeigt werden können.Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -261,7 +250,7 @@ Durch Ankreuzen der Option **[!UICONTROL Bilder in die E-Mail einschließen (mul
 
 Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensionale Code-Typen in den gängigsten Normen zu erstellen.
 
-Es ist möglich, einen Barcode dynamisch als Bitmap unter Verwendung eines Werts zu generieren, der mithilfe von Kundenkriterien definiert wurde. Personalisierte Barcodes können in E-Mail-Kampagnen aufgenommen werden. Der Empfänger kann die Nachricht drucken und sie dem ausstellenden Unternehmen zum Scannen vorlegen (z. B. beim Auschecken).
+Es ist möglich, einen Barcode dynamisch als Bitmap unter Verwendung eines Werts zu generieren, der mithilfe von Kundenkriterien definiert wurde. Personalisierte Barcodes können in E-Mail-Kampagnen aufgenommen werden. Die Empfängerin bzw. der Empfänger kann die Nachricht drucken und sie dem ausstellenden Unternehmen zum Scannen vorlegen (z. B. beim Auschecken).
 
 Positionieren Sie den Cursor im Inhalt an der Stelle, an der der Barcode eingefügt werden soll, und klicken Sie auf die Personalisierungsschaltfläche. Wählen Sie **[!UICONTROL Einfügen > Barcode...]**.
 
@@ -283,7 +272,7 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
      ![](assets/barcode_insert_09.png)
 
-   * Um einen QR-Code einzufügen, wählen Sie diesen Typ und geben Sie die anzuwendende Fehlerkorrekturrate ein. Dieser Satz definiert die Menge der wiederholten Informationen und die Toleranz gegenüber Verschlechterung.
+   * Wählen Sie zum Einfügen eines QR-Codes seinen Typ aus und geben Sie die anzuwendende Fehlerkorrekturrate an. Diese Rate definiert die Menge der wiederholten Informationen und die Toleranz bei Verschlechterung.
 
      ![](assets/barcode_insert_06.png)
 
@@ -292,7 +281,7 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
      ![](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
-1. Im **[!UICONTROL Wert]** können Sie den Wert des Barcodes definieren. Ein Wert kann mit einem speziellen Angebot übereinstimmen und die Funktion eines Kriteriums sein. Er kann der Wert eines mit den Kunden verknüpften Datenbankfelds sein.
+1. Im Feld **[!UICONTROL Wert]** können Sie den Wert des Barcodes definieren. Dieser kann einem Sonderangebot entsprechen und die Funktion von Kriterien übernehmen. Es kann sich um einen Wert eines mit den Kundinnen und Kunden verknüpften Datenbankfelds handeln.
 
    Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 
@@ -304,11 +293,11 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
    >[!NOTE]
    >
-   >Der einem Barcode zugewiesene Wert hängt von seinem Typ ab. Beispielsweise muss ein EAN-8-Typ genau 8 Nummern haben.
+   >Der einem Barcode zugewiesene Wert hängt von seinem Typ ab. Beispielsweise muss ein EAN-8-Typ genau 8 Ziffern haben.
    >
-   >Über die Personalisierungsschaltfläche rechts neben dem Feld **[!UICONTROL Wert]** können Sie zusätzlich zum Wert selbst Daten hinzufügen. Dadurch wird der Barcode angereichert, sofern er vom Barcode-Standard akzeptiert wird.
+   >Die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** ermöglicht das Hinzufügen von Daten zusätzlich zum Wert selbst. Dadurch wird der Barcode angereichert, sofern dies vom Barcode-Standard akzeptiert wird.
    >
-   >Wenn Sie beispielsweise einen Barcode vom Typ GS1-128 verwenden und die Kontonummer eines Empfängers zusätzlich zum Wert eingeben möchten, klicken Sie auf die Schaltfläche Personalisierung und wählen Sie **[!UICONTROL Empfänger > Kontonummer]**. Wenn die Kontonummer des ausgewählten Empfängers korrekt eingegeben wurde, wird sie vom Barcode berücksichtigt.
+   >Wenn Sie beispielsweise einen GS1-128-Barcode verwenden und zusätzlich zum Wert die Kontonummer einer Empfängerin bzw. eines Empfängers angeben möchten, klicken Sie auf die Personalisierungsschaltfläche und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**. Wenn die Kontonummer der ausgewählten Empfängerin bzw. des ausgewählten Empfängers korrekt eingegeben wird, wird sie vom Barcode berücksichtigt.
 
 Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie vor dem Versand stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird. Klicken Sie hierzu auf die Registerkarte **[!UICONTROL Vorschau]**.
 

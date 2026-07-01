@@ -7,19 +7,14 @@ feature: Campaigns, Monitoring
 hide: true
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 TQID: https://experienceleague.adobe.com/pWtvLbBTzAs8yhya3hnXaW8o-bpMebF24L5tRL4iMD0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-subfeature_v2:
-  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 262
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +32,7 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Die Unterregisterkarte **[!UICONTROL Aufgaben]** gruppiert alle mit der Kampagne verknüpften Aufgaben. In dieser Ansicht können Sie sie bearbeiten oder löschen. Aufgaben sind in der MRM-Anwendung verfügbar. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../mrm/using/creating-and-managing-tasks.md).
+* Die Unterregisterkarte **[!UICONTROL Aufgaben]** gruppiert alle Aufgaben im Zusammenhang mit der Kampagne.In dieser Ansicht können Sie sie bearbeiten oder löschen. Aufgaben sind mit der MRM-Anwendung verfügbar. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../mrm/using/creating-and-managing-tasks.md).
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -47,7 +42,7 @@ Für jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
 ## Versandverfolgung {#delivery-tracking}
 
-Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.**&#x200B;**
+Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.****
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -63,4 +58,4 @@ Um den Status eines Versands zu überprüfen, öffnen Sie diesen. Im Dashboard u
 
 Sie können den Status der Sendungen einsehen, indem Sie auf die Schaltfläche **[!UICONTROL Sendungen]** in der Rubrik „Kampagnen“ der Adobe Campaign-Startseite klicken. Siehe [Versandverfolgung](#delivery-tracking).
 
-Informationen über die in einer Kampagne ausgeführten Prozesse werden in der Registerkarte **[!UICONTROL Bearbeiten > Audit]** der Kampagne erfasst. Dort können Sie die Liste der Sendungen in der Kampagne anzeigen. [Weitere Informationen](#tracking-a-campaign).
+Informationen bezüglich der in einer Kampagne ausgeführten Prozesse werden in der Registerkarte **[!UICONTROL Bearbeiten > Audit]** der jeweiligen Kampagne erfasst. Dort können Sie die Liste der Sendungen in der Kampagne anzeigen. [Weitere Informationen](#tracking-a-campaign).

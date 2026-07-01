@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 TQID: https://experienceleague.adobe.com/-IwRJsJKykm7pbLwdlXjLa1YP3TuJX2zvbrJGd2zLto
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 782
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +75,7 @@ Gehen Sie wie folgt vor, um die Vorlage auf die erste Seite zu laden:
 1. Wählen Sie die gewünschte HTML-Datei aus.
 1. Wählen Sie **Öffnen**, um den Import zu starten.
 
-   Beim Laden wird die Liste der freigegebenen Dateien angezeigt. Das Importsystem überprüft, ob alle mit der ausgewählten HTML verknüpften Dateien vorhanden sind (CSS, Bilder usw.).
+   Beim Laden wird die Liste der freigegebenen Dateien angezeigt. Im Importsystem wird geprüft, ob alle mit der ausgewählten HTML-Datei verknüpften Dateien vorhanden sind (CSS, Bilder etc.).
 
    Wählen Sie die Schaltfläche **[!UICONTROL Schließen]** aus, wenn der Import abgeschlossen ist.
 
@@ -101,17 +94,17 @@ Wiederholen Sie diese Schritte für jede Seite der Webanwendung.
 
 >[!CAUTION]
 >
->**Der DCE führt den JavaScript-Code für die geladene HTML-Seite aus.** JavaScript-Fehler in der HTML-Vorlage, die in der Benutzeroberfläche von Adobe Campaign angezeigt werden können. Diese Fehler beziehen sich nicht auf den Editor. Um sicherzustellen, dass die importierten Dateien keine Fehler enthalten, sollten Sie sie in einem Webbrowser testen, bevor Sie die Dateien in den DCE importieren.
+>**Der DCE führt den JavaScript-Code für die geladene HTML-Seite aus.** JavaScript-Fehler in der HTML-Vorlage, die in der Adobe Campaign-Benutzeroberfläche angezeigt werden können. Diese Fehler beziehen sich nicht auf den Editor. Um sicherzustellen, dass die importierten Dateien keine Fehler enthalten, sollten Sie sie in einem Webbrowser testen, bevor Sie die Dateien in den DCE importieren.
 
 ## Schritt 2: Konfigurieren des Inhalts {#step-2---configuring-the-content}
 
-In diesem Abschnitt wird beschrieben, wie importierter Inhalt angepasst und die Felder der Datenbank mit dem Formular der Web-Seite verknüpft werden. Die zuvor erstellte Web-Anwendung ist:
+In diesem Abschnitt wird importierter Inhalt angepasst und die Datenbankfelder werden mit dem Web-Seitenformular verknüpft. Die zuvor erstellte Web-Anwendung ist:
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
 ### Inhalt ändern {#modifying-content}
 
-Ändern wir zunächst die Farben der Seite. Gehen Sie dazu wie folgt vor:
+Zunächst sollen die Farben der Seite geändert werden. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie die Seite **[!UICONTROL Sammlung]**.
 1. Klicken Sie auf den Hintergrund.
@@ -145,7 +138,7 @@ Sie können Felder nach Bedarf zu Pflichtfeldern machen: Beispielsweise können 
 
 Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenfolge der nächsten Schritte feststellen kann: Speichern der erfassten Daten in der Datenbank und die Anzeige der nächsten Seite (**Dankeseite**).
 
-1. Wählen Sie die **[!UICONTROL Senden Sie sie!]** Schaltfläche der Seite **[!UICONTROL Sammlung]**.
+1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** auf der Seite **[!UICONTROL Sammlung]** aus.
 1. Öffnen Sie die Dropdown-Liste **[!UICONTROL Aktion]**.
 1. Wählen Sie die Aktion **[!UICONTROL Nächste Seite]** aus.
 
@@ -153,7 +146,7 @@ Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenf
 
 ### Personalisierungsfeld einfügen {#inserting-a-personalization-field}
 
-In diesem Schritt können Sie die Dankeseite personalisieren. Gehen Sie dazu wie folgt vor:
+in diesem Schritt kann die Dankeseite personalisiert werden. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie die **[!UICONTROL Dankeseite]**.
 1. Platzieren Sie den Cursor in den Textbereich, wo der Vorname des Empfängers eingefügt werden soll.
@@ -172,7 +165,7 @@ Inhalte werden über das Dashboard der Webanwendung veröffentlicht. Klicken Sie
 
 ![](assets/dce_uc1_pub_dashboard.png)
 
-Während der Veröffentlichung wird ein Protokoll angezeigt. Das Veröffentlichungssystem analysiert den gesamten Inhalt der Webanwendung
+Während der Veröffentlichung wird ein Protokoll angezeigt. Das Veröffentlichungssystem analysiert den gesamten Inhalt in der Web-Anwendung.
 
 ![](assets/dce_uc1_pub_dashboard_journal.png)
 

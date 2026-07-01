@@ -7,22 +7,14 @@ feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
 TQID: https://experienceleague.adobe.com/pVYaTG48-HiK0RwJXgBbIMWa-o-R7jlEpauXNXvGi5E
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 355
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +30,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Eingabe einzelner Testadressen.
 
-   Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und definieren Sie den Inhalt der Adressfelder. Für jede Adresse wiederholen.
+   Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und definieren Sie den Inhalt der Adressfelder. Wiederholen Sie dies für jede Adresse.
 
 1. Import von Adressenvorlagen, die je nach Bedarf angepasst werden können.
 
@@ -48,17 +40,17 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Dynamische Auswahl der Testadressen durch Erstellen einer Filterbedingung.
 
-   Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Testadressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
+   Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten…]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
    Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
->Diese Option wird verwendet, wenn es sich bei der verwendeten Empfängertabelle nicht um die standardmäßige **nms:recipient**-Tabelle handelt und Sie die im Adobe Campaign-Modul **[!UICONTROL Zustellbarkeit]** bereitgestellte Inbox Rendering-Funktion verwenden.
+>Diese Option wird verwendet, wenn es sich bei der verwendeten Empfängertabelle nicht um die standardmäßige **nms:recipient**-Tabelle handelt und Sie die im Adobe Campaign-Modul **[!UICONTROL Zustellbarkeit]** bereitgestellte Inbox-Rendering-Funktion verwenden.
 >
 >Weitere Informationen hierzu finden Sie im Abschnitt [Externe Empfängertabelle verwenden](using-an-external-recipient-table.md) und in der Dokumentation zum [Inbox Rendering](inbox-rendering.md).
 
-Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in der Sortierreihenfolge der Ausgabedatei eingefügt. Sie können sie jedoch auch am Ende oder am Anfang der Datei oder nach dem Zufallsprinzip zwischen den Empfängerinnen und Empfängern der Hauptzielgruppe einfügen.
+Bei Sendungen können Sie auch die Art und Weise anpassen, wie Adressen in die Extraktionsdatei eingefügt werden. Standardmäßig werden sie in die Sortierreihenfolge der Ausgabedatei eingefügt. Sie können jedoch auch angeben, dass sie am Anfang oder Ende der Datei eingefügt oder zufällig zwischen den Empfangenden der Hauptzielgruppe eingefügt werden.
 
 ![](assets/s_ncs_user_edit_del_addresses_sort.png)
 

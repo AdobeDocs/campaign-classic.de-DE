@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 TQID: https://experienceleague.adobe.com/NAcXKBNoDJRopQf-QpqnFhwxFRvvScp7xShJotE0s1A
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-feature_v2:
-  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2:
-  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
-  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
-  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 462
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +21,7 @@ ht-degree: 83%
 
 
 
-Sie können Ihren Bericht vollständig an Ihre Anforderungen anpassen und konfigurieren. Bearbeiten Sie dazu die Eigenschaften. Auf Berichteigenschaften können Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für Aktivitätsabfolgen zugreifen.
+Sie können Ihren Bericht ganz nach Bedarf personalisieren und konfigurieren. Bearbeiten Sie dazu seine Eigenschaften. Auf Berichteigenschaften können Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für Aktivitätsabfolgen zugreifen.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
@@ -69,7 +62,7 @@ Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert we
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-Die Bearbeitungssprache ist die Sprache, in der Sie schreiben. Wenn Sie eine Sprache hinzufügen, wird die Unterregisterkarte auf der Seite zur Berichtsbearbeitung angezeigt.
+Die Bearbeitungssprache ist die Sprache, in der Sie schreiben. Beim Hinzufügen einer Sprache erscheint eine Unterregisterkarte in der Bearbeitungsseite des Berichts.
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 
@@ -79,10 +72,10 @@ Die Bearbeitungssprache ist die Sprache, in der Sie schreiben. Wenn Sie eine Spr
 
 ## Personalisieren des HTML-Renderings {#personalizing-html-rendering}
 
-Auf der Registerkarte **[!UICONTROL Rendering]** können Sie den Datenanzeigemodus für die Seite personalisieren. Sie können Folgendes auswählen:
+In der Registerkarte **[!UICONTROL Rendering]** können Sie den Anzeigemodus der Daten auf der Seite anpassen. Sie können Folgendes auswählen:
 
 * Die Navigation im Bericht: über Schaltflächen oder Links.
-* Die Standardposition von Beschriftungen für Berichtselemente. Diese Position kann für jedes Element überladen werden.
+* Die Standardposition der Titel der Berichtelemente. Die Position kann für jedes Element überschrieben werden.
 * Die Vorlage oder das Thema, das zur Erzeugung der Berichtseiten verwendet wird.
 
 ![](assets/s_ncs_advuser_report_properties_08.png)

@@ -7,9 +7,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 hide: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1584'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 76%
 
 ## Daten klassieren {#data-binning}
 
-Durch die Klassierung können Sie die Datenanzeige vereinfachen, indem Sie Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf aufgezählte Werte beschränken, die anzuzeigenden Daten explizit einschränken und alle anderen Daten in einer eigenen Zeile oder Spalte zusammenfassen usw.
+Mit der Klassierung können Sie die Datenanzeige vereinfachen, indem Sie Werte nach Kriterien gruppieren. Je nach den verfügbaren Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf aufgezählte Werte beschränken, die anzuzeigenden Daten explizit einschränken und alle anderen Daten in einer eigenen Zeile oder Spalte zusammenfassen usw.
 
 Insgesamt sind drei Klassierungstypen möglich:
 
-1. Verwenden manuell definierter Wertebereiche. B. Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw.). Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
+1. Verwenden manuell definierter Wertebereiche. Beispielweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw.) Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
 1. Dynamisch, entsprechend den Werten einer Aufzählung: Nur die in der Aufzählungen enthaltenen Werte werden angezeigt, alle anderen werden als „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
-1. Verwenden von Wertebereichen, wobei alle anderen gruppiert werden. Zum Beispiel bei 18- bis 25-Jährigen, 26- bis 59-Jährigen und anderen. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
+1. Verwenden von Wertebereichen, wobei alle anderen gruppiert werden. Beispielsweise 18- bis 25-Jährige, 26- bis 59-Jährige und andere. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
 
 Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der Erstellung der Dimension an.
 
@@ -51,13 +51,13 @@ Im unten stehenden Beispiel werden Sprachen in drei Gruppen verteilt: Englisch-D
 
 Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppieren. Aktivieren Sie hierzu die Option **[!UICONTROL Ja]** in der Spalte **[!UICONTROL SQL-Maske benutzen]** und geben Sie den anzuwendenden SQL-Filter in der Spalte **[!UICONTROL Werte oder Ausdruck]** an.
 
-Im folgenden Beispiel werden alle E-Mail-Domains, die mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder mit **ymail** (ymail.com, ymail.eu usw.) beginnen, wird unter der Bezeichnung **YAHOO!** gruppiert, sowie Adressen mit der Domain **rocketmail.com**.
+Im folgenden Beispiel werden alle mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder **ymail** (ymail.com, ymail.eu usw.) beginnenden E-Mail-Domains unter dem Titel **YAHOO!** gruppiert, ebenso wie Adressen mit der Domain **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
 ### Klassen dynamisch verwalten {#dynamically-managing-bins}
 
-Werte können über Auflistungen dynamisch verwaltet werden. Das bedeutet, dass nur die in der Auflistung enthaltenen Werte angezeigt werden. Wenn sich die Auflistungswerte ändern, wird der Inhalt des Cubes automatisch angepasst.
+Werte können über Auflistungen dynamisch verwaltet werden. Dies bedeutet, dass nur die in der Auflistung vorhandenen Werte angezeigt werden. Bei Änderung der Auflistungswerte wird der Cube-Inhalt automatisch angepasst.
 
 Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
@@ -84,7 +84,7 @@ Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken S
 
 ![](assets/s_advuser_cube_class_06.png)
 
-Sie können
+Sie haben folgende Möglichkeiten:
 
 * die am häufigsten vertretenen Werte abrufen:
 
@@ -98,7 +98,7 @@ In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
 ### Aufzählungen {#enumerations}
 
-Um die Relevanz und Lesbarkeit eines Berichts zu verbessern, können Sie mit Adobe Campaign bestimmte Auflistungen erstellen, um verschiedene Werte in derselben Klasse neu zu gruppieren. Auf diese für die Klassierung reservierten Auflistungen wird in den Cubes verwiesen, die dann in den Berichten angezeigt werden.
+Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Auflistungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Auf diese für die Klassierung reservierten Auflistungen wird in den Cubes verwiesen, die dann in den Berichten angezeigt werden.
 
 Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
 
@@ -118,7 +118,7 @@ Dabei genügt es, die Aufzählung abzuändern, um den entsprechenden Bericht zu 
 
 ![](assets/nmx_add_alias.png)
 
-Die Auflistung **[!UICONTROL Domains]** wird zum Generieren integrierter Berichte verwendet, die die Liste der Domains anzeigen. Um den Inhalt dieser Berichte anzupassen, können Sie diese Liste bearbeiten.
+Die Auflistung **[!UICONTROL Domains]** wird zur Erstellung nativer Berichte verwendet, in denen die Domain-Liste angezeigt wird. Um den Inhalt dieser Berichte anzupassen, können Sie diese Liste bearbeiten.
 
 Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Aufzählung definierten Klassen gruppiert.
 
@@ -126,7 +126,7 @@ Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und di
 
 Cubes bieten die Möglichkeit, Daten vor der eigentlichen Verwendung zu aggregieren.
 
-Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch auf der Grundlage der im entsprechenden Workflow-Feld definierten Einstellungen aktualisiert, um die zuletzt erfassten Daten in die Indikatoren zu integrieren
+Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch entsprechend den im Workflow-Feld definierten Parametern aktualisiert, um die zuletzt abgerufenen Daten in die Indikatoren zu integrieren.
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
 
@@ -144,7 +144,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
    ![](assets/s_advuser_cube_agregate_03.png)
 
-1. Dimension und Ebene auswählen. Wiederholen Sie diesen Vorgang für jede Dimension und jede Ebene.
+1. Wählen Sie eine Dimension und eine Ebene aus. Wiederholen Sie diesen Vorgang für alle zu berechnenden Dimensionen und Ebenen.
 1. Gehen Sie in den Tab **[!UICONTROL Workflow]**, um den Aggregations-Workflow zu erstellen.
 
    ![](assets/s_advuser_cube_agregate_04.png)
@@ -152,13 +152,13 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
    * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
-     Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung durchgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
+     Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
 
      ![](assets/s_advuser_cube_agregate_05.png)
 
 ## Definieren von Kennzahlen {#defining-measures}
 
-Die Kennzahlentypen werden auf der Registerkarte **[!UICONTROL Kennzahlen]** des Cubes definiert. Sie können Summen, Durchschnittswerte, Abweichungen usw. berechnen.
+Die zu berechnenden Kennzahlentypen werden in der Registerkarte **[!UICONTROL Kennzahlen]** des Cubes festgelegt. Sie können Summen, Durchschnittswerte, Abweichungen usw. berechnen.
 
 Es können so viele Kennzahlen wie nötig erstellt werden. Wählen Sie anschließend aus, welche Kennzahl Sie in der Tabelle anzeigen oder ausblenden möchten. Weitere Informationen finden Sie unter [Kennzahlen anzeigen](#displaying-measures).
 
@@ -186,19 +186,19 @@ Die Anzeige der Kennzahlen in der Tabelle kann nach Bedarf konfiguriert werden. 
 
 * Anzeigereihenfolge der Kennzahlen (siehe [Anzeigereihenfolge](#display-sequence)),
 * die Informationen, die im Bericht angezeigt/ausgeblendet werden sollen (siehe [Anzeige konfigurieren](#configuring-the-display)),
-* die anzuzeigenden Kennzahlen: Prozentsatz, Gesamtbetrag, Anzahl der Dezimalstellen usw. (siehe [Ändern des angezeigten Kennzahlentyps](#changing-the-type-of-measure-displayed))
+* die anzuzeigenden Kennzahlen: Prozentsatz, Gesamtbetrag, Anzahl der Dezimalstellen etc. (weitere Informationen finden Sie unter [Ändern des angezeigten Kennzahlentyps](#changing-the-type-of-measure-displayed)).
 
 ### Anzeigereihenfolge {#display-sequence}
 
 Die im Cube berechneten Kennzahlen werden über die Schaltfläche **[!UICONTROL Kennzahlen]** konfiguriert.
 
-Verschieben Sie die Zeilen, um die Anzeigereihenfolge zu ändern. Im folgenden Beispiel werden französische Daten an den unteren Rand der Liste verschoben: Dies bedeutet, dass sie in der letzten Spalte angezeigt werden.
+Verschieben Sie die Zeilen, um die Anzeigereihenfolge zu ändern. Im nachstehenden Beispiel werden die auf Frankreich bezogenen Daten nach unten verschoben: Sie werden nun in der letzten Spalte angezeigt.
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
 ### Konfigurieren der Anzeige {#configuring-the-display}
 
-Die Konfiguration von Kennzahlen, Linien und Spalten kann für jede Kennzahl oder insgesamt individuell erfolgen. Mit einem speziellen Symbol können Sie auf das Auswahlfenster des Anzeigemodus zugreifen.
+Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede Kennzahl einzeln oder global durchgeführt werden. Mit einem speziellen Symbol können Sie auf das Fenster zur Auswahl des Anzeigemodus zugreifen.
 
 * Klicken Sie auf das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]**, um auf das Konfigurationsfenster für alle Kennzahlen zuzugreifen.
 
@@ -264,7 +264,7 @@ Klicken Sie nach jeder Hinzufügung, Änderung oder Löschung von Filtern auf de
 
 Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hierzu die Quellzellen, -zeilen und -spalten und klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
 
-Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie mit der linken Maustaste darauf. Um die Auswahl aufzuheben, klicken Sie erneut.
+Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie darauf. Um die Auswahl aufzuheben, klicken Sie erneut.
 
 ![](assets/neolap_create_filter_from_selection.png)
 

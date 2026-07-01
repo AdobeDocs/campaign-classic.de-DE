@@ -7,23 +7,15 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 TQID: https://experienceleague.adobe.com/eM26PQIIHJHC-7-QqVYaC9uHcvrYIpi87vMB4eTmVlg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1335
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +29,11 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
->Die in Ihrer Instanz verfügbaren Adobe Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Einige von ihnen sind möglicherweise auch nicht verfügbar, je nach Ihren Berechtigungen und bestimmten Konfigurationen.
+>Die auf Ihrer Instanz verfügbaren Adobe Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Je nach Ihren Berechtigungen und bestimmten Konfigurationen sind manche möglicherweise nicht verfügbar.
 >
 >Prüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Adobe-Kundenbetreuer, bevor Sie Module oder Add-ons installieren.
 
@@ -103,7 +95,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
   ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
-* Bei Menüs oder Tastenkombinationen für einen Bildschirm (z. B. Web-Anwendung, Programm, Versand, Bericht usw.) wird die entsprechende Seite in einer anderen Registerkarte angezeigt. Auf diese Weise können Sie mithilfe der Registerkarten von einer Seite zur anderen navigieren.
+* Bei Auswahl eines Menüs oder einer Verknüpfung mit einem Anzeigebildschirm (z. B. Web-Anwendung, Programm, Versand, Bericht usw.) wird die entsprechende Seite in einer anderen Registerkarte angezeigt. Auf diese Weise können Sie mithilfe der Registerkarten von einer Seite zur anderen navigieren.
 
   ![](assets/d_ncs_user_interface_tabs.png)
 
@@ -111,7 +103,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
 In jeder Rubrik können Sie sich innerhalb der verschiedenen Elemente bewegen. Nutzen Sie hierzu die im Abschnitt **[!UICONTROL Navigation]** zur Verfügung stehenden Verknüpfungen. Der Link **[!UICONTROL Andere Optionen]** erlaubt den Zugriff auf alle anderen Seiten, unabhängig von der aktuellen Rubrik.
 
-Sie können ein neues Element erstellen (Versand, Web-Anwendung, Workflow usw.), mithilfe der Tastaturbefehle im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
+Sie können ein neues Element erstellen (Versand, Web-Anwendung, Workflow usw.). Verwenden Sie dazu die Verknüpfungen im Abschnitt **[!UICONTROL Erstellen]** auf der linken Seite des Bildschirms. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
 
 Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Versand anzulegen.
 
@@ -124,7 +116,7 @@ Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbo
 
 Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seiten in der **Dokumentation zu Campaign v8 (Konsole)**:
 
-* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign-Benutzeroberfläche – Überblick](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -197,4 +189,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

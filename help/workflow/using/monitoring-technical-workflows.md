@@ -6,19 +6,14 @@ feature: Workflows
 hide: true
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 TQID: https://experienceleague.adobe.com/Zil5DwLklAKHSiHbsO6m71Lekcy4f8UYQA53uUzkqRg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 533
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +31,7 @@ Auf das Instanz-Monitoring-Dashboard können Sie über den Tab **[!UICONTROL Mon
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Stellen Sie unter Systemindikatoren und Kerndateien sicher, dass keine Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist und es einige sind, sollten Sie:
+Prüfen Sie unter „Systemindikator“ und „Core-Dateien“, ob Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist, sollten Sie Folgendes tun:
 
 * Prüfen Sie, ob die erforderlichen Prozesse immer aktiv sind.
 * Vergewissern Sie sich, dass keiner der Prozesse veraltet ist.
@@ -95,7 +90,7 @@ Alle benutzerdefinierten technischen Workflows sollten in einem Arbeitsblatt mit
 
 ## Planung und Automatisierung der Überwachung {#planning-and-automation-of-monitoring}
 
-Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Einige Aufgaben müssen täglich ausgeführt werden, während andere Aufgaben wöchentlich oder monatlich ausgeführt werden können.
+Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Manche Aufgaben müssen täglich ausgeführt werden, während andere wöchentlich oder monatlich erfolgen.
 
 Die Überwachung kann möglichst effizient gestaltet werden, indem Workflows in Ordnern angeordnet werden, die nach der wiederkehrenden Aufgabe benannt und nach dem Ausführungszeitpunkt sortiert sind.
 

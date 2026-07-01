@@ -6,20 +6,14 @@ feature: Workflows
 hide: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 TQID: https://experienceleague.adobe.com/xRyiD1VNPPhdRtnyRn6JX76vao1-b348bZPoQ3eraLQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 345
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +25,7 @@ Wenn Ihr Versandinhalt in einer auf einem Amazon-S3-, FTP- oder SFTP-Server gesp
 
 Gehen Sie dazu wie folgt vor:
 
-1. Wenn Sie noch keine Verbindung zwischen Adobe Campaign und dem (S)FTP-Server definiert haben, auf dem die Inhaltsdateien gehostet werden, erstellen Sie ein neues externes S3-, FTP- oder SFTP-Konto unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**. Geben Sie in diesem externen Konto die Adresse und die Anmeldeinformationen an, die zum Herstellen der Verbindung mit dem S3- oder (S)FTP-Server verwendet werden.
+1. Wenn Sie die Verbindung zwischen Adobe Campaign und dem (S)FTP-Server, auf dem sich die Inhaltsdateien befinden, noch nicht definiert haben, erstellen Sie ein neues S3-, FTP- oder externes SFTP-Konto in **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**. Geben Sie in diesem externen Konto die Adresse und die Anmeldedaten für die Verbindungsherstellung zum S3- oder (S)FTP-Server an.
 
    Hier ist ein Beispiel eines externen S3-Kontos:
 
@@ -45,11 +39,11 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
-1. Fügen Sie **[!UICONTROL Aktivität]** Versand“ hinzu und verbinden Sie sie mit der ausgehenden Transition der Aktivität **[!UICONTROL Dateiübertragung]** . Konfigurieren Sie ihn wie folgt:
+1. Fügen Sie eine Aktivität **[!UICONTROL Versand]** hinzu und verbinden Sie sie mit der ausgehenden Transition der Aktivität **[!UICONTROL Dateiübertragung]**. Konfigurieren Sie wie folgt:
 
    * Versand: nach Bedarf entweder ein bestimmter im System vorhandener Versand oder ein neuer Versand auf der Basis einer vorhandenen Vorlage.
    * Empfänger: In diesem Beispiel wurde die Zielgruppe im Versand selbst festgelegt.
-   * Inhalt: Selbst wenn der Inhalt in der vorherigen Aktivität importiert wurde, wählen Sie **[!UICONTROL Im Versand angegeben]** aus. Da der Inhalt direkt aus einer auf einem Remote-Server gespeicherten Datei importiert wird, enthält er bei der Verarbeitung durch den Workflow keine Kennung und kann nicht als vom Eingangsereignis stammend identifiziert werden.
+   * Inhalt: Selbst wenn der Inhalt in der vorherigen Aktivität importiert wurde, wählen Sie **[!UICONTROL Im Versand angegeben]** aus. Da der Inhalt direkt aus einer auf einem Remote-Server gespeicherten Datei importiert wird, besitzt er keine Kennung, wenn er vom Workflow verarbeitet wird, und kann nicht als vom Eingangsereignis stammend identifiziert werden.
    * Auszuführende Aktion: Wählen Sie **[!UICONTROL Speichern]**, um den Versand zu speichern und darauf über **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** zugreifen zu können, wenn der Workflow ausgeführt wird.
 
    ![](assets/delivery_loadcontent_activityexample.png)

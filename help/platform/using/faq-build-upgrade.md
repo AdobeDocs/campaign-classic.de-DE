@@ -8,26 +8,14 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 TQID: https://experienceleague.adobe.com/ivE0WuT3rnpH0ro0cBHgJXxXRiRELmJLwHrYVi-Md6Y
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167id: afa4204e-6d08-4e29-bc35-26aafb656d48
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2096
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -216,13 +204,13 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 * Können Sie sich beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
 * Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
 * Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und
-Überprüfen, ob neue Datensätze über die API eingefügt werden können.
-* Können Sie eine Test-E-Mail versenden? Neuen Versand mit einer bekannten Vorlage erstellen und an senden
-Ein Testempfänger, Überprüfung der Personalisierung, Unterlink aufheben, Mirrorseite, alles funktioniert.
-* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Workflows überprüfen, Workflow-Journal öffnen, überprüfen
+überprüfen Sie, ob neue Einträge per API hinzugefügt werden können.
+* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand basierend auf einer bekannten Vorlage, senden Sie ihn an
+eine Testempfängerin bzw. einen Testempfänger und überprüfen Sie, ob Personalisierung, Abmelde-Link und Mirrorseite funktionieren.
+* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher,
 dass keine Fehler vorliegen.
-* Sind alle Ihre Ordner vorhanden, sichtbar und zugänglich? Durchsuchen Sie verschiedene Ordner und überprüfen Sie sie.
-Alle Inhalte werden angezeigt und sind vorhanden.
+* Sind alle Ihre Ordner vorhanden, sichtbar und zugänglich? Navigieren Sie durch verschiedene Ordner und überprüfen Sie,
+ob alle Inhalte angezeigt werden und vorhanden sind.
 * Werden Ihre Sendungen mit der richtigen Zeitzone zugestellt?
 
    * Überprüfen Sie das Erstellungsdatum und das Änderungsdatum einschließlich Zeitstempel und Zeitzone.

@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 TQID: https://experienceleague.adobe.com/zLf1lFV9vVIHcEbfO5UrFo92epuVlfMUWrl64SqNfCQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1055
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -95,9 +88,9 @@ Damit können Sie die folgenden Eigenschaften definieren:
 
 ### Header und Footer definieren {#defining-headers-and-footers}
 
-Die Felder werden in einer Baumstruktur nacheinander ausgefüllt, deren Stamm denselben Namen wie die Seite hat. Wählen Sie diese Option aus, um den Namen zu ändern.
+Die Felder sind in einer Baumstruktur angeordnet, deren Stamm denselben Namen hat wie die Seite. Wählen Sie den Stamm aus, um den Namen zu ändern.
 
-Der Titel des Fensters muss auf der Registerkarte **[!UICONTROL Seite]** des Fensters mit den Formulareigenschaften eingegeben werden. Sie können der Kopf- und Fußzeile auch einen Content-Set hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
+Der Titel des Fensters muss im Fenster mit den Formulareigenschaften in der Registerkarte **[!UICONTROL Seite]** eingegeben werden. Sie können dem Header oder Footer auch einen festen Inhalt hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
@@ -145,7 +138,7 @@ Der Benutzer muss in diesem Fall eine ganze Zahl im Formularfeld eingeben.
 
 ## Bedingte Anzeige von Feldern definieren {#defining-fields-conditional-display}
 
-Sie können die Anzeige von Feldern auf der Seite so konfigurieren, dass sie auf der Grundlage der vom Benutzer ausgewählten Werte angezeigt werden. Dies kann auf ein Feld oder eine Gruppe von Feldern angewendet werden (wenn sie in einem Container gruppiert sind).
+Sie können konfigurieren, dass die Felder auf der Seite basierend auf den benutzerseitig ausgewählten Werten angezeigt werden. Dies kann auf ein Feld oder eine Gruppe von Feldern angewendet werden (wenn sie in einem Container gruppiert sind).
 
 Sie können für jedes Element der Seite die Anzeigebedingungen im Bereich **[!UICONTROL Sichtbarkeit]** definieren.
 
@@ -157,7 +150,7 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
 ![](assets/s_ncs_admin_survey_condition_select.png)
 
-* Die Hauptstruktur enthält die Parameter des Formularkontexts. Die Standardparameter sind die Kennung (die mit der verschlüsselten Kennung des Empfängers übereinstimmt), Sprache und Herkunft.
+* Der Hauptbaum enthält die Parameter des Formularkontexts. Die Standardparameter sind Kennung (entspricht der verschlüsselten Kennung der Empfängerin bzw. des Empfängers), Sprache und Herkunft.
 
   Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#form-url-parameters).
 
@@ -173,7 +166,7 @@ Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die An
 
 ## Elemente aus einem vorhandenen Formular importieren {#importing-elements-from-an-existing-form}
 
-Es ist möglich, Felder oder Container aus anderen Web-Formularen zu importieren. Auf diese Weise können Sie eine Bibliothek wiederverwendbarer Blöcke erstellen, die in Formulare eingefügt werden, z. B. in den Block Adresse, den Newsletter-Abonnementbereich usw.
+Es ist möglich, Felder oder Container aus anderen Web-Formularen zu importieren. Damit können Sie eine Bibliothek aus wiederverwendbaren Bausteinen erstellen, die in Formulare eingefügt werden können, z. B. Adressbaustein, Newsletter-Abonnement-Bereich usw.
 
 Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 

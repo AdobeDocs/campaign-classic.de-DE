@@ -6,18 +6,13 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 TQID: https://experienceleague.adobe.com/G1sd0NfOozlAyvMZpi6R8IEbfr6ZHE2ibhnfttEd7J8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 751
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +24,7 @@ Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Dia
 
 ## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot; {#about-previous-page-and-next-page}
 
-Für jede Seite können Sie die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie dazu die betroffene Seite aus und wählen Sie die Option **[!UICONTROL Nächste Seite deaktivieren]** oder **[!UICONTROL Rückkehr zur vorherigen Seite nicht zulassen]** .
+Für jede Seite können Sie die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie hierzu die entsprechende Seite und danach die Option **[!UICONTROL Weiter zur nächsten Seite deaktivieren]** oder **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** aus.
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
@@ -49,7 +44,7 @@ Folgende Zielorte sind möglich:
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
-* Das Ziel kann in einer Variablen gespeichert werden. Wählen Sie ihn in diesem Fall wie unten dargestellt aus der Dropdown-Liste aus:
+* Das Ziel kann in einer Variablen gespeichert werden. Wählen Sie es in diesem Fall aus der Dropdown-Liste wie unten gezeigt aus.
 
   ![](assets/s_ncs_admin_jump_param3.png)
 
@@ -59,7 +54,7 @@ Folgende Zielorte sind möglich:
 
 ## Beispiel: Zugriff auf ein anderes Formular entsprechend einem URL-Parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
-Im folgenden Beispiel möchten wir ein Web-Formular konfigurieren, das nach der Genehmigung ein anderes Formular anzeigt, das durch einen Parameter der URL bestimmt wird. Gehen Sie hierzu wie folgt vor:
+Im folgenden Beispiel soll ein Web-Formular konfiguriert werden, das nach der Validierung abhängig vom Parameter der URL ein anderes Formular anzeigt. Gehen Sie hierzu wie folgt vor:
 
 1. Fügen Sie am Ende eines Formulars einen Sprung ein. Dieser ersetzt die **[!UICONTROL Ende]**-Komponente.
 
@@ -89,7 +84,7 @@ Sie können Links zu anderen Formularseiten einfügen. Fügen Sie dazu ein stati
 
 ### Anzeige anhand von Antworten {#display-based-on-responses}
 
-Mit **[!UICONTROL Feld &quot;]**&quot; können Sie die Sequenzierung von Seiten in einem Formular Bedingungen unterwerfen. Je nach Testergebnissen können Sie damit verschiedene Verzweigungslinien definieren. Auf diese Weise können Sie je nach den Antworten der Benutzer unterschiedliche Seiten anzeigen.
+Mit dem Feld **[!UICONTROL Test]** können Sie die Sequenzierung von Seiten in einem Formular von Bedingungen abhängig machen. Je nach Testergebnissen können Sie damit verschiedene Verzweigungslinien definieren. Auf diese Weise können Sie je nach den Antworten der Benutzenden unterschiedliche Seiten anzeigen.
 
 Beispielsweise können Sie Kunden, die zuvor eine Online-Bestellung aufgegeben haben, eine andere Seite anzeigen wie jenen, die über zehn Bestellungen aufgegeben haben. Fügen Sie dazu auf der ersten Formularseite ein Eingabefeld vom Typ **[!UICONTROL Zahl]** ein, in dem der Benutzer angeben kann, wie viele Bestellungen er bereits aufgegeben hat.
 
@@ -105,11 +100,11 @@ In unserem Beispiel soll eine Variable verwendet werden:
 
 ![](assets/s_ncs_admin_survey_test_ex1.png)
 
-Fügen Sie im Diagramm des Formulars ein Testfeld ein, um die Bedingungen zu definieren. Für jede Bedingung wird eine neue Verzweigung an der Ausgabe der Testbox hinzugefügt.
+Fügen Sie im Diagramm des Formulars eine Test-Komponente ein, um die Bedingungen zu definieren. Für jede Bedingung wird am Ausgang der Test-Komponente eine neue Abzweigung hinzugefügt.
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Wählen Sie die **[!UICONTROL Standardverzweigung aktivieren]**, um eine Transition für den Fall hinzuzufügen, dass keine der Bedingungen erfüllt ist. Diese Option ist nicht erforderlich, wenn alle möglichen Fälle von den definierten Bedingungen abgedeckt werden.
+Wählen Sie die Option **[!UICONTROL Standard-Verzweigung aktivieren]** aus, um eine Transition für Fälle hinzuzufügen, bei denen keine der Bedingungen wahr ist. Diese Option ist nicht erforderlich, wenn alle möglichen Fälle von den definierten Bedingungen abgedeckt werden.
 
 Definieren Sie dann die Seitenreihenfolge, wenn eine der Bedingungen wahr ist, zum Beispiel:
 

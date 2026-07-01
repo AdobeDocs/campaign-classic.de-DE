@@ -7,23 +7,15 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 TQID: https://experienceleague.adobe.com/kbNLR1aZ6M48vZKtpP2wdkaTKxJC2an-Ka-VWu2-x-k
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-subfeature_v2:
-  - id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+subfeature_v2: id: e5fb657f-3c0a-4fcc-9980-3589a23ab4de
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 3540
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +23,13 @@ ht-degree: 70%
 
 ## Über Marketing-Müdigkeit {#about-marketing-fatigue}
 
-Durch die Implementierung des Vertriebsdruck-Managements können Sie vermeiden, die Population in der Datenbank zu häufig anzufordern, was auch als Marketing-Müdigkeit bezeichnet wird. Zu diesem Zweck können Sie eine maximale Anzahl von Nachrichten pro Empfänger definieren. Außerdem können Sie zwischen Kampagnen Schlichtungsregeln implementieren, um die beste Nachricht an die ausgewählte Audience zu senden.
+Durch die Implementierung des Werbedruck-Managements können Sie eine Überfrachtung der Datenbankpopulation vermeiden, die zur sogenannten Marketing-Müdigkeit führen würde. Zu diesem Zweck können Sie eine maximale Anzahl von Nachrichten pro Empfängerin bzw. Empfänger definieren. Außerdem können Sie zwischen Kampagnen Schlichtungsregeln implementieren, um die beste Nachricht an die ausgewählte Zielgruppe zu senden.
 
 **Druckregeln** können beispielsweise dazu beitragen, der Marketing-Ermüdung entgegenzusteuern, indem die Zahl der an eine Zielpopulation versendeten Newsletter auf zwei begrenzt wird; unter den zur Auswahl stehenden Nachrichten diejenigen ausgewählt werden, die den Interessen der Abonnentengruppe bestmöglich entsprechen; keine Angebote per SMS an einen unzufriedenen Kunden gesendet werden etc.
 
 Die Kampagnen werden entsprechend der festgelegten Schwellen und des jeweiligen Gewichts jeder Nachricht ausgewählt.
 
-* Ein Schwellenwert ist die höchste Anzahl von Sendungen, die für eine bestimmte Empfängerin oder einen bestimmten Empfänger innerhalb eines bestimmten Zeitraums autorisiert wurde. Sie kann entweder festgelegt oder variabel sein. Sie wird in den Einstellungen der Typologieregel festgelegt oder berechnet. Siehe [Maximale Nachrichtenanzahl](#maximum-number-of-messages).
+* Ein Schwellenwert ist die höchste Anzahl von Sendungen, die für eine bestimmte Empfängerin oder einen bestimmten Empfänger innerhalb eines bestimmten Zeitraums zulässig ist. Er kann entweder fest oder variabel sein. Er wird in den Einstellungen der Typologieregel festgelegt oder berechnet. Siehe [Maximale Nachrichtenanzahl](#maximum-number-of-messages).
 * Die Versandgewichtung ermöglicht die Identifizierung von Sendungen mit der höchsten Priorität im Rahmen der Druckverwaltung. Nachrichten mit der höchsten Gewichtung haben Priorität. Siehe [Nachrichtengewichtung](#message-weight).
 
 Die Schlichtung besteht darin, sicherzustellen, dass geplante Kampagnen mit einer höheren Gewichtung als laufende Kampagnen kein übermäßiges Werben eines Profils auslösen: Ist dies der Fall, wird das Profil von der Versandaktion ausgeschlossen.
@@ -53,7 +45,7 @@ Andernfalls ist die Empfängerin bzw. der Empfänger **[!UICONTROL Ausgeschlosse
 
 ## Druckregel erstellen {#creating-a-pressure-rule}
 
-Um eine Schlichtung zwischen Adobe Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.**&#x200B;**
+Um eine Schlichtung zwischen Adobe Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.****
 
 Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfigurieren, durchlaufen Sie folgende Etappen:
 
@@ -94,7 +86,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
 1. Geben Sie den Berechnungsmodus der Versandgewichtung an.
 
-   Jeder Versand verfügt über eine Gewichtung, d. h. einen Wert, der die Prioritätsstufe angibt. Dies ermöglicht eine Schlichtung zwischen Kampagnen. Die Gewichtung wird anhand der Formel berechnet, die in der Typologieregel und/oder in ihren Eigenschaften definiert ist. Weitere Informationen hierzu finden Sie unter [Nachrichtengewichtung](#message-weight).
+   Jeder Versand verfügt über eine Gewichtung, d. h. einen Wert, der die Prioritätsstufe angibt. Dies ermöglicht eine Schlichtung zwischen Kampagnen. Die Gewichtung wird anhand der Formel berechnet, die in der Typologieregel und/oder in ihren Eigenschaften definiert ist. Weitere Informationen hierzu finden Sie unter [Nachrichtengewichtung](#message-weight).
 
 1. Standardmäßig werden bei der Schwellenberechnung alle Nachrichten berücksichtigt. Auf der Registerkarte **[!UICONTROL Einschränkung]** können Sie die von der Typologieregel betroffenen Nachrichten filtern:
 
@@ -111,9 +103,9 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
 ### Maximale Nachrichtenanzahl {#maximum-number-of-messages}
 
-Jede Druckregel definiert einen Schwellenwert, d. h. die maximale Anzahl von Nachrichten, die über einen bestimmten Zeitraum an einen Empfänger gesendet werden können. Sobald diese Schwelle erreicht ist, können keine Sendungen mehr durchgeführt werden, bis der Zeitraum abgelaufen ist. Auf diese Weise können Sie einen Empfänger automatisch vom Versand ausschließen, wenn eine Nachricht den festgelegten Schwellenwert überschreitet, um eine Überforderung zu vermeiden.
+In jeder Druckregel wird eine Schwelle definiert, also eine maximale Nachrichtenanzahl, die in einem gewissen Zeitraum an ein Profil gesendet werden kann. Sobald diese Schwelle erreicht ist, können keine Sendungen mehr durchgeführt werden, bis der Zeitraum abgelaufen ist. Durch dieses Verfahren kann eine Empfängerin bzw. ein Empfänger automatisch aus einem Versand ausgeschlossen werden, wenn eine Nachricht die festgelegte Schwelle übersteigt. Dadurch wird verhindert, dass ein Profil zu oft angesprochen wird.
 
-Schwellenwerte können entweder konstant sein oder durch eine Formel mit Variablen berechnet werden. Dies bedeutet, dass Schwellenwerte für einen bestimmten Zeitraum von einem Empfänger zum anderen oder sogar für denselben Empfänger variieren können.
+Schwellenwerte können entweder konstant sein oder durch eine Formel mit Variablen berechnet werden. Das bedeutet, dass unterschiedliche Profile in einem bestimmten Zeitraum unterschiedliche Schwellen aufweisen können oder Schwellen sogar innerhalb desselben Profils variieren können.
 
 ![](assets/campaign_opt_create_a_rule_threshold.png)
 
@@ -123,7 +115,7 @@ Schwellenwerte können entweder konstant sein oder durch eine Formel mit Variabl
 
 **Beispiel:**
 
-Sie können die Anzahl der autorisierten Nachrichten nach dem Segment indizieren, zu dem der Empfänger gehört. Das bedeutet, dass ein Empfänger, der zum Web-Segment gehört, möglicherweise mehr Nachrichten erhält als andere Empfänger. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfangenden zulässig, für die Empfangende aus anderen Segmenten dagegen nur 3. Die Konfiguration ist wie folgt:
+Sie können die Anzahl der genehmigten Nachrichten entsprechend dem Segment indexieren, zu dem die Empfängerin oder der Empfänger gehört. Dies bedeutet, dass eine Person, die zum Segment „Web“ gehört, mehr Nachrichten erhalten kann als andere Personen. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfangenden zulässig, für die Empfangende aus anderen Segmenten dagegen nur 3. Die Konfiguration ist wie folgt:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
@@ -133,9 +125,9 @@ Wählen Sie hierfür die Option **[!UICONTROL Nachrichten einer verknüpften Dim
 
 ### Nachrichtengewichtung {#message-weight}
 
-Jeder Versand verfügt über eine Gewichtung, die die jeweilige Priorität darstellt. Standardmäßig ist die Versandgewichtung auf 5 festgelegt. Mit Druckregeln können Sie die Gewichtung der Sendungen festlegen, auf die sie angewendet werden.
+Jeder Versand verfügt über eine Gewichtung, die die jeweilige Priorität darstellt. Standardmäßig ist die Versandgewichtung auf den Wert 5 festgelegt. Mit Druckregeln können Sie die Gewichtung der Sendungen festlegen, auf die sie angewendet werden.
 
-Die Gewichtung kann mithilfe einer Formel für Empfänger und Empfängerinnen festgelegt oder berechnet werden. Sie können beispielsweise die Versandgewichtung anhand der Empfängerinteressen definieren.
+Die Gewichtung kann konstant sein oder mithilfe einer Formel empfängerabhängig berechnet werden. Beispielsweise kann die Gewichtung eines Versands den Interessen einer Empfängerin bzw. eines Empfängers entsprechend bestimmt werden.
 
 >[!CAUTION]
 >
@@ -144,7 +136,7 @@ Die Gewichtung kann mithilfe einer Formel für Empfänger und Empfängerinnen fe
 
 **Beispiel:**
 
-Im folgenden Beispiel möchten wir die Gewichtung von Newslettern bei Musik mit der Tendenzauswertung der Empfänger verknüpfen. Gehen Sie dazu wie folgt vor:
+Im folgenden Beispiel wird die Gewichtung von Musik-Newslettern abhängig von der Tendenzbewertung der Empfangenden diesbezüglich berechnet. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie ein neues Feld, um die für die Neigung der Empfangenden ermittelten Werte festzuhalten. Dieses Feld, hier **@Music**, kann mit Antworten auf Online-Erhebungen und -Umfragen, erfassten Trackingdaten etc. angereichert werden.
 1. Erstellen Sie eine Typologieregel, um die Nachrichtengewichtung auf diesem Feld basierend zu berechnen.
@@ -157,11 +149,11 @@ Im folgenden Beispiel möchten wir die Gewichtung von Newslettern bei Musik mit 
 
 Die Druckregeln werden für bewegliche Zeiträume von **n** Tagen bestimmt.
 
-Der Zeitraum wird auf der Registerkarte **[!UICONTROL Druck]** der Regel konfiguriert. Sie können die Anzahl der Tage angeben und bei Bedarf den Typ der anzuwendenden Gruppierung auswählen (Tag, Woche, Monat, Quartal usw.).
+Der Zeitraum wird auf der Registerkarte **[!UICONTROL Druck]** der Regel konfiguriert. Sie können die Anzahl der Tage und bei Bedarf den anzuwendenden Gruppierungstyp auswählen (nach Kalendertag, -woche; -monat etc.).
 
 Der Gruppierungstyp ermöglicht die Erweiterung des Werts im Feld **[!UICONTROL Betroffener Zeitraum]** auf den ganzen Tag, die Kalenderwoche, den Kalendermonat oder das Kalenderjahr des jeweiligen Zeitraums.
 
-Beispielsweise verhindert eine Druckregel, die einen Schwellenwert von 2 Nachrichten pro Woche definiert, mit einer Gruppierung für jeden Kalendermonat, den Versand von mehr als 2 Nachrichten innerhalb derselben Woche UND innerhalb desselben Kalendermonats. Achtung: Wenn sich der Zeitraum mit zwei Monaten überschneidet, berücksichtigt die Berechnungsschwelle Sendungen aus diesen beiden Kalendermonaten und könnte daher alle neuen Sendungen im zweiten Monat verhindern.
+Beispiel: Eine Druckregel, die eine Schwelle von 2 Nachrichten pro Woche und eine Gruppierung nach Kalendermonaten berechnet, verhindert den Versand von mehr als zwei Sendungen in derselben Woche UND im selben Kalendermonat für den gesamten betroffenen Zeitraum. Achtung: Wenn der Zeitraum in zwei Monate hineinreicht, berücksichtigt die Schwellenberechnung alle Sendungen beider Kalendermonate. Dadurch könnten alle neuen Sendungen während des zweiten Monats verhindert werden. 
 
 Beachten Sie, dass bei der Schwellenwertberechnung standardmäßig nur die bereits durchgeführten Sendungen berücksichtigt werden. Überprüfen Sie in Campaign Classic v7 die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**, wenn Sie auch die für den betroffenen Zeitraum geplanten Sendungen berücksichtigen möchten. Der ausgewählte Zeitraum wird in diesem Fall verdoppelt, damit sowohl künftige als auch vorhergegangene Sendungen einbezogen werden können.
 
@@ -175,14 +167,14 @@ oder
 
 Das Startdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
-Wenn Sie beispielsweise eine 15-Tage-Druckregel ohne Gruppierung auf einen Versand vom 12.11 anwenden, werden Sendungen zwischen dem 27.11.2012 und dem 12.12. berücksichtigt. Berücksichtigt die Druckregel die Sendungen im Planungskalender, so werden alle geplanten Sendungen zwischen 11/27 und 12/27 berücksichtigt. Wenn Sie in der Regel eine Gruppierung nach Kalendermonat konfigurieren, werden alle Sendungen im November und Dezember bei der Berechnung des Schwellenwerts berücksichtigt (vom 11.1. bis zum 31.12.).
+Wenn Sie beispielsweise eine 15-Tage-Druckregel ohne Gruppierung auf einen Versand vom 12.11. anwenden, werden Sendungen zwischen dem 27.11. und dem 12.12. berücksichtigt. Berücksichtigt die Druckregel die Sendungen im Planungskalender, werden alle geplanten Sendungen zwischen 27.11. und 27.12. berücksichtigt. Wenn Sie schließlich in der Regel eine Gruppierung nach Kalendermonat festlegen, werden bei der Schwellenberechnung alle Sendungen der Monate November und Dezember einbezogen (vom 1.11. bis zum 31.12.).
 
 
 **Häufiger Fall**
 
 Um nur Sendungen der laufenden und keine der vorhergehenden Kalenderwoche in der Schwellenberechnung zu berücksichtigen, tragen Sie &#39;0&#39; in das Feld **[!UICONTROL Betroffener Zeitraum]** ein und wählen Sie den **[!UICONTROL Gruppierungstypen]** &#39;nach Kalenderwoche&#39;.
 
-Wenn ein Zeitraum größer als 0 (z. B. 1) ist, kann der Berechnungsschwellenwert die Sendungen des Vortages berücksichtigen. Wenn also der vorherige Tag der vorherigen Kalenderwoche entspricht und der ausgewählte Periodentyp „Gruppierung pro Kalenderwoche“ ist, wird die gesamte vorherige Woche für die Berechnungsschwelle berücksichtigt.
+Wenn ein Zeitraum größer als 0 ist (z. B. 1), kann der Berechnungsschwellenwert die Sendungen des Vortages berücksichtigen. Wenn der vorhergehende Tag zugleich der vorhergehenden Woche angehört und es sich beim gewählten Gruppierungstypen um „nach Kalenderwoche“ handelt, wird bei der Schwellenberechnung die gesamte vorhergehende Woche berücksichtigt.
 
 **Beispiel:**
 
@@ -214,7 +206,7 @@ Wenn keine Gruppierung ausgewählt wird, wird nur der **4. Newsletter** nicht ve
 
 Die Schlichtung wird jede Nacht durch den technischen Workflow **[!UICONTROL Planungen]** und den Workflow **[!UICONTROL Kampagnenaufträge]** erneut durchgeführt.
 
-Der **[!UICONTROL Prognosen]**-Workflow berechnet die Daten für den laufenden Zeitraum vorab (vom Startdatum bis zum aktuellen Datum), sodass Typologieregeln während der Analyse angewendet werden können. Außerdem werden die Ausschlusszähler für die Schlichtung jede Nacht neu berechnet.
+Der Workflow **[!UICONTROL Planungen]** berechnet die Daten über die (seit dem Startdatum bis zum jetzigen Zeitpunkt) verstrichene Zeitspanne, die zur Anwendung der Typologieregeln während der Analyse notwendig sind. Außerdem werden die Ausschlusszähler für die Schlichtung jede Nacht neu berechnet.
 
 Adobe Campaign stellt so für jeden Empfänger sicher, dass die Anzahl der zu sendenden Nachrichten die Schwelle nicht überschreitet, unter Berücksichtigung der Anzahl der bereits im betroffenen Zeitraum gesendeten Nachrichten. Diese Informationen sind nur **Indikatoren**, da die Berechnungen zum Zeitpunkt des Versands aktualisiert werden.
 
@@ -267,7 +259,7 @@ Befolgen Sie die nachstehenden Schritte, um die Regel zu konfigurieren:
 
 1. Speichern Sie die Regel, um ihre Erstellung zu bestätigen.
 
-Verknüpfen Sie nun die soeben erstellte Regel mit einer Typologie, um sie auf Sendungen anzuwenden. Gehen Sie dazu wie folgt vor:
+Verknüpfen Sie nun die eben erstellte Regel mit einer Typologie, um sie bei Sendungen anwenden zu können. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Kampagnentypologie.
 1. Klicken Sie im Tab **[!UICONTROL Regeln]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die zuvor erstellte Regel aus.
@@ -284,7 +276,7 @@ Um diese Typologie in Ihren Sendungen verwenden zu können, wählen Sie sie wie 
 >
 >Die Typologie kann auf Ebene der Versandvorlage festgelegt werden, um sie automatisch auf alle mit der jeweiligen Vorlage erstellten Sendungen anzuwenden.
 
-Bei der Versandanalyse werden die Versandempfänger je nach der Anzahl der ihnen bereits gesendeten Sendungen ggf. vom Versand ausgeschlossen. Um diese Informationen anzuzeigen, haben Sie folgende Möglichkeiten:
+Bei der Versandanalyse werden Empfangende ausgeschlossen, wenn sie bereits eine bestimmte Anzahl an Sendungen erhalten haben. Um diese Informationen anzuzeigen, haben Sie folgende Möglichkeiten:
 
 * das Ergebnis der Analyse ansehen:
 
@@ -300,11 +292,11 @@ Bei der Versandanalyse werden die Versandempfänger je nach der Anzahl der ihnen
 
 ### Berechnen der Versandgewichtung basierend auf dem Empfängerverhalten {#calculating-the-delivery-weight-based-on-behavior}
 
-Je nach Empfängerverhalten können Druckregeln definiert werden. So kann die Versandgewichtung an Kriterien angepasst werden, die von Empfänger zu Empfänger variieren. Sie können beispielsweise eine Nachricht senden, je nachdem, ob ein Empfänger Ihre Website besucht, in einem bestimmten Abschnitt des letzten Newsletters angeklickt, einen Informationsdienst abonniert hat oder ob er sogar Antworten auf eine Umfrage, ein Online-Spiel usw. erhält.
+Je nach Empfängerverhalten können Druckregeln definiert werden. So kann die Versandgewichtung an Kriterien angepasst werden, die je nach Empfängerin bzw. Empfänger variieren. Der Versand einer bestimmten Nachricht kann beispielsweise bevorzugt werden, je nachdem, ob eine Person Ihre Seite besucht, in eine bestimmte Rubrik des letzten Newsletters geklickt oder einen Informationsdienst abonniert hat oder nicht. Auch Antworten auf Umfragen oder Online-Spiele etc. können berücksichtigt werden.
 
-Im folgenden Beispiel möchten wir einen Versand mit der Gewichtung 5 erstellen. Diese Gewichtung wird mit Tendenz-Scores auf der Grundlage des Empfängerverhaltens angereichert: Kunden, die bereits auf dieser Website bestellt haben, erhalten einen Score von 5, während Kunden, die noch nie online bestellt haben, einen Score von 4 haben.
+Im folgenden Beispiel möchten wir einen Versand mit der Gewichtung 5 erstellen. Dieser Gewichtung werden Neigungswerte entsprechend dem Empfängerverhalten hinzugefügt: Eine Person, die bereits eine Bestellung auf der Website aufgegeben hat, erhält einen Neigungswert von 5, während einer Person, die noch nie online bestellt hat, ein Neigungswert von 4 zugeordnet wird.
 
-Um diesen Konfigurationstyp durchzuführen, müssen Sie eine Formel verwenden, um die Nachrichtengewichtung zu definieren. Informationen zu Tendenz-Scores und Umfrageantworten müssen im Datenmodell verfügbar sein. Im vorliegenden Beispiel wurde das Feld **Neigungen** hinzugefügt.
+Um diesen Konfigurationstyp durchzuführen, müssen Sie eine Formel verwenden, in der die Nachrichtengewichtung definiert wird. Informationen zu Tendenzbewertungen und Umfrageantworten müssen im Datenmodell verfügbar sein. Im vorliegenden Beispiel wurde das Feld **Neigungen** hinzugefügt.
 
 Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
@@ -317,7 +309,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
-1. Fügen Sie dann einen höheren Wert für Empfänger hinzu, die bereits einen Kauf getätigt haben. Für sie muss das Gewicht der Lieferung um 5 erhöht werden, während für andere nur um 4 erhöht wird.
+1. Fügen Sie dann einen höheren Wert für Empfängerinnen und Empfänger hinzu, die bereits einen Kauf getätigt haben. Für diese muss die Versandgewichtung um 5, für die anderen nur um 4 erhöht werden.
 
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
@@ -358,7 +350,7 @@ Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. Referenzieren Sie auf **[!UICONTROL Registerkarte]** der Registerkarte **[!UICONTROL Versandeigenschaften]** die Kampagnentypologie, auf die die Regel angewendet werden soll. Definieren Sie eine Versandgewichtung.
+1. Wählen Sie in der Registerkarte **[!UICONTROL Typologie]** der **[!UICONTROL Versandeigenschaften]** die Kampagnentypologie aus, auf die die Regel angewendet werden soll. Definieren Sie eine Versandgewichtung.
 
    ![](assets/campaign_opt_pressure_example_3.png)
 
@@ -371,10 +363,10 @@ Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den
    Damit die Ausschlüsse für die Druckregel erfolgreich implementiert werden können, legen Sie das Extraktionszeitpunkt vor dem Kontaktzeitpunkt sowie vor der erneuten Durchführung der nächtlichen Schlichtung fest. Weitere Informationen hierzu finden Sie unter [Ausschlüsse nach Schlichtung](#exclusion-after-arbitration).
 
 1. Deselektieren Sie die Option **[!UICONTROL Vor dem Start Versand bestätigen]** und speichern Sie Ihre Änderungen.
-1. Gehen Sie für jeden Versand, den Sie senden möchten, ähnlich vor. Stellen Sie sicher, dass Sie für jeden Versand die gewünschte Gewichtung festlegen.
+1. Gehen Sie für alle anderen Sendungen analog vor. Legen Sie dabei für jeden Versand die gewünschte Gewichtung fest.
 1. Führen Sie die entsprechenden Workflows zur Vorbereitung und zum Versand der Nachrichten aus.
 
-Bei Anwendung des nächtlichen Schlichtungsverfahrens werden die Sendungen mit den niedrigeren Gewichtungen für denselben Empfänger ausgeschlossen. Nur Sendungen mit der höchsten Gewichtung werden für den Versand berücksichtigt. Weitere Informationen hierzu finden Sie unter [Nachrichtengewichtung](#message-weight).
+Wenn die nächtliche Schlichtung angewendet wird, werden die Sendungen mit der niedrigeren Gewichtung für dieselbe Person ausgeschlossen. Nur die Sendungen mit der höchsten Gewichtung werden berücksichtigt. Weitere Informationen hierzu finden Sie unter [Nachrichtengewichtung](#message-weight).
 
 Angenommen, Anfang der Woche wurde den jeweiligen Empfängern schon eine E-Mail gesendet. In der unten stehenden Tabelle finden Sie ein Beispiel für die Konfiguration für zwei weitere Sendungen.
 
@@ -418,6 +410,6 @@ Angenommen, Anfang der Woche wurde den jeweiligen Empfängern schon eine E-Mail 
  </tbody> 
 </table>
 
-Nachdem das Extraktionsdatum für die beiden Sendungen überschritten ist, wird die nächtliche Schlichtung vor den Kontaktdaten beider Sendungen erneut angewendet. Auf diese Weise können Sie alle bereits durchgeführten Sendungen (Empfänger, für die ein Versand verarbeitet wird, werden über die Broadlogs aufgezeichnet) oder die für den Versand geplanten Sendungen (Empfänger, die für einen Versand infrage kommen, werden über die Forecast-Logs aufgezeichnet) ermitteln.
+Nachdem das Extraktionsdatum für die beiden Sendungen überschritten ist, wird die nächtliche Schlichtung vor den Kontaktdaten beider Sendungen erneut angewendet. Dies ermöglicht die Ermittlung aller bereits durchgeführten Sendungen (Empfangende, für die ein Versand verarbeitet und in den Broadlogs aufgezeichnet wurde) sowie der geplanten Sendungen (Empfangende, die für den Empfang einer Nachricht qualifiziert und in den Planungslogs aufgeführt sind).
 
-Sobald alle durchgeführten und potenziellen Sendungen für den in der Druckregel definierten Zeitraum aufgelistet wurden, sortiert Adobe Campaign sie nach Gewichtung, wobei der gewichtete Wert zuerst angegeben wird. Wenn der in der Druckregel festgelegte Schwellenwert erreicht wird (in diesem Fall nicht mehr als zwei E-Mails innerhalb derselben Woche), werden die Empfänger vom Versand ausgeschlossen.
+Nachdem alle durchgeführten und geplanten Sendungen für den in der Druckregel definierten Zeitraum aufgelistet sind, werden sie von Adobe Campaign nach Gewichtung sortiert, wobei der am höchsten gewichtete Versand zuerst kommt. Wenn die in der Druckregel definierte Schwelle erreicht ist (in unserem Beispiel maximal zwei E-Mails pro Woche), werden die Empfangenden vom Versand ausgeschlossen.

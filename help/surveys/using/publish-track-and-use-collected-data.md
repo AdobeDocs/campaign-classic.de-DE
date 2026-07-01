@@ -6,18 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 TQID: https://experienceleague.adobe.com/5faTMQayKA-bxeGrKlNlk7fxZUV2-TO-eVCSe3iRrgA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 917
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +29,7 @@ Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können S
 
 ## Umfrage-Dashboard {#survey-dashboard}
 
-Jede Umfrage verfügt über ein eigenes Dashboard, über das Sie den Status, die Beschreibung, die öffentliche URL und den Zeitplan für die Verfügbarkeit aufrufen können. Außerdem können Sie die verfügbaren Berichte anzeigen. [Weitere Informationen](#reports-on-surveys).
+Jede Umfrage verfügt über ein eigenes Dashboard, in dem Status, Beschreibung, öffentliche URL und Verfügbarkeitszeitplan angezeigt werden. Außerdem können Sie dort die verfügbaren Berichte anzeigen. [Weitere Informationen](#reports-on-surveys).
 
 Die öffentliche URL der Umfrage wird im Dashboard angezeigt:
 
@@ -45,11 +41,11 @@ Sie können die Antworten auf die Umfrage in Logs und Berichten verfolgen.
 
 ### Umfrage-Logs {#survey-logs}
 
-Für jede durchgeführte Umfrage können Sie die Antworten auf der Registerkarte **[!UICONTROL Protokolle]** verfolgen. Auf dieser Registerkarte wird die Liste der Benutzer angezeigt, die die Umfrage abgeschlossen haben, sowie deren Herkunft:
+Sie können die Antworten für jede bereitgestellte Umfrage in der Registerkarte **[!UICONTROL Protokolle]** nachverfolgen. In dieser Registerkarte wird die Liste der Benutzenden, die die Umfrage ausgefüllt haben, und ihre Herkunft angezeigt. 
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Doppelklicken Sie auf eine Zeile, um das Umfrageformular so anzuzeigen, wie es von der Auskunftsperson ausgefüllt wurde. Sie können die Umfrage vollständig durchsuchen und auf alle Antworten zugreifen. Diese können in eine externe Datei exportiert werden. Weitere Informationen finden Sie unter [Antworten exportieren](#exporting-answers).
+Doppelklicken Sie auf eine Zeile, um das Umfrageformular so anzuzeigen, wie es von der befragten Person ausgefüllt wurde. Sie können die gesamte Umfrage durchsuchen und auf die vollständigen Antworten zugreifen. Diese können in eine externe Datei exportiert werden. Weitere Informationen finden Sie unter [Antworten exportieren](#exporting-answers).
 
 Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben gekennzeichnet:
 
@@ -57,13 +53,13 @@ Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben geke
 ?origin=xxx
 ```
 
-Während die Umfrage bearbeitet wird, enthält ihre URL den Parameter **[!UICONTROL __uuid]**, was darauf hinweist, dass sie sich in einer Testphase befindet und noch nicht online ist. Wenn Sie über diese URL auf die Umfrage zugreifen, werden die erstellten Datensätze bei der Verfolgung (in Berichten) nicht berücksichtigt. Für die Herkunft wird der Wert **[!UICONTROL Adobe Campaign]** übernommen.
+Während der Bearbeitung der Umfrage enthält die URL den Parameter **[!UICONTROL __uuid]**, der darauf hinweist, dass sich die Umfrage in einer Testphase befindet und noch nicht online ist. Wenn Sie über diese URL auf die Umfrage zugreifen, werden die erstellten Einträge in den Tracking-Berichten nicht berücksichtigt. Für die Herkunft wird der Wert **[!UICONTROL Adobe Campaign]** übernommen.
 
 Weiterführende Informationen zu URL-Parametern finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
 ### Berichte zu Umfragen {#reports-on-surveys}
 
-Über die Registerkarte Dashboard können Sie auf Umfrageberichte zugreifen. Klicken Sie auf einen Berichtsnamen, um ihn anzuzeigen.
+Über die Registerkarte „Dashboard“ können Sie auf Umfrageberichte zugreifen. Klicken Sie auf einen Berichtsnamen, um ihn anzuzeigen.
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
@@ -87,7 +83,7 @@ Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verf�
 
 ## Antworten exportieren {#exporting-answers}
 
-Antworten auf eine Umfrage können in einer externen Datei exportiert und später verarbeitet werden. Dazu gibt es zwei Möglichkeiten:
+Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei exportiert werden. Dafür gibt es zwei Möglichkeiten:
 
 1. Berichtsdaten exportieren
 
@@ -125,7 +121,7 @@ Antworten auf eine Umfrage können in einer externen Datei exportiert und späte
 
 Die durch Online-Umfragen gesammelten Daten können im Rahmen eines Zielgruppen-Workflows abgerufen werden. Verwenden Sie zu diesem Zweck die Box **[!UICONTROL Umfrageantworten]**.
 
-Im folgenden Beispiel möchten wir ein Web-Angebot speziell für die fünf Empfangenden mit mindestens zwei Kindern und den höchsten Werten bei einer Online-Umfrage erstellen. Die Antworten auf diese Umfrage lauten:
+Im folgenden Beispiel möchten wir fünf Empfangenden mit mindestens zwei Kindern und der höchsten Punktzahl in einer Online-Umfrage ein spezielles Web-Angebot unterbreiten.Die Antworten auf diese Umfrage lauten:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
@@ -133,13 +129,13 @@ Im Zielgruppen-Workflow werden die **[!UICONTROL Umfrageantworten]** folgenderma
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
-Wählen Sie zunächst die betreffende Umfrage und dann im mittleren Bereich des Fensters die zu extrahierenden Daten aus. In diesem Fall müssen wir mindestens die Score-Spalte extrahieren, da sie in der Split-Box verwendet wird, um die fünf höchsten Score-Werte abzurufen.
+Wählen Sie zunächst die entsprechende Umfrage und dann die zu extrahierenden Daten im mittleren Abschnitt des Fensters aus. In diesem Fall muss zumindest die Spalte mit der Punktzahl extrahiert werden, da sie im Aufspaltungsfeld zum Abrufen der fünf höchsten Punktzahlen verwendet wird.
 
 Geben Sie die Filterbedingungen für Antworten ein, indem Sie den Link **[!UICONTROL Abfrage bearbeiten...]** auswählen.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
-Zielgruppenbestimmungs-Workflow starten Die Abfrage ruft 8 Empfänger ab.
+Starten Sie den Zielgruppenbestimmungs-Workflow. Die Abfrage ruft 8 Empfangende ab.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
@@ -171,4 +167,4 @@ Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
 ## Daten vereinheitlichen {#standardizing-data}
 
-Es ist möglich, in Adobe Campaign Standardisierungsprozesse für Daten einzurichten, die mithilfe von Aliassen erfasst werden. Auf diese Weise können Sie die in der Datenbank gespeicherten Daten standardisieren. Definieren Sie dazu Aliase in den Auflistungen, die die relevanten Informationen enthalten. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Es ist möglich, in Adobe Campaign Standardisierungsprozesse für mithilfe von Aliassen erfasste Daten einzurichten. Damit können Sie die in der Datenbank gespeicherten Daten standardisieren. Definieren Sie dazu Aliasse in den Auflistungen, die die entsprechenden Informationen enthalten. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

@@ -9,19 +9,14 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 TQID: https://experienceleague.adobe.com/MKJg0M0gWR9XvgsRkXvZqAkNx2IzLg24l9c4nG26r20
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-subfeature_v2:
-  - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+subfeature_v2: id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 487
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +30,7 @@ Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Ad
 
 ### Indikatoren {#indicators}
 
-Nach der Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind auf der Registerkarte **[!UICONTROL Allgemein]** der Hypothese verfügbar.
+Nach Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind in der Registerkarte **[!UICONTROL Allgemein]** der Hypothese verfügbar.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -81,10 +76,10 @@ Sie können die durch die Hypothesen generierten Empfängerreaktionen im Tab **[
 
 Im **[!UICONTROL Hypothesenbericht]** können Sie die Ergebnisse der Hypothesen zu Kampagnen und Sendungen einsehen. Dieser Bericht enthält die von der Hypothese berechneten Indikatoren (weitere Informationen finden Sie unter [Indikatoren](#indicators)).
 
-* **Auf Kampagnenebene**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der entsprechenden Kampagne und wählen Sie den **[!UICONTROL Hypothesenbericht]**. Dieser Bericht enthält die Liste der in Campaign durchgeführten Sendungen sowie die für jeden Versand berechneten Hypothesen.
+* **Auf Kampagnenebene**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der entsprechenden Kampagne und wählen Sie **[!UICONTROL Hypothesenbericht]** aus. Dieser Bericht enthält die Liste der Sendungen der Kampagne sowie die für jeden Versand berechneten Hypothesen.
 
   ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **Auf Versandebene**: Um auf den Bericht zuzugreifen, öffnen Sie den betreffenden Versand, klicken Sie auf der Registerkarte **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]** und wählen Sie den **[!UICONTROL Hypothesenbericht]**. Wenn mehrere Hypothesen für denselben Versand berechnet wurden, enthält der Bericht alle Hypothesen.
+* **Auf Versandebene**: Öffnen Sie zum Aufrufen eines Berichts den entsprechenden Versand, klicken Sie in der Registerkarte **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]** und wählen Sie **[!UICONTROL Hypothesenbericht]** aus. Wenn mehrere Hypothesen für denselben Versand berechnet wurden, enthält der Bericht alle Hypothesen.
 
   ![](assets/response_hypothesis_delivery_report_001.png)

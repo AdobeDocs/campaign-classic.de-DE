@@ -6,17 +6,13 @@ feature: Workflows, Enrichment Activity, Targeting Activity
 hide: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 TQID: https://experienceleague.adobe.com/3M3Y5GT1479YcWpoM0MI5C6ru5F5jcPY-EYvAOCBMqU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1431
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +20,7 @@ ht-degree: 72%
 
 
 
-Die Aktivität **[!UICONTROL Anreicherung]** ermöglicht das Hinzufügen von Informationen zu einer Profilliste und von Links zu einer vorhandenen Tabelle (Erstellen eines neuen Joins). Es können auch Abstimmkriterien für Profile in der Datenbank definiert werden.
+Mit einer Aktivität **[!UICONTROL Anreicherung]** können Sie einer Profilliste Daten hinzufügen und eine vorhandene Tabelle mit Links ergänzen (neuen Join erstellen). Außerdem können Sie Abstimmkriterien für Profile in der Datenbank definieren.
 
 ![](assets/enrichment_design.png)
 
@@ -48,12 +44,12 @@ Die Option **[!UICONTROL Relation]** ermöglicht die Erstellung eines Joins mit 
 Vier Relationstypen stehen zur Auswahl:
 
 * **[!UICONTROL Sammlung definieren]**: erstellt eine 1:n-Relation zwischen zwei Tabellen.
-* **[!UICONTROL Relation definieren, deren Ziel noch verfügbar ist]**: ermöglicht die Definition einer Relation mit einer 1-1-Kardinalität zwischen Tabellen. Die Join-Bedingungen müssen durch einen einzelnen Datensatz in der Zieltabelle definiert werden.
-* **[!UICONTROL Relation definieren, deren Ziel nicht unbedingt in der Basis vorhanden ist]**: ermöglicht die Definition einer Relation mit einer Kardinalität von 0-1 zwischen Tabellen. Die Join-Bedingung muss durch 0 oder 1 (max.) definiert sein. Datensatz in der Zieltabelle.
+* **[!UICONTROL Link definieren, Ziel muss immer verfügbar sein]**: erstellt eine 1:1-Relation zwischen zwei Tabellen. Die Join-Bedingungen müssen durch einen einzelnen Eintrag in der Zieltabelle definiert werden.
+* **[!UICONTROL Relation definieren, Ziel muss in der Datenbank nicht zwingend existieren]**: erstellt eine 0:1-Relation zwischen zwei Tabellen. Die Join-Bedingung muss durch 0 oder 1 (max.) in der Zieltabelle definiert sein.
 
   Diese Option wird im Tab **[!UICONTROL Einfacher Join]** konfiguriert, auf den Sie über den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]** in der Aktivität **[!UICONTROL Anreicherung]** zugreifen können.
 
-* **[!UICONTROL Relation durch Suche nach einem Verweis aus mehreren Optionen definieren]**: Dieser Link-Typ definiert eine Abstimmung auf einen eindeutigen Datensatz hin. Adobe Campaign erstellt eine Relation zu einer Zieltabelle, indem in der Zieltabelle ein Fremdschlüssel zum Speichern eines Verweises auf den eindeutigen Datensatz hinzugefügt wird.
+* **[!UICONTROL Link durch Suche nach einer Referenz aus mehreren möglichen definieren]**: Diese Art von Verknüpfung definiert einen Link zu einem eindeutigen Eintrag. Adobe Campaign erstellt einen Link zu einer Zieltabelle, indem ein Fremdschlüssel in die Zieltabelle eingefügt wird, der eine Referenz zum eindeutigen Eintrag enthält.
 
   Diese Option wird im Tab **[!UICONTROL Abstimmung &amp; Deduplizierung]** konfiguriert, auf den Sie über den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]** in der Aktivität **[!UICONTROL Anreicherung]** zugreifen können.
 
@@ -71,7 +67,7 @@ Die Konfiguration der zusätzlichen Spalten wird im Abschnitt [Daten hinzufügen
 
 Wählen Sie im Feld **[!UICONTROL Hauptmenge]** die eingehende Transition aus, deren Arbeitstabelle angereichert werden soll.
 
-Klicken Sie auf **[!UICONTROL Link]** hinzufügen und wählen Sie den hinzuzufügenden Datentyp aus. Die Liste der angebotenen Datentypen hängt von den auf Ihrer Plattform installierten Modulen und Optionen ab. In einer minimalen Konfiguration können Sie immer Daten hinzufügen, die mit der Filterdimension und einem Link verknüpft sind.
+Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen]** und wählen Sie den Typ der hinzuzufügenden Daten aus. Die Liste der angebotenen Datentypen hängt von den auf Ihrer Plattform installierten Modulen und Optionen ab. In einer minimalen Konfiguration können Sie immer Daten hinzufügen, die mit der Filterdimension und einem Link verknüpft sind.
 
 ![](assets/enrichment_edit.png)
 
@@ -99,7 +95,7 @@ Auch das Schema wurde entsprechend angereichert.
 
 ## Umgang mit Zusatzdaten {#managing-additional-data}
 
-Deaktivieren Sie die Option **[!UICONTROL Alle zusätzlichen Daten aus der Hauptmenge beibehalten]**, wenn Sie die zuvor definierten zusätzlichen Daten nicht beibehalten möchten. In diesem Fall werden nur die zusätzlichen Spalten, die in der Aktivität Anreicherung ausgewählt wurden, zur ausgehenden Arbeitstabelle hinzugefügt. Die zusätzlichen Informationen, die den vorgelagerten Aktivitäten hinzugefügt werden, werden nicht gespeichert.
+Deaktivieren Sie die Option **[!UICONTROL Alle Zusatzdaten der Hauptmenge beibehalten]**, wenn Sie die zuvor definierten zusätzlichen Daten nicht beibehalten möchten. In diesem Fall werden nur die in der Anreicherungsaktivität ausgewählten zusätzlichen Spalten zur ausgehenden Arbeitstabelle hinzugefügt. Die zusätzlichen Informationen, die den vorgelagerten Aktivitäten hinzugefügt werden, werden nicht gespeichert.
 
 ![](assets/enrichment_edit_without_additional.png)
 
@@ -132,7 +128,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Wählen Sie die Option **[!UICONTROL Relationsdefinition]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**. Geben Sie den Typ der zu erstellenden Relation an. In diesem Beispiel möchten wir das Land des Dateiempfängers mit einem Land in der Liste der verfügbaren Länder in der entsprechenden Tabelle der Datenbank abstimmen. Wählen Sie daher die Option **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren möglichen definieren]**. Wählen Sie im Feld **[!UICONTROL Zielschema]** die Ländertabelle an.
+1. Wählen Sie die Option **[!UICONTROL Link definieren]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**. Geben Sie den Typ des zu erstellenden Links an. In diesem Beispiel soll das Land der die eingehende Datei empfangenden Person mit einem Land aus der entsprechenden Datenbanktabelle abgestimmt werden. Wählen Sie daher die Option **[!UICONTROL Relation durch Suche nach einer Referenz aus mehreren möglichen definieren]**. Wählen Sie im Feld **[!UICONTROL Zielschema]** die Ländertabelle an.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -175,9 +171,9 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](qu
    ![](assets/int_enrichment_offer2.png)
 
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
-1. Geben Sie die Angebotsauswahl an. Hierfür gibt es zwei mögliche Optionen:
+1. Geben Sie die Angebotsauswahl an. Dafür stehen zwei Optionen zur Verfügung:
 
-   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Wenn Sie diese Option aktivieren, geben Sie die Aufrufparameter des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Aktivieren Sie diese Option und geben Sie die Parameter für Aufrufe des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -199,11 +195,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie im Tab **[!UICONTROL Anreicherung]** der Aktivität auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie im folgenden Fenster den Datentyp **[!UICONTROL Relation]** aus.
-1. Wählen Sie die Art des Links, den Sie erstellen möchten, sowie seine Zielgruppe aus. In diesem Fall ist das Angebotsschema die Zielgruppe.
+1. Definieren Sie den Typ und das Ziel der einzurichtenden Relation. In diesem Fall ist das Angebotsschema die Zielgruppe.
 
    ![](assets/int_enrichment_link1.png)
 
-1. Relation zwischen den Daten der Eingangstabelle der Aktivität Anreicherung (hier die Empfängertabelle) und der Angebotstabelle Sie können beispielsweise einen Angebots-Code mit einem Empfänger verknüpfen.
+1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität „Anreicherung“ (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einen Angebots-Code mit einer Empfängerin bzw. einem Empfänger verknüpfen.
 
    ![](assets/int_enrichment_link2.png)
 

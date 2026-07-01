@@ -6,16 +6,13 @@ feature: Distributed Marketing
 hide: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 TQID: https://experienceleague.adobe.com/AQ-UD-8YP-5emnQLqkeBovEX1FpChnCLxTq-pncUrDU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-subfeature_v2:
-  - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+subfeature_v2: id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 441
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +31,7 @@ Folgende Funktionen stehen ihnen hierzu zur Verfügung:
 
 ## Filtern von Kits {#filter-packages}
 
-Im Tab **[!UICONTROL Kampagnen]** können Sie die Liste der **[!UICONTROL Kampagnenkits]** anzeigen, in der alle vorhandenen dezentralen Marketing-Kampagnen neu gruppiert werden können. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht, verspätet, mit ausstehender Genehmigung usw. sind. Klicken Sie dazu auf die Links im oberen Abschnitt dieser Ansicht oder verwenden Sie den Link **[!UICONTROL Filterliste]** und wählen Sie den Status des Kampagnenkits aus.
+Im Tab **[!UICONTROL Kampagnen]** können Sie die Liste der **[!UICONTROL Kampagnenkits]** anzeigen, in der alle vorhandenen dezentralen Marketing-Kampagnen neu gruppiert werden können. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht oder überfällig sind, deren Validierung ausstehend ist usw. Klicken Sie dazu auf die Links im oberen Abschnitt diese Ansicht oder verwenden Sie den Link **[!UICONTROL Liste filtern]** und wählen Sie den anzuzeigenden Status des Kampagnenkits.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -44,13 +41,13 @@ Die Liste der **[!UICONTROL Kampagnenkits]** zeigt eine kurze Zusammenfassung je
 
 Sie enthält folgende Informationen: Titel, Kampagnentyp, Referenzkampagne des Kits sowie sein Speicherordner.
 
-Klicken Sie auf den Paketnamen, um ihn zu bearbeiten. Sie können Bestellungen auch nach Lokalstellen und Status anzeigen.
+Klicken Sie auf den Namen des Kits, um ihn zu bearbeiten. Sie können auch die Bestellungen nach Lokalstellen und Status anzeigen.
 
 Diese Informationen werden auch in der Übersicht **[!UICONTROL Kampagnenbestellungen]** angezeigt, die alle erfolgten Bestellungen auflistet.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-Der zentrale Benutzer kann die Reihenfolge bearbeiten. Dazu gibt es zwei Möglichkeiten:
+Die zentrale Benutzerin bzw. der zentrale Benutzer kann die Bestellung bearbeiten. Dafür gibt es zwei Möglichkeiten:
 
 1. Sie können auf den Titel der Bestellung klicken, um sie zu öffnen. Daraufhin werden Bestelldetails angezeigt.
 
@@ -90,7 +87,7 @@ Auf Niveau einer **partizipativen Kampagne** hat der Abbruch eines Kits folgende
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-Abgebrochene Pakete können weiterhin von der Zentralstelle aufgerufen und bei Bedarf neu initialisiert werden (siehe unten). Sie werden erst dann wieder den lokalen Entitäten angeboten, wenn sie genehmigt und gestartet wurden. Der Prozess zur Paketneuinitialisierung wird unten angezeigt.
+Abgebrochene Kits können weiterhin von der Zentralstelle aufgerufen und bei Bedarf neu initialisiert werden (siehe unten). Sie werden erst wieder den Lokalstellen angeboten, wenn sie validiert und gestartet wurden. Der Prozess zur Neuinitialisierung von Kits wird unten veranschaulicht.
 
 ## Zurücksetzen eines Packages {#reinitializing-a-package}
 
@@ -105,7 +102,7 @@ Das Zurücksetzen eines bereits veröffentlichten Kampagnenkits dient dazu, dies
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. Der Paketstatus ändert sich in **[!UICONTROL In Bearbeitung]**. Ändern, genehmigen und erneut veröffentlichen, um sie in der Liste des Kampagnenkits wiederherzustellen.
+1. Der Status des Kits ändert sich in **[!UICONTROL In Bearbeitung]**. Ändern, validieren und veröffentlichen Sie es erneut, um es wieder der Liste der Kampagnenkits hinzuzufügen.
 
 >[!NOTE]
 >

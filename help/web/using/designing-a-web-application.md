@@ -6,22 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 TQID: https://experienceleague.adobe.com/8HdoOgOBgZgI3-Kxnn-I0kW5zyTSBfUtM0IoLGBvHag
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 309
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +29,7 @@ Web-Anwendungen werden nach dem gleichen Prinzip wie [Web-Formulare](about-web-f
 
 ## Grafiken in eine Web-Anwendung einfügen {#inserting-charts-in-a-web-application}
 
-Sie können Diagramme in Web-Anwendungen einbeziehen. Verwenden Sie dazu die Dropdown-Liste der Diagramme in der Taskleiste, um den Typ des einzufügenden Diagramms auszuwählen.
+Sie können Diagramme in Web-Anwendungen einbeziehen. Wählen Sie hierzu den einzufügenden Diagrammtyp aus der Dropdown-Liste der Diagramme in der Symbolleiste aus.
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
@@ -69,7 +61,7 @@ Webanwendungen mit Bearbeitungsformularen für ein Extranet besitzen folgende Me
 
 * Eine Option zum Vorausfüllen
 
-  In den meisten Fällen müssen die anzuzeigenden Daten vorgeladen werden. Da die Benutzer, die auf diese Formulare zugreifen, (über eine Zugriffssteuerung) identifiziert werden, ist das Vorabladen nicht unbedingt verschlüsselt.
+  In den meisten Fällen müssen die anzuzeigenden Daten vorgeladen werden. Da sich die Benutzenden, die auf diese Formulare zugreifen, über eine Zugriffskontrolle identifizieren müssen, muss das Vorladen nicht unbedingt verschlüsselt erfolgen.
 
 * Eine Option zum Speichern
 * Eine Option zum Hinzufügen von Seiten

@@ -5,16 +5,14 @@ description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur 
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 TQID: https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1226
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +34,11 @@ Transaktionsnachrichten basieren auf einer Architektur, die sich aus mehreren In
 
 ## Installieren von Instanzen {#installing-instances}
 
-Es gibt mehrere Vorsichtsmaßnahmen, die bei der Installation der Transaktionsnachrichten-Packages zu treffen sind. Adobe empfiehlt, in einer Testumgebung zu arbeiten, bevor Sie sie in die Produktion aufnehmen. Außerdem benötigen Sie eine kompatible Adobe Campaign-Lizenz. Wenden Sie sich für weitere Informationen hierzu an Ihren Adobe-Kundenbetreuer.
+Es gibt mehrere Vorsichtsmaßnahmen, die bei der Installation der Transaktionsnachrichtenpakete zu treffen sind. Adobe empfiehlt Ihnen, in einer Testumgebung zu arbeiten, bevor Sie sie in der Produktionsumgebung einsetzen. Außerdem benötigen Sie eine kompatible Adobe Campaign-Lizenz. Wenden Sie sich für weitere Informationen hierzu an Ihren Adobe-Kundenbetreuer.
 
 >[!IMPORTANT]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
+>Die Kontrollinstanz und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
 
 Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages installieren und konfigurieren, bevor Sie die Transaktionsnachrichten-Packages installieren. Weiterführende Informationen hierzu finden Sie unter [Hinzufügen von Versandkanälen](#adding-a-delivery-channel).
 
@@ -58,7 +56,7 @@ Die detaillierten Schritte zur Konfiguration der Kontrollinstanz werden in [dies
 >
 >Die Freigabe eines Ausführungs-Clusters mit mehreren Kontrollinstanzen wird nur bei On-Premise-Umgebungen unterstützt.
 
-Es ist möglich, einen Ausführungs-Cluster unter mehreren Kontrollinstanzen freizugeben. Wenn Sie beispielsweise mehrere spezialisierte Stores verwalten, können Sie für jede Marke eine Kontrollinstanz konfigurieren und sie alle mit demselben Ausführungs-Cluster verknüpfen.
+Es ist möglich, einen Ausführungs-Cluster für mehrere Kontrollinstanzen freizugeben. Wenn Sie beispielsweise mehrere spezialisierte Shops verwalten, können Sie eine Kontrollinstanz pro Marke konfigurieren und diese alle mit demselben Ausführungs-Cluster verknüpfen.
 
 ![](assets/messagecenter_diagram_2.png)
 
@@ -80,7 +78,7 @@ Der E-Mail-Kanal ist standardmäßig verfügbar. Sie können Ihre Transaktionsna
 
 >[!IMPORTANT]
 >
->Hinzufügen eines Versandkanals (Mobile-Kanal, Mobile-App-Kanal usw.) muss vor der Installation des Transaktionsnachrichten-Packages durchgeführt werden.
+>Das Hinzufügen eines Versandkanals (mobiler Kanal, App-Kanal usw.) muss vor der Installation des Transaktionsnachrichtenpakets durchgeführt werden.
 
 ### Hinzufügen von Versandkanälen {#adding-a-delivery-channel}
 
@@ -93,7 +91,7 @@ Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestarte
 >Dieses Verfahren gilt nur für Kunden, die einen Windows NLServer verwenden, der auf demselben Computer installiert ist, auf dem sie arbeiten.
 
 1. Installieren Sie den benötigten Kanal, zum Beispiel den **mobilen Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Tools > Erweitert > Package importieren... > Adobe Campaign-Package]**).
-1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml** aus.
+1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packagemessageCenter.xml** aus.
 1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **mobilen Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App-Kanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
@@ -147,11 +145,11 @@ In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigung
 Um Transaktionsnachrichten-Module in Verbindung mit dem Mobile-App-Kanal zu nutzen, sind folgende Konfigurationen notwendig:
 
 1. Installieren Sie das Package **Mobile App Channel** in den Kontroll- und Ausführungsinstanzen.
-1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.**&#x200B;**
+1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.****
 
 Das betreffende Ereignis muss folgende Elemente enthalten:
 
-* Die Kennung des Mobilgeräts (**registrationId** für Android und **deviceToken** für iOS). Diese ID stellt die „Adresse“ dar, an die die Benachrichtigung gesendet wird.
+* Die Mobilgerät-ID (**registrationId** für Android und **deviceToken** für iOS). Diese ID ist die „Adresse“, an die die Benachrichtigung gesendet wird.
 * Die Definition der Relation zu der Mobile App oder dem Integrationsschlüssel (**uuid**), die den Abruf der App-spezifischen Verbindungsinformationen erlaubt.
 * Den Kanal über den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
 * Alle für die Personalisierung nützlichen Daten.
@@ -185,7 +183,7 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
 
 ### Transaktionsnachricht und LINE {#transactional-messaging-and-line}
 
-In Kombination mit dem LINE-Kanal können Sie mit Transaktionsnachrichten Echtzeitnachrichten über die auf Endbenutzergeräten installierte LINE-App senden. Dies wird verwendet, um die Willkommensnachricht zu senden, wenn ein LINE-Benutzer die Seite der Marke hinzufügt.
+In Kombination mit dem LINE-Kanal ermöglichen es Ihnen Transaktionsnachrichten, Echtzeit-Nachrichten über die auf den Mobilgeräten installierte LINE-App zu senden.So wird die Willkommensnachricht gesendet, wenn eine LINE-Benutzerin bzw. ein LINE-Benutzer die Seite der Marke hinzufügt.
 
 Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden Elemente zur Konfiguration Ihrer **Marketing-Instanz** und Ihrer Ausführungsinstanz **erforderlich**:
 

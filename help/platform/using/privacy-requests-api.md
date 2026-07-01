@@ -8,21 +8,14 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: a93bac61-f615-4178-bc12-0f056e48687d
 TQID: https://experienceleague.adobe.com/FamgSPCsG0flxP4eUriwPD3SCzGvvsfnqQXZwiMpnYI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-feature_v2:
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 670
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -74,11 +67,11 @@ Führen Sie zuerst die Authentifizierung über die API durch.
 
 1. Laden Sie die **xtk:session**-WSDL über diese URL herunter: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
-1. Verwenden Sie die „Anmelden“-Methode und übergeben Sie einen Benutzernamen und ein Kennwort als Parameter in der Anfrage. Sie erhalten eine Antwort mit einem Sitzungs-Token. Im Folgenden finden Sie ein Beispiel zur Verwendung von SoapUI.
+1. Verwenden Sie die Anmeldemethode und geben Sie in der Anfrage einen Benutzernamen und ein Passwort als Parameter ein. Sie erhalten eine Antwort mit einem Sitzungs-Token. Dies ist ein Beispiel mit SoapUI.
 
    ![](assets/do-not-localize/privacy-api.png)
 
-1. Verwenden Sie das zurückgegebene Sitzungs-Token als Authentifizierung für alle Subsequenz-API-Aufrufe. Er läuft nach 24 Stunden ab.
+1. Verwenden Sie dieses Sitzungs-Token zur Authentifizierung für alle folgenden API-Aufrufe. Es läuft nach 24 Stunden ab.
 
 Rufen Sie dann die Datenschutz-API auf:
 

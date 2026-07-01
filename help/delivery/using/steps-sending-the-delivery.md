@@ -7,23 +7,14 @@ role: User
 hide: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 TQID: https://experienceleague.adobe.com/-Wh-pHFGE1kTId3t6g7wVJFfSvh2W5ERHi2K5-0Ohdw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1649
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -107,11 +98,11 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (keine automatische Ausführung)]** können Sie zudem die Analyse des Versands terminieren.
 
-  Wenn diese Konfiguration gespeichert wird, ändert sich der Versand in den Status **[!UICONTROL Targeting ausstehend]**. Die Analyse wird am angegebenen Datum gestartet.
+  Beim Speichern dieser Konfiguration erhält der Versand den Status **[!UICONTROL Zielgruppenbestimmung ausstehend]**. Die Analyse wird am angegebenen Datum gestartet.
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]** wird nur das Kontaktdatum angegeben.
 
-  Klicken Sie auf **[!UICONTROL Senden]** und wählen Sie **[!UICONTROL Versand]**, starten Sie dann die Analyse und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist die Versandzielgruppe bereit und die Nachrichten werden automatisch am angegebenen Datum gesendet.
+  Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist das Versandziel bereit und die Nachrichten werden zum angegebenen Termin automatisch versendet.
 
 Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 
@@ -121,11 +112,11 @@ Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminiere
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
-Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Batches unterteilen. Konfigurieren Sie die Anzahl der Batches und ihre Größe in Bezug auf den gesamten Versand.
+Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Teilsendungen aufteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
 >[!NOTE]
 >
->Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfängerauswahlkriterien für jede Welle können nicht konfiguriert werden.
+>Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfänger-Auswahlkriterien für jeden Schub können nicht angepasst werden.
 
 1. Öffnen Sie das Versandeigenschaftenfenster und wählen Sie den **[!UICONTROL Versand]**-Tab aus.
 1. Wählen Sie die Option **[!UICONTROL In mehreren Schüben versenden]** aus und danach den Link **[!UICONTROL Definition der Schübe...]**.
@@ -144,7 +135,7 @@ Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Batches untert
 
      Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
 
-     Im folgenden Beispiel stellt die erste Welle 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten dar und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
+     Im folgenden Beispiel entspricht der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
 
      ![](assets/s_ncs_user_wizard_waves_create.png)
 
@@ -152,7 +143,7 @@ Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Batches untert
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass die letzten Schübe die Versandfrist nicht überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** definiert ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet.
+   >Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die in der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt ist. Anderenfalls werden einige Nachrichten möglicherweise nicht gesendet.
    >
    >Planen Sie bei der Konfiguration der letzten Schübe auch genügend Zeit für zusätzliche Versuche ein. Siehe [diesen Abschnitt](steps-sending-the-delivery.md#configuring-retries).
 
@@ -166,7 +157,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Wenn E-Mails über eine neue Plattform versendet werden, sind ISPs normalerweise misstrauisch gegenüber den neuen IP-Adressen. Das plötzliche Versenden großer Mengen an E-Mails veranlasst ISPs oft dazu, sie als Spam zu qualifizieren.
 
-  Um zu vermeiden, dass Sie als Spam gekennzeichnet werden, können Sie die Anzahl der über Wellen gesendeten Nachrichten schrittweise erhöhen. Dies gewährleistet eine reibungslose Anlaufphase, da die Gesamtrate ungültiger Adressen verringert wird.
+  Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Dies gewährleistet eine reibungslose Anlaufphase, da die Gesamtrate ungültiger Adressen verringert wird.
 
   Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 

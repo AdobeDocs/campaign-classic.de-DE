@@ -6,21 +6,14 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1379
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,13 +23,13 @@ ht-degree: 90%
 
 ## Formulardaten vorausfüllen {#pre-loading-the-form-data}
 
-Wenn Sie die in der Datenbank gespeicherten Profile über ein Web-Formular aktualisieren möchten, können Sie ein Feld zum Vorausfüllen verwenden. Mit der Option zum Vorausfüllen können Sie angeben, wie der zu aktualisierende Eintrag in der Datenbank gesucht werden soll.
+Wenn Sie die in der Datenbank gespeicherten Profile mithilfe eines Web-Formulars aktualisieren möchten, können Sie ein Feld zum Vorausfüllen verwenden. Mit der Option zum Vorausfüllen können Sie angeben, wie der zu aktualisierende Eintrag in der Datenbank gesucht werden soll.
 
 Folgende Identifizierungsmöglichkeiten gibt es:
 
 * **[!UICONTROL Adobe Campaign-Verschlüsselung]**
 
-  Diese Verschlüsselungsmethode verwendet die verschlüsselte Adobe Campaign-Kennung (ID). Diese Methode ist nur auf ein Adobe Campaign-Objekt anwendbar und die verschlüsselte ID kann nur von der Adobe Campaign-Plattform generiert werden.
+  Diese Verschlüsselungsmethode verwendet die verschlüsselte Adobe Campaign-Kennung (ID). Diese Methode ist nur für Adobe Campaign-Objekte möglich. Die verschlüsselte Kennung darf außerdem nur von der Adobe Campaign-Plattform generiert werden.
 
   Wenn Sie diese Methode verwenden, müssen Sie die URL des Formulars anpassen, das an die E-Mail-Adresse gesendet wird. Fügen Sie zu diesem Zweck den Parameter **`<%=escapeUrl(recipient.cryptedId) %>`** hinzu. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](#delivering-a-form-via-email).
 
@@ -70,9 +63,9 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   >[!CAUTION]
   >
-  >Wenn mehrere Felder in der Liste angegeben sind, müssen die **ALLE FELDER** mit den in der Datenbank gespeicherten Daten übereinstimmen, damit das Profil aktualisiert wird. Andernfalls wird ein neues Profil erstellt.
+  >Wenn in der Liste mehrere Felder spezifiziert sind, müssen die Daten **ALLER FELDER** mit den in der Datenbank gespeicherten Daten übereinstimmen, damit das Profil aktualisiert wird. Anderenfalls wird ein neues Profil erstellt.
   > 
-  >Diese Funktion ist besonders für Web-Anwendungen nützlich, wird aber für öffentliche Formulare nicht empfohlen. Die ausgewählte Zugriffssteuerungsoption muss „Zugriffssteuerung aktivieren“ lauten.
+  >Diese Funktion ist besonders nützlich für Web-Anwendungen, aber nicht empfohlen für öffentliche Formulare. Die ausgewählte Zugriffssteuerungsoption muss „Zugriffssteuerung aktivieren“ lauten.
 
 Wenn Sie keine Profile aktualisieren möchten, muss die Option **[!UICONTROL Bei nicht angegebener Identifizierung vorausgefüllte Informationen ignorieren]** ausgewählt werden. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
 

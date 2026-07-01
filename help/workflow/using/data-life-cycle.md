@@ -6,21 +6,14 @@ feature: Workflows, Data Management
 hide: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 TQID: https://experienceleague.adobe.com/eRSi9Eu1u9pMtMiiMZI9kZLjZ1JAWCt5B4HFc4FAm3U
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 548
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +45,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   Weitere Informationen hierzu finden Sie in diesem [Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Die Zielgruppendaten werden bei Ausführung des Workflows gelöscht. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
+Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 
 Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
@@ -62,13 +55,13 @@ Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
 Die in den Arbeitstabellen des Workflows gespeicherten Daten können insbesondere in Personalisierungsfeldern verwendet werden.
 
-Auf diese Weise können Sie Daten verwenden, die über eine Liste oder auf der Grundlage von Antworten auf eine Umfrage in einem Versand erfasst wurden. Verwenden Sie dazu die folgende Syntax:
+Auf diese Weise können Sie in einem Versand Daten verwenden, die über eine Liste abgerufen wurden oder aus Umfrageantworten stammen. Verwenden Sie dazu die folgende Syntax:
 
 ```
 %= targetData.FIELD %
 ```
 
-Personalisierungselemente vom **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) sind für Zielgruppen-Workflows nicht verfügbar. Die Versandzielgruppe muss im Workflow erstellt und in der eingehenden Transition des Versands spezifiziert werden.
+Personalisierungselemente des Typs **[!UICONTROL Zielgruppenerweiterung]** (targetData) sind für Zielgruppenbestimmungs-Workflows nicht verfügbar. Die Versandzielgruppe muss im Workflow erstellt und in der eingehenden Transition des Versands angegeben werden.
 
 Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weitere Informationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}.
 
@@ -122,7 +115,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden Daten mit denselben Eigenschaften wie bei allen Personalisierungsfeldern in Sendungen eingefügt. Sie können auch im Betreff, in Link-Kennzeichnungen oder in den Links selbst verwendet werden.
+   Daten des Typs **[!UICONTROL Zielgruppenerweiterung]** (targetData) werden mit denselben Eigenschaften wie alle anderen Personalisierungsfelder in Sendungen eingefügt. Sie können auch im Betreff, in Link-Titeln oder in den Links selbst verwendet werden.
 
    Die in der ersten Aktivität des Workflows erhobenen Empfänger erhalten somit die folgende Nachricht:
 

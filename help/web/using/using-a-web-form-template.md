@@ -6,18 +6,13 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 TQID: https://experienceleague.adobe.com/Rv0Vn64-LJgNufPSOd0-1z0G7cDqMEN9QSrzZYr3ypY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 239
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +20,7 @@ ht-degree: 75%
 
 
 
-Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
+Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen gemeinsam mit Web-Anwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]** gespeichert.
 
 Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular in eine Vorlage umwandeln.
 
@@ -35,7 +30,7 @@ Ein Formular kann in eine Vorlage umgewandelt und seine Konfiguration wiederverw
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
-Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Sie können den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem die Vorlage gespeichert werden soll.
+Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Dort können Sie den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem sie gespeichert werden soll.
 
 ## Neue Formularvorlage erstellen {#create-a-new-form-template}
 

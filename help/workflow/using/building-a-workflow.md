@@ -6,25 +6,14 @@ feature: Workflows
 hide: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 TQID: https://experienceleague.adobe.com/0-dipIpnwzpjanXaeOWQiF5l4Ofx6M0YZdif82b8arc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a658c786-869b-4194-a780-2594d663adda
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663addaid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cfid: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1693
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +51,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Hinzufügen und Verknüpfen von Aktivitäten {#adding-and-linking-activities}
 
-Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir die Diagrammbeschriftung und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Es enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
+Definieren Sie jetzt die verschiedenen Aktivitäten und verbinden Sie sie in einem Diagramm. In diesem Schritt der Konfiguration sehen wir den Diagrammtitel und den Workflow-Status (Bearbeitung läuft). Der untere Bereich des Fensters dient nur zur Bearbeitung des Diagramms. Er enthält eine Symbolleiste, eine Palette von Aktivitäten (links) und das Diagramm selbst (rechts).
 
 ![](assets/new-workflow-2.png)
 
@@ -120,7 +109,7 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
   Um die Symbole der Aktivitäten auszurichten, markieren Sie diese und klicken Sie in der Symbolleiste auf **[!UICONTROL Vertikal ausrichten]** oder **[!UICONTROL Horizontal ausrichten]**.
 
-  Verwenden Sie die **STRG**-Taste, um mehrere verstreute Aktivitäten auszuwählen oder die Auswahl für eine oder mehrere Aktivitäten aufzuheben. Klicken Sie auf den Hintergrund des Diagramms, um die Auswahl aufzuheben.
+  Mit der **Strg**-Taste können Sie mehrere Aktivitäten auswählen, die im Diagramm nicht unmittelbar nebeneinander positioniert sind. Klicken Sie auf den Hintergrund des Diagramms, um die Auswahl aufzuheben.
 
 * **Hintergrundbild und Symbole**
 
@@ -142,7 +131,7 @@ Für eine optimale Lesbarkeit des Workflows und zum besseren Verständnis seiner
 
 ## Zielgruppen-Workflows {#targeting-workflows}
 
-Zielgruppen-Workflows ermöglichen die Erstellung mehrerer Versandziele. Sie können Abfragen erstellen, Vereinigungen oder Ausschlüsse basierend auf bestimmten Kriterien definieren, mithilfe von Workflow-Aktivitäten Zeitpläne hinzufügen. Das Ergebnis dieser Zielgruppenbestimmung kann automatisch in eine Liste übertragen werden, die als Zielgruppe der Versandaktionen dienen kann.
+Zielgruppenbestimmungs-Workflows ermöglichen die Erstellung mehrerer Versandziele. Mit Workflow-Aktivitäten können Sie Abfragen erstellen, Vereinigungen oder Ausschlüsse basierend auf bestimmten Kriterien definieren und Zeitpläne hinzufügen. Das Ergebnis dieser Zielgruppenbestimmung kann automatisch in eine Liste übertragen werden, die als Zielgruppe der Versandaktionen dienen kann.
 
 Adobe Campaign bietet in den Workflows darüber hinaus Data Management-Optionen, die erweiterte Funktionen für komplexe Zielgruppenbestimmungen enthalten. Weitere Informationen hierzu finden Sie unter [Data Management](targeting-data.md#data-management).
 
@@ -170,9 +159,9 @@ Die Ergebnisse aller Anreicherungen und aller Behandlungen, die während der Zie
 
 ### Zielgruppenbestimmungs- und Filterdimensionen {#targeting-and-filtering-dimensions}
 
-Bei Vorgängen zur Datensegmentierung wird der Zielgruppenbestimmungsschlüssel einer Filterdimension zugeordnet. Mit der Zielgruppendimension können Sie die Population definieren, auf die sich der Vorgang bezieht: Empfängerinnen und Empfänger, Vertragsbegünstigte, Benutzerinnen und Benutzer, Abonnentinnen und Abonnenten usw. Mit der Filterdimension können Sie die Population anhand bestimmter Kriterien auswählen: Vertragsinhaber, Newsletter-Abonnenten usw.
+Bei Vorgängen zur Datensegmentierung wird der Zielgruppenbestimmungsschlüssel einer Filterdimension zugeordnet. Die Zielgruppendimension definiert die Population, die von einer Kampagne angesprochen werden soll: Empfangende, Kundschaft, Abonnierende, Benutzende etc. Die Filterdimension ermöglicht die Einschränkung der gewählten Population nach bestimmten Kriterien: Vertragsinhabende, Abonnierende eines bestimmten Newsletters etc.
 
-Um beispielsweise Kunden auszuwählen, die seit mehr als 5 Jahren über eine Lebensversicherungspolice verfügen, wählen Sie die folgende Zielgruppendimension aus: **Kunden** und die folgende Filterdimension: **Vertragsinhaber**. Anschließend können Sie die Filterbedingungen innerhalb der Abfrageaktivität definieren
+Wenn Sie beispielsweise alle Personen auswählen möchten, die seit mehr als fünf Jahren eine Lebensversicherung haben, verwenden Sie die Zielgruppendimension **Kunden** und die Filterdimension **Vertragsinhabende**. Anschließend können Sie die Filterbedingungen in der Abfrageaktivität definieren.
 
 Nach Auswahl einer Zielgruppendimension stehen nur die Filterdimensionen zur Verfügung, die mit der gewählten Zielgruppendimension kompatibel sind.
 
@@ -188,13 +177,13 @@ Während bei Auswahl der **Webanwendungen** die Liste folgende Filterdimensionen
 
 ## Kampagnen-Workflows {#campaign-workflows}
 
-Für jede Kampagne können Sie Workflows erstellen, die über die Registerkarte Zielgruppenbestimmungen **[!UICONTROL Workflows ausgeführt]**. Diese Workflows sind kampagnenspezifisch.
+Sie können für jede Kampagne Workflows erstellen, die über die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgeführt werden. Diese Workflows sind kampagnenspezifisch.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
 Dieser Tab enthält dieselben Aktivitäten für alle Workflows. [Mehr dazu](#implementation-steps-)
 
-Zusätzlich zur Zielgruppenbestimmung von Kampagnen ermöglichen Kampagnen-Workflows die Erstellung und Konfiguration von Sendungen vollständig für alle verfügbaren Kanäle. Sobald sie im Workflow erstellt wurden, sind diese Sendungen im Dashboard der Kampagne verfügbar. [Mehr dazu](../../campaign/using/marketing-campaign-deliveries.md)
+Zusätzlich zur Zielgruppenbestimmung von Kampagnen ermöglichen Kampagnen-Workflows die vollständige Erstellung und Konfiguration von Sendungen für alle verfügbaren Kanäle. Sobald sie im Workflow erstellt wurden, sind diese Sendungen im Dashboard der Kampagne verfügbar. [Mehr dazu](../../campaign/using/marketing-campaign-deliveries.md)
 
 Alle Kampagnen-Workflows werden zentral im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** gespeichert.
 
@@ -204,7 +193,7 @@ Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispie
 
 ## Technische Workflows {#technical-workflows}
 
-Technische Workflows werden vorkonfiguriert mit Adobe Campaign bereitgestellt. Hierbei handelt es sich um Vorgänge oder Vorgänge, die für die periodische Ausführung auf dem Server geplant sind. Sie ermöglichen die Wartung der Datenbank, die Weiterleitung von Tracking-Informationen zu Sendungen und die Einrichtung vorläufiger Versandprozesse. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
+Die technischen Workflows sind standardmäßig in Adobe Campaign enthalten. Dies sind Verfahren und Aufträge, die für eine periodische Ausführung auf dem Server geplant sind. Damit können Sie Wartungen der Datenbank durchführen, Tracking-Informationen zu Sendungen weiterleiten und geplante Prozesse für Sendungen einrichten. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
 
 ![](assets/navtree.png)
 
@@ -216,13 +205,13 @@ Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausfüh
 >
 >Die mit den verschiedenen Modulen gelieferten technischen Workflows werden in einem [gesonderten Kapitel](about-technical-workflows.md) beschrieben.
 
-Sie können weitere technische Workflows im Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** der Baumstruktur erstellen. Dies sollte jedoch erfahrenen Benutzerinnen und Benutzern vorbehalten bleiben.
+Sie können andere technische Workflows im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** des Navigationsbaums erstellen. Dies sollte jedoch erfahrenen Benutzerinnen und Benutzern vorbehalten bleiben.
 
 Die angebotenen Aktivitäten entsprechen denen für Zielgruppen-Workflows. [Mehr dazu](#implementation-steps-)
 
 ## Workflow-Vorlagen {#workflow-templates}
 
-Workflow-Vorlagen enthalten die Gesamtkonfiguration von Eigenschaften und möglicherweise eine Reihe von Aktivitäten, die innerhalb eines Diagramms verkettet sind. Diese Konfiguration kann für die Erstellung neuer Workflows mit einer bestimmten Anzahl vorkonfigurierter Elemente wiederverwendet werden
+Workflow-Vorlagen enthalten die allgemeine Konfiguration von Eigenschaften und gegebenenfalls eine Reihe von in einem Diagramm verketteten Aktivitäten. Diese Konfiguration kann für die Erstellung neuer Workflows mit einer bestimmten Anzahl vorkonfigurierter Elemente wiederverwendet werden.
 
 Die Konfiguration neuer Workflow-Vorlagen kann ausgehend von existierenden Vorlagen geschehen oder aber durch die Umwandlung eines existierenden Workflows in eine Vorlage.
 

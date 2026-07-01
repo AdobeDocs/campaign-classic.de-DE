@@ -6,17 +6,13 @@ feature: Workflows, Targeting Activity
 hide: true
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 TQID: https://experienceleague.adobe.com/BpoGip5vK0telNbSNDqQeEobF-5cXml0fD-Wnr2kUy8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 508
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +22,7 @@ ht-degree: 67%
 
 In Workflows genutzte Daten können aus Listen stammen, deren Daten zuvor aufbereitet und strukturiert wurden, beispielsweise in einer früheren Segmentierung oder im Zuge eines Datei-Ladevorgangs.
 
-Die Aktivität **[!UICONTROL Liste lesen]** ermöglicht das Kopieren der Daten aus einer Liste in der Workflow-Arbeitstabelle, z. B. von Daten aus einer Abfrage. Sie ist dann im gesamten Workflow verfügbar.
+Mit der Aktivität **[!UICONTROL Liste lesen]** können Sie Daten aus einer Liste in die Workflow-Arbeitstabelle kopieren, wie etwa Daten aus einer Abfrage. Sie sind dann im gesamten Workflow verfügbar.
 
 Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den in der Aktivität **[!UICONTROL Liste lesen]** aktivierten Optionen oder angegebenen Parametern ab.
 
@@ -52,7 +48,7 @@ Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grunds
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für einen Versand ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
+Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für eine Versandaktion ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
 
 1. Die zum Laden der im **Premiumkunden**-Ordner enthaltenen Empfänger erstellte Abfrage muss die E-Mail-Adressen der Empfänger ausgeben, um die Abstimmung mit der Ausschlussliste zu ermöglichen.
 
@@ -62,7 +58,7 @@ Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für 
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Um die E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die gemeinsamen Daten dieses Sets und aller anderen eingehenden Sets aus der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
+1. Um E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die zusammengeführten Daten dieser Menge und jeder anderen eingehenden Menge der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -76,4 +72,4 @@ Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für 
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Wählen Sie dann das Feld aus, das der E-Mail-Adresse in den beiden Sätzen (Source und Destination) entspricht. Die Spalten werden dann verknüpft und die Empfänger, deren E-Mail-Adresse in der Liste der importierten Adressen enthalten ist, werden aus der Zielgruppe ausgeschlossen.
+1. Wählen Sie dann das Feld aus, dass der E-Mail-Adresse in zwei Mengen entspricht (Quelle und Ziel). Die Spalten werden anschließend verknüpft und die Empfangenden, deren E-Mail-Adressen in der Liste der importierten Adressen angezeigt werden, werden von der Zielgruppe ausgeschlossen.
