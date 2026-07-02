@@ -20,7 +20,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 454
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-  ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+  ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 * Für den Operator, der den Workflow ausführt, muss die **[!UICONTROL ANGEBOTSAKTIVITÄT SQL-DATEN-MANAGEMENT VERWENDEN (useSqlDmActivity)]** richtig benannt sein. [Weitere Informationen](../../platform/using/access-management-named-rights.md).
@@ -58,7 +58,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
    >[!CAUTION]
    >
-   >Es liegt in der Verantwortung des SQL-Skriptverfassers, sicherzustellen, dass das SQL-Skript funktionsfähig ist und dass seine Referenzen (Feldnamen usw.) sind mit dem Outbound-Schema konform.
+   >Die Person, die das SQL-Skript erstellt, ist dafür verantwortlich, dass das SQL-Skript funktioniert und seine Verweise (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
    Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
@@ -75,14 +75,14 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
      >
      >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
-1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deaktivieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, sobald der Workflow ausgeführt wird.
+1. Wenn das SQL-Skript bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deaktivieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Anderenfalls wird automatisch eine Arbeitstabelle erstellt, sobald der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
-Der Aktivität ist jetzt konfiguriert. Sie kann jetzt im Workflow ausgeführt werden.
+Der Aktivität ist jetzt konfiguriert. Sie ist zur Ausführung im Workflow bereit.
 
 >[!CAUTION]
 >
->Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der Datensätze in der ausgehenden Transition nur als Hinweis zu verstehen. Er kann je nach Komplexität des SQL-Scripts variieren.
+>Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der Einträge in der ausgehenden Transition nur als Richtwert zu betrachten. Sie kann je nach Komplexität des SQL-Skripts variieren.
 >  
 >Wenn die Aktivität neu gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 

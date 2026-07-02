@@ -16,7 +16,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 460
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 90%
 
 
 
-Die Aktivität **[!UICONTROL Unter-Workflow]** ermöglicht den Trigger der Ausführung eines anderen Workflows und die Wiederherstellung des Ergebnisses. Diese Aktivität ermöglicht die Verwendung komplexer Workflows in einer vereinfachten Benutzeroberfläche.
+Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines anderen Workflows ausgelöst und dessen Ergebnis abgerufen werden. Diese Aktivität ermöglicht die Verwendung komplexer Workflows in einer vereinfachten Benutzeroberfläche.
 
-Sie können in einem Workflow mehrere Unter-Workflows aufrufen. Unter-Workflows werden synchron ausgeführt.
+Sie können in einem einzigen Workflow mehrere Unter-Workflows aufrufen. Unter-Workflows werden synchron ausgeführt.
 
 Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](jump-start-point-and-end-point.md).
 

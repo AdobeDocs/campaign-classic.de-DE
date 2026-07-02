@@ -16,7 +16,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 193
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 59%
 
 
 
-Eine **Warten**-Aktivität aktiviert ihre Transition nach einer Zeitverzögerung von einigen Sekunden bis zu mehreren Monaten. Eine Warteaufgabe blockiert nicht die Ausführung anderer Aufgaben. Der Workflow kann Aufgaben parallel ausführen, während diese Aufgabe aussteht.
+Eine **Warten**-Aktivität aktiviert ihre Transition nach einer Zeitverzögerung von einigen Sekunden bis zu mehreren Monaten. Diese Aktivität blockiert nicht die Ausführung weiterer Aufgaben. Der Workflow kann Aufgaben parallel zur wartenden Aufgabe ausführen.
 
 Im Editor werden der Titel und die Wartezeit angegeben, wie unten abgebildet:
 
@@ -32,7 +32,7 @@ Im Editor werden der Titel und die Wartezeit angegeben, wie unten abgebildet:
 
 Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Benutzers nicht anders angegeben, folgende Einheiten verwendet werden:
 
-* Wenn keine regionalen Einstellungen angegeben sind: **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage, **y** für Jahre. Zum Zeitpunkt der Genehmigung wird der Wert automatisch in die am besten lesbare Einheit umgewandelt.
+* Wenn keine regionalen Einstellungen angegeben sind: **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage und **y** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt.
 
   Die Standardeinheit ist **T** für Tag.
 

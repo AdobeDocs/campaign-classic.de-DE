@@ -16,7 +16,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 105
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -36,5 +36,5 @@ Wie eine Aufgabe konfiguriert und durchgeführt wird, ist in der Dokumentation z
 
 ![](assets/wkf_task_activity.png)
 
-Mit **[!UICONTROL Option]** Ressourcen“ können Sie mehrere Benutzer sowie einen Validierungsplan für die Aufgabe definieren. Wenn die genehmigende Person ablehnt, führt dies nicht dazu, dass die Aufgabe selbst abgelehnt wird.
+Mit der Option **[!UICONTROL Ressourcen]** können Sie die verantwortlichen Benutzenden einen Validierungsplan für die Aufgabe definieren. Wenn die genehmigende Person ablehnt, führt dies nicht dazu, dass die Aufgabe selbst abgelehnt wird.
 

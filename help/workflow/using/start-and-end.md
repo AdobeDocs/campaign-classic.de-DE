@@ -16,7 +16,7 @@ subfeature_v2:
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 140
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 21%
 
 
 
-Mit **[!UICONTROL Start]** und **[!UICONTROL End]**-Aktivitäten können Sie den Start und das Ende eines Workflows grafisch markieren. Diese Aktivitäten haben keine funktionalen Auswirkungen und sind daher optional.
+Die Aktivitäten **[!UICONTROL Start]** und **[!UICONTROL Ende]** markieren grafisch den Start- bzw. Endpunkt eines Workflows. Diese Aktivitäten haben keine funktionalen Auswirkungen und sind daher optional.
 
 * **[!UICONTROL Starten]**
 
@@ -34,11 +34,11 @@ Mit **[!UICONTROL Start]** und **[!UICONTROL End]**-Aktivitäten können Sie den
 
 * **[!UICONTROL Ende]**
 
-  Sie können die Aktivität **[!UICONTROL Ende]** so konfigurieren, dass alle laufenden Aufgaben unterbrochen werden. Doppelklicken Sie dazu auf die Aktivität, um deren Eigenschaften anzuzeigen, und aktivieren Sie die entsprechende Option.
+  Sie können die Aktivität **[!UICONTROL Ende]** so konfigurieren, dass alle laufenden Aufgaben unterbrochen werden. Doppelklicken Sie hierzu auf die Aktivität, um ihre Eigenschaften anzuzeigen, und aktivieren Sie die entsprechende Option.
 
   ![](assets/s_user_segmentation_end.png)
 
-  Die Daten in der Arbeitstabelle werden automatisch gelöscht, wenn die Endaktivität aktiviert ist. Wenn dies nicht erforderlich ist, können Sie zur Vermeidung unnötiger Lasten die Transition bei der letzten Aktivitätsausgabe deaktivieren. Wenn beispielsweise an einer Versandausgabe kein Prozess geplant ist, deaktivieren Sie die entsprechende Option wie unten dargestellt:
+  Die Daten in der Arbeitstabelle werden automatisch gelöscht, wenn die Aktivität „Ende“ aktiviert ist. Wenn dies nicht erforderlich ist, können Sie zur Vermeidung unnötiger Lasten die Transition bei der letzten Aktivitätsausgabe deaktivieren. Wenn beispielsweise an einer Versandausgabe kein Prozess geplant ist, deaktivieren Sie die entsprechende Option wie unten dargestellt:
 
   ![](assets/s_advuser_delivery_option_no_output.png)
 
