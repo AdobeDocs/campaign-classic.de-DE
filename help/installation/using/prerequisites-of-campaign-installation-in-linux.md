@@ -16,10 +16,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 854
-ht-degree: 5%
+source-wordcount: 906
+ht-degree: 4%
 
 ---
 
@@ -56,6 +56,34 @@ Stellen Sie zum Installieren von Adobe Campaign unter Linux sicher, dass Sie üb
   Für RHEL-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
 * Um Adobe Campaign verwenden zu können, muss die Bibliothek **libicu** installiert sein.
+
+* Bei RHEL-Distributionen ist **xalan-c** obligatorisch. Installieren Sie sie über `epel-release`:
+
+  ```
+  dnf install epel-release
+  dnf install xalan-c
+  ```
+
+### Exportabhängigkeiten von PDF-Berichten {#pdf-export-dependencies}
+
+Das Tool **wkhtmltopdf** wird beim Exportieren von Berichten in das PDF-Format verwendet. Sie erfordert die folgenden Pakete:
+
+* **libjpeg**
+* **xvfb**
+
+Wenn der Export von PDF-Berichten nicht verwendet wird, müssen diese Pakete nicht installiert werden.
+
+RHEL-Verteilungen:
+
+```
+dnf install libjpeg xvfb
+```
+
+Auf Debian:
+
+```
+apt-get install libjpeg-dev xvfb
+```
 
 ### SELinux {#selinux}
 
