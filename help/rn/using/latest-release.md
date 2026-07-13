@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 500
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ _30. Juni 2026_
 
 #### Verbesserungen bezüglich der Sicherheit {#security-7-4-3-9397}
 
-Dieser Build enthält Sicherheitskorrekturen. Dies ist der empfohlene allgemeine Verfügbarkeits-Build und ersetzt die vorherigen Campaign Classic v7-Builds.
+Dieser Build enthält Sicherheitskorrekturen. Dies ist der empfohlene Build mit allgemeiner Verfügbarkeit, er ersetzt die vorherigen Campaign Classic v7-Builds.
 
 #### Sonstige Änderungen {#changes-7-4-3-9397}
 
-Standardmäßig ignoriert webForm.jsp jetzt vom Client bereitgestellte `ctx`. Dies wird durch den `disableCtxInWebForm` gesteuert, der standardmäßig auf „true“ gesetzt ist.
+Standardmäßig ignoriert webForm.jsp jetzt vom Client bereitgestellte `ctx`-Parameter. Dies wird vom `disableCtxInWebForm`-Parameter gesteuert, der standardmäßig auf „wahr“ gesetzt ist.
 
-Wenn Ihre WebForm-Anfragen derzeit einen `ctx` Parameter übergeben, können Sie dieses Verhalten vorübergehend wieder aktivieren, indem Sie Folgendes zum hinzufügen &lt;web> -Element Ihres Konfigurations-&lt;instance>XML-Datei. Planen Sie die schrittweise Einstellung dieser Nutzung.
+Wenn Ihre webForm-Anfragen derzeit einen `ctx`-Parameter übergeben, können Sie dieses Verhalten vorübergehend wieder aktivieren, indem Sie Folgendes zum<web>Element Ihrer Konfigurations-<instance>XML-Datei hinzufügen. Planen Sie die schrittweise Einstellung dieser Nutzung.
 
 ```
 <web>
