@@ -8,17 +8,13 @@ content-type: reference
 hide: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-TQID: https://experienceleague.adobe.com/Mv-2GGcnP----L-D2h5DDz3StnT5rH4TlnQdxn9bdnY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-subfeature_v2:
-  - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
+TQID: https://experienceleague.adobe.com/Mv-2GGcnP%2D%2D%2D%2DL-D2h5DDz3StnT5rH4TlnQdxn9bdnY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+subfeature_v2: id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
+workflow-type: tm+mt
 source-wordcount: 3919
 ht-degree: 100%
 
@@ -419,7 +415,7 @@ Die Abhängigkeit zwischen den Aufgaben wird mithilfe von Pfeilen im Kampagnen-D
 
 Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise die Aufgabe **Einladung erstellen** am 15. Oktober um 3:30PM endet, beginnt die untergeordnete Aufgabe **Einladungs-E-Mail senden** am 15. Oktober um 3:30PM.
 
-Wenn Sie darüber hinaus das Ende einer übergeordneten Aufgabe nach hinten verschieben, hat dies möglicherweise Auswirkungen auf die untergeordneten Aufgaben, und zwar auf jene mit dem Status **[!UICONTROL Geplant]**, deren Startdatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt.Die Dauer der Aufgabe bleibt unverändert. Wenn das Startdatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufgabe liegt, ist die untergeordnete Aufgabe nicht betroffen.
+Wenn Sie darüber hinaus das Ende einer übergeordneten Aufgabe nach hinten verschieben, hat dies möglicherweise Auswirkungen auf die untergeordneten Aufgaben, und zwar auf jene mit dem Status **[!UICONTROL Geplant]**, deren Startdatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt. Die Dauer der Aufgabe bleibt unverändert. Wenn das Startdatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufgabe liegt, ist die untergeordnete Aufgabe nicht betroffen.
 
 **Beispiel**
 
@@ -435,7 +431,7 @@ Aufgabenstatus können in der Aufgabenübersicht angezeigt werden. Der Ausführu
 
 Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Abgeschlossen]**, **[!UICONTROL Abgebrochen]**, **[!UICONTROL Validierung ausstehend]** und **[!UICONTROL Abgelehnt]**.
 
-* Wenn das Startdatum einer Aufgabe bei deren Erstellung in der Zukunft liegt, lautet ihr Status **[!UICONTROL Geplant]**.Dieser Status wird bis zum Startdatum beibehalten.
+* Wenn das Startdatum einer Aufgabe bei deren Erstellung in der Zukunft liegt, lautet ihr Status **[!UICONTROL Geplant]**. Dieser Status wird bis zum Startdatum beibehalten.
 * Nach dem Start ist die Aufgabe **[!UICONTROL In Bearbeitung]**. Wenn die verantwortliche Person die Aufgabe schließt, ändert sie sich zu **[!UICONTROL Abgeschlossen]**.
 * Wurde eine Prüferin oder ein Prüfer bestimmt, erhält die Aufgabe den Status **[!UICONTROL Validierung ausstehend]**, sobald sie von der verantwortlichen Person geschlossen wird und bis sie durch die Prüferin bzw. den Prüfer validiert wird. Wenn die Prüferin bzw. der Prüfer die Aufgabe ablehnt, hat sie den Status **[!UICONTROL Abgelehnt]**.
 * Eine Aufgabe kann von ihrem Verantwortlichen über das Aufgaben-Dashboard oder die **[!UICONTROL Aufgabenübersicht]** durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** abgebrochen werden.
