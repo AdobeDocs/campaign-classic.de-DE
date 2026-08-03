@@ -7,23 +7,16 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 TQID: https://experienceleague.adobe.com/xs5sqsIqs9u-a9TrKo5EgFIpNTtxhy8y0-YIlDyUxp0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 922
-ht-degree: 100%
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
+workflow-type: tm+mt
+source-wordcount: 1045
+ht-degree: 88%
 
 ---
 
@@ -64,7 +57,15 @@ Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisieru
 
 Deshalb ist es essenziell, dass Sie **den aktuellen stabilen Build** von Adobe Campaign verwenden. Dadurch wird auch Ihr Support-Erlebnis verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
 
+>[!NOTE]
+>
+> Jeder Build ist kumulativ: Er enthält neben den eigenen Änderungen alle Funktionen, Verbesserungen und Fehlerbehebungen aus früheren Builds derselben Version. Sie müssen nicht jeden Zwischenbuild installieren, um von früheren Fehlerbehebungen zu profitieren - durch die Installation des neuesten Builds werden Sie auf den neuesten Stand gebracht, was in früheren Builds enthalten ist.
+
 Wenn Sie als Kundin oder Kunde gehostet werden, profitieren Sie automatisch, ohne eigene Aktionen, von Aktualisierungen mit dem neuesten stabilen Build. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zunächst eine Aktualisierung auf diesen Build durchzuführen.
+
+### Sicherheits-Patching für gehostete Umgebungen {#security-patching}
+
+Zum Schutz der Integrität gehosteter Umgebungen behält sich Adobe das Recht vor, jederzeit und ohne vorherige Ankündigung kritische Sicherheits-Patches anzuwenden, um Schwachstellen so schnell wie möglich zu beheben. Diese Patches werden ohne Service-Unterbrechung bereitgestellt. Diese Vorgehensweise entspricht den Security Governance-Standards von Adobe, wonach die Dringlichkeit der Behebung einer kritischen Sicherheitslücke Vorrang vor einer Vorabbenachrichtigung hat.
 
 ## Empfehlungen {#rn-recommendations}
 
