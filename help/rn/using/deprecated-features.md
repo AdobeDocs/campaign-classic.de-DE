@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1767
-ht-degree: 100%
+source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
+workflow-type: tm+mt
+source-wordcount: 1792
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,14 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
    <td><strong>Details</strong></td>
   </tr>
   <tr>
+ <td>Netsize-SMPP-Connector</td>
+ <td><p>Der Netsize-SMPP-Connector wird jetzt nicht mehr unterstützt. Es wird empfohlen, zum <strong>Erweiterten allgemeinen SMPP)-</strong> zu migrieren. Weitere Informationen dazu finden Sie auf <a href="../../delivery/using/unsupported-connector-migration.md">dieser Seite</a>.</p>
+<p>Geplantes Datum für die Entfernung: Januar 2027</p>
+</td>
+</tr>
+<tr>
  <td>Campaign-SDK-Vorgängerversion (Neolane)</td>
  <td><p>Das Campaign-SDK (Neolane) für mobile Anwendungen wird jetzt nicht mehr unterstützt. Verwenden Sie stattdessen das Adobe Experience Platform Mobile SDK, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. In der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings">Dokumentation zu Campaign v8</a> erfahren Sie, wie Sie den Mobile App-Kanal konfigurieren.</p>
-<p>Geplantes Entfernungsdatum: 31. Juli 2025 </p>
 </td>
 </tr>
 <tr>
@@ -206,11 +211,11 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
 * Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
-   * CentOS 6. [Weitere Informationen](https://wiki.centos.org/Download)
-   * Debian 7. [Weitere Informationen](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x. [Weitere Informationen](https://access.redhat.com/support/policy/updates/errata)
-   * Windows Server 2008. [Weitere Informationen](https://support.microsoft.com/en-us/lifecycle/search/1163)
-   * SLES 11. [Weitere Informationen](https://www.suse.com/lifecycle)
+  * CentOS 6. [Weitere Informationen](https://wiki.centos.org/Download)
+  * Debian 7. [Weitere Informationen](https://wiki.debian.org/DebianReleases)
+  * RHEL 6.x. [Weitere Informationen](https://access.redhat.com/support/policy/updates/errata)
+  * Windows Server 2008. [Weitere Informationen](https://support.microsoft.com/en-us/lifecycle/search/1163)
+  * SLES 11. [Weitere Informationen](https://www.suse.com/lifecycle)
 
 ### Webserver {#web-server-eol}
 
