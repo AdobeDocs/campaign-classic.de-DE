@@ -21,9 +21,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
-workflow-type: tm+mt
-source-wordcount: 1045
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: 1046
+ht-degree: 100%
 
 ---
 
@@ -66,13 +66,13 @@ Deshalb ist es essenziell, dass Sie **den aktuellen stabilen Build** von Adobe C
 
 >[!NOTE]
 >
-> Jeder Build ist kumulativ: Er enthält neben den eigenen Änderungen alle Funktionen, Verbesserungen und Fehlerbehebungen aus früheren Builds derselben Version. Sie müssen nicht jeden Zwischenbuild installieren, um von früheren Fehlerbehebungen zu profitieren - durch die Installation des neuesten Builds werden Sie auf den neuesten Stand gebracht, was in früheren Builds enthalten ist.
+> Jeder Build ist kumulativ: Neben den eigenen Änderungen sind auch alle Funktionen, Verbesserungen und Fehlerbehebungen aus früheren Builds derselben Version enthalten. Sie müssen nicht jeden dazwischen veröffentlichten Build installieren, um von früheren Fehlerbehebungen zu profitieren – durch die Installation des neuesten Builds erhalten Sie alle Aktualisierungen aus früheren Builds.
 
 Wenn Sie als Kundin oder Kunde gehostet werden, profitieren Sie automatisch, ohne eigene Aktionen, von Aktualisierungen mit dem neuesten stabilen Build. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zunächst eine Aktualisierung auf diesen Build durchzuführen.
 
-### Sicherheits-Patching für gehostete Umgebungen {#security-patching}
+### Sicherheits-Patches für gehostete Umgebungen {#security-patching}
 
-Zum Schutz der Integrität gehosteter Umgebungen behält sich Adobe das Recht vor, jederzeit und ohne vorherige Ankündigung kritische Sicherheits-Patches anzuwenden, um Schwachstellen so schnell wie möglich zu beheben. Diese Patches werden ohne Service-Unterbrechung bereitgestellt. Diese Vorgehensweise entspricht den Security Governance-Standards von Adobe, wonach die Dringlichkeit der Behebung einer kritischen Sicherheitslücke Vorrang vor einer Vorabbenachrichtigung hat.
+Zum Schutz der Integrität gehosteter Umgebungen behält sich Adobe das Recht vor, jederzeit und ohne vorherige Ankündigung kritische Sicherheits-Patches anzuwenden, um Schwachstellen so schnell wie möglich zu beheben. Diese Patches werden ohne Service-Unterbrechung bereitgestellt. Diese Vorgehensweise entspricht den Sicherheits- und Governance-Standards von Adobe, wonach die Dringlichkeit der Behebung einer kritischen Sicherheitslücke Vorrang vor einer Vorabmitteilung hat.
 
 ## Empfehlungen {#rn-recommendations}
 

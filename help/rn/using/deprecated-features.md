@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1792
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
   </tr>
   <tr>
  <td>Netsize-SMPP-Connector</td>
- <td><p>Der Netsize-SMPP-Connector wird jetzt nicht mehr unterstützt. Es wird empfohlen, zum <strong>Erweiterten allgemeinen SMPP)-</strong> zu migrieren. Weitere Informationen dazu finden Sie auf <a href="../../delivery/using/unsupported-connector-migration.md">dieser Seite</a>.</p>
-<p>Geplantes Datum für die Entfernung: Januar 2027</p>
+ <td><p>Der Netsize-SMPP-Connector wird jetzt nicht mehr unterstützt. Wir empfehlen die Migration zum <strong>erweiterten allgemeinen SMPP-Connector</strong>. Weitere Informationen dazu finden Sie auf <a href="../../delivery/using/unsupported-connector-migration.md">dieser Seite</a>.</p>
+<p>Geplantes Entfernungsdatum: Januar 2027</p>
 </td>
 </tr>
 <tr>
