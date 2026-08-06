@@ -9,17 +9,13 @@ hide: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 TQID: https://experienceleague.adobe.com/Mv-2GGcnP%2D%2D%2D%2DL-D2h5DDz3StnT5rH4TlnQdxn9bdnY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-subfeature_v2:
-  - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+subfeature_v2: id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
 source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
-workflow-type: tm+mt
-source-wordcount: 3919
+workflow-type: ht
+source-wordcount: 3921
 ht-degree: 100%
 
 ---
@@ -320,8 +316,8 @@ Die Aufgabe zur Erstellung von Marketing-Ressourcen interagiert mit der zugeordn
 
   Sie können eine Reihe miteinander verbundener Aufgaben verwenden, um einen vollständigen Validierungszyklus festzulegen. Überprüfen Sie die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** nur für die letzte Aufgabe: Alle Aufgaben müssen abgeschlossen sein, damit die Ressource veröffentlicht werden kann. Wenn Sie außerdem eine untergeordnete Marketing-Ressourcenaufgabe erstellen, wird die Ressource automatisch in der untergeordneten Aufgabe ausgewählt.
 
-   * **Über die Ressource**: Wenn die Ressource validiert oder zur Validierung unterbreitet wird, hat dies keinerlei Auswirkung auf die Aufgabe.
-   * **Über die Aufgabe**: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** für die Aufgabe aktiviert ist, wird die Ressource bei Abschluss der Aufgabe automatisch validiert und veröffentlicht (siebe oben). Wenn die Option nicht aktiviert ist, interagieren die Aufgabe und die Ressource nicht: Das Bearbeiten von einem Element hat keine Auswirkungen auf das andere.
+  * **Über die Ressource**: Wenn die Ressource validiert oder zur Validierung unterbreitet wird, hat dies keinerlei Auswirkung auf die Aufgabe.
+  * **Über die Aufgabe**: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** für die Aufgabe aktiviert ist, wird die Ressource bei Abschluss der Aufgabe automatisch validiert und veröffentlicht (siebe oben). Wenn die Option nicht aktiviert ist, interagieren die Aufgabe und die Ressource nicht: Das Bearbeiten von einem Element hat keine Auswirkungen auf das andere.
 
 #### Aufgabe zur Erstellung einer Marketing-Ressource konfigurieren {#configuring-a-marketing-resource-creation-task}
 
@@ -417,13 +413,13 @@ Die Abhängigkeit zwischen den Aufgaben wird mithilfe von Pfeilen im Kampagnen-D
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise die Aufgabe **Einladung erstellen** am 15. Oktober um 3:30PM endet, beginnt die untergeordnete Aufgabe **Einladungs-E-Mail senden** am 15. Oktober um 3:30PM.
+Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise eine Aufgabe **Einladung erstellen** am 15. Oktober um 15:30 Uhr endet, beginnt die untergeordnete Aufgabe **Einladungs-E-Mail senden** am 15. Oktober um 15:30 Uhr.
 
 Wenn Sie darüber hinaus das Ende einer übergeordneten Aufgabe nach hinten verschieben, hat dies möglicherweise Auswirkungen auf die untergeordneten Aufgaben, und zwar auf jene mit dem Status **[!UICONTROL Geplant]**, deren Startdatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt. Die Dauer der Aufgabe bleibt unverändert. Wenn das Startdatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufgabe liegt, ist die untergeordnete Aufgabe nicht betroffen.
 
 **Beispiel**
 
-Eine übergeordnete Aufgabe, deren Ende für den 9. Oktober um 17 Uhr geplant ist, hat zwei Unteraufgaben: Aufgabe A und Aufgabe B. Der Beginn von Aufgabe A ist für den 10. Oktober um 14 Uhr, der von Aufgabe B für den 12. Oktober um 8 Uhr geplant.
+Eine übergeordnete Aufgabe, deren Ende für den 9. Oktober um 17 Uhr geplant ist, hat zwei untergeordnete Aufgaben: Aufgabe A und Aufgabe B. Der Beginn von Aufgabe A ist für den 10. Oktober um 14 Uhr, der von Aufgabe B für den 12. Oktober um 8 Uhr geplant.
 
 Verschieben wir nun die übergeordnete Aufgabe, sodass sie am 11. Oktober um 13 Uhr endet. Dadurch wird nur der Beginn von Aufgabe A auf den 11. Oktober um 13 Uhr verschoben.
 
