@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Migrieren zur Adobe Analytics 2.0-API {#analytics-2-migration}
 
-Adobe Analytics 1.4-APIs [ das Ende der Lebensdauer ](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}. Der [Web Analytics-Connector](../../integrations/using/gs-aa.md) der Ihre Campaign-Instanz mit Adobe Analytics verbindet, beruht auf diesen APIs. Daher müssen Sie auf einen Build aktualisieren, der die neuen Analytics 2.0-APIs verwendet, um die Integration am Laufen zu halten.
+Adobe Analytics 1.4-APIs [&#x200B; das Ende der Lebensdauer &#x200B;](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}. Der [Web Analytics-Connector](../../integrations/using/gs-aa.md) der Ihre Campaign-Instanz mit Adobe Analytics verbindet, beruht auf diesen APIs. Daher müssen Sie auf einen Build aktualisieren, der die neuen Analytics 2.0-APIs verwendet, um die Integration am Laufen zu halten.
 
 >[!CAUTION]
 >
@@ -28,7 +28,7 @@ Sie sind betroffen, wenn Ihre Instanz das externe [!UICONTROL Web Analytics]-Kon
 * Der Remarketing-Fluss (Identifizieren konvertierter Kontakte nach einer Kampagne).
 * Ein [!UICONTROL Web Analytics] externes Konto, das Sie zum ersten Mal konfigurieren möchten.
 
-Nicht sicher, welche davon auf Sie zutreffen? Überprüfen Sie, welche der oben genannten technischen Workflows in Ihrer Instanz aktiv sind, und überprüfen Sie Ihre Konfiguration [!UICONTROL Web Analytics] externen Kontos in [!UICONTROL Administration > Plattform > Externe ]&#x200B;(siehe [Externes Web Analytics-Konto](../../installation/using/external-accounts.md#web-analytics-external-account)).
+Nicht sicher, welche davon auf Sie zutreffen? Überprüfen Sie, welche der oben genannten technischen Workflows in Ihrer Instanz aktiv sind, und überprüfen Sie Ihre Konfiguration [!UICONTROL Web Analytics] externen Kontos in [!UICONTROL Administration > Plattform > Externe &#x200B;]&#x200B;(siehe [Externes Web Analytics-Konto](../../installation/using/external-accounts.md#web-analytics-external-account)).
 
 ## So migrieren Sie {#how-to-migrate}
 
@@ -38,8 +38,8 @@ Wenn Sie sich in einer **On-Premise- oder Hybrid**-Bereitstellung befinden, füh
 
 1. [Campaign-Umgebung aktualisieren](../../production/using/build-upgrade.md) auf einen Build, der die Änderungen in Adobe Analytics 2.0 enthält. Sie können überprüfen, welchen Build Sie über ausführen [!UICONTROL Hilfe > Über…] (siehe [So überprüfen Sie Ihre Campaign-Version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)).
 1. Überprüfen Sie, welche der oben genannten Anwendungsfälle auf Ihre Instanz zutreffen, da der nächste Schritt davon abhängt.
-1. Wenn Sie den Remarketing-Fluss verwenden, [!UICONTROL  der Workflow „webAnalyticsFindConverted] einen dedizierten SFTP-Kanal für den Datenaustausch mit Adobe Analytics 2.0. Richten Sie dies wie folgt ein, andernfalls fahren Sie mit dem nächsten Schritt fort.
-   1. Stellen Sie mithilfe der schlüsselbasierten Authentifizierung einen SFTP-Server für die Instanz bereit [ befolgen Sie dabei die gleichen Best Practices für ](../../platform/using/sftp-server-usage.md) SFTP-Server, die Sie auch für jede andere externe SFTP-Integration anwenden würden. Adobe bietet ein [SFTP-Beispielsetup-](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?package=/content/software-distribution/en/details.html/content/dam/campaign/public/setup_sftp.zip){target="_blank"}), das Ihnen bei den ersten Schritten hilft.
+1. Wenn Sie den Remarketing-Fluss verwenden, [!UICONTROL &#x200B; der Workflow „webAnalyticsFindConverted] einen dedizierten SFTP-Kanal für den Datenaustausch mit Adobe Analytics 2.0. Richten Sie dies wie folgt ein, andernfalls fahren Sie mit dem nächsten Schritt fort.
+   1. Stellen Sie mithilfe der schlüsselbasierten Authentifizierung einen SFTP-Server für die Instanz bereit [&#x200B; befolgen Sie dabei die gleichen Best Practices für &#x200B;](../../platform/using/sftp-server-usage.md) SFTP-Server, die Sie auch für jede andere externe SFTP-Integration anwenden würden. Adobe bietet ein [SFTP-Beispielsetup-](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?package=/content/software-distribution/en/details.html/content/dam/campaign/public/setup_sftp.zip){target="_blank"}), das Ihnen bei den ersten Schritten hilft.
    1. Registrieren Sie die Verbindungsdetails dieses Servers in Adobe Analytics, indem Sie das mit dem neuen Build bereitgestellte Skript ausführen:
 
       ```
