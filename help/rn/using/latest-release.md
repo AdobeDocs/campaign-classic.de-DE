@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
-workflow-type: ht
-source-wordcount: 736
-ht-degree: 100%
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 6d58d7b0af036eeae1297ef3162c8740be064402
+workflow-type: tm+mt
+source-wordcount: 914
+ht-degree: 88%
 
 ---
 
@@ -32,11 +24,31 @@ ht-degree: 100%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
+## Version 7.4.4 {#release-7-4-4}
+
+### Build 9400 {#build-9400}
+
+[!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+
+_11. August 2026_
+
+Dieser Build umfasst mehrere Produktverbesserungen, Sicherheitskorrekturen und das Upgrade auf die Adobe Analytics 2.0-API für den Adobe Analytics-Connector.
+
+#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9400}
+
+Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/security/products/campaign/apsb26-123.html){target="_blank"}.
+
+Ein Neustart des Adobe Campaign-Servers (nlserver) ist erforderlich, um den Build zu laden und die Bereitstellung abzuschließen. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+
+#### Adobe Analytics 2.0-Upgrade {#analytics-2-0-7-4-4}
+
+Adobe Analytics 1.4-APIs erreichen das Ende ihrer Lebensdauer. Wenn Sie den Adobe Analytics-Connector verwenden, müssen Sie auf diesen Build aktualisieren und je nach Bereitstellung und Anwendungsfall einige Migrationsschritte ausführen. [Erfahren Sie, wie Sie zur Adobe Analytics 2.0-API migrieren](../../technotes/using/analytics-2-migration.md).
+
 ## Version 7.4.3 {#release-7-4-3}
 
 ### Build 9399 {#build-9399}
 
-[!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _3. August 2026_
 
