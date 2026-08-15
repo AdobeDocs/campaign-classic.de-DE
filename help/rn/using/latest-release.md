@@ -44,7 +44,7 @@ Dieser Build umfasst mehrere Produktverbesserungen, Sicherheitskorrekturen und d
 
 #### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9400}
 
-Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/security/products/campaign/apsb26-123.html){target="_blank"}.
+Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-123.html){target="_blank"}.
 
 Ein Neustart des Adobe Campaign-Servers (nlserver) ist erforderlich, um den Build zu laden und die Bereitstellung abzuschließen. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
 
