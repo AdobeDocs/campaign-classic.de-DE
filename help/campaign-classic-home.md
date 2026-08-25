@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 64661fb2003d66e416aabee2a89fcd990dd05f13
+source-git-commit: 7fd7a9e54183b456f06d8030c3d9425f275eabf5
 workflow-type: tm+mt
-source-wordcount: 667
-ht-degree: 96%
+source-wordcount: 657
+ht-degree: 93%
 
 ---
 
@@ -128,4 +128,4 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
 
 ## Zusätzliche Ressourcen
 
-[Liste der Fehlermeldungen](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) – [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) – [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} –  [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"} – [E-Mail-Tracking-Pixel und CNIL-Anleitung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+[Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} - [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"} - [E-Mail-Tracking-Pixel und CNIL-Anleitung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
