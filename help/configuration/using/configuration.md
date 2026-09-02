@@ -6,21 +6,15 @@ description: Erfahren Sie, wie Sie den Navigationsbaum von Campaign Explorer kon
 role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 TQID: https://experienceleague.adobe.com/K2bUgEoNSbVfc5hs1O-V36yNrjUFKQEO00-clOYc5u4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: efa38731-2723-4334-8d8b-a778af834835
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1233
-ht-degree: 4%
+source-wordcount: 1231
+ht-degree: 3%
 
 ---
 
@@ -104,7 +98,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt, in der sie im XML-Dokumen
 
 Mit einem Befehlstrennzeichen können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den Wert **&#39;-&#39;** identifiziert, der in der Befehlsbeschriftung enthalten ist.
 
-Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
+Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 Der Formularkontext kann bei Initialisierung über das Tag **`<enter>`** aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu Formularen.
 
@@ -277,7 +271,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt, in der sie im XML-Dokumen
 
 Mit einem Befehlstrennzeichen können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den Wert **&#39;-&#39;** identifiziert, der in der Befehlsbeschriftung enthalten ist.
 
-Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
+Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 Der Formularkontext kann bei der Initialisierung über das Tag **`<enter>`** aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zum Eingabeformular.
 

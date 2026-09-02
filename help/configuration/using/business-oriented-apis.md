@@ -6,17 +6,14 @@ feature: API
 role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 TQID: https://experienceleague.adobe.com/lPAawM33zS2tws0EyHFHW1jD-Vw3ZLDtDcMEd1eJA1c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +23,16 @@ Business-APIs sind für jeden Objekttyp spezifisch. Sie haben Auswirkungen auf:
 
 * Sendungen:
 
-   * Informationen zum Erstellen einer Versandaktion finden Sie unter [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
-   * Senden einer Kampagne (Starten, Pausieren, Stoppen, Testversand),
-   * Abruf der Versandlogs
+  * Informationen zum Erstellen einer Versandaktion finden Sie unter [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+  * Senden einer Kampagne (Starten, Pausieren, Stoppen, Testversand),
+  * Abruf der Versandlogs
 
 * Workflows:
 
-   * Starten eines Workflows,
-   * Überprüfen von Prozessen usw.
+  * Starten eines Workflows,
+  * Überprüfen von Prozessen usw.
 
-     Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+    Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Content-Management
 * Abonnementverwaltung, siehe [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmelden (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -45,7 +42,7 @@ In diesem Abschnitt wird die Verwendung der Services „Abonnieren“, „Abmeld
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de)Dokumentation) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle Methoden und Funktionen, die in der Anwendung verwendet werden.
+>[Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api)Dokumentation) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle Methoden und Funktionen, die in der Anwendung verwendet werden.
 
 ## Abonnieren (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -70,7 +67,7 @@ Beschreibung der Methode „subscribe“ im Schema „nms:subscription:
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _&#x200B;**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
