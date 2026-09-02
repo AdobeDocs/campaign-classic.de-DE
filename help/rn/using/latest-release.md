@@ -24,7 +24,7 @@ subfeature_v2:
 source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1019
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,37 +32,37 @@ ht-degree: 86%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## Version 7.4.4 {#release-7-4-4}
+## Version 7.4.4 {#release-7-4-4}
 
-### Build 9401 {#build-9401}
+### Build 9401 {#build-9401}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
 
-_25. August 2026_
+_25. August 2026_
 
 #### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9401}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-134.html){target="_blank"}.
 
-Ein Neustart des Adobe Campaign-Servers (nlserver) ist erforderlich, um den Build zu laden und die Bereitstellung abzuschließen. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
 
-### Build 9400 {#build-9400}
+### Build 9400 {#build-9400}
 
 [!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
-_11. August 2026_
+_11. August 2026_
 
-Dieser Build umfasst mehrere Produktverbesserungen, Sicherheitskorrekturen und das Upgrade auf die Adobe Analytics 2.0-API für den Adobe Analytics-Connector.
+Dieser Build umfasst mehrere Produktverbesserungen, Sicherheitskorrekturen und das Upgrade auf die Adobe Analytics 2.0-API für den Adobe Analytics-Connector.
 
 #### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9400}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-123.html){target="_blank"}.
 
-Ein Neustart des Adobe Campaign-Servers (nlserver) ist erforderlich, um den Build zu laden und die Bereitstellung abzuschließen. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
 
-#### Adobe Analytics 2.0-Upgrade {#analytics-2-0-7-4-4}
+#### Adobe Analytics 2.0-Upgrade {#analytics-2-0-7-4-4}
 
-Adobe Analytics 1.4-APIs erreichen das Ende ihrer Lebensdauer. Wenn Sie den Adobe Analytics-Connector verwenden, müssen Sie auf diesen Build aktualisieren und je nach Bereitstellung und Anwendungsfall einige Migrationsschritte ausführen. [Erfahren Sie, wie Sie zur Adobe Analytics 2.0-API migrieren](../../technotes/using/analytics-2-migration.md).
+Adobe Analytics 1.4-APIs erreichen das Ende ihres Lebenszyklus. Wenn Sie den Adobe Analytics-Connector verwenden, müssen Sie ein Upgrade auf diesen Build vornehmen und je nach Bereitstellung und Anwendungsfall einige Migrationsschritte ausführen. [Erfahren Sie, wie Sie zur Adobe Analytics 2.0-API migrieren](../../technotes/using/analytics-2-migration.md).
 
 ## Version 7.4.3 {#release-7-4-3}
 

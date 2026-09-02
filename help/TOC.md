@@ -9,9 +9,9 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2717'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ ht-degree: 99%
     + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
     + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
   + Überwachen von Sendungen {#monitoring-deliveries}
-    + [Monitoring der Versandleistung](delivery/using/about-delivery-monitoring.md)
+    + [Überwachung der Versandleistung](delivery/using/about-delivery-monitoring.md)
     + [Nachverfolgen von Nachrichten](delivery/using/about-message-tracking.md)
     + [Versandleistung und Fehlerbehebung](delivery/using/delivery-performance-troubleshooting.md)
     + [Versandfehler und Quarantäneverwaltung](delivery/using/delivery-failures-quarantine.md)
@@ -813,7 +813,7 @@ ht-degree: 99%
     + {hide-from-toc}[System-Upgrades 2023](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS-Aktualisierungen](technotes/using/ims-updates.md)
     + {hide-from-toc}[Beendigung der Unterstützung für TLS 1.0 und 1.1](technotes/using/eol-tls-support.md)
-    + {hide-from-toc}[Migrieren zur Adobe Analytics 2.0-API](technotes/using/analytics-2-migration.md)
+    + {hide-from-toc}[Migrieren zur Adobe Analytics 2.0-API](technotes/using/analytics-2-migration.md)
   + E-Mails und Push-Benachrichtigungen{#technotes-email}
     + [Datenschutz für E-Mails unter Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
     + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
