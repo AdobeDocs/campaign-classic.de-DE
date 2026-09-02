@@ -379,7 +379,7 @@ Sie können einer Seite ein Feld zum Hochladen von Inhalten hinzufügen. Diese F
 
 Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche **[!UICONTROL Erweiterte Steuerelemente > Datei...]** aus.
 
-Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/en/tools/campaign-api) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
+Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/de/tools/campaign-api) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
 
 Sie können den Link zu diesen Dateien in einer lokalen Variable oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.
 

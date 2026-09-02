@@ -35,7 +35,7 @@ Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow verwenden kön
 * [Auslösen eines Workflows mit einer statischen SOAP-Methode](#trigger-example)
 * [Interagieren mit der Datenbank mithilfe einer nicht statischen SOAP-Methode](#interact-example)
 
-[Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api) über statische und nicht statische SOAP-Methoden.
+[Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api) über statische und nicht statische SOAP-Methoden.
 
 In diesen Beispielen wird die Erweiterung ECMAScript for XML (E4X) verwendet. Mit dieser Erweiterung können Sie JavaScript-Aufrufe und XML-Primitive im selben Script kombinieren.
 
@@ -113,7 +113,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Löschen eines Datensatzes
 
-Verwenden Sie die `DeleteCollection`-Methode. [Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api).
+Verwenden Sie die `DeleteCollection`-Methode. [Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api).
 
 Geben Sie diese Informationen an:
 
@@ -287,7 +287,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api) über die `logInfo`-Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api) über die `logInfo`-Funktion.
 
 #### Ergebnisse eines `getIfExists`-Vorgangs
 
@@ -373,7 +373,7 @@ Sie können Workflows programmgesteuert auslösen, beispielsweise in technischen
 
 Das Auslösen von Workflows erfolgt durch die Verwendung von Ereignissen. Sie können die folgenden Funktionen für Ereignisse verwenden:
 
-* Um ein Ereignis zu posten, können Sie die statische `PostEvent`-Methode verwenden. [Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api).
+* Um ein Ereignis zu posten, können Sie die statische `PostEvent`-Methode verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api).
 * Um ein Ereignis zu erhalten, können Sie die Aktivität **[!UICONTROL Externes Signal]** verwenden. [Weitere Informationen](external-signal.md).
 
 Sie haben verschiedene Möglichkeiten, Workflows auszulösen:
@@ -440,10 +440,10 @@ Führen Sie folgende Schritte aus:
 
 1. Definieren Sie die Abfrage:
 
-   * Rufen Sie eine Entität mithilfe der `create`-Methode für das entsprechende Schema ab, z. B. das `xtk:workflow`-Schema. [Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api).
+   * Rufen Sie eine Entität mithilfe der `create`-Methode für das entsprechende Schema ab, z. B. das `xtk:workflow`-Schema. [Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api).
    * Verwenden Sie die `queryDef`-Methode, um eine SQL-Abfrage auszugeben.
 
-1. Führen Sie die Abfrage mithilfe der `ExecuteQuery`-Methode aus. [Weitere Informationen](https://experienceleague.adobe.com/en/tools/campaign-api).
+1. Führen Sie die Abfrage mithilfe der `ExecuteQuery`-Methode aus. [Weitere Informationen](https://experienceleague.adobe.com/de/tools/campaign-api).
 
    Verwenden Sie die `for each`-Schleife zum Abrufen der Ergebnisse.
 
@@ -629,11 +629,11 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 
 ### API-Dokumentation
 
-* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/en/tools/campaign-api)
+* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/de/tools/campaign-api)
 * Methoden:
-  * [Erstellen](https://experienceleague.adobe.com/en/tools/campaign-api)
-  * [DeleteCollection](https://experienceleague.adobe.com/en/tools/campaign-api)
-  * [ExecuteQuery](https://experienceleague.adobe.com/en/tools/campaign-api)
-  * [PostEvent](https://experienceleague.adobe.com/en/tools/campaign-api)
-  * [Schreiben](https://experienceleague.adobe.com/en/tools/campaign-api)
-* [logInfo-Funktion](https://experienceleague.adobe.com/en/tools/campaign-api)
+  * [Erstellen](https://experienceleague.adobe.com/de/tools/campaign-api)
+  * [DeleteCollection](https://experienceleague.adobe.com/de/tools/campaign-api)
+  * [ExecuteQuery](https://experienceleague.adobe.com/de/tools/campaign-api)
+  * [PostEvent](https://experienceleague.adobe.com/de/tools/campaign-api)
+  * [Schreiben](https://experienceleague.adobe.com/de/tools/campaign-api)
+* [logInfo-Funktion](https://experienceleague.adobe.com/de/tools/campaign-api)

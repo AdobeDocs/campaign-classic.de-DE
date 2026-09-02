@@ -121,7 +121,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Entwicklungsressourcen</strong><br/><a href="configuration/using/about-data-model.md">Beschreibung des Datenmodells</a> – <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> – <a href="configuration/using/editing-forms.md">Schemastruktur</a>  – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/en/tools/campaign-api">JSAPI-Referenzdokumentation</a> – <a href="configuration/using/about-custom-recipient-table.md">Benutzerdefinierte Empfängertabelle</a>
+      <strong>Entwicklungsressourcen</strong><br/><a href="configuration/using/about-data-model.md">Beschreibung des Datenmodells</a> – <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> – <a href="configuration/using/editing-forms.md">Schemastruktur</a>  – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/de/tools/campaign-api">JSAPI-Referenzdokumentation</a> – <a href="configuration/using/about-custom-recipient-table.md">Benutzerdefinierte Empfängertabelle</a>
     </td>
   </tr>
 </table>

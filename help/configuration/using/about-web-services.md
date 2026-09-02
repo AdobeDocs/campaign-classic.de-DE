@@ -31,7 +31,7 @@ Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP au�
 >[!IMPORTANT]
 >
 >Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/en/tools/campaign-api
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/de/tools/campaign-api
 
 ## Voraussetzungen {#prerequisites}
 

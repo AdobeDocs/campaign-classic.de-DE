@@ -45,7 +45,7 @@ In diesem Abschnitt wird die Verwendung der Services „Abonnieren“, „Abmeld
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI](https://experienceleague.adobe.com/en/tools/campaign-api)Dokumentation) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle Methoden und Funktionen, die in der Anwendung verwendet werden.
+>[Campaign JSAPI](https://experienceleague.adobe.com/de/tools/campaign-api)Dokumentation) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle Methoden und Funktionen, die in der Anwendung verwendet werden.
 
 ## Abonnieren (nms:subscription) {#subscribe--nms-subscription-}
 

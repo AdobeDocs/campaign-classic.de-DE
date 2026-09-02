@@ -41,7 +41,7 @@ Folgende Feldtypen sind verfügbar:
 
   >[!NOTE]
   >
-  >Auf der Serverseite kann das Script die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/en/tools/campaign-api) definierten Funktionen verwenden.
+  >Auf der Serverseite kann das Script die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/de/tools/campaign-api) definierten Funktionen verwenden.
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
