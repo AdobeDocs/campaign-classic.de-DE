@@ -23,10 +23,10 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 499
-ht-degree: 100%
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+workflow-type: tm+mt
+source-wordcount: 571
+ht-degree: 87%
 
 ---
 
@@ -64,6 +64,10 @@ Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 
 ## Einfügen externer Bilder {#inserting-external-images}
 
+>[!IMPORTANT]
+>
+>Version 7.4.4 (Build 9401) enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die Domains, die für externe Bilder in Ihren Anlagen verwendet werden, zur genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen ohne Unterbrechung weiter geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+
 Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.
 
 Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen im angehängten Dokument.
@@ -87,8 +91,8 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 
   Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
 
-   * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
-   * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.
+  * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
+  * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.
 
 Im Beispiel weist der Gestaltungsbaustein folgendes Format auf:
 
