@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 1019
-ht-degree: 100%
+source-wordcount: 1119
+ht-degree: 91%
 
 ---
 
@@ -45,6 +37,12 @@ _25. August 2026_
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-134.html){target="_blank"}.
 
 Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+
+#### Aktualisierung der externen URL-Zulassungsliste {#security-enhancement-url-validation-9401}
+
+Diese Version enthält eine Aktualisierung der externen URL-Zulassungsliste, die für Versandinhalte und -anhänge verwendet wird. Stellen Sie sicher, dass alle Domains, auf die Sie derzeit verweisen, der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden.
+
+Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste externe URLs hinzuzufügen, die derzeit in Ihren Sendungen verwendet werden. Gehen Sie für alle neuen externen URLs in Zukunft genauso vor. Schließen Sie diese Aktivität bis zum 5. September 2026 ab, um Auswirkungen auf betroffene Sendungen zu vermeiden. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 ### Build 9400 {#build-9400}
 

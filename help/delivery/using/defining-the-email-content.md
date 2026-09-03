@@ -8,26 +8,15 @@ role: User
 hide: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 TQID: https://experienceleague.adobe.com/NWs-NqNfnkyoj0XJfy5-BvKwJofom-V0iSQJI3-F-38
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2055
-ht-degree: 100%
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+workflow-type: tm+mt
+source-wordcount: 2125
+ht-degree: 96%
 
 ---
 
@@ -80,6 +69,10 @@ Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoti
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
+>[!IMPORTANT]
+>
+>Version 7.4.4 (Build 9401) enthält eine Aktualisierung der externen URL-Zulassungsliste. Stellen Sie sicher, dass die im Nachrichteninhalt verwendeten Domains zur genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit die Ressourcen ohne Unterbrechung weiter geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+
 Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurationsfensters erfasst.
 
 Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Voreinstellung der Empfängerin bzw. des Empfängers. Wir empfehlen Inhalte in beiden Formaten zu erstellen, damit Nachrichten in jedem E-Mail-System korrekt angezeigt werden können. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
@@ -118,7 +111,7 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Vo
 
   ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* Verwenden Sie zum Importieren von Textinhalten die Schaltfläche **[!UICONTROL Öffnen]** oder die Registerkarte **[!UICONTROL Textinhalt]**, um den Inhalt einer im Textformat angezeigten Nachricht einzugeben.Verwenden Sie die Schaltflächen der Symbolleiste, um auf Aktionen im Inhalt zuzugreifen. Mit der letzten Schaltfläche können Sie Personalisierungsfelder einfügen.
+* Verwenden Sie zum Importieren von Textinhalten die Schaltfläche **[!UICONTROL Öffnen]** oder die Registerkarte **[!UICONTROL Textinhalt]**, um den Inhalt einer im Textformat angezeigten Nachricht einzugeben. Verwenden Sie die Schaltflächen der Symbolleiste, um auf Aktionen im Inhalt zuzugreifen. Mit der letzten Schaltfläche können Sie Personalisierungsfelder einfügen.
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
@@ -237,7 +230,7 @@ Für jedes erkannte Bild können Sie den Status prüfen:
 
 Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von außerhalb zugänglich zu sein. Dies gilt nicht für lokal gespeicherte Bilder, die im Vorfeld hochzuladen sind.
 
-Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von anderen Adobe Campaign-Benutzenden angezeigt werden können.Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
+Sie können Arbeit im Voraus erledigen und Bilder hochladen, sodass sie von anderen Adobe Campaign-Benutzenden angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
