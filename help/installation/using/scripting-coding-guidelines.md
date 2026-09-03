@@ -16,10 +16,10 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 791
-ht-degree: 25%
+source-wordcount: 789
+ht-degree: 24%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 25%
 
 ## Scripts
 
-Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
+Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/de/tools/campaign-api).
 
 Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie diesen Best Practices:
 
@@ -66,7 +66,7 @@ Um SQL-Injections zu vermeiden, müssen SQL-Funktionen zu der in Adobe Campaign 
 >
 >Wenn Sie einen Build verwenden, der älter als 8140 ist, kann **Option „XtkPassUnknownSQLFunctionsToRDBMS** auf „1“ festgelegt werden. Wenn Sie Ihre Datenbank schützen möchten, löschen Sie diese Option (oder setzen Sie sie auf „0„).
 
-Wenn Sie Benutzereingaben zum Erstellen von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie diese immer mit Escape-Zeichen versehen (siehe [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) - Datenschutz: Escaping-Funktionen). Diese Funktionen sind:
+Wenn Sie Benutzereingaben zum Erstellen von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie diese immer mit Escape-Zeichen versehen (siehe [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/de/tools/campaign-api) - Datenschutz: Escaping-Funktionen). Diese Funktionen sind:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

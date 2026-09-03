@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: ht
-source-wordcount: 1792
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 1787
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
     <tr>
   <td>Bericht zum technischen Zustellbarkeits-Monitoring<br></td>
    <td><p>Der Bericht zum technischen Zustellbarkeits-Monitoring ist nicht mehr verfügbar. Er wurde mit Campaign-Version 21.1.3 eingestellt.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -145,7 +145,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
    </tr>
    <tr>
    <td>Dokumentation zu Campaign-APIs – Jsapi.chm-Datei</td>
-   <td>Ab Campaign-Version 19.1 sind Campaign Classic-APIs auf einer dedizierten Seite verfügbar. Wenn Sie die Legacy-Datei "jsapi.chm" verwendet haben, sollten Sie jetzt auf <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de">die neue Online-Version</a> verweisen.</td>
+   <td>Ab Campaign-Version 19.1 sind Campaign Classic-APIs auf einer dedizierten Seite verfügbar. Wenn Sie die Legacy-Datei "jsapi.chm" verwendet haben, sollten Sie jetzt auf <a href="https://experienceleague.adobe.com/de/tools/campaign-api">die neue Online-Version</a> verweisen.</td>
   </tr> 
   <tr> 
    <td>Kampagnenorchestrierung – Predictive Marketing</td>
@@ -162,7 +162,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   <tr> 
    <td>decryptString-API</td>
    <td><p>Ab Campaign-Version 18.6 ist die <em>decryptString</em>-API bei neuen Installationen aus Sicherheitsgründen standardmäßig nicht mehr verfügbar.</p> 
-   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=de&hl=decrypt">Weitere Informationen</a></p></td>
+   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/de/tools/campaign-api">Weitere Informationen</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>
