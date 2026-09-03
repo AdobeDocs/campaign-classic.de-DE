@@ -50,7 +50,7 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart de
 
 Diese Version enthält eine Aktualisierung der externen URL-Zulassungsliste, die für Versandinhalte und -anhänge verwendet wird. Stellen Sie sicher, dass alle Domains, auf die Sie derzeit verweisen, der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden.
 
-Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste externe URLs hinzuzufügen, die derzeit in Ihren Sendungen verwendet werden. Gehen Sie für alle neuen externen URLs in Zukunft genauso vor. Schließen Sie diese Aktivität bis zum 5. September 2026 ab, um Auswirkungen auf betroffene Sendungen zu vermeiden. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste externe URLs hinzuzufügen, die derzeit in Ihren Sendungen verwendet werden. Gehen Sie für alle neuen externen URLs in Zukunft genauso vor. Schließen Sie diese Aktivität bis zum 5. September 2026 ab, um Auswirkungen auf betroffene Sendungen zu vermeiden. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 ### Build 9400 {#build-9400}
 
