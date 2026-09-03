@@ -8,11 +8,20 @@ role: User
 hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 TQID: https://experienceleague.adobe.com/KfD6zudZg8B6r8ftdINuXjWAqRiHLP9dtGi--H-E6RU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
 source-wordcount: 1083
@@ -24,7 +33,7 @@ ht-degree: 92%
 
 Gestaltungsbausteine sind dynamische Inhalte, die ein spezifisches Rendering enthalten, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
@@ -129,7 +138,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 >[!IMPORTANT]
 >
->Version 7.4.4 (Build 9401) enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [ unter „Hinzufügen ](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
+>Version 7.4.4 (Build 9401) enthält eine Aktualisierung der externen URL-Zulassungsliste. Wenn ein benutzerdefinierter Gestaltungsbaustein auf eine externe URL verweist (z. B. auf ein extern gehostetes Bild), stellen Sie sicher, dass die Domain der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt wird, damit die Ressource ohne Unterbrechung weiter geladen wird. Verwenden Sie als Campaign-Admin das Control Panel, um URLs auf der Zulassungsliste hinzuzufügen und zu verwalten. Anweisungen finden [&#x200B; unter „Hinzufügen &#x200B;](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} URL-Berechtigungen“.
 
 Sie können neue Personalisierungsfelder definieren, die dann über das entsprechende Symbol im Menü **[!UICONTROL Einfügen…]** verfügbar sind. Diese Felder werden in Gestaltungsbausteinen definiert.
 
