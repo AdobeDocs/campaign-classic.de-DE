@@ -339,8 +339,8 @@
 <target xml:lang="en-XX">Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.</target>
 </trans-unit>
 <trans-unit id="tu84" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/30080?captions=ger&quality=12)</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!VIDEO">[!VIDEO](https://video.tv.adobe.com/v/30080?captions=ger&quality=12)</ph></target>
 </trans-unit>
 <trans-unit id="tu85" xml:space="preserve">
 <source xml:lang="en-US">Additional Campaign Classic how-to videos are available <ph id="1" ctype="x-LINK">&lbrack;</ph>here<ph id="2" ctype="x-LINK">[#$tu86]</ph>.</source>
