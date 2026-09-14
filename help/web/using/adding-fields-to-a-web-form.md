@@ -91,8 +91,8 @@
 <target xml:lang="en-XX">Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank aktualisieren (nur der zuletzt gespeicherte Wert wird behalten) oder in einer Variablen speichern (die Antwort wird nicht aufbewahrt). Weiterführende Informationen finden Sie im Abschnitt <ph id="1" ctype="x-LINK">[</ph>Speicherfelder für Antworten<ph id="2" ctype="x-LINK">](web-forms-answers.md#response-storage-fields)</ph>.</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu23" xml:space="preserve">
 <source xml:lang="en-US">By default, the field is inserted at the bottom of the current tree. Use the arrows in the toolbar to move it up or down.</source>
@@ -175,8 +175,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_passwd_ex.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en-US">Passwords are stored unencrypted in the database.</source>
@@ -191,8 +191,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_txtmulti_ex.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
 <source xml:lang="en-US">Multi-line text fields are specific fields that can contain carriage returns. Their storage space must be associated with a field mapped on an XML element, not an XML attribute.</source>
@@ -243,8 +243,8 @@
 <target xml:lang="en-XX">Der Speichermodus der Antwort kann über den Link <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Speicherinformationen bearbeiten…<ph id="3" ctype="x-LINK_REF">]**</ph> geändert werden. Werte können in einem vorhandenen Feld der Datenbank gespeichert werden. Sie können sich jedoch auch dazu entscheiden, Informationen nicht in der Datenbank zu speichern (eine lokale Variable verwenden).</target>
 </trans-unit>
 <trans-unit id="tu60" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu61" xml:space="preserve">
 <source xml:lang="en-US">Storage modes are detailed in <ph id="1" ctype="x-LINK">[</ph>Response storage fields<ph id="2" ctype="x-LINK">](web-forms-answers.md#response-storage-fields)</ph></source>
@@ -287,8 +287,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_database_values.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu71" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu72" xml:space="preserve">
 <source xml:lang="en-US">Use the arrows to the right of the list of values to change their sequence.</source>
@@ -311,8 +311,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_load_button.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu77" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu78" xml:space="preserve">
 <source xml:lang="en-US">Repeat this operation whenever the list is updated to refresh the values on offer.</source>
@@ -403,8 +403,8 @@
 <target xml:lang="en-XX">Sie können Radiobuttons einzeln erstellen (Einzel-Schaltflächen) oder über eine Multiple-Choice-Liste. Aber weil der Zweck von Radiobuttons die Auswahl einer Option ist, werden immer zumindest zwei Radiobuttons erstellt, und nie nur ein einzelner.</target>
 </trans-unit>
 <trans-unit id="tu100" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu101" xml:space="preserve">
 <source xml:lang="en-US">To make selection mandatory, you need to create a multiple choice list.</source>
@@ -443,8 +443,8 @@
 <target xml:lang="en-XX">Fügen Sie so viele Optionsfelder wie Titel hinzu. Der Vorteil dieser Funktion liegt darin, dass Sie Werte aus einem vorhandenen Feld importieren können (im Fall eines Auflistungsfelds) und Benutzende aus diesen eine Option auswählen können. Das Layout der Felder ist jedoch weniger flexibel.</target>
 </trans-unit>
 <trans-unit id="tu110" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu111" xml:space="preserve">
 <source xml:lang="en-US">You cannot enable multi-selection in a web application.
@@ -485,8 +485,8 @@
 <target xml:lang="en-XX">Pro Tabellenzeile kann nur eine Option ausgewählt werden.</target>
 </trans-unit>
 <trans-unit id="tu120" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu121" xml:space="preserve">
 <source xml:lang="en-US">In our example, the label of the grid is hidden. To do this, go to the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Advanced<ph id="3" ctype="x-LINK_REF">]**</ph> tab, the <ph id="5" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Label position<ph id="7" ctype="x-LINK_REF">]**</ph> display is defined as <ph id="9" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Hidden<ph id="11" ctype="x-LINK_REF">]**</ph> . See <ph id="13" ctype="x-LINK">[</ph>Defining the position of labels<ph id="14" ctype="x-LINK">](defining-web-forms-layout.md#defining-the-position-of-labels)</ph>.</source>
@@ -537,8 +537,8 @@
 <target xml:lang="en-XX">Datumsangaben können über einen Kalender oder Dropdown-Felder ausgewählt werden. Sie können auch direkt in das Feld eingegeben werden, die Eingabe muss jedoch dem oben am Bildschirm angegebenen Format entsprechen.</target>
 </trans-unit>
 <trans-unit id="tu133" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu134" xml:space="preserve">
 <source xml:lang="en-US">By default, dates used in forms are entered via a calendar. For multilingual forms, please check that calendars are available in all the languages used. See <ph id="1" ctype="x-LINK">[</ph>Translating a web form<ph id="2" ctype="x-LINK">](translating-a-web-form.md)</ph>.</source>
@@ -633,8 +633,8 @@
 <target xml:lang="en-XX">Definieren Sie den Titel für die Checkbox und wählen Sie den entsprechenden Informationsdienst im Dropdown-Menü <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Dienst<ph id="3" ctype="x-LINK_REF">]**</ph> aus.</target>
 </trans-unit>
 <trans-unit id="tu157" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu158" xml:space="preserve">
 <source xml:lang="en-US">Information services are detailed in <ph id="1" ctype="x-LINK">[</ph>this page<ph id="2" ctype="x-LINK">](../../delivery/using/managing-subscriptions.md)</ph>.</source>
@@ -649,8 +649,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_subscribe.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu161" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu162" xml:space="preserve">
 <source xml:lang="en-US">If the user is already subscribed to an information service and the box linked to this service isn't checked when they approve the form, they will be unsubscribed.</source>
@@ -665,8 +665,8 @@
 <target xml:lang="en-XX">Mit <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Captcha<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph>-Tests können Sie verhindern, dass Ihre Webformulare missbräuchlich verwendet werden.</target>
 </trans-unit>
 <trans-unit id="tu165" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu166" xml:space="preserve">
 <source xml:lang="en-US">If your form contains several pages, the Captcha must always be placed on the last page, just before the storage box, to prevent any circumvention of the security measures.</source>
@@ -689,8 +689,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_captcha_adv.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu171" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu172" xml:space="preserve">
 <source xml:lang="en-US">For <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>captcha<ph id="3" ctype="x-LINK_REF">]**</ph> type controls, there is no need to indicate a storage field or variable.</source>
@@ -721,8 +721,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_admin_survey_captcha_error_msg.png)</ph></target>
 </trans-unit>
 <trans-unit id="tu179" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!NOTE">[!NOTE]</ph></target>
 </trans-unit>
 <trans-unit id="tu180" xml:space="preserve">
 <source xml:lang="en-US">Captchas are always 8 characters long. You cannot modify this value.</source>
@@ -745,16 +745,16 @@
 <target xml:lang="en-XX">Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Erweiterte Steuerelemente > Datei...<ph id="3" ctype="x-LINK_REF">]**</ph> aus.</target>
 </trans-unit>
 <trans-unit id="tu185" xml:space="preserve">
-<source xml:lang="en-US">By default, the uploaded files are stored in resource files accessible via the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Resources > Online > Public resources<ph id="3" ctype="x-LINK_REF">]**</ph> menu. You can use a script to change this behavior. This script can use the functions defined in <ph id="5" ctype="x-LINK">[</ph>Campaign JSAPI documentation<ph id="6" ctype="x-LINK">[#$tu186]</ph>, including those that concern file manipulation.</source>
-<target xml:lang="en-XX">Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Ressourcen > Online > Öffentliche Ressourcen<ph id="3" ctype="x-LINK_REF">]**</ph> zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der <ph id="5" ctype="x-LINK">[</ph>Campaign JSAPI-Dokumentation<ph id="6" ctype="x-LINK">[#$tu186]</ph> definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.</target>
+<source xml:lang="en-US">By default, the uploaded files are stored in resource files accessible via the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Resources > Online > Public resources<ph id="3" ctype="x-LINK_REF">]**</ph> menu. You can use a script to change this behavior. This script can use the functions defined in <ph id="5" ctype="x-LINK">&lbrack;</ph>Campaign JSAPI documentation<ph id="6" ctype="x-LINK">[#$tu186]</ph>, including those that concern file manipulation.</source>
+<target xml:lang="en-XX">Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Ressourcen > Online > Öffentliche Ressourcen<ph id="3" ctype="x-LINK_REF">]**</ph> zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der <ph id="5" ctype="x-LINK">&lbrack;</ph>Campaign JSAPI-Dokumentation<ph id="6" ctype="x-LINK">[#$tu186]</ph> definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.</target>
 </trans-unit>
 <trans-unit id="tu187" xml:space="preserve">
 <source xml:lang="en-US">You can store the link to these files in a local variable or in a database field. For example, you can extend the recipient schema to add a link to file-based resources.</source>
 <target xml:lang="en-XX">Sie können den Link zu diesen Dateien in einer lokalen Variable oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.</target>
 </trans-unit>
 <trans-unit id="tu188" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!CAUTION">[!CAUTION]</ph></target>
 </trans-unit>
 <trans-unit id="tu189" xml:space="preserve">
 <source xml:lang="en-US">This type of file must be reserved for forms with secure access (using credentials).</source>
