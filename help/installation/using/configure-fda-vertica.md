@@ -158,7 +158,7 @@ Sie müssen ein [!DNL Vertica Analytics] externes Konto erstellen, um Ihre Campa
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Konfigurieren Sie das externe Konto {]**}Vertica Analytics. Sie müssen Folgendes angeben:**[!UICONTROL 
+1. Konfigurieren Sie das externe Konto {**}Vertica Analytics. Sie müssen Folgendes angeben:**
 
    * **[!UICONTROL Typ]**: [!DNL Vertica Analytics]
 

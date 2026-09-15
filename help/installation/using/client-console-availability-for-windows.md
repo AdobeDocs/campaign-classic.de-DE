@@ -46,7 +46,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 Für diese Seite sind ein Login und ein Passwort erforderlich, die im Programm definiert sind.
 
-Wie Sie die Konsole installieren, erfahren [ (in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
+Wie Sie die Konsole installieren, erfahren [&#x200B; (in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
 
 ## Endbenutzenden vorschlagen, ihre Client-Konsole zu aktualisieren
 

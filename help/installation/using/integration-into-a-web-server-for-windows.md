@@ -37,7 +37,7 @@ Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anfragen zu bea
 In diesem Fall:
 
 * Der standardmäßige Überwachungs-Port ist 8080. Informationen zu Änderungen finden Sie [diesem Abschnitt](../../installation/using/configure-tomcat.md).
-* Die Client-Konsolen stellen dann über eine URL wie `https://``<computer>``:8080` eine Verbindung her.
+* Die Client-Konsolen stellen dann über eine URL wie `https://`&#x200B;`<computer>`&#x200B;`:8080` eine Verbindung her.
 
 Aus Sicherheits- und Verwaltungsgründen empfehlen wir jedoch die Verwendung eines dedizierten Webservers als Haupteinstiegspunkt für den HTTP-Traffic, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
 

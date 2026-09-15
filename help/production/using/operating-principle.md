@@ -50,7 +50,7 @@ Die Modulverwaltung erfolgt über das Befehlszeilen-Tool **nlserver**, das im **
 
 Die allgemeine Syntax des **nlserver**-Tools lautet wie folgt:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>`&#x200B;`<command arguments>`**
 
 Um eine Liste der verfügbaren Module zu erhalten, verwenden Sie den Befehl **nlserver**.
 
