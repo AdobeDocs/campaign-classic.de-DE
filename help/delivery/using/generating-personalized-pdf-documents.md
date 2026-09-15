@@ -1,187 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" version="1.2" its:version="2.0">
-<file original="help/delivery/using/generating-personalized-pdf-documents.md.mdsc" source-language="en-US" target-language="en-XX" datatype="x-text/markdown">
-<body>
-<trans-unit id="tu11" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de</target>
-</trans-unit>
-<trans-unit id="tu27" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions</target>
-</trans-unit>
-<trans-unit id="tu1" restype="x-YAML_METADATA_HEADER_VALUE" xml:space="preserve">
-<source xml:lang="en-US">Generate personalized PDF documents</source>
-<target xml:lang="en-XX">Erstellen von personalisierten PDF-Dokumenten</target>
-</trans-unit>
-<trans-unit id="tu2" restype="x-YAML_METADATA_HEADER_VALUE" xml:space="preserve">
-<source xml:lang="en-US">Learn how to generate personalized PDF documents</source>
-<target xml:lang="en-XX">Erfahren Sie, wie Sie personalisierte PDF-Dokumente erstellen</target>
-</trans-unit>
-<trans-unit id="tu3" xml:space="preserve">
-<source xml:lang="en-US">Also applies to v8</source>
-<target xml:lang="en-XX">Gilt auch für v8</target>
-</trans-unit>
-<trans-unit id="tu4" xml:space="preserve">
-<source xml:lang="en-US">Also applies to Campaign v8</source>
-<target xml:lang="en-XX">Gilt auch für Campaign v8</target>
-</trans-unit>
-<trans-unit id="tu5" xml:space="preserve">
-<source xml:lang="en-US">Generate personalized PDF documents</source>
-<target xml:lang="en-XX">Erstellen von personalisierten PDF-Dokumenten</target>
-</trans-unit>
-<trans-unit id="tu6" xml:space="preserve">
-<source xml:lang="en-US">About variable PDF documents</source>
-<target xml:lang="en-XX">Über variable PDF-Dateien</target>
-</trans-unit>
-<trans-unit id="tu7" xml:space="preserve">
-<source xml:lang="en-US">Adobe Campaign lets you generate variable PDF documents for email attachments from LibreOffice or Microsoft Word documents.</source>
-<target xml:lang="en-XX">Mit Adobe Campaign können Sie aus LibreOffice- oder Microsoft Word-Dokumenten variable PDF-Dokumente für E-Mail-Anhänge erstellen.</target>
-</trans-unit>
-<trans-unit id="tu8" xml:space="preserve">
-<source xml:lang="en-US">The following extensions are supported: ".docx", ".doc", and ".odt".</source>
-<target xml:lang="en-XX">Unterstützt werden die Formate ".docx", ".doc" und ".odt".</target>
-</trans-unit>
-<trans-unit id="tu9" xml:space="preserve">
-<source xml:lang="en-US">To personalize your documents, the same JavaScript functionalities as for email personalization are available.</source>
-<target xml:lang="en-XX">Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.</target>
-</trans-unit>
-<trans-unit id="tu10" xml:space="preserve">
-<source xml:lang="en-US">You need to activate the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>"The content of the file is personalized and converted to PDF during the delivery of each message"<ph id="3" ctype="x-LINK_REF">]**</ph> option. This option is accessible when you attach the file to the delivery email. For more on attaching a calculated file, refer the <ph id="5" ctype="x-LINK">&lbrack;</ph>Campaign v8 documentation<ph id="6" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</source>
-<target xml:lang="en-XX">Sie müssen die Option <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Dateiinhalt wird zum Zeitpunkt des Versand für jede Nachricht personalisiert und in PDF konvertiert<ph id="3" ctype="x-LINK_REF">]**</ph> aktivieren. Diese Option ist verfügbar, wenn Sie die Datei an den E-Mail-Versand anhängen. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der <ph id="5" ctype="x-LINK">&lbrack;</ph>Dokumentation zu Campaign v8<ph id="6" ctype="x-LINK">[#$tu11]{target="_blank"}</ph>.</target>
-</trans-unit>
-<trans-unit id="tu12" xml:space="preserve">
-<source xml:lang="en-US">Example of an invoice header personalization:</source>
-<target xml:lang="en-XX">Beispiel der Personalisierung eines Rechnungs-Headers:</target>
-</trans-unit>
-<trans-unit id="tu13" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_simple.png)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_simple.png)</ph></target>
-</trans-unit>
-<trans-unit id="tu14" xml:space="preserve">
-<source xml:lang="en-US">To generate dynamic tables or include images via a URL, you need to follow a specific process.</source>
-<target xml:lang="en-XX">Die Erzeugung dynamischer Tabellen und der Einschluss von Bildern über URLs wird nachfolgend dargestellt.</target>
-</trans-unit>
-<trans-unit id="tu15" xml:space="preserve">
-<source xml:lang="en-US">Generate dynamic tables</source>
-<target xml:lang="en-XX">Erzeugen von dynamischen Tabellen</target>
-</trans-unit>
-<trans-unit id="tu16" xml:space="preserve">
-<source xml:lang="en-US">The procedure for generating dynamic tables is as follows:</source>
-<target xml:lang="en-XX">Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:</target>
-</trans-unit>
-<trans-unit id="tu17" xml:space="preserve">
-<source xml:lang="en-US">Create a table with three lines and as many columns as necessary, then configure its layout (borders, etc.).</source>
-<target xml:lang="en-XX">Erstellen Sie eine Tabelle mit drei Zeilen und einer beliebigen Anzahl an Spalten. Konfigurieren Sie das Layout (Rahmen usw.).</target>
-</trans-unit>
-<trans-unit id="tu18" xml:space="preserve">
-<source xml:lang="en-US">Place your cursor on the table and click the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Table > Table properties<ph id="3" ctype="x-LINK_REF">]**</ph> menu. Go to the <ph id="5" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Table<ph id="7" ctype="x-LINK_REF">]**</ph> tab and enter a name beginning with <ph id="9" ctype="x-STRONG_EMPHASIS">**</ph>NlJsTable<ph id="10" ctype="x-STRONG_EMPHASIS">**</ph>.</source>
-<target xml:lang="en-XX">Bewegen Sie den Cursor auf die Tabelle und klicken Sie im Menü auf <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Tabelle > Tabelleneigenschaften<ph id="3" ctype="x-LINK_REF">]**</ph>. Geben Sie im <ph id="5" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Tabelle<ph id="7" ctype="x-LINK_REF">]**</ph>-Tab einen mit <ph id="9" ctype="x-STRONG_EMPHASIS">**</ph>NlJsTable<ph id="10" ctype="x-STRONG_EMPHASIS">**</ph> beginnenden Titel ein.</target>
-</trans-unit>
-<trans-unit id="tu19" xml:space="preserve">
-<source xml:lang="en-US">In the first cell of the first line, define a loop ("for", for example) that enables iteration on the values you want to display in the table.</source>
-<target xml:lang="en-XX">Definieren Sie in der ersten Zelle der ersten Zeile eine Schleife (z. B. "for"), die die Iteration der Werte, die Sie anzeigen möchten, ermöglicht.</target>
-</trans-unit>
-<trans-unit id="tu20" xml:space="preserve">
-<source xml:lang="en-US">In each cell of the second line of the table, insert scripts that return the values to display.</source>
-<target xml:lang="en-XX">Fügen Sie in jeder Zelle der zweiten Zeile die Skripts ein, die die anzuzeigenden Werte ausgeben.</target>
-</trans-unit>
-<trans-unit id="tu21" xml:space="preserve">
-<source xml:lang="en-US">Close the loop in the third and last line of the table.</source>
-<target xml:lang="en-XX">Schließen Sie die Schleife in der dritten und letzten Zeile der Tabelle.</target>
-</trans-unit>
-<trans-unit id="tu22" xml:space="preserve">
-<source xml:lang="en-US">Example of a dynamic table definition:</source>
-<target xml:lang="en-XX">Beispiel der Erstellung einer dynamischen Tabelle:</target>
-</trans-unit>
-<trans-unit id="tu23" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_table.png)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_table.png)</ph></target>
-</trans-unit>
-<trans-unit id="tu24" xml:space="preserve">
-<source xml:lang="en-US">Insert external images</source>
-<target xml:lang="en-XX">Einfügen externer Bilder</target>
-</trans-unit>
-<trans-unit id="tu25" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!IMPORTANT">[!IMPORTANT]</ph></target>
-</trans-unit>
-<trans-unit id="tu26" xml:space="preserve">
-<source xml:lang="en-US">Release 7.4.4 (build 9401) includes an update to the external URL allow list. Make sure the domains used for external images in your attachments are added to your instance's approved allow list so that resources continue to load without interruption. As a Campaign Administrator, use the Control Panel to add and manage allow-listed URLs. See <ph id="1" ctype="x-LINK">&lbrack;</ph>Add URL permissions<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph> for steps.</source>
-<target xml:lang="en-XX">Version 7.4.4 (Build 9401) umfasst eine Aktualisierung der Zulassungsliste für externe URLs. Stellen Sie sicher, dass die für externe Bilder in den Anhängen verwendeten Domains der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen weiterhin ohne Unterbrechung geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste URLs hinzuzufügen und diese zu verwalten. Entsprechende Schritte finden Sie unter <ph id="1" ctype="x-LINK">&lbrack;</ph>Hinzufügen von URL-Berechtigungen<ph id="2" ctype="x-LINK">[#$tu27]{target="_blank"}</ph>.</target>
-</trans-unit>
-<trans-unit id="tu28" xml:space="preserve">
-<source xml:lang="en-US">The insertion of external images is useful if, for instance, you want to personalize a document with an image whose URL is entered in a field of the recipient.</source>
-<target xml:lang="en-XX">Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.</target>
-</trans-unit>
-<trans-unit id="tu29" xml:space="preserve">
-<source xml:lang="en-US">To do this, you need to configure a personalization block, then include a call to the personalization block in the attachment.</source>
-<target xml:lang="en-XX">Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen im angehängten Dokument.</target>
-</trans-unit>
-<trans-unit id="tu30" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Example: insert a personalized logo depending on the recipient's country<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Anwendungsbeispiel: Einfügen eines personalisierten Logos in Abhängigkeit vom Herkunftsland des Empfängers<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></target>
-</trans-unit>
-<trans-unit id="tu31" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Step 1: create the attachment:<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>1. Schritt: Erstellung des Anhangs<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></target>
-</trans-unit>
-<trans-unit id="tu32" xml:space="preserve">
-<source xml:lang="en-US">Insert the call to the personalization block: <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>&lt;%@ include view="blockname" %><ph id="2" ctype="x-STRONG_EMPHASIS">**</ph>.</source>
-<target xml:lang="en-XX">Fügen Sie den Verweis auf den Gestaltungsbaustein ein: <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>&lt;%@ include view="Baustein-Name" %><ph id="2" ctype="x-STRONG_EMPHASIS">**</ph>.</target>
-</trans-unit>
-<trans-unit id="tu33" xml:space="preserve">
-<source xml:lang="en-US">Insert your content (personalized or not) into the body of the file.</source>
-<target xml:lang="en-XX">Fügen Sie den (eventuell personalisierten) Inhalt in den Nachrichten-Textkörper ein.</target>
-</trans-unit>
-<trans-unit id="tu34" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_open_office_blocdeperso.png)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_open_office_blocdeperso.png)</ph></target>
-</trans-unit>
-<trans-unit id="tu35" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>Step 2: create the personalization block:<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>2. Schritt: Erstellung des Gestaltungsbausteins<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></target>
-</trans-unit>
-<trans-unit id="tu36" xml:space="preserve">
-<source xml:lang="en-US">Go to the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Resources > Campaign management > Personalization blocks<ph id="3" ctype="x-LINK_REF">]**</ph> menu of the Adobe Campaign console.</source>
-<target xml:lang="en-XX">Gehen Sie in das Menü <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine<ph id="3" ctype="x-LINK_REF">]**</ph>.</target>
-</trans-unit>
-<trans-unit id="tu37" xml:space="preserve">
-<source xml:lang="en-US">Create a new "My Logo" personalization block with "My_Logo" as an internal name.</source>
-<target xml:lang="en-XX">Erstellen Sie einen neuen Baustein mit dem Titel "Mein Logo" und dem internen Namen "Mein_Logo".</target>
-</trans-unit>
-<trans-unit id="tu38" xml:space="preserve">
-<source xml:lang="en-US">Click on the <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Advanced parameters...<ph id="3" ctype="x-LINK_REF">]**</ph> link then check the <ph id="5" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>"The content of the block is included in an attachment"<ph id="7" ctype="x-LINK_REF">]**</ph> option. This lets you copy the definition of the personalization block directly into the content of the OpenOffice file.</source>
-<target xml:lang="en-XX">Klicken Sie auf den Link <ph id="1" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Erweiterte Parameter…<ph id="3" ctype="x-LINK_REF">]**</ph> und aktivieren Sie die Option <ph id="5" ctype="x-STRONG_EMPHASIS">**[!UICONTROL </ph>Der Inhalt des Bausteins wird als Anhang angefügt<ph id="7" ctype="x-LINK_REF">]**</ph>. So können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.</target>
-</trans-unit>
-<trans-unit id="tu39" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_bloc_option.png)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_bloc_option.png)</ph></target>
-</trans-unit>
-<trans-unit id="tu40" xml:space="preserve">
-<source xml:lang="en-US">You need to differentiate two types of declarations within the personalization block:</source>
-<target xml:lang="en-XX">Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:</target>
-</trans-unit>
-<trans-unit id="tu41" xml:space="preserve">
-<source xml:lang="en-US">The Adobe Campaign code of the personalization fields for which the "open" and "closed" chevrons must be replaced with escape characters (respectively <ph id="1" ctype="x-CODE">`&amp;lt;`</ph> and <ph id="2" ctype="x-CODE">`&amp;gt;`</ph>).</source>
-<target xml:lang="en-XX">Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (<ph id="1" ctype="x-CODE">`&amp;lt;`</ph> und <ph id="2" ctype="x-CODE">`&amp;gt;`</ph>).</target>
-</trans-unit>
-<trans-unit id="tu42" xml:space="preserve">
-<source xml:lang="en-US">The entire OpenOffice XML code will be copied into the OpenOffice document.</source>
-<target xml:lang="en-XX">Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.</target>
-</trans-unit>
-<trans-unit id="tu43" xml:space="preserve">
-<source xml:lang="en-US">In the example, the personalization block looks like this:</source>
-<target xml:lang="en-XX">Im Beispiel weist der Gestaltungsbaustein folgendes Format auf:</target>
-</trans-unit>
-<trans-unit id="tu44" xml:space="preserve">
-<source xml:lang="en-US">Depending on the recipient's country, personalization is visible in the document linked to the delivery:</source>
-<target xml:lang="en-XX">Die Personalisierung bezüglich des Herkunftslands des Empfängers wurde korrekt konfiguriert:</target>
-</trans-unit>
-<trans-unit id="tu45" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_result.png)</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-IMAGE">![](assets/s_ncs_pdf_result.png)</ph></target>
-</trans-unit>
-</body>
-</file>
-</xliff>
+---
+product: campaign
+title: Erstellen von personalisierten PDF-Dokumenten
+description: Erfahren Sie, wie Sie personalisierte PDF-Dokumente erstellen
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Personalization
+role: User
+hide: true
+exl-id: e5239d99-256b-412b-be20-f64f822da9c3
+TQID: https://experienceleague.adobe.com/5hETJLlKZ9iWu2k1nW-RMeDlzpSm7wFwfe3QwSEZCa4
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 100%
+---
+# Erstellen von personalisierten PDF-Dokumenten{#generating-personalized-pdf-documents}
+
+## Über variable PDF-Dateien {#about-variable-pdf-documents}
+
+Mit Adobe Campaign können Sie aus LibreOffice- oder Microsoft Word-Dokumenten variable PDF-Dokumente für E-Mail-Anhänge erstellen.
+
+Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.odt&quot;.
+
+Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.
+
+Sie müssen die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt des Versand für jede Nachricht personalisiert und in PDF konvertiert]** aktivieren. Diese Option ist verfügbar, wenn Sie die Datei an den E-Mail-Versand anhängen. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de){target="_blank"}.
+
+Beispiel der Personalisierung eines Rechnungs-Headers:
+
+![](assets/s_ncs_pdf_simple.png)
+
+Die Erzeugung dynamischer Tabellen und der Einschluss von Bildern über URLs wird nachfolgend dargestellt.
+
+## Erzeugen von dynamischen Tabellen {#generating-dynamic-tables}
+
+Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
+
+* Erstellen Sie eine Tabelle mit drei Zeilen und einer beliebigen Anzahl an Spalten. Konfigurieren Sie das Layout (Rahmen usw.).
+* Bewegen Sie den Cursor auf die Tabelle und klicken Sie im Menü auf **[!UICONTROL Tabelle > Tabelleneigenschaften]**. Geben Sie im **[!UICONTROL Tabelle]**-Tab einen mit **NlJsTable** beginnenden Titel ein.
+* Definieren Sie in der ersten Zelle der ersten Zeile eine Schleife (z. B. &quot;for&quot;), die die Iteration der Werte, die Sie anzeigen möchten, ermöglicht.
+* Fügen Sie in jeder Zelle der zweiten Zeile die Skripts ein, die die anzuzeigenden Werte ausgeben.
+* Schließen Sie die Schleife in der dritten und letzten Zeile der Tabelle.
+
+  Beispiel der Erstellung einer dynamischen Tabelle:
+
+  ![](assets/s_ncs_pdf_table.png)
+
+## Einfügen externer Bilder {#inserting-external-images}
+
+>[!IMPORTANT]
+>
+>Version 7.4.4 (Build 9401) umfasst eine Aktualisierung der Zulassungsliste für externe URLs. Stellen Sie sicher, dass die für externe Bilder in den Anhängen verwendeten Domains der genehmigten Zulassungsliste Ihrer Instanz hinzugefügt werden, damit Ressourcen weiterhin ohne Unterbrechung geladen werden. Verwenden Sie als Campaign-Admin das Control Panel, um der Zulassungsliste URLs hinzuzufügen und diese zu verwalten. Entsprechende Schritte finden Sie unter [Hinzufügen von URL-Berechtigungen](https://experienceleague.adobe.com/de/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}.
+
+Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.
+
+Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen im angehängten Dokument.
+
+**Anwendungsbeispiel: Einfügen eines personalisierten Logos in Abhängigkeit vom Herkunftsland des Empfängers**
+
+**1. Schritt: Erstellung des Anhangs**
+
+* Fügen Sie den Verweis auf den Gestaltungsbaustein ein: **&lt;%@ include view=&quot;Baustein-Name&quot; %>**.
+* Fügen Sie den (eventuell personalisierten) Inhalt in den Nachrichten-Textkörper ein.
+
+![](assets/s_ncs_open_office_blocdeperso.png)
+
+**2. Schritt: Erstellung des Gestaltungsbausteins**
+
+* Gehen Sie in das Menü **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
+* Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
+* Klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]** und aktivieren Sie die Option **[!UICONTROL Der Inhalt des Bausteins wird als Anhang angefügt]**. So können Sie die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopieren.
+
+  ![](assets/s_ncs_pdf_bloc_option.png)
+
+  Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
+
+  * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
+  * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.
+
+Im Beispiel weist der Gestaltungsbaustein folgendes Format auf:
+
+```
+<% if (recipient.country.label == "Germany") { %>
+<draw:frame svg:width="4cm" svg:height="3cm">
+<draw:image xlink:href=https://..../logo_germany.png />
+</draw:frame>
+<% } else
+if (recipient.country.label == "USA")
+{ %>
+<draw:frame svg:width="4cm" svg:height="3cm">
+<draw:image xlink:href=https://..../logo_USA.png />
+</draw:frame>
+<% } %>
+```
+
+Die Personalisierung bezüglich des Herkunftslands des Empfängers wurde korrekt konfiguriert:
+
+![](assets/s_ncs_pdf_result.png)
