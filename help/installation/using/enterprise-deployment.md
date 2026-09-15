@@ -10,20 +10,23 @@ exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 TQID: https://experienceleague.adobe.com/zcSKI492m6naLPJ4i-uxfKRESZOjL74tqbsBC9yx-SI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1251
+source-wordcount: '1251'
 ht-degree: 7%
-
 ---
-
 # Enterprise-Bereitstellung{#enterprise-deployment}
 
 
@@ -69,8 +72,8 @@ Höhere Hardware- und Verwaltungskosten.
 * Bounce-Postfach über POP3 zugänglich,
 * Erstellung von zwei DNS-Aliassen im Lastenausgleich:
 
-   * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
-   * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf einen Lastenausgleich auf einer virtuellen IP-Adresse (VIP), die dann an die beiden Anwendungsserver verteilt wird.
+  * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
+  * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf einen Lastenausgleich auf einer virtuellen IP-Adresse (VIP), die dann an die beiden Anwendungsserver verteilt wird.
 
 * Firewall konfiguriert zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
@@ -126,7 +129,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-1. Erstellen Sie die **demo**-Instanz mit den DNS-Masken für das Tracking (in diesem Fall **tracking.campaign.net**) und den Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Dazu gibt es zwei Möglichkeiten:
+1. Erstellen Sie die **demo**-Instanz mit den DNS-Masken für das Tracking (in diesem Fall **tracking.campaign.net**) und den Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Dafür gibt es zwei Möglichkeiten:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -298,6 +301,6 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
-   * Für Windows: [Webserver starten und Konfiguration &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * Für Windows: [Webserver starten und Konfiguration ](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Adobe Campaign-Server starten.

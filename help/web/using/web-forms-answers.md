@@ -2,31 +2,34 @@
 product: campaign
 title: Antworten in Webformularen
 description: Antworten in Webformularen
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 TQID: https://experienceleague.adobe.com/WPVKOgF2ilspLhbrTd-s6x8MEX254boeoSzJsgZVaTE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 907
+workflow-type: tm+mt
+source-wordcount: '898'
 ht-degree: 100%
-
 ---
-
 # Antworten in Webformularen{#web-forms-answers}
 
 
 ## Speicherfelder für Antworten {#response-storage-fields}
 
-Antworten in Formularen können in einem Feld der Datenbank oder temporär in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird bei der Felderstellung ausgewählt. Er kann über den Link **[!UICONTROL Speicherinformationen bearbeiten…]** geändert werden. 
+Antworten in Formularen können in einem Feld der Datenbank oder temporär in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird bei der Felderstellung ausgewählt. Er kann über den Link **[!UICONTROL Speicherinformationen bearbeiten…]** geändert werden.
 
 Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen verfügbar:
 
@@ -126,7 +129,7 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
 * Wenn auf das Webformular über einen in einer E-Mail gesendeten Link zugegriffen wird und der Benutzer, der auf die Anwendung zugreift, bereits in der Datenbank gespeichert ist, können Sie die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](publishing-a-web-form.md#delivering-a-form-via-email).
 
-  In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die jedem Profil von Adobe Campaign zugewiesen wird.Sie müssen die Informationen konfigurieren, die vorab über das Feld „Vorausfüllen“ geladen werden sollen. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
+  In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die jedem Profil von Adobe Campaign zugewiesen wird. Sie müssen die Informationen konfigurieren, die vorab über das Feld „Vorausfüllen“ geladen werden sollen. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
 
   >[!CAUTION]
   >

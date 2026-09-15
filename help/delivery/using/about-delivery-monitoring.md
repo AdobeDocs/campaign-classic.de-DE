@@ -8,28 +8,38 @@ exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 TQID: https://experienceleague.adobe.com/IRAgAQvquHFcfGDRU9Sof8NpSn3khyRRPOdpIRKUOzg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 906
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 98%
 ---
-
 # Erste Schritte bei der Überwachung eines Versands {#about-delivery-monitoring}
 
 >[!IMPORTANT]
@@ -46,11 +56,11 @@ ht-degree: 100%
 
 Was passiert, wenn die Nachrichten nicht gesendet werden und ihr Status weiterhin **Ausstehend** lautet?
 
-* Der Ausführungsprozess wartet auf die Verfügbarkeit einiger Ressourcen. Der MTA wurde möglicherweise noch nicht gestartet.
+* Der Prozess wartet auf die Verfügbarkeit von Ressourcen. Möglicherweise wurde der MTA noch nicht gestartet.
 Prüfen Sie, ob Ihre mta@instance-Module auf den MTA-Servern gestartet wurden. Starten Sie sie gegebenenfalls. [Weitere Informationen](../../production/using/administration.md).
 
-* Der Versand nutzt möglicherweise eine Affinität, die in der sendenden Instanz nicht konfiguriert wurde.
-Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weiterführende Informationen dazu finden Sie im Abschnitt „Ausgehenden SMTP-Traffic steuern“.
+* Möglicherweise wird für den Versand eine Affinität verwendet, die in der Sendeinstanz noch nicht konfiguriert wurde.
+Tipp: Überprüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weitere Informationen hierzu finden Sie unter Steuern des ausgehenden SMTP-Traffics.
 
 >[!NOTE]
 >
@@ -81,8 +91,8 @@ In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Wo
 
 * Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
 * Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
-   * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
-   * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
+  * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
+  * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
 
   Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
 
@@ -109,13 +119,13 @@ Bei Problemen mit Sendungen in **Hybrid-/On-Premise-Bereitstellungen** können s
 
 ## Überwachen von Sendungen
 
-Die folgenden Ressourcen helfen Ihnen beim Monitoring und der Nachverfolgung der Versandleistung in Campaign Classic v7:
+Die folgenden Ressourcen helfen Ihnen beider Überwachung und der Nachverfolgung der Versandleistung in Campaign Classic v7:
 
 ### Zugreifen auf das Versand-Dashboard
 
-Erfahren Sie, wie Sie auf Versandlisten zugreifen und das Versand-Dashboard zum Monitoring der Versandaktivität verwenden können:
+Erfahren Sie, wie Sie auf Versandlisten zugreifen und das Versand-Dashboard zur Überwachung der Versandaktivität verwenden können:
 
-* [Monitoring von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8 – gilt für v7 und v8)
+* [Überwachung von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8 – gilt für v7 und v8)
 * [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
 * [Fortgeschritten: Anpassen von Versandlogs](customize-delivery-logs.md) (nur v7 Hybrid/On-Premise – Schemaerweiterung)
 

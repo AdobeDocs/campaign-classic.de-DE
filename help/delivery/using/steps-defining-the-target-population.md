@@ -9,24 +9,31 @@ exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 TQID: https://experienceleague.adobe.com/0x1K997AEHhX-ozmIJH5I6NZPb388PKFkrXaK-EgoTY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1912
+workflow-type: tm+mt
+source-wordcount: '1912'
 ht-degree: 100%
-
 ---
-
 # Bestimmen der Zielpopulation {#defining-the-target-population}
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
@@ -150,12 +157,12 @@ Folgende Optionen stehen zur Verfügung:
 
   Beispiel:
 
-   * Versand eines Newsletters oder eines elektronischen Dokuments. In einigen Fällen werden Duplikate nicht ausgeschlossen, wenn die Daten keine nativen Duplikate enthalten. Ein Ehepaar, das ein Abonnement unter derselben E-Mail-Adresse hat, kann mit zwei spezifischen personalisierten E-Mail-Nachrichten rechnen: eine an jede namentliche Person. In diesem Fall kann diese Option deaktiviert werden.
-   * Versand im Rahmen einer Marketing-Kampagne: Um eine Überflutung der Empfangenden mit E-Mails zu vermeiden, ist die Deduplizierung unbedingt zu empfehlen. In diesem Fall kann diese Option ausgewählt werden.
+  * Versand eines Newsletters oder eines elektronischen Dokuments. In einigen Fällen werden Duplikate nicht ausgeschlossen, wenn die Daten keine nativen Duplikate enthalten. Ein Ehepaar, das ein Abonnement unter derselben E-Mail-Adresse hat, kann mit zwei spezifischen personalisierten E-Mail-Nachrichten rechnen: eine an jede namentliche Person. In diesem Fall kann diese Option deaktiviert werden.
+  * Versand im Rahmen einer Marketing-Kampagne: Um eine Überflutung der Empfangenden mit E-Mails zu vermeiden, ist die Deduplizierung unbedingt zu empfehlen. In diesem Fall kann diese Option ausgewählt werden.
 
-     Bei Deaktivierung dieser Option steht eine zusätzliche Auswahlmöglichkeit zur Verfügung: **[!UICONTROL In der Zielgruppe doppelt enthaltene Einträge (identische Kennung) beibehalten]**. So können Sie mehrere Sendungen an Profile genehmigen, die mehrere Zielgruppenbestimmungskriterien erfüllen.
+    Bei Deaktivierung dieser Option steht eine zusätzliche Auswahlmöglichkeit zur Verfügung: **[!UICONTROL In der Zielgruppe doppelt enthaltene Einträge (identische Kennung) beibehalten]**. So können Sie mehrere Sendungen an Profile genehmigen, die mehrere Zielgruppenbestimmungskriterien erfüllen.
 
-     ![](assets/s_ncs_user_wizard_email02j.png)
+    ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings und die Gesetze hinsichtlich E-Commerce einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**. Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die nicht antworten. Es wird dringend empfohlen, diese Option aktiviert zu lassen.
@@ -264,6 +271,6 @@ Folgende Mappings sind vorhanden:
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/35532?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

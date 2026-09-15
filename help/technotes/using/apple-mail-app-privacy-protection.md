@@ -7,25 +7,33 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2083
+workflow-type: tm+mt
+source-wordcount: '2142'
 ht-degree: 100%
-
 ---
-
 # Datenschutz bei E-Mails in der Mail-App von Apple
 
 ## Was hat sich verändert?
@@ -58,8 +66,8 @@ Archivieren Sie Ihre Trackinglogs über den Aufbewahrungszeitraum von Adobe Camp
 
 ### Bewertung des aktuellen Trends bei den Öffnungsraten
 
-Ermitteln Sie, welcher Anteil Ihrer Zielgruppe die E-Mail-App von Apple auf einem iOS-Gerät verwendet.
-Mithilfe dieser Evaluierung können Sie potenzielle anomale Lücken und deren Ursache identifizieren. Sie können feststellen, ob eine Lücke aufgrund von Leistungsproblemen der Kampagne oder aufgrund der Datenschutzfunktion von Apple besteht. Weitere Informationen finden Sie unter [Tipps und Tricks](#measure-ios-footprint).
+Bestimmen Sie, welcher Anteil Ihrer Zielgruppe die Apple-E-Mail-App auf einem iOS-Gerät verwendet.
+Mithilfe dieser Bewertung können Sie potenzielle anormale Lücken und deren Ursache identifizieren. Sie können feststellen, ob eine Lücke auf Leistungsprobleme bei Kampagnen oder auf die Datenschutzfunktion von Apple zurückzuführen ist. Lesen Sie die [Tipps und Tricks](#measure-ios-footprint).
 
 ### Kampagnenstrategie und Leistungsmetriken neu bewerten
 
@@ -392,8 +400,8 @@ Dieses Beispiel zeigt, wie Sie Tracking-Daten aus Adobe Campaign exportieren kö
 
 1. Erstellen Sie einen Workflow, der mit einer Abfrage beginnt.
 
-   Die anfängliche Abfrage wird zum Abrufen von Trackinglogs für die letzten drei Monate verwendet.
-Sie können eine inkrementelle Abfrage zum Extrahieren der noch nicht exportierten Einträge verwenden.
+   Die erste Abfrage dient zum Abrufen der Trackinglogs für die letzten drei Monate.
+   Sie können eine inkrementelle Abfrage verwenden, um nur noch nicht exportierte Einträge zu extrahieren.
 
    Fügen Sie alle erforderlichen Informationen aus dem Knoten **[!UICONTROL Zusätzliche Daten]** hinzu.
 
@@ -438,14 +446,14 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Einträge nach iOS-Gerät
 
 * Der erste beispielhafte Workflow umfasst die folgenden Aktivitäten:
 
-   1. Die erste Aktivität **[!UICONTROL Abfrage]** wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
-   1. Eine Aktivität **[!UICONTROL Aufspaltung]** wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
+  1. Die erste Aktivität **[!UICONTROL Abfrage]** wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
+  1. Eine Aktivität **[!UICONTROL Aufspaltung]** wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
 
-   1. Eine Aktivität **[!UICONTROL Deduplizierung]** folgt jeder Aktivität des Typs **[!UICONTROL Aufspaltung]**. Die Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
+  1. Eine Aktivität **[!UICONTROL Deduplizierung]** folgt jeder Aktivität des Typs **[!UICONTROL Aufspaltung]**. Die Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
 
-      Die Aktivität **[!UICONTROL Deduplizierung]** wird nach der Aktivität **[!UICONTROL Aufspaltung]** verwendet, um zu vermeiden, dass Informationen zu Empfangenden verloren gehen, die verschiedene Geräte verwenden.
+     Die Aktivität **[!UICONTROL Deduplizierung]** wird nach der Aktivität **[!UICONTROL Aufspaltung]** verwendet, um zu vermeiden, dass Informationen zu Empfangenden verloren gehen, die verschiedene Geräte verwenden.
 
-   1. Eine Aktivität **[!UICONTROL Ende]** folgt auf jede Aktivität **[!UICONTROL Deduplizierung]**.
+  1. Eine Aktivität **[!UICONTROL Ende]** folgt auf jede Aktivität **[!UICONTROL Deduplizierung]**.
 
   Dieser Workflow ist nützlich, wenn Sie Empfangende nur in der nativen Empfängertabelle für die Zielgruppenbestimmung speichern.
 
@@ -453,14 +461,14 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Einträge nach iOS-Gerät
 
 * Der zweite beispielhafte Workflow umfasst die folgenden Aktivitäten:
 
-   1. Die erste Aktivität **[!UICONTROL Abfrage]** wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
-   1. Eine Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
-   1. Eine Aktivität **[!UICONTROL Verzweigung]** wird verwendet:
+  1. Die erste Aktivität **[!UICONTROL Abfrage]** wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
+  1. Eine Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
+  1. Eine Aktivität **[!UICONTROL Verzweigung]** wird verwendet:
 
-      * In einer Transition wird die Aktivität **[!UICONTROL Dimensionsänderung]** verwendet, um die Empfangenden zu finden, auf die sich das Trackinglog bezieht.
-      * In der anderen Transition wird die Aktivität **[!UICONTROL Aufspaltung]** verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
+     * In einer Transition wird die Aktivität **[!UICONTROL Dimensionsänderung]** verwendet, um die Empfangenden zu finden, auf die sich das Trackinglog bezieht.
+     * In der anderen Transition wird die Aktivität **[!UICONTROL Aufspaltung]** verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
 
-   1. Eine Aktivität **[!UICONTROL Ende]** folgt jeder Transition nach der Aktivität **[!UICONTROL Aufspaltung]**.
+  1. Eine Aktivität **[!UICONTROL Ende]** folgt jeder Transition nach der Aktivität **[!UICONTROL Aufspaltung]**.
 
   Dieser Workflow ist nützlich, wenn Sie Empfangende in einer anderen Tabelle als der nativen Empfängertabelle speichern.
 

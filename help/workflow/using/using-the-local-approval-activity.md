@@ -8,18 +8,20 @@ exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 TQID: https://experienceleague.adobe.com/pNRd9r-vmTNVq45n0bdzJ3E9WtgZHLQcD0bVVOnPEb8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
-workflow-type: ht
-source-wordcount: 1442
+workflow-type: tm+mt
+source-wordcount: '1442'
 ht-degree: 100%
-
 ---
-
 # Verwenden der lokalen Validierungsaktivität{#using-the-local-approval-activity}
 
 
@@ -195,7 +197,7 @@ Eine weitere Zugriffsmöglichkeit besteht über den Tab **[!UICONTROL Validierun
 
 ![](assets/local_validation_admin_2.png)
 
-Markieren Sie die zu prüfende Aufgabe und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]**. Im **[!UICONTROL Allgemein]**-Tab der Aufgabe werden die wichtigsten Informationen zur Aufgabe angezeigt. Es besteht des Weiteren die Möglichkeit, die Validierungs-Deadline und das Erinnerungsdatum zu ändern.
+Markieren Sie die zu überwachende Aufgabe und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]**. Im **[!UICONTROL Allgemein]**-Tab der Aufgabe werden die wichtigsten Informationen zur Aufgabe angezeigt. Es besteht des Weiteren die Möglichkeit, die Validierungs-Deadline und das Erinnerungsdatum zu ändern.
 
 ![](assets/local_validation_admin_3.png)
 

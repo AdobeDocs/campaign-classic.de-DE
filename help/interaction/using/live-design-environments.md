@@ -10,18 +10,19 @@ exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 TQID: https://experienceleague.adobe.com/82MTqZNuWiPJj0YM70MnN1OVuWjvvdbGjDr5e9iFbjU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 494
+workflow-type: tm+mt
+source-wordcount: '494'
 ht-degree: 100%
-
 ---
-
 # Live-/Design-Umgebungen{#live-design-environments}
 
 
@@ -31,7 +32,7 @@ ht-degree: 100%
 Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 * **[!UICONTROL Design]**-Angebotsumgebungen, in denen Angebote bearbeitet werden und verändert werden können. Diese Angebote haben den Validierungszyklus nicht durchlaufen und werden nicht an Kontakte gesendet.
-* **[!UICONTROL Live]**-Angebotsumgebungen, in denen validierte Angebote so zur Verfügung stehen, wie sie Kontakten unterbreitet werden.Die Angebote in dieser Umgebung sind schreibgeschützt.
+* **[!UICONTROL Live]**-Angebotsumgebungen, in denen validierte Angebote so zur Verfügung stehen, wie sie Kontakten unterbreitet werden. Die Angebote in dieser Umgebung sind schreibgeschützt.
 
 ![](assets/offer_environments_overview_001.png)
 

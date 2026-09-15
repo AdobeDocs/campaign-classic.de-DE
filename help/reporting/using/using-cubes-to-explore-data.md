@@ -2,17 +2,15 @@
 product: campaign
 title: Verwenden von Cubes zur Datenanalyse
 description: Verwenden von Cubes zur Datenanalyse
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 hide: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: ht
-source-wordcount: '1012'
+workflow-type: tm+mt
+source-wordcount: '1003'
 ht-degree: 100%
-
 ---
-
 # Verwenden von Cubes zur Datenanalyse{#using-cubes-to-explore-data}
 
 

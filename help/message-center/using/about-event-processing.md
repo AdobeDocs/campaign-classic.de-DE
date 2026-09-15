@@ -10,17 +10,17 @@ exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 TQID: https://experienceleague.adobe.com/pex7wiGCNMdY86-Ug7dyLxE3RRT-ejlgz8eH7zVmZc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: ht
-source-wordcount: 728
+workflow-type: tm+mt
+source-wordcount: '728'
 ht-degree: 100%
-
 ---
-
 # Ereignisverarbeitung {#about-event-processing}
 
 
@@ -92,8 +92,8 @@ Im **Ereignisverlauf** unter **[!UICONTROL Message Center]** > **[!UICONTROL Ere
 
 * **Ausstehend**: Bei dem Ereignis kann es sich um Folgendes handeln:
 
-   * Ereignis, das kurz zuvor eingetreten ist, jedoch noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** gibt den Wert 0 an. Die E-Mail-Vorlage wurde noch nicht verknüpft.
-   * Ereignis, das verarbeitet wurde, bei dessen Bestätigung jedoch Fehler aufgetreten sind. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert an, der nicht 0 ist. Um zu erfahren, wann dieses Ereignis erneut verarbeitet wird, konsultieren Sie die Spalte **[!UICONTROL Prozess angefordert am]**.
+  * Ereignis, das kurz zuvor eingetreten ist, jedoch noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** gibt den Wert 0 an. Die E-Mail-Vorlage wurde noch nicht verknüpft.
+  * Ereignis, das verarbeitet wurde, bei dessen Bestätigung jedoch Fehler aufgetreten sind. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert an, der nicht 0 ist. Um zu erfahren, wann dieses Ereignis erneut verarbeitet wird, konsultieren Sie die Spalte **[!UICONTROL Prozess angefordert am]**.
 
 * **Versand ausstehend**: Das Ereignis wurde verarbeitet und die Versandvorlage ist verknüpft. Die E-Mail ist versandbereit und der klassische Versandprozess wird angewendet. Für weitere Informationen können Sie den Versand öffnen.
 * **Gesendet**, **Ignoriert** und **Versandfehler**: Diese Versandstatus werden über den Workflow **updateEventsStatus** abgerufen. Für weitere Informationen können Sie den entsprechenden Versand öffnen.

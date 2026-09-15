@@ -7,24 +7,26 @@ exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 TQID: https://experienceleague.adobe.com/yUoaaurDek0SyjlZXodUQw5iruwl4WN5zNYaMaAVTeA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 293
+workflow-type: tm+mt
+source-wordcount: '293'
 ht-degree: 100%
-
 ---
-
 # Interaction und Angebotsverwaltung{#interaction-and-offer-management}
 
 
 
-Interaction ermöglicht es Ihnen, während einer Interaktion mit einem bestimmten Kontakt (einer Kundin bzw. einem Kunden oder einer Zielgruppe) in Echtzeit zu reagieren, indem Sie ein einzelnes oder mehrere angepasste Angebote unterbreiten.Bei diesen Angeboten kann es sich beispielsweise um einfache Kommunikationsnachrichten, Sonderangebote für ein oder mehrere Produkte oder einen Service handeln.
+Interaction ermöglicht es Ihnen, während einer Interaktion mit einem bestimmten Kontakt (einer Kundin bzw. einem Kunden oder einer Zielgruppe) in Echtzeit zu reagieren, indem Sie ein einzelnes oder mehrere angepasste Angebote unterbreiten. Bei diesen Angeboten kann es sich beispielsweise um einfache Kommunikationsnachrichten, Sonderangebote für ein oder mehrere Produkte oder einen Service handeln.
 
 Angebote können sowohl bei eingehenden Kontakten (über eine Website, einen Anruf im Callcenter) als auch ausgehenden Kontakten (E-Mail-, Briefpost- oder SMS-Versand im Rahmen einer Marketing-Kampagne) unterbreitet werden.
 

@@ -7,17 +7,17 @@ exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 TQID: https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: ht
-source-wordcount: 1226
+workflow-type: tm+mt
+source-wordcount: '1226'
 ht-degree: 100%
-
 ---
-
 # Transaktionsnachrichten-Architektur {#transactional-messaging-architecture}
 
 
@@ -185,7 +185,7 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
 
 ### Transaktionsnachricht und LINE {#transactional-messaging-and-line}
 
-In Kombination mit dem LINE-Kanal ermöglichen es Ihnen Transaktionsnachrichten, Echtzeit-Nachrichten über die auf den Mobilgeräten installierte LINE-App zu senden.So wird die Willkommensnachricht gesendet, wenn eine LINE-Benutzerin bzw. ein LINE-Benutzer die Seite der Marke hinzufügt.
+In Kombination mit dem LINE-Kanal ermöglichen es Ihnen Transaktionsnachrichten, Echtzeit-Nachrichten über die auf den Mobilgeräten installierte LINE-App zu senden. So wird die Willkommensnachricht gesendet, wenn eine LINE-Benutzerin bzw. ein LINE-Benutzer die Seite der Marke hinzufügt.
 
 Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden Elemente zur Konfiguration Ihrer **Marketing-Instanz** und Ihrer Ausführungsinstanz **erforderlich**:
 

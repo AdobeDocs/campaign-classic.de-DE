@@ -5,12 +5,10 @@ description: Interaction
 hide: true
 feature: Workflows, Interaction, Offers
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
-
 ---
-
 
 # Interaktion{#interaction}
 
@@ -35,7 +33,7 @@ Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgende
   <tr> 
    <td> <span class="uicontrol">Berechnung des full-Aggregats (cube propositionrcp)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert das <strong>vollständige</strong> Aggregat für den <strong>Angebotsvorschlag</strong>-Cube. Er wird standardmäßig täglich um 1 Uhr gestartet.Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum.<br /> Mit dem <strong>Angebotsvorschlag</strong>-Cube können anschließend Berichte auf der Basis von Angeboten erstellt werden. Weitere Informationen zu Cubes finden Sie in <a href="../../reporting/using/ac-cubes.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Dieser Workflow aktualisiert das <strong>vollständige</strong> Aggregat für den <strong>Angebotsvorschlag</strong>-Cube. Er wird standardmäßig täglich um 1 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und Datum.<br /> Mit dem <strong>Angebotsvorschlag</strong>-Cube können anschließend Berichte auf der Basis von Angeboten erstellt werden. Weitere Informationen zu Cubes finden Sie in <a href="../../reporting/using/ac-cubes.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">Vollständige Message Center-Aggregatberechnung</span> <br /> </td> 

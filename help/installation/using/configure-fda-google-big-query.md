@@ -10,18 +10,19 @@ exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 TQID: https://experienceleague.adobe.com/jmeyOWDTkOmCKOVGlNAdYzNHfaK1QeSxnIjDDnl8yj0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1092
+source-wordcount: '1092'
 ht-degree: 7%
-
 ---
-
 # Zugriff auf Google BigQuery konfigurieren {#configure-fda-google-big-query}
 
 
@@ -200,9 +201,9 @@ Sie müssen ein [!DNL Google BigQuery] externes Konto erstellen, um Ihre Adobe C
    * **[!UICONTROL Projekt]**: Name Ihres **[!UICONTROL Projekts]**. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Schlüsseldateipfad]**:
-      * **[!UICONTROL Schlüsseldatei auf den Server hochladen]**: Wählen Sie **[!UICONTROL Zum Hochladen hier klicken]** aus, wenn Sie den Schlüssel über Adobe Campaign Classic hochladen möchten.
+     * **[!UICONTROL Schlüsseldatei auf den Server hochladen]**: Wählen Sie **[!UICONTROL Zum Hochladen hier klicken]** aus, wenn Sie den Schlüssel über Adobe Campaign Classic hochladen möchten.
 
-      * **[!UICONTROL Manuelles Eingeben des Pfads der Schlüsseldatei]**: Kopieren Sie Ihren absoluten Pfad in dieses Feld, wenn Sie einen bereits vorhandenen Schlüssel verwenden möchten.
+     * **[!UICONTROL Manuelles Eingeben des Pfads der Schlüsseldatei]**: Kopieren Sie Ihren absoluten Pfad in dieses Feld, wenn Sie einen bereits vorhandenen Schlüssel verwenden möchten.
 
    * **[!UICONTROL Datensatz]**: Name Ihres **[!UICONTROL Datensatzes]**. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
 

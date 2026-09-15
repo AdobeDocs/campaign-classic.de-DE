@@ -10,19 +10,21 @@ exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 TQID: https://experienceleague.adobe.com/ylf7sIKiO9ip-yC3M4zqbhu0ITaXqmTMQJ-4KfNQlt8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 29%
-
 ---
-
 # Konfiguration des Webservers {#web-server-configuration}
 
 
@@ -35,17 +37,17 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
 
   **Auf Apache**, bearbeiten Sie /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
 
-   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
-   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
+  * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+  * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **In IIS** (siehe [Dokumentation](https://support.microsoft.com/en-us/kb/245030)) führen Sie die folgende Konfiguration durch:
 
-   * Fügen Sie einen Registrierungs-Unterschlüssel in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL hinzu.
-   * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie die DWORD-Wertdaten des DisabledByDefault-Werts in den folgenden Registrierungsschlüsseln unter dem Schlüssel **Protokolle** in 0x0:
+  * Fügen Sie einen Registrierungs-Unterschlüssel in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL hinzu.
+  * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie die DWORD-Wertdaten des DisabledByDefault-Werts in den folgenden Registrierungsschlüsseln unter dem Schlüssel **Protokolle** in 0x0:
 
-     SCHANNEL\Protocols\TLS 1.2\Client
+    SCHANNEL\Protocols\TLS 1.2\Client
 
-     SCHANNEL\Protocols\TLS 1.2\Server
+    SCHANNEL\Protocols\TLS 1.2\Server
 
   **SSL x.0 deaktivieren**
 
@@ -59,20 +61,20 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
 
   **In IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) führen Sie die folgende Konfiguration durch:
 
-   * Achten Sie darauf, dass der **Request-Filtering**-Rollendienst oder die entsprechende Funktion installiert ist.
-   * Klicken Sie im Bereich **Anforderungsfilterung** auf die Registerkarte HTTP-Verben und dann auf Verb ablehnen . Geben Sie im Aktionsbereich TRACE im Dialogfeld „Öffnen“ ein.
+  * Achten Sie darauf, dass der **Request-Filtering**-Rollendienst oder die entsprechende Funktion installiert ist.
+  * Klicken Sie im Bereich **Anforderungsfilterung** auf die Registerkarte HTTP-Verben und dann auf Verb ablehnen . Geben Sie im Aktionsbereich TRACE im Dialogfeld „Öffnen“ ein.
 
 * Entfernen Sie das Banner:
 
   **Auf Apache** bearbeiten Sie /etc/apache2/conf.d/security:
 
-   * ServerSignature auf **Off**
-   * ServerTokens auf **Prod**
+  * ServerSignature auf **Off**
+  * ServerTokens auf **Prod**
 
   **In IIS** führen Sie die folgende Konfiguration durch:
 
-   * Installieren Sie **URLScan**.
-   * Ändern Sie die Datei **Urlscan.ini** in **RemoveServerHeader=1**.
+  * Installieren Sie **URLScan**.
+  * Ändern Sie die Datei **Urlscan.ini** in **RemoveServerHeader=1**.
 
 * Begrenzen Sie die Größe der Abfrage, um zu verhindern, dass wichtige Dateien hochgeladen werden.
 
@@ -90,5 +92,5 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
 
 Verwandte Themen:
 
-* [Adobe Marketing Cloud-Compliance - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud-Compliance - Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

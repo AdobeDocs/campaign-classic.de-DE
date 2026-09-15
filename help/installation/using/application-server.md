@@ -3,7 +3,7 @@ product: campaign
 title: Anwendungs-Server
 description: Anwendungs-Server
 feature: Installation
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
@@ -11,15 +11,14 @@ exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
 TQID: https://experienceleague.adobe.com/QB-FFljzZBWLM17tjDhPD-zk5w96W1RfIMKX-IGDEBA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 677
-ht-degree: 5%
-
+source-wordcount: '665'
+ht-degree: 3%
 ---
-
 # Anwendungs-Server{#application-server}
 
 Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert sein und vom Adobe Campaign-Konto aus zugänglich sein.
@@ -34,7 +33,7 @@ Sie müssen zunächst ein JDK auf den Computern installieren, auf denen Sie den 
 
 Die Anwendung wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
 
-Die unterstützten Versionen werden in der Campaign-[&#x200B; (Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
+Die unterstützten Versionen werden in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
@@ -96,7 +95,7 @@ Sie können Adobe Campaign verwenden, um Berichte in Microsoft Excel und Adobe P
 
 >[!NOTE]
 >
->Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [&#x200B; für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [ für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 

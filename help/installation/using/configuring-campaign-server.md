@@ -1,9 +1,9 @@
 ---
 product: campaign
-title: Campaign-Server konfigurieren
-description: Campaign-Server konfigurieren
+title: Konfigurieren des Campaign-Servers
+description: Konfigurieren des Campaign-Servers
 feature: Installation, Instance Settings
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,22 +11,27 @@ exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 TQID: https://experienceleague.adobe.com/ghNvBVEL47nQobSHUsjVXr7XDpbRd8GBFSUy-E7bkvI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1632
+source-wordcount: '1620'
 ht-degree: 5%
-
 ---
-
 # Erste Schritte mit der Campaign-Server-Konfiguration{#gs-campaign-server-config}
 
 
@@ -35,9 +40,9 @@ In diesem Kapitel werden Server-seitige Konfigurationen beschrieben, die entspre
 
 ## Einschränkungen
 
-Diese Verfahren sind auf On **Premise-/**&#x200B;**Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
+Diese Verfahren sind auf On **Premise-/****Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch im Control Panel von [&#x200B; eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch im Control Panel von [ eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -49,7 +54,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 Campaign Classic-Konfigurationsdateien werden im **conf** des Adobe Campaign-Installationsordners gespeichert. Die Konfiguration umfasst zwei Dateien:
 
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. In dieser Datei werden die technischen Parameter des Adobe Campaign-Servers kombiniert: Diese werden von allen Instanzen gemeinsam genutzt. Einige dieser Parameter werden im Folgenden beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt) &#x200B;](../../installation/using/the-server-configuration-file.md) sind.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. In dieser Datei werden die technischen Parameter des Adobe Campaign-Servers kombiniert: Diese werden von allen Instanzen gemeinsam genutzt. Einige dieser Parameter werden im Folgenden beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt) ](../../installation/using/the-server-configuration-file.md) sind.
 * **config-`<instance>`.xml** (wobei **instance** der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
 ## Konfigurationsumfang
@@ -67,9 +72,9 @@ Konfigurieren oder passen Sie den Campaign-Server je nach Ihren Anforderungen un
 * Einrichten [redundanten Trackings](#redundant-tracking)
 * Verwalten [Hochverfügbarkeit und Workflow-Affinitäten](#high-availability-workflows-and-affinities)
 * Konfigurieren der Dateiverwaltung - [Weitere Informationen](file-res-management.md)
-   * Upload-Dateiformat begrenzen
-   * Zugriff auf öffentliche Ressourcen aktivieren
-   * Proxy-Verbindung konfigurieren
+  * Upload-Dateiformat begrenzen
+  * Zugriff auf öffentliche Ressourcen aktivieren
+  * Proxy-Verbindung konfigurieren
 * [Automatischer Prozessneustart](#automatic-process-restart)
 
 
@@ -149,7 +154,7 @@ Sie können das Speicherverzeichnis (**var**-Verzeichnis) der Adobe Campaign-Dat
 
 * Gehen Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-  Weitere Informationen hierzu finden Sie unter [Parameter &#x200B;](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Weitere Informationen hierzu finden Sie unter [Parameter ](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}

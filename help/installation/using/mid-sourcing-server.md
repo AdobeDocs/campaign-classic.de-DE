@@ -3,7 +3,7 @@ product: campaign
 title: Mid-Sourcing-Server in Campaign installieren
 description: In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers in Campaign beschrieben
 feature: Installation, Instance Settings
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -12,18 +12,16 @@ feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1149
-ht-degree: 6%
-
+source-wordcount: '1137'
+ht-degree: 5%
 ---
-
 # Mid-Sourcing-Server{#mid-sourcing-server}
 
 
 
 In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers sowie die Bereitstellung einer -Instanz beschrieben, die es Dritten ermöglicht, Nachrichten im **Mid-Sourcing**-Modus zu senden.
 
-Die „Mid-Sourcing“-Architektur wird in [Mid-Sourcing-Bereitstellung“ &#x200B;](../../installation/using/mid-sourcing-deployment.md).
+Die „Mid-Sourcing“-Architektur wird in [Mid-Sourcing-Bereitstellung“ ](../../installation/using/mid-sourcing-deployment.md).
 
 Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie die normale Installation eines Servers (siehe Standardkonfiguration). Es handelt sich um eine unabhängige Instanz mit einer eigenen Datenbank, die für die Ausführung von Sendungen verwendet werden kann. Einfach ausgedrückt: Es enthält eine zusätzliche Konfiguration, die es Remote-Instanzen ermöglicht, über sie Sendungen im Mid-Sourcing-Modus auszuführen.
 
@@ -127,7 +125,7 @@ Es ist möglich, dass eine Mid-Sourcing-Instanz von mehreren sendenden Instanzen
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: **&#x200B; web**.
+1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: ** web**.
 
 Sie müssen die Mid-Sourcing-Server-Einstellung in der Datei „serverConf.xml“ ändern. Die folgende Zeile muss zum Abschnitt „Verwalten der Affinitäten mit IP-Adressen“ unter der vorhandenen Zeile hinzugefügt werden:
 
@@ -141,9 +139,9 @@ Das Attribut &#39;@name&#39; muss die folgenden Regeln einhalten:
 
 &#39;marketing_account_operator_name&#39; bezieht sich auf den internen Namen des Mid-Sourcing-Kontos, das in der Mid-Sourcing-Instanz deklariert wurde.
 
-„affinity_name“ bezieht sich auf den beliebigen Namen, der der Affinität gegeben wurde. Dieser Name muss eindeutig sein. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`. Ziel ist es, eine Gruppe von öffentlichen IP-Adressen zu deklarieren.
+„affinity_name“ bezieht sich auf den beliebigen Namen, der der Affinität gegeben wurde. Dieser Name muss eindeutig sein. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`. Ziel ist es, eine Gruppe von öffentlichen IP-Adressen zu deklarieren.
 
-„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der &quot;.“ enthält, wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`.
+„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der &quot;.“ enthält, wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`.
 
 Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird.
 

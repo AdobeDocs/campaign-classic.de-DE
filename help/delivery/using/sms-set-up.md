@@ -9,30 +9,42 @@ exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 TQID: https://experienceleague.adobe.com/quIMssNONhvwEBVIEic9Dhe2x4-E0H5U8nIEruSUhtg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1801
+workflow-type: tm+mt
+source-wordcount: '1844'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren des SMS-Kanals in einer eigenständigen Instanz {#setting-up-sms-channel}
 
 Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone richten zu können:
@@ -54,7 +66,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 >Die Verwendung desselben Kontos und Kennworts für mehrere externe SMS-Konten kann zu Konflikten und Überschneidungen zwischen den Konten führen. Siehe die [Seite zur SMS-Fehlerbehebung](troubleshooting-sms.md#external-account-conflict).
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
-Weitere Informationen zum SMS-Protokoll und den Einstellungen finden Sie [auf dieser Seite](sms-protocol.md).
+Weiterführende Informationen zum SMS-Protokoll und dessen Einstellungen finden Sie auf dieser [Seite](sms-protocol.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -326,8 +338,8 @@ Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung i
 
 * Wenn kein Kodierungs-Mapping definiert wurde, verhält sich der Connector standardmäßig:
 
-   * Er versucht, das GSM-Alphabet zu verwenden und ordnet diesem den Wert **DATA_CODING = 0** zu.
-   * Falls die Verwendung des GSM-Alphabets nicht möglich ist, verwendet er **UCS2** und ordnet den Wert **DATA_CODING = 8** zu.
+  * Er versucht, das GSM-Alphabet zu verwenden und ordnet diesem den Wert **DATA_CODING = 0** zu.
+  * Falls die Verwendung des GSM-Alphabets nicht möglich ist, verwendet er **UCS2** und ordnet den Wert **DATA_CODING = 8** zu.
 
 * Wenn Sie die zu verwendenden Kodierungen sowie die damit verbundenen **[!UICONTROL data_coding]**-Feldwerte definieren, verwendet Adobe Campaign die Kodierungen in der Reihenfolge ihres Erscheinens in der Liste. Wenn die Verwendung der ersten Kodierung nicht möglich ist, wird die zweite verwendet, usw.
 
@@ -361,8 +373,8 @@ Die Empfänger sind in der Tabelle **[!UICONTROL Adressen unzustellbarer Sendung
 * Lassen Sie die Spalte **[!UICONTROL Schlüsselwort]** leer, wenn unabhängig vom Schlüsselwort dieselbe Nachricht gesendet werden soll.
 * Lassen Sie die Spalte **[!UICONTROL Antwort]** leer, wenn nur eine Aktion ausgeführt, aber keine Antwort gesendet werden soll. Dies ermöglicht beispielsweise das Entfernen einer Person aus der Quarantäne, wenn sie eine andere Nachricht als „STOP“ sendet.
 
-Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Daher ist die automatisch versendete Antwort möglicherweise nicht die erwartete Nachricht.
-Um dies zu vermeiden, setzen Sie je nach verwendetem Provider eine der folgenden Lösungen ein:
+Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Folglich ist die automatische Antwort, die gesendet wird, möglicherweise nicht die erwartete Nachricht.
+Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden Lösungen an:
 
 * Erstellen Sie für jedes externe Konto ein Provider-Konto.
 * Verwenden Sie das Feld **[!UICONTROL Systemtyp]** im Tab **[!UICONTROL Mobiltelefon]** > **[!UICONTROL Verbindungsparameter]**, um jede Kurzwahlnummer zu unterscheiden. Bitten Sie Ihren Provider um einen anderen Wert für jedes Konto.

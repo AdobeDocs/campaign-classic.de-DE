@@ -2,28 +2,33 @@
 product: campaign
 title: Veröffentlichen eines Web-Formulars
 description: Veröffentlichen eines Web-Formulars
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1379
+workflow-type: tm+mt
+source-wordcount: '1370'
 ht-degree: 100%
-
 ---
-
 # Veröffentlichen eines Web-Formulars{#publishing-a-web-form}
 
 
@@ -192,17 +197,17 @@ Weitere Informationen zu den verschiedenen Status eines Web-Formulars finden Sie
 
 * Wenn der Status des Web-Formulars **[!UICONTROL Veröffentlichung ausstehend]** oder **[!UICONTROL Online]** beim Export aus der ersten Instanz ist:
 
-   * Das Web-Formular ruft den Status **[!UICONTROL Veröffentlichung ausstehend]** beim Import in die neue Instanz ab.
+  * Das Web-Formular ruft den Status **[!UICONTROL Veröffentlichung ausstehend]** beim Import in die neue Instanz ab.
 
-   * Wenn das Web-Formular bereits in der neuen Instanz vorhanden ist, wird es durch die neue Version des Formulars ersetzt und nimmt den Status **[!UICONTROL Veröffentlichung ausstehend]** an, auch wenn die alte Version des Formulars den Status **[!UICONTROL Online]** hatte.
+  * Wenn das Web-Formular bereits in der neuen Instanz vorhanden ist, wird es durch die neue Version des Formulars ersetzt und nimmt den Status **[!UICONTROL Veröffentlichung ausstehend]** an, auch wenn die alte Version des Formulars den Status **[!UICONTROL Online]** hatte.
 
-   * Unabhängig davon, ob das Formular vorhanden ist oder nicht, muss das Formular [veröffentlicht](#publishing-a-form) werden, damit es mit dem Status **[!UICONTROL Online]** auf der neuen Instanz angezeigt wird und über die URL des Web-Formulars in einem Browser zugänglich ist.
+  * Unabhängig davon, ob das Formular vorhanden ist oder nicht, muss das Formular [veröffentlicht](#publishing-a-form) werden, damit es mit dem Status **[!UICONTROL Online]** auf der neuen Instanz angezeigt wird und über die URL des Web-Formulars in einem Browser zugänglich ist.
 
 * Wenn der Status des Web-Formulars beim Export **[!UICONTROL In Bearbeitung]** war:
 
-   * Wenn das Web-Formular auf der Instanz neu ist, auf der das Paket importiert wird, erhält das Web-Formular den Status **[!UICONTROL In Bearbeitung]**.
+  * Wenn das Web-Formular auf der Instanz neu ist, auf der das Paket importiert wird, erhält das Web-Formular den Status **[!UICONTROL In Bearbeitung]**.
 
-   * Wenn das Web-Formular bereits auf der neuen Instanz vorhanden ist, handelt es sich um eine Änderung in einem vorhandenen Formular. Wenn die alte Version des Formulars den Status **[!UICONTROL Online]** hatte, bleibt die alte Version online, bis die neue Version des Formulars erneut auf der neuen Instanz [veröffentlicht](#publishing-a-form) wird.
+  * Wenn das Web-Formular bereits auf der neuen Instanz vorhanden ist, handelt es sich um eine Änderung in einem vorhandenen Formular. Wenn die alte Version des Formulars den Status **[!UICONTROL Online]** hatte, bleibt die alte Version online, bis die neue Version des Formulars erneut auf der neuen Instanz [veröffentlicht](#publishing-a-form) wird.
 
   >[!NOTE]
   >

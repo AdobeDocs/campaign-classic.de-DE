@@ -3,7 +3,7 @@ product: campaign
 title: Zugriff auf Assets konfigurieren
 description: Zugriff auf Assets konfigurieren
 feature: Asset Sharing
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
@@ -11,21 +11,25 @@ exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 TQID: https://experienceleague.adobe.com/JU5h5wyP-DrlIlFFNClNinQYIcqvg13Z93bF4ykliB4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 562
+workflow-type: tm+mt
+source-wordcount: '553'
 ht-degree: 100%
-
 ---
-
-# Konfigurieren des Zugriffs auf Assets {#configuring-access-to-assets}
+# Zugriff auf Assets konfigurieren {#configuring-access-to-assets}
 
 Dieser Abschnitt beschreibt die in Adobe Campaign erforderlichen Konfigurationsschritte, um die Funktionen der Integration mit Assets bzw. der Adobe Experience Manager Assets-Bibliothek (AEM Assets) nutzen zu können.
 

@@ -3,7 +3,7 @@ product: campaign
 title: RDBMS-spezifische Empfehlungen
 description: RDBMS-spezifische Empfehlungen
 feature: Monitoring
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
@@ -11,19 +11,21 @@ exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1305
-ht-degree: 5%
-
+source-wordcount: '1293'
+ht-degree: 4%
 ---
-
 # RDBMS-spezifische Empfehlungen{#rdbms-specific-recommendations}
 
 
@@ -166,7 +168,7 @@ PostgreSQL bietet keine einfache Möglichkeit, einen Online-Tabellen-Neuaufbau d
 
 Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mithilfe spezifischer Funktionen zum Generieren der erforderlichen DDL. Mit dem folgenden SQL-Code können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, mit denen die erforderliche DDL zum Erstellen einer Tabelle generiert werden kann.
 
-* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier **&#x200B; _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
+* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier ** _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
 * Die zweite Funktion löscht dann die ursprüngliche Tabelle und benennt die Arbeitstabelle und ihre Indizes um.
 * Die Verwendung von zwei Funktionen anstelle einer bedeutet, dass Sie bei einem Fehler der ersten nicht das Risiko eingehen, die ursprüngliche Tabelle zu löschen.
 
@@ -421,7 +423,7 @@ Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu 
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([&#x200B; Seite) beschrieben &#x200B;](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([ Seite) beschrieben ](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Wartungsmaßnahmen zu erfahren.
 

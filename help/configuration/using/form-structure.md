@@ -4,26 +4,29 @@ title: Formularstruktur
 description: Formularstruktur
 feature: Application Settings
 role: Developer
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2425
+source-wordcount: '2420'
 ht-degree: 87%
-
 ---
-
 # Formularstruktur{#form-structure}
 
 
@@ -198,7 +201,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->Eine **style=„down|up**(default)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
+>Eine **style=„down|up**(default)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
@@ -315,9 +318,9 @@ Mit dem Element **`<orderby>`** können Sie die Liste auch sortieren:
 * **noAutoComplete**: Deaktiviert &quot;type-ahead&quot; (mit dem Wert &quot;true&quot;)
 * **createMode**: erstellt die Relation im laufenden Betrieb, wenn sie noch nicht vorhanden ist. Mögliche Werte:
 
-   * **none**: Deaktiviert die Erstellung. Wenn die Relation nicht vorhanden ist, wird eine Fehlermeldung angezeigt.
-   * **inline**: Erstellt die Relation mit dem Inhalt im Bearbeitungsfeld.
-   * **edition**: Zeigt das Bearbeitungsformular für die Relation an. Beim Validieren des Formulars werden die Daten gespeichert (Standardmodus).
+  * **none**: Deaktiviert die Erstellung. Wenn die Relation nicht vorhanden ist, wird eine Fehlermeldung angezeigt.
+  * **inline**: Erstellt die Relation mit dem Inhalt im Bearbeitungsfeld.
+  * **edition**: Zeigt das Bearbeitungsformular für die Relation an. Beim Validieren des Formulars werden die Daten gespeichert (Standardmodus).
 
 * **noZoom**: Kein Bearbeitungsformular für die Relation (mit dem Wert &quot;true&quot;)
 * **form**: Überschreibt das Bearbeitungsformular des Zielelements

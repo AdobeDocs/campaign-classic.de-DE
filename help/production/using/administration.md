@@ -3,7 +3,7 @@ product: campaign
 title: Administration
 description: Administration
 feature: Monitoring
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,20 +11,23 @@ exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 TQID: https://experienceleague.adobe.com/s-FvcKmvrRP7l91MkglXI2ITjrFQYbV5Lj92k6UO7WE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: '437'
 ht-degree: 96%
-
 ---
-
 # Administration{#administration}
 
 Automatisches Starten der Adobe Campaign-Module (**web**, **mta**, **wfserver** usw.) wird vom Server **nlserver** bereitgestellt.
@@ -35,13 +38,13 @@ Mit den folgenden Befehlen wird der Adobe Campaign-Dienst manuell Beginn und her
 
 * Windows:
 
-   * **net Beginn nlserver6**
-   * **net stop nlserver6**
+  * **net Beginn nlserver6**
+  * **net stop nlserver6**
 
 * Unter Linux (als root):
 
-   * **/etc/init.d/nlserver6 Beginn**
-   * **/etc/init.d/nlserver6 stop**
+  * **/etc/init.d/nlserver6 Beginn**
+  * **/etc/init.d/nlserver6 stop**
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
   >    * einen anderen Wert, wenn ein Fehler auftritt.
   >
 
-* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**&#x200B;**&#x200B;**,inmail):
+* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail):
 
   **nlserver-Beginn`<module>[@<instance>]`**
 

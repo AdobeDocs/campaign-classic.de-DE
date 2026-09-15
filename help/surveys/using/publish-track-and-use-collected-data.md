@@ -2,25 +2,27 @@
 product: campaign
 title: Erfasste Daten veröffentlichen, tracken und verwenden
 description: Erfahren Sie, wie Sie in einer Umfrage erfasste Daten veröffentlichen, tracken und verwenden.
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 TQID: https://experienceleague.adobe.com/5faTMQayKA-bxeGrKlNlk7fxZUV2-TO-eVCSe3iRrgA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 917
+workflow-type: tm+mt
+source-wordcount: '908'
 ht-degree: 100%
-
 ---
-
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
 
@@ -45,7 +47,7 @@ Sie können die Antworten auf die Umfrage in Logs und Berichten verfolgen.
 
 ### Umfrage-Logs {#survey-logs}
 
-Sie können die Antworten für jede bereitgestellte Umfrage in der Registerkarte **[!UICONTROL Protokolle]** nachverfolgen. In dieser Registerkarte wird die Liste der Benutzenden, die die Umfrage ausgefüllt haben, und ihre Herkunft angezeigt. 
+Sie können die Antworten für jede bereitgestellte Umfrage in der Registerkarte **[!UICONTROL Protokolle]** nachverfolgen. In dieser Registerkarte wird die Liste der Benutzenden, die die Umfrage ausgefüllt haben, und ihre Herkunft angezeigt.
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
@@ -125,7 +127,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
 Die durch Online-Umfragen gesammelten Daten können im Rahmen eines Zielgruppen-Workflows abgerufen werden. Verwenden Sie zu diesem Zweck die Box **[!UICONTROL Umfrageantworten]**.
 
-Im folgenden Beispiel möchten wir fünf Empfangenden mit mindestens zwei Kindern und der höchsten Punktzahl in einer Online-Umfrage ein spezielles Web-Angebot unterbreiten.Die Antworten auf diese Umfrage lauten:
+Im folgenden Beispiel möchten wir fünf Empfangenden mit mindestens zwei Kindern und der höchsten Punktzahl in einer Online-Umfrage ein spezielles Web-Angebot unterbreiten. Die Antworten auf diese Umfrage lauten:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 

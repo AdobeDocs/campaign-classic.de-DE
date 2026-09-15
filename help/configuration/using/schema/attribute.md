@@ -10,17 +10,18 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 TQID: https://experienceleague.adobe.com/kd15Dm8jY6xE0RpGTImgoL27wDbYmvuuLs-jK4-BwVo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: '1573'
 ht-degree: 1%
-
 ---
-
 # Attributelement {#attribute--element}
 
 
@@ -58,11 +59,11 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
 
   Folgende Werte sind verfügbar:
 
-   * „none“: Aussöhnung allein. Dies bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren oder einen Fehler zu erzeugen, wenn es nicht existiert.
-   * „insertOrUpdate“: Mit dem Einfügen aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, wenn es nicht vorhanden ist.
-   * „INSERT“: Einfügen. Dies bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
-   * „UPDATE“: Aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler generiert, wenn es nicht vorhanden ist.
-   * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
+  * „none“: Aussöhnung allein. Dies bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren oder einen Fehler zu erzeugen, wenn es nicht existiert.
+  * „insertOrUpdate“: Mit dem Einfügen aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, wenn es nicht vorhanden ist.
+  * „INSERT“: Einfügen. Dies bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
+  * „UPDATE“: Aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler generiert, wenn es nicht vorhanden ist.
+  * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
 * **Erweitert (Boolesch)**: Wenn diese Option aktiviert ist (@advanced=„true„), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, die zum Konfigurieren einer Liste in einem Formular verfügbar sind.
 * **applicableIf (Zeichenfolge)**: Mit diesem Attribut können Sie Felder optional machen. Das `<attribute>` Element wird bei der Aktualisierung der Datenbank berücksichtigt, wenn die Einschränkung eingehalten wird. „applicableIf“ empfängt einen XTK-Ausdruck.
@@ -70,14 +71,14 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
 * **BelongsTo (Zeichenfolge)**: Nimmt den Namen und den Namespace der Tabelle, die das Feld freigibt, und füllt das Schema, in dem das Attribut deklariert wird. (nur in einem `<schema>` verwendet).
 * **dataPolicy (Zeichenfolge)**: Ermöglicht es Ihnen, Validierungseinschränkungen für Werte anzugeben, die im SQL- oder XML-Feld zulässig sind. Die Werte für dieses Attribut sind:
 
-   * „none“: kein Wert
-   * „smartCase“: Großbuchstaben der ersten Buchstaben
-   * „lowercase“: nur Kleinbuchstaben
-   * „upperCase“: Großbuchstaben
-   * „email“: E-Mail-Adresse
-   * „Telefon“: Telefonnummer
-   * „identifier“: Kennungsname
-   * „resIdentifier“: Dateiname
+  * „none“: kein Wert
+  * „smartCase“: Großbuchstaben der ersten Buchstaben
+  * „lowercase“: nur Kleinbuchstaben
+  * „upperCase“: Großbuchstaben
+  * „email“: E-Mail-Adresse
+  * „Telefon“: Telefonnummer
+  * „identifier“: Kennungsname
+  * „resIdentifier“: Dateiname
 
 * **dbEnum (Zeichenfolge)**: Empfängt den internen Namen einer „geschlossenen“ Auflistung. Die Auflistungswerte müssen in der `<srcschema>` definiert werden.
 * **defOnDuplicate (Boolescher Wert)**: Wenn dieses Attribut aktiviert wird, wird beim Duplizieren eines Datensatzes der Standardwert (definiert in @default) automatisch erneut auf den Datensatz angewendet.
@@ -88,13 +89,13 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
 * **expr (Zeichenfolge)**: Definiert einen Ausdruck für die Feldvorberechnung. Dieses Attribut empfängt einen Xpath oder einen XTK-Ausdruck.
 * **Feature (String)** definiert ein Merkmalsfeld: Diese Felder werden zur Erweiterung der Daten in einer vorhandenen Tabelle verwendet, jedoch mit Speicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
 
-   * „Freigegeben“: Der Inhalt wird pro Datentyp in einer freigegebenen Tabelle gespeichert
-   * „Dediziert“: Der Inhalt wird in einer dedizierten Tabelle gespeichert
+  * „Freigegeben“: Der Inhalt wird pro Datentyp in einer freigegebenen Tabelle gespeichert
+  * „Dediziert“: Der Inhalt wird in einer dedizierten Tabelle gespeichert
 
   SQL-Merkmalstabellen werden automatisch auf Basis des Merkmalstyps erstellt:
 
-   * Dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * Freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * Dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * Freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Es gibt zwei Arten von Merkmalsfeldern: einfache oà<sup>1</sup> Felder, in denen ein einzelner Wert für das Merkmal zulässig ist, und oà<sup>1</sup> Multiple-Choice-Felder, in denen das Merkmal mit einem Sammlungselement verknüpft ist, das mehrere Werte enthalten kann.
 
@@ -109,19 +110,19 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
 
   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt:
 
-   * „i“: Präfix für den Typ „integer“.
-   * „D“: Präfix für den Typ „double“.
-   * „s“: Präfix für den String-Typ.
-   * „ts“: Präfix für den Typ „date“.
+  * „i“: Präfix für den Typ „integer“.
+  * „D“: Präfix für den Typ „double“.
+  * „s“: Präfix für den String-Typ.
+  * „ts“: Präfix für den Typ „date“.
 
   Um den Namen des Felds in der Tabelle vollständig zu definieren, verwenden Sie die Option &quot;@sqlname“ beim Definieren eines Attributs.
 
 * **notNull (boolesch)**: ermöglicht es Ihnen, das Verhalten von Adobe Campaign in Bezug auf die Verwaltung von NULL-Datensätzen in der Datenbank neu zu definieren. Standardmäßig sind numerische Felder nicht null und Felder vom Typ Zeichenfolge und Datum können null sein.
 * **pkgStatus (Zeichenfolge)**: Beim Package-Export werden Werte abhängig vom Wert des &quot;@pkgStatus“ berücksichtigt:
 
-   * „Always“: immer vorhanden
-   * „Nie“: Nie vorhanden
-   * „Standardwert (oder nichts)“: Der Wert wird exportiert, es sei denn, es handelt sich um den Standardwert oder um ein nicht internes Feld, das mit anderen Instanzen nicht kompatibel wäre.
+  * „Always“: immer vorhanden
+  * „Nie“: Nie vorhanden
+  * „Standardwert (oder nichts)“: Der Wert wird exportiert, es sei denn, es handelt sich um den Standardwert oder um ein nicht internes Feld, das mit anderen Instanzen nicht kompatibel wäre.
 
 * **ref (Zeichenfolge)** Dieses Attribut definiert einen Verweis auf ein `<attribute>`, das von mehreren Schemata gemeinsam genutzt wird (Definition-Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
 * **required (boolean)**: Wenn dieses Attribut aktiviert ist (@required=„true„), wird das Feld in der Benutzeroberfläche hervorgehoben. Die Beschriftung des Felds wird in den Formularen rot angezeigt.
@@ -137,32 +138,32 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
 
   Liste der verfügbaren Typen:
 
-   * BELIEBIGE
-   * Eimer
-   * Klecks
-   * Boolesch
-   * Byte
-   * CDATA
-   * datetime
-   * datetimets
-   * datetimenotz
-   * date
-   * double
-   * Aufzählung
-   * float
-   * HTML
-   * int64
-   * link
-   * Lang
-   * Memo
-   * MNTOKEN
-   * Prozent
-   * Primärschlüssel
-   * Kurz
-   * Zeichenfolge
-   * time
-   * timespan
-   * uuid
+  * BELIEBIGE
+  * Klasse
+  * Klecks
+  * Boolesch
+  * Byte
+  * CDATA
+  * datetime
+  * datetimets
+  * datetimenotz
+  * date
+  * double
+  * Aufzählung
+  * float
+  * HTML
+  * int64
+  * link
+  * Lang
+  * Memo
+  * MNTOKEN
+  * Prozent
+  * Primärschlüssel
+  * Kurz
+  * Zeichenfolge
+  * time
+  * timespan
+  * uuid
 
   Wenn das Attribut &quot;@type“ leer gelassen wird, verknüpft Adobe Campaign standardmäßig eine Zeichenfolge (STRING) mit einer Länge von 100 mit dem Feld.
 

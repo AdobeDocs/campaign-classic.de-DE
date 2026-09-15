@@ -3,7 +3,7 @@ product: campaign
 title: Sicherheitszonen konfigurieren
 description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
 feature: Installation, Instance Settings
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,21 +11,25 @@ exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 TQID: https://experienceleague.adobe.com/eL2iPF1yqueza7P0yRE0KEPdxEezRW81gT4QgRno3Ys
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1542
-ht-degree: 11%
-
+source-wordcount: '1530'
+ht-degree: 10%
 ---
-
 # Definieren von Sicherheitszonen (On-Premise){#defining-security-zones}
 
 
@@ -211,7 +215,7 @@ Diese Konfiguration erfolgt im Campaign-Explorer:
    ![](assets/enum_securityzone.png)
 
 1. Klicken Sie für jede Sicherheitszone, die in der Konfigurationsdatei des Servers definiert ist, auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-1. Geben Sie im Feld **[!UICONTROL Interner Name]** den Namen der Zone ein, die in der Datei **serverConf.xml** definiert ist. Er entspricht dem Attribut &lbrace;0@name **des `<securityzone>`.** Geben Sie den Titel, der mit dem internen Namen verknüpft ist, im Feld **label** ein.
+1. Geben Sie im Feld **[!UICONTROL Interner Name]** den Namen der Zone ein, die in der Datei **serverConf.xml** definiert ist. Er entspricht dem Attribut {0@name **des `<securityzone>`.** Geben Sie den Titel, der mit dem internen Namen verknüpft ist, im Feld **label** ein.
 
    ![](assets/enum_addsecurityvalue.png)
 
@@ -239,36 +243,36 @@ Sobald die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** k
 
 * Minimieren Sie die Verwendung von sessionTokenOnly=„true“:
 
-   * Warnung: Wenn dieses Attribut auf „true“ gesetzt ist, kann der Benutzer einem „CRSF **Angriff ausgesetzt**.
-   * Darüber hinaus wird das sessionToken-Cookie nicht mit einem „httpOnly“-Flag gesetzt, sodass es von Client-seitigem JavaScript-Code gelesen werden kann.
-   * Bei Verwendung von Message Center mit mehreren Ausführungsinstanzen ist jedoch der Einsatz von sessionTokenOnly unumgänglich: Erstellen Sie eine neue Sicherheitszone, setzen Sie sessionTokenOnly auf &quot;true&quot;, und fügen Sie dieser Zone **nur die benötigten IP-Adressen** hinzu.
+  * Warnung: Wenn dieses Attribut auf „true“ gesetzt ist, kann der Benutzer einem „CRSF **Angriff ausgesetzt**.
+  * Darüber hinaus wird das sessionToken-Cookie nicht mit einem „httpOnly“-Flag gesetzt, sodass es von Client-seitigem JavaScript-Code gelesen werden kann.
+  * Bei Verwendung von Message Center mit mehreren Ausführungsinstanzen ist jedoch der Einsatz von sessionTokenOnly unumgänglich: Erstellen Sie eine neue Sicherheitszone, setzen Sie sessionTokenOnly auf &quot;true&quot;, und fügen Sie dieser Zone **nur die benötigten IP-Adressen** hinzu.
 
 * Legen Sie nach Möglichkeit alle „allowHTTP“, „showErrors“ auf „false“ fest (nicht für „localhost„) und überprüfen Sie sie.
 
-   * allowHTTP = &quot;false&quot;: zwingt Benutzer, HTTPS zu verwenden.
-   * showErrors = „false“: Blendet technische Fehler (einschließlich SQL-Fehler) aus. Es verhindert die Anzeige zu vieler Informationen, verringert jedoch die Fähigkeit des Marketing-Experten, Fehler zu beheben (ohne zusätzliche Informationen von einem Administrator anzufordern)
+  * allowHTTP = &quot;false&quot;: zwingt Benutzer, HTTPS zu verwenden.
+  * showErrors = „false“: Blendet technische Fehler (einschließlich SQL-Fehler) aus. Es verhindert die Anzeige zu vieler Informationen, verringert jedoch die Fähigkeit des Marketing-Experten, Fehler zu beheben (ohne zusätzliche Informationen von einem Administrator anzufordern)
 
 * Setzen Sie allowDebug nur für IPs, die von Marketing-Benutzern/Administratoren verwendet werden und Umfragen, WebApps und Berichte erstellen (in der Vorschau anzeigen), auf „true“. Mit diesem Flag können diese IPs Relay-Regeln anzeigen und debuggen.
 
-   * Wenn allowDebug auf false festgelegt ist, wird Folgendes ausgegeben:
+  * Wenn allowDebug auf false festgelegt ist, wird Folgendes ausgegeben:
 
-     ```
-     <redir status='OK' date='...' sourceIP='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' sourceIP='...'/>
+    ```
 
-   * Wenn allowDebug auf true festgelegt ist, wird Folgendes ausgegeben:
+  * Wenn allowDebug auf true festgelegt ist, wird Folgendes ausgegeben:
 
-     ```
-     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+    ```
 
 * Legen Sie nie allowEmptyPassword, allowUserPassword, allowSQLInjection auf „true“ fest.
 
-   * **allowEmptyPassword**: Weist Benutzern ein leeres Kennwort zu. Wenn dies der Fall ist, benachrichtigen Sie alle Ihre Benutzer, um sie aufzufordern, ein Passwort mit einer Frist festzulegen. Nach Ablauf dieser Frist ändern Sie dieses Attribut in „false“.
+  * **allowEmptyPassword**: Weist Benutzern ein leeres Kennwort zu. Wenn dies der Fall ist, benachrichtigen Sie alle Ihre Benutzer, um sie aufzufordern, ein Passwort mit einer Frist festzulegen. Nach Ablauf dieser Frist ändern Sie dieses Attribut in „false“.
 
-   * **allowUserPassword** : Ermöglicht Benutzern das Senden ihrer Anmeldeinformationen als Parameter (sodass sie von Apache/IIS/Proxy protokolliert werden). Diese Funktion wurde in der Vergangenheit verwendet, um die API-Nutzung zu vereinfachen. Sie können in Ihrem Cookbook (oder in der Spezifikation) nachsehen, ob einige Drittanbieterprogramme dies verwenden. Wenn ja, müssen Sie sie benachrichtigen, damit sie die Art und Weise, wie sie unsere API verwenden, ändern und diese Funktion so bald wie möglich entfernen können.
+  * **allowUserPassword** : Ermöglicht Benutzern das Senden ihrer Anmeldeinformationen als Parameter (sodass sie von Apache/IIS/Proxy protokolliert werden). Diese Funktion wurde in der Vergangenheit verwendet, um die API-Nutzung zu vereinfachen. Sie können in Ihrem Cookbook (oder in der Spezifikation) nachsehen, ob einige Drittanbieterprogramme dies verwenden. Wenn ja, müssen Sie sie benachrichtigen, damit sie die Art und Weise, wie sie unsere API verwenden, ändern und diese Funktion so bald wie möglich entfernen können.
 
-   * **allowSQLInjection** : Ermöglicht Benutzern das Durchführen von SQL-Injektionen mithilfe einer alten Syntax. Dieses Attribut sollte auf „false“ gesetzt werden. Sie können /nl/jsp/ping.jsp?zones=true verwenden, um die Konfiguration Ihrer Sicherheitszone zu überprüfen. Auf dieser Seite wird der aktive Status der Sicherheitsmaßnahmen (berechnet mit diesen Sicherheitsflags) für die aktuelle IP-Adresse angezeigt.
+  * **allowSQLInjection** : Ermöglicht Benutzern das Durchführen von SQL-Injektionen mithilfe einer alten Syntax. Dieses Attribut sollte auf „false“ gesetzt werden. Sie können /nl/jsp/ping.jsp?zones=true verwenden, um die Konfiguration Ihrer Sicherheitszone zu überprüfen. Auf dieser Seite wird der aktive Status der Sicherheitsmaßnahmen (berechnet mit diesen Sicherheitsflags) für die aktuelle IP-Adresse angezeigt.
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 

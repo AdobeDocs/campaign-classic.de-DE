@@ -3,7 +3,7 @@ product: campaign
 title: Nutzung von SFTP-Servern
 description: Erfahren Sie mehr über die Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung
 feature: Troubleshooting
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,23 +11,29 @@ exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 TQID: https://experienceleague.adobe.com/RrVBjDmV2i349u1NCfjtDApsuAIEOVwbxalPKnKETI4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1178
+workflow-type: tm+mt
+source-wordcount: '1169'
 ht-degree: 100%
-
 ---
-
 # Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung {#sftp-server-usage}
 
 ## Allgemeine Empfehlungen zu SFTP-Servern {#global-recommendations}
@@ -42,7 +48,7 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 * Beseitigen Sie Fehler/Ausnahmen.
 
-* Standardmäßig befinden sich alle von Ihnen erstellten Ordner nur für Ihre Kennung im Lese-/Schreibmodus. Beim Erstellen von Ordnern, auf die Campaign zugreifen muss, müssen Sie darauf achten, dass Sie Lese-/Schreibberechtigungen für die gesamte Gruppe konfigurieren.Andernfalls können Workflows aus Sicherheitsgründen möglicherweise keine Dateien erstellen/löschen, da sie unter einer anderen Kennung innerhalb derselben Gruppe ausgeführt werden.
+* Standardmäßig befinden sich alle von Ihnen erstellten Ordner nur für Ihre Kennung im Lese-/Schreibmodus. Beim Erstellen von Ordnern, auf die Campaign zugreifen muss, müssen Sie darauf achten, dass Sie Lese-/Schreibberechtigungen für die gesamte Gruppe konfigurieren. Andernfalls können Workflows aus Sicherheitsgründen möglicherweise keine Dateien erstellen/löschen, da sie unter einer anderen Kennung innerhalb derselben Gruppe ausgeführt werden.
 
 * Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Die öffentlichen IPs können über das Control Panel hinzugefügt werden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 

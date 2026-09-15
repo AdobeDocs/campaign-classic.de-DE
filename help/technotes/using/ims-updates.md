@@ -8,18 +8,19 @@ exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 TQID: https://experienceleague.adobe.com/JEGK7xRIWwipkqKnRGEByK7pCBCkgXzOrbMPHoXCDUU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 617
+workflow-type: tm+mt
+source-wordcount: '617'
 ht-degree: 100%
-
 ---
-
 # Aktualisieren Ihrer Umgebung für die Verbindung zu Adobe Campaign mit IMS {#acc-ims-faq}
 
 
@@ -48,11 +49,11 @@ Wenn Sie bereits ein Upgrade durchgeführt haben, aber eine alte Version von Mic
 
   Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 
-   * Gold Standard 11. [Weitere Informationen](../../rn/using/gold-standard.md)
-   * Campaign-Version 21.1.3. [Weitere Informationen](../../rn/using/latest-release.md)
-   * Campaign-Version 20.2.5.
-   * Campaign-Version 20.1.4.
-   * Campaign-Version 19.2.4.
+  * Gold Standard 11. [Weitere Informationen](../../rn/using/gold-standard.md)
+  * Campaign-Version 21.1.3. [Weitere Informationen](../../rn/using/latest-release.md)
+  * Campaign-Version 20.2.5.
+  * Campaign-Version 20.1.4.
+  * Campaign-Version 19.2.4.
 
   Diese Versionen enthalten ein neues Verbindungsprotokoll. Ein Upgrade ist sowohl für den Campaign-Server als auch für die Client-Konsole erforderlich: Nachdem alle Instanzen ein Upgrade erhalten haben, muss die Client-Konsole auf diese Version aktualisiert werden, damit nach dem **30. Juni 2021** eine Verbindung zu Campaign hergestellt werden kann.
 

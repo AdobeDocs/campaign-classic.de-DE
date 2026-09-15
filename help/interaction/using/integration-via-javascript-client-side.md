@@ -10,18 +10,19 @@ exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 TQID: https://experienceleague.adobe.com/o78NLFSbsXqQgJQEU5KSN5PkheQHtHlPh2KdB0RBINA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1164
+workflow-type: tm+mt
+source-wordcount: '1164'
 ht-degree: 100%
-
 ---
-
 # JavaScript-Integration (clientseitig){#integration-via-javascript-client-side}
 
 
@@ -61,7 +62,7 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
    Die HTML-Seite muss ein
 
    -Element mit einem „@id“-Attribut enthalten, das den Wert des internen Namens der erstellten Platzierung hat („i_internal name space“). Das Angebot wird in dieses
-Element nach Interaktion eingefügt.
+   Element nach Interaktion eingefügt.
 
    Im vorliegenden Beispiel nimmt das Attribut @id den Wert &quot;i_SPC12&quot; an, wobei &quot;SPC12&quot; der interne Name der zuvor erstellten Platzierung ist:
 
@@ -167,7 +168,7 @@ Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierte
 
 Der Parameter „**c**“ erhält die Liste interner Namen der Kategorien. Dieser Parameter ist optional.
 
-Der Parameter „**th**“ erhält die Liste an Themen.Dieser Parameter ist optional.
+Der Parameter „**th**“ erhält die Liste an Themen. Dieser Parameter ist optional.
 
 Der Parameter „**gctx**“ erhält die globalen Abfragedaten (Kontext) der gesamten Seite. Dieser Parameter ist optional.
 
@@ -298,7 +299,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Der Parameter &quot;**env**&quot; nimmt als Wert den internen Namen der Live-Umgebung an.
 
-   Der Wert des Parameters „**cb**“ ist der Name der Funktion, die den vom Modul zurückgegebenen XML-Knoten interpretieren muss.In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
+   Der Wert des Parameters „**cb**“ ist der Name der Funktion, die den vom Modul zurückgegebenen XML-Knoten interpretieren muss. In unserem Beispiel öffnet die aufgerufene Funktion ein modales Fenster (alert()-Funktion).
 
    Der vom Angebotsmodul zurückgegebene XML-Knoten stellt sich wie folgt dar:
 

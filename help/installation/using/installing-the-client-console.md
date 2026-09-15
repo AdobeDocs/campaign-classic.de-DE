@@ -10,17 +10,17 @@ exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 TQID: https://experienceleague.adobe.com/TSJbp95dm2tysQBxN7E7JktnHmMJndR1hXVvKkLzRIg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1174
-ht-degree: 31%
-
+source-wordcount: '1197'
+ht-degree: 32%
 ---
-
 # Installieren und Aktualisieren der Campaign-Client-Konsole{#installing-the-client-console}
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können.
@@ -39,7 +39,7 @@ Bitte überprüfen Sie die folgenden Details, um zu verstehen, was für Ihre Imp
 
 >[!CAUTION]
 >
->* Die Campaign-Client-Konsole und der Campaign-Anwendungs **Server müssen auf derselben Produktversion ausgeführt**. Adobe empfiehlt außerdem dringend die Verwendung **desselben Produkt-Builds**. In diesem Abschnitt erfahren Sie, wie Sie Ihre Campaign-Client- und -Server[Versionen &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Die Campaign-Client-Konsole und der Campaign-Anwendungs **Server müssen auf derselben Produktversion ausgeführt**. Adobe empfiehlt außerdem dringend die Verwendung **desselben Produkt-Builds**. In diesem Abschnitt erfahren Sie, wie Sie Ihre Campaign-Client- und -Server[Versionen ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
 >* Der Zugriff auf den Installationsordner, in dem die Konsole installiert wird, sollte auf den vorgesehenen Benutzer beschränkt sein, sodass Schreibberechtigungen entsprechend eingeschränkt werden.
 
@@ -57,7 +57,7 @@ Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(en) zu i
 
 1. Adobe kann direkt bereitstellen. Sobald die Konsole aktualisiert wurde, werden Benutzer in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
 
-1. Sie können von „Software Distribution“ auf [&#x200B; Client-Konsole(en) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
+1. Sie können von „Software Distribution“ auf [ Client-Konsole(en) ](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
 
    **Benutzende benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator eine Bereitstellung für alle Client-Konsolen durchführen**
 
@@ -180,6 +180,6 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 In diesem Video wird gezeigt, wie Sie den Adobe Campaign-Client installieren und einrichten.
 
->[!VIDEO](https://video.tv.adobe.com/v/38268?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

@@ -8,28 +8,38 @@ exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 TQID: https://experienceleague.adobe.com/-e39I2kK3veYtZTufN0ZZrnZPAAco47dU8HFlCtlIxY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 8283
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '8527'
+ht-degree: 99%
 ---
-
 # Protokoll und Einstellungen des SMS-Connectors {#sms-connector-protocol}
 
 >[!NOTE]
@@ -44,7 +54,7 @@ SMS ist zwar auf das Senden kurzer Textnachrichten ohne Formatierung beschränkt
 Es gibt zwei Möglichkeiten, eine SMS zu senden:
 
 * Manuell von einem Telefon aus (die übliche Art und Weise, wie Personen direkt kommunizieren),
-* Versenden Sie über das Internet, so wie Adobe Campaign Nachrichten sendet. Dazu benötigen Sie einen SMS-Dienstleister, der das Internet mit dem Mobilfunknetz verbindet.
+* Über das Internet (die Art und Weise, wie Adobe Campaign Nachrichten sendet). Dazu benötigen Sie einen SMS-Dienstleister, der das Internet mit dem Mobilfunknetz verbindet.
 Adobe Campaign verwendet das SMPP-Protokoll, um SMS an einen Dienstleister zu senden.
 
 In diesem Dokument wird die Einrichtung einer Verbindung zwischen Adobe Campaign und einem SMPP-Provider erläutert.
@@ -95,8 +105,8 @@ Die Netzwerkgeräte auf der Seite des SMS-Dienstleisters werden oft als SMSC bez
 
 ### SMPP-Verbindungen {#smpp-connections}
 
-Adobe Campaign stellt über TCP eine Verbindung zu den Netzwerkgeräten des SMS-Dienstleisters her. Das SMPP-Protokoll legt permanente TCP-Verbindungen von Adobe Campaign zum Anbieter fest. TCP-Verbindungen werden immer von Adobe Campaign initiiert, auch für den Empfang von Nachrichten.
-SMPP öffnet 1 oder 2 TCP-Verbindungen, je nach Modus. Alle Verbindungen werden immer von Adobe Campaign initiiert.
+Adobe Campaign verbindet sich über TCP mit den Netzwerkgeräten des SMS-Dienstleisters. Das SMPP-Protokoll stellt permanente TCP-Verbindungen von Adobe Campaign zum Provider her. Die TCP-Verbindungen werden immer von Adobe Campaign initiiert, auch wenn es um den Empfang von Nachrichten geht.
+SMPP öffnet je nach Modus 1 oder 2 TCP-Verbindungen. Alle Verbindungen werden immer von Adobe Campaign initiiert.
 
 Das SMPP-Protokoll kann in zwei Modi verwendet werden:
 
@@ -530,8 +540,9 @@ Beispiel einer Übertragung mit einem maximalen Fenster von 4:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-Das Fenster hilft, den Durchsatz zu erhöhen, wenn der Netzwerk-Link eine hohe Latenz aufweist. Der Wert des Fensters muss mindestens der Anzahl der SMS multipliziert mit der Latenz des Links in Sekunden entsprechen, damit der Connector nicht auf ein `SUBMIT_SM_RESP` wartet, bevor die nächste Nachricht gesendet wird.
-Wenn das Fenster zu groß ist, kann es bei Verbindungsproblemen dazu kommen, dass Sie mehr doppelte Nachrichten versenden. Außerdem haben die meisten Anbieter sehr strenge Beschränkungen für das Fenster und lehnen Nachrichten ab, die diese Grenze überschreiten.
+Das Fenster hilft, den Durchsatz zu erhöhen, wenn die Netzwerkverbindung eine hohe Latenz aufweist.  Der Wert des Fensters muss mindestens der Anzahl der SMS/s entsprechen, multipliziert mit der Latenz des Links
+In Sekunden, sodass der Connector nie auf einen `SUBMIT_SM_RESP` wartet, bevor er die nächste Nachricht sendet.
+Wenn das Fenster zu groß ist, kann es passieren, dass Sie bei Verbindungsproblemen mehr doppelte Nachrichten senden. Außerdem haben die meisten Provider ein sehr strenges Limit für das Fenster und lehnen Nachrichten ab, die das Limit überschreiten.
 
 Berechnung der optimalen Formel für das Übertragungsfenster:
 
@@ -847,21 +858,21 @@ Wenn Sie mehrere Konten in derselben Adobe Campaign-Instanz haben, die eine Verb
 ### Aktivieren der ausführlichen SMPP-Verfolgung während der Prüfungen {#enable-verbose}
 
 Sie sollten während der Prüfungen immer die ausführliche SMPP-Verfolgung aktivieren.
-Sie können die Protokolle zwar nicht selbst überprüfen, aber die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) kann Ihnen leichter helfen.
+Auch wenn Sie die Logs nicht selbst überprüfen können, kann die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Ihnen leichter helfen.
 
 ### Testen Ihrer SMS {#test}
 
 * **Senden von SMS mit allen Arten von Zeichen**
 Wenn Sie eine SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
 
-* **Überprüfen, ob SR ordnungsgemäß verarbeitet werden**
-Die SMS sollte im Versandlog als empfangen gekennzeichnet sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
+* **Sicherstellen, dass SR ordnungsgemäß verarbeitet werden**
+Die SMS sollte im Versandprotokoll als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
-Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
+  Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
 
-* **Überprüfen, ob MO verarbeitet werden**
-Wenn Sie MO verarbeiten müssen (automatische Antworten, Speichern von MO in der Datenbank), führen Sie einige Tests durch. Senden Sie ein paar SMS für alle Keywords für automatische Antworten und überprüfen Sie, ob die Antwort schnell genug erfolgt, d. h. innerhalb weniger Sekunden.
-Überprüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP` antwortet (command_status=0).
+* **Prüfen, ob MO verarbeitet werden**
+Wenn Sie MO verarbeiten müssen (automatische Antworten, Speicherung von MO in der Datenbank usw.) Versuchen Sie, einige Tests durchzuführen. Senden Sie einige SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
+Prüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet.
 
 ### Überprüfen der PDUs {#check-pdus}
 

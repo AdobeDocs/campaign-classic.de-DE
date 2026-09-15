@@ -9,23 +9,28 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 TQID: https://experienceleague.adobe.com/uJW1-zNfhCUn15Nxa9T7bXTzX6nGdZJ1QfuUa38L7HY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1602
+workflow-type: tm+mt
+source-wordcount: '1602'
 ht-degree: 100%
-
 ---
-
 # Auswählen der Zielgruppe für Ihre Kampagnen {#marketing-campaign-deliveries}
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
@@ -74,7 +79,7 @@ Wählen Sie die gewünschten Aktivitäten aus den links vom Arbeitsbereich liege
 
 ![](assets/s_ncs_user_edit_op_wf_tab_a.png)
 
-Verbinden Sie die für die Zielgruppenerstellung erforderlichen Zielgruppenbestimmungs- und Planungsabfragen im Diagramm miteinander.Sie können die Zielgruppenbestimmung bereits während der Erstellung ausführen, um die aus der Datenbank extrahierte Population zu überprüfen.
+Verbinden Sie die für die Zielgruppenerstellung erforderlichen Zielgruppenbestimmungs- und Planungsabfragen im Diagramm miteinander. Sie können die Zielgruppenbestimmung bereits während der Erstellung ausführen, um die aus der Datenbank extrahierte Population zu überprüfen.
 
 >[!NOTE]
 >
@@ -111,55 +116,55 @@ Bei Aktionen im Zusammenhang mit der Ausführung des Zielgruppenbestimmungs-Work
 
 * Starten oder neu starten
 
-   * Über das Symbol **[!UICONTROL Start]** können Sie den Zielgruppenbestimmungs-Workflow starten. Bei Klick auf das Symbol werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge zum Endpunkt).
+  * Über das Symbol **[!UICONTROL Start]** können Sie den Zielgruppenbestimmungs-Workflow starten. Bei Klick auf das Symbol werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge zum Endpunkt).
 
-     ![](assets/s_user_segmentation_start.png)
+    ![](assets/s_user_segmentation_start.png)
 
-     Die Anfrage wird vom Server erfasst, was sich im Ausführungsstatus widerspiegelt:
+    Die Anfrage wird vom Server erfasst, was sich im Ausführungsstatus widerspiegelt:
 
-     ![](assets/s_user_segmentation_start_status.png)
+    ![](assets/s_user_segmentation_start_status.png)
 
-     Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
+    Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
 
-   * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist:
+  * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist:
 
-     ![](assets/s_user_segmentation_restart_status.png)
+    ![](assets/s_user_segmentation_restart_status.png)
 
-     Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
+    Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
 
 * Anhalten oder aussetzen
 
-   * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
+  * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
 
-     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zum Neustart keine andere Aktivität gestartet.
+    Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zum Neustart keine andere Aktivität gestartet.
 
-     ![](assets/s_user_segmentation_pause.png)
+    ![](assets/s_user_segmentation_pause.png)
 
-     Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt:
+    Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt:
 
-     ![](assets/s_user_segmentation_pause_status.png)
+    ![](assets/s_user_segmentation_pause_status.png)
 
-     Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+    Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
-     ![](assets/s_user_segmentation_donotexecute.png)
+    ![](assets/s_user_segmentation_donotexecute.png)
 
-     Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
+    Die Konfiguration wird von einem spezifischen Symbol in der Grafik repräsentiert.
 
-     ![](assets/s_user_segmentation_pause_activity.png)
+    ![](assets/s_user_segmentation_pause_activity.png)
 
-     >[!NOTE]
-     >
-     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
+    >[!NOTE]
+    >
+    >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
 
-     Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
+    Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
 
-   * Klicken Sie auf das Symbol **[!UICONTROL Anhalten]**, um die Ausführung zu stoppen.
+  * Klicken Sie auf das Symbol **[!UICONTROL Anhalten]**, um die Ausführung zu stoppen.
 
-     ![](assets/s_user_segmentation_stop.png)
+    ![](assets/s_user_segmentation_stop.png)
 
-     Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt:
+    Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt:
 
-     ![](assets/s_user_segmentation_stop_status.png)
+    ![](assets/s_user_segmentation_stop_status.png)
 
   Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
 
@@ -258,6 +263,6 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population definieren. 
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/27488?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

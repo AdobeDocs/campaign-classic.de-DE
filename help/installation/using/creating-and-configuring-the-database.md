@@ -3,7 +3,7 @@ product: campaign
 title: Datenbank erstellen und konfigurieren
 description: Datenbank erstellen und konfigurieren
 feature: Installation, Instance Settings
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,27 +11,32 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 TQID: https://experienceleague.adobe.com/wu8xP0ls5jakl0XYtBV5Ktag7hCBFwl4o0EiqNrUMnc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1375
+source-wordcount: '1363'
 ht-degree: 2%
-
 ---
-
 # Datenbank erstellen und konfigurieren{#creating-and-configuring-the-database}
 
 Beim Erstellen einer Datenbank bietet Adobe Campaign zwei verschiedene Optionen:
 
-1. Datenbank erstellen oder wiederverwenden: Wählen Sie diese Option, wenn Sie eine neue Datenbank erstellen oder eine vorhandene wiederverwenden möchten. Siehe [&#x200B; 1: Erstellen/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
+1. Datenbank erstellen oder wiederverwenden: Wählen Sie diese Option, wenn Sie eine neue Datenbank erstellen oder eine vorhandene wiederverwenden möchten. Siehe [ 1: Erstellen/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
 1. Verwenden einer vorhandenen Datenbank: Wählen Sie diese Option, wenn bereits eine leere Datenbank von Ihrem Administrator erstellt wurde und Sie sie verwenden möchten, oder um die Struktur einer vorhandenen Datenbank zu erweitern. Siehe [Fall 2: Verwenden einer vorhandenen Datenbank](#case-2--using-an-existing-database).
 
 Die Konfigurationsschritte werden nachfolgend beschrieben.
@@ -51,7 +56,7 @@ Die folgenden Schritte sind erforderlich:
 * [Schritt 1: Auswählen der Datenbank-Engine](#step-1---selecting-the-database-engine),
 * [Schritt 2: Herstellen einer Verbindung mit dem Server](#step-2---connecting-to-the-server),
 * [Schritt 3: Verbindung und Merkmale der Datenbank](#step-3---connection-and-characteristics-of-the-database),
-* [Schritt 4: Zu installierende &#x200B;](#step-4---packages-to-install),
+* [Schritt 4: Zu installierende ](#step-4---packages-to-install),
 * [Schritt 5 - Erstellungsschritte](#step-5---creation-steps),
 * [Schritt 6: Erstellen der Datenbank](#step-6---creating-the-database).
 
@@ -61,7 +66,7 @@ Wählen Sie in der Dropdown-Liste die Datenbank-Engine aus.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Die unterstützten Datenbanken sind in der Campaign-[&#x200B; (Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
+Die unterstützten Datenbanken sind in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
 
 Identifizieren Sie den Server und wählen Sie den auszuführenden Vorgangstyp aus. In diesem Fall **[!UICONTROL Erstellen oder recyceln Sie eine Datenbank]**.
 
@@ -133,10 +138,10 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung d
 
   Diese Parameter erhalten die exakten Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im Knoten **[!UICONTROL Administration > Plattform > Optionen]** in den folgenden Optionen gespeichert (siehe [diesen Abschnitt](../../installation/using/configuring-campaign-options.md#database)):
 
-   * **WdbcOptions_TableSpaceUser**: Benutzertabellen basierend auf einem Schema
-   * **WdbcOptions_TableSpaceIndex**: Index der Benutzertabellen basierend auf einem Schema
-   * **WdbcOptions_TableSpaceWork**: Arbeitstabellen ohne Schema
-   * **WdbcOptions_TableSpaceWorkIndex**: Index der Arbeitstabellen ohne Schema
+  * **WdbcOptions_TableSpaceUser**: Benutzertabellen basierend auf einem Schema
+  * **WdbcOptions_TableSpaceIndex**: Index der Benutzertabellen basierend auf einem Schema
+  * **WdbcOptions_TableSpaceWork**: Arbeitstabellen ohne Schema
+  * **WdbcOptions_TableSpaceWorkIndex**: Index der Arbeitstabellen ohne Schema
 
 * Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, in der Regel als Mitglied der **oinstall**-Gruppe.
 * Mit **[!UICONTROL Option „Administratorkennwort festlegen oder ändern]** können Sie das mit dem Adobe Campaign-Benutzer verknüpfte Kennwort mit Administratorrechten eingeben.
@@ -171,7 +176,7 @@ Um eine vorhandene Datenbank zu verwenden, gehen Sie wie folgt vor:
 
 * [Schritt 1: Auswählen des Datenbank-](#step-1---choosing-the-database-engine),
 * [Schritt 2: Datenbankverbindungseinstellungen](#step-2---database-connection-settings),
-* [Schritt 3: Zu installierende &#x200B;](#step-3---packages-to-install),
+* [Schritt 3: Zu installierende ](#step-3---packages-to-install),
 * [Schritt 4: Erstellungsschritte](#step-4---creation-steps),
 * [Schritt 5: Erstellen der Datenbank](#step-5---creating-the-database).
 
@@ -191,10 +196,10 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Server-Iden
 * Für eine **PostgreSQL**-Engine müssen Sie den auf dem Anwendungsserver definierten DNS-Namen (oder die IP-Adresse) angeben, um auf den Datenbankserver zugreifen zu können.
 * Für eine **Microsoft SQL Server**-Engine müssen Sie Folgendes definieren:
 
-   1. den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist,
-   1. Die Sicherheitsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
+  1. den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist,
+  1. Die Sicherheitsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
 
-      ![](assets/s_ncs_install_db_mssql_exists_01.png)
+     ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
 ### Schritt 2: Einstellungen der Datenbankverbindung {#step-2---database-connection-settings}
 

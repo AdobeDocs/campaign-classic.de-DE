@@ -8,18 +8,20 @@ exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 TQID: https://experienceleague.adobe.com/FSudiqp5MAVKsZKdYWLyzdUKMxobJj6Yj7UbAxvDJ38
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 372
+workflow-type: tm+mt
+source-wordcount: '372'
 ht-degree: 100%
-
 ---
-
 # E-Mail-Empfang{#inbound-emails}
 
 
@@ -40,21 +42,21 @@ In der ersten Registerkarte der Aktivität **Eingehende E-Mails** können Sie di
 
      ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL POP3-Server]**
+     * **[!UICONTROL POP3-Server]**
 
-        Name des POP3-Servers.
+       Name des POP3-Servers.
 
-      * **[!UICONTROL POP3-Konto]**
+     * **[!UICONTROL POP3-Konto]**
 
-        Name des Benutzers.
+       Name des Benutzers.
 
-      * **[!UICONTROL Passwort]**
+     * **[!UICONTROL Passwort]**
 
-        Passwort des Benutzerkontos.
+       Passwort des Benutzerkontos.
 
-      * **[!UICONTROL Port]**
+     * **[!UICONTROL Port]**
 
-        Port-Nummer der POP3-Verbindung. Der Standard-Port ist 110.
+       Port-Nummer der POP3-Verbindung. Der Standard-Port ist 110.
 
    * **[!UICONTROL Stoppen, sobald eine E-Mail verarbeitet wurde]**
 

@@ -5,12 +5,10 @@ description: Erfahren Sie mehr über das Package "Dezentrales Marketing".
 hide: true
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
-
 ---
-
 
 # Dezentrales Marketing{#distributed-marketing}
 

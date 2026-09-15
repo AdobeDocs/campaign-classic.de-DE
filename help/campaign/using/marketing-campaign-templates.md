@@ -9,23 +9,28 @@ exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 TQID: https://experienceleague.adobe.com/mFkyDINneoodiL3Liiao0u3uZQsGaZCG1-BEu6Vqjos
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1187
+workflow-type: tm+mt
+source-wordcount: '1187'
 ht-degree: 100%
-
 ---
-
 # Erstellen und Konfigurieren von Kampagnenvorlagen {#campaign-templates}
 
 Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** gespeichert. Eine Standardvorlage wird standardmäßig bereitgestellt. Dies ermöglicht die Erstellung einer neuen Kampagne unter Verwendung aller verfügbarer Module (Dokumente, Aufgaben, Testadressen usw.). Die angebotenen Module hängen von Ihren Berechtigungen und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
@@ -132,7 +137,7 @@ werden diese Links und Tabs angezeigt:
 
 * **Zielgruppenbestimmungen und Workflows**
 
-  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch basierend auf dieser Vorlage einzeln für jede Kampagne konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie [in diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 

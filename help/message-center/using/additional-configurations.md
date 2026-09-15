@@ -10,19 +10,21 @@ exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 TQID: https://experienceleague.adobe.com/TJ5R6T1pu5JQU5SaGoWRgZLG2m29TWWPVB8nniorRUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
-workflow-type: ht
-source-wordcount: 907
+workflow-type: tm+mt
+source-wordcount: '907'
 ht-degree: 100%
-
 ---
-
 # Zusätzliche Konfigurationen {#mc-additional-configurations}
 
 
@@ -96,12 +98,12 @@ Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows 
 
   Folgende Status sind möglich:
 
-   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
-   * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
-   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand erfolgt ist.
-   * **[!UICONTROL Vom Versand ignoriert]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
-   * **[!UICONTROL Versandfehler]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
-   * **[!UICONTROL Ereignis wurde nicht übernommen]**: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.
+  * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
+  * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
+  * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand erfolgt ist.
+  * **[!UICONTROL Vom Versand ignoriert]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
+  * **[!UICONTROL Versandfehler]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
+  * **[!UICONTROL Ereignis wurde nicht übernommen]**: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.
 
 ### Zeitplan des Archivierungs-Workflows
 

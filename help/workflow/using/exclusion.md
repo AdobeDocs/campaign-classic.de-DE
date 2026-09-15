@@ -8,18 +8,20 @@ exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
 TQID: https://experienceleague.adobe.com/ievtR8K-XJLaluRuUfCMqOcCCgaT8-euRj949bPVS30
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 366
+workflow-type: tm+mt
+source-wordcount: '366'
 ht-degree: 100%
-
 ---
-
 # Ausschluss{#exclusion}
 
 
@@ -46,7 +48,7 @@ Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. G
 1. Geben Sie die Hauptmenge ein. Hier ist die Hauptmenge die Abfrage **18-30 Jahre**. Alle Empfangenden, die in der Ergebnismenge der zweiten Abfrage enthalten sind, werden auf diese Weise vom Endergebnis ausgeschlossen.
 1. Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie die nach dem Ausschluss verbleibenden Daten verwenden möchten. In diesem Fall besteht das Komplement aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, die in Paris leben.
 1. Bestätigen Sie die Ausschlusskonfiguration und fügen Sie dem Ergebnis dann eine Aktivität des Typs „Liste aktualisieren“ hinzu. Bei Bedarf können Sie außerdem eine zusätzliche Listenaktualisierung im Komplement einfügen.
-1. Führen Sie den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, allerdings werden die in Paris lebenden ausgeschlossen und an das Komplement gesendet. 
+1. Führen Sie den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, allerdings werden die in Paris lebenden ausgeschlossen und an das Komplement gesendet.
 
    ![](assets/exclusion_example.png)
 

@@ -2,25 +2,27 @@
 product: campaign
 title: Anweisungen zur Vorab-Bearbeitung von getrackten URLs
 description: Erfahren Sie mehr über die Vorab-Bearbeitungsanweisung, mit der Sie die URL einer E-Mail skripten und dennoch tracken können
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 TQID: https://experienceleague.adobe.com/cDB7CFuf6Gv0eyik3yEyJh4auo97LkazDSahUNPFtec
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '655'
 ht-degree: 100%
-
 ---
-
 # Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}
 
 Sie können eine bestimmte Syntax im Versandinhalt verwenden, um Anweisungen hinzuzufügen und die URL der getrackten E-Mail zu skripten. Die Anweisungen &quot;&lt;%@&quot; sind keine JavaScript-Anweisungen. Diese Syntax ist spezifisch für Adobe Campaign.
@@ -81,10 +83,10 @@ Wobei:
 
 * **[!DNL object]**: Name des Objekts (Beispiel: &quot;delivery&quot;, &quot;provider&quot; usw.).
 Objekt kann sein:
-   * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
-   * **[!DNL provider]**: für den aktuellen Versand-Provider bzw. das aktuelle Versand-Routing (nms:externalAccount).
-   * Ein zusätzliches Scriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
-   * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
+  * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
+  * **[!DNL provider]**: für den aktuellen Versand-Provider bzw. das aktuelle Versand-Routing (nms:externalAccount).
+  * Ein zusätzliches Scriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
+  * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
 * **[!DNL xpath]**: Pfad (XPath) des Felds.
 * **[!DNL index]** (optional): wenn **[!DNL object]** ein Array ist (für zusätzliche Scriptobjekte), Elementindex im Array (beginnt bei 0).
 

@@ -10,27 +10,37 @@ exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
 TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1522
+workflow-type: tm+mt
+source-wordcount: '1522'
 ht-degree: 100%
-
 ---
-
 # Häufig gestellte Fragen zu Campaign Classic v7 {#campaign-classic-v7-faq}
 
 >[!NOTE]
@@ -86,7 +96,7 @@ Die Migration zu Adobe Managed Services bietet mehr Skalierbarkeit und Sicherhei
 
 **Erste Schritte:** Wenden Sie sich an Ihre Adobe-Support-Fachkraft, die Ihre Umgebung bewertet und einen detaillierten Migrationsplan mit Adobe Professional Services erstellt.
 
-Erfahren Sie mehr zur [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=de){target="_blank"}.
+Erfahren Sie mehr zur [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
 
 +++
 
@@ -216,8 +226,8 @@ Durch Leeren des Cache der Campaign-Client-Konsole werden viele gängige Anzeige
    * Leeren Sie zuerst den Soft-Cache
    * Melden Sie sich ab und schließen Sie die Client-Konsole vollständig
    * Navigieren Sie zu:
-      * Windows 7/10: `C:\Users\<Username>\AppData\Roaming\Neolane\NL_5\`
-      * Windows XP: `C:\Documents and Settings\<Username>\Application Data\Neolane\NL_5\`
+     * Windows 7/10: `C:\Users\<Username>\AppData\Roaming\Neolane\NL_5\`
+     * Windows XP: `C:\Documents and Settings\<Username>\Application Data\Neolane\NL_5\`
    * Löschen Sie alle XML-Dateien mit dem Namen `nlclient-config-<alphanumerical value>.xml` und die zugehörigen Ordner
    * **Wichtig:** Löschen Sie NICHT die Datei `nlclient_cnx.xml`
    * Starten Sie die Client-Konsole neu
@@ -270,7 +280,7 @@ In der [**ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8**](ht
 
 **Community und Support:**
 
-* [Campaign-Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}
+* [Campaign-Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Adobe-Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

@@ -5,12 +5,10 @@ description: Campaign Classic – Handbuch für die Migration zur Adobe Analyti
 feature: Technote, Analytics Integration
 hide: true
 source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
-
 ---
-
 # Migrieren zur Adobe Analytics 2.0-API {#analytics-2-migration}
 
 Adobe Analytics 1.4-APIs [erreichen das Ende ihres Lebenszyklus](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}. Der [Web Analytics-Connector](../../integrations/using/gs-aa.md), der Ihre Campaign-Instanz mit Adobe Analytics verbindet, beruht auf diesen APIs. Daher müssen Sie auf einen Build aktualisieren, der die neuen Analytics 2.0-APIs verwendet, damit die Integration weiterhin funktioniert.
@@ -81,7 +79,7 @@ So erstellen Sie einen Klassifizierungssatz:
    * Wählen Sie in **[!UICONTROL Auftragsbenachrichtigungen]** aus, wer über erfolgreiche oder fehlgeschlagene Ausführung der Klassifizierungssatzaufträge benachrichtigt werden soll, und geben Sie die entsprechenden E-Mail-Adressen an.
    * Wählen Sie in **[!UICONTROL Abonnements]** Ihre Report Suite und die Konversionsvariable aus, die Sie im vorherigen Schritt für den Namen der internen Kampagne erstellt haben.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Dieser Klassifizierungssatz wird von Campaign automatisch erkannt, wenn Sie im nächsten Schritt Ihr externes Konto konfigurieren. Weitere Informationen zu Klassifizierungssätzen finden Sie in der [Adobe Analytics-Dokumentation](https://experienceleague.adobe.com/de/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 

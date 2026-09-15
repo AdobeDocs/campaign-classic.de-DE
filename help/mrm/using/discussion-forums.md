@@ -11,22 +11,27 @@ exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 TQID: https://experienceleague.adobe.com/UDef0tPJLGrBb-i2sVUP2kDLWNQMtbMbdIizKUOdK2Q
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+    internal-label: Marketing Resource Management
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 808
+workflow-type: tm+mt
+source-wordcount: '808'
 ht-degree: 100%
-
 ---
-
 # Diskussionsforen{#discussion-forums}
 
 
@@ -123,7 +128,7 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
 * Gehen Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** und stellen Sie sicher, dass der Workflow **[!UICONTROL Aufträge in Diskussionsforen]** gestartet und nicht fehlgeschlagen ist.
 * Überprüfen Sie die Versandlogs, die wie folgt zugänglich sind:
 
-   * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
-   * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
+  * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
+  * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
   Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs auf der Registerkarte **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.

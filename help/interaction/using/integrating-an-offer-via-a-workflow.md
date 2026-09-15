@@ -10,16 +10,16 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 TQID: https://experienceleague.adobe.com/mAyeOK618LvVCdtRqLykUECmgWZce8bKoMiT-WIOe1Q
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1128
+workflow-type: tm+mt
+source-wordcount: '1128'
 ht-degree: 100%
-
 ---
-
 # Integration über Workflows{#integrating-an-offer-via-a-workflow}
 
 
@@ -43,7 +43,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Versandentwurfsaktivität erl
 1. Füllen Sie die verfügbaren Felder Ihrem Versand entsprechend aus.
 1. Sie haben zwei Möglichkeiten:
 
-   * Wenn Sie eine Abfrage des Angebotsmoduls durchführen möchten, aktivieren Sie das Feld **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]**.Geben Sie die Platzierung und die Anzahl der Vorschläge an, die im Versand unterbreitet werden sollen.
+   * Wenn Sie eine Abfrage des Angebotsmoduls durchführen möchten, aktivieren Sie das Feld **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]**. Geben Sie die Platzierung und die Anzahl der Vorschläge an, die im Versand unterbreitet werden sollen.
 
      Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
 
@@ -51,7 +51,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Versandentwurfsaktivität erl
 
    >[!NOTE]
    >
-   >Die Vorschau berücksichtigt die im Versand angegebene Anzahl an Angeboten. Bei Ausführung eines Workflows wird die im Versandentwurf angegebene Anzahl berücksichtigt. 
+   >Die Vorschau berücksichtigt die im Versand angegebene Anzahl an Angeboten. Bei Ausführung eines Workflows wird die im Versandentwurf angegebene Anzahl berücksichtigt.
 
    ![](assets/int_compo_offre_wf1.png)
 

@@ -3,7 +3,7 @@ product: campaign
 title: Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren
 description: Erfahren Sie, wie Sie die Freigabe von Zielgruppen konfigurieren.
 feature: Audiences
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
@@ -11,25 +11,33 @@ exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 TQID: https://experienceleague.adobe.com/e9fIzwdGvuV9a-LRdXFLcghMGf79KQcoMT37K37ZOOE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 675
+workflow-type: tm+mt
+source-wordcount: '666'
 ht-degree: 100%
-
 ---
-
 # Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
@@ -67,20 +75,20 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 1. Geben Sie die folgenden Details an:
 
    * **[!UICONTROL AWS-S3-Konto-Server]**
-Die URL Ihres Servers sollte wie folgt ausgefüllt werden:
+     Die URL Ihres Servers sollte wie folgt ausgefüllt werden:
 
      ```
      <S3bucket name>.s3.amazonaws.com/<s3object path>
      ```
 
    * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**
-Informationen darüber, wo Sie die AWS-Zugriffsschlüssel-ID finden, erhalten Sie [auf dieser Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+     Informationen darüber, wo Sie die AWS-Zugriffsschlüssel-ID finden, erhalten Sie [auf dieser Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
    * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**
-Informationen darüber, wo Sie Ihren geheimen AWS-Zugriffsschlüssel finden, erhalten Sie [auf dieser Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+     Informationen darüber, wo Sie Ihren geheimen AWS-Zugriffsschlüssel finden, erhalten Sie [auf dieser Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS-Region]**
-Weiterführende Informationen zur AWS-Region finden Sie [auf dieser Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+     Weiterführende Informationen zur AWS-Region finden Sie [auf dieser Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
    ![](assets/aam_config_2.png)
 

@@ -3,7 +3,7 @@ product: campaign
 title: Übliche Befehle
 description: Übliche Befehle
 feature: Monitoring
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,17 +11,18 @@ exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 TQID: https://experienceleague.adobe.com/54ErpGUWBV076fqJIdr2ZsJlKVicuFf4xNgk-qDvvmQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 458
-ht-degree: 11%
-
+source-wordcount: '446'
+ht-degree: 9%
 ---
-
 # Übliche Befehle{#usual-commands}
 
 
@@ -30,7 +31,7 @@ In diesem Abschnitt werden die in Adobe Campaign üblichen Befehle aufgelistet.
 
 Der Befehl **nlserver** ist der Eingabebefehl für die gesamte Adobe Campaign-Anwendung.
 
-Dieser Befehl hat die folgende Syntax: **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
+Dieser Befehl hat die folgende Syntax: **nlserver **`<command>`****`<arguments>`****
 
 Der Parameter **`<command>`** entspricht dem Modul .
 
@@ -104,21 +105,21 @@ Verwenden Sie einen der folgenden Befehle, um Adobe Campaign-Services zu stoppen
 
 * Wenn Sie über Root- oder Administratorrechte verfügen:
 
-   * Unter Linux:
+  * Unter Linux:
 
-     ```sql
-     /etc/init.d/nlserver6 stop
-     ```
+    ```sql
+    /etc/init.d/nlserver6 stop
+    ```
 
-     >[!NOTE]
-     >
-     >Ab 20.1 wird stattdessen der folgende Befehl empfohlen (für Linux): **systemctl stop nlserver**
+    >[!NOTE]
+    >
+    >Ab 20.1 wird stattdessen der folgende Befehl empfohlen (für Linux): **systemctl stop nlserver**
 
-   * Windows:
+  * Windows:
 
-     ```sql
-     net stop nlserver6
-     ```
+    ```sql
+    net stop nlserver6
+    ```
 
 * Wenn nicht, dann im Adobe Campaign-Konto:
 
@@ -132,13 +133,13 @@ Entsprechend können Sie zum Neustart von Adobe Campaign einen der folgenden Bef
 
 * Wenn Sie über Root- oder Administratorrechte verfügen:
 
-   * Unter Linux: `/etc/init.d/nlserver6 start`
+  * Unter Linux: `/etc/init.d/nlserver6 start`
 
-     >[!NOTE]
-     >
-     >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
+    >[!NOTE]
+    >
+    >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
 
-   * Unter Windows: `net start nlserver6`
+  * Unter Windows: `net start nlserver6`
 
 * Andernfalls im Adobe Campaign-Konto: **nlserver watchdog -svc -noconsole**
 

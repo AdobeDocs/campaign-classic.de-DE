@@ -8,22 +8,26 @@ exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 TQID: https://experienceleague.adobe.com/-VSnXHtg3Zi3VGHVAF72uRpJa3gulT3h40BIsdnGjqo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 923
+source-wordcount: '923'
 ht-degree: 1%
-
 ---
-
 # Web-Dienstaufrufe{#web-service-calls}
 
 ## Allgemeine Informationen {#general-information}
@@ -215,8 +219,8 @@ Das Sitzungs-Token weist die folgenden Merkmale auf:
 * eine zufällige Konstruktion (sie enthält nicht mehr den Benutzernamen und das Passwort)
 * Bei Zugriff über das Web:
 
-   * Das Sitzungs-Token wird zu einem permanenten Token. Es wird nicht zerstört, sobald der Browser geschlossen wird
-   * es wird in einem HTTP-NUR-Cookie abgelegt (Cookies müssen für Benutzer aktiviert sein)
+  * Das Sitzungs-Token wird zu einem permanenten Token. Es wird nicht zerstört, sobald der Browser geschlossen wird
+  * es wird in einem HTTP-NUR-Cookie abgelegt (Cookies müssen für Benutzer aktiviert sein)
 
 ### Merkmale des Sicherheits-Tokens {#security-token-characteristics}
 
@@ -227,9 +231,9 @@ Das Sicherheits-Token weist die folgenden Merkmale auf:
 * Sie wird in der Adobe Campaign-Konsole gespeichert
 * Bei Zugriff über das Web:
 
-   * Sie wird in einer document.__securityToken-Eigenschaft gespeichert
-   * Die Seiten-URLs werden aktualisiert, um das Sicherheits-Token zu aktualisieren
-   * Die Formulare werden auch über ein ausgeblendetes Feld aktualisiert, das das Token enthält
+  * Sie wird in einer document.__securityToken-Eigenschaft gespeichert
+  * Die Seiten-URLs werden aktualisiert, um das Sicherheits-Token zu aktualisieren
+  * Die Formulare werden auch über ein ausgeblendetes Feld aktualisiert, das das Token enthält
 
 #### Verlagerung von Sicherheits-Token {#security-token-movement}
 
@@ -238,7 +242,7 @@ Beim Zugriff über die Konsole ist dieser:
 * Wird in der Anmeldeantwort (im HTTP-Header) gesendet
 * wird in jeder Abfrage verwendet (im HTTP-Header)
 
-Aus einem POST- und GET-HTTP:
+Aus einem POST-Test und GET HTTP:
 
 * Der Server vervollständigt die Links mit dem Token
 * Der Server fügt Formularen ein ausgeblendetes Feld hinzu

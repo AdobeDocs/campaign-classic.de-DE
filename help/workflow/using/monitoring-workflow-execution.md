@@ -8,25 +8,33 @@ exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 TQID: https://experienceleague.adobe.com/PdqoAAfpNfS1GIdnbtMkkm-2sd0GcidR99za2Nxgbfo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2122
+workflow-type: tm+mt
+source-wordcount: '2122'
 ht-degree: 100%
-
 ---
-
 # Überwachen der Workflow-Ausführung {#monitoring-workflow-execution}
 
 
@@ -41,7 +49,7 @@ Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse find
 
 ## Fortschritt anzeigen {#displaying-progress}
 
-Die Ausführung des Workflows kann am Bildschirm verfolgt werden.
+Die Ausführung kann durch Anzeigen des Fortschritts mithilfe des entsprechenden Symbols in der Symbolleiste überwacht werden.
 
 Wenn Sie auf das Symbol **[!UICONTROL Fortschritt anzeigen]** klicken, werden Workflow-Ausführung, -Status und Ergebnis der Aktivitäten am Bildschirm dargestellt.
 
@@ -93,21 +101,21 @@ Die Nachrichten bezüglich der Ausführung der Workflow-Aktivitäten werden im P
 
   Sie können auch das Ausführungsprotokoll und die Details von Aktivitäten anzeigen. Dafür gibt es zwei Möglichkeiten:
 
-   1. Markieren Sie die gewünschte Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Aufgaben und Protokoll anzeigen]**.
+  1. Markieren Sie die gewünschte Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Aufgaben und Protokoll anzeigen]**.
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      Unter dem Diagramm erscheinen nun die Tabs Protokoll und Aufgaben.
+     Unter dem Diagramm erscheinen nun die Tabs Protokoll und Aufgaben.
 
-      Die Markierung einer Aktivität im Diagramm arbeitet wie ein Filter in Bezug auf das Protokoll und die Aufgabenliste.
+     Die Markierung einer Aktivität im Diagramm arbeitet wie ein Filter in Bezug auf das Protokoll und die Aufgabenliste.
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. Klicken Sie mit der rechten Maustaste auf die gewünschte Aktivität und wählen Sie die Option **[!UICONTROL Protokoll anzeigen]**.
+  1. Klicken Sie mit der rechten Maustaste auf die gewünschte Aktivität und wählen Sie die Option **[!UICONTROL Protokoll anzeigen]**.
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      Das Protokoll öffnet sich in einem separaten Fenster.
+     Das Protokoll öffnet sich in einem separaten Fenster.
 
 ## Verläufe bereinigen {#purging-the-logs}
 
@@ -238,7 +246,7 @@ Bitte beachten Sie Folgendes:
 * Den aktuellen Wert der Instanzvariable können Sie im Tab **Variablen** im Workflow **Eigenschaften** prüfen.
 * Beim Neustart eines Workflows werden die Instanzvariablen zurückgesetzt.
 * In JavaScript ist ein nicht definierter Wert in einem Test auf false gesetzt. Dadurch kann die Instanzvariable noch vor ihrer Initialisierung geprüft werden.
-* Sie können die aufgrund dieses Mechanismus nicht verarbeiteten Aktivitäten überwachten, indem Sie dem Initialisierungsscript des &quot;Nein&quot;-Zweigs eine Protokollierungsanweisung hinzufügen.
+* Sie können die aufgrund dieses Mechanismus nicht verarbeitete Aktivitäten überwachen, indem Sie dem Initialisierungsscript des &quot;Nein&quot;-Zweigs eine Protokollierungsanweisung hinzufügen.
 
   ```
   logInfo("Workflow already running, parallel execution not allowed.");
