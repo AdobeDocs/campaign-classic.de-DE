@@ -9,14 +9,14 @@ exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
 feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
-workflow-type: ht
-source-wordcount: 895
+workflow-type: tm+mt
+source-wordcount: '895'
 ht-degree: 100%
-
 ---
-
 # Versionen 2025{#release-2025}
 
 ## Version 7.4.2  {#release-7-4-2}
@@ -62,13 +62,13 @@ Diese Version enthält die folgenden Hauptfehlerbehebungen:
 
 * Google BigQuery-Fehlerbehebungen:
 
-   * Behebung von Regressionen bei Datentypen vom Typ „BOOLEAN“
-   * Behebung von Problemen mit Proxy-Einstellungen
-   * Behebung von Regressionen bei Datentypen vom Typ „DATETIME“
-   * Behebung der Stabilität beim Massenladevorgang
-   * Verbesserte interne Tests bei ODBC-Versionen
-   * Behebung eines Problems mit Sonderzeichen im Verbindungs-String
-   * Entfernung des Standard-Timeouts (5 Minuten) für Google BigQuery-Abfragen
+  * Behebung von Regressionen bei Datentypen vom Typ „BOOLEAN“
+  * Behebung von Problemen mit Proxy-Einstellungen
+  * Behebung von Regressionen bei Datentypen vom Typ „DATETIME“
+  * Behebung der Stabilität beim Massenladevorgang
+  * Verbesserte interne Tests bei ODBC-Versionen
+  * Behebung eines Problems mit Sonderzeichen im Verbindungs-String
+  * Entfernung des Standard-Timeouts (5 Minuten) für Google BigQuery-Abfragen
 
 * Mail Transfer Agent (MTA): Behebung eines Problems, bei dem ein verwaistes untergeordnetes MTA-Element im Status **[!UICONTROL Start ausstehend]** hängen bleibt.
 

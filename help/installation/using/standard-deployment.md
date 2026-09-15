@@ -10,17 +10,17 @@ exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 TQID: https://experienceleague.adobe.com/qg59AtZmUGDO0bLwykBdMxL9pEUDwsyxn98faauXCdc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 844
-ht-degree: 6%
-
+source-wordcount: '844'
+ht-degree: 7%
 ---
-
 # Standardbereitstellung{#standard-deployment}
 
 
@@ -59,8 +59,8 @@ Diese Art der Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 * Bounce-Postfach über POP3 zugänglich,
 * Erstellung von zwei DNS-Aliassen:
 
-   * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
-   * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf denselben Anwendungsserver.
+  * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
+  * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf denselben Anwendungsserver.
 
 * Firewall konfiguriert zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
@@ -92,7 +92,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Für Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Erstellen Sie die **Demo**-Instanz. Dazu gibt es zwei Möglichkeiten:
+1. Erstellen Sie die **Demo**-Instanz. Dafür gibt es zwei Möglichkeiten:
 
    * Erstellen Sie die Instanz über die Konsole:
 

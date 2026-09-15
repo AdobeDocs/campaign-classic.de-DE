@@ -8,20 +8,23 @@ exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 TQID: https://experienceleague.adobe.com/x2LufRG-rJ-s07Vdo-Ta-FvtqfbUGd6gceDY98DSQTM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 832
+workflow-type: tm+mt
+source-wordcount: '832'
 ht-degree: 100%
-
 ---
-
 # Anreichern von Daten{#enriching-data}
 
 
@@ -89,7 +92,7 @@ In diesem Beispiel personalisieren wir Sendungen entsprechend dem Feld **[!UICON
 
    ![](assets/uc1_enrich_9.png)
 
-1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Punktzahl]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Punktzahl]**-Felder in absteigender Reihenfolge zu sortieren.Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Anreicherungsaktivität eine Zeile mit der höchsten Punktzahl für das letzte Spiel hinzugefügt. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Punktzahl]** aus und aktivieren Sie das Kontrollkästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Punktzahl]**-Felder in absteigender Reihenfolge zu sortieren. Bei jeder Empfängerin bzw. jedem Empfänger wird durch die Anreicherungsaktivität eine Zeile mit der höchsten Punktzahl für das letzte Spiel hinzugefügt. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 
@@ -123,7 +126,7 @@ Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die
 
    ![](assets/uc1_enrich_16.png)
 
-1. Die zweite Teilmenge (**Zweiter Platz**) enthält die Person mit der zweithöchsten Punktzahl.Die Konfiguration erfolgt analog zur ersten Teilmenge.
+1. Die zweite Teilmenge (**Zweiter Platz**) enthält die Person mit der zweithöchsten Punktzahl. Die Konfiguration erfolgt analog zur ersten Teilmenge.
 
    ![](assets/uc1_enrich_17.png)
 

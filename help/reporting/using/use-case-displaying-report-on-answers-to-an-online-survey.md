@@ -2,16 +2,14 @@
 product: campaign
 title: 'Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage'
 description: 'Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage'
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
-workflow-type: ht
-source-wordcount: '518'
+workflow-type: tm+mt
+source-wordcount: '509'
 ht-degree: 100%
-
 ---
-
 # Anwendungsfall: Bericht zu Antworten auf eine Online-Umfrage anzeigen{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 

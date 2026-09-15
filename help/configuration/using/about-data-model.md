@@ -8,22 +8,26 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 TQID: https://experienceleague.adobe.com/jyvz5WCdNhYtusE-HwPRwXNlr9Wh0swcQoOT05lkOYA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 921
-ht-degree: 20%
-
+source-wordcount: '994'
+ht-degree: 24%
 ---
-
 # Erste Schritte mit dem Campaign-Datenmodell{#about-data-model}
 
 Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die wichtigsten Tabellen und Konzepte sind auf dieser Seite aufgeführt.
@@ -46,9 +50,9 @@ Das Datenmodell enthält auch einen Teil, der dem Speichern aller Marketing-Akti
 
 Ein anderer Teil des Datenmodells ermöglicht es, vorübergehend alle Protokolle zu speichern, die mit der Ausführung der Kampagnen verbunden sind.
 
-Versandlogs sind alle Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLog**) enthält die Versandlogs für alle Empfänger.
+Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLog**) enthält die Versandlogs für alle Empfänger.
 Die Haupt-Trackinglog-Tabelle (**NmsTrackingLog**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
-Versandlogs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben ist und geändert werden kann. Daher wird dringend empfohlen, die Protokolle regelmäßig zu exportieren.
+Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
 ### Technische Tabellen {#technical-tables}
 

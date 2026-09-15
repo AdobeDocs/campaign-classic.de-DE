@@ -2,23 +2,24 @@
 product: campaign
 title: Umfrage entwerfen
 description: Wichtige Schritte zum Entwerfen einer Umfrage
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 TQID: https://experienceleague.adobe.com/aeRP0GoE5lu3eUsJ4kg8DoUnqFeipazoax--zX8Lv60
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 836
+workflow-type: tm+mt
+source-wordcount: '827'
 ht-degree: 100%
-
 ---
-
 # Umfrage entwerfen{#building-a-survey}
 
 
@@ -51,7 +52,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 ### Typen von Feldern {#types-of-fields}
 
-Wenn Sie einer Umfrage ein Feld hinzufügen, müssen Sie den Typ auswählen.Folgende Optionen stehen zur Verfügung:
+Wenn Sie einer Umfrage ein Feld hinzufügen, müssen Sie den Typ auswählen. Folgende Optionen stehen zur Verfügung:
 
 1. **[!UICONTROL Frage beantworten]**: Mit dieser Option können Sie ein neues Feld zum Speichern von Antworten festlegen („Archiviertes Feld“ genannt). In diesem Fall werden alle erfassten Werte gespeichert, auch wenn eine Teilnehmerin bzw. ein Teilnehmer ein Formular mehr als einmal ausfüllt. Dieser Speichermodus ist nur in **Fragebögen** verfügbar. [Weitere Informationen](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Empfänger bearbeiten]**: Mit dieser Option können Sie ein Feld in der Datenbank auswählen. In diesem Fall werden die Benutzerantworten in diesem Feld gespeichert. Für jede Teilnehmerin bzw. jeden Teilnehmer wird nur der letzte Wert gespeichert und den Profildaten hinzugefügt.

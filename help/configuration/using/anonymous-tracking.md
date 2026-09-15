@@ -8,17 +8,17 @@ exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
 TQID: https://experienceleague.adobe.com/jQ4x9zONaJacdqaNqRL--oeMUAyn53Rk-u3jOvKv-20
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 212
+source-wordcount: '212'
 ht-degree: 5%
-
 ---
-
 # Anonym-Tracking{#anonymous-tracking}
 
 Mit Adobe Campaign können Sie erfasste Webtracking-Informationen mit einem Empfänger verknüpfen, wenn dieser Ihre Website anonym durchsucht. Wenn ein Benutzer die getaggten Seiten Ihrer Website durchsucht, werden diese Browserinformationen erfasst, sodass er nach dem Klicken in einer von Adobe Campaign gesendeten E-Mail identifiziert wird und die Informationen automatisch mit ihnen verknüpft werden.

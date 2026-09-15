@@ -8,17 +8,17 @@ exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 TQID: https://experienceleague.adobe.com/0kiRwyal2yxHRjRNkPCNY2zsulDvbC3FWcJZ49Ynmkw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 932
-ht-degree: 83%
-
+source-wordcount: '935'
+ht-degree: 85%
 ---
-
 # Verknüpfungs-Management {#links--relation-between-tables}
 
 Eine Verknüpfung beschreibt die Zuordnung einer Tabelle zu einer anderen.
@@ -58,23 +58,23 @@ Für Relationen gelten folgende Regeln:
 
 * Die Definition einer Relation erfolgt über den Typ **link** für **`<element>`**, wobei folgende Attributen eingegeben werden:
 
-   * **name**: Name der Verknüpfung aus der Quelltabelle
-   * **target**: Name des Zielschemas
-   * **label**: Titel der Verknüpfung
-   * **revLink** (optional): Name der Umkehrverknüpfung aus dem Zielschema (wird standardmäßig automatisch abgeleitet)
-   * **integrity** (optional): Referenzintegrität der Entität der Quelltabelle zur Entität der Zieltabelle.
-Mögliche Werte sind:
+  * **name**: Name der Verknüpfung aus der Quelltabelle
+  * **target**: Name des Zielschemas
+  * **label**: Titel der Verknüpfung
+  * **revLink** (optional): Name der Umkehrverknüpfung aus dem Zielschema (wird standardmäßig automatisch abgeleitet)
+  * **integrity** (optional): Referenzintegrität der Instanz aus der Quelltabelle zur Instanz der Zieltabelle.
+    Mögliche Werte:
 
-      * **define**: Es ist möglich, die Quellinstanz zu löschen, wenn diese nicht mehr durch eine Zielinstanz referenziert wird.
-      * **normal**: Durch Löschen der Quellinstanz werden die Schlüssel der Verknüpfung mit der Zielinstanz initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert.
-      * **own**: Durch Löschen der Quellinstanz wird auch die Zielinstanz gelöscht
-      * **owncopy**: Führt dieselbe Operation aus wie **own** (im Falle des Löschens) oder dupliziert die Instanzen (im Falle der Duplizierung).
-      * **neutral**: kein spezifisches Verhalten
+    * **define**: Es ist möglich, die Quellinstanz zu löschen, wenn diese nicht mehr durch eine Zielinstanz referenziert wird.
+    * **normal**: Durch Löschen der Quellinstanz werden die Schlüssel der Verknüpfung mit der Zielinstanz initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert.
+    * **own**: Durch Löschen der Quellinstanz wird auch die Zielinstanz gelöscht
+    * **owncopy**: Führt dieselbe Operation aus wie **own** (im Falle des Löschens) oder dupliziert die Instanzen (im Falle der Duplizierung).
+    * **neutral**: kein spezifisches Verhalten
 
-   * **revIntegrity** (optional): Integrität im Zielschema (optional, Standardwert ist „normal“)
-   * **revCardinality** (optional): Mit dem Wert „single“ wird die Kardinalität mit dem Typ 1:1 ausgefüllt (standardmäßig 1:n).
-   * **externalJoin** (optional): Erzwingt den äußeren Join.
-   * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
+  * **revIntegrity** (optional): Integrität im Zielschema (optional, Standardwert ist „normal“)
+  * **revCardinality** (optional): Mit dem Wert „single“ wird die Kardinalität mit dem Typ 1:1 ausgefüllt (standardmäßig 1:n).
+  * **externalJoin** (optional): Erzwingt den äußeren Join.
+  * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
 
 * Eine Relation verweist auf ein oder mehrere Felder aus der Quelltabelle mit der Zieltabelle. Die Felder, aus denen sich der Join zusammensetzt (`<join>`-Element), müssen nicht ausgefüllt werden, da sie standardmäßig aus dem internen Schlüssel des Zielschemas abgeleitet werden.
 * Im erweiterten Schema wird dem Fremdschlüssel der Verknüpfung automatisch ein Index hinzugefügt.

@@ -2,29 +2,35 @@
 product: campaign
 title: Erste Schritte mit Umfragen
 description: Erste Schritte mit Campaign-Umfragen
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 TQID: https://experienceleague.adobe.com/VU7basdMR9txUIDVWMgoun9mMhAYlpqq2Uc57qtebo0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 585
+workflow-type: tm+mt
+source-wordcount: '576'
 ht-degree: 100%
-
 ---
-
 # Erste Schritte mit Umfragen{#about-surveys}
 
 Adobe Campaign enthält ein Grafikmodul zum Definieren und Veröffentlichen von Web-Anwendungen. Damit werden Seiten erstellt, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Verwenden Sie diese Funktion, um Web-Seiten zu entwerfen und zu posten, auf denen Benutzende Informationen suchen oder eingeben können.

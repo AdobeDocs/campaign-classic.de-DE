@@ -10,11 +10,9 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2600'
+source-wordcount: '2602'
 ht-degree: 1%
-
 ---
-
 # Allgemeine Konfigurationen{#general-configurations}
 
 In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7 bei der Migration von einer Version 5.11 oder 6.02 durchgeführt werden soll.

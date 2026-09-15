@@ -11,21 +11,25 @@ exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 TQID: https://experienceleague.adobe.com/sP42vA9z95SnIsjehzZeMNMmYhaqq-Z8-BqB-HXGTxQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+    internal-label: Marketing Resource Management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2560
+workflow-type: tm+mt
+source-wordcount: '2560'
 ht-degree: 100%
-
 ---
-
 # Kosten kontrollieren{#controlling-costs}
 
 
@@ -34,7 +38,7 @@ Adobe Campaign ermöglicht mit dem MRM-Modul die Kontrolle der geplanten, einges
 
 Die für die unterschiedlichen Kampagnenvorgänge anfallenden Kosten werden einem zuvor von der Marketing-Abteilung festgesetzten Budget zugeteilt. Die Beträge können auf verschiedene Kategorien verteilt werden, um eine bessere Lesbarkeit und detailliertere Berichte der Marketing-Kosten zu ermöglichen.
 
-Die Budgetverwaltung und -nachverfolgung wird in einem dedizierten Knoten der Adobe Campaign-Struktur zentralisiert. Von hier aus können Sie alle Budgets sowie die zugeteilten, reservierten, eingesetzten und verbrauchten Beträge kontrollieren.
+Die Budgetverwaltung und -nachverfolgung wird in einem dedizierten Knoten der Adobe Campaign-Struktur zentralisiert. Von hier aus können Sie alle Budgets sowie die zugeteilten, reservierten, eingesetzten und verbrauchten Beträge überwachen.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 

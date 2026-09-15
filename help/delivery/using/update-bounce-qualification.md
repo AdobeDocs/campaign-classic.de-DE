@@ -2,29 +2,35 @@
 product: campaign
 title: Aktualisierung der Bounce-Qualifizierung nach dem Apple-Ausfall 2021
 description: Hier wird erklärt, wie die Bounce-Qualifizierung nach dem Apple-Ausfall von 2021 aktualisiert werden kann
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 TQID: https://experienceleague.adobe.com/kn5H0jxM7KKnLGQ3vYdvhQm4nixgSTVhFBO8CAh-1Lg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 468
+source-wordcount: '459'
 ht-degree: 100%
-
 ---
-
 # Aktualisieren fehlerhafter Hardbounces nach Apple-Ausfall {#update-bounce-qualification.md}
 
 ## Kontext
@@ -55,16 +61,16 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 
 * Für Campaign-Instanzen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „Benutzerin oder Benutzer erfolgreich gefunden, aber kein Benutzereintrag gefunden“ UND **Fehlertext (Quarantänetext)** enthält „support.apple.com“
-   * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
-   * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
+  * **Fehlertext (Quarantänetext)** enthält „Benutzerin oder Benutzer erfolgreich gefunden, aber kein Benutzereintrag gefunden“ UND **Fehlertext (Quarantänetext)** enthält „support.apple.com“
+  * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
+  * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
 
 * Für Campaign-Instanzen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
-   * **E-Mail-Domain (@domain)** ist gleich icloud.com ODER **E-Mail-Domain (@domain)** ist gleich me.com ODER **E-Mail-Domain (@domain)** ist gleich mac.com
-   * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
-   * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
+  * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
+  * **E-Mail-Domain (@domain)** ist gleich icloud.com ODER **E-Mail-Domain (@domain)** ist gleich me.com ODER **E-Mail-Domain (@domain)** ist gleich mac.com
+  * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
+  * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
 
 Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entweder auf den Status **[!UICONTROL Gültig]** setzen, damit sie vom Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden, oder sie einfach aus der Tabelle löschen.
 

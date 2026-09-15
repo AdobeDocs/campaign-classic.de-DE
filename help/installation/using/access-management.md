@@ -7,20 +7,23 @@ exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 TQID: https://experienceleague.adobe.com/dbC74X04V5SFr7fWOl1b0-Br-x-jjHFNvMSX9Y6M-JQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: '377'
 ht-degree: 8%
-
 ---
-
 # Zugriffsverwaltung {#access-management}
 
 
@@ -35,11 +38,11 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Befolgen Sie diese Ri
 
 * Bei Verwendung einer Multi-Brand-Instanz (oder Multi-Geo-Instanz) sollten Sie den Zugriff der Web-Anwendung auf verschiedene Empfängerordner aufteilen. Gehen Sie dabei folgendermaßen vor:
 
-   1. Duplizieren des WebApp-Benutzers
+  1. Duplizieren des WebApp-Benutzers
 
-   1. Geben Sie für jedes Duplikat einen Namen ein. Beispiel: webapp_brand, webapp_brand2 usw.
+  1. Geben Sie für jedes Duplikat einen Namen ein. Beispiel: webapp_brand, webapp_brand2 usw.
 
-   1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md).
+  1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md).
 
 ## Sicherheitsgruppen und Admin-Benutzer
 

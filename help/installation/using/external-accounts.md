@@ -10,18 +10,19 @@ exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 TQID: https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2157
-ht-degree: 72%
-
+source-wordcount: '2157'
+ht-degree: 73%
 ---
-
 # Externe Konten{#external-accounts}
 
 Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen zu externen Systemen einzurichten, können Sie neue externe Konten erstellen.
@@ -260,7 +261,7 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL IMS-Server]**
 
-  URL Ihres IMS-Servers Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf denselben IMS-Produktionsendpunkt verweisen.
+  URL Ihres IMS-Servers. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf denselben IMS-Produktionsendpunkt verweisen.
 
 * **[!UICONTROL IMS-Umfang]**
 
@@ -424,7 +425,7 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Der Amazon Simple Storage Service (S3)-Connector kann zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Er kann in einer Workflow-Aktivität eingerichtet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
+Der Amazon-Simple-Storage-Service-Connector (S3) kann für den Import oder Export von Daten in und aus Adobe Campaign verwendet werden. Er kann in einer Workflow-Aktivität eingerichtet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 

@@ -3,7 +3,7 @@ product: campaign
 title: Technische E-Mail-Konfiguration
 description: Erfahren Sie, wie Sie Campaign so konfigurieren, dass die Ausgabe Ihrer Instanzen beim Versand von E-Mails gesteuert wird.
 feature: Installation, Deliverability
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,23 +11,29 @@ exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 3230
-ht-degree: 13%
-
+source-wordcount: '3218'
+ht-degree: 12%
 ---
-
 # Technische E-Mail-Konfigurationen{#email-deliverability}
 
 
@@ -258,14 +264,14 @@ Für jede Regel stehen die folgenden Parameter zur Verfügung:
 
   So sind die Adressen
 
-   * a.mx.yahoo.com
-   * b.mx.yahoo.com
-   * c.mx.yahoo.com
+  * a.mx.yahoo.com
+  * b.mx.yahoo.com
+  * c.mx.yahoo.com
 
   mit folgenden Masken kompatibel:
 
-   * &#42;.yahoo.com
-   * ?.mx.yahoo.com
+  * &#42;.yahoo.com
+  * ?.mx.yahoo.com
 
   Beispielsweise lautet bei der E-Mail-Adresse foobar@gmail.com die Domain gmail.com und der MX-Eintrag sieht folgendermaßen aus:
 
@@ -281,8 +287,8 @@ Für jede Regel stehen die folgenden Parameter zur Verfügung:
 
 * **[!UICONTROL Kennungsbereich]**: Mit dieser Option können Sie die Kennungsbereiche (publicID) angeben, für die die Regel gilt. Folgende Angaben sind möglich:
 
-   * Eine Zahl: Die Regel gilt nur für diese publicId,
-   * Ein Zahlenbereich (**number1-number2**): Die Regel gilt für alle publicIds zwischen diesen beiden Zahlen.
+  * Eine Zahl: Die Regel gilt nur für diese publicId,
+  * Ein Zahlenbereich (**number1-number2**): Die Regel gilt für alle publicIds zwischen diesen beiden Zahlen.
 
   >[!NOTE]
   >
@@ -306,14 +312,14 @@ Für jede Regel stehen die folgenden Parameter zur Verfügung:
 * **[!UICONTROL Timeout]**: Maximale Wartezeit für andere Austausche mit dem SMTP-Server.
 * **[!UICONTROL TLS]**: Das TLS-Protokoll, das die Verschlüsselung von E-Mail-Sendungen ermöglicht, kann selektiv aktiviert werden. Für jede MX-Maske stehen die folgenden Optionen zur Verfügung:
 
-   * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der Konfigurationsdatei „serverConf.xml“ angegeben ist, die angewendet wird.
+  * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der Konfigurationsdatei „serverConf.xml“ angegeben ist, die angewendet wird.
 
-     >[!IMPORTANT]
-     >
-     >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
+    >[!IMPORTANT]
+    >
+    >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
 
-   * **[!UICONTROL Deaktiviert]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
-   * **[!UICONTROL Opportunistisch]** : Der Nachrichtenversand wird verschlüsselt, wenn der empfangende Server (SMTP) das TLS-Protokoll generieren kann.
+  * **[!UICONTROL Deaktiviert]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
+  * **[!UICONTROL Opportunistisch]** : Der Nachrichtenversand wird verschlüsselt, wenn der empfangende Server (SMTP) das TLS-Protokoll generieren kann.
 
 Konfigurationsbeispiel:
 

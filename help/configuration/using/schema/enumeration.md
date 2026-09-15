@@ -7,15 +7,14 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 TQID: https://experienceleague.adobe.com/w8b-2HEtYRMOd9yHFLtvS0vS2tdLDzuIakLfrqImsGo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 11%
-
 ---
-
 # Auflistungselement {#enumeration--element}
 
 
@@ -55,34 +54,34 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
 
   Liste der verfügbaren Typen:
 
-   * BELIEBIGE
-   * Eimer
-   * Klecks
-   * Boolesch
-   * Byte
-   * CDATA
-   * datetime
-   * datetimets
-   * datetimenotz
-   * date
-   * DOMDocument
-   * DOMElement
-   * double
-   * Aufzählung
-   * float
-   * HTML
-   * int64
-   * link
-   * Lang
-   * Memo
-   * MNTOKEN
-   * Prozent
-   * Primärschlüssel
-   * Kurz
-   * Zeichenfolge
-   * time
-   * timespan
-   * uuid
+  * BELIEBIGE
+  * Klasse
+  * Klecks
+  * Boolesch
+  * Byte
+  * CDATA
+  * datetime
+  * datetimets
+  * datetimenotz
+  * date
+  * DOMDocument
+  * DOMElement
+  * double
+  * Aufzählung
+  * float
+  * HTML
+  * int64
+  * link
+  * Lang
+  * Memo
+  * MNTOKEN
+  * Prozent
+  * Primärschlüssel
+  * Kurz
+  * Zeichenfolge
+  * time
+  * timespan
+  * uuid
 
 * **default (Zeichenfolge)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
 * **desc (Zeichenfolge)**: Beschreibung der Auflistung.

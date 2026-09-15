@@ -3,7 +3,7 @@ product: campaign
 title: Konfigurieren von Importaufträgen
 description: Erfahren Sie, wie Sie Importaufträge in Campaign konfigurieren und ausführen.
 feature: Overview
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 TQID: https://experienceleague.adobe.com/OeRVFm6L-3N6yoIAKyTImaQb6d411UE8-NZ2jHu5VCc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 3257
+workflow-type: tm+mt
+source-wordcount: '3248'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren von Importaufträgen {#executing-import-jobs}
 
 
@@ -83,21 +87,21 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * Im Tab **[!UICONTROL Allgemein]**
 
-   * **[!UICONTROL Bei zu großer Anzahl an Zurückweisungen Ausführung stoppen]**
+  * **[!UICONTROL Bei zu großer Anzahl an Zurückweisungen Ausführung stoppen]**
 
-     Diese Option ist standardmäßig aktiviert. Wenn Sie mit dem Import unabhängig von der Anzahl der Zurückweisungen fortfahren möchten, können Sie die Option deaktivieren. Standardmäßig wird die Ausführung angehalten, wenn die ersten 100 Zeilen zurückgewiesen werden.
+    Diese Option ist standardmäßig aktiviert. Wenn Sie mit dem Import unabhängig von der Anzahl der Zurückweisungen fortfahren möchten, können Sie die Option deaktivieren. Standardmäßig wird die Ausführung angehalten, wenn die ersten 100 Zeilen zurückgewiesen werden.
 
-   * **[!UICONTROL Spurenmodus]**
+  * **[!UICONTROL Spurenmodus]**
 
-     Kreuzen Sie diese Option an, um die Durchführung Zeile für Zeile zu verfolgen.
+    Kreuzen Sie diese Option an, um die Durchführung Zeile für Zeile zu verfolgen.
 
-   * **[!UICONTROL Auftrag in einem separaten Prozess starten]**
+  * **[!UICONTROL Auftrag in einem separaten Prozess starten]**
 
-     Diese Option ist standardmäßig aktiviert. Sie ermöglicht es, den Import separat auszuführen, damit keine anderen, zur selben Zeit in der Datenbank laufenden Aufträge beeinträchtigt werden.
+    Diese Option ist standardmäßig aktiviert. Sie ermöglicht es, den Import separat auszuführen, damit keine anderen, zur selben Zeit in der Datenbank laufenden Aufträge beeinträchtigt werden.
 
-   * **[!UICONTROL Aufzählungen nicht aktualisieren]**
+  * **[!UICONTROL Aufzählungen nicht aktualisieren]**
 
-     Aktivieren Sie diese Option, wenn die Liste der Aufzählungswerte in der Datenbank nicht ergänzt werden soll. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+    Aktivieren Sie diese Option, wenn die Liste der Aufzählungswerte in der Datenbank nicht ergänzt werden soll. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Im Tab **[!UICONTROL Variablen]**
@@ -222,7 +226,7 @@ Für die Deduplizierung ist die Angabe von mindestens einem Abstimmschlüssel er
 
 Ein Abstimmschlüssel ist ein Satz von Feldern, die zur Identifizierung eines Eintrags verwendet werden. Für das Importieren von Empfängerinnen und Empfängern kann der Abstimmschlüssel beispielsweise die Kontonummer, das Feld „E-Mail“ oder die Felder „Nachname“, „Vorname“, „Unternehmen“ usw. sein.
 
-In diesem Fall vergleicht die Import-Engine die Werte der Datei mit jenen der Datenbank für alle Felder des Schlüssels, um herauszufinden, ob eine Zeile einer Datei einer vorhandenen Empfängerin bzw. einem vorhandenen Empfänger in der Datenbank entspricht.Wenn Felder für einen Eintrag spezifisch sind, kann ein genauer Vergleich zwischen den Quell- und Zieldaten durchgeführt werden, um die Integrität der Daten nach dem Import zu gewährleisten. Für dieselbe Tabelle kann ein zweiter Abstimmschlüssel ausgefüllt werden. Er wird für die Zeilen verwendet, deren erster Schlüssel leer ist.
+In diesem Fall vergleicht die Import-Engine die Werte der Datei mit jenen der Datenbank für alle Felder des Schlüssels, um herauszufinden, ob eine Zeile einer Datei einer vorhandenen Empfängerin bzw. einem vorhandenen Empfänger in der Datenbank entspricht. Wenn Felder für einen Eintrag spezifisch sind, kann ein genauer Vergleich zwischen den Quell- und Zieldaten durchgeführt werden, um die Integrität der Daten nach dem Import zu gewährleisten. Für dieselbe Tabelle kann ein zweiter Abstimmschlüssel ausgefüllt werden. Er wird für die Zeilen verwendet, deren erster Schlüssel leer ist.
 
 Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüssel keine Felder verwendet werden, die beim Import verändert werden könnten.
 
@@ -298,45 +302,45 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 * Klicken Sie auf den **[!UICONTROL Bearbeiten]**-Link, um den Ordner, die Liste oder den Dienst auszuwählen, mit denen die Empfänger verknüpft werden sollen.
 
-   1. In einem Ordner speichern
+  1. In einem Ordner speichern
 
-      Über den Link **[!UICONTROL Bearbeiten…]** im Abschnitt **[!UICONTROL In einem Ordner speichern]** können Sie den Ordner auswählen oder erstellen, in den die Empfängerinnen und Empfänger importiert werden sollen. Falls keine Partition angegeben ist, werden standardmäßig die Daten in den Standard-Ordner der benutzenden Person eingefügt.
+     Über den Link **[!UICONTROL Bearbeiten…]** im Abschnitt **[!UICONTROL In einem Ordner speichern]** können Sie den Ordner auswählen oder erstellen, in den die Empfängerinnen und Empfänger importiert werden sollen. Falls keine Partition angegeben ist, werden standardmäßig die Daten in den Standard-Ordner der benutzenden Person eingefügt.
 
-      >[!NOTE]
-      >
-      >Der Standardordner des Benutzers entspricht dem ersten Ordner, für den der Benutzer Schreibzugriff hat. Weitere Informationen finden Sie unter [Ordnerzugriffsverwaltung](../../platform/using/access-management-folders.md).
+     >[!NOTE]
+     >
+     >Der Standardordner des Benutzers entspricht dem ersten Ordner, für den der Benutzer Schreibzugriff hat. Weitere Informationen finden Sie unter [Ordnerzugriffsverwaltung](../../platform/using/access-management-folders.md).
 
-      Klicken Sie zur Auswahl des Importordners auf den Pfeil rechts des **[!UICONTROL Ordner]**-Feldes und wählen Sie den gewünschten Ordner aus. Über das Symbol **[!UICONTROL Verknüpftes Element auswählen]** können Sie den Navigationsbaum in einem neuen Fenster anzeigen und einen neuen Ordner erstellen.
+     Klicken Sie zur Auswahl des Importordners auf den Pfeil rechts des **[!UICONTROL Ordner]**-Feldes und wählen Sie den gewünschten Ordner aus. Über das Symbol **[!UICONTROL Verknüpftes Element auswählen]** können Sie den Navigationsbaum in einem neuen Fenster anzeigen und einen neuen Ordner erstellen.
 
-      ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Wählen Sie zur Erstellung eines neuen Ordners den Knoten aus, in den der Ordner eingefügt werden soll, und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Empfänger-Ordner hinzufügen]**.
+     Wählen Sie zur Erstellung eines neuen Ordners den Knoten aus, in den der Ordner eingefügt werden soll, und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Empfänger-Ordner hinzufügen]**.
 
-      ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      Der Ordner wird als Unterordner des aktuellen Knotens eingefügt. Geben Sie den Namen des neuen Ordners an, drücken Sie zum Bestätigen die Enter-Taste und klicken Sie auf **[!UICONTROL OK]**.
+     Der Ordner wird als Unterordner des aktuellen Knotens eingefügt. Geben Sie den Namen des neuen Ordners an, drücken Sie zum Bestätigen die Enter-Taste und klicken Sie auf **[!UICONTROL OK]**.
 
-      ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![](assets/s_ncs_user_import_wizard05_4.png)
 
-   1. Einer Liste zuordnen
+  1. Einer Liste zuordnen
 
-      Der **[!UICONTROL Bearbeiten...]**-Link der Option **[!UICONTROL Empfänger auf eine Liste setzen]** ermöglicht die Auswahl oder die Erstellung der Liste, zu der die Empfänger hinzugefügt werden sollen.
+     Der **[!UICONTROL Bearbeiten...]**-Link der Option **[!UICONTROL Empfänger auf eine Liste setzen]** ermöglicht die Auswahl oder die Erstellung der Liste, zu der die Empfänger hinzugefügt werden sollen.
 
-      ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. Informationen zur Erstellung und Verwaltung von Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
+     Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. Informationen zur Erstellung und Verwaltung von Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
 
-      ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      Sie können eine Liste um die neuen Empfangenden ergänzen oder die Liste mit den neuen Empfangenden neu erstellen. Wenn die Liste bereits Empfangende enthält, werden diese gelöscht und durch die importierten Empfangenden ersetzt.
+     Sie können eine Liste um die neuen Empfangenden ergänzen oder die Liste mit den neuen Empfangenden neu erstellen. Wenn die Liste bereits Empfangende enthält, werden diese gelöscht und durch die importierten Empfangenden ersetzt.
 
-   1. Anmeldung für einen Dienst
+  1. Anmeldung für einen Dienst
 
-      Um alle importierten Empfänger für einen Informationsdienst anzumelden, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** der Option **[!UICONTROL Empfänger für einen Dienst anmelden]**, um den Informationsdienst auszuwählen oder zu erstellen, für den die Empfänger angemeldet werden sollen. Aktivieren Sie **[!UICONTROL Benachrichtigung versenden]**, wenn die Empfänger von der Anmeldung in Kenntnis gesetzt werden sollen. Der Benachrichtigungsinhalt wird in den die An- und Abmeldungen betreffenden Versandvorlagen bestimmt.
+     Um alle importierten Empfänger für einen Informationsdienst anzumelden, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** der Option **[!UICONTROL Empfänger für einen Dienst anmelden]**, um den Informationsdienst auszuwählen oder zu erstellen, für den die Empfänger angemeldet werden sollen. Aktivieren Sie **[!UICONTROL Benachrichtigung versenden]**, wenn die Empfänger von der Anmeldung in Kenntnis gesetzt werden sollen. Der Benachrichtigungsinhalt wird in den die An- und Abmeldungen betreffenden Versandvorlagen bestimmt.
 
-      ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      Sie haben auch die Möglichkeit, einen neuen Informationsdienst für diese Empfängerinnen und Empfänger zu erstellen. Klicken Sie hierfür auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf das Symbol **[!UICONTROL Erstellen]**. Informationsdienste werden in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) näher erläutert.
+     Sie haben auch die Möglichkeit, einen neuen Informationsdienst für diese Empfängerinnen und Empfänger zu erstellen. Klicken Sie hierfür auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf das Symbol **[!UICONTROL Erstellen]**. Informationsdienste werden in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) näher erläutert.
 
 * Das Feld **[!UICONTROL Herkunft]** bietet die Möglichkeit, eine Information bezüglich der Empfängerherkunft im Profil zu hinterlegen. Diese Informationen sind insbesondere im Rahmen eines Mehrfachimports nützlich.
 

@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2269
+workflow-type: tm+mt
+source-wordcount: '2269'
 ht-degree: 100%
-
 ---
-
 # Häufig gestellte Fragen zur Migration zur Public Cloud{#dc-faq}
 
 
@@ -125,8 +131,8 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 * **Wie wird sich das auf unsere delegierte Subdomain auswirken, mit der wir unsere Kommunikation branden?**
 
   Die für die Marketing-Kommunikation verwendeten Subdomains bleiben unverändert. Abhängig von der Implementierung können jedoch auf der Client-Seite Aktionen erforderlich sein:
-   * Bei einer Subdomain-Zuweisung an Adobe (Standard) übernimmt Adobe alle Änderungen und sorgt für einen nahtlosen Übergang.
-   * Bei CNAME-Setup (Ausnahme) wird der Client aufgefordert, in Abstimmung mit Adobe Änderungen zu implementieren.
+  * Bei einer Subdomain-Zuweisung an Adobe (Standard) übernimmt Adobe alle Änderungen und sorgt für einen nahtlosen Übergang.
+  * Bei CNAME-Setup (Ausnahme) wird der Client aufgefordert, in Abstimmung mit Adobe Änderungen zu implementieren.
 
 ## Auswirkungen auf Konfiguration und Konnektivität
 
@@ -250,13 +256,13 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
   Die Datenübertragung zwischen den Rechenzentren ist der Teil des Vorgangs, der die größte Auswirkung auf die Ausfallzeit hat. Die Daten werden auf zwei Arten gespeichert:
 
-   * In der Datenbank (die mit Abstand wichtigste)
-   * In Dateien auf dem Anwendungsserver (Datenimport und -export)
+  * In der Datenbank (die mit Abstand wichtigste)
+  * In Dateien auf dem Anwendungsserver (Datenimport und -export)
 
   Die Reduzierung der Datenbankgröße ist von größter Bedeutung, um die Datenübertragung zu beschleunigen. Empfehlungen:
 
-   * Reduzieren Sie die Aufbewahrungszeiträume historischer Daten (Versandlogs, Trackinglogs usw.).
-   * Löschen Sie nicht mehr genutzte Datensätze aus anderen Tabellen (Sendungen, Empfänger, benutzerdefinierte Tabellen).
+  * Reduzieren Sie die Aufbewahrungszeiträume historischer Daten (Versandlogs, Trackinglogs usw.).
+  * Löschen Sie nicht mehr genutzte Datensätze aus anderen Tabellen (Sendungen, Empfänger, benutzerdefinierte Tabellen).
 
 * **Wie hoch ist die geschätzte Ausfallzeit für die Migration einer Instanz?**
 
@@ -274,11 +280,11 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
   Die Umgebungen werden in der folgenden Reihenfolge migriert:
 
-   1. Entwicklungsumgebungen
-   1. Staging-Umgebungen
-   1. Produktionsumgebungen
-   1. RT-Umgebungen
-   1. Mid-Sourcing-Umgebungen
+  1. Entwicklungsumgebungen
+  1. Staging-Umgebungen
+  1. Produktionsumgebungen
+  1. RT-Umgebungen
+  1. Mid-Sourcing-Umgebungen
 
 * **Wie sieht der Rollback-Plan aus?**
 

@@ -3,7 +3,7 @@ product: campaign
 title: Hypothesenvorlagen
 description: Erfahren Sie, wie Sie Hypothesenvorlagen in Campaign Response Manager erstellen.
 feature: Campaigns, Templates
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
@@ -11,20 +11,23 @@ exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 TQID: https://experienceleague.adobe.com/FKf9pDlOZI1NEhwmdSpcpvEbNsT28wEvgy81TBEQQgo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 subfeature_v2:
   - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+    internal-label: Response Management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1539
+workflow-type: tm+mt
+source-wordcount: '1530'
 ht-degree: 100%
-
 ---
-
 # Hypothesenvorlagen{#hypothesis-templates}
 
 
@@ -102,17 +105,17 @@ In der Registerkarte **[!UICONTROL Allgemein]** der Vorlage können Sie zudem di
 
   Um die Häufigkeit der Aktualisierung zu bestimmen, gehen Sie wie folgt vor:
 
-   1. Klicken Sie auf den Link **[!UICONTROL Ausführungsfrequenz...]** und anschließend auf die Schaltfläche **[!UICONTROL Ändern]**.
+  1. Klicken Sie auf den Link **[!UICONTROL Ausführungsfrequenz...]** und anschließend auf die Schaltfläche **[!UICONTROL Ändern]**.
 
-      ![](assets/response_frequency_execution_001.png)
+     ![](assets/response_frequency_execution_001.png)
 
-   1. Konfigurieren Sie den Häufigkeitstyp, die jeweiligen Ereignisse und den Gültigkeitszeitraum der Ereignisse.
+  1. Konfigurieren Sie den Häufigkeitstyp, die jeweiligen Ereignisse und den Gültigkeitszeitraum der Ereignisse.
 
-      ![](assets/response_frequency_execution_002.png)
+     ![](assets/response_frequency_execution_002.png)
 
-   1. Klicken Sie zur Bestätigung Ihrer Eingaben auf **[!UICONTROL Beenden]**.
+  1. Klicken Sie zur Bestätigung Ihrer Eingaben auf **[!UICONTROL Beenden]**.
 
-      ![](assets/response_frequency_execution_003.png)
+     ![](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion ist erfahrenen Benutzenden vorbehalten. Damit können Sie dem Audit der Messhypothese eine Registerkarte hinzufügen, um SQL-Abfragen anzuzeigen. Dies ermöglicht die Erkennung möglicher Fehlfunktionen, falls eine Simulation mit Fehlern beendet wird.
 * **[!UICONTROL Ausführungs-Workflow beibehalten]**: Diese Option ermöglicht es, den beim Start der Hypothesenberechnung automatisch erzeugten Workflow beizubehalten. In Hypothesen, die basierend auf einer Vorlage mit dieser Option erstellt werden, besteht zur Beobachtung des Ablaufs Zugriff auf den Workflow.
@@ -157,31 +160,31 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 * **Filterung der Transaktionen**: Im Tab **[!UICONTROL Umfang]** können Sie Filter für die Hypothese konfigurieren. Gehen Sie dazu wie folgt vor:
 
-   1. Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
+  1. Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
 
-      ![](assets/response_scope_filtering_001.png)
+     ![](assets/response_scope_filtering_001.png)
 
-   1. Bestimmen Sie die gewünschten Filterkriterien.
+  1. Bestimmen Sie die gewünschten Filterkriterien.
 
-      ![](assets/response_scope_filtering_002.png)
+     ![](assets/response_scope_filtering_002.png)
 
-   1. Wählen Sie die Transaktion aus, auf die die Hypothese sich beziehen soll.
+  1. Wählen Sie die Transaktion aus, auf die die Hypothese sich beziehen soll.
 
-      ![](assets/response_scope_filtering_003.png)
+     ![](assets/response_scope_filtering_003.png)
 
 * **Empfängerfilter**: Im Tab **[!UICONTROL Perimeter]** können Sie Ihre Hypothese auf jegliche, in Zusammenhang mit einer Nachricht stehende Information beschränken (Versand, Empfänger, E-Mail-Adresse, Dienst etc.). Gehen Sie hierzu wie folgt vor:
 
-   1. Klicken Sie auf den Link **[!UICONTROL Filter hinzufügen]** und anschließend auf **[!UICONTROL Abfrage bearbeiten]**.
+  1. Klicken Sie auf den Link **[!UICONTROL Filter hinzufügen]** und anschließend auf **[!UICONTROL Abfrage bearbeiten]**.
 
-      ![](assets/response_scope_filtering_004.png)
+     ![](assets/response_scope_filtering_004.png)
 
-   1. Bestimmen Sie die gewünschten Filterkriterien.
+  1. Bestimmen Sie die gewünschten Filterkriterien.
 
-      ![](assets/response_scope_filtering_005.png)
+     ![](assets/response_scope_filtering_005.png)
 
-   1. Klicken Sie auf **[!UICONTROL Beenden]**, um Ihre Abfrage zu speichern.
+  1. Klicken Sie auf **[!UICONTROL Beenden]**, um Ihre Abfrage zu speichern.
 
-      ![](assets/response_scope_filtering_006.png)
+     ![](assets/response_scope_filtering_006.png)
 
 * **Script**: Mithilfe eines JavaScripts besteht die Möglichkeit, die Parameter der Hypothese bei ihrer Ausführung dynamisch zu überschreiben.
 

@@ -8,9 +8,7 @@ source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 100%
-
 ---
-
 # Die dreistellige Browser-Version hat Einfluss auf Campaign-Web-Komponenten {#version-100}
 
 Google und Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden dreistelligen Versionen einige Websites beschädigen könnten.

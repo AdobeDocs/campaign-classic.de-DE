@@ -10,20 +10,23 @@ exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8061
+source-wordcount: '8113'
 ht-degree: 8%
-
 ---
-
 # Die Server-Konfigurationsdatei{#the-server-configuration-file}
 
 Die Gesamtkonfiguration von Adobe Campaign wird in der Datei **serverConf.xml** definiert, die sich im Verzeichnis **conf** des Installationsverzeichnisses befindet. In diesem Abschnitt werden alle Knoten und Parameter der Datei **serverConf.xml** aufgelistet.
@@ -550,7 +553,11 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
 
 >[!NOTE]
 >
->Hinweis unter **nameSevers**: Verwendet standardmäßig die Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle, > unter UNIX nicht definiert. Definiert die Domain Name Servers (DNS), > vom MTA verwendet werden, um den E-Mail-Austauscher für eine Domain >.
+>Hinweis zu **nameSevers**: nutzt standardmäßig das Netzwerk
+>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle
+>nicht in UNIX definiert. Definiert die Domain Name Servers (DNS)
+>wird vom MTA verwendet, um den Mail Exchanger für zu deklarieren.
+>Eine Domain.
 >
 >Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1,212.155.207.2). Wenn Ihr Versand-Server über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, den Parameter **nameServer** anzugeben, um Unklarheiten zu vermeiden.
 
@@ -3311,7 +3318,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Organisations-ID: Eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den VisitorID-Service und das IMS SSO verwendet wird. <br /> </td> 
+   <td> Organisations-ID: Eindeutige Organisationskennung innerhalb von Adobe Experience Cloud, die insbesondere für den VisitorID-Service und das IMS SSO verwendet wird. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 

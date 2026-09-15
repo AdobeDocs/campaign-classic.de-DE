@@ -10,25 +10,33 @@ exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 TQID: https://experienceleague.adobe.com/ZyGxEznt4l0SbCiUySGjKwJwqSUCKJ-TjwGHltVWIzE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
+    internal-label: Audit trail
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 3901
-ht-degree: 2%
-
+source-wordcount: '3901'
+ht-degree: 3%
 ---
-
 # Liste der Campaign Classic-Optionen{#configuring-campaign-options}
 
 Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adobe Campaign-Optionen konfigurieren. Einige davon sind bei der Installation von Campaign integriert und andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Paketen.
@@ -72,7 +80,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Siehe <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery" target="_blank">diesen Abschnitt</a>.</p> </td>
+   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Prozess der Versandbestätigung ist dann der Standardprozess. Nur die in den Versandeigenschaften zum Senden ernannte Person oder Benutzergruppe (oder eine bzw. ein Admin) kann den Versand bestätigen und ausführen. Siehe <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery" target="_blank">diesen Abschnitt</a>.</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
@@ -745,7 +753,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration von Experience Cloud Trigger. Datentyp ist „long text“ und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud Trigger mit Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Ermöglicht die Konfiguration von Experience Cloud-Triggern. Datentyp ist „long text“ und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud Trigger mit Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 

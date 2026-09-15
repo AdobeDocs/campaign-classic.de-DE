@@ -3,7 +3,7 @@ product: campaign
 title: Verbindungsgrenzwerte
 description: Verbindungsgrenzwerte
 feature: Monitoring
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,14 +11,14 @@ exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 188
-ht-degree: 19%
-
+source-wordcount: '176'
+ht-degree: 13%
 ---
-
 # Verbindungsgrenzwerte{#connection-thresholds}
 
 
@@ -33,34 +33,34 @@ Es gibt drei verschiedene Schwellenwerte:
 
 * Der **Adobe Campaign-Verbindungsschwellenwert**, der an zwei Stellen verfügbar ist:
 
-   * **Tomcat** Seite: Alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat-Client ankommen.
+  * **Tomcat** Seite: Alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat-Client ankommen.
 
-     Dieser Schwellenwert wird in der Datei **nl6/tomcat-X/conf/server.xml** konfiguriert. Mit dem **maxThreads**-Attribut können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
+    Dieser Schwellenwert wird in der Datei **nl6/tomcat-X/conf/server.xml** konfiguriert. Mit dem **maxThreads**-Attribut können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
 
-     ```
-     <Connector protocol="HTTP/1.1" port="8080"
-                    maxThreads="75"
-                    minSpareThreads="5"
-                    enableLookups="true" redirectPort="8443"
-                    acceptCount="100" connectionTimeout="20000"
-                    disableUploadTimeout="true" />
-         <Engine name="Tomcat-Standalone" defaultHost="localhost">
-           <Host name="localhost" appBase="./"
-                 unpackWARs="true" autoDeploy="true">
-     ```
+    ```
+    <Connector protocol="HTTP/1.1" port="8080"
+                   maxThreads="75"
+                   minSpareThreads="5"
+                   enableLookups="true" redirectPort="8443"
+                   acceptCount="100" connectionTimeout="20000"
+                   disableUploadTimeout="true" />
+        <Engine name="Tomcat-Standalone" defaultHost="localhost">
+          <Host name="localhost" appBase="./"
+                unpackWARs="true" autoDeploy="true">
+    ```
 
-   * **Datenbank**: Satz aller Verbindungen, die gleichzeitig in der Datenbank von einem Prozess geöffnet sind.
+  * **Datenbank**: Satz aller Verbindungen, die gleichzeitig in der Datenbank von einem Prozess geöffnet sind.
 
-     Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem **maxCnx**-Attribut im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
+    Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem **maxCnx**-Attribut im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
 
-     ```
-         <!-- Data source
-              -->
-           <dataSource name="default">
-             <dbcnx NChar="" bulkCopyUtility="" dbSchema="" encrypted="" login="" password="" provider="" server="" timezone="" unicodeData="" useTimestampTZ=""/>
-             <sqlParams funcPrefix="">
-               <postConnectSQL/>
-             </sqlParams>
-             <pool aliveTestDelaySec="600" freeCnx="0" maxCnx="90" maxIdleDelaySec="1200"/>
-           </dataSource>
-     ```
+    ```
+        <!-- Data source
+             -->
+          <dataSource name="default">
+            <dbcnx NChar="" bulkCopyUtility="" dbSchema="" encrypted="" login="" password="" provider="" server="" timezone="" unicodeData="" useTimestampTZ=""/>
+            <sqlParams funcPrefix="">
+              <postConnectSQL/>
+            </sqlParams>
+            <pool aliveTestDelaySec="600" freeCnx="0" maxCnx="90" maxIdleDelaySec="1200"/>
+          </dataSource>
+    ```

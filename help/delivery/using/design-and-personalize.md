@@ -2,7 +2,7 @@
 product: campaign
 title: Erstellen personalisierter Inhalte
 description: Erfahren Sie, wie Sie personalisierte Inhalte in Adobe Campaign-Sendungen erstellen
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Personalization
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 TQID: https://experienceleague.adobe.com/CYWaDn4S5zkM1QXQg08zHZW53nOqAv-aXDvo-Hw-v-E
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1350
+workflow-type: tm+mt
+source-wordcount: '1400'
 ht-degree: 100%
-
 ---
-
 # Erstellen personalisierter Inhalte {#build-personalized-content}
 
 Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](about-personalization.md), die [Formatierung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#message-content){target="_blank"} und [Bilder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
@@ -113,8 +121,8 @@ Testen Sie alle Änderungen vor dem endgültigen Senden.
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
-Die Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch das Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingeführt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Zeichentransliteration zulassen, indem Sie das entsprechende Feld in der Registerkarte mit den SMPP-Kanaleinstellungen des zugehörigen **[!UICONTROL externen Kontos]** aktivieren.
-Weitere Informationen finden Sie [in diesem Abschnitt](sms-set-up.md#creating-an-smpp-external-account)..
+Transliteration bezeichnet in einer SMS die Ersetzung eines Zeichens durch ein anderes, wenn das erste Zeichen nicht von GSM unterstützt wird. Beachten Sie, dass die Verwendung von Personalisierungsfeldern im SMS-Inhalt dazu führen kann, dass von der GSM-Codierung nicht unterstützte Zeichen eingefügt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie das entsprechende Kästchen auf der Registerkarte „SMPP-Kanaleinstellungen“ des entsprechenden **[!UICONTROL externen Kontos]** markieren.
+Weiterführende Informationen finden Sie [in diesem Abschnitt](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tipps**:
 

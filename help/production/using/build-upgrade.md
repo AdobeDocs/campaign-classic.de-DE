@@ -3,7 +3,7 @@ product: campaign
 title: Erste Schritte mit Build-Upgrades
 description: Wichtige Schritte zum Upgrade auf einen neuen Build
 feature: Monitoring, Upgrade
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
@@ -11,23 +11,29 @@ exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 TQID: https://experienceleague.adobe.com/XC0Q-35cYPjVHM-h2GNE570DqM8vxjSicu4vxnqYuSo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2379
-ht-degree: 34%
-
+source-wordcount: '2410'
+ht-degree: 33%
 ---
-
 # Durchführen eines Build-Upgrades{#performing-a-build-upgrade}
 
 
@@ -78,14 +84,14 @@ Für den Build-Upgrade-Prozess müssen die folgenden Personen beteiligt sein:
 * Adobe-Architekt: Bei gehosteten oder hybriden Architekturen muss sich der Architekt mit der Adobe Campaign-Kundenunterstützung abstimmen.
 
 * Projektmanager:
-   * Bei On-Premise-Installationen: Der interne Projektleiter des Kunden leitet das Upgrade und verwaltet Lebenszyklustests.
+  * Bei On-Premise-Installationen: Der interne Projektleiter des Kunden leitet das Upgrade und verwaltet Lebenszyklustests.
 
-   * bei gehosteter Installation: Das Hosting-Team arbeitet mit dem Adobe Campaign-Kundenunterstützungs-Team und dem Kunden zusammen, um den Zeitplan für die Aktualisierung für alle Instanzen zu koordinieren.
+  * bei gehosteter Installation: Das Hosting-Team arbeitet mit dem Adobe Campaign-Kundenunterstützungs-Team und dem Kunden zusammen, um den Zeitplan für die Aktualisierung für alle Instanzen zu koordinieren.
 
 * Adobe Campaign-Administrator:
-   * Bei On-Premise-Installationen: Der Administrator führt das Upgrade durch.
+  * Bei On-Premise-Installationen: Der Administrator führt das Upgrade durch.
 
-   * für gehostete Installationen: Das Hosting-Team führt das Upgrade durch.
+  * für gehostete Installationen: Das Hosting-Team führt das Upgrade durch.
 
 * Adobe Campaign-Benutzer/Marketing-Benutzer: Der Benutzer führt Tests für Entwicklungs-, Test- und Produktionsinstanzen durch.
 
@@ -332,7 +338,7 @@ Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 
 1. Gehen Sie im Adobe-Campaign-Explorer zu **Administration > Konfiguration > Packageverwaltung > Konflikte bearbeiten**.
 
-1. Wählen Sie in der Liste den Konflikt aus, den Sie auflösen möchten.
+1. Wählen Sie in der Liste den Konflikt aus, den Sie lösen möchten.
 Es gibt drei Optionen zum Beheben von Konflikten: **Neue Version akzeptieren**, **Aktuelle Version beibehalten**, **Code zusammenführen (und als aufgelöst deklarieren)** **Konflikt ignorieren (nicht empfohlen)**.
 
 **Wann kann ich die neue Version akzeptieren?**

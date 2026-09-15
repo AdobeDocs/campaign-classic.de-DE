@@ -3,33 +3,37 @@ product: campaign
 title: Konfigurieren des Zugriffs auf den Bericht
 description: Konfigurieren des Zugriffs auf den Bericht
 feature: Reporting, Monitoring
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 TQID: https://experienceleague.adobe.com/I1mGm11kQMgw-Iy-tbKBPGupVtiiCIT-SUzZVjoPwuM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 810
+workflow-type: tm+mt
+source-wordcount: '801'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren des Zugriffs auf den Bericht{#configuring-access-to-the-report}
 
 
 
 ## Anzeigekontext von Berichten {#report-display-context}
 
-Definieren Sie den Anzeigekontext des Berichts mithilfe der Registerkarte **[!UICONTROL Anzeige]** in der Adobe Campaign-Plattform.Der Zugriff auf einen Bericht hängt von Auswahltyp, Anzeigebedingungen und Zugriffsberechtigungen ab.
+Definieren Sie den Anzeigekontext des Berichts mithilfe der Registerkarte **[!UICONTROL Anzeige]** in der Adobe Campaign-Plattform. Der Zugriff auf einen Bericht hängt von Auswahltyp, Anzeigebedingungen und Zugriffsberechtigungen ab.
 
 ### Auswahltyp {#selection-type}
 

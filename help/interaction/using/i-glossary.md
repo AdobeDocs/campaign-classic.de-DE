@@ -10,16 +10,16 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 TQID: https://experienceleague.adobe.com/d6fevvmNur-4TC1KFM-09o68GnPFEM6S6SaFICwyCsw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1128
+workflow-type: tm+mt
+source-wordcount: '1128'
 ht-degree: 100%
-
 ---
-
 # Glossar für Campaign{#i-glossary}
 
 
@@ -28,8 +28,8 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 
 * **Umgebung**: Ein Set, das einen Angebotskatalog und Hooks (Angebotsplatzierungen) enthält. Sie müssen für jede Zielgruppendimension eine Umgebung erstellen. Hier bestehen zwei Arten von Einschränkungen:
 
-   * **Design-Umgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die bestimmen, welche Angebote einer Zielperson unterbreitet werden sollen oder nicht). Sowohl die Tabelle der in der Angebotszielgruppe enthaltenen Individuen als auch die Tabelle, in der die Angebotsvorschläge gespeichert werden, werden hier angegeben. Der Knoten **[!UICONTROL Design-Umgebung]** enthält Platzierungs-Unterordner, vordefinierte Filter und Angebotskategorien. Für jede **[!UICONTROL Design-Umgebung]** besteht eine entsprechende schreibgeschützte **[!UICONTROL Live-Umgebung]**, die aus derselben **[!UICONTROL Design-Umgebung]** erzeugt wird.
-   * **Live-Umgebung**: Eine Live-Umgebung ist mit einer **[!UICONTROL Design-Umgebung]** verknüpft. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie sind dazu bestimmt, beispielsweise auf einer Website oder in einem Versand unterbreitet zu werden.
+  * **Design-Umgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die bestimmen, welche Angebote einer Zielperson unterbreitet werden sollen oder nicht). Sowohl die Tabelle der in der Angebotszielgruppe enthaltenen Individuen als auch die Tabelle, in der die Angebotsvorschläge gespeichert werden, werden hier angegeben. Der Knoten **[!UICONTROL Design-Umgebung]** enthält Platzierungs-Unterordner, vordefinierte Filter und Angebotskategorien. Für jede **[!UICONTROL Design-Umgebung]** besteht eine entsprechende schreibgeschützte **[!UICONTROL Live-Umgebung]**, die aus derselben **[!UICONTROL Design-Umgebung]** erzeugt wird.
+  * **Live-Umgebung**: Eine Live-Umgebung ist mit einer **[!UICONTROL Design-Umgebung]** verknüpft. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie sind dazu bestimmt, beispielsweise auf einer Website oder in einem Versand unterbreitet zu werden.
 
 * **Platzierung**: Ordner, der festlegt, wo das Angebot gezeigt wird. Über die Platzierung wird insbesondere der zu verwendende Kanal festgelegt, aber auch die Möglichkeit, ob der Einzelmodus genutzt werden kann (standardmäßig kommt nur der Batch-Modus zum Einsatz). Des Weiteren können hier mithilfe von Darstellungsfunktionen Angebotsinhalte erstellt und Angebotsthemen definiert werden. Eine Platzierung bildet somit die Schnittstelle zwischen dem Angebotsmodul und den diversen Kanälen.
 
@@ -58,12 +58,12 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 * **Schlichtung**: Auswahl der Angebote, die in einer Umgebung angezeigt werden sollen (geeignete Angebote). Das Schlichtungsprinzip ordnet Angebote nach ihrer Priorität entsprechend den Kriterien, die in Kategorien, Angeboten und Kontextangeboten definiert wurden.
 * **Kontakt**: Ein Kontakt aus einer eingehenden Interaktion. Bei der Verarbeitung der Modulaufrufe wird der Kontakt mit einer Zielgruppendimension verknüpft. Es gibt zwei Arten von Kontakten:
 
-   * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat. Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
-   * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Terminologie wird nur für eingehende Interaktionen verwendet.
+  * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat. Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
+  * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Terminologie wird nur für eingehende Interaktionen verwendet.
 
-     >[!NOTE]
-     >
-     >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
+    >[!NOTE]
+    >
+    >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
 
 * **Ausgehende Interaktion**: Aufruf an das Interaktionsmodul von einer Kontaktliste aus (für den Versand von E-Mails, Briefpost usw.). Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird im Allgemeinen im Batch-Modus verarbeitet.
 * **Eingehende Interaktionen**: Interaktion nach einem eingehenden Aufruf, der durch die Aktion eines Kontakts im Kanal generiert wurde. Dieser Interaktionstyp wird in der Regel im Einzelmodus verarbeitet.
@@ -71,9 +71,9 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 * **Einzelmodus**: Zu einem gegebenen Zeitpunkt wird jeweils ein Kontakt verarbeitet. Dieser Modus wird im Allgemeinen für eingehende Interaktionen und Transaktionsnachrichten verwendet.
 * **Identifikationsmodus**: bezieht sich auf den Status eines Kontakts:
 
-   * **[!UICONTROL explizit]**: Der Kontakt konnte identifiziert werden, da er sich in der Kanalschnittstelle mit seinen Kundendaten angemeldet hat.
-   * **[!UICONTROL implizit]**: Der Kontakt konnte mithilfe eines Cookies (Sitzungs- oder permanentes Cookie) identifiziert werden. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
-   * **[!UICONTROL anonym]**: Der Kontakt konnte nicht identifiziert werden.
+  * **[!UICONTROL explizit]**: Der Kontakt konnte identifiziert werden, da er sich in der Kanalschnittstelle mit seinen Kundendaten angemeldet hat.
+  * **[!UICONTROL implizit]**: Der Kontakt konnte mithilfe eines Cookies (Sitzungs- oder permanentes Cookie) identifiziert werden. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
+  * **[!UICONTROL anonym]**: Der Kontakt konnte nicht identifiziert werden.
 
 * **Geeignetes Angebot**: Angebot, das bestimmten, zuvor definierten Bedingungen entspricht und somit einer Zielgruppe auf mit ihrer Markenerfahrung kohärente Weise unterbreitet werden kann.
 * **Unterbreitungsregeln**: Typologieregeln, die auf Basis der einem Kontakt bereits vorgeschlagenen Angebote bestimmte Angebote von der Unterbreitung ausschließen. Die Regeln werden auf Ebene der Umgebung der Angebote verzeichnet.

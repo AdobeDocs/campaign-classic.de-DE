@@ -2,23 +2,24 @@
 product: campaign
 title: Antworten verwalten
 description: Erfahren Sie, wie Sie Umfrageantworten verwalten
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 TQID: https://experienceleague.adobe.com/-xjK3nxUc4Lz-mWyVoUbbIJ8HQvyLRInYk-w8zYLYE4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 909
+workflow-type: tm+mt
+source-wordcount: '900'
 ht-degree: 100%
-
 ---
-
 # Antworten verwalten{#managing-answers}
 
 
@@ -91,7 +92,7 @@ Sie können Empfänger auch auf der Basis ihrer Antworten filtern, sodass nur di
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
-Erstellen Sie Ihre Abfrage basierend auf den Profilen, die Sie abrufen möchten. Im folgenden Beispiel können Sie Profile mit mindestens zwei Verträgen einschließlich eines Vetrags des Typs A für die Abfrage auswählen. 
+Erstellen Sie Ihre Abfrage basierend auf den Profilen, die Sie abrufen möchten. Im folgenden Beispiel können Sie Profile mit mindestens zwei Verträgen einschließlich eines Vetrags des Typs A für die Abfrage auswählen.
 
 ![](assets/s_ncs_admin_survey_read_responses_edit.png)
 

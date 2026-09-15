@@ -2,26 +2,30 @@
 product: campaign
 title: 'Anwendungsbeispiele: Web-Formulare'
 description: 'Anwendungsbeispiele: Web-Formulare'
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 TQID: https://experienceleague.adobe.com/Zw-cfoQrq1PAe-swZ7gvMNyTb4ciCMF2kdT7fN2zLsg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1013
+workflow-type: tm+mt
+source-wordcount: '1004'
 ht-degree: 100%
-
 ---
-
 # Anwendungsbeispiele: Web-Formulare{#use-cases-web-forms}
 
 
@@ -37,7 +41,7 @@ Es wird von folgendem Szenario ausgegangen:
 
 ### Schritt 1: Erstellen von Informationsdiensten {#step-1---creating-information-services}
 
-1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden.Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](../../delivery/using/about-services-and-subscriptions.md).
+1. Erstellen Sie den Dienst für die Newsletter-Anmeldung für Ihre Empfangenden. Weitere Informationen zur Erstellung eines Newsletters finden Sie [in diesem Abschnitt](../../delivery/using/about-services-and-subscriptions.md).
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 

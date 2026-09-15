@@ -2,28 +2,33 @@
 product: campaign
 title: Aktualisieren der Bounce-Qualifizierung nach einem ISP-Ausfall
 description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 hide: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 TQID: https://experienceleague.adobe.com/91YUAuxL17kfBm6-hryEpf-A8SPJzA-z-ss9f2maszY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 512
+source-wordcount: '503'
 ht-degree: 100%
-
 ---
-
 # Aktualisieren falscher Hardbounces nach einem ISP-Ausfall {#update-bounces}
 
 
@@ -63,19 +68,19 @@ Auf der Grundlage des Zeitrahmens des Vorfalls und des ISP befinden sich unten d
 
 * Für Campaign-Umgebungen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
-   * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-   * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
-   * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher
+  * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
+  * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
+  * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
+  * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher
 
 * Für Campaign-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
+  * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
 
-     wobei „support.ISP.com“ zum Beispiel: „support.apple.com“ oder „support.google.com“ sein kann
+    wobei „support.ISP.com“ zum Beispiel: „support.apple.com“ oder „support.google.com“ sein kann
 
-   * **Statusaktualisierung (@lastModified)** am oder später als `MM/DD/YYYY HH:MM:SS AM`
-   * **Statusaktualisierung (@lastModified)** am oder früher als `MM/DD/YYYY HH:MM:SS PM`
+  * **Statusaktualisierung (@lastModified)** am oder später als `MM/DD/YYYY HH:MM:SS AM`
+  * **Statusaktualisierung (@lastModified)** am oder früher als `MM/DD/YYYY HH:MM:SS PM`
 
 
 Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entweder auf den Status **[!UICONTROL Gültig]** setzen, damit sie vom Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden, oder sie einfach aus der Tabelle löschen.

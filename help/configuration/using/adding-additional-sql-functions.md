@@ -8,20 +8,22 @@ exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 TQID: https://experienceleague.adobe.com/HRym19p3YGAa3PEPgFBfU3ka39l5348CkdQaWcHZOJk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1040
+source-wordcount: '1040'
 ht-degree: 0%
-
 ---
-
 # Definieren zusätzlicher SQL-Funktionen{#adding-additional-sql-functions}
 
 Adobe Campaign ermöglicht es dem Benutzer, **seine eigenen Funktionen** zu definieren, die auf SQL-Funktionen zugreifen können, sowohl auf die Datenbankfunktionen als auch auf die Funktionen, die noch nicht in der Konsole verfügbar sind. Dies ist beispielsweise für Aggregatfunktionen (Durchschnitt, Maximum, Summe) nützlich, die nur auf dem Server berechnet werden können oder wenn die Datenbank eine einfachere Möglichkeit bietet, bestimmte Funktionen zu implementieren, anstatt den Ausdruck in der Konsole „manuell“ zu schreiben (z. B. Datumsverwaltung).
@@ -131,8 +133,8 @@ Das Feld **@name** bezieht sich auf den Namen der Funktion, und „args“ ist d
 * **@minArgs** und **maxArgs** gibt die Anzahl der Parameter (Minimum und Maximum) für einen Parameter an. Für eine Funktion mit zwei Parametern sind z. B. minArgs und maxArgs 2 und 2. Bei 3 Parametern plus 1 optional sind sie 3 bzw. 4.
 * Schließlich stellt das **providerPart**-Element die Funktionsimplementierung bereit.
 
-   * Das **provider**-Attribut ist obligatorisch. Es gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntaxen oder zugrunde liegenden Funktionen alternative Implementierungen je nach Datenbank bereitgestellt werden.
-   * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbank können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„) Gibt nur einen einzigen Wert zurück. Dies ist beispielsweise der Fall in Oracle (die Abfrage muss in Klammern geschrieben werden).
+  * Das **provider**-Attribut ist obligatorisch. Es gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntaxen oder zugrunde liegenden Funktionen alternative Implementierungen je nach Datenbank bereitgestellt werden.
+  * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbank können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„) Gibt nur einen einzigen Wert zurück. Dies ist beispielsweise der Fall in Oracle (die Abfrage muss in Klammern geschrieben werden).
 
   >[!NOTE]
   >

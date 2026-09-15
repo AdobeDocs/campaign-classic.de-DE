@@ -10,22 +10,27 @@ exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 TQID: https://experienceleague.adobe.com/e4mk1nx7CoqoUJv39nnr5ynkz629kEzR3jdP-lyMUzA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: ht
-source-wordcount: 1312
+workflow-type: tm+mt
+source-wordcount: '1312'
 ht-degree: 100%
-
 ---
-
 # Konfiguration von Instanzen {#creating-a-shared-connection}
 
 
@@ -206,7 +211,7 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 
    >[!NOTE]
    >
-   >Die Benutzenden **mc1** und **mc2** müssen über Berechtigungen des Typs **[!UICONTROL Message Center Ausführung]** verfügen und dürfen über keinen Zugriff auf die Client-Console von Adobe Campaign verfügen.Eine Benutzerin bzw. ein Benutzer muss immer mit einer Sicherheitszone verknüpft sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
+   >Die Benutzenden **mc1** und **mc2** müssen über Berechtigungen des Typs **[!UICONTROL Message Center Ausführung]** verfügen und dürfen über keinen Zugriff auf die Client-Console von Adobe Campaign verfügen. Eine Benutzerin bzw. ein Benutzer muss immer mit einer Sicherheitszone verknüpft sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 1. Kreuzen Sie für jeden Benutzer die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** an und wählen Sie den dem jeweiligen Benutzer entsprechenden Ordner aus (**Ordner 1** für den Benutzer **mc1** und **Order 2** für den Benutzer **mc2**).
 

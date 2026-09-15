@@ -10,15 +10,14 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 TQID: https://experienceleague.adobe.com/AgGQgham1xWf9U5mAAc-Eul-izsp-tW6aNNPMobLvT4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1096
-ht-degree: 4%
-
+source-wordcount: '1097'
+ht-degree: 5%
 ---
-
 # Eigenständige Bereitstellung{#standalone-deployment}
 
 
@@ -73,8 +72,8 @@ Wenn das Volumen wächst, verschiebt eine Variante dieser Architektur den Datenb
 * Bounce-Postfach über POP3 zugänglich,
 * Erstellung von zwei DNS-Aliassen:
 
-   * das erste Gerät, das der Öffentlichkeit zur Verfolgung und zum Verweisen auf den Computer auf seiner öffentlichen IP-Adresse zur Verfügung gestellt wird;
-   * Der zweite Alias, der internen Benutzern für den Konsolenzugriff bereitgestellt wird und auf denselben Computer verweist.
+  * das erste Gerät, das der Öffentlichkeit zur Verfolgung und zum Verweisen auf den Computer auf seiner öffentlichen IP-Adresse zur Verfügung gestellt wird;
+  * Der zweite Alias, der internen Benutzern für den Konsolenzugriff bereitgestellt wird und auf denselben Computer verweist.
 
 * Firewall konfiguriert, um SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) zu öffnen Ports. Weitere Informationen finden Sie unter [Netzwerkkonfiguration](../../installation/using/network-configuration.md).
 
@@ -120,7 +119,7 @@ Gehen Sie wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-1. Erstellen Sie die **demo**-Instanz mit den DNS-Masken für das Tracking (in diesem Fall **tracking.campaign.net**) und den Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Dazu gibt es zwei Möglichkeiten:
+1. Erstellen Sie die **demo**-Instanz mit den DNS-Masken für das Tracking (in diesem Fall **tracking.campaign.net**) und den Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Dafür gibt es zwei Möglichkeiten:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -244,7 +243,7 @@ Gehen Sie wie folgt vor:
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Da der Adobe Campaign-Server sowohl als Anwendungs- als auch als Weiterleitungsserver verwendet wird, stellt die interne URL zur Erfassung von Trackinglogs und zur Übertragung von URLs eine direkte interne Verbindung zu Tomcat dar (https://localhost:8080).
+     Da der Adobe Campaign-Server sowohl als Anwendungs- als auch als Weiterleitungsserver verwendet wird, stellt die interne URL zur Erfassung von Trackinglogs und zur Übertragung von URLs eine direkte interne Verbindung zu Tomcat (https://localhost:8080) dar.
 
    * Bounce-Management: Geben Sie die Parameter für die Handhabung von Bounce Messages ein (berücksichtigen Sie nicht **Abschnitt** Unverarbeitete Bounce Messages).
    * Zugriff von: Geben Sie die beiden URLs für Berichte an: Web-Formulare und Mirrorseiten.

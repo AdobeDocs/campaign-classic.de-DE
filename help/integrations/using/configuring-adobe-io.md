@@ -13,10 +13,8 @@ hide: true
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
-
+ht-degree: 92%
 ---
-
 # Konfigurieren der Developer Console für Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 <!--
@@ -43,7 +41,7 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
 >[!AVAILABILITY]
 >
-> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
+> Die Berechtigung für das Service-Konto (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Programmen müssen jetzt auf OAuth-Server-zu-Server-Anmeldedaten angewiesen sein. </br>
 >
 > * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende [Anmeldedaten für Service-Konten (JWT)](oauth-technical-account.md) sind noch bis zum 27. Januar 2025 gültig.</br>
 >

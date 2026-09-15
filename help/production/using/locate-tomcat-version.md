@@ -3,7 +3,7 @@ product: campaign
 title: Tomcat-Version in Adobe Campaign suchen
 description: Erfahren Sie, wie Sie die aktuelle Version des eingebetteten Tomcat-Webservlets finden, das in einer Instanz von Adobe Campaign verwendet wird.
 feature: Monitoring
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,19 +11,21 @@ exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 TQID: https://experienceleague.adobe.com/cu5oSibc5iznD6CUZSoLxXf1D21g-eoJG3udHBVel7w
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 539
-ht-degree: 5%
-
+source-wordcount: '527'
+ht-degree: 3%
 ---
-
 # Tomcat-Version suchen{#locate-tomcat-version}
 
 Adobe Campaign verwendet ein **eingebettetes Web-Servlet mit dem Namen Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anfragen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackten URL-Links, SOAP-Aufrufen usw.). Häufig befindet sich für alle nach außen gerichteten Adobe Campaign-Instanzen ein externer Webserver (normalerweise IIS oder Apache) davor.

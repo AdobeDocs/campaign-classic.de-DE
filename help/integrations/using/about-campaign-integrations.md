@@ -3,7 +3,7 @@ product: campaign
 title: Über Campaign-Integrationen
 description: Verwenden anderer Lösungen von Adobe und Kombinieren ihrer verschiedenen Funktionen mit Campaign
 feature: Overview
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -12,24 +12,30 @@ exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 TQID: https://experienceleague.adobe.com/PUFoWjnwax8oHM3dH-FJDH7b26p4qNBMaJfm2qWGNz0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 744
+workflow-type: tm+mt
+source-wordcount: '735'
 ht-degree: 100%
-
 ---
-
 # Erste Schritte mit Adobe Campaign-Integrationen {#about-campaign-integrations}
 
 Adobe Experience Cloud ist ein umfassender Satz marktführender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Lösungen und Apps aufbauen.
@@ -77,7 +83,7 @@ Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die andere
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management System (IMS) – Adobe ID</strong><br /> </td> 
-   <td> Konfigurieren Sie Adobe IMS, um eine Verbindung zu Adobe Campaign mit derselben Adobe ID herzustellen wie für die anderen Adobe Experience Cloud-Lösungen.<br /> Die Anmeldung mit einer Adobe ID ist notwendig, um gewisse Funktionen im Zusammenhang mit den Adobe Experience Cloud-Integrationen nutzen zu können.<br /><p><a href="../../integrations/using/about-adobe-id.md">Informationen</a> zur Implementierung von Adobe ID mit Adobe Campaign.</p><br /> </td> 
+   <td> Konfigurieren Sie Adobe IMS, um eine Verbindung zu Adobe Campaign mit derselben Adobe ID herzustellen wie für die anderen Adobe Experience Cloud-Lösungen.<br /> Die Anmeldung mit einer Adobe ID ist notwendig, um gewisse Funktionen im Zusammenhang mit den Adobe Experience Cloud-Integrationen nutzen zu können.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Informationen</a> zur Implementierung von Adobe ID mit Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 

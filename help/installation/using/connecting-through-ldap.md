@@ -3,7 +3,7 @@ product: campaign
 title: Über LDAP verbinden
 description: Erfahren Sie, wie Sie sich mit LDAP bei Campaign anmelden
 feature: Installation, Instance Settings
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,17 +11,17 @@ exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 TQID: https://experienceleague.adobe.com/GMKB83dj65iqnlu97uX-d672TWOysjd4gspRLEfz-y8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1258
-ht-degree: 2%
-
+source-wordcount: '1246'
+ht-degree: 1%
 ---
-
 # Über LDAP verbinden {#connecting-through-ldap}
 
 ## Campaign und LDAP konfigurieren {#configuring-campaign-and-ldap}
@@ -42,19 +42,19 @@ Im Fenster können Sie die Benutzeridentifizierung von Adobe Campaign über das 
 * Geben Sie die Adresse des LDAP-Servers im Feld **[!UICONTROL LDAP-Server]** an. Sie können die Portnummer hinzufügen. Standardmäßig wird der Port 389 verwendet.
 * Wählen Sie in der Dropdown-Liste die Authentifizierungsmethode für Benutzer aus:
 
-   * Verschlüsseltes Kennwort (**md5**) - Standardmodus.
+  * Verschlüsseltes Kennwort (**md5**) - Standardmodus.
 
-   * Nur-Text-Passwort + SSL (**TLS**) - Die gesamte Authentifizierungsprozedur (Passwort eingeschlossen) wird verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
+  * Nur-Text-Passwort + SSL (**TLS**) - Die gesamte Authentifizierungsprozedur (Passwort eingeschlossen) wird verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
 
-     Wenn Sie diesen Authentifizierungsmodus unter Linux verwenden, wird das Zertifikat von einer OpenLDAP-Client-Bibliothek überprüft. Es wird empfohlen, ein gültiges SSL-Zertifikat zu verwenden, damit das Authentifizierungsverfahren verschlüsselt wird. Andernfalls werden die Informationen im Klartext angezeigt.
+    Wenn Sie diesen Authentifizierungsmodus unter Linux verwenden, wird das Zertifikat von einer OpenLDAP-Client-Bibliothek überprüft. Es wird empfohlen, ein gültiges SSL-Zertifikat zu verwenden, damit das Authentifizierungsverfahren verschlüsselt wird. Andernfalls werden die Informationen im Klartext angezeigt.
 
-     Das Zertifikat wird auch in Windows verifiziert.
+    Das Zertifikat wird auch in Windows verifiziert.
 
-   * Windows NT LAN Manager (**NTLM**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domain-Namen verwendet.
+  * Windows NT LAN Manager (**NTLM**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domain-Namen verwendet.
 
-   * Distributed Password Authentication (**DPA**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domain-Namen (domain.com) verwendet.
+  * Distributed Password Authentication (**DPA**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domain-Namen (domain.com) verwendet.
 
-   * Nur-Text-Passwort - Keine Verschlüsselung (nur zur Verwendung in Testphasen).
+  * Nur-Text-Passwort - Keine Verschlüsselung (nur zur Verwendung in Testphasen).
 
 * Wählen Sie den Benutzerauthentifizierungsmodus aus: **[!UICONTROL Automatische Berechnung der eindeutigen Benutzerkennung]** (siehe Schritt [Berechnung des Distinguished Names](#distinguished-name-calculation)) oder **[!UICONTROL Suchen der eindeutigen Benutzerkennung im Verzeichnis]** (siehe Schritt [Suchen nach Kennungen](#searching-for-identifiers)).
 
@@ -125,17 +125,17 @@ Wenn Sie nach einer Kennung suchen, können Sie die Suche im Bereitstellungsassi
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Rekursiv (Standardmodus)]**.
+  1. **[!UICONTROL Rekursiv (Standardmodus)]**.
 
-      Das LDAP-Verzeichnis wird vollständig durchsucht, beginnend mit einer bestimmten Ebene.
+     Das LDAP-Verzeichnis wird vollständig durchsucht, beginnend mit einer bestimmten Ebene.
 
-   1. **[!UICONTROL Auf die Basis beschränkt]**.
+  1. **[!UICONTROL Auf die Basis beschränkt]**.
 
-      Alle Attribute sind in der Suche enthalten.
+     Alle Attribute sind in der Suche enthalten.
 
-   1. **[!UICONTROL Auf die erste Unterebene der Basis beschränkt]**.
+  1. **[!UICONTROL Auf die erste Unterebene der Basis beschränkt]**.
 
-      Die Suche wird nach allen Attributen des Verzeichnisses und beginnend mit der ersten Ebene des Attributs durchgeführt.
+     Die Suche wird nach allen Attributen des Verzeichnisses und beginnend mit der ersten Ebene des Attributs durchgeführt.
 
 * Im **[!UICONTROL Filter]** können Sie ein Element angeben, um den Suchbereich zu verfeinern.
 

@@ -7,17 +7,18 @@ exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 TQID: https://experienceleague.adobe.com/MbBmc-H9eZfmqWy-vZb6dd-m-l0G-UxtY-HAboNURjc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 2035
+source-wordcount: '2035'
 ht-degree: 1%
-
 ---
-
 # Element {#element--element}
 
 
@@ -65,11 +66,11 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 
   Folgende Werte sind verfügbar:
 
-   * „none“: Aussöhnung allein. Dies bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren oder einen Fehler zu erzeugen, wenn es nicht existiert.
-   * „insertOrUpdate“: Mit dem Einfügen aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, wenn es nicht vorhanden ist.
-   * „INSERT“: Einfügen. Dies bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
-   * „UPDATE“: Aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler generiert, wenn es nicht vorhanden ist.
-   * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
+  * „none“: Aussöhnung allein. Dies bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren oder einen Fehler zu erzeugen, wenn es nicht existiert.
+  * „insertOrUpdate“: Mit dem Einfügen aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, wenn es nicht vorhanden ist.
+  * „INSERT“: Einfügen. Dies bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
+  * „UPDATE“: Aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler generiert, wenn es nicht vorhanden ist.
+  * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
 * **Erweitert (Boolesch)**: Wenn diese Option aktiviert ist (@advanced=„true„), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, die zum Konfigurieren einer Liste in einem Formular verfügbar sind.
 * **Aggregat (Zeichenfolge)**: dient dem Kopieren der Definition einer `<element>` über ein anderes Schema. Dieses Attribut erhält eine Schemadeklaration in Form eines „Namespace:name.
@@ -77,14 +78,14 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 * **autopk (Boolescher Wert)**: Wenn diese Option aktiviert ist (autopk=„true„), wird automatisch ein eindeutiger Schlüssel definiert. Diese Option kann nur für das Hauptelement des Schemas verwendet werden. Achtung: Adobe Campaign garantiert nur, dass der generierte Schlüssel eindeutig ist. Es ist nicht garantiert, dass die Schlüsselwerte aufeinander folgend und inkrementell sind.
 * **dataPolicy (Zeichenfolge)**: Ermöglicht es Ihnen, Validierungseinschränkungen für die im SQL-Feld zulässigen Werte anzugeben. Die Werte für dieses Attribut sind:
 
-   * „none“: kein Wert
-   * „smartCase“: Großbuchstaben der ersten Buchstaben
-   * „lowercase“: nur Kleinbuchstaben
-   * „upperCase“: Großbuchstaben
-   * „email“: E-Mail-Adresse
-   * „Telefon“: Telefonnummer
-   * „identifier“: Kennungsname
-   * „resIdentifier“: Dateiname
+  * „none“: kein Wert
+  * „smartCase“: Großbuchstaben der ersten Buchstaben
+  * „lowercase“: nur Kleinbuchstaben
+  * „upperCase“: Großbuchstaben
+  * „email“: E-Mail-Adresse
+  * „Telefon“: Telefonnummer
+  * „identifier“: Kennungsname
+  * „resIdentifier“: Dateiname
 
 * **dbEnum (Zeichenfolge)**: Empfängt den internen Namen einer „geschlossenen“ Auflistung. Die Auflistungswerte müssen in der `<srcschema>` definiert werden.
 * **defOnDuplicate (Boolescher Wert)**: Wenn dieses Attribut aktiviert wird, wird beim Duplizieren eines Datensatzes der Standardwert (definiert in @default) automatisch erneut auf den Datensatz angewendet.
@@ -97,13 +98,13 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 * **externalJoin (Boolescher Wert)**: externer Join in einem Element vom Typ „link“.
 * **Feature (String)** definiert ein Merkmalsfeld: Diese Felder werden zur Erweiterung der Daten in einer vorhandenen Tabelle verwendet, jedoch mit Speicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
 
-   * „Freigegeben“: Der Inhalt wird pro Datentyp in einer freigegebenen Tabelle gespeichert
-   * „Dediziert“: Der Inhalt wird in einer dedizierten Tabelle gespeichert
+  * „Freigegeben“: Der Inhalt wird pro Datentyp in einer freigegebenen Tabelle gespeichert
+  * „Dediziert“: Der Inhalt wird in einer dedizierten Tabelle gespeichert
 
   SQL-Merkmalstabellen werden automatisch auf Basis des Merkmalstyps erstellt:
 
-   * Dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * Freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * Dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * Freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Es gibt zwei Arten von Merkmalsfeldern: einfache Felder, in denen ein einzelner Wert für das Merkmal zulässig ist, und Multiple-Choice-Felder, in denen das Merkmal mit einem Sammlungselement verknüpft ist, das mehrere Werte enthalten kann.
 
@@ -120,11 +121,11 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 
   Folgende Werte sind verfügbar:
 
-   * „define“: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
-   * „Normal“: Durch Löschen der Quellentität werden die Schlüssel der Relation auf der Zielentität initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert
-   * „own“: Durch Löschen der Quellentität wird das Löschen der Zielentität zum Trigger
-   * „owncopy“: Ähnlich wie „own“ (beim Löschen) oder dupliziert Vorkommen (bei Duplizierung)
-   * „neutral“: Führt keine Operation aus
+  * „define“: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
+  * „Normal“: Durch Löschen der Quellentität werden die Schlüssel der Relation auf der Zielentität initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert
+  * „own“: Durch Löschen der Quellentität wird das Löschen der Zielentität zum Trigger
+  * „owncopy“: Ähnlich wie „own“ (beim Löschen) oder dupliziert Vorkommen (bei Duplizierung)
+  * „neutral“: Führt keine Operation aus
 
 * **label (Zeichenfolge)**: Elementbezeichnung.
 * **labelSingular (Zeichenfolge)**: label (Singulärform) des Elements, das in einigen Teilen der Schnittstelle verwendet wird.
@@ -134,10 +135,10 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 
   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt.
 
-   * „i“: Präfix für den Typ „integer“.
-   * „D“: Präfix für den Typ „double“.
-   * „s“: Präfix für den String-Typ.
-   * „ts“: Präfix für den Typ „date“.
+  * „i“: Präfix für den Typ „integer“.
+  * „D“: Präfix für den Typ „double“.
+  * „s“: Präfix für den String-Typ.
+  * „ts“: Präfix für den Typ „date“.
 
   Um den Namen der Tabelle autonom zu definieren, müssen Sie das Attribut &quot;@sqltable“ in der Definition des Hauptschemaelements verwenden.
 
@@ -146,9 +147,9 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 * **pkSequence (Zeichenfolge)**: Empfängt den Namen der Sequenz, die für die Berechnung eines automatisch inkrementellen Schlüssels verwendet werden soll. Dieses Attribut kann nur verwendet werden, wenn für das Stammelement des Schemas ein automatisch inkrementeller Schlüssel definiert ist.
 * **pkgStatus (Zeichenfolge)**: Bei Paketexporten werden Werte als Funktion des Werts dieses Attributs berücksichtigt:
 
-   * „Always“: Das Element ist immer vorhanden
-   * „Nie“: Das Element wird nie vorhanden sein
-   * „Standard (oder nichts)“: Das Element wird exportiert, es sei denn, es handelt sich um das Standardelement oder es ist kein internes Feld und wäre nicht mit anderen Instanzen kompatibel
+  * „Always“: Das Element ist immer vorhanden
+  * „Nie“: Das Element wird nie vorhanden sein
+  * „Standard (oder nichts)“: Das Element wird exportiert, es sei denn, es handelt sich um das Standardelement oder es ist kein internes Feld und wäre nicht mit anderen Instanzen kompatibel
 
 * **ref (Zeichenfolge)** Dieses Attribut definiert einen Verweis auf ein >Element>-Element, das von mehreren Schemata gemeinsam genutzt wird (Definition-Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
 * **required (boolean)**: Wenn dieses Attribut aktiviert ist (@required=„true„), wird das Feld in der Benutzeroberfläche hervorgehoben. Die Beschriftung des Felds wird in den Formularen rot angezeigt.
@@ -157,8 +158,8 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 
   Mögliche Werte:
 
-   * „single“ : Einfacher Link vom Typ 1-1
-   * „unbound“: Sammlungsrelation vom Typ 1-N
+  * „single“ : Einfacher Link vom Typ 1-1
+  * „unbound“: Sammlungsrelation vom Typ 1-N
 
   Wenn das Attribut bei der Link-Erstellung nicht angegeben wird, ist die Kardinalität standardmäßig 1-N.
 
@@ -181,32 +182,32 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 
   Liste der verfügbaren Typen:
 
-   * BELIEBIGE
-   * Eimer
-   * Klecks
-   * Boolesch
-   * Byte
-   * CDATA
-   * datetime
-   * datetimets
-   * datetimenotz
-   * date
-   * double
-   * Aufzählung
-   * float
-   * HTML
-   * int64
-   * link
-   * Lang
-   * Memo
-   * MNTOKEN
-   * Prozent
-   * Primärschlüssel
-   * Kurz
-   * Zeichenfolge
-   * time
-   * timespan
-   * uuid
+  * BELIEBIGE
+  * Klasse
+  * Klecks
+  * Boolesch
+  * Byte
+  * CDATA
+  * datetime
+  * datetimets
+  * datetimenotz
+  * date
+  * double
+  * Aufzählung
+  * float
+  * HTML
+  * int64
+  * link
+  * Lang
+  * Memo
+  * MNTOKEN
+  * Prozent
+  * Primärschlüssel
+  * Kurz
+  * Zeichenfolge
+  * time
+  * timespan
+  * uuid
 
 * **unbound (Boolescher Wert)**: Wenn das Attribut aktiviert ist (unbound=„true„), wird die Relation als Sammlungselement für eine 1-N-Kardinalität deklariert.
 * **userEnum (Zeichenfolge)**: Empfängt den internen Namen einer „offenen“ Auflistung. Auflistungswerte können vom Benutzer in der -Schnittstelle definiert werden.

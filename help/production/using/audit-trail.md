@@ -7,20 +7,23 @@ exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 TQID: https://experienceleague.adobe.com/y8kDwxCY0MkBcDPUPY7hmFlpJc3l3qsEiDRhhMGqT00
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 448
+source-wordcount: '448'
 ht-degree: 81%
-
 ---
-
 # Audit-Protokoll{#audit-trail}
 
 >[!INFO]
@@ -46,14 +49,14 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
 * Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
-   * Starten
-   * Aussetzen
-   * Stoppen
-   * Neu starten
-   * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
-   * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
-   * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
-   * Unbedingter Stopp
+  * Starten
+  * Aussetzen
+  * Stoppen
+  * Neu starten
+  * Bereinigen, was der Aktion „Verlauf bereinigen“ entspricht
+  * Simulieren, was der Aktion „Starten“ im Simulationsmodus entspricht
+  * Wecken, was der Aktion „Vorgezogene Ausführung der ausstehenden Aufgaben“ entspricht
+  * Unbedingter Stopp
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../workflow/using/about-workflows.md).
 

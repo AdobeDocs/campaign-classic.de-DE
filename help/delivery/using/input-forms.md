@@ -2,33 +2,41 @@
 product: campaign
 title: Eingabeformulare
 description: Erfahren Sie, wie Sie in Campaign Eingabeformulare verwenden
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Management
 role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 TQID: https://experienceleague.adobe.com/91uYhYGJodLIdlD9dRAmshCQcIR7YUQV2lUvxJGn-jI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 845
+workflow-type: tm+mt
+source-wordcount: '836'
 ht-degree: 100%
-
 ---
-
 # Eingabeformulare{#input-forms}
 
 Im Folgenden werden einige Grundprinzipien bezüglich der Formulare in Adobe Campaign dargestellt.
@@ -162,7 +170,7 @@ Dies ist in folgenden Fällen zu empfehlen:
 
 Die Definition des Bearbeitungsformulars erfolgt über das **`<form>`**-Element unter dem Listenelement. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars.
 
-Eine Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in der Definition der Liste angegeben ist.Damit können Sie das Bearbeitungsformular der ausgewählten Zeile öffnen.
+Eine Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in der Definition der Liste angegeben ist. Damit können Sie das Bearbeitungsformular der ausgewählten Zeile öffnen.
 
 >[!NOTE]
 >

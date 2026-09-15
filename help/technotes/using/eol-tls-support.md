@@ -11,20 +11,23 @@ exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 TQID: https://experienceleague.adobe.com/QqPQkow0oa3RgI2k7xNouJgX6OwNuObuFuk2zWxy8Lc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 880
+workflow-type: tm+mt
+source-wordcount: '880'
 ht-degree: 100%
-
 ---
-
 # Beendigung der Unterstützung für TLS 1.0 und 1.1{#eol-tls-support}
 
 
@@ -104,6 +107,6 @@ Auch ihr Betriebssystem und Ihre Anwendungen müssen TLS 1.2 unterstützen. Wenn
 
   TLS 1.2 ist in Internet Explorer 11 standardmäßig aktiviert, aber falls es deaktiviert ist, können Sie es aktivieren. Aktivieren Sie in diesem Fall TLS 1.2 über das Dialogfeld „Erweiterte Einstellungen“, anstatt andere Optionen zu verwenden. Es können auch andere Fehler wie der folgende auftreten:
 
-   * Verbindung mit dem Service unmöglich
-   * Service ist nicht verfügbar
-   * Verbindungsfehler
+  * Verbindung mit dem Service unmöglich
+  * Service ist nicht verfügbar
+  * Verbindungsfehler

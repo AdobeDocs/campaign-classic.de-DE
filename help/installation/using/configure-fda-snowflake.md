@@ -10,17 +10,17 @@ exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 TQID: https://experienceleague.adobe.com/1Je4UdKtftgQaeTX77rBrgezn2pIBRlHAG4DPavfE14
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 560
+source-wordcount: '560'
 ht-degree: 35%
-
 ---
-
 # Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
 Verwenden Sie die **-Option (Federated Data Access** (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake] zu konfigurieren.
@@ -102,9 +102,9 @@ Sie müssen ein [!DNL Snowflake] externes Konto erstellen, um Ihre Campaign-Inst
 
    * Für die Konto-/Kennwortauthentifizierung müssen Sie Folgendes angeben:
 
-      * **[!UICONTROL Konto]**: Name des Benutzers
+     * **[!UICONTROL Konto]**: Name des Benutzers
 
-      * **[!UICONTROL Password]**: Kennwort für Benutzerkonto.
+     * **[!UICONTROL Password]**: Kennwort für Benutzerkonto.
 
      ![](assets/snowflake.png)
 

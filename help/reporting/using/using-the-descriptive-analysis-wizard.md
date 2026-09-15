@@ -2,29 +2,35 @@
 product: campaign
 title: Erstellen des ersten deskriptiven Analyseberichts
 description: Erfahren Sie, wie Sie mit dem Assistenten Ihren ersten deskriptiven Analysebericht erstellen.
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 TQID: https://experienceleague.adobe.com/ilSq3cfWpljwwRtjgjbgJe2NmBFnPJhIK5e0PMBMJVI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1673
+workflow-type: tm+mt
+source-wordcount: '1664'
 ht-degree: 100%
-
 ---
-
 # Erstellen des ersten deskriptiven Analyseberichts {#using-the-descriptive-analysis-wizard}
 
 Um einen deskriptiven Analysebericht zu erstellen, befolgen Sie die Schritte des dedizierten Assistenten. Seine Konfiguration hängt von den zu analysierenden Daten sowie der gewünschten Darstellung ab.
@@ -180,17 +186,17 @@ Folgende Funktionen stehen zur Auswahl:
 
   Gehen Sie dazu wie folgt vor:
 
-   1. Berechnen Sie die Summe der Einkäufe.
+  1. Berechnen Sie die Summe der Einkäufe.
 
-      ![](assets/report_compute_data_sample2.png)
+     ![](assets/report_compute_data_sample2.png)
 
-   1. Diese Statistik soll nicht in der Tabelle angezeigt werden. Deaktivieren Sie also die Option **[!UICONTROL In der Tabelle anzeigen]** im Tab **[!UICONTROL Erweitert]**.
+  1. Diese Statistik soll nicht in der Tabelle angezeigt werden. Deaktivieren Sie also die Option **[!UICONTROL In der Tabelle anzeigen]** im Tab **[!UICONTROL Erweitert]**.
 
-      ![](assets/report_compute_data_sample3.png)
+     ![](assets/report_compute_data_sample3.png)
 
-   1. Erstellen Sie eine neue Statistik vom Typ **[!UICONTROL Berechnetes Feld]** und erfassen Sie die folgende Formel im Feld **[!UICONTROL Benutzerfunktion]**: **@Einkäufe/@count**.
+  1. Erstellen Sie eine neue Statistik vom Typ **[!UICONTROL Berechnetes Feld]** und erfassen Sie die folgende Formel im Feld **[!UICONTROL Benutzerfunktion]**: **@Einkäufe/@count**.
 
-      ![](assets/report_compute_data_sample4.png)
+     ![](assets/report_compute_data_sample4.png)
 
 ### Anzeigen des Berichts {#displaying-the-report}
 
