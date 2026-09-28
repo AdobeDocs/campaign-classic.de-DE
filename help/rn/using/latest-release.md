@@ -29,10 +29,10 @@ subfeature_v2:
     internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Adobe Analytics integration
-source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+source-git-commit: 92ed76435fca32fc4ad96aa6a5a4c1fed0b3ca08
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 100%
+source-wordcount: '1225'
+ht-degree: 98%
 ---
 # Aktuelle Version {#latest-release}
 
@@ -40,9 +40,21 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## Version 7.4.4 {#release-7-4-4}
 
-### Build 9401 {#build-9401}
+### Build 9402 {#build-9402}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+
+_11. September 2026_
+
+#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9402}
+
+Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/au/security/products/campaign/apsb26-142.html){target="_blank"}.
+
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+
+### Build 9401 {#build-9401}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _25. August 2026_
 
