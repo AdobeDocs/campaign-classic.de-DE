@@ -24,7 +24,7 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 100%
@@ -137,15 +137,15 @@ Wiederkehrende Kampagnen werden anhand einer bestimmten Vorlage erstellt, die di
 
 1. Legen Sie im für diesen Kampagnentyp vorgesehenen Tab **[!UICONTROL Planung]** die Zeitpunkte der wiederholten Ausführungen fest.
 
-Geben Sie in diesem Tab die geplanten Ausführungsdaten der Kampagnen auf der Basis dieser Vorlage an.
+   Geben Sie in diesem Tab die geplanten Ausführungsdaten der Kampagnen auf der Basis dieser Vorlage an.
 
-![](assets/s_ncs_user_op_template_recur_planning.png)
+   ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
+   Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
 
->[!IMPORTANT]
->
->Die Konfiguration der Ausführungsplanung muss sorgfältig durchgeführt werden, um eine Überlastung der Datenbank zu vermeiden. Wiederkehrende Kampagnen duplizieren die Workflows ihrer Vorlage entsprechend dem festgelegten Zeitplan. Die Implementierung übermäßig häufiger Workflow-Erstellung kann den Betrieb der Datenbank behindern.
+   >[!IMPORTANT]
+   >
+   >Die Konfiguration der Ausführungsplanung muss sorgfältig durchgeführt werden, um eine Überlastung der Datenbank zu vermeiden. Wiederkehrende Kampagnen duplizieren die Workflows ihrer Vorlage entsprechend dem festgelegten Zeitplan. Die Implementierung übermäßig häufiger Workflow-Erstellung kann den Betrieb der Datenbank behindern.
 
 1. Geben Sie u. U. einen Wert im Feld **[!UICONTROL Im Voraus erstellen für]** an, um die entsprechenden Workflows für den angegebenen Zeitraum zu erstellen.
 1. Erstellen Sie schließlich die Workflow-Vorlage, die in den auf dieser Kampagnenvorlage basierenden Kampagnen verwendet werden soll, mit den Parametern der Zielgruppenbestimmung sowie einer oder mehreren generischen Sendungen.
@@ -239,6 +239,6 @@ Jede periodische Kampagne enthält dieselben Elemente. Nach der Erstellung wird 
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/326556?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

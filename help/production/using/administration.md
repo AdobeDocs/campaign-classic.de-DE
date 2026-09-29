@@ -23,7 +23,7 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 96%
@@ -46,9 +46,9 @@ Mit den folgenden Befehlen wird der Adobe Campaign-Dienst manuell Beginn und her
   * **/etc/init.d/nlserver6 Beginn**
   * **/etc/init.d/nlserver6 stop**
 
->[!NOTE]
->
->Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver** / **systemCtl stop nlserver**
+  >[!NOTE]
+  >
+  >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver** / **systemCtl stop nlserver**
 
 Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unter Linux (als **Adobe Campaign**) zugegriffen werden kann:
 
@@ -65,7 +65,7 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
   >    * einen anderen Wert, wenn ein Fehler auftritt.
   >
 
-* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**&#x200B;**&#x200B;**,inmail):
+* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail):
 
   **nlserver-Beginn`<module>[@<instance>]`**
 
