@@ -4,10 +4,12 @@ title: Best Practices für Datenmodelle
 description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-TQID: https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns
+TQID: 'https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
@@ -43,7 +45,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '4095'
 ht-degree: 54%
@@ -54,7 +56,7 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](../../configuration/using/about-data-model.md).
 
-Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu &#x200B;](../../configuration/using/about-schema-edition.md).
+Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu ](../../configuration/using/about-schema-edition.md).
 
 ## Überblick {#overview}
 
@@ -76,7 +78,7 @@ Dieser kundenorientierte Ansatz wird in der Grafik unten dargestellt. Die **Empf
 
 Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICONTROL &quot;Admin&quot; > &quot;Konfiguration&quot; > &quot;Datenschemata&quot;]**, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
-Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) &#x200B;](../../configuration/using/data-model-description.md).
+Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) ](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -183,7 +185,7 @@ Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüss
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1BB. Technisch ist es möglich, eine vollständige Bandbreite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen gewechselt wird: Der Datensatz 0 wird von Adobe Campaign in generierten SQL-Abfragen normalerweise ignoriert.
 
-Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/de/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 

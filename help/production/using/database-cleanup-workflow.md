@@ -7,15 +7,19 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-TQID: https://experienceleague.adobe.com/dka5G-03UMUH8Gzlu2JhbI9sw5alaTaoClsxEKhhEPY
+TQID: 'https://experienceleague.adobe.com/dka5G-03UMUH8Gzlu2JhbI9sw5alaTaoClsxEKhhEPY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
     internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
     internal-label: Audit trail
@@ -23,6 +27,8 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
@@ -30,7 +36,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2949'
 ht-degree: 2%
@@ -53,7 +59,7 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: im Workflow-Planer u
 
 >[!NOTE]
 >
->Weitere Informationen zur Planung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
+>Weitere Informationen zur Planung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
 
 Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfiguriert, dass er täglich um 4 Uhr morgens startet. Mit der -Planung können Sie die Häufigkeit der Workflow-Auslösung ändern. Die folgenden Häufigkeiten sind verfügbar:
 
@@ -70,7 +76,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 
 ### Bereitstellungsassistent {#deployment-assistant}
 
-Über **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Tools > Erweitert &#x200B;]&#x200B;**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Über **[!UICONTROL Menü**[!UICONTROL  Tools > Erweitert ]**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -78,10 +84,10 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
 
 * Konsolidiertes Tracking: **NmsCleanup_TrackingStatPurgeDelay** (siehe [Bereinigung von Trackinglogs](#cleanup-of-tracking-logs))
 * Versandlogs: **NmsCleanup_BroadLogPurgeDelay** (siehe [Bereinigung von Versandlogs](#cleanup-of-delivery-logs))
-* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[&#x200B; von Trackinglogs](#cleanup-of-tracking-logs))
+* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[ von Trackinglogs](#cleanup-of-tracking-logs))
 * Gelöschte Sendungen: **NmsCleanup_RecycledDeliveryPurgeDelay** (siehe [Bereinigung von zu löschenden oder wiederzuverwendenden Sendungen](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * Importzurückweisungen: **NmsCleanup_RejectsPurgeDelay** (siehe [Bereinigung von durch Importe generierten Zurückweisungen](#cleanup-of-rejects-generated-by-imports-))
-* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[&#x200B; von Besuchern](#cleanup-of-visitors))
+* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[ von Besuchern](#cleanup-of-visitors))
 * Angebotsvorschläge: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigung von Vorschlägen](#cleanup-of-propositions))
 
   >[!NOTE]
@@ -95,7 +101,7 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
   >
   >Die Felder **[!UICONTROL Ereignisse]** und **[!UICONTROL Ereignisse mit Verlauf]** sind nur verfügbar, wenn das Modul **Message Center** installiert ist.
 
-* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[&#x200B; des Audit-Protokolls](#cleanup-of-audit-trail))
+* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[ des Audit-Protokolls](#cleanup-of-audit-trail))
 
 Alle Aufgaben, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt werden, werden im folgenden Abschnitt beschrieben.
 

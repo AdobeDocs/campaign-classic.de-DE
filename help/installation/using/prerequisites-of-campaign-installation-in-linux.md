@@ -8,18 +8,26 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-TQID: https://experienceleague.adobe.com/SFdh5L8-oHjpH7rIhDxOQZqw7AukXtkv3lJHZu2oTHQ
+TQID: 'https://experienceleague.adobe.com/SFdh5L8-oHjpH7rIhDxOQZqw7AukXtkv3lJHZu2oTHQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: 7f0a1ee5-eeb8-5478-a9cd-b1896f033118
+    internal-label: Instance Settings
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-feature_v2: []
-subfeature_v2: []
-source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 3%
@@ -30,7 +38,7 @@ ht-degree: 3%
 
 In diesem Abschnitt werden die vorbereitenden Konfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
+Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und ordnungsgemäß konfiguriert sein:
 
@@ -205,7 +213,7 @@ Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerung
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es unmöglich, die Zeitzonendatei auf dem Instant Client zu ändern.
 
-1. Stellen Sie sicher, dass **Client-Version** und die **Datenbankserver-Version** identisch **&#x200B;**.
+1. Stellen Sie sicher, dass **Client-Version** und die **Datenbankserver-Version** identisch ****.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
 

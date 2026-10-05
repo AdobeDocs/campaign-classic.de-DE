@@ -7,18 +7,28 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-TQID: https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw
+TQID: 'https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-feature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ca3c1dd6-bdd2-41a9-bc5a-e35f5cca9e63
+    internal-label: Application settings
+  - id: ebf2bfe1-e099-5c32-ac1e-1865f8050ffc
+    internal-label: External Account
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2157'
 ht-degree: 73%
@@ -56,7 +66,7 @@ Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
 ### Bounce-E-Mails {#bounce-mails-external-account}
 
-Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -232,7 +242,7 @@ To add SSH keys on Windows:
 
 Verwenden Sie das **Externe Datenbank**-Konto, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option „Federated Data Access“ (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) &#x200B;](../../rn/using/compatibility-matrix.md)
+Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) ](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
@@ -337,7 +347,7 @@ Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import
 
 Weitere Informationen zum Campaign-Microsoft Dynamics-CRM-Connector finden Sie auf [Seite](../../platform/using/crm-ms-dynamics.md).
 
-Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
+Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort-Anmeldedaten]** müssen Sie die folgenden Details angeben:
 
 ![](assets/ext_account_14.png)
 

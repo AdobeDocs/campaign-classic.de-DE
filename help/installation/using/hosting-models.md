@@ -6,18 +6,28 @@ feature: Installation, Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-TQID: https://experienceleague.adobe.com/9pZQYt2gLVR94ZWsw21JCv7CL55KDRyiqocvuS54SbM
+TQID: 'https://experienceleague.adobe.com/9pZQYt2gLVR94ZWsw21JCv7CL55KDRyiqocvuS54SbM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: 5b4bbd22-07a0-59e8-ada0-54a763ae2394
+    internal-label: Deployment
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
     internal-label: Privacy
   - id: fb2a841f-c522-491f-9901-a1b939d252df
     internal-label: Security
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -33,7 +43,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 3%
@@ -70,7 +80,7 @@ Adobe Campaign kann On-Premise bereitgestellt werden: Alle Komponenten von Adobe
 
 Bevor Sie als On-Premise-Kunde mit der Bereitstellung von Campaign Classic beginnen, beachten Sie die folgenden Voraussetzungen und Empfehlungen:
 
-* Lesen Sie die [Kompatibilitätsmatrix“, &#x200B;](../../rn/using/compatibility-matrix.md) alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten auflistet.
+* Lesen Sie die [Kompatibilitätsmatrix“, ](../../rn/using/compatibility-matrix.md) alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten auflistet.
 * Lesen Sie je nach Umgebung die [Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [Voraussetzungen für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Weitere Informationen zu Empfehlungen zu Datenbank-Engines [in diesem Abschnitt](../../installation/using/database.md).
 * Überprüfen Sie, ob die erforderlichen Datenbankzugriffsebenen auf dem Server installiert sind und über das Adobe Campaign-Konto zugänglich sind. [Weitere Informationen](../../installation/using/application-server.md).

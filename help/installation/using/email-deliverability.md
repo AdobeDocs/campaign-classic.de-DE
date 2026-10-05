@@ -8,13 +8,17 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
+TQID: 'https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
     internal-label: Best practices
@@ -29,7 +33,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '3218'
 ht-degree: 12%
@@ -52,7 +56,7 @@ Einen tieferen Einblick in das Thema der Zustellbarkeit, einschließlich aller t
 
 ## Grundprinzip {#operating-principle}
 
-Es ist möglich, die Ausgabe einer oder mehrerer Adobe Campaign-Instanzen zu steuern, um die Anzahl der gesendeten E-Mails je nach Domain zu beschränken. Beispielsweise können Sie die Ausgabe für „yahoo.com“-Adressen auf 20.000 pro Stunde **&#x200B;**, während Sie für alle anderen Domains 100.000 Nachrichten pro Stunde konfigurieren.
+Es ist möglich, die Ausgabe einer oder mehrerer Adobe Campaign-Instanzen zu steuern, um die Anzahl der gesendeten E-Mails je nach Domain zu beschränken. Beispielsweise können Sie die Ausgabe für „yahoo.com“-Adressen auf 20.000 pro Stunde ****, während Sie für alle anderen Domains 100.000 Nachrichten pro Stunde konfigurieren.
 
 Die Nachrichtenausgabe muss für jede von den Versand-Servern verwendete IP-Adresse gesteuert werden (**mta**). Mehrere **mta**, die auf mehreren Computern verteilt sind und zu verschiedenen Adobe Campaign-Instanzen gehören, können dieselbe IP-Adresse für den E-Mail-Versand verwenden: Es muss ein Prozess eingerichtet werden, um die Verwendung dieser IP-Adressen zu koordinieren.
 
@@ -350,7 +354,7 @@ Mit dem **MIME structure** (Multipurpose Internet Mail Extensions) können Sie d
 
 Wenn die Option **[!UICONTROL Bildintegration]** aktiviert ist, werden diese direkt im Textkörper der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Links werden durch ihren Inhalt ersetzt.
 
-Diese Option wird insbesondere auf dem japanischen Markt für **Deco-mail**, **Decore Mail** oder **Decoration Mail** verwendet. Weitere Informationen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles){target="_blank"}.
+Diese Option wird insbesondere auf dem japanischen Markt für **Deco-mail**, **Decore Mail** oder **Decoration Mail** verwendet. Weitere Informationen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles){target="_blank"}.
 
 >[!IMPORTANT]
 >

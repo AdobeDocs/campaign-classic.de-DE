@@ -6,15 +6,26 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+TQID: 'https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -26,10 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2269'
 ht-degree: 100%
@@ -42,7 +50,7 @@ Adobe nutzt das alte Rechenzentrum nicht länger: Campaign Classic-Instanzen mü
 
 Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support).
 
 ## Auswirkungen auf die Infrastruktur
 
@@ -72,7 +80,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
-  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
+  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
 
 ## Auswirkungen auf die Zustellbarkeit
 
@@ -118,7 +126,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
   Zunächst prüft das Adobe-Zustellbarkeits-Team den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs.
 
-  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
+  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
 
   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 

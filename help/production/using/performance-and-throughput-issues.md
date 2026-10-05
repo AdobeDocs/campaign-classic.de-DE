@@ -8,10 +8,20 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-TQID: https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0
+TQID: 'https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -21,13 +31,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2:
-  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
-    internal-label: Performance Monitoring
-  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
-    internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 20%
@@ -36,7 +40,7 @@ ht-degree: 20%
 
 Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
 
-Weitere Informationen zum Inhalt [&#x200B; einzelnen Versionen finden &#x200B;](../../rn/using/latest-release.md) in den Versionshinweisen .
+Weitere Informationen zum Inhalt [ einzelnen Versionen finden ](../../rn/using/latest-release.md) in den Versionshinweisen .
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 
@@ -88,7 +92,7 @@ Im Folgenden finden Sie eine Liste von Best Practices und Artikeln zur Zustellba
   >Die Beauftragung des Zustellbarkeits-Teams ist vertraglich geregelt. Kundinnen und Kunden sollten sich an den Adobe-Support wenden, um diesbezügliche Informationen zu erhalten.
 
 * Einrichtung der IP-Affinität: Eine falsche Einrichtung der IP-Affinität kann die E-Mails ganz stoppen (falscher Benutzer-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
 * Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Umfang der Personalisierung: Wenn ein Versand in &quot;Personalization in Bearbeitung“ bleibt, überprüfen Sie die in Personalisierungsblöcken verwendete JavaScript.
 
