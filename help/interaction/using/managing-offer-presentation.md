@@ -87,7 +87,7 @@ Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle (standardmäßi
 
 >[!NOTE]
 >
->Sie können auch nicht-standardmäßige Tabellen verwenden. Zur Nutzung einer bestimmten Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Ziel-Mapping erforderlich. Weitere Informationen hierzu finden Sie unter &quot;[ einer Angebotsumgebung“ ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
+>Sie können auch nicht-standardmäßige Tabellen verwenden. Zur Nutzung einer bestimmten Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Ziel-Mapping erforderlich. Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Angebotsumgebung“ &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
 
 ### Zeitraum {#period}
 

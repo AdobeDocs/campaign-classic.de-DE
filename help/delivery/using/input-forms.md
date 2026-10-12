@@ -105,7 +105,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 
 Die Anordnung der Steuerelemente untereinander ähnelt dem in einer HTML-Tabelle verwendeten Layout. Sie haben die Möglichkeit, ein Steuerelement in mehrere Spalten aufzuteilen, Elemente zu verschachteln oder die Verwendung des vorhandenen Platzes zu definieren. Beachten Sie jedoch, dass durch die Formatierung nur die Verteilung der Proportionen zulässig ist. Sie können keine festen Abmessungen für ein Objekt angeben.
 
-Weiterführende Informationen hierzu finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} Campaign v8).
+Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} Campaign v8).
 
 ## Listen-Steuerelemente {#list-type-controls}
 

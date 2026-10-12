@@ -519,7 +519,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 Eine eingehende Interaktion ist eine Interaktion, die auf einen eingehenden Aufruf folgt, der durch die Aktion eines Kontakts in einem Kanal (z. B. Web, Callcenter oder Mobile) generiert wurde. Dieser Interaktionstyp wird im Allgemeinen im Einzelmodus verarbeitet (das heißt pro Empfänger).
 
-Weitere Informationen zu &quot;[ Interaction](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zu &quot;[&#x200B; Interaction](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Dokumentation zu Campaign v8).
 +++
 
 +++**Inbox Rendering**
@@ -783,7 +783,7 @@ Weitere Informationen über [Optionen](../../installation/using/configuring-camp
 
 Bei einer ausgehenden Interaktion wird das Interaktionsmodul über eine Kontaktliste (für den Versand von E-Mails, Direkt-Mail usw.) aufgerufen. Auf jeden Kontakt werden die gleichen Regeln und Prozesse angewendet. Dieser Interaktionstyp wird im Allgemeinen im Batch-Modus verarbeitet.
 
-Weitere Informationen zu &quot;[ Interaction](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zu &quot;[&#x200B; Interaction](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (Dokumentation zu Campaign v8).
 +++
 
 +++**Package-Export/-Import**

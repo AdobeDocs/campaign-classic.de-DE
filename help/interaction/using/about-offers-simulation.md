@@ -33,7 +33,7 @@ ht-degree: 85%
 
 Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
 
-Die Simulation berücksichtigt die Kontexte und Eignungsregeln, die zuvor auf Angebote angewendet wurden (siehe [Angebotskatalogübersicht](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (Campaign v8-Dokumentation)), sowie ihre Unterbreitungsregeln (siehe [Verwalten der ](../../interaction/using/managing-offer-presentation.md)). Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
+Die Simulation berücksichtigt die Kontexte und Eignungsregeln, die zuvor auf Angebote angewendet wurden (siehe [Angebotskatalogübersicht](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (Campaign v8-Dokumentation)), sowie ihre Unterbreitungsregeln (siehe [Verwalten der &#x200B;](../../interaction/using/managing-offer-presentation.md)). Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
 Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden Schritte.
 

@@ -244,7 +244,7 @@ Die Registerkarte **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden T
 
 >[!NOTE]
 >
->**[!UICONTROL Schlichtung]** Typologien werden im Rahmen des Werbedruck-Managements verwendet. Weiterführende Informationen hierzu finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} Campaign v8).
+>**[!UICONTROL Schlichtung]** Typologien werden im Rahmen des Werbedruck-Managements verwendet. Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} Campaign v8).
 
 ## Ändern des Genehmigungsmodus {#changing-the-approval-mode}
 
