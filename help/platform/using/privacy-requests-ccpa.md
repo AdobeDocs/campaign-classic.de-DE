@@ -70,7 +70,7 @@ Um diese Informationen nutzen zu können, müssen Sie dieses Feld in Adobe Campa
 
 Wenn Sie eine benutzerdefinierte Empfängertabelle verwenden, müssen Sie diesen Vorgang ebenfalls durchführen.
 
-Weitere Informationen zum Erstellen eines neuen Felds finden Sie in der Dokumentation [Schemabearbeitung“ (](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} v8-Dokumentation).
+Weitere Informationen zum Erstellen eines neuen Felds finden Sie in der Dokumentation [Schemabearbeitung“ (](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} v8-Dokumentation).
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ Weitere Informationen zum Erstellen eines neuen Felds finden Sie in der Dokument
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Klicken Sie im Explorer auf den Knoten **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**. Fügen Sie in **[!UICONTROL Empfänger (nms)]** unter &quot;General Package&quot; ein `<input>`-Element hinzu und geben Sie als xpath-Wert den in Schritt 2 festgelegten relativen Pfad an. Weiterführende Informationen zur Identifizierung eines Formulars finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+1. Klicken Sie im Explorer auf den Knoten **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**. Fügen Sie in **[!UICONTROL Empfänger (nms)]** unter &quot;General Package&quot; ein `<input>`-Element hinzu und geben Sie als xpath-Wert den in Schritt 2 festgelegten relativen Pfad an. Weiterführende Informationen zur Identifizierung eines Formulars finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

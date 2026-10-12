@@ -99,18 +99,18 @@ In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Wo
 
 **Bei On-Premise-Installationen** können Sie die folgenden Monitoring-Tools verwenden:
 
-* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weitere Informationen hierzu finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
+* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weitere Informationen hierzu finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
 * Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
   * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
   * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
 
-  Weiterführende Informationen hierzu finden Sie im Abschnitt [Versandstatistiken](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (Dokumentation zu Campaign v8).
+  Weiterführende Informationen hierzu finden Sie im Abschnitt [Versandstatistiken](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Richtlinien für das Überwachen {#monitoring-guidelines}
 
 **Für On-Premise-Installationen** finden Sie hier einige zusätzliche Richtlinien zum Monitoring der Zustellbarkeit:
 
-* Überprüfen Sie regelmäßig den [Versanddurchsatz](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8) für die gesamte Plattform, um sicherzustellen, dass sie mit der ursprünglichen Einrichtung übereinstimmt.
+* Überprüfen Sie regelmäßig den [Versanddurchsatz](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8) für die gesamte Plattform, um sicherzustellen, dass sie mit der ursprünglichen Einrichtung übereinstimmt.
 * Achten Sie darauf, dass [weitere Zustellversuche](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
 * Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures-quarantine.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
 * Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).

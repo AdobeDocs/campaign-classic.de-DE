@@ -154,7 +154,7 @@ Ein Versand kann nicht angehalten werden, nachdem er in den erweiterten MTA übe
 
 Das Diagramm für den Campaign-Versanddurchsatz zeigt nicht mehr den Durchsatz an Ihre E-Mail-Empfänger an. Dieses Diagramm zeigt jetzt die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von Campaign an den Enhanced MTA an.
 
-Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Weitere Zustellversuche
 

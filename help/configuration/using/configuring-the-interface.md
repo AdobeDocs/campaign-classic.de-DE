@@ -57,7 +57,7 @@ Durch das Erstellen eines neuen Formulars können Sie die Daten der externen Emp
 
    >[!NOTE]
    >
-   >Weitere Informationen zu Dateien vom Typ **Formular** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+   >Weitere Informationen zu Dateien vom Typ **Formular** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
    In unserem aktuellen Beispiel muss die Datei **form** auf dem Schema **cus:individual** basieren und daher das folgende Layout aufweisen:
 

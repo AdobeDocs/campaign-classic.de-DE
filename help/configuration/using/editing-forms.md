@@ -46,7 +46,7 @@ Sie können Formulare erstellen und ändern:
 * Sie können die werkseitigen Eingabeformulare ändern, die standardmäßig bereitgestellt werden. Die werkseitigen Eingabeformulare basieren auf den werkseitigen Datenschemata.
 * Sie können benutzerdefinierte Eingabeformulare erstellen, die auf von Ihnen definierten Datenschemata basieren.
 
-Forms sind Entitäten `xtk:form` Typs. Sie können die Struktur des Eingabeformulars im `xtk:form`-Schema anzeigen. Um dieses Schema anzuzeigen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** aus dem Menü aus. Weitere Informationen über [Formularstruktur](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+Forms sind Entitäten `xtk:form` Typs. Sie können die Struktur des Eingabeformulars im `xtk:form`-Schema anzeigen. Um dieses Schema anzuzeigen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** aus dem Menü aus. Weitere Informationen über [Formularstruktur](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 Um auf Eingabeformulare zuzugreifen, wählen Sie **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Eingabeformulare]** aus dem Menü:
 
@@ -56,7 +56,7 @@ Um Formulare zu entwerfen, bearbeiten Sie den XML-Inhalt im XML-Editor:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (Dokumentation zu Campaign v8).
+[Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (Dokumentation zu Campaign v8).
 
 Um ein Formular in der Vorschau anzuzeigen, klicken Sie auf die **[!UICONTROL Vorschau]**:
 
@@ -80,7 +80,7 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
 * Assistent
 
-  Dieses Formular umfasst mehrere unverankerte Bildschirme, die in einer bestimmten Reihenfolge angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (Dokumentation zu Campaign v8).
+  Dieses Formular umfasst mehrere unverankerte Bildschirme, die in einer bestimmten Reihenfolge angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Iconbox
 
@@ -110,7 +110,7 @@ In Formularen können Sie Container für verschiedene Zwecke verwenden:
 * Definieren des Zugriffs auf Eingabefelder
 * Verschachteln von Formularen in anderen Formularen
 
-[Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
+[Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Inhalt organisieren
 
@@ -119,7 +119,7 @@ Verwenden von Containern zum Organisieren von Inhalten in Formularen:
 * Sie können Felder in Abschnitten gruppieren.
 * Sie können Seiten zu mehrseitigen Formularen hinzufügen.
 
-Verwenden Sie zum Einfügen eines Containers das `<container>`. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
+Verwenden Sie zum Einfügen eines Containers das `<container>`. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Felder gruppieren
 
@@ -232,7 +232,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 1. Fügen Sie die Formularelemente ein.
 
-   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie das `<input>`. Legen Sie das `xpath`-Attribut als XPath-Ausdruck auf den Feldverweis fest. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (Dokumentation zu Campaign v8).
+   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie das `<input>`. Legen Sie das `xpath`-Attribut als XPath-Ausdruck auf den Feldverweis fest. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (Dokumentation zu Campaign v8).
 
    Dieses Beispiel zeigt Eingabefelder, die auf dem `nms:recipient` basieren.
 
@@ -265,7 +265,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
    | Kontrollkästchen | `type="checkbox"` |
    | Baum bearbeiten | `type="tree"` |
 
-   Weitere Informationen [Speicherlisten-Steuerelemente](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (Dokumentation zu Campaign v8).
+   Weitere Informationen [Speicherlisten-Steuerelemente](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Definieren Sie optional den Zugriff auf die Felder:
 
@@ -482,7 +482,7 @@ Sie können Validierungssteuerelemente in Formulare einbeziehen.
 
 ### Nur-Lese-Zugriff auf Felder gewähren
 
-Um schreibgeschützten Zugriff auf ein Feld zu gewähren, verwenden Sie das Attribut `readOnly="true"` . Beispiel: Sie möchten den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} (Dokumentation zu Campaign v8).
+Um schreibgeschützten Zugriff auf ein Feld zu gewähren, verwenden Sie das Attribut `readOnly="true"` . Beispiel: Sie möchten den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} (Dokumentation zu Campaign v8).
 
 In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) des `nms:recipient` Schemas im schreibgeschützten Zugriff angezeigt:
 
@@ -508,11 +508,11 @@ In diesem Beispiel ist die E-Mail-Adresse erforderlich und eine Fehlermeldung wi
 </leave>
 ```
 
-Lesen Sie mehr über [Ausdrucksfelder](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (Dokumentation zu Campaign v8) und [Formularkontext](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (Dokumentation zu Campaign v8).
+Lesen Sie mehr über [Ausdrucksfelder](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (Dokumentation zu Campaign v8) und [Formularkontext](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Validieren von Werten
 
-Sie können JavaScript SOAP-Aufrufe verwenden, um Formulardaten in der Konsole zu überprüfen. Verwenden Sie diese Aufrufe für eine komplexe Validierung, z. B. um einen Wert mit einer Liste autorisierter Werte zu vergleichen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (Dokumentation zu Campaign v8).
+Sie können JavaScript SOAP-Aufrufe verwenden, um Formulardaten in der Konsole zu überprüfen. Verwenden Sie diese Aufrufe für eine komplexe Validierung, z. B. um einen Wert mit einer Liste autorisierter Werte zu vergleichen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Erstellen Sie eine Validierungsfunktion in einer JS-Datei.
 
@@ -569,4 +569,4 @@ Dieses Beispiel zeigt, wie Sie Service-Aufrufe in Formularen durchführen könne
 </enter>
 ```
 
-In diesem Beispiel ist die Eingabe eine ID, bei der es sich um einen Primärschlüssel handelt. Wenn Benutzende das Formular für diese ID ausfüllen, wird ein SOAP-Aufruf mit dieser ID als Eingabeparameter durchgeführt. Die Ausgabe ist ein boolescher Wert, der in dieses Feld geschrieben wird: `/tmp/@count`. Sie können diesen booleschen Wert im Formular verwenden. Weitere Informationen zu [Formularkontext](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (Dokumentation zu Campaign v8).
+In diesem Beispiel ist die Eingabe eine ID, bei der es sich um einen Primärschlüssel handelt. Wenn Benutzende das Formular für diese ID ausfüllen, wird ein SOAP-Aufruf mit dieser ID als Eingabeparameter durchgeführt. Die Ausgabe ist ein boolescher Wert, der in dieses Feld geschrieben wird: `/tmp/@count`. Sie können diesen booleschen Wert im Formular verwenden. Weitere Informationen zu [Formularkontext](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (Dokumentation zu Campaign v8).

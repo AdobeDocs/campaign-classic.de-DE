@@ -82,7 +82,7 @@ Ein Datenschema ist ein mit Inhalt verknüpftes XML-Dokument. Es beschreibt die 
 
 >[!NOTE]
 >
->Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
+>Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >Die das Content-Management betreffenden Elemente werden im Kapitel [Datenschemata](data-schemas.md) erläutert.
 
@@ -194,7 +194,7 @@ Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, in dem die
 
 >[!NOTE]
 >
->Weiterführende Informationen zum Erstellen und Konfigurieren von Formularen in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+>Weiterführende Informationen zum Erstellen und Konfigurieren von Formularen in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >Die das Content-Management betreffenden Elemente werden im Kapitel [Formulare](input-forms.md) erläutert.
 

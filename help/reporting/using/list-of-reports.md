@@ -45,7 +45,7 @@ ht-degree: 97%
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
 
 <table> 
  <tbody> 

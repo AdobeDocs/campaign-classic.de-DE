@@ -185,7 +185,7 @@ So prüfen Sie, ob der Versand erfolgreich war:
 
 >[!NOTE]
 >
->Standardmäßig verwendet das Modul zur Couponverwaltung eine **nms:recipient**-Tabelle. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
+>Standardmäßig verwendet das Modul zur Couponverwaltung eine **nms:recipient**-Tabelle. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >[Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 

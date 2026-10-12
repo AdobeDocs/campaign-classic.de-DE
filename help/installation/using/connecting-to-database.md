@@ -126,4 +126,4 @@ Bei Bedarf können Sie das Schema für die Verarbeitung von Daten in einer exter
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Schemata in Adobe Campaign und zum Definieren einer neuen Datenzuordnung finden Sie [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
+>Weitere Informationen zum Erstellen von Schemata in Adobe Campaign und zum Definieren einer neuen Datenzuordnung finden Sie [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).

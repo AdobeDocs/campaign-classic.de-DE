@@ -73,7 +73,7 @@ Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführu
 
 Das Feld sCountryCode entspricht dem ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Landes, das dem Empfänger zugeordnet ist. Dieses Feld ist eigentlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), die die Länderkennzeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert „XX“ gespeichert (und anstelle eines Null-ID-Eintrags verwendet).
 
-Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 

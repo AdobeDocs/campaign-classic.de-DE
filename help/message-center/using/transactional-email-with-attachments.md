@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor, um einer Transaktionsnachricht dynamisch einen E-Mail-A
 
 1. Sie können E-Mails über einen SOAP-Nachrichtenauslöser senden. Im SOAP-Aufruf gibt es einen URL-Parameter (attachmentURL).
 
-   Weitere Informationen zu SOAP-Anfragen finden Sie unter [Ereignisbeschreibung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (Dokumentation zu Campaign v8).
+   Weitere Informationen zu SOAP-Anfragen finden Sie unter [Ereignisbeschreibung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Klicken Sie beim Erstellen Ihrer E-Mail auf **[!UICONTROL Anhang]**.
 

@@ -48,7 +48,7 @@ ht-degree: 94%
 
 Im Folgenden werden einige Grundprinzipien bezüglich der Datenschemata in Adobe Campaign dargestellt.
 
-Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
+Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Schemastruktur {#schema-structure}
 

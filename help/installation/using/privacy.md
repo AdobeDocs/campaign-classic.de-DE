@@ -117,7 +117,7 @@ Um die URL-Signatur zu aktivieren, führen Sie diese Schritte auf allen Campaign
 
 Sie müssen sicherstellen, dass die verschlüsselten Kennwörter von einem authentifizierten Benutzer mit niedrigen Berechtigungen nicht zugänglich sind. Beschränken Sie dazu den Zugriff auf Passwortfelder oder auf die gesamte Entität (erfordert einen Build >= 8770).
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (Dokumentation zu Campaign v8).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (Dokumentation zu Campaign v8).
 
 Gehen Sie dazu wie folgt vor:
 

@@ -39,7 +39,7 @@ ht-degree: 94%
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
-Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8).
+Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8).
 
 Gehen Sie dazu wie folgt vor:
 

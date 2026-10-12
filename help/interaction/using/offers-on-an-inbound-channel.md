@@ -147,7 +147,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
+Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 

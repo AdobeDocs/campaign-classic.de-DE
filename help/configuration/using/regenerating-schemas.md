@@ -37,7 +37,7 @@ Wenn Sie ein Schema ändern und die Änderungen speichern, wird das erweiterte S
 1. Klicken Sie mit der rechten Maustaste und wählen **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** .
 1. Klicken Sie **[!UICONTROL OK]**, um den Vorgang zu bestätigen und zu starten.
 
-Sie können dann die Struktur des generierten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Grundlagen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
+Sie können dann die Struktur des generierten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Grundlagen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
 >[!NOTE]
 >

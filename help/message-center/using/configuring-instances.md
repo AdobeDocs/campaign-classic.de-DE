@@ -61,7 +61,7 @@ Alle Schritte für die Konfiguration und Verbindung der Kontroll- und Ausführun
 
 ## Kontrollinstanz konfigurieren {#control-instance}
 
-Um die Kontrollinstanz mit den Ausführungsinstanzen zu verbinden, müssen Sie zunächst ein externes Konto vom Typ **[!UICONTROL Ausführungsinstanz]** **auf der Kontrollinstanz** erstellen und konfigurieren. Nach der [Veröffentlichung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (Dokumentation zu Campaign v8) können Transaktionsnachrichtenvorlagen daher auf den Ausführungsinstanzen bereitgestellt werden.
+Um die Kontrollinstanz mit den Ausführungsinstanzen zu verbinden, müssen Sie zunächst ein externes Konto vom Typ **[!UICONTROL Ausführungsinstanz]** **auf der Kontrollinstanz** erstellen und konfigurieren. Nach der [Veröffentlichung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (Dokumentation zu Campaign v8) können Transaktionsnachrichtenvorlagen daher auf den Ausführungsinstanzen bereitgestellt werden.
 
 Wenn Sie mehrere Ausführungsinstanzen verwenden, müssen Sie so viele externe Konten erstellen, wie Sie Ausführungsinstanzen haben.
 

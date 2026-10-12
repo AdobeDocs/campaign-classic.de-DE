@@ -145,7 +145,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
 * **[!UICONTROL Links zum Teilen in sozialen Netzwerken]**: fügt Schaltflächen ein, die es den Empfängerinnen und Empfängern ermöglichen, einen Link zum Inhalt der Mirrorseite mit dem E-Mail-Client, Facebook, X (früher bekannt als Twitter) und LinkedIn zu teilen (weitere Informationen finden Sie unter [Virales Marketing: Weiterleiten an eine Freundin oder einen Freund](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
-* **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]** : Hiermit wird eine URL eingefügt, die es ermöglicht, ein Interaktionsangebot auf **[!UICONTROL Angenommen]** festzulegen (siehe [diesen Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} (Dokumentation zu Campaign v8).
+* **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]** : Hiermit wird eine URL eingefügt, die es ermöglicht, ein Interaktionsangebot auf **[!UICONTROL Angenommen]** festzulegen (siehe [diesen Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Definieren von benutzerdefinierten Gestaltungsbausteinen {#defining-custom-personalization-blocks}
 

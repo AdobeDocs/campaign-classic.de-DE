@@ -46,7 +46,7 @@ ht-degree: 98%
 
 ## Berechtigungen{#delivery-permissions}
 
-Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzende (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierungsverantwortliche im Feld **[!UICONTROL Versandstart:]** hinzu. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (Dokumentation zu Campaign v8).
+Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzende (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierungsverantwortliche im Feld **[!UICONTROL Versandstart:]** hinzu. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 

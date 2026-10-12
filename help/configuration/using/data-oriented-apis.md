@@ -147,7 +147,7 @@ Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthä
 * **Auswählen**: erstellt einen Cursor, der mehrere Datensätze zurückgibt, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind,
 * **count**: Gibt eine Anzahl von Daten zurück.
 
-Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
+Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Beispiel mit dem Vorgang „get“ {#example-with-the--get--operation}
 

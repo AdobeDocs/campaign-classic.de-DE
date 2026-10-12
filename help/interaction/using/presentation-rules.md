@@ -113,7 +113,7 @@ Wir möchten einen ersten Angebotsvorschlag der Kategorie „Kanada“ versenden
 
    ![](assets/offer_typology_example_016.png)
 
-1. Fügen Sie Ihre Angebote in den Text der Nachricht ein und versenden Sie die Nachricht. Weitere Informationen hierzu finden Sie unter [&#x200B; über ausgehende Kanäle &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}Dokumentation zu Campaign v8).
+1. Fügen Sie Ihre Angebote in den Text der Nachricht ein und versenden Sie die Nachricht. Weitere Informationen hierzu finden Sie unter [&#x200B; über ausgehende Kanäle &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}Dokumentation zu Campaign v8).
 
    Der zuvor ausgewählte Empfänger hat das für ihn infrage kommende Angebot wie geplant erhalten.
 

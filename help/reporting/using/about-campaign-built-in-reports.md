@@ -49,14 +49,14 @@ Adobe Campaign bietet diverse Berichte, auf die über die Konsole oder einen Web
 
 Folgende Berichttypen stehen zur Verfügung:
 
-* Berichte über die gesamte Plattform finden Sie unter [Globale Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (Dokumentation zu Campaign v8).
-* Versandberichte finden Sie unter [Versandberichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
-* Kumulierte Berichte finden Sie unter [Kumulative Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
+* Berichte über die gesamte Plattform finden Sie unter [Globale Berichte](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (Dokumentation zu Campaign v8).
+* Versandberichte finden Sie unter [Versandberichte](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
+* Kumulierte Berichte finden Sie unter [Kumulative Berichte](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
 
 Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Dashboard für Berichte oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Auf der Startseite ist eine Liste der Hauptberichte verfügbar, mit denen Sie schnell auf Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Zugriff auf und zur Verwendung von integrierten Berichten finden Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Zugriff auf und zur Verwendung von integrierten Berichten finden Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 Andere Möglichkeiten zur Bearbeitung eines Berichts werden auf dieser [Seite](../../reporting/using/actions-on-reports.md) beschrieben.

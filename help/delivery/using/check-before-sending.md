@@ -98,7 +98,7 @@ Optimieren Sie Ihre Möglichkeiten und nutzen Sie die Funktionen von Adobe Campa
 
 ### Validierungsprozess
 
-Sie können einen vollständigen Validierungsprozess einschließlich der Adobe Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weitere Informationen [in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (Dokumentation zu Campaign v8).
+Sie können einen vollständigen Validierungsprozess einschließlich der Adobe Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weitere Informationen [in diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Schübe verwenden
 
@@ -126,7 +126,7 @@ Sie haben folgende Möglichkeiten:
 
 * Geben Sie für jedes IPAffinity-Element an, welche IP-Adressen verwendet werden können. [Weitere Informationen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Verwenden Sie in [Typologie](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (Dokumentation zu Campaign v8) Ihrer Wahl das Feld **[!UICONTROL Verwalten von Affinitäten mit IP-Adressen]** um Sendungen mit dem Versand-Server (MTA) zu verknüpfen, der die genannte Affinität verwaltet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (Dokumentation zu Campaign v8).
+* Verwenden Sie in [Typologie](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (Dokumentation zu Campaign v8) Ihrer Wahl das Feld **[!UICONTROL Verwalten von Affinitäten mit IP-Adressen]** um Sendungen mit dem Versand-Server (MTA) zu verknüpfen, der die genannte Affinität verwaltet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihre E-Mail-Administration kann Sie beim Abrufen der Header-Informationen unterstützen.
 
@@ -138,7 +138,7 @@ Sie haben folgende Möglichkeiten:
 
 ### Typologien verwenden
 
-Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weitere Informationen [in diesem Beispiel](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (Dokumentation zu Campaign v8).
+Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weitere Informationen [in diesem Beispiel](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Anhänge vermeiden
 

@@ -150,4 +150,4 @@ Campaign-Instanzen, die nicht bis zum 31. August aktualisiert wurden, können ke
 
 Wenn Sie Ihre Umgebung nicht aktualisieren, werden die E-Mail-Einstellungen nicht mehr synchronisiert (MX-Verwaltungsregeln, Regeln für eingehende E-Mails, Regeln für die Verwaltung von Domains und Regeln für die Bounce-Qualifizierung). Dies kann sich bei Ihnen im Laufe der Zeit auf die Zustellbarkeit auswirken. Wenn eine wesentliche Änderung an diesen Regeln vorgenommen wird, müssen diese ab diesem Zeitpunkt manuell angewendet werden.
 
-Bei MKT-Instanzen ist nur [Globale Unterdrückungsliste](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (Dokumentation zu Campaign v8) betroffen.
+Bei MKT-Instanzen ist nur [Globale Unterdrückungsliste](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (Dokumentation zu Campaign v8) betroffen.
