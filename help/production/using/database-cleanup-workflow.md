@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 2%
+source-wordcount: '2964'
+ht-degree: 1%
 ---
 # Datenbankbereinigungs-Workflow{#database-cleanup-workflow}
 
@@ -349,7 +349,7 @@ Diese Aufgabe löscht jede Workflow-Instanz mithilfe ihrer Kennung (**lWorkflowI
 
 >[!NOTE]
 >
->Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld &quot;**in Tagen“** Standardwert 30 Tage). Dieses Feld befindet sich auf der Registerkarte **Ausführung** der Workflow-Eigenschaften. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/workflow-properties.md#execution).
+>Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld &quot;**in Tagen“** Standardwert 30 Tage). Dieses Feld befindet sich auf der Registerkarte **Ausführung** der Workflow-Eigenschaften. Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} Campaign v8).
 
 1. Um die Liste der zu löschenden Workflows abzurufen, wird die folgende Abfrage verwendet:
 

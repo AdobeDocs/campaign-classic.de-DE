@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 100%
+source-wordcount: '904'
+ht-degree: 92%
 ---
 # Hilfe- und Support-Optionen für Campaign Classic {#help-support-options}
 
@@ -75,7 +75,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="production/using/performance-and-throughput-issues.md">Performance- und Durchsatzprobleme</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">Versand-Performance</a></li>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Optimieren der Workflow-Performance</a></li>
-        <li><a href="workflow/using/monitoring-workflow-execution.md">Fehlerbehebung bei der Workflow-Ausführung</a></li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution" target="_blank">Fehlerbehebung bei der Workflow-Ausführung</a> (Dokumentation zu Campaign v8)</li>
         <li><a href="platform/using/sftp-server-usage.md">Nutzung von SFTP-Servern</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
         </ul>
@@ -83,7 +83,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
    <td valign="top">
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Best Practices für Workflows</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoring technischer Workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows" target="_blank">Technisches Workflow-Monitoring</a> (Dokumentation zu Campaign v8)</li>
         <li><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
@@ -101,8 +101,8 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="installation/using/get-started-security-privacy.md">Checkliste für Sicherheit und Datenschutz</a></li>
         <li><a href="platform/using/privacy-management.md">Datenschutz- und Einverständnisverwaltung</a></li>
         <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Erstellen einer Abfrage</a></li>
-        <li><a href="workflow/using/querying-recipient-table.md">Beispiele für Abfragen</a></li>
-        <li><a href="workflow/using/building-a-workflow.md">Erstellen eines Workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table" target="_blank">Beispiele für Abfragen</a> (Dokumentation zu Campaign v8)</li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/build-a-workflow" target="_blank">Workflow erstellen</a> (Dokumentation zu Campaign v8)</li>
         </ul>
     </td>
     </tr>

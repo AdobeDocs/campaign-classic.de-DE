@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2298'
 ht-degree: 100%
 ---
 
@@ -363,124 +363,6 @@ ht-degree: 100%
     + {hide-from-toc}[Synchronisieren von Web-Anwendungen – AUSGEBLENDET](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[Fehlerbehebung beim [!DNL ACS Connector] – AUSGEBLENDET](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisieren mit Workflows](workflow/using/about-workflows.md)
-+ Automatisieren mit Workflows {#automating-with-workflows}
-  + Erste Schritte mit Workflows {#introduction}
-    + {hide-from-toc}[Über Aktivitäten – AUSGEBLENDET](workflow/using/about-activities.md)
-    + {hide-from-toc}[Erstellen eines Workflows – AUSGEBLENDET](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[Zieldaten – AUSGEBLENDET](workflow/using/targeting-data.md)
-    + {hide-from-toc}[Verwenden von Workflow-Daten – AUSGEBLENDET](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[Best Practices bei Workflows – AUSGEBLENDET](workflow/using/workflow-best-practices.md)
-  + Ausführen eines Workflows {#executing-a-workflow}
-    + {hide-from-toc}[Starten eines Workflows – AUSGEBLENDET](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[Lebenszyklus eines Workflows – AUSGEBLENDET](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[Lebenszyklus von Daten – AUSGEBLENDET](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[Definieren von Validierungen – AUSGEBLENDET](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[Architektur – AUSGEBLENDET](workflow/using/architecture.md)
-  + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
-    + {hide-from-toc}[Über Zielgruppenbestimmungsaktivitäten – AUSGEBLENDET](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[Abfrage – AUSGEBLENDET](workflow/using/query.md)
-    + {hide-from-toc}[Inkrementelle Abfrage – AUSGEBLENDET](workflow/using/incremental-query.md)
-    + {hide-from-toc}[Liste lesen – AUSGEBLENDET](workflow/using/read-list.md)
-    + {hide-from-toc}[Vereinigung – AUSGEBLENDET](workflow/using/union.md)
-    + {hide-from-toc}[Schnittmenge – AUSGEBLENDET](workflow/using/intersection.md)
-    + {hide-from-toc}[Ausschluss – AUSGEBLENDET](workflow/using/exclusion.md)
-    + {hide-from-toc}[Aufspaltung – AUSGEBLENDET](workflow/using/split.md)
-    + {hide-from-toc}[Zellen – AUSGEBLENDET](workflow/using/cells.md)
-    + {hide-from-toc}[Angebote nach Zelle – AUSGEBLENDET](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[Versandentwurf – AUSGEBLENDET](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[Anreicherung – AUSGEBLENDET](workflow/using/enrichment.md)
-    + {hide-from-toc}[Bearbeiten des Schemas – AUSGEBLENDET](workflow/using/edit-schema.md)
-    + {hide-from-toc}[Angebots-Engine – AUSGEBLENDET](workflow/using/offer-engine.md)
-    + {hide-from-toc}[Deduplizierung – AUSGEBLENDET](workflow/using/deduplication.md)
-    + {hide-from-toc}[Dimensionsänderung – AUSGEBLENDET](workflow/using/change-dimension.md)
-    + {hide-from-toc}[Listen-Update – AUSGEBLENDET](workflow/using/list-update.md)
-    + {hide-from-toc}[Listen-Update – AUSGEBLENDET](workflow/using/subscription-services.md)
-    + {hide-from-toc}[Aktualisieren von Daten – AUSGEBLENDET](workflow/using/update-data.md)
-    + {hide-from-toc}[CRM-Connector – AUSGEBLENDET](workflow/using/crm-connector.md)
-    + {hide-from-toc}[Ändern der Datenquelle – AUSGEBLENDET](workflow/using/change-data-source.md)
-  + Flusssteuerungsaktivitäten {#flow-control-activities}
-    + {hide-from-toc}[Über Flusssteuerungsaktivitäten – AUSGEBLENDET](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[Start und Ende – AUSGEBLENDET](workflow/using/start-and-end.md)
-    + {hide-from-toc}[Verzweigung – AUSGEBLENDET](workflow/using/fork.md)
-    + {hide-from-toc}[UND-Join – AUSGEBLENDET](workflow/using/and-join.md)
-    + {hide-from-toc}[Planung – AUSGEBLENDET](workflow/using/scheduler.md)
-    + {hide-from-toc}[Test – AUSGEBLENDET](workflow/using/test.md)
-    + {hide-from-toc}[Warten – AUSGEBLENDET](workflow/using/wait.md)
-    + {hide-from-toc}[Zeitliche Beschränkung – AUSGEBLENDET](workflow/using/time-constraint.md)
-    + {hide-from-toc}[Unter-Workflow – AUSGEBLENDET](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[Sprung (Start- und Endpunkt – AUSGEBLENDET)](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[Externes Signal – AUSGEBLENDET](workflow/using/external-signal.md)
-    + {hide-from-toc}[Validierung – AUSGEBLENDET](workflow/using/approval.md)
-    + {hide-from-toc}[Warnhinweis – AUSGEBLENDET](workflow/using/alert.md)
-    + {hide-from-toc}[Aufgabe – AUSGEBLENDET](workflow/using/task.md)
-  + Aktionsaktivitäten {#action-activities}
-    + {hide-from-toc}[Über Aktionsaktivitäten – AUSGEBLENDET](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[Versand – AUSGEBLENDET](workflow/using/delivery.md)
-    + {hide-from-toc}[Versandkontrolle – AUSGEBLENDET](workflow/using/delivery-control.md)
-    + {hide-from-toc}[Fortlaufender Versand – AUSGEBLENDET](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[Wiederkehrender Versand – AUSGEBLENDET](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[Kanalübergreifende Sendungen – AUSGEBLENDET](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[Lokale Validierung – AUSGEBLENDET](workflow/using/local-approval.md)
-    + {hide-from-toc}[Laden von Daten (RDBMS) – AUSGEBLENDET](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[Laden (SOAP) – AUSGEBLENDET](workflow/using/loading-soap.md)
-    + {hide-from-toc}[Laden von Daten (Datei) – AUSGEBLENDET](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[Content-Management – AUSGEBLENDET](workflow/using/content-management.md)
-    + {hide-from-toc}[Datenextraktion (Datei) – AUSGEBLENDET](workflow/using/extraction-file.md)
-    + {hide-from-toc}[SQL-Code und JavaScript-Code – AUSGEBLENDET](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[SQL-Daten-Management – AUSGEBLENDET](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Nlserver-Modul – AUSGEBLENDET](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[Aktualisieren des Aggregats – AUSGEBLENDET](workflow/using/update-aggregate.md)
-  + Ereignisaktivitäten {#event-activities}
-    + {hide-from-toc}[Über Ereignisaktivitäten – AUSGEBLENDET](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[Datei-Wächter – AUSGEBLENDET](workflow/using/file-collector.md)
-    + {hide-from-toc}[Dateiübertragung – AUSGEBLENDET](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Web-Download – AUSGEBLENDET](workflow/using/web-download.md)
-    + {hide-from-toc}[Eingehende E-Mails – AUSGEBLENDET](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[Eingehende SMS – AUSGEBLENDET](workflow/using/inbound-sms.md)
-  + Anwendungsfälle {#use-cases}
-    + {hide-from-toc}[Über Workflow-Anwendungsfälle – AUSGEBLENDET](workflow/using/about-workflow-use-cases.md)
-    + Sendungen {#deliveries}
-      + {hide-from-toc}[Verwenden der lokalen Validierungsaktivität – AUSGEBLENDET](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[Senden einer Geburtstags-E-Mail – AUSGEBLENDET](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[Laden des Versandinhalts – AUSGEBLENDET](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[Workflow für kanalübergreifenden Versand – AUSGEBLENDET](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern – AUSGEBLENDET](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + Monitoring {#monitoring}
-    + {hide-from-toc}[Senden eines Berichts an eine Liste – AUSGEBLENDET](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[Überwachen Ihrer Workflows – AUSGEBLENDET](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[Senden personalisierter Warnhinweise an Benutzende – AUSGEBLENDET](workflow/using/sending-personalized-alerts-to-operators.md)
-  + Daten-Management {#data-management}
-    + {hide-from-toc}[Koordinieren von Datenaktualisierungen – AUSGEBLENDET](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[Erstellen einer zusammenfassenden Liste – AUSGEBLENDET](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[Anreichern von Daten – AUSGEBLENDET](workflow/using/enriching-data.md)
-    + {hide-from-toc}[Verwenden von Aggregaten – AUSGEBLENDET](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität – AUSGEBLENDET](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[Einrichten eines Workflows für den wiederkehrenden Import – AUSGEBLENDET](workflow/using/recurring-import-workflow.md)
-  + Entwerfen von Abfragen {#designing-queries}
-    + {hide-from-toc}[Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage – AUSGEBLENDET](workflow/using/quarterly-list-update.md)
-  + Abfrage und Filter {#query-and-filter-hidden}
-    + {hide-from-toc}[Abfragen der Empfängertabelle – AUSGEBLENDET](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[Informationen zum Abfrageversand – AUSGEBLENDET](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[Durchführen von Aggregat-Berechnungen – AUSGEBLENDET](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[Abfrage mit Gruppierungs-Management – AUSGEBLENDET](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[Abfrage mit einer n:n-Beziehung – AUSGEBLENDET](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[Hinzufügen eines berechneten Auflistungsfelds – AUSGEBLENDET](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[Erstellen eines Filters – AUSGEBLENDET](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[Filtern doppelter Empfängerinnen und Empfänger – AUSGEBLENDET](workflow/using/filtering-duplicated-recipients.md)
-  + Überwachen von Workflows {#monitoring-workflows}
-    + {hide-from-toc}[Überwachen der Workflow-Ausführung – AUSGEBLENDET](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[Überwachen technischer Workflows – AUSGEBLENDET](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[Workflow-Heatmap – AUSGEBLENDET](workflow/using/heatmap.md)
-  + Fortgeschrittene Verwaltung {#advanced-management}
-    + {hide-from-toc}[Workflow-Eigenschaften – AUSGEBLENDET](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[Erweiterte Parameter – AUSGEBLENDET](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[JavaScript-Skripts und -Vorlagen – AUSGEBLENDET](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[Beispiele für JavaScript-Code in Workflows – AUSGEBLENDET](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[Zugreifen auf eine externe Datenbank – AUSGEBLENDET](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[Verwalten von Berechtigungen – AUSGEBLENDET](workflow/using/managing-rights.md)
-    + {hide-from-toc}[Ändern von Aktivitätsbildern – AUSGEBLENDET](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[Verwalten von Zeitzonen – AUSGEBLENDET](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[Technische Workflows – AUSGEBLENDET](workflow/using/about-technical-workflows.md)
 + Verwalten von Angeboten {#managing-offers}
   + Erste Schritte mit Interaction {#interaction-overview}
     + [Interaktion und Angebotsverwaltung](interaction/using/interaction-and-offer-management.md)

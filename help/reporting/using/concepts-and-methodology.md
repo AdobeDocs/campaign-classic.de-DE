@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Reporting interface
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 100%
+source-wordcount: '1600'
+ht-degree: 98%
 ---
 # Best Practices für Cubes{#concepts-and-methodology}
 
@@ -162,7 +162,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
+   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Der Planer wird in [diesem Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
      Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.

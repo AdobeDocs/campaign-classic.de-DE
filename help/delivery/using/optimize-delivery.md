@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 100%
+source-wordcount: '776'
+ht-degree: 96%
 ---
 # Optimieren des Versands {#optimize-delivery}
 
@@ -62,7 +62,7 @@ Mehrere Faktoren können die Server-Performance direkt beeinflussen und die Plat
 
   **Tipp**: Koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Performance zu gewährleisten.
 
-* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Performance der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
+* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Performance der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument) &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"} Richtlinien (Dokumentation zu Campaign v8).
 
 * Wenn Sie berechtigt sind, können Sie die [Funktionen des Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) nutzen, um Ihre Plattform mithilfe von [Überwachen der Performance](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de) zu überwachen.
 

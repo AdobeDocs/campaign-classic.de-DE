@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1316'
+ht-degree: 98%
 ---
 # Erste Schritte mit Marketing-Kampagnen{#setting-up-marketing-campaigns}
 
@@ -81,7 +81,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
-Sie können eine Kampagne über die Kampagnenliste erstellen. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Dashbord-Rubrik, um zu dieser Übersicht zu gelangen.****
+Sie können eine Kampagne über die Kampagnenliste erstellen. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Dashbord-Rubrik, um zu dieser Übersicht zu gelangen.**&#x200B;**
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -147,7 +147,7 @@ Wiederkehrende Kampagnen werden anhand einer bestimmten Vorlage erstellt, die di
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
+   Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} Campaign v8).
 
    >[!IMPORTANT]
    >

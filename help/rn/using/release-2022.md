@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 100%
+source-wordcount: '2187'
+ht-degree: 98%
 ---
 # Versionen 2022{#release-2022}
 
@@ -172,10 +172,10 @@ Adobe Campaign ist jetzt mit Windows Server 2019 kompatibel. Weitere Information
 
 **Sonstige Änderungen**
 
-* Nach der Einstellung wurden die Aktionsaktivitäten von Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Benutzeroberfläche entfernt. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität &quot;CRM-Connector&quot; verwenden. [Mehr dazu](../../workflow/using/crm-connector.md)
+* Nach der Einstellung wurden die Aktionsaktivitäten von Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Benutzeroberfläche entfernt. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität &quot;CRM-Connector&quot; verwenden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (Dokumentation zu Campaign v8)
 * Das Feld **[!UICONTROL Verschlüsselte Kennung]** wurde dem Besucherschema hinzugefügt (nms:visitor). Dieses Feld wird berechnet und ist für Web-Programme vorgesehen. Dies gilt, wenn der Kanal &quot;Line&quot; in der Mid-Sourcing-Instanz konfiguriert ist.
 * CRM-Datenquellen können jetzt mit der Aktivität **Datenquelle ändern** verwendet werden.
-* Eine neue Option wurde in den Eigenschaften zum **Umgang mit Fehlern** bei Workflow-Aktivitäten ergänzt: Die Option **Abbruch bei Fehler** sorgt dafür, dass der Workflow automatisch angehalten wird. Danach können Sie ihn nicht mehr neu starten (NEO-29661). [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+* Eine neue Option wurde in den Eigenschaften zum **Umgang mit Fehlern** bei Workflow-Aktivitäten ergänzt: Die Option **Abbruch bei Fehler** sorgt dafür, dass der Workflow automatisch angehalten wird. Danach können Sie ihn nicht mehr neu starten (NEO-29661). [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} (Dokumentation zu Campaign v8)
 * Die Primärschlüssel der nmsGroup-Tabelle, die zur Erstellung statistischer Empfängergruppen verwendet wird, werden jetzt in einer speziellen Sequenz erzeugt. Zuvor wurde die Sequenz &quot;xtknewId&quot; verwendet. (NEO-30832)
 * Es wurde Unterstützung für Batch-Aktualisierungsvorgänge mit der Aktivität &quot;CRM-Connector&quot; hinzugefügt.
 * die Performance bei der Verarbeitungszeit für Transaktionsnachrichten wurde verbessert. (NEO-40370)

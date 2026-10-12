@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 ---
 # Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
@@ -92,8 +92,8 @@ Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine
 
 **Verwandte Themen:**
 
-* [Aktivität „Deduplizierung“](../../workflow/using/deduplication.md).
-* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Aktivität &quot;Deduplizierung&quot;](../../workflow/using/deduplication-merge.md)
+* [Aktivität „Deduplizierung](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (Dokumentation zu Campaign v8).
+* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (Dokumentation zu Campaign v8)
 
 ## Indizieren von E-Mail-Adressen {#index-addresses}
 

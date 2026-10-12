@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 100%
+source-wordcount: '1675'
+ht-degree: 94%
 ---
 # Auswählen der Zielgruppe für Ihre Kampagnen {#marketing-campaign-deliveries}
 
@@ -75,7 +75,7 @@ Die Zielgruppenbestimmung kann über eine Kombination von Filterbedingungen in e
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Weiterführende Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} Campaign v8).
 
 Sie können Abfragen starten und die resultierenden Populationen über Aktivitäten wie Vereinigung, Schnittmenge, Aufspaltung, Ausschluss weiter einschränken oder vergrößern.
 
@@ -87,7 +87,7 @@ Verbinden Sie die für die Zielgruppenerstellung erforderlichen Zielgruppenbesti
 
 >[!NOTE]
 >
->Beispiele und Anleitungen zum Definieren von Abfragen finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+>Beispiele und Anleitungen zum Definieren von Abfragen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (Dokumentation zu Campaign v8).
 
 Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, die Aktivitäten repräsentieren. Die erste Registerkarte enthält Aktivitäten zur Zielgruppenbestimmung und die zweite Registerkarte enthält Aktivitäten zur Flusskontrolle, die gelegentlich zur Koordinierung von Aktivitäten zur Zielgruppenbestimmung verwendet werden.
 
@@ -97,7 +97,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 >[!NOTE]
 >
->Die zur Erstellung des Workflow-Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layoutfunktionalitäten werden im Handbuch [Automatisierung mithilfe von Workflows](../../workflow/using/architecture.md) dargestellt.
+>Die für die Erstellung des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layout-Funktionen werden im Handbuch [Automatisieren mit Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
 Sie können mehrere Zielgruppenbestimmungs-Workflows für eine einzige Kampagne erstellen. So fügen Sie einen Workflow hinzu:
 
@@ -214,7 +214,7 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Aktivieren der Kontrollgruppe für einen Versand {#activating-the-control-group-for-a-delivery}
 
@@ -233,7 +233,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 
@@ -250,7 +250,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
+Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#adding-a-population}
 
@@ -260,7 +260,7 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population definieren. 
 
 >[!NOTE]
 >
->Der Abfrage-Editor von Adobe Campaign wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
+>Der Abfrage-Editor von Adobe Campaign wird in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
 
 #### Anleitungsvideo {#create-email-video}

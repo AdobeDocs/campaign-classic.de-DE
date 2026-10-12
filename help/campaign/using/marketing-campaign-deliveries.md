@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 100%
+source-wordcount: '1591'
+ht-degree: 98%
 ---
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
@@ -45,7 +45,7 @@ Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow o
 
 Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
-![](assets/do-not-localize/how-to-video.png)[Funktion im Video kennenlernen](#create-email-video).
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#create-email-video).
 
 ## Erstellen von Sendungen {#creating-deliveries}
 
@@ -83,7 +83,7 @@ Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!
 
 >[!NOTE]
 >
->Die technischen Workflows zum Campaign-Package finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
+>Die technischen Workflows im Zusammenhang mit dem Campaign-Package werden in [Liste der technischen Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
 **1. Schritt - Datei validieren**
 
