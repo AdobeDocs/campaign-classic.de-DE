@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 95%
 ---
 # Filterregeln{#filtering-rules}
 
@@ -77,7 +77,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 >[!NOTE]
 >
->Typologien und Filterregeln können in einem Workflow über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
+>Typologien und Filterregeln können in einem Workflow über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Weiterführende Informationen hierzu finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"} Campaign v8).
 
 ## Erstellen und Verwenden einer Filtertypologie {#creating-and-using-a-filtering-typology}
 

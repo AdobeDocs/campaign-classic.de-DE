@@ -31,10 +31,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 89%
 ---
 # Konfigurieren von A/B-Tests {#configuring-a-b-testing}
 
@@ -44,7 +44,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen vo
 
 1. Fügen Sie eine Aufspaltungsaktivität hinzu, um die Zielpopulation in mehrere Untermengen zu unterteilen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"}.
 
-1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untermengen entsprechend Ihren Anforderungen. Weitere Informationen zur Konfiguration einer **[!UICONTROL Aufspaltungsaktivität]** finden Sie in [diesem Abschnitt](../../workflow/using/split.md).
+1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untermengen entsprechend Ihren Anforderungen. Weitere Informationen zur Konfiguration einer **[!UICONTROL Aufspaltung]**-Aktivität finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (Dokumentation zu Campaign v8).
 
    In diesem Beispiel möchten wir zwei neue Themen für einen Newsletter testen, indem wir sie jeweils 10 % der Zielpopulation präsentieren.
 

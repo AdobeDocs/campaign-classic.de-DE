@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 100%
+source-wordcount: '1591'
+ht-degree: 98%
 ---
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
@@ -83,7 +83,7 @@ Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!
 
 >[!NOTE]
 >
->Die technischen Workflows zum Campaign-Package finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
+>Die technischen Workflows im Zusammenhang mit dem Campaign-Package werden in [Liste der technischen Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
 **1. Schritt - Datei validieren**
 
@@ -263,7 +263,7 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/27488?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

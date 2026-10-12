@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 100%
+source-wordcount: '1253'
+ht-degree: 97%
 ---
 # Synchronisieren von Zielgruppen{#synchronizing-audiences}
 
@@ -89,7 +89,7 @@ Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlic
 
    ![](assets/acs_connect_query1.png)
 
-1. Fügen Sie in der Abfrageoption zusätzliche Daten hinzu. Weiterführende Informationen hierzu finden Sie im Abschnitt [Daten hinzufügen](../../workflow/using/query.md#adding-data).
+1. Fügen Sie in der Abfrageoption zusätzliche Daten hinzu. Weitere Informationen finden Sie im Abschnitt [Hinzufügen von Daten](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (Dokumentation zu Campaign v8).
 
    In diesem Beispiel wird gezeigt, wie ein Aggregat hinzugefügt wird, das zählt, wie viele Sendungen ein Empfänger pro Jahr erhält.
 

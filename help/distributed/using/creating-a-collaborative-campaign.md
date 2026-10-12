@@ -20,10 +20,10 @@ topic_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
     internal-label: Distributed Marketing
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '1018'
+ht-degree: 96%
 ---
 # Erstellen einer partizipativen Kampagne{#creating-a-collaborative-campaign-intro}
 
@@ -93,7 +93,7 @@ Der Kampagnen-Workflow muss die Aktivität **Lokale Validierung** beinhalten. Di
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-Eine Datenverteilung des Typs **Lokalstellenverteilung** muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Mehr Informationen über Datenverteilungen finden Sie im [Workflows-Handbuch](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
+Eine Datenverteilung des Typs **Lokalstellenverteilung** muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Weitere Informationen zur Datenverteilung finden Sie im Handbuch [Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (Dokumentation zu Campaign v8).
 
 ![](assets/mkg_dist_data_distribution.png)
 

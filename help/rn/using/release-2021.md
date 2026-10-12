@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 100%
+source-wordcount: '2704'
+ht-degree: 98%
 ---
 # Versionen 2021{#release-2021}
 
@@ -124,7 +124,7 @@ _5. Juni 2021_
 <td>
 <p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen (FDA und lokale Datenbanken).</p>
 <p>In Adobe Campaign-Workflows werden Daten mithilfe von Arbeits- (oder temporären) Tabellen verwaltet. Während der Workflow-Ausführung geben Arbeitstabellen Daten für Workflow-Aktivitäten frei. Standardmäßig werden die Arbeitstabellen auf derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.</p>
-<p>Weitere Informationen finden Sie im <a href="../../workflow/using/change-data-source.md">entsprechenden Handbuch</a>.</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 **Verbesserungen**
 
 * Beim Speichern eines Workflows wurden zusätzliche Prüfungen hinzugefügt, um sicherzustellen, dass Aktivitätsnamen eindeutig sind und dass auf Transitionen immer eine Aktivität folgt.
-* Der technische Workflow **Abrechnung (Billing)** enthält jetzt die Aufgaben, die ursprünglich vom mittlerweile entfernten Workflow **Zählung aktiver Profile** (billingActiveContactCount) ausgeführt wurden. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
+* Der technische Workflow **Abrechnung (Billing)** enthält jetzt die Aufgaben, die ursprünglich vom mittlerweile entfernten Workflow **Zählung aktiver Profile** (billingActiveContactCount) ausgeführt wurden. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (Dokumentation zu Campaign v8).
 * Es wurde das neue Attribut **_keyOnMData** hinzugefügt, um einen Schlüssel für Vorgänge zu Memo-Daten verwenden zu können.
 
 **Sonstige Änderungen**

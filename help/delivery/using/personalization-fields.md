@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 95%
 ---
 # Personalisierungsfelder{#personalization-fields}
 
@@ -104,7 +104,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
    >[!NOTE]
    >
-   >Bei Sendungen, die über einen Workflow ausgelöst werden, haben Sie die Möglichkeit, die Daten aus der temporären Arbeitstabelle des Workflows zu verwenden. Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/data-life-cycle.md#target-data).
+   >Bei Sendungen, die über einen Workflow ausgelöst werden, haben Sie die Möglichkeit, die Daten aus der temporären Arbeitstabelle des Workflows zu verwenden. Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weiterführende Informationen hierzu finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} Campaign v8).
 
 ## Personalisierung optimieren {#optimizing-personalization}
 
@@ -119,8 +119,8 @@ Sollten Sie beispielsweise beim Versand an zahlreiche Empfänger Performance-Pro
 Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 1. Kampagne erstellen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}.
-1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
-1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/delivery.md).
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (Dokumentation zu Campaign v8).
+1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (Dokumentation zu Campaign v8).
 1. Gehen Sie zum Tab **[!UICONTROL Analyse]** der **[!UICONTROL Versandeigenschaften]** und wählen Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** aus.
 
    ![](assets/perso_optimization.png)
@@ -173,6 +173,6 @@ Durch Hinzufügen des Objektschemas können Sie die Felder auswählen, die Sie d
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/30081?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
