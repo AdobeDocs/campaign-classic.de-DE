@@ -58,8 +58,8 @@ Nachdem Sie Ihre E-Mail erstellt und konfiguriert haben, können Sie sie an die 
 
 In den folgenden Abschnitten werden Einstellungen und Konfigurationen beschrieben, die sich speziell auf den Versand von E-Mails beziehen:
 <!--
-* [Generating the mirror page](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
-* [Email BCC](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
+* [Generating the mirror page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
+* [Email BCC](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
 -->
 * [E-Mail-Parameter](email-parameters.md)
 * [Senden von E-Mails mit dem Enhanced MTA](sending-with-enhanced-mta.md)

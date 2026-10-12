@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -51,11 +51,7 @@ ht-degree: 100%
     + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
   + Profil-Management {#profile-management}
     + [Über Profile](platform/using/about-profiles.md)
-    + {hide-from-toc}[Bearbeiten eines Profils – AUSGEBLENDET](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[Hinzufügen von Profilen – AUSGEBLENDET](platform/using/adding-profiles.md)
-    + {hide-from-toc}[Verwalten von Profilen – AUSGEBLENDET](platform/using/managing-profiles.md)
     + [Daten-Update](platform/using/updating-data.md)
-    + {hide-from-toc}[Importieren und Exportieren von Profilen – AUSGEBLENDET](platform/using/exporting-and-importing-profiles.md)
     + [Erstellen und Verwalten von Listen](platform/using/creating-and-managing-lists.md)
   + Importieren und Exportieren von Daten {#importing-and-exporting-data}
     + [Erste Schritte mit dem Datenimport und -export](platform/using/get-started-data-import-export.md)
@@ -75,9 +71,7 @@ ht-degree: 100%
       + [Best Practices beim Import und Export](platform/using/import-export-best-practices.md)
       + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
   + Filtern von Daten {#filtering-data}
-    + {hide-from-toc}[Filteroptionen – AUSGEBLENDET](platform/using/filtering-options.md)
     + {hide-from-toc}[Erstellen von Filtern – AUSGEBLENDET](platform/using/creating-filters.md)
-    + {hide-from-toc}[Anwendungsfall – Ausgeblendet](platform/using/use-case.md)
   + {hide-from-toc}[Schritte zum Erstellen einer Abfrage – AUSGEBLENDET](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[Definieren von Filterbedingungen – AUSGEBLENDET](platform/using/defining-filter-conditions.md)
   + Berechtigungen {#permissions}
@@ -86,12 +80,8 @@ ht-degree: 100%
       + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
       + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
     + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[Verwalten des Zugriffs auf Ordner – AUSGEBLENDET](platform/using/access-management-folders.md)
   + CRM-Connectoren {#connectors}
     + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
-    + {hide-from-toc}[Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
 + Erstellen und Senden von Nachrichten {#sending-messages}
   + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
   + {hide-from-toc}[Versandeinstellungen – AUSGEBLENDET](delivery/using/delivery-settings.md)
