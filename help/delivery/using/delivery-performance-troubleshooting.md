@@ -124,7 +124,7 @@ Die Ursache hierfür sind Performance-Probleme, wenn die Marketing-Instanz zu la
 
 **Bei On-Premise-Installationen** führen Sie ein Vacuum durch und indizieren Sie die Datenbank neu. Weiterführende Informationen zur Wartung der Datenbank finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
-Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
+Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Monitoring technischer Workflows
 

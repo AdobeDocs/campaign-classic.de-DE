@@ -92,8 +92,8 @@ Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine
 
 **Verwandte Themen:**
 
-* [Aktivität „Deduplizierung](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (Dokumentation zu Campaign v8).
-* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (Dokumentation zu Campaign v8)
+* [Aktivität „Deduplizierung](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (Dokumentation zu Campaign v8).
+* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (Dokumentation zu Campaign v8)
 
 ## Indizieren von E-Mail-Adressen {#index-addresses}
 

@@ -97,7 +97,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 >[!NOTE]
 >
->Die für die Erstellung des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layout-Funktionen werden im Handbuch [Automatisieren mit Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
+>Die für die Erstellung des Diagramms verfügbaren Aktivitäten sowie alle Anzeige- und Layout-Funktionen werden im Handbuch [Automatisieren mit Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (Dokumentation zu Campaign v8) beschrieben.
 
 Sie können mehrere Zielgruppenbestimmungs-Workflows für eine einzige Kampagne erstellen. So fügen Sie einen Workflow hinzu:
 
@@ -250,7 +250,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
+Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#adding-a-population}
 

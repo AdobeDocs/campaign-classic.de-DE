@@ -89,7 +89,7 @@ Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlic
 
    ![](assets/acs_connect_query1.png)
 
-1. Fügen Sie in der Abfrageoption zusätzliche Daten hinzu. Weitere Informationen finden Sie im Abschnitt [Hinzufügen von Daten](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (Dokumentation zu Campaign v8).
+1. Fügen Sie in der Abfrageoption zusätzliche Daten hinzu. Weitere Informationen finden Sie im Abschnitt [Hinzufügen von Daten](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (Dokumentation zu Campaign v8).
 
    In diesem Beispiel wird gezeigt, wie ein Aggregat hinzugefügt wird, das zählt, wie viele Sendungen ein Empfänger pro Jahr erhält.
 

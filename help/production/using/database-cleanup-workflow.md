@@ -349,7 +349,7 @@ Diese Aufgabe löscht jede Workflow-Instanz mithilfe ihrer Kennung (**lWorkflowI
 
 >[!NOTE]
 >
->Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld &quot;**in Tagen“** Standardwert 30 Tage). Dieses Feld befindet sich auf der Registerkarte **Ausführung** der Workflow-Eigenschaften. Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} Campaign v8).
+>Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld &quot;**in Tagen“** Standardwert 30 Tage). Dieses Feld befindet sich auf der Registerkarte **Ausführung** der Workflow-Eigenschaften. Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} Campaign v8).
 
 1. Um die Liste der zu löschenden Workflows abzurufen, wird die folgende Abfrage verwendet:
 

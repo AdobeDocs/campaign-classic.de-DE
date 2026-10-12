@@ -45,7 +45,7 @@ ht-degree: 97%
 
 
 
-Die Datensynchronisation zwischen Adobe Campaign und dem CRM erfolgt über eine spezielle Workflow-Aktivität: [CRM-Connector](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (Dokumentation zu Campaign v8).
+Die Datensynchronisation zwischen Adobe Campaign und dem CRM erfolgt über eine spezielle Workflow-Aktivität: [CRM-Connector](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (Dokumentation zu Campaign v8).
 
 Erstellen Sie zum Importieren der Daten aus Microsoft Dynamics in Adobe Campaign beispielsweise folgenden Workflow:
 

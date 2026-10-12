@@ -93,7 +93,7 @@ Der Kampagnen-Workflow muss die Aktivität **Lokale Validierung** beinhalten. Di
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-Eine Datenverteilung des Typs **Lokalstellenverteilung** muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Weitere Informationen zur Datenverteilung finden Sie im Handbuch [Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (Dokumentation zu Campaign v8).
+Eine Datenverteilung des Typs **Lokalstellenverteilung** muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Einträge aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Weitere Informationen zur Datenverteilung finden Sie im Handbuch [Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (Dokumentation zu Campaign v8).
 
 ![](assets/mkg_dist_data_distribution.png)
 

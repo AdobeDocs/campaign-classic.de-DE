@@ -65,15 +65,15 @@ Die Installation von Linux-Paketen wurde für v7.4.1 aktualisiert. [Weitere Info
 
 Der Abschnitt zu den Versionshinweisen wurde aktualisiert und enthält jetzt Informationen zu den in Version 7.4.1 verfügbaren Verbesserungen, Kompatibilitätsaktualisierungen und Patches. [Weitere Informationen](latest-release.md)
 
-Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustart von Workflows gelöscht werden können. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (Dokumentation zu Campaign v8)
+Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustart von Workflows gelöscht werden können. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (Dokumentation zu Campaign v8)
 
 ### April 2024 {#apr-2024}
 
 Es wurde ein Warnhinweis zur Erstellung von Benutzern mithilfe von Adobe Identity Management System (IMS) hinzugefügt. [Weitere Informationen](../../platform/using/access-management.md)
 
-Es wurden fehlende Optionen für die Workflow-Aktivität „Web-Download“ hinzugefügt. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} (Dokumentation zu Campaign v8)
+Es wurden fehlende Optionen für die Workflow-Aktivität „Web-Download“ hinzugefügt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} (Dokumentation zu Campaign v8)
 
-Den Aktivitäten **Dimension ändern** und **Datenquelle ändern** wurde ein Warnhinweis zu ihrer Verwendung in einem Workflow hinzugefügt. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} (Dokumentation zu Campaign v8)
+Den Aktivitäten **Dimension ändern** und **Datenquelle ändern** wurde ein Warnhinweis zu ihrer Verwendung in einem Workflow hinzugefügt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} (Dokumentation zu Campaign v8)
 
 ### März 2024 {#mar-2024}
 

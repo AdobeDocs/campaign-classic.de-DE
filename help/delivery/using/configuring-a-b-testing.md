@@ -44,7 +44,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen vo
 
 1. Fügen Sie eine Aufspaltungsaktivität hinzu, um die Zielpopulation in mehrere Untermengen zu unterteilen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=de){target="_blank"}.
 
-1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untermengen entsprechend Ihren Anforderungen. Weitere Informationen zur Konfiguration einer **[!UICONTROL Aufspaltung]**-Aktivität finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (Dokumentation zu Campaign v8).
+1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untermengen entsprechend Ihren Anforderungen. Weitere Informationen zur Konfiguration einer **[!UICONTROL Aufspaltung]**-Aktivität finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (Dokumentation zu Campaign v8).
 
    In diesem Beispiel möchten wir zwei neue Themen für einen Newsletter testen, indem wir sie jeweils 10 % der Zielpopulation präsentieren.
 

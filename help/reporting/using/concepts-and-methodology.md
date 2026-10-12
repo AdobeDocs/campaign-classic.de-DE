@@ -162,7 +162,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Der Planer wird in [diesem Abschnitt) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
+   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Der Planer wird in [diesem Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
      Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung ausgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
