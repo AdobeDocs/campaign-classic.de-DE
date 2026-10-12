@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 33%
@@ -48,7 +48,7 @@ Die folgenden Voraussetzungen sind erforderlich:
 * Kenntnis der Systeme und Server
 * Administratorrechte und Berechtigungen
 
-Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von &#x200B;](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
+Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von ](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
 
 Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Team für technische Vorgänge in Adobe anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
 
@@ -437,5 +437,5 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
+* [Hilfe- und Support-Optionen für Campaign Classic](../../campaign-classic-home.md)
 * [Campaign-Programm mit jährlichen Aktualisierungen](../../rn/using/rn-overview.md)

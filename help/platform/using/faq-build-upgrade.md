@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 100%
@@ -212,7 +212,7 @@ Ja. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität z
 
 Wenn nach einem Build-Upgrade Probleme auftreten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Die Adobe-Kundenunterstützung plant den Vorgang und erstellt das Ticket zum Build-Upgrade.
 
-Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](../../support.md).
+Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](../../campaign-classic-home.md).
 
 ## Checkliste für Build-Upgrades {#check-list}
 
@@ -252,5 +252,5 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
+* [Hilfe- und Support-Optionen für Campaign Classic](../../campaign-classic-home.md)
 * [Jährliches Aktualisierungsprogramm](../../rn/using/rn-overview.md#yearly-upgrade)
