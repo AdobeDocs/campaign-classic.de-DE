@@ -52,7 +52,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 >[!NOTE]
 >
 >* All diese Schritte sind im generischen Abfrage-Editor verfügbar. Wenn eine Abfrage in einem anderen Kontext erstellt wird, können einige Schritte übersprungen werden.\
->Die Aktivität Abfrage wird in [diesem Abschnitt) ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} Campaign v8-Dokumentation beschrieben.
+>Die Aktivität Abfrage wird in [diesem Abschnitt) &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} Campaign v8-Dokumentation beschrieben.
 >* Weitere Informationen zu Abfragen und wie diese erstellt werden finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}.
 
 <!--

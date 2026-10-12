@@ -75,7 +75,7 @@ Die Zielgruppenbestimmung kann über eine Kombination von Filterbedingungen in e
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} Campaign v8).
+Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} Campaign v8).
 
 Sie können Abfragen starten und die resultierenden Populationen über Aktivitäten wie Vereinigung, Schnittmenge, Aufspaltung, Ausschluss weiter einschränken oder vergrößern.
 
@@ -214,7 +214,7 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Aktivieren der Kontrollgruppe für einen Versand {#activating-the-control-group-for-a-delivery}
 
@@ -233,7 +233,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 
@@ -250,7 +250,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen finden [ in ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
+Diese Konfiguration entspricht einer Aktivität zum Teilen im Workflow, mit der Sie die Zielgruppe in Teilmengen aufspalten können. Die Kontrollgruppe ist eine dieser Teilmengen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#adding-a-population}
 
