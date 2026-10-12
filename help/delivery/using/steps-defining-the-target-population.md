@@ -39,10 +39,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 100%
+source-wordcount: '1930'
+ht-degree: 98%
 ---
 # Bestimmen der Zielpopulation {#defining-the-target-population}
 
@@ -51,7 +51,7 @@ Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 * **Haupt-Zielgruppe**: Profile, die Nachrichten empfangen. [Weitere Informationen](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Weitere Informationen](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](about-seed-addresses.md)
-* **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Auswahl der Hauptempfänger des Versands {#selecting-the-main-target}
 
@@ -281,6 +281,6 @@ Folgende Mappings sind vorhanden:
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/35532?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

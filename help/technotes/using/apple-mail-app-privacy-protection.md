@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 100%
+source-wordcount: '2179'
+ht-degree: 98%
 ---
 # Datenschutz bei E-Mails in der Mail-App von Apple
 
@@ -95,7 +95,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * Bericht **[!UICONTROL Betriebssysteme]**
 
-  Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Weitere Informationen](../../reporting/using/global-reports.md#operating-systems)
+  Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} (Dokumentation zu Campaign v8).
 
   Sie können die Aufschlüsselung Ihrer Besucher nach Betriebssystem im Verhältnis zur Gesamt-Besucherzahl anzeigen.
 
@@ -107,7 +107,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * Bericht **[!UICONTROL Aufschlüsselung der Öffnungen]**
 
-  Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Weitere Informationen](../../reporting/using/global-reports.md#breakdown-of-opens)
+  Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} (Dokumentation zu Campaign v8).
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 

@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: d3b34fea-a110-482f-adb2-aae8d686bac8
     internal-label: Transactional messaging
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '610'
+ht-degree: 72%
 ---
 # Erste Schritte mit Transaktionsnachrichten {#about-transactional-messaging}
 
@@ -31,15 +31,11 @@ ht-degree: 100%
 
 Der **Transaktionsnachrichtenversand** (Message Center) ist ein Campaign-Modul zur Verwaltung von Benachrichtigungen bei benutzerspezifischen Triggern. Diese werden von Ereignissen generiert, die von einem externen Informationssystem gesendet werden.
 
-Bei einer Transaktionsnachricht handelt es sich um eine individuell zugeschnittene, eindeutige Mitteilung, die beispielsweise über eine Website in Echtzeit übermittelt wird. Sie wird erwartet, weil sie wichtige Informationen enthält, die der Empfänger überprüfen oder bestätigen möchte.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Transaktionsnachrichten finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}.
 
-Transaktionsnachrichten zeichnen sich durch Skalierbarkeit aus und sind rund um die Uhr verfügbar.
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
-* **Wann wird diese Nachricht gesendet?** Da diese Nachricht wichtige Informationen enthält, erwartet die Benutzerin bzw. der Benutzer, dass sie in Echtzeit gesendet wird. Folglich muss die Verzögerung zwischen der Auslösung des Ereignisses und dem Eintreffen der Nachricht sehr kurz sein.
-
-* **Warum ist das wichtig?** Im Allgemeinen hat eine Transaktionsnachricht hohe Öffnungsraten. Sie sollte daher sorgfältig gestaltet werden, da sie einen starken Einfluss auf das Kundenverhalten und die Kundenbeziehung im Allgemeinen haben kann.
-
-* **Beispiel:** Es kann sich um eine Begrüßungsnachricht nach der Erstellung eines Kontos, eine Bestätigung, dass eine Bestellung versandt wurde, eine Rechnung, eine Nachricht zur Bestätigung einer Passwortänderung, eine Benachrichtigung nach dem Besuch einer Website durch eine Person, eine Kommunikation bezüglich der Nichtverfügbarkeit eines Produkts, einen Kontoauszug usw. handeln.
+Dieser Abschnitt behandelt die Transaktionsnachrichten-Architektur und die Konfiguration der Kontroll- und Ausführungsinstanzen, die für On-Premise- und Hybridbereitstellungen spezifisch sind.
 
 >[!IMPORTANT]
 >
@@ -57,16 +53,6 @@ Grundlage dieser Funktion ist eine spezielle Architektur, bei der die **Ausführ
 >
 >Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Benutzer von Message Center benötigen spezifische Berechtigungen für den Zugriff auf die Ordner für **[!UICONTROL Echtzeit-Ereignisse (nmsRtEvent)]**.
 
-Der gesamte Prozess der Transaktionsnachrichten kann wie folgt beschrieben werden:
-
-![](assets/transactional-msg-overview.png)
-
-Angenommen, Sie sind eine Firma mit einer Website, auf der Ihre Kunden Produkte kaufen können.
-
-Mit Adobe Campaign können Sie eine Benachrichtigungs-E-Mail an Kunden senden, die ihrem Warenkorb Produkte hinzugefügt haben. Wenn ein Kunde Ihre Website verlässt, ohne seine Einkäufe zu tätigen (externes Ereignis, das ein Campaign-Ereignis auslöst), wird automatisch eine Warenkorbabbruchs-E-Mail an ihn gesendet (Versand einer Transaktionsnachricht).
-
-Die wichtigsten Schritte für die Einrichtung sind nachfolgend in [diesem Abschnitt](#key-steps) beschrieben.
-
 >[!NOTE]
 >
 >In Adobe Campaign hat die Verarbeitung von Transaktionsnachrichten Priorität vor allen anderen Sendungen.
@@ -79,10 +65,10 @@ Die wichtigsten Schritte beim Erstellen und Verwalten personalisierter Transakti
 
 Führen Sie auf der **Kontrollinstanz** die folgenden Aktionen aus:
 
-1. [Erstellen Sie einen Ereignistyp](../../message-center/using/creating-event-types.md).
-1. [Erstellen und konzipieren Sie die Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md). Bei diesem Schritt müssen Sie ein Ereignis mit Ihrer Nachricht verknüpfen.
+1. [Ereignistyp erstellen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} (Dokumentation zu Campaign v8).
+1. [Erstellen und Entwerfen der Nachrichtenvorlage](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (Dokumentation zu Campaign v8). Bei diesem Schritt müssen Sie ein Ereignis mit Ihrer Nachricht verknüpfen.
 1. [Testen Sie die Nachricht](../../message-center/using/testing-message-templates.md).
-1. [Veröffentlichen Sie die Nachrichtenvorlage](../../message-center/using/publishing-message-templates.md).
+1. [Veröffentlichen Sie die Nachrichtenvorlage](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (Dokumentation zu Campaign v8).
 
 >[!NOTE]
 >
@@ -92,13 +78,13 @@ Führen Sie auf der **Kontrollinstanz** die folgenden Aktionen aus:
 
 Nachdem Sie die Transaktionsnachrichtenvorlage erstellt und veröffentlicht haben und ein entsprechendes Ereignis ausgelöst wurde, werden die folgenden Hauptschritte auf der **Ausführungsinstanz** ausgeführt:
 
-1. Wenn das Ereignis vom externen Informationssystem generiert wird, werden die relevanten Daten über die Methoden **PushEvent** und **PushEvents** an Campaign gesendet. Näheres hierzu finden Sie unter [Ereignisabruf](../../message-center/using/about-event-processing.md#event-collection).
-1. Das Ereignis wird der entsprechenden Nachrichtenvorlage zugeordnet. Siehe [Weiterleitung zu Vorlagen](../../message-center/using/about-event-processing.md#routing-towards-a-template).
-1. Nach Abschluss der Anreicherung wird der Versand durchgeführt. Näheres hierzu finden Sie unter [Versandausführung](../../message-center/using/delivery-execution.md). Jeder Zielkontakt erhält eine personalisierte Nachricht.
+1. Wenn das Ereignis vom externen Informationssystem generiert wird, werden die relevanten Daten über die Methoden **PushEvent** und **PushEvents** an Campaign gesendet. Siehe [Ereignissammlung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (Dokumentation zu Campaign v8).
+1. Das Ereignis wird der entsprechenden Nachrichtenvorlage zugeordnet. Siehe [Weiterleitung zu Vorlagen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} (Dokumentation zu Campaign v8).
+1. Nach Abschluss der Anreicherung wird der Versand durchgeführt. Siehe [Versandausführung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8). Jeder Zielkontakt erhält eine personalisierte Nachricht.
 
 ## Verwandte Themen {#related-topics}
 
 * [Erste Schritte mit Kommunikationskanälen](../../delivery/using/communication-channels.md)
 * [Wichtigste Schritte bei der Versanderstellung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
 * [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md)
-* [Zugreifen auf Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md)
+* [Auf Transaktionsnachrichten-Berichte zugreifen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8)

@@ -37,10 +37,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 100%
+source-wordcount: '1087'
+ht-degree: 96%
 ---
 # Gestaltungsbausteine{#personalization-blocks}
 
@@ -145,7 +145,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
 * **[!UICONTROL Links zum Teilen in sozialen Netzwerken]**: fügt Schaltflächen ein, die es den Empfängerinnen und Empfängern ermöglichen, einen Link zum Inhalt der Mirrorseite mit dem E-Mail-Client, Facebook, X (früher bekannt als Twitter) und LinkedIn zu teilen (weitere Informationen finden Sie unter [Virales Marketing: Weiterleiten an eine Freundin oder einen Freund](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
-* **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]**: Hiermit wird eine URL eingefügt, mit der ein Interaction-Angebot auf **[!UICONTROL Angenommen]** gesetzt werden kann (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
+* **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]** : Hiermit wird eine URL eingefügt, die es ermöglicht, ein Interaktionsangebot auf **[!UICONTROL Angenommen]** festzulegen (siehe [diesen Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Definieren von benutzerdefinierten Gestaltungsbausteinen {#defining-custom-personalization-blocks}
 
@@ -177,6 +177,6 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
 Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/30080?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

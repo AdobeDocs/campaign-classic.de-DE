@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 100%
+source-wordcount: '2212'
+ht-degree: 96%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -47,7 +47,7 @@ Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 
 ### Erstellung einer anonymen Umgebung {#creating-an-anonymous-environment}
 
-Gehen Sie wie im Abschnitt [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment) beschrieben vor, um eine anonyme, auf der **Besucher**-Dimension basierende Umgebung zu erstellen.
+Befolgen Sie die Anweisungen in [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8), um Ihre anonyme Umgebung anhand der Dimensionen **Besucher** zu erstellen.
 
 Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
@@ -147,7 +147,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Damit die zuvor erstellten Angebote auf der Website erscheinen können, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Web-Präsenz ein, der die Abfrage des Angebotsmoduls auslöst (siehe [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md)).
+Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
@@ -211,7 +211,7 @@ Gehen Sie wie folgt vor:
 
 ### Erstellung einer Umgebung für anonyme Kontakte {#creating-an-environment-for-anonymous-contacts}
 
-1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weitere Informationen hierzu finden Sie unter &quot;[ einer Angebotsumgebung“ ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
 
    ![](assets/offer_env_anonymous_003.png)
 

@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 98%
 ---
 # Mit dem Enhanced MTA senden {#sending-with-enhanced-mta}
 
@@ -154,7 +154,7 @@ Ein Versand kann nicht angehalten werden, nachdem er in den erweiterten MTA übe
 
 Das Diagramm für den Campaign-Versanddurchsatz zeigt nicht mehr den Durchsatz an Ihre E-Mail-Empfänger an. Dieses Diagramm zeigt jetzt die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von Campaign an den Enhanced MTA an.
 
-Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
+Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Weitere Zustellversuche
 

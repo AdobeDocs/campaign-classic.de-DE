@@ -20,35 +20,19 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 64%
+source-wordcount: '170'
+ht-degree: 26%
 ---
 # Datenbankstruktur aktualisieren{#updating-the-database-structure}
 
-
-
-Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungsassistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbank aktualisieren]** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
-
-![](assets/d_ncs_integration_schema_update.png)
-
-Die Module in der Datenbank werden automatisch ausgefüllt und aktiviert.
-
-![](assets/d_ncs_integration_schema_update_select.png)
+Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Assistenten zur Datenbankaktualisierung, der über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** verfügbar ist. In Campaign Classic v7 bietet der Assistent außerdem die folgenden Optionen:
 
 Die Optionen **[!UICONTROL Gespeicherte Prozeduren hinzufügen]** und **[!UICONTROL Initialisierungsdaten importieren]** werden verwendet, um die anfänglichen SQL-Skripte und die Datenpakete zu starten, die beim Erstellen der Datenbank ausgeführt werden.
 
 Sie können einen Datensatz aus einem externen Datenpaket importieren. Wählen Sie dazu **[!UICONTROL Paket importieren]** und geben Sie die XML-Datei des Pakets ein.
 
-Führen Sie die Schritte aus und sehen Sie sich das SQL-Script für Datenbank-Update an:
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Assistenten für das Datenbank-Update finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}.
 
-![](assets/d_ncs_integration_schema_update2.png)
-
->[!NOTE]
->
->Es befindet sich in einem Bearbeitungsfeld und kann geändert werden, indem SQL-Code gelöscht oder hinzugefügt wird.
-
-Starten Sie anschließend das Datenbank-Update:
-
-![](assets/d_ncs_integration_schema_update3.png)
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}

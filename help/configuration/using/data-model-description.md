@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2395'
 ht-degree: 5%
 ---
 # Beschreibung des Campaign-Datenmodells{#data-model-description}
@@ -43,7 +43,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
@@ -73,7 +73,7 @@ Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführu
 
 Das Feld sCountryCode entspricht dem ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Landes, das dem Empfänger zugeordnet ist. Dieses Feld ist eigentlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), die die Länderkennzeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert „XX“ gespeichert (und anstelle eines Null-ID-Eintrags verwendet).
 
-Weitere Informationen zur Empfängertabelle finden Sie [diesem Abschnitt](../../configuration/using/about-data-model.md#default-recipient-table).
+Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 

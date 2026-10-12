@@ -26,9 +26,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 6%
 ---
 # Beispiele für Schemabearbeitung{#examples-of-schemas-edition}
@@ -355,7 +355,7 @@ Auf der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Ben
 
 * Weitere Informationen zum **Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
-* [Erste Schritte mit Campaign-Schemata](../../configuration/using/about-schema-edition.md)
+* [Erste Schritte mit Campaign-Schemata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8)
 
 * [Datenbankstruktur aktualisieren](../../configuration/using/updating-the-database-structure.md)
 

@@ -37,16 +37,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 100%
+source-wordcount: '1665'
+ht-degree: 98%
 ---
 # Konfigurieren und Durchführen des Versands {#configuring-and-sending-the-delivery}
 
 ## Berechtigungen{#delivery-permissions}
 
-Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzende (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierungsverantwortliche im Feld **[!UICONTROL Versandstart:]** hinzu. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzende (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierungsverantwortliche im Feld **[!UICONTROL Versandstart:]** hinzu. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 

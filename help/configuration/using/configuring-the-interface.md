@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '309'
 ht-degree: 0%
 ---
 # Konfigurieren der Benutzeroberfläche{#configuring-the-interface}
@@ -57,7 +57,7 @@ Durch das Erstellen eines neuen Formulars können Sie die Daten der externen Emp
 
    >[!NOTE]
    >
-   >Weitere Informationen zu Dateien vom Typ **Formular** finden Sie auf [dieser Seite](../../configuration/using/identifying-a-form.md).
+   >Weitere Informationen zu Dateien vom Typ **Formular** finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
    In unserem aktuellen Beispiel muss die Datei **form** auf dem Schema **cus:individual** basieren und daher das folgende Layout aufweisen:
 

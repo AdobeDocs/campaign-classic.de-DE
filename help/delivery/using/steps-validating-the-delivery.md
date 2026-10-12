@@ -48,10 +48,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 100%
+source-wordcount: '1827'
+ht-degree: 98%
 ---
 # Versand validieren {#validating-the-delivery}
 
@@ -232,7 +232,7 @@ Sie können auf die Typologieregeln im Knoten **[!UICONTROL Administration > Kam
 
 Von diesem Knoten aus können Sie neue Regeln erstellen und neue Typologien definieren. Diese Aufgaben sind jedoch erfahrenen Benutzenden vorbehalten, die JavaScript kennen.
 
-Weiterführende Informationen zu Typologieregeln finden Sie auf [dieser Seite](../../campaign-opt/using/about-campaign-typologies.md).
+Weitere Informationen zu Typologieregeln finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (Dokumentation zu Campaign v8).
 
 Um die aktuelle Typologie zu bearbeiten, klicken Sie auf das Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld **[!UICONTROL Typologie]**.
 
@@ -244,7 +244,7 @@ Die Registerkarte **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden T
 
 >[!NOTE]
 >
->**[!UICONTROL Schlichtung]** Typologien werden im Rahmen des Werbedruck-Managements verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
+>**[!UICONTROL Schlichtung]** Typologien werden im Rahmen des Werbedruck-Managements verwendet. Weiterführende Informationen hierzu finden Sie in [ Abschnitt (Dokumentation ](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} Campaign v8).
 
 ## Ändern des Genehmigungsmodus {#changing-the-approval-mode}
 

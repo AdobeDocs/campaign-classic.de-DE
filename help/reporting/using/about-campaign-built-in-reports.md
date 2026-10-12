@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '323'
+ht-degree: 65%
 ---
 # Über native Berichte in Campaign{#about-campaign-built-in-reports}
 
@@ -49,34 +49,14 @@ Adobe Campaign bietet diverse Berichte, auf die über die Konsole oder einen Web
 
 Folgende Berichttypen stehen zur Verfügung:
 
-* Berichte zur gesamten Plattform, siehe [Allgemeine Berichte](../../reporting/using/global-reports.md).
-* Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
-* Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
+* Berichte über die gesamte Plattform finden Sie unter [Globale Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (Dokumentation zu Campaign v8).
+* Versandberichte finden Sie unter [Versandberichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
+* Kumulierte Berichte finden Sie unter [Kumulative Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (Dokumentation zu Campaign v8).
 
 Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Dashboard für Berichte oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Auf der Startseite ist eine Liste der Hauptberichte verfügbar, mit denen Sie schnell auf Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Zugriff auf native Campaign-Berichte:
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Zugriff auf und zur Verwendung von integrierten Berichten finden Sie in der Dokumentation zu [ v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
 
-1. Wählen Sie in der Benutzeroberfläche von Adobe Campaign den Tab **[!UICONTROL Berichte]** aus.
-
-   ![](assets/reporting_access_from_home.png)
-
-1. Mithilfe des Suchfelds können die angezeigten Berichte gefiltert werden.
-
-1. Durch Klick auf einen Bericht wird dieser geöffnet.
-
-   ![](assets/reporting_edit_a_report.png)
-
-1. Klicken Sie oben im Bildschirm auf den Link **[!UICONTROL Zurück]**, der wieder zur Berichtsliste zurückführt.
-
-   ![](assets/reporting_back_button.png)
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 Andere Möglichkeiten zur Bearbeitung eines Berichts werden auf dieser [Seite](../../reporting/using/actions-on-reports.md) beschrieben.
-
-Kampagnen- oder versandspezifische Berichte können über die jeweiligen Dashboards eingesehen werden.
-
-![](assets/reporting_on_a_delivery.png)
-
-Der Zugriff auf Berichte über Listen, Dienste, Angebote etc. erfolgt auf die gleiche Weise:
-
-![](assets/reporting_on_an_offer.png)

@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 91%
 ---
 # Durchführen aller Prüfungen vor dem Senden {#perform-all-checks}
 
@@ -98,7 +98,7 @@ Optimieren Sie Ihre Möglichkeiten und nutzen Sie die Funktionen von Adobe Campa
 
 ### Validierungsprozess
 
-Sie können einen vollständigen Validierungsprozess einschließlich der Adobe Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md).
+Sie können einen vollständigen Validierungsprozess einschließlich der Adobe Campaign-Benutzer und -Gruppen definieren, um die Zielgruppe und den Nachrichteninhalt zu validieren. Dadurch wird eine umfassende Steuerung und Kontrolle der unterschiedlichen Kampagnenprozesse ermöglicht. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand. Je nach Berechtigung werden Benutzer benachrichtigt, erhalten Testsendungen und können die Nachricht validieren oder ablehnen. Weitere Informationen [in diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Schübe verwenden
 
@@ -126,7 +126,7 @@ Sie haben folgende Möglichkeiten:
 
 * Geben Sie für jedes IPAffinity-Element an, welche IP-Adressen verwendet werden können. [Weitere Informationen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign-opt/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Verwenden Sie in [Typologie](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (Dokumentation zu Campaign v8) Ihrer Wahl das Feld **[!UICONTROL Verwalten von Affinitäten mit IP-Adressen]** um Sendungen mit dem Versand-Server (MTA) zu verknüpfen, der die genannte Affinität verwaltet. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihre E-Mail-Administration kann Sie beim Abrufen der Header-Informationen unterstützen.
 
@@ -138,7 +138,7 @@ Sie haben folgende Möglichkeiten:
 
 ### Typologien verwenden
 
-Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weiterführende Informationen finden Sie [in diesem Beispiel](../../campaign-opt/using/filtering-rules.md).
+Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weitere Informationen [in diesem Beispiel](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Anhänge vermeiden
 

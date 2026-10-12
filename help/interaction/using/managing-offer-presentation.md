@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 100%
+source-wordcount: '1111'
+ht-degree: 98%
 ---
 # Verwalten einer Angebotsunterbreitung{#managing-offer-presentation}
 
@@ -87,7 +87,7 @@ Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle (standardmäßi
 
 >[!NOTE]
 >
->Sie können auch nicht-standardmäßige Tabellen verwenden. Zur Nutzung einer bestimmten Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Ziel-Mapping erforderlich. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Sie können auch nicht-standardmäßige Tabellen verwenden. Zur Nutzung einer bestimmten Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Ziel-Mapping erforderlich. Weitere Informationen hierzu finden Sie unter &quot;[ einer Angebotsumgebung“ ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
 
 ### Zeitraum {#period}
 

@@ -29,16 +29,16 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 81%
+source-wordcount: '463'
+ht-degree: 78%
 ---
 # Audit-Protokoll{#audit-trail}
 
 >[!INFO]
 >
->Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail).
+>Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der Änderungen, die in Ihrer Instanz vorgenommen wurden.
 
@@ -55,7 +55,7 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
 * **Schema-Audit-Protokoll**: ermöglicht es Ihnen, die Änderungen an Ihren Schemata zu untersuchen und zu identifizieren, wer diese Änderungen vorgenommen hat und wann sie vorgenommen wurden.
 
-  Ausführliche Informationen zu Schemata finden Sie auf dieser [Seite](../../configuration/using/data-schemas.md).
+  Ausführliche Informationen zu Schemata finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
@@ -70,7 +70,7 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../workflow/using/about-workflows.md).
 
-  Weitere Informationen zum Überwachen von Workflows finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
+  Weitere Informationen zum Überwachen von Workflows finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 
 
 * Das **Audit-Protokoll für Optionen** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Optionen.
