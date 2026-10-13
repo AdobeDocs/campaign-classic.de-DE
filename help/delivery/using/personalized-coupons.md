@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 ---
 # Personalisierte Gutscheine{#personalized-coupons}
 
@@ -185,7 +185,7 @@ So prüfen Sie, ob der Versand erfolgreich war:
 
 >[!NOTE]
 >
->Standardmäßig verwendet das Modul zur Couponverwaltung eine **nms:recipient**-Tabelle. [Weitere Informationen](../../configuration/using/about-data-model.md#default-recipient-table).
+>Standardmäßig verwendet das Modul zur Couponverwaltung eine **nms:recipient**-Tabelle. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >[Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 

@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Zur Unterstützung wurde ein Team aus engagierten Mitarbeitenden der Kundenunter
 ## Zusätzliche Ressourcen{#support}
 
 * [Finden Sie Ihre Campaign-Version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
-* [Hilfe und Support](../../support.md)
+* [Hilfe und Support](../../campaign-classic-home.md)
 * [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 * [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)

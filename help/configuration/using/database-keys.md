@@ -28,122 +28,18 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 30%
+source-wordcount: '591'
+ht-degree: 28%
 ---
 # Schlüsselverwaltung in Schemata {#management-of-keys}
 
-Jede mit einem Datenschema verknüpfte Tabelle benötigt mindestens einen Schlüssel zur Identifizierung eines Eintrags in einer Tabelle.
+Jede mit einem Datenschema verknüpfte Tabelle benötigt mindestens einen Schlüssel zur Identifizierung eines Eintrags in einer Tabelle. Auf dieser Seite wird der automatisch inkrementelle Schlüssel beschrieben, der in Campaign Classic v7-Tabellen verwendet wird.
 
-Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Schlüsselverwaltung finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}.
 
-```sql
-<key name="name_of_key">
-  <keyfield xpath="xpath_of_field1"/>
-  <keyfield xpath="xpath_of_field2"/>
-  ...
-</key>
-```
-
-Ein Schlüssel wird als „Primärschlüssel“ bezeichnet, wenn er an erster Stelle im auszufüllenden Schema steht oder wenn er ein `internal`-Attribut enthält, das auf „true“ festgelegt ist.
-
-Die folgenden Regeln gelten für Schlüssel:
-
-* Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen
-* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann verhindert werden, indem das Attribut `noDbIndex` auf „true“ gesetzt wird.
-
->[!NOTE]
->
->* Standardmäßig sind Schlüssel die Elemente, die vom Hauptelement des Schemas deklariert werden, nachdem Indizes definiert wurden.
->
->* Schlüssel werden während der Tabellenzuordnung erstellt (Standard oder FDA). Adobe Campaign findet eindeutige Indizes.
-
-**Beispiel**:
-
-* Hinzufügen eines Schlüssels zur E-Mail-Adresse und zum Ort:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <key name="email">
-        <keyfield xpath="@email"/> 
-        <keyfield xpath="location/@city"/> 
-      </key>
-  
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-      <element name="location" label="Location">
-        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-      </element>
-    </element>
-  </srcSchema>
-  ```
-
-  Das generierte Schema:
-
-  ```sql
-  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-    <element name="recipient" sqltable="CusRecipient">    
-     <dbindex name="email" unique="true">      
-       <keyfield xpath="@email"/>      
-       <keyfield xpath="location/@city"/>    
-     </dbindex>    
-  
-     <key name="email">      
-      <keyfield xpath="@email"/>      
-      <keyfield xpath="location/@city"/>    
-     </key>    
-  
-     <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-     <element label="Location" name="location">      
-       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-     </element>  
-    </element>
-  </schema>
-  ```
-
-* Hinzufügen eines primären oder internen Schlüssels zum Namensfeld &quot;id&quot;:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <key name="id" internal="true">
-        <keyfield xpath="@id"/> 
-      </key>
-  
-      <key name="email" noDbIndex="true">
-        <keyfield xpath="@email"/> 
-      </key>
-  
-      <attribute name="id" type="long" label="Identifier"/>
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-    </element>
-  </srcSchema>
-  ```
-
-  Das generierte Schema:
-
-  ```sql
-  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-    <element name="recipient" sqltable="CusRecipient">    
-      <key name="email">      
-        <keyfield xpath="@email"/>    
-      </key>    
-  
-      <dbindex name="id" unique="true">      
-        <keyfield xpath="@id"/>    
-      </dbindex>    
-  
-      <key internal="true" name="id">      
-       <keyfield xpath="@id"/>    
-      </key>    
-  
-      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-    </element>
-  </schema>
-  ```
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
 
 ## Automatisch inkrementeller Schlüssel {#auto-incremental-key}
 
@@ -207,5 +103,5 @@ Weitere Informationen finden Sie unter den folgenden Links:
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Schemastruktur](schema-structure.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Verknüpfungs-Management](database-links.md)
-* [Campaign-Datenmodell](about-data-model.md)
+* [Link-Verwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (Dokumentation zu Campaign v8)
+* [Campaign-Datenmodell](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (Dokumentation zu Campaign v8)

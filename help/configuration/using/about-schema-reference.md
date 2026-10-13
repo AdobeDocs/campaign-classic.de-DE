@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 49%
+source-wordcount: '264'
+ht-degree: 42%
 ---
 # Erste Schritte mit Schemata {#about-schema-reference}
 
@@ -39,7 +39,7 @@ ht-degree: 49%
 
 In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie im Datenmodell [Campaign Classic](about-data-model.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (Dokumentation zu Campaign v8).
 
 In Adobe Campaign wird die physische und logische Struktur der im Programm übertragenen Daten in XML beschrieben. Ein **Schema** ist ein XML-Dokument, das mit einer Datenbanktabelle verknüpft ist. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
 
@@ -62,45 +62,6 @@ Die folgende Abbildung zeigt den Speicherort von Schemas im Adobe Campaign-Daten
 
 ![](assets/reference_schema_intro.png)
 
-## Syntax von Schemata {#syntax-of-schemas}
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zur Syntax und Identifizierung von Schemata finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}.
 
-Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die Unterelemente **`<element>`** und **`<attribute>`**.
-
-Das erste **`<element>`**-Unterelement fällt mit dem Stammelement der Entität zusammen.
-
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
-   </element>
-  </element>
-</srcSchema>
-```
-
->[!NOTE]
->
->Das Stammelement der Entität hat denselben Namen wie das Schema.
-
-![](assets/s_ncs_configuration_schema_and_entity.png)
-
-Die **`<element>`**-Tags definieren die Namen von Entitätselementen. **`<attribute>`**-Tags des Schemas definieren die Namen der Attribute in den **`<element>`**-Tags, mit denen sie verknüpft wurden.
-
-## Identifizierung eines Schemas {#identification-of-a-schema}
-
-Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
-
-Mit einem Namespace können Sie eine Reihe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
-
-Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **cus:recipient**.
-
->[!IMPORTANT]
->
->* Der Name des Namespace muss kurz sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
->
->* Kennungen dürfen nicht mit numerischen Zeichen beginnen.
->
->* Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
->
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

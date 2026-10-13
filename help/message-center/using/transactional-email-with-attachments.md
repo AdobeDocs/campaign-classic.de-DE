@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 96%
 ---
 # Anwendungsbeispiel: Senden von Transaktions-E-Mails mit Anhängen {#transactional-email-with-attachments}
 
@@ -81,13 +81,13 @@ Das folgende Diagramm zeigt die verschiedenen Schritte bei der Implementierung d
 
 Gehen Sie wie folgt vor, um einer Transaktionsnachricht dynamisch einen E-Mail-Anhang hinzuzufügen:
 
-1. Gestalten Sie zunächst Ihren Anhang. Weitere Informationen hierzu finden Sie in der [ Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de#attach-a-personalized-file){target="_blank"}.
+1. Gestalten Sie zunächst Ihren Anhang. Weitere Informationen hierzu finden Sie in der [&#x200B; Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de#attach-a-personalized-file){target="_blank"}.
 
    So können Sie die Dateien an eine E-Mail anhängen, selbst wenn sie nicht in der Ausführungsinstanz gehostet werden.
 
 1. Sie können E-Mails über einen SOAP-Nachrichtenauslöser senden. Im SOAP-Aufruf gibt es einen URL-Parameter (attachmentURL).
 
-   Weitere Informationen zu SOAP-Anfragen finden Sie unter [Ereignisbeschreibung](../../message-center/using/event-description.md).
+   Weitere Informationen zu SOAP-Anfragen finden Sie unter [Ereignisbeschreibung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Klicken Sie beim Erstellen Ihrer E-Mail auf **[!UICONTROL Anhang]**.
 

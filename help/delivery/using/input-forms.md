@@ -38,16 +38,16 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 89%
 ---
 # Eingabeformulare{#input-forms}
 
 Im Folgenden werden einige Grundprinzipien bezüglich der Formulare in Adobe Campaign dargestellt.
 
-Weiterführende Informationen zu Formularen finden Sie in [diesem Abschnitt](../../configuration/using/identifying-a-form.md).
+Forms werden in [diesem Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Formularstruktur {#form-structure}
 
@@ -105,7 +105,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 
 Die Anordnung der Steuerelemente untereinander ähnelt dem in einer HTML-Tabelle verwendeten Layout. Sie haben die Möglichkeit, ein Steuerelement in mehrere Spalten aufzuteilen, Elemente zu verschachteln oder die Verwendung des vorhandenen Platzes zu definieren. Beachten Sie jedoch, dass durch die Formatierung nur die Verteilung der Proportionen zulässig ist. Sie können keine festen Abmessungen für ein Objekt angeben.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/form-structure.md#formatting).
+Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} Campaign v8).
 
 ## Listen-Steuerelemente {#list-type-controls}
 
@@ -214,7 +214,7 @@ Mithilfe der Schaltflächen der Symbolleiste können Sie Elemente zur Liste hinz
 
 Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie sind über das **`<container>`**-Element verfügbar. Sie wurden bereits zur Formatierung von Steuerelementen in mehreren Spalten und zur Steuerung der Tab-Liste verwendet.
 
-Container und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../configuration/using/form-structure.md#containers) näher beschrieben.
+Weiterführende Informationen zu Containern und deren Verwendung in Eingabeformularen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Formulare bearbeiten {#editing-forms}
 
@@ -226,4 +226,4 @@ Im **[!UICONTROL Vorschau]**-Tab können Sie das so erstellte Formular prüfen.
 
 ![](assets/d_ncs_content_form13.png)
 
-Weitere Informationen zum [Bearbeiten von Formularen](../../configuration/using/editing-forms.md) und zur [Formularstruktur](../../configuration/using/form-structure.md).
+Weitere Informationen über [Bearbeiten von Formularen](../../configuration/using/editing-forms.md) und [Formularstruktur](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).

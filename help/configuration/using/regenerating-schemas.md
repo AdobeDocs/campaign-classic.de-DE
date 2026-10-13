@@ -24,10 +24,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 2%
+source-wordcount: '151'
+ht-degree: 1%
 ---
 # Regenerieren von Schemata{#regenerating-schemas}
 
@@ -37,7 +37,7 @@ Wenn Sie ein Schema ändern und die Änderungen speichern, wird das erweiterte S
 1. Klicken Sie mit der rechten Maustaste und wählen **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** .
 1. Klicken Sie **[!UICONTROL OK]**, um den Vorgang zu bestätigen und zu starten.
 
-Sie können dann die Struktur des generierten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Grundlagen](../../configuration/using/data-schemas.md#principles).
+Sie können dann die Struktur des generierten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Grundlagen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
 >[!NOTE]
 >

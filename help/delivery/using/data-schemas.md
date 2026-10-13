@@ -39,16 +39,16 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 94%
 ---
 # Verwenden von Datenschemata in Campaign{#data-schemas}
 
 Im Folgenden werden einige Grundprinzipien bezüglich der Datenschemata in Adobe Campaign dargestellt.
 
-Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/about-schema-edition.md) beschrieben.
+Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Schemastruktur {#schema-structure}
 

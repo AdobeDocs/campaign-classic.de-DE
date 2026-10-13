@@ -26,54 +26,18 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 60%
 ---
 # Testen von Transaktionsnachrichtenvorlagen {#testing-message-templates}
 
+Sobald Ihre [Nachrichtenvorlage](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (Dokumentation zu Campaign v8) fertig ist, führen Sie die folgenden Schritte aus, um sie in der Vorschau anzuzeigen und zu testen.
 
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Hinzufügen von Testadressen, zur Vorschau einer Transaktionsnachricht und zum Senden eines Testversands finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
 
-Führen Sie nach Fertigstellung Ihrer [Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md) die folgenden Schritte aus, um sie in einer Vorschau anzuzeigen und zu testen.
-
-## Testadressen in Transaktionsnachrichten verwalten {#managing-seed-addresses-in-transactional-messages}
-
-Mit einer Testadresse können Sie vor dem E-Mail- oder SMS-Versand eine Vorschau Ihrer Nachricht anzeigen, einen Testversand senden und die Personalisierung der Nachricht testen. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
-
-Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie folgt vor:
-
-1. Gehen Sie in den Tab **[!UICONTROL Testadressen]** der Transaktionsnachrichten-Vorlage.
-
-   ![](assets/messagecenter_create_seedaddr_001.png)
-
-1. Erfassen Sie einen Titel, um die Adresse später bei der Vorschauerstellung auswählen zu können.
-
-   ![](assets/messagecenter_create_seedaddr_002.png)
-
-1. Geben Sie die Testadresse an, je nach Versandkanal eine E-Mail-Adresse oder eine Mobiltelefonnummer.
-
-   ![](assets/messagecenter_create_seedaddr_003.png)
-
-1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name und E-Mail usw.), den alle Anwendungen auf Ihrer Website gemeinsam verwenden und zur Identifikation von Profilen nutzen. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
-
-   ![](assets/messagecenter_create_seedaddr_003bis.png)
-
-1. Fügen Sie Testdaten ein (siehe [Personalisierungsdaten](#personalization-data)).
-
-   ![](assets/messagecenter_create_custo_001.png)
-
-   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Klicken Sie auf den Link **[!UICONTROL Testadressen ergänzen]** und anschließend auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-
-   ![](assets/messagecenter_create_seedaddr_004.png)
-
-   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
-1. Wiederholen Sie diesen Vorgang, um beliebig viele weitere Testadressen zu erstellen.
-
-   ![](assets/messagecenter_create_seedaddr_008.png)
-
-Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und ihrer Personalisierung erzeugen. Siehe [Transaktionsnachrichten-Vorschau](#transactional-message-preview).
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## Personalisierungsdaten {#personalization-data}
 
@@ -83,7 +47,7 @@ Der Zweck dieser Daten besteht darin, Ihre Nachrichten vor dem endgültigen Vers
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Diese Informationen erlauben die Personalisierung des Nachrichteninhalts mithilfe von Personalisierungs-Tags. (Näheres hierzu siehe [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content).)
+Diese Informationen ermöglichen die Personalisierung des Nachrichteninhalts mithilfe von Personalisierungs-Tags. (Weitere Informationen hierzu finden Sie unter [Nachrichteninhalt erstellen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Wählen Sie die Transaktionsnachrichtenvorlage aus.
 
@@ -94,48 +58,3 @@ Diese Informationen erlauben die Personalisierung des Nachrichteninhalts mithilf
    ![](assets/messagecenter_create_custo_001.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-
-## Transaktionsnachrichten-Vorschau {#transactional-message-preview}
-
-Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalts können Sie eine Vorschau Ihrer Nachricht erzeugen und ihre Personalisierung überprüfen:
-
-1. Klicken Sie in der Nachrichtenvorlage auf den Tab **[!UICONTROL Vorschau]**.
-
-   ![](assets/messagecenter_preview_001.png)
-
-1. Klicken Sie in der Dropdown-Liste auf **[!UICONTROL Testadresse...]**.
-
-   ![](assets/messagecenter_preview_002.png)
-
-1. Wählen Sie eine der vorab erstellten Testadressen aus, um die personalisierte Nachrichtenvorschau zu erzeugen.
-
-   ![](assets/messagecenter_create_seedaddr_009.png)
-
-Mit Testadressen können Sie außerdem anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
-
-## Durchführen eines Testversands {#sending-a-proof}
-
-Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
-
-Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei einem Standardversand. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}. Bei Transaktionsnachrichten müssen Sie jedoch zuvor die folgenden Schritte durchführen:
-
-* Eine oder mehrere [Testadressen](#managing-seed-addresses-in-transactional-messages) mit [Personalisierungsdaten](#personalization-data) erstellen.
-* [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content).
-
-Gehen Sie zur Durchführung des Testversands wie folgt vor:
-
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Testversand]** im Versandfenster.
-1. Analysieren Sie den Versand.
-1. Korrigieren Sie eventuelle Fehler und bestätigen Sie den Versand.
-
-   ![](assets/messagecenter_send_proof_001.png)
-
-1. Stellen Sie sicher, dass die Nachricht an die Testadresse geschickt wurde und der Inhalt Ihren Konfigurationen entspricht.
-
-   ![](assets/messagecenter_send_proof_002.png)
-
-Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie in der [ Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
-
-![](assets/messagecenter_send_proof_003.png)
-
-Ihre Nachrichtenvorlage ist jetzt zur [Veröffentlichung](../../message-center/using/publishing-message-templates.md) bereit.

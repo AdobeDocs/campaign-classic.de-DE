@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 96%
+source-wordcount: '1077'
+ht-degree: 93%
 ---
 # Aktualisierung auf den neuen Zustellbarkeits-Server {#acc-deliverability}
 
@@ -150,4 +150,4 @@ Campaign-Instanzen, die nicht bis zum 31. August aktualisiert wurden, können ke
 
 Wenn Sie Ihre Umgebung nicht aktualisieren, werden die E-Mail-Einstellungen nicht mehr synchronisiert (MX-Verwaltungsregeln, Regeln für eingehende E-Mails, Regeln für die Verwaltung von Domains und Regeln für die Bounce-Qualifizierung). Dies kann sich bei Ihnen im Laufe der Zeit auf die Zustellbarkeit auswirken. Wenn eine wesentliche Änderung an diesen Regeln vorgenommen wird, müssen diese ab diesem Zeitpunkt manuell angewendet werden.
 
-Bei MKT-Instanzen ist nur die [globale Unterdrückungsliste](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) betroffen.
+Bei MKT-Instanzen ist nur [Globale Unterdrückungsliste](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (Dokumentation zu Campaign v8) betroffen.

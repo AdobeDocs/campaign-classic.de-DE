@@ -35,10 +35,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '636'
+ht-degree: 94%
 ---
 # Vorlagen verwenden {#use-templates}
 
@@ -82,7 +82,7 @@ Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konf
 
 ### Einrichten einer Kontrollgruppe
 
-Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weiterführende Informationen zu Kontrollgruppen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weitere Informationen zu Kontrollgruppen finden Sie [&#x200B; diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"}Dokumentation zu Campaign v8).
 
 Um eine Kontrollgruppe einzurichten, klicken Sie auf den Link **[!UICONTROL An]**. Wählen Sie im Fenster **[!UICONTROL Auswahl der Zielgruppe]** die Registerkarte **[!UICONTROL Kontrollgruppe]** aus. Sie können einen Teil der Zielgruppe extrahieren, z. B. eine Zufallsauswahl von 5 %.
 
@@ -96,4 +96,4 @@ Eine Typologie enthält Regeln, die in der Analysephase vor dem Versand einer Na
 
 Um beispielsweise den ausgehenden Traffic besser zu steuern, können Sie festlegen, welche IP-Adressen verwendet werden können, indem Sie für jede Subdomain eine Affinität definieren und für jede Affinität eine Typologie erstellen. Die Affinitäten werden in der Konfigurationsdatei der Instanz bestimmt. Wenden Sie sich an Ihre bzw. Ihren Adobe Campaign-Admin.
 
-Weiterführende Informationen zu Typologien finden Sie in [diesem Abschnitt](../../campaign-opt/using/about-campaign-typologies.md).
+Weiterführende Informationen zu Typologien finden Sie in [&#x200B; Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}Dokumentation zu Campaign v8).

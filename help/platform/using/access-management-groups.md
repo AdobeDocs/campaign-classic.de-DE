@@ -44,10 +44,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '651'
+ht-degree: 98%
 ---
 # Erstellen und Verwalten von Benutzergruppen {#operator-groups}
 
@@ -135,7 +135,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Angebotsverantwortliche Benutzer]**
 
-   Die Benutzer in dieser Gruppe können Angebote erstellen und verwalten. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../interaction/using/operator-profiles.md).
+   Die Benutzer in dieser Gruppe können Angebote erstellen und verwalten. Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (Dokumentation zu Campaign v8).
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);

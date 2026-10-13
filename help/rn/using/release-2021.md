@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '2704'
 ht-degree: 98%
@@ -87,7 +87,7 @@ _7. September 2021_
 **Sonstige Änderungen**
 
 * Es wurde eine Fehlfunktion behoben, die in Version 21.1.3 mit der Einführung der neuen Schutzmaßnahme des Abrechnungs-Workflows auftrat. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und stürzte beim Versuch ab, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
-* Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-connectors.md)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
 * Fehlende Datenbankindizes wurden den folgenden Schemata hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl

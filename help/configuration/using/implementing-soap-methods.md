@@ -29,10 +29,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 4%
+source-wordcount: '432'
+ht-degree: 3%
 ---
 # Implementieren von SOAP-Methoden{#implementing-soap-methods}
 
@@ -53,7 +53,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 
 ### Deklaration {#declaration}
 
-Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [&#x200B; diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie in [&#x200B; Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}Dokumentation zu Campaign v8).
 
 Ihre Deklaration ähnelt der von nativen Methoden, mit dem Unterschied, dass Sie das Attribut „library“ hinzufügen müssen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 

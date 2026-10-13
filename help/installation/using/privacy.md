@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 23%
+source-wordcount: '922'
+ht-degree: 22%
 ---
 # Personalisierung und Datenschutz {#privacy}
 
@@ -117,7 +117,7 @@ Um die URL-Signatur zu aktivieren, führen Sie diese Schritte auf allen Campaign
 
 Sie müssen sicherstellen, dass die verschlüsselten Kennwörter von einem authentifizierten Benutzer mit niedrigen Berechtigungen nicht zugänglich sind. Beschränken Sie dazu den Zugriff auf Passwortfelder oder auf die gesamte Entität (erfordert einen Build >= 8770).
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. [Weitere Informationen](../../configuration/using/restricting-pii-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (Dokumentation zu Campaign v8).
 
 Gehen Sie dazu wie folgt vor:
 
