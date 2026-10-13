@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1814'
+ht-degree: 98%
 ---
 # Eingestellte und entfernte Funktionen {#deprecated-and-removed-features}
 
@@ -181,11 +181,11 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
    <tr> 
    <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>
-   <td>Ab Campaign-Version 18.4 sind die Kanäle MMS und WAP Push nicht mehr verfügbar. Als Ersatz können Sie <a href="../../delivery/using/sms-channel.md">SMS</a>- und <a href="../../delivery/using/about-mobile-app-channel.md">Push</a>-Nachrichten nutzen.</td>
+   <td>Ab Campaign-Version 18.4 sind die Kanäle MMS und WAP Push nicht mehr verfügbar. Als Ersatz können Sie die Sendungen <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms" target="_blank">SMS</a> (Dokumentation zu Campaign v8) und <a href="../../delivery/using/about-mobile-app-channel.md">Push</a> nutzen.</td>
   </tr> 
    <tr> 
    <td>Mobiler Kanal – LINE v1</td>
-   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="../../delivery/using/line-channel.md">Weitere Informationen</a></td>
+   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8)</td>
   </tr>
  </tbody> 
 </table>

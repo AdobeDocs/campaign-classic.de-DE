@@ -23,10 +23,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 98%
+source-wordcount: '1259'
+ht-degree: 95%
 ---
 # Transaktionsnachrichten-Architektur {#transactional-messaging-architecture}
 
@@ -201,7 +201,7 @@ Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden El
 
 * Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
 * Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketing-Instanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
-* Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weiterführende Informationen dazu, wie Sie ein externes LINE-Konto und einen LINE-Service erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weitere Informationen zum Erstellen eines externen LINE-Kontos und -Service finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} (Dokumentation zu Campaign v8).
 
 Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
 

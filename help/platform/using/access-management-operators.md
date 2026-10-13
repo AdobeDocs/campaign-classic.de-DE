@@ -46,10 +46,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 100%
+source-wordcount: '1355'
+ht-degree: 97%
 ---
 # Erstellen und Verwalten von Benutzern {#operators}
 
@@ -151,7 +151,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
   >
   >Auch wenn sein Konto deaktiviert ist, kann der Benutzer weiterhin Warnungen oder Benachrichtigungen von Campaign empfangen. Um das Senden von Campaign-Benachrichtigungen an diesen Benutzer zu stoppen, empfiehlt Adobe, die E-Mail-Adresse aus seinem Profil zu entfernen.
 
-* Über die Option **[!UICONTROL Zugriff von der Clientkonsole aus sperren]** kann die Nutzung von Adobe Campaign auf den [Webzugriff](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) oder den Zugriff über APIs beschränkt werden: Der Zugriff auf die Adobe Campaign-Clientkonsole ist nicht mehr verfügbar.
+* Mit der Option **[!UICONTROL Zugriff vom Rich-Client aus verbieten]** können Sie die Verwendung von Adobe Campaign auf [Web-Zugriff](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (Campaign v8-Dokumentation) oder über APIs beschränken: Der Zugriff auf die Adobe Campaign-Client-Konsole ist nicht mehr verfügbar.
 * Dem Benutzer kann eine Sicherheitszone zugeordnet werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
 * Zudem kann über den entsprechenden Link eine Maske vertrauenswürdiger IP-Adressen hinzugefügt werden.
 

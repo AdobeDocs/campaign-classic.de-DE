@@ -30,10 +30,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 100%
+source-wordcount: '475'
+ht-degree: 96%
 ---
 # Anwendungsfall: Konfigurieren der Feld-Ersetzung{#use-case-configuring-the-field-substitution}
 
@@ -85,7 +85,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](steps-defining-the-target-population.md).
+1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Dokumentation zu Campaign v8).
 
    Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** als Haupt-Zielpopulation adressiert werden.
 

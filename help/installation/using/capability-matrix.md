@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 54%
+source-wordcount: '337'
+ht-degree: 51%
 ---
 # Funktionsmatrix pro Modell{#capability-matrix-per-model}
 
@@ -46,7 +46,7 @@ Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../i
 | Verschlüsseln/Entschlüsseln von Daten für Dateiübertragungen | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Komprimieren/Dekomprimieren von Dateien | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Delegation von Domain-Namen | On-Demand | On-Demand | Nicht verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de) |
-| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../delivery/using/spamassassin.md) |
+| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (Dokumentation zu Campaign v8) |
 | Zugreifen auf Zustellbarkeitsberichte | Verfügbar | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Konfigurieren der LDAP-Authentifizierung | Nicht verfügbar | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/connecting-through-ldap.md) |
 

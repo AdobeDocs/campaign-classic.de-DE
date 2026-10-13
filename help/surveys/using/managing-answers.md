@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 98%
 ---
 # Antworten verwalten{#managing-answers}
 
@@ -108,7 +108,7 @@ Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titel
 
 >[!NOTE]
 >
->Die Syntax für andere Feldtypen wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) beschrieben.
+>Für andere Feldtypen wird die Syntax in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Speichereinstellungen {#storage-settings}
 

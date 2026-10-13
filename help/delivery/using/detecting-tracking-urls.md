@@ -29,30 +29,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 76%
 ---
 # Erkennen von Tracking-URLs
 
-## Beispiel einer Nichterkennung
+Adobe Campaign erkennt die URLs, die während der Versandanalyse in Ihren Inhalten nachverfolgt werden sollen.
 
-`<%= getURL("http://mynewsletter.com") %>` funktioniert und sendet den eigentlichen Inhalt der Web-Seite per E-Mail an die Empfänger. Es wird jedoch keiner der Links verfolgt. Der Grund dafür ist, dass der MTA `"<%=getURL(..."` für jede E-Mail vor dem Senden ausführt. Dies kann für jeden Empfänger unterschiedlich sein, weswegen Adobe Campaign die zu verfolgenden URLs nicht kennt und ihnen eine Tag-ID zuweist.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Erkennen von URLs und zu den zu verwendenden Mustern finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}.
 
-Wenn die herunterzuladende Seite für alle Empfänger gleich ist, sollten Sie Folgendes tun:
-
-`<%@ include url="http://mynewsletter.com" %>`
-
-In diesem Fall wird die Seite während der Analyse vor der Tracking-Erkennung heruntergeladen. Dadurch kann Adobe Campaign die Links ermitteln, eine Tag-ID zuweisen und sie verfolgen.
-
-## Empfohlenes Muster
-
-Nach der Verarbeitung der `<%@`-Anweisungen hat die zu verfolgende URL die folgende Syntax: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
-
->[!IMPORTANT]
->
->Alle anderen Muster werden von Adobe nicht unterstützt und sollten vermieden werden, um potenzielle Sicherheitslücken zu verhindern.
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}
 
 ## Ungesichertes Muster
 

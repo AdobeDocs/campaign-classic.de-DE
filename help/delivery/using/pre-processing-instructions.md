@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '651'
+ht-degree: 93%
 ---
 # Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}
 
@@ -44,6 +44,10 @@ Es gibt drei Arten von Anweisungen:
 * **[!DNL foreach]**: um eine Schleife über das Array auszuführen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
 Sie können direkt vom Versandassistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
+
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Anweisungen zur Vorab-Bearbeitung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 
@@ -150,19 +154,6 @@ Beispiel:
 ## [!DNL foreach] {#foreach}
 
 Diese Anweisung ermöglicht die Iteration eines Arrays von Objekten, die im Versand geladen werden, um einzelne Links zu den Objekten zu verfolgen.
-
-Syntax:
-
-```
-<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
-```
-
-Wobei:
-
-* **[!DNL object]**: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Scriptobjekt, es kann sich jedoch auch um einen Versand handeln.
-* **[!DNL xpath]** (optional): Pfad (XPath) der Sammlung, über die eine Schleife ausgeführt werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
-* **[!DNL index]** (optional): wenn &quot;xpath&quot; nicht &quot;.&quot; und &quot;object&quot; selbst ein Array ist, Elementindex des Objekts (beginnt bei 0).
-* **[!DNL item]** (optional): Name eines neuen Objekts, auf das mit dem Wert &quot;&lt;%@&quot; innerhalb der foreach-Schleife zugegriffen werden kann. Standardeinstellung mit dem Link-Namen im Schema.
 
 Beispiel:
 

@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 98%
 ---
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
@@ -125,7 +125,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
    >[!NOTE]
    >
-   >Der Datenexport und die Konfigurationsschritte werden in [diesem Abschnitt](../../platform/using/about-generic-imports-exports.md) beschrieben.
+   >Datenexporte und die Phasen ihrer Konfiguration werden in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Die erfassten Daten nutzen {#using-the-collected-data}
 

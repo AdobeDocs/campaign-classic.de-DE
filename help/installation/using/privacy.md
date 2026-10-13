@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 22%
+source-wordcount: '936'
+ht-degree: 23%
 ---
 # Personalisierung und Datenschutz {#privacy}
 
@@ -60,7 +60,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor) &#x200B;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie über den [Campaign Generic Query Editor](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8) eine Abfrage zur Tracking-URL-Tabelle aus oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
 Beispiel:
 

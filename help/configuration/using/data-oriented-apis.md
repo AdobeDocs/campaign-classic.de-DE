@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1821'
 ht-degree: 1%
 ---
 # Datenorientierte APIs{#data-oriented-apis}
@@ -147,7 +147,7 @@ Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthä
 * **Auswählen**: erstellt einen Cursor, der mehrere Datensätze zurückgibt, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind,
 * **count**: Gibt eine Anzahl von Daten zurück.
 
-Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
+Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Beispiel mit dem Vorgang „get“ {#example-with-the--get--operation}
 

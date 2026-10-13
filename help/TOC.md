@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1657'
 ht-degree: 100%
 ---
 
@@ -32,36 +32,22 @@ ht-degree: 100%
 + Erste Schritte {#getting-started}
   + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
-  + [Erkunden der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
-  + {hide-from-toc}[Verwenden des Campaign-Explorers – AUSGEBLENDET](platform/using/adobe-campaign-explorer.md)
-  + {hide-from-toc}[Durchsuchen und Anpassen von Listen – AUSGEBLENDET](platform/using/adobe-campaign-ui-lists.md)
-  + {hide-from-toc}[Auflistungen – AUSGEBLENDET](platform/using/managing-enumerations.md)
   + [Campaign-Connectoren](platform/using/about-connectors.md)
   + Häufig gestellte Fragen {#faq}
     + [Häufig gestellte Fragen zu Campaign Classic](platform/using/faq-campaign-classic-v7.md)
     + [Build-Upgrade](platform/using/faq-build-upgrade.md)
-  + {hide-from-toc}[Glossar – AUSGEBLENDET](platform/using/ac-glossary.md)
   + Datenschutz {#privacy}
     + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
     + [Datenschutzverwaltung](platform/using/privacy-management.md)
     + Datenschutzanfragen {#privacy-requests}
-      + [Datenschutzanfragen](platform/using/privacy-requests.md)
       + [Erstellen und Verwalten von Datenschutzanfragen](platform/using/privacy-requests-ui.md)
       + [Automatischer Prozess für Datenschutzanfragen](platform/using/privacy-requests-api.md)
     + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
   + Profil-Management {#profile-management}
     + [Über Profile](platform/using/about-profiles.md)
     + [Daten-Update](platform/using/updating-data.md)
-    + [Erstellen und Verwalten von Listen](platform/using/creating-and-managing-lists.md)
   + Importieren und Exportieren von Daten {#importing-and-exporting-data}
-    + [Erste Schritte mit dem Datenimport und -export](platform/using/get-started-data-import-export.md)
-    + [Verwenden von Workflows zum Importieren und Exportieren von Daten](platform/using/import-export-workflows.md)
     + Erstellen allgemeiner Importe und Exporte {#generic-imports-exports}
-      + [Erste Schritte mit allgemeinen Importen und Exporten](platform/using/about-generic-imports-exports.md)
-      + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
-      + [Erstellen von Import- und Exportaufträgen](platform/using/creating-import-export-jobs.md)
-      + [Konfigurieren von Importaufträgen](platform/using/executing-import-jobs.md)
-      + [Konfigurieren von Exportaufträgen](platform/using/executing-export-jobs.md)
       + [Überwachen der Ausführung von Aufträgen](platform/using/monitoring-jobs-execution.md)
       + [Allgemeine Beispiele für den Import](platform/using/import-operations-samples.md)
     + Verwalten von Datenverschlüsselung und -komprimierung {#managing-data-encryption-compression}
@@ -70,89 +56,38 @@ ht-degree: 100%
     + Best Practices und Fehlerbehebung {#best-practices}
       + [Best Practices beim Import und Export](platform/using/import-export-best-practices.md)
       + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
-  + Filtern von Daten {#filtering-data}
-    + {hide-from-toc}[Erstellen von Filtern – AUSGEBLENDET](platform/using/creating-filters.md)
-  + {hide-from-toc}[Schritte zum Erstellen einer Abfrage – AUSGEBLENDET](platform/using/steps-to-create-a-query.md)
-  + {hide-from-toc}[Definieren von Filterbedingungen – AUSGEBLENDET](platform/using/defining-filter-conditions.md)
   + Berechtigungen {#permissions}
     + [Erste Schritte mit Berechtigungen](platform/using/access-management.md)
     + Native Authentifizierung (veraltet) {#native}
       + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
       + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
-    + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
   + CRM-Connectoren {#connectors}
     + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
 + Erstellen und Senden von Nachrichten {#sending-messages}
   + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
   + {hide-from-toc}[Versandeinstellungen – AUSGEBLENDET](delivery/using/delivery-settings.md)
   + Schnellstart {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[Erste Schritte mit Sendungen – AUSGEBLENDET](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[Erstellen und Identifizieren eines Versands – AUSGEBLENDET](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[Definieren der Zielgruppe – AUSGEBLENDET](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[Überprüfen des Versands – AUSGEBLENDET](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[Durchführen des Versands – AUSGEBLENDET](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[Best Practices beim Versand – AUSGEBLENDET](delivery/using/delivery-best-practices.md)
-  + Best Practices für den Versand {#delivery-bestpractices}
-    + {hide-from-toc}[Optimieren des Versands – AUSGEBLENDET](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[Verwenden von Vorlagen – AUSGEBLENDET](delivery/using/use-templates.md)
-    + {hide-from-toc}[Erstellen personalisierter Inhalte – AUSGEBLENDET](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[Definieren der richtigen Zielgruppe – AUSGEBLENDET](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[Prüfen vor dem Senden – AUSGEBLENDET](delivery/using/check-before-sending.md)
   + [Senden von E-Mails](delivery/using/about-email-channel.md)
-  + Senden von E-Mails {#sending-emails}
-    + {hide-from-toc}[Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[Definieren des E-Mail-Inhalts – AUSGEBLENDET](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
-    + Senden des E-Mail-Versands {#sending-an-email}
-      + {hide-from-toc}[Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)
-      + {hide-from-toc}[E-Mail-Parameter – AUSGEBLENDET](delivery/using/email-parameters.md)
-      + {hide-from-toc}[Senden auf japanischen Mobilgeräten – AUSGEBLENDET](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[Anhängen von Dateien – AUSGEBLENDET](delivery/using/attaching-files.md)
   + Senden von SMS {#sending-messages-on-mobiles}
-    + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
     + SMS-Kanal konfigurieren {#sms-set-up}
       + [Konfigurieren von SMS auf einer eigenständigen Instanz](delivery/using/sms-set-up.md)
       + [Konfigurieren von SMS in einer Mid-Sourcing-Infrastruktur](delivery/using/sms-set-up-mid.md)
       + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
       + [Zusätzliche Konfiguration](delivery/using/sms-send.md)
       + [SMS-Fehlerbehebung](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[Erstellen einer SMS – AUSGEBLENDET](delivery/using/sms-create.md)
     + {hide-from-toc}[Migrieren zum erweiterten allgemeinen SMPP-Connector](delivery/using/unsupported-connector-migration.md)
-  + [LINE-Nachrichten senden](delivery/using/line-channel.md)
   + [Senden von Push-Benachrichtigungen](delivery/using/about-mobile-app-channel.md)
   + Senden von Push-Benachrichtigungen {#sending-push-notifications}
-    + {hide-from-toc}[Integrieren des Campaign-SDK in die App](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + Konfigurieren der App{#configure-the-mobile-app}
       + {hide-from-toc}[Erste Schritte bei der App-Konfiguration – AUSGEBLENDET](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[Konfigurationsschritte für iOS – AUSGEBLENDET](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[Konfigurationsschritte für Android – AUSGEBLENDET](delivery/using/configuring-the-mobile-application-android.md)
-    + Erstellen einer Push-Benachrichtigung{#create-a-push-msg}
-      + {hide-from-toc}[Erstellen einer Push-Benachrichtigung für iOS – AUSGEBLENDET](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[Erstellen einer Push-Benachrichtigung für Android – AUSGEBLENDET](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[Fehlerbehebung – AUSGEBLENDET](delivery/using/troubleshooting.md)
   + [Senden von Briefpost](delivery/using/about-direct-mail-channel.md)
-  + Senden von Briefpost {#sending-direct-mail}
-    + {hide-from-toc}[Erstellen eines Briefpost-Versands – AUSGEBLENDET](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[Definieren des Briefpost-Inhalts – AUSGEBLENDET](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[Validieren – AUSGEBLENDET](delivery/using/validating.md)
-  + Verwenden von Versandvorlagen {#using-delivery-templates}
-    + {hide-from-toc}[Arbeiten mit Versandvorlagen – AUSGEBLENDET](delivery/using/about-templates.md)
-    + {hide-from-toc}[Erstellen einer Versandvorlage – AUSGEBLENDET](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[Auswählen eines Zielgruppen-Mappings – AUSGEBLENDET](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[Erstellen eines Versands aus einer Vorlage – AUSGEBLENDET](delivery/using/creating-a-delivery-from-a-template.md)
   + Personalisieren von Sendungen {#personalizing-deliveries}
     + [Über Personalisierung](delivery/using/about-personalization.md)
-    + {hide-from-toc}[Personalisierungsfelder – AUSGEBLENDET](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[Gestaltungsbausteine – AUSGEBLENDET](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[Bedingter Inhalt – AUSGEBLENDET](delivery/using/conditional-content.md)
-    + {hide-from-toc}[Personalisierte Coupons – AUSGEBLENDET](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[Generieren personalisierter PDF-Dokumente – AUSGEBLENDET](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[Personalisieren der Emoticon-Liste](delivery/using/customizing-emoticon-list.md)
   + Verwenden von Testadressen {#using-seed-addresses}
-    + [Über Testadressen](delivery/using/about-seed-addresses.md)
-    + [Testadressen erstellen](delivery/using/creating-seed-addresses.md)
-    + [Testadressen hinzufügen](delivery/using/adding-seed-addresses.md)
-    + [Externe Empfängertabelle verwenden](delivery/using/using-an-external-recipient-table.md)
     + [Anwendungsfall: Auswählen von Testadressen nach Kriterien](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [Anwendungsfall: Konfigurieren der Feld-Ersetzung](delivery/using/use-case-configuring-the-field-substitution.md)
   + A/B-Tests {#a-b-testing}
@@ -180,9 +115,7 @@ ht-degree: 100%
     + [Fortgeschritten: Anpassen von Versandlogs](delivery/using/customize-delivery-logs.md)
   + Verwaltung der Zustellbarkeit {#deliverability-management}
     + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
-    + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
     + [Rendern des Posteingangs](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [Fehlerbehebung](delivery/using/deliverability-faq.md)
   + Content-Management-Modul {#content-management}
     + [Über Content-Management](delivery/using/about-content-management.md)
@@ -593,8 +526,6 @@ ht-degree: 100%
     + {hide-from-toc}[Migrieren zur Adobe Analytics 2.0-API](technotes/using/analytics-2-migration.md)
   + E-Mails und Push-Benachrichtigungen{#technotes-email}
     + [Datenschutz für E-Mails unter Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-    + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[Aktualisieren falscher Hardbounces nach einem ISP-Ausfall](delivery/using/update-bounces.md)
     + [Aktualisierung des iOS-Zertifikats](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[Aktualisierung von getrackten URLs](technotes/using/tracked-urls.md)
   + Migration zu Adobe Managed Services{#dc-migration}

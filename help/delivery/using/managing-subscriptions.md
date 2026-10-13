@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 100%
+source-wordcount: '1182'
+ht-degree: 99%
 ---
 # Verwalten von Abonnements{#managing-subscriptions}
 
@@ -156,7 +156,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 * Melden Sie eine Gruppe von Empfangenden automatisch für diesen Service an. Die Empfängerliste kann aus einem Filtervorgang, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl per Mausklick erstellt werden. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
 * Importieren Sie Empfängerinnen und Empfänger und abonnieren Sie sie automatisch für einen Informationsdienst. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
+  Weiterführende Informationen hierzu finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} Campaign v8).
 
 * Empfänger melden sich persönlich über ein Webformular an.
 

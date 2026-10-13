@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2718'
 ht-degree: 98%
 ---
 # Versionen 2021{#release-2021}
@@ -162,7 +162,7 @@ _5. Juni 2021_
 <li><p>Unterstützung der LINE-Partnerregistrierungs-API</p></li>
 <li><p>Unterstützung eines erneuten Nachrichtenversands im Fall eines Server-seitigen LINE-Fehlers oder Netzwerk-Timeouts</p></li>
 </ul>
-<p>Weitere Informationen finden Sie im <a href="../../delivery/using/line-channel.md">entsprechenden Handbuch</a>.</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 

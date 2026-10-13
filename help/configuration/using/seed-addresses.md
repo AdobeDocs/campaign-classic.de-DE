@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '356'
 ht-degree: 7%
 ---
 # Testadressen{#seed-addresses}
@@ -45,7 +45,7 @@ Wenn die Empfängertabelle eine benutzerdefinierte Tabelle ist, sind zusätzlich
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Weiterführende Informationen zur Verwendung von Testadressen finden Sie [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+Weiterführende Informationen zur Verwendung von Testadressen finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Implementierung {#implementation}
 

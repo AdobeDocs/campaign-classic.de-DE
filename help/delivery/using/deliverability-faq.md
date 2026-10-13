@@ -41,14 +41,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '598'
+ht-degree: 95%
 ---
 # Behebung von Problemen bei der Zustellbarkeit{#deliverability-faq}
 
 Haben Sie ein Problem mit der Zustellbarkeit? Vielleicht finden Sie hier die Lösung.
+
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zu Quarantänen sowie zur Blockierungsliste und zum Entfernen einer Adresse aus Quarantänen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target=_blank}
 
 ## MX-Regelfehler {#mx-rule-error}
 
@@ -75,29 +79,7 @@ Wenn Sie bei einem ISP immer dieselbe Fehlermeldung erhalten, hat der ISP mögli
 
 Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen Dienstleister, Zustellbarkeitsdienste oder die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-## Blockierungsliste versus Quarantäne {#denylist-versus-quarantine}
-
-* **Was ist der Unterschied zwischen einer E-Mail-Adresse auf einer Blockierungsliste und einer E-Mail-Adresse in Quarantäne?**
-
-  * Der Status **[!UICONTROL Auf Blockierungsliste]** ist das Ergebnis einer Feedback-Schleife (wenn ein Empfänger eine E-Mail als Spam meldet).
-
-  * Der Status **[!UICONTROL In Quarantäne]** ist das Ergebnis eines Soft- oder Hardbounce.
-
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-failures-quarantine.md#quarantine-vs-denylist).
-
-* **Was bedeuten die unterschiedlichen Gründe für Quarantäne-Fehler?**
-
-  Es gibt zehn mögliche Gründe: Unbestimmt, Unbekannter Nutzer, Ungültige Domain, Auf Blockierungsliste, Zurückgewiesen, Fehler ignoriert, Unerreichbar, Konto deaktiviert, Postfach voll, Nicht angemeldet.
-
-  Weitere Informationen hierzu finden Sie unter [Funktionsweise der Quarantäneverwaltung](delivery-failures-quarantine.md).
-
-## Aus Blockierungsliste entfernen {#remove-from-denylist}
-
-* **Einer meiner Empfänger wurde versehentlich der Blockierungsliste hinzugefügt. Wie kann ich ihn aus der Blockierungsliste entfernen, damit ich ihm wieder Nachrichten senden kann?**
-
-  * Gehen Sie zu **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]**.
-  * Setzen Sie in den Details des entsprechenden Datensatzes den Wert des **[!UICONTROL Status]**-Feldes auf **[!UICONTROL Gültig]**.
-  * Speichern Sie die Daten.
+## Entfernen einer IP aus einer Blockierungsliste {#remove-from-denylist}
 
 * **Wie kann ich feststellen, ob eine meiner IP-Adressen auf einer Blockierungsliste steht? Wie kann ich meine IP-Adresse(n) wieder aus der Blockierungsliste entfernen?**
 

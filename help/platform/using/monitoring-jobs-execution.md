@@ -32,10 +32,10 @@ subfeature_v2:
     internal-label: Access management
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '211'
+ht-degree: 89%
 ---
 # Überwachen der Ausführung von Aufträgen {#monitoring-job-execution}
 
@@ -46,7 +46,7 @@ Sie können die Ausführung von Import- und Exportaufträgen direkt über die Li
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * Im Tab **[!UICONTROL Journal]** können Sie die zur Exportdurchführung gehörigen Protokollnachrichten einsehen.
-* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (Dokumentation zu Campaign v8).
 
 Im Tab **[!UICONTROL Allgemein]** gibt das Feld **[!UICONTROL Status]** den aktuellen Status eines Auftrags an.
 

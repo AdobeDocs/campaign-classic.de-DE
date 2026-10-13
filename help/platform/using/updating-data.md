@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 100%
+source-wordcount: '809'
+ht-degree: 98%
 ---
 # Daten-Update{#updating-data}
 
@@ -118,7 +118,7 @@ Der Inhalt einer Liste kann exportiert werden. So konfigurieren Sie den Export u
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Weitere Informationen zur Konfiguration des Exportassistenten finden Sie [in diesem Abschnitt](../../platform/using/executing-export-jobs.md).
+   Weitere Informationen zur Konfiguration des Exportassistenten finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Für einen Service anmelden {#subscribing-to-a-service}
 
@@ -146,7 +146,7 @@ In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausfü
 
 Wenn Sie die Option **[!UICONTROL Auftrag nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Auftrag betreffenden Protokollnachrichten gespeichert werden.
 
-Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
+Im Tab **[!UICONTROL Abonnements]**&#x200B;**&#x200B;**, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
