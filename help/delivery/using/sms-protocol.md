@@ -181,7 +181,7 @@ Wichtige Felder in einer `SUBMIT_SM`-PDU:
 
 * **registered_delivery**: Gibt an, ob ein SR angefordert wird oder nicht. Adobe Campaign setzt diese Markierung immer, außer bei automatischen Antworten. Bei mehrteiligen Nachrichten wird die Markierung nur für den ersten Teil festgelegt. Alle Versionen weisen dasselbe Verhalten auf.
 
-* **data_coding**: Gibt die im Textfeld verwendete Kodierung an. Weitere Informationen finden Sie [ Abschnitt „SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"}Textkodierung“ (Dokumentation zu Campaign v8) .
+* **data_coding**: Gibt die im Textfeld verwendete Kodierung an. Weitere Informationen finden Sie [&#x200B; Abschnitt „SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"}Textkodierung“ (Dokumentation zu Campaign v8) .
 
 * **short_message**: Der Text der Nachricht. Wenn UDH verwendet wird, enthält dies auch die UHD-Kopfzeile.
 
@@ -243,7 +243,7 @@ Diese PDU quittiert, dass die Verbindung aktiv ist.
 
 Die meisten Provider verlangen eine Durchsatzbegrenzung für jede SMPP-Verbindung. Dies kann durch die Festlegung einer Anzahl von SMS im externen Konto erreicht werden. Beachten Sie, dass die Durchsatzdrosselung pro Verbindung erfolgt. Der gesamte effektive Durchsatz ist die Grenze pro Verbindung multipliziert mit der Anzahl Verbindungen insgesamt. Dies wird im Abschnitt [Simultane Verbindungen](sms-protocol.md#connection-settings) beschrieben.
 
-Um den maximal möglichen Durchsatz zu erreichen, müssen Sie eine Feinabstimmung des maximalen Übertragungsfensters vornehmen. Das Übertragungsfenster ist die Anzahl der `SUBMIT_SM PDU`s, die gesendet werden können, ohne auf eine `SUBMIT_SM_RESP` zu warten. Weitere Informationen finden [ im Abschnitt ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} des Versandfensters (Dokumentation zu Campaign v8).
+Um den maximal möglichen Durchsatz zu erreichen, müssen Sie eine Feinabstimmung des maximalen Übertragungsfensters vornehmen. Das Übertragungsfenster ist die Anzahl der `SUBMIT_SM PDU`s, die gesendet werden können, ohne auf eine `SUBMIT_SM_RESP` zu warten. Weitere Informationen finden [&#x200B; im Abschnitt &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} des Versandfensters (Dokumentation zu Campaign v8).
 
 ### SR und Umgang mit Fehlern (&quot;Anhang B&quot;) {#sr-error-management}
 

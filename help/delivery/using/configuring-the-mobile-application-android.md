@@ -68,7 +68,7 @@ Die wichtigsten Schritte sind:
 1. [Erstellen der Mobile App in Campaign](#creating-android-app)
 1. [Erweitern des App-Schemas um zusätzliche Daten](#extend-subscription-schema)
 
-Anschließend können Sie eine Rich[Benachrichtigung für Android erstellen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}Dokumentation zu Campaign v8).
+Anschließend können Sie eine Rich[Benachrichtigung für Android erstellen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}Dokumentation zu Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -195,7 +195,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank neue zusätzliche Felder zum Speichern von Parametern aus der App zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
 
-1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Schemaerweiterung finden Sie auf [ Seite ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}Dokumentation zu Campaign v8).
+1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Schemaerweiterung finden Sie auf [&#x200B; Seite &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}Dokumentation zu Campaign v8).
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Abonnementparameter]** das Mapping an.
 

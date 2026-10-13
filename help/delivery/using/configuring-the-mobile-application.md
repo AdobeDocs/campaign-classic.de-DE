@@ -61,7 +61,7 @@ Die wichtigsten Schritte sind:
 1. [Konfigurieren des iOS-Service](#configuring-ios-service)
 1. [Integrieren der iOS-Mobile-App in Campaign](#creating-ios-app)
 
-Anschließend können Sie eine Push[Benachrichtigung für iOS-Geräte erstellen ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}Dokumentation zu Campaign v8).
+Anschließend können Sie eine Push[Benachrichtigung für iOS-Geräte erstellen &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}Dokumentation zu Campaign v8).
 
 ## Konfigurieren des externen iOS-Kontos {#configuring-external-account-ios}
 
