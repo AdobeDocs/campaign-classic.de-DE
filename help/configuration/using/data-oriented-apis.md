@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1821'
 ht-degree: 1%
 ---
 # Datenorientierte APIs{#data-oriented-apis}
@@ -56,7 +56,7 @@ Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragespra
 
 Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) &#x200B;](#executequery--xtk-querydef-).
+Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) ](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
@@ -66,7 +66,7 @@ Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird in [Write/WriteCollection (xtk:session) &#x200B;](#write---writecollection--xtk-session-).
+Die Write-Methode wird in [Write/WriteCollection (xtk:session) ](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -147,7 +147,7 @@ Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthä
 * **Auswählen**: erstellt einen Cursor, der mehrere Datensätze zurückgibt, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind,
 * **count**: Gibt eine Anzahl von Daten zurück.
 
-Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (Dokumentation zu Campaign v8).
+Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Beispiel mit dem Vorgang „get“ {#example-with-the--get--operation}
 

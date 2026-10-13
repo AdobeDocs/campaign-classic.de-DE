@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 95%
 ---
 # Best Practices beim Import und Export {#import-export-best-practices}
 
@@ -56,7 +56,7 @@ In vielen Projekten werden Importe ohne **[!UICONTROL Deduplizierung]** erstellt
 
 Verlassen Sie sich nicht darauf, dass die eingehenden Daten konsistent und korrekt sind oder dass sich die IT-Abteilung oder der Adobe Campaign-Verantwortliche darum kümmert. Führen Sie stattdessen während des Projekts die Datenbereinigung durch. Achten Sie beim Datenimport auf die Deduplizierung, die Abstimmung und die Gewährleistung der Konsistenz.
 
-Ein Beispiel für eine allgemeine Workflow-Vorlage zum Datenimport finden Sie unter [Beispiel: Workflow-Vorlage zum Importieren von Daten](../../platform/using/creating-import-export-templates.md).
+Ein Beispiel für eine generische Workflow-Vorlage für den Datenimport finden Sie im Abschnitt [Beispiel: Workflow-Vorlage zum Datenimport](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Flache Dateiformate verwenden {#using-flat-file-formats}
 

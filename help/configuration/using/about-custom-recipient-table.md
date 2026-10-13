@@ -34,10 +34,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 9%
+source-wordcount: '710'
+ht-degree: 11%
 ---
 # Verwenden einer benutzerdefinierten Empfängertabelle{#about-custom-recipient-table}
 
@@ -74,7 +74,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
 * Sie können die im Produkt angebotenen **[!UICONTROL Services und Abonnements]** nicht verwenden.
 
-  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene &#x200B;](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene ](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
 * Die Verknüpfung mit der **[!UICONTROL Besucher]**-Tabelle funktioniert nicht.
 
@@ -84,11 +84,11 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
 * Profile können nicht manuell zu einer Liste hinzugefügt werden.
 
-  Daher ist das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) beschriebene Verfahren ohne eine zusätzliche Konfiguration nicht anwendbar.
+  Daher ist das in [diesem Abschnitt) beschriebene Verfahren ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"}Dokumentation zu Campaign v8) ohne eine zusätzliche Konfiguration nicht anwendbar.
 
   >[!NOTE]
   >
-  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [&#x200B; einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [ einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 

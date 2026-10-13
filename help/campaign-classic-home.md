@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 82%
+source-wordcount: '707'
+ht-degree: 61%
 ---
 # Campaign Classic v7 – Dokumentation {#campaign-classic-documentation}
 
@@ -104,7 +104,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Erste Schritte</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Benutzeroberfläche</a>  – <a href="platform/using/launching-adobe-campaign.md">Herstellen einer Verbindung zu Campaign</a> – <a href="platform/using/get-started-data-import-export.md">Importieren und Exportieren von Daten</a> – <a href="platform/using/access-management.md">Berechtigungen</a>
+      <strong>Erste Schritte</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">Benutzeroberfläche</a> (Dokumentation zu Campaign v8) - <a href="platform/using/launching-adobe-campaign.md">Verbindung zu Campaign herstellen</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import" target="_blank">Daten importieren und exportieren</a> (Dokumentation zu Campaign v8) - <a href="platform/using/access-management.md">Berechtigungen</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
@@ -114,14 +114,14 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Nachrichten senden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanäle</a> – <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Testsendungen durchführen</a> – <a href="delivery/using/get-started-a-b-testing.md">A/B-Tests</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Nachrichten-Tracking</a> – <a href="delivery/using/about-deliverability.md">Zustellbarkeit</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsnachrichten</a>
+      <strong>Nachrichten senden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanäle</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message" target="_blank">Testsendungen durchführen</a> (Dokumentation zu Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">A/B-Tests</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Nachrichten-Tracking</a> - <a href="delivery/using/about-deliverability.md">Zustellbarkeit</a> - <a href="message-center/using/about-transactional-messaging.md">Transaktionsnachrichten</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profile und Zielgruppen</strong><br/> <a href="platform/using/creating-and-managing-lists.md">Listen erstellen</a> – <a href="delivery/using/about-services-and-subscriptions.md">Services und Abonnements</a> – <a href="platform/using/privacy-management.md">Datenschutz und Einverständnis</a>
+      <strong>Profile und Audiences</strong><br/> <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Listen erstellen</a> (Dokumentation zu Campaign v8) - <a href="delivery/using/about-services-and-subscriptions.md">Services und Abonnements</a> - <a href="platform/using/privacy-management.md">Datenschutz und Einverständnis</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
