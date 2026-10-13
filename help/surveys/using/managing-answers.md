@@ -108,7 +108,7 @@ Die bereitgestellten Antworten für jedes Formular können in Feldern oder Titel
 
 >[!NOTE]
 >
->Für andere Feldtypen wird die Syntax in ([ Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8).
+>Für andere Feldtypen wird die Syntax in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Speichereinstellungen {#storage-settings}
 

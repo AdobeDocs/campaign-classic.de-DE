@@ -139,7 +139,7 @@ Rufen Sie dazu die Versandlogs auf und fügen Sie die Spalte &quot;IP-Kennung&qu
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren von Listen in der Benutzeroberfläche von Campaign Classic finden Sie auf [ Seite ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}Dokumentation zu Campaign v8).
+>Informationen zum Konfigurieren von Listen in der Benutzeroberfläche von Campaign Classic finden Sie auf [&#x200B; Seite &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}Dokumentation zu Campaign v8).
 
 Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen:
 

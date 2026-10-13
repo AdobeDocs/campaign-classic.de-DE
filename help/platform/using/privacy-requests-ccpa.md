@@ -114,7 +114,7 @@ Stellen Sie sicher, dass Sie die personenbezogenen Daten in den Profilen von Ben
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Konfigurieren Sie die Empfängerliste so, dass die Opt-out-Spalte angezeigt wird. Informationen zum Konfigurieren von Listen finden Sie in der [ Dokumentation ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} Campaign v8 .
+1. Konfigurieren Sie die Empfängerliste so, dass die Opt-out-Spalte angezeigt wird. Informationen zum Konfigurieren von Listen finden Sie in der [&#x200B; Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} Campaign v8 .
 
    ![](assets/privacy-ccpa-6.png)
 

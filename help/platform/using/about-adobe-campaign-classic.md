@@ -69,7 +69,7 @@ Informationen zu den ersten Schritten mit der Adobe Campaign-Client-Konsole und 
 
 >[!TAB Durchsuchen der Campaign-Benutzeroberfläche]
 
-* Erfahren Sie mehr über die Benutzeroberfläche [ Adobe Campaign ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}auf dieser Seite) (Dokumentation zu Campaign v8).
+* Erfahren Sie mehr über die Benutzeroberfläche [&#x200B; Adobe Campaign &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}auf dieser Seite) (Dokumentation zu Campaign v8).
 
 * Erfahren Sie, wie Sie mit [Campaign Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} arbeiten (Dokumentation zu Campaign v8).
 

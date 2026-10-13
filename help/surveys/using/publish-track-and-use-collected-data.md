@@ -125,7 +125,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
    >[!NOTE]
    >
-   >Datenexporte und die Phasen ihrer Konfiguration werden in ([ Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} (Dokumentation zu Campaign v8).
+   >Datenexporte und die Phasen ihrer Konfiguration werden in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Die erfassten Daten nutzen {#using-the-collected-data}
 
