@@ -46,7 +46,7 @@ Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../i
 | Verschlüsseln/Entschlüsseln von Daten für Dateiübertragungen | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Komprimieren/Dekomprimieren von Dateien | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Delegation von Domain-Namen | On-Demand | On-Demand | Nicht verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de) |
-| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (Dokumentation zu Campaign v8) |
+| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (Dokumentation zu Campaign v8) |
 | Zugreifen auf Zustellbarkeitsberichte | Verfügbar | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Konfigurieren der LDAP-Authentifizierung | Nicht verfügbar | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/connecting-through-ldap.md) |
 

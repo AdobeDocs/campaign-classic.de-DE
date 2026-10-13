@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -201,7 +201,7 @@ Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden El
 
 * Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
 * Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketing-Instanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
-* Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weitere Informationen zum Erstellen eines externen LINE-Kontos und -Service finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} (Dokumentation zu Campaign v8).
+* Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weitere Informationen zum Erstellen eines externen LINE-Kontos und -Service finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} (Dokumentation zu Campaign v8).
 
 Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
 
@@ -264,4 +264,4 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * Wählen Sie die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]** aus.
    * Wählen Sie die Schaltfläche **[!UICONTROL Datensynchronisations-Workflow erstellen]** aus, um den LINE-Datensynchronisations-Workflow zu erstellen.
 
-1. Sie können jetzt mit [Erstellen von Transaktionsnachrichten](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (Dokumentation zu Campaign v8) beginnen.
+1. Sie können jetzt mit [Erstellen von Transaktionsnachrichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} (Dokumentation zu Campaign v8) beginnen.

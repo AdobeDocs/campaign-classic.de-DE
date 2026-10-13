@@ -45,7 +45,7 @@ Wenn die Empfängertabelle eine benutzerdefinierte Tabelle ist, sind zusätzlich
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Weiterführende Informationen zur Verwendung von Testadressen finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (Dokumentation zu Campaign v8).
+Weiterführende Informationen zur Verwendung von Testadressen finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Implementierung {#implementation}
 
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor:
    >    
    >
 
-1. Passen Sie das **[!UICONTROL seedMember]**-Formular entsprechend an, um eine neue Registerkarte „Interner Empfänger“ (Testadressen **[!UICONTROL im Fenster]** definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+1. Passen Sie das **[!UICONTROL seedMember]**-Formular entsprechend an, um eine neue Registerkarte „Interner Empfänger“ (Testadressen **[!UICONTROL im Fenster]** definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

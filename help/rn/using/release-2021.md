@@ -124,7 +124,7 @@ _5. Juni 2021_
 <td>
 <p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen (FDA und lokale Datenbanken).</p>
 <p>In Adobe Campaign-Workflows werden Daten mithilfe von Arbeits- (oder temporären) Tabellen verwaltet. Während der Workflow-Ausführung geben Arbeitstabellen Daten für Workflow-Aktivitäten frei. Standardmäßig werden die Arbeitstabellen auf derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.</p>
-<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -162,7 +162,7 @@ _5. Juni 2021_
 <li><p>Unterstützung der LINE-Partnerregistrierungs-API</p></li>
 <li><p>Unterstützung eines erneuten Nachrichtenversands im Fall eines Server-seitigen LINE-Fehlers oder Netzwerk-Timeouts</p></li>
 </ul>
-<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 

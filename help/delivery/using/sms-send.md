@@ -46,9 +46,9 @@ ht-degree: 95%
 ---
 # Zusätzliche Konfiguration{#sms-properties}
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den Einstellungen für den SMS-Versand finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den Einstellungen für den SMS-Versand finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}
 
 <!--
 ## Send SMS messages {#sending-sms-messages}
@@ -57,7 +57,7 @@ To approve your message and send it to the recipients of the delivery being crea
 
 The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Validate the delivery](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/delivery-analysis){target="_blank"} (Campaign v8 documentation)
+* [Validate the delivery](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/validate/delivery-analysis){target="_blank"} (Campaign v8 documentation)
 * [Send the delivery](steps-sending-the-delivery.md)
 -->
 

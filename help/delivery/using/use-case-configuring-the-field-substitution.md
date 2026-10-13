@@ -85,7 +85,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Dokumentation zu Campaign v8).
+1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Dokumentation zu Campaign v8).
 
    Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** als Haupt-Zielpopulation adressiert werden.
 

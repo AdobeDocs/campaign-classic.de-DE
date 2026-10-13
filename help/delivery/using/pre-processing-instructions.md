@@ -45,9 +45,9 @@ Es gibt drei Arten von Anweisungen:
 
 Sie können direkt vom Versandassistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Anweisungen zur Vorab-Bearbeitung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Anweisungen zur Vorab-Bearbeitung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 

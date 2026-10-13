@@ -46,9 +46,9 @@ ht-degree: 94%
 
 Das Erstellen, Bearbeiten und Veröffentlichen von Content-Management-Inhalten kann mithilfe eines Workflows automatisiert werden.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Konfigurieren der Aktivität **Content-Management** finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Konfigurieren der Aktivität **Content-Management** finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## Beispiele {#examples}
 

@@ -185,7 +185,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
    <tr> 
    <td>Mobiler Kanal – LINE v1</td>
-   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8)</td>
+   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8)</td>
   </tr>
  </tbody> 
 </table>

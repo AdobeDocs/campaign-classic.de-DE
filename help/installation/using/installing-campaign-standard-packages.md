@@ -133,7 +133,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> LINE-Kanal<br /> </td> 
-   <td> Versendet Sendungen mithilfe des LINE-Kanals mit Adobe Campaign. Optional. Transaktionsnachrichten (Message-Center-Paket) sind obligatorisch. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
+   <td> Versendet Sendungen mithilfe des LINE-Kanals mit Adobe Campaign. Optional. Transaktionsnachrichten (Message-Center-Paket) sind obligatorisch. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -178,7 +178,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Im Kontext einer Mid-Sourcing-Konfiguration ist Folgendes erforderlich:
 
 * Installieren Sie das [!DNL LINE]-Paket sowohl auf der Marketing- als auch auf der MID-Instanz
 
-* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
+* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
 
 * Richten Sie die [!DNL LINE] Anmeldeinformationen im externen Konto auf der MID-Instanz ein.
 
