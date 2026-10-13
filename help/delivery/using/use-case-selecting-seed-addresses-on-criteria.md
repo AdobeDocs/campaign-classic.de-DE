@@ -65,7 +65,7 @@ Um einen gemeinsamen Wert wie den in unserem Beispiel (Einkaufsabteilung) zu ers
 
 ### Erweitern des Datenschemas {#extending-the-data-schema}
 
-Weitere Informationen zu Schemaerweiterungen finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} Campaign v8).
+Weitere Informationen zu Schemaerweiterungen finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} Campaign v8).
 
 1. Klicken Sie im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** auf die Schaltfläche **[!UICONTROL Neu]**.
 1. Kreuzen Sie im Fenster **[!UICONTROL Datenschemaerstellung]** die Option **[!UICONTROL Schemaerweiterung]** an und klicken Sie auf **[!UICONTROL Weiter]**.

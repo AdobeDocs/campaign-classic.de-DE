@@ -114,7 +114,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Nachrichten senden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanäle</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message" target="_blank">Testsendungen durchführen</a> (Dokumentation zu Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">A/B-Tests</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Nachrichten-Tracking</a> - <a href="delivery/using/about-deliverability.md">Zustellbarkeit</a> - <a href="message-center/using/about-transactional-messaging.md">Transaktionsnachrichten</a>
+      <strong>Nachrichten senden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanäle</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message" target="_blank">Testsendungen durchführen</a> (Dokumentation zu Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">A/B-Tests</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Nachrichten-Tracking</a> - <a href="delivery/using/about-deliverability.md">Zustellbarkeit</a> - <a href="message-center/using/about-transactional-messaging.md">Transaktionsnachrichten</a>
     </td>
   </tr>
   <tr style="border: 0;">

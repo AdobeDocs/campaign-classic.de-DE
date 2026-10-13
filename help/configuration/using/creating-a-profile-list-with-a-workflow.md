@@ -35,9 +35,9 @@ ht-degree: 9%
 
 Um eine Liste vom Typ **[!UICONTROL Liste]** basierend auf der neuen Empfängertabelle zu erstellen, müssen Sie einen Zielgruppen-Workflow erstellen, der die Liste generiert.
 
-Weitere Informationen zu Listen in Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zu Listen in Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} (Dokumentation zu Campaign v8).
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"} (Dokumentation zu Campaign v8)
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"} (Dokumentation zu Campaign v8)
 
 Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und die Empfänger in einer benutzerdefinierten Empfängertabelle zu aktualisieren:
 

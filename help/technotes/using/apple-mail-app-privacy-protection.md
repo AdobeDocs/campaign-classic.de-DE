@@ -95,7 +95,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * Bericht **[!UICONTROL Betriebssysteme]**
 
-  Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} (Dokumentation zu Campaign v8).
+  Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} (Dokumentation zu Campaign v8).
 
   Sie können die Aufschlüsselung Ihrer Besucher nach Betriebssystem im Verhältnis zur Gesamt-Besucherzahl anzeigen.
 
@@ -107,7 +107,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * Bericht **[!UICONTROL Aufschlüsselung der Öffnungen]**
 
-  Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} (Dokumentation zu Campaign v8).
+  Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} (Dokumentation zu Campaign v8).
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 

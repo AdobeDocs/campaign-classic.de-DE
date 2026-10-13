@@ -46,7 +46,7 @@ Sie können die Ausführung von Import- und Exportaufträgen direkt über die Li
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * Im Tab **[!UICONTROL Journal]** können Sie die zur Exportdurchführung gehörigen Protokollnachrichten einsehen.
-* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (Dokumentation zu Campaign v8).
+* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (Dokumentation zu Campaign v8).
 
 Im Tab **[!UICONTROL Allgemein]** gibt das Feld **[!UICONTROL Status]** den aktuellen Status eines Auftrags an.
 

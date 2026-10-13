@@ -38,7 +38,7 @@ ht-degree: 79%
 
 >[!INFO]
 >
->Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der Änderungen, die in Ihrer Instanz vorgenommen wurden.
 
@@ -55,7 +55,7 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
 * **Schema-Audit-Protokoll**: ermöglicht es Ihnen, die Änderungen an Ihren Schemata zu untersuchen und zu identifizieren, wer diese Änderungen vorgenommen hat und wann sie vorgenommen wurden.
 
-  Ausführliche Informationen zu Schemata finden Sie auf dieser [Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
+  Ausführliche Informationen zu Schemata finden Sie auf dieser [Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Das **Workflow-Audit-Protokoll** verfolgt alle Aktionen im Zusammenhang mit Ihren Workflows, einschließlich:
 
