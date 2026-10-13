@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
@@ -474,7 +474,7 @@ Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.ado
 
 Sie können Campaign zum [Senden von Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) über das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren.
 
-Das Campaign-SDK ist ab Campaign v7.4 [veraltet](deprecated-features.md). Um einen reibungslosen Übergang für die bestehende Implementierung auf das AEP Mobile SDK sicherzustellen, können Sie es weiterhin unter den unten aufgeführten Betriebssystemen verwenden<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+Das Campaign-SDK ist ab Campaign v7.4 [veraltet](deprecated-features.md). Um einen reibungslosen Übergang für die bestehende Implementierung auf das AEP Mobile SDK sicherzustellen, können Sie es weiterhin unter den unten aufgeführten Betriebssystemen verwenden<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->.
 
 
 <table>

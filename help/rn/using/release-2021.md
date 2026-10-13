@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2718'
 ht-degree: 98%
 ---
 # Versionen 2021{#release-2021}
@@ -124,7 +124,7 @@ _5. Juni 2021_
 <td>
 <p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen (FDA und lokale Datenbanken).</p>
 <p>In Adobe Campaign-Workflows werden Daten mithilfe von Arbeits- (oder temporären) Tabellen verwaltet. Während der Workflow-Ausführung geben Arbeitstabellen Daten für Workflow-Aktivitäten frei. Standardmäßig werden die Arbeitstabellen auf derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.</p>
-<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -162,7 +162,7 @@ _5. Juni 2021_
 <li><p>Unterstützung der LINE-Partnerregistrierungs-API</p></li>
 <li><p>Unterstützung eines erneuten Nachrichtenversands im Fall eines Server-seitigen LINE-Fehlers oder Netzwerk-Timeouts</p></li>
 </ul>
-<p>Weitere Informationen finden Sie im <a href="../../delivery/using/line-channel.md">entsprechenden Handbuch</a>.</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 
@@ -221,7 +221,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 * Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
@@ -291,7 +291,7 @@ Die folgenden Systeme werden jetzt von Campaign unterstützt:
 
 Der Bericht zum **technischen Zustellbarkeits-Monitoring** wird jetzt nicht mehr unterstützt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 

@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 100%
@@ -148,7 +148,7 @@ Beheben von Problemen mit der Verbindungsstabilität:
 
 ## Problem beim Senden von MT (reguläre SMS an einen Endbenutzer){#issue-MT}
 
-* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde durchgängig bestehen (außer bei Transmittern in Adobe Campaign Classic). Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
+* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde durchgängig bestehen (außer bei Transmittern in Adobe Campaign Classic). Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](#issues-unstable-connection).
 
 * Wenn durch einen Neustart des MTA das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](troubleshooting-sms.md#issues-unstable-connection).
 

@@ -37,71 +37,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '917'
+ht-degree: 94%
 ---
 # Automatisieren mit Workflows{#automating-via-workflows}
 
-## Content-Management-Aktivitäten {#content-management-activity}
+Das Erstellen, Bearbeiten und Veröffentlichen von Content-Management-Inhalten kann mithilfe eines Workflows automatisiert werden.
 
-Die Erstellung, Bearbeitung und Veröffentlichung von Inhalten kann mithilfe eines in der Adobe Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Konfigurieren der Aktivität **Content-Management** finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}.
 
-Die Aktivität **Content-Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
-
-Vier Aktivitätseigenschaften sind zu konfigurieren:
-
-* **[!UICONTROL Inhalt]** - Auswahl eines existierenden oder Erstellung eines neuen Inhalts;
-* **[!UICONTROL Inhalt aktualisieren]** - Änderung des Betreffs oder Aktualisierung des Inhalts mit einem XML-Stream;
-* **[!UICONTROL Auszuführende Aktion]** - Speicherung oder Erzeugung des Inhalts;
-* **[!UICONTROL Transition]** - Erzeugung und Benennung einer ausgehenden Transition.
-
-![](assets/d_ncs_content_wf.png)
-
-### Content {#content}
-
-* **Wird durch die Transition angegeben**
-
-  Der zu verwendende Inhalt wurde zuvor erstellt. Die Prozesse beziehen sich auf die vom eingehenden Ereignis übernommene Inhaltsinstanz. Auf die Inhaltskennung kann über die Variable „contentId“ des Ereignisses zugegriffen werden.
-
-* **Explizit**
-
-  Ermöglicht die Auswahl eines zuvor erstellten Inhalts.
-
-* **Wird durch ein Script erstellt**
-
-  Wählt eine auf einer JavaScript-Vorlage basierende Inhaltsinstanz aus. Mit dem auszuwertenden Code können Sie die Inhaltskennung abrufen.
-
-* **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
-
-  Erstellt neue Inhalte über eine Publikationsvorlage. Die Inhaltsinstanz wird im angegebenen Ordner „String“ gespeichert.
-
-### Inhalt aktualisieren {#update-the-content}
-
-* **Betreff**
-
-  Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
-
-* **Zugriff auf Daten eines XML-Streams**
-
-  Der Inhalt wird mit einem XML-Stream aktualisiert, der aus einer externen Quelle stammt. Um Daten herunterzuladen, muss eine URL eingegeben werden.
-
-  Mithilfe eines XSL-Stylesheets können dann die eingehenden XML-Daten umgewandelt werden.
-
-### Auszuführende Aktion {#action-to-execute}
-
-* **Speichern**
-
-  Speichert den erstellten oder geänderten Inhalt. Die Kennung des gespeicherten Inhalts wird in die Variable „contentId“ des ausgehenden Ereignisses übernommen.
-
-* **Erzeugen**
-
-  Erzeugt die Ausgabedateien für jede Umwandlungsvorlage mit einer Veröffentlichung vom Typ „Datei“. In diesem Fall wird die ausgehende Transition für jede erzeugte Datei mit folgenden Parametern aktiviert: die Kennung des gespeicherten Inhalts in der Variablen „contentId“ und der Dateiname in der Variablen „filename“.
-
-### Transition {#transition}
-
-Mit der Option **Ausgehende Transition erzeugen** können Sie eine ausgehende Transition zur Aktivität **[!UICONTROL Content-Management]** hinzufügen, um eine neue Aktivität mit der Workflow-Ausführung zu verknüpfen. Geben Sie nach Aktivierung dieser Option einen Titel für die Transition ein.
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## Beispiele {#examples}
 
@@ -240,11 +187,6 @@ Empfänger und Inhalt des Versands
 werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
-
-### Inhalt von FTP importieren {#importing-content-from-ftp}
-
-Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
-
 
 ### Inhalt von Amazon Simple Storage Service-Connector (S3) importieren {#importing-content-from-amazon-simple-storage-service--s3--connector}
 

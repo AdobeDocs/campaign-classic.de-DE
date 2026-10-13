@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 100%
+source-wordcount: '1797'
+ht-degree: 98%
 ---
 # Versandfehler und Quarantäneverwaltung {#delivery-failures-quarantine}
 
@@ -105,7 +105,7 @@ Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
 >[!NOTE]
 >
->Bei Ausfall eines ISP werden über Campaign gesendete E-Mails fälschlicherweise als Bounces gekennzeichnet. Um dies zu korrigieren, müssen Sie die Bounce-Qualifizierung aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](update-bounce-qualification.md).
+>Bei Ausfall eines ISP werden über Campaign gesendete E-Mails fälschlicherweise als Bounces gekennzeichnet. Um dies zu korrigieren, müssen Sie die Bounce-Qualifizierung aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Konfiguration von E-Mail-Verwaltungsregeln {#email-management-rules}
 
@@ -245,7 +245,7 @@ Ausführliche Informationen zu SMS-Quarantäneszenarien und Fehlertypen finden S
 * [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
 * [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) (v7 Hybrid/On-Premise)
 * [Konfigurieren von weiteren Versandversuchen](communication-channels.md) (v7 Hybrid/On-Premise)
-* [Aktualisieren der Bounce-Qualifizierung](update-bounce-qualification.md) (v7 Hybrid/On-Premise)
+* [Bounce-Qualifizierung aktualisieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8) (v7 Hybrid/On-Premise)
 * [Konfiguration der E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md) (v7 Hybrid/On-Premise)
 * [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 Hybrid/On-Premise)
 
