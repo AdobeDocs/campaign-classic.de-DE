@@ -21,9 +21,9 @@ feature_v2:
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
 source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # Erstellung einer Testumgebung{#creating-a-test-environment}
 
@@ -33,7 +33,7 @@ Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox-Modus) zu erstellen:
 
 >[!IMPORTANT]
 >
->Verwenden Sie diese Erstellungsmethode für Umgebungen nur für Testumgebungen. Verwenden Sie in allen anderen Fällen den Assistenten für das Zielgruppen-Mapping. Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Angebotsumgebung“ &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
+>Verwenden Sie diese Erstellungsmethode für Umgebungen nur für Testumgebungen. Verwenden Sie in allen anderen Fällen den Assistenten für das Zielgruppen-Mapping. Weitere Informationen dazu finden Sie unter [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Gehen Sie in den Adobe Campaign-Explorer und markieren Sie die Wurzel der Instanz.
 1. Klicken Sie mit der rechten Maustaste und fügen Sie mithilfe des Kontextmenüs einen **[!UICONTROL Kind]**-Ordner hinzu.

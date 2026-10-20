@@ -24,9 +24,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Anwendungsbeispiel: Senden von Transaktions-E-Mails mit Anhängen {#transactional-email-with-attachments}
 
@@ -81,7 +81,7 @@ Das folgende Diagramm zeigt die verschiedenen Schritte bei der Implementierung d
 
 Gehen Sie wie folgt vor, um einer Transaktionsnachricht dynamisch einen E-Mail-Anhang hinzuzufügen:
 
-1. Gestalten Sie zunächst Ihren Anhang. Weitere Informationen hierzu finden Sie in der [&#x200B; Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de#attach-a-personalized-file){target="_blank"}.
+1. Gestalten Sie zunächst Ihren Anhang. Weitere Informationen hierzu finden Sie in der [ Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de#attach-a-personalized-file){target="_blank"}.
 
    So können Sie die Dateien an eine E-Mail anhängen, selbst wenn sie nicht in der Ausführungsinstanz gehostet werden.
 

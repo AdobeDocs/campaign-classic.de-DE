@@ -18,7 +18,7 @@ subfeature_v2:
   - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
     internal-label: Triggers
 source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '377'
 ht-degree: 100%
 ---
@@ -91,7 +91,7 @@ Fügen Sie unter dem Array &quot;Triggers&quot; Experience Cloud-Trigger hinzu o
 Vergewissern Sie sich mithilfe dieser [Website](https://jsonlint.com/), dass die JSON gültig ist.
 
 * &quot;name&quot; ist die Auslöser-ID. Mit einem Platzhalter (*) werden alle Auslöser erfasst.
-* &quot;Consumer&quot; ist eine eindeutige Zeichenfolge, die die nlserver-Instanz eindeutig identifiziert. Normalerweise kann dies der Instanzname selbst sein. Bei verschiedenen Umgebungen (dev/stage/prod) müssen Sie jedoch sicherstellen, dass der Name für jede einzelne Instanz eindeutig ist, damit jede Instanz eine Kopie der Nachricht erhält.
+* „Consumer“ ist eine eindeutige Zeichenfolge, die die nlserver-Instanz eindeutig identifiziert. Normalerweise kann dies der Instanzname selbst sein. Bei verschiedenen Umgebungen (dev/stage/prod) müssen Sie jedoch sicherstellen, dass der Name für jede einzelne Instanz eindeutig ist, damit jede Instanz eine Kopie der Nachricht erhält.
 * [!DNL Pipelined] unterstützt auch &quot;Aliase&quot;.
 
 Starten Sie [!DNL pipelined] nach Durchführung der Änderungen neu.

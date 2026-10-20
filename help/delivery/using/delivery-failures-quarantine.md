@@ -42,9 +42,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1797'
-ht-degree: 98%
+ht-degree: 100%
 ---
 # Versandfehler und Quarantäneverwaltung {#delivery-failures-quarantine}
 
@@ -245,7 +245,7 @@ Ausführliche Informationen zu SMS-Quarantäneszenarien und Fehlertypen finden S
 * [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
 * [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) (v7 Hybrid/On-Premise)
 * [Konfigurieren von weiteren Versandversuchen](communication-channels.md) (v7 Hybrid/On-Premise)
-* [Bounce-Qualifizierung aktualisieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8) (v7 Hybrid/On-Premise)
+* [Aktualisieren der Bounce-Qualifizierung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8) (v7 Hybrid/On-Premise)
 * [Konfiguration der E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md) (v7 Hybrid/On-Premise)
 * [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 Hybrid/On-Premise)
 

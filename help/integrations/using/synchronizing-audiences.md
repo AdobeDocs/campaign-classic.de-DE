@@ -43,9 +43,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1253'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Synchronisieren von Zielgruppen{#synchronizing-audiences}
 

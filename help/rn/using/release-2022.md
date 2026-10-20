@@ -37,9 +37,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2204'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Versionen 2022{#release-2022}
 
@@ -60,7 +60,7 @@ _1. Juli 2022_
 <tbody> 
 <tr> 
 <td> <p>In iOS 15 fügte Apple das Konzept der „Dringlichen Mitteilungen“ hinzu, das dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als dringlich eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
-<p>Wie Sie eine vertrauliche Benachrichtigung erstellen, erfahren Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8).</p>
+<p>Erfahren Sie in der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">ausführlichen Dokumentation</a> (Dokumentation zu Campaign v8), wie Sie eine vertrauliche Benachrichtigung erstellen.</p>
 </td> 
 </tr> 
 </tbody> 

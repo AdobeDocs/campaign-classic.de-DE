@@ -47,9 +47,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Konfigurationsschritte für iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
@@ -61,7 +61,7 @@ Die wichtigsten Schritte sind:
 1. [Konfigurieren des iOS-Service](#configuring-ios-service)
 1. [Integrieren der iOS-Mobile-App in Campaign](#creating-ios-app)
 
-Anschließend können Sie eine Push[Benachrichtigung für iOS-Geräte erstellen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}Dokumentation zu Campaign v8).
+Anschließend können Sie [eine Push-Benachrichtigung für iOS-Geräte erstellen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Konfigurieren des externen iOS-Kontos {#configuring-external-account-ios}
 
@@ -133,7 +133,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um mit dem Konfigurieren der Entwicklungsanwendung zu beginnen.
 
-1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this page](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die App mit der Adobe Campaign-Plattform verknüpfen.
+1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die App mit der Adobe Campaign-Plattform verknüpfen.
 
    >[!NOTE]
    >

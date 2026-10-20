@@ -38,7 +38,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
 ht-degree: 100%
 ---
@@ -118,6 +118,6 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 In diesem Video wird gezeigt, wie Daten mit einem GPG-Schlüssel verschlüsselt werden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/41328?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

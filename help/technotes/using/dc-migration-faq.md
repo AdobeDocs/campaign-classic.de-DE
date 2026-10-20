@@ -38,7 +38,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2269'
 ht-degree: 100%
 ---
@@ -50,7 +50,7 @@ Adobe nutzt das alte Rechenzentrum nicht länger: Campaign Classic-Instanzen mü
 
 Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support).
 
 ## Auswirkungen auf die Infrastruktur
 
@@ -80,7 +80,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
-  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
+  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
 
 ## Auswirkungen auf die Zustellbarkeit
 
@@ -126,7 +126,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
   Zunächst prüft das Adobe-Zustellbarkeits-Team den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs.
 
-  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
+  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
 
   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 

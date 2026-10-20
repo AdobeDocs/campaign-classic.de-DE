@@ -46,9 +46,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 89%
+ht-degree: 100%
 ---
 # Erste Schritte bei der Überwachung eines Versands {#about-delivery-monitoring}
 
@@ -70,7 +70,7 @@ Was passiert, wenn die Nachrichten nicht gesendet werden und ihr Status weiterhi
 Prüfen Sie, ob Ihre mta@instance-Module auf den MTA-Servern gestartet wurden. Starten Sie sie gegebenenfalls. [Weitere Informationen](../../production/using/administration.md).
 
 * Möglicherweise wird für den Versand eine Affinität verwendet, die in der Sendeinstanz noch nicht konfiguriert wurde.
-Tipp: Überprüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weitere Informationen hierzu finden Sie unter Steuern des ausgehenden SMTP-Traffics.
+Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weitere Informationen hierzu finden Sie im Abschnitt „Ausgehenden SMTP-Traffic steuern“.
 
 >[!NOTE]
 >
@@ -99,21 +99,21 @@ In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Wo
 
 **Bei On-Premise-Installationen** können Sie die folgenden Monitoring-Tools verwenden:
 
-* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weitere Informationen hierzu finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
+* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8).
 * Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
   * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
   * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
 
-  Weiterführende Informationen hierzu finden Sie im Abschnitt [Versandstatistiken](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (Dokumentation zu Campaign v8).
+  Weitere Informationen hierzu finden Sie im Abschnitt [Versandstatistiken](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (Dokumentation zu Campaign v8).
 
 #### Richtlinien für das Überwachen {#monitoring-guidelines}
 
 **Für On-Premise-Installationen** finden Sie hier einige zusätzliche Richtlinien zum Monitoring der Zustellbarkeit:
 
-* Überprüfen Sie regelmäßig den [Versanddurchsatz](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8) für die gesamte Plattform, um sicherzustellen, dass sie mit der ursprünglichen Einrichtung übereinstimmt.
+* Prüfen Sie regelmäßig den [Versanddurchsatz](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (Dokumentation zu Campaign v8) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
 * Achten Sie darauf, dass [weitere Zustellversuche](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
 * Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures-quarantine.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
-* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 * Wenn der Versand in Schüben erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
 * Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](delivery-failures-quarantine.md) der anderer Sendungen entspricht.
 * Prüfen Sie in den [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).

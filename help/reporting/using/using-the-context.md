@@ -29,9 +29,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Verwenden des Kontexts in Ihren Berichten{#using-the-context}
 
@@ -55,7 +55,7 @@ Klicken Sie hierzu auf den im Tab **[!UICONTROL Daten]** verfügbaren Link **[!U
 
 Im folgenden Beispiel soll die Grafik nur die Profile der Empfänger anzeigen, die in Deutschland leben und im laufenden Jahr Einkäufe getätigt haben.
 
-Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf **[!UICONTROL Daten filtern]** und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Weiterführende Informationen zum Erstellen von Abfragen in Adobe Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8).
+Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf **[!UICONTROL Daten filtern]** und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Weitere Informationen zum Erstellen von Abfragen in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (Dokumentation zu Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

@@ -23,9 +23,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
 source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 85%
+ht-degree: 100%
 ---
 # Über die Angebotssimulation{#about-offers-simulation}
 
@@ -33,7 +33,7 @@ ht-degree: 85%
 
 Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kategorie oder einer Umgebung evaluieren, bevor Sie den Vorschlag den Empfängern unterbreiten.
 
-Die Simulation berücksichtigt die Kontexte und Eignungsregeln, die zuvor auf Angebote angewendet wurden (siehe [Angebotskatalogübersicht](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (Campaign v8-Dokumentation)), sowie ihre Unterbreitungsregeln (siehe [Verwalten der &#x200B;](../../interaction/using/managing-offer-presentation.md)). Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
+Bei einer Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die zuvor auf Angebote angewendet wurden (siehe [Angebotskatalog – Überblick](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (Dokumentation zu Campaign v8)), sowie deren Unterbreitungsregeln (siehe [Verwalten einer Angebotsunterbreitung](../../interaction/using/managing-offer-presentation.md)). Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
 Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden Schritte.
 

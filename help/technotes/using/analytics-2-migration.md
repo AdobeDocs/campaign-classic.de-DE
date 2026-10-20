@@ -18,9 +18,9 @@ subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
 source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Migrieren zur Adobe Analytics 2.0-API {#analytics-2-migration}
 
@@ -28,7 +28,7 @@ Adobe Analytics 1.4-APIs [erreichen das Ende ihres Lebenszyklus](https://develo
 
 >[!CAUTION]
 >
->Beim Upgrade werden die beiden integrierten technischen Workflows, die den Connector unterstützen, [!UICONTROL webAnalyticsSendMetrics] und [!UICONTROL webAnalyticsGetWebEvents], erneut importiert (siehe [Web Analytics Workflows-Referenz](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (Campaign v8-Dokumentation). Alle Anpassungen, die Sie zusätzlich zu diesen Workflows vorgenommen haben, werden durch den erneuten Import überschrieben. Ändern Sie diese integrierten Workflows nicht direkt. Nehmen Sie Ihre Anpassungen stattdessen in einem separaten benutzerdefinierten Workflow vor, damit sie bei zukünftigen Upgrades nicht überschrieben werden. Durch das Upgrade werden auch die integrierten Analytics-JavaScript-Dateien aktualisiert: Wenn einer Ihrer benutzerdefinierten Workflows auf diese Dateien verweist, funktioniert dieser nicht mehr und muss an den neuen Code angepasst werden.
+>Beim Upgrade werden die beiden nativen technischen Workflows, die den Connector betreiben, [!UICONTROL webAnalyticsSendMetrics] und [!UICONTROL webAnalyticsGetWebEvents], erneut importiert (unter [Web-Analyse-Workflows-Referenz](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) erfahren Sie, was jeder Workflow bewirkt). Alle Anpassungen, die Sie zusätzlich zu diesen Workflows vorgenommen haben, werden durch den erneuten Import überschrieben. Ändern Sie diese integrierten Workflows nicht direkt. Nehmen Sie Ihre Anpassungen stattdessen in einem separaten benutzerdefinierten Workflow vor, damit sie bei zukünftigen Upgrades nicht überschrieben werden. Durch das Upgrade werden auch die integrierten Analytics-JavaScript-Dateien aktualisiert: Wenn einer Ihrer benutzerdefinierten Workflows auf diese Dateien verweist, funktioniert dieser nicht mehr und muss an den neuen Code angepasst werden.
 
 ## Sind Sie betroffen? {#are-you-impacted}
 

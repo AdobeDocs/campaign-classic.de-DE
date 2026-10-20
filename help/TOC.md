@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
 ht-degree: 100%
 ---
@@ -45,7 +45,7 @@ ht-degree: 100%
     + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
   + Profil-Management {#profile-management}
     + [Über Profile](platform/using/about-profiles.md)
-    + [Daten-Update](platform/using/updating-data.md)
+    + [Aktualisieren von Daten](platform/using/updating-data.md)
   + Importieren und Exportieren von Daten {#importing-and-exporting-data}
     + Erstellen allgemeiner Importe und Exporte {#generic-imports-exports}
       + [Überwachen der Ausführung von Aufträgen](platform/using/monitoring-jobs-execution.md)
@@ -115,7 +115,7 @@ ht-degree: 100%
     + [Fortgeschritten: Anpassen von Versandlogs](delivery/using/customize-delivery-logs.md)
   + Verwaltung der Zustellbarkeit {#deliverability-management}
     + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
-    + [Rendern des Posteingangs](delivery/using/inbox-rendering.md)
+    + [Rendering im Posteingang](delivery/using/inbox-rendering.md)
     + [Fehlerbehebung](delivery/using/deliverability-faq.md)
   + Content-Management-Modul {#content-management}
     + [Über Content-Management](delivery/using/about-content-management.md)
@@ -273,7 +273,7 @@ ht-degree: 100%
     + [Instanzen konfigurieren](message-center/using/configuring-instances.md)
     + [Ergänzende Konfigurationen](message-center/using/additional-configurations.md)
   + Nachrichtenvorlagen {#message-templates}
-    + [Nachrichtenvorlagen testen](message-center/using/testing-message-templates.md)
+    + [Testen von Nachrichtenvorlagen](message-center/using/testing-message-templates.md)
   + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
 + Integrieren mit Social Media {#integrating-with-social-media}
   + [Über Social-Media-Marketing](social/using/about-social-marketing.md)
