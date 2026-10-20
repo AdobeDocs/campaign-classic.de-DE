@@ -135,7 +135,7 @@ Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App
 
    ![](assets/nmac_android.png)
 
-1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this section](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
 
    >[!NOTE]
    >
@@ -201,4 +201,4 @@ Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank n
 
    >[!CAUTION]
    >
-   >Stellen Sie sicher, dass die Parameterbezeichnungen auf der Registerkarte **[!UICONTROL Abonnementparameter]** mit denen im App-Code übereinstimmen. <!--Refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+   >Stellen Sie sicher, dass die Parameterbezeichnungen auf der Registerkarte **[!UICONTROL Abonnementparameter]** mit denen im App-Code übereinstimmen. <!--Refer to [this section](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->

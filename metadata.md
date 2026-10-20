@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 description: Dokumentation zu Campaign Classic
-git-repo: https://github.com/AdobeDocs/campaign-classic.en
+git-repo: https://github.com/AdobeDocs/campaign-classic.de-DE
 solution: Campaign, Campaign Classic v7
 usetq: true
 version: Campaign Classic v7
