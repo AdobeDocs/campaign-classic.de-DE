@@ -77,7 +77,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
-* Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
+* Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com/de](https://www.adobe.com/de) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
 * Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
 * Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
