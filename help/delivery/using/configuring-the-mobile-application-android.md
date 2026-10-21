@@ -53,9 +53,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 92%
+ht-degree: 100%
 ---
 # Konfigurationsschritte für Android
 
@@ -68,7 +68,7 @@ Die wichtigsten Schritte sind:
 1. [Erstellen der Mobile App in Campaign](#creating-android-app)
 1. [Erweitern des App-Schemas um zusätzliche Daten](#extend-subscription-schema)
 
-Anschließend können Sie eine Rich[Benachrichtigung für Android erstellen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}Dokumentation zu Campaign v8).
+Anschließend können Sie eine [Rich-Benachrichtigung für Android erstellen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (Dokumentation zu Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -88,11 +88,11 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 1. Wählen Sie das externe Konto **[!UICONTROL Android-Routing]** aus.
 1. Füllen Sie im **[!UICONTROL Connector]**-Tab das Feld **[!UICONTROL Connector-JavaScript]** aus:
 
-   Für Android v2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
+   Für Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
    >[!NOTE]
    >
-   > Sie können ihn auch wie unter https://localhost:8080/nms/jsp/androidPushConnector.js konfigurieren. Wir empfehlen Ihnen jedoch, Version 2 des Connectors zu verwenden.
+   > Sie können das Feld auch wie folgt konfigurieren: https://localhost:8080/nms/jsp/androidPushConnector.js; wir empfehlen Ihnen jedoch, Version 2 des Connectors zu verwenden.
 
    ![](assets/nmac_connectors3.png)
 
@@ -195,7 +195,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank neue zusätzliche Felder zum Speichern von Parametern aus der App zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
 
-1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Schemaerweiterung finden Sie auf [&#x200B; Seite &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}Dokumentation zu Campaign v8).
+1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Erweiterung eines Schemas finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8)
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Abonnementparameter]** das Mapping an.
 

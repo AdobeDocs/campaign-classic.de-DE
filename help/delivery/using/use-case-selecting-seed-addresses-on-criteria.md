@@ -31,9 +31,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Anwendungsfall: Auswählen von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
 
@@ -65,7 +65,7 @@ Um einen gemeinsamen Wert wie den in unserem Beispiel (Einkaufsabteilung) zu ers
 
 ### Erweitern des Datenschemas {#extending-the-data-schema}
 
-Weitere Informationen zu Schemaerweiterungen finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} Campaign v8).
+Weitere Informationen zu Schemaerweiterungen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
 1. Klicken Sie im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** auf die Schaltfläche **[!UICONTROL Neu]**.
 1. Kreuzen Sie im Fenster **[!UICONTROL Datenschemaerstellung]** die Option **[!UICONTROL Schemaerweiterung]** an und klicken Sie auf **[!UICONTROL Weiter]**.
@@ -197,7 +197,7 @@ Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definiere
 
    >[!NOTE]
    >
-   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.**&#x200B;**
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 

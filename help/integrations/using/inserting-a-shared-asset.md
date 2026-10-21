@@ -28,9 +28,9 @@ subfeature_v2:
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 93%
+ht-degree: 100%
 ---
 # Freigegebene Assets nutzen{#inserting-a-shared-asset}
 
@@ -54,7 +54,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
      >[!NOTE]
      >
-     >Freigegebene Bilder von Adobe Campaign können nicht in [Web-Zugriff](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (Campaign v8-Dokumentation) eingefügt werden, wenn der DCE verwendet wird.
+     >Das Einfügen von freigegebenen Bildern steht im DCE bei Verwendung des [Web-Zugriffs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} von Adobe Campaign (Dokumentation zu Campaign v8) nicht zur Verfügung.
 
 1. Wählen Sie im sich öffnenden Fenster das gewünschte Bild aus und bestätigen Sie Ihre Auswahl.
 

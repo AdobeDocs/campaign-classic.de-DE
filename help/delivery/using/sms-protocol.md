@@ -42,9 +42,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4785'
-ht-degree: 98%
+ht-degree: 100%
 ---
 # Protokoll und Einstellungen des SMS-Connectors {#sms-connector-protocol}
 
@@ -53,7 +53,7 @@ ht-degree: 98%
 >In diesem Dokument beziehen sich alle Informationen zum Protokoll, zum Feldnamen und zu Feldwerten auf die [Spezifikation von SMPP Version 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 >
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den Einstellungen des SMS-Connectors finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den SMS-Connector-Einstellungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
 
@@ -181,7 +181,7 @@ Wichtige Felder in einer `SUBMIT_SM`-PDU:
 
 * **registered_delivery**: Gibt an, ob ein SR angefordert wird oder nicht. Adobe Campaign setzt diese Markierung immer, außer bei automatischen Antworten. Bei mehrteiligen Nachrichten wird die Markierung nur für den ersten Teil festgelegt. Alle Versionen weisen dasselbe Verhalten auf.
 
-* **data_coding**: Gibt die im Textfeld verwendete Kodierung an. Weitere Informationen finden Sie [&#x200B; Abschnitt „SMS](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"}Textkodierung“ (Dokumentation zu Campaign v8) .
+* **data_coding**: Gibt die im Textfeld verwendete Kodierung an. Weitere Informationen finden Sie im Abschnitt [SMS-Textkodierung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} (Dokumentation zu Campaign v8).
 
 * **short_message**: Der Text der Nachricht. Wenn UDH verwendet wird, enthält dies auch die UHD-Kopfzeile.
 
@@ -243,7 +243,7 @@ Diese PDU quittiert, dass die Verbindung aktiv ist.
 
 Die meisten Provider verlangen eine Durchsatzbegrenzung für jede SMPP-Verbindung. Dies kann durch die Festlegung einer Anzahl von SMS im externen Konto erreicht werden. Beachten Sie, dass die Durchsatzdrosselung pro Verbindung erfolgt. Der gesamte effektive Durchsatz ist die Grenze pro Verbindung multipliziert mit der Anzahl Verbindungen insgesamt. Dies wird im Abschnitt [Simultane Verbindungen](sms-protocol.md#connection-settings) beschrieben.
 
-Um den maximal möglichen Durchsatz zu erreichen, müssen Sie eine Feinabstimmung des maximalen Übertragungsfensters vornehmen. Das Übertragungsfenster ist die Anzahl der `SUBMIT_SM PDU`s, die gesendet werden können, ohne auf eine `SUBMIT_SM_RESP` zu warten. Weitere Informationen finden [&#x200B; im Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} des Versandfensters (Dokumentation zu Campaign v8).
+Um den maximal möglichen Durchsatz zu erreichen, müssen Sie eine Feinabstimmung des maximalen Übertragungsfensters vornehmen. Das Übertragungsfenster ist die Anzahl der `SUBMIT_SM PDU`s, die gesendet werden können, ohne auf eine `SUBMIT_SM_RESP` zu warten. Weitere Informationen finden Sie im Abschnitt zu den [Übertragungsfenster-Einstellungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### SR und Umgang mit Fehlern (&quot;Anhang B&quot;) {#sr-error-management}
 

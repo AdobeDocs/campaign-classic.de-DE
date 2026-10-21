@@ -29,9 +29,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 94%
+ht-degree: 100%
 ---
 # Zusätzliche Konfigurationen {#mc-additional-configurations}
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
-Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8).
+Sie können die Schwellenwerte für Warnungen (orange) und die Schwellenwerte für Warnhinweise (rot) der Kennzahlen konfigurieren, die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Zugriff auf Berichte zu Transaktionsnachrichten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (Dokumentation zu Campaign v8)).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -194,7 +194,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 

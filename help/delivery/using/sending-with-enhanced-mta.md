@@ -46,9 +46,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
 source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1473'
-ht-degree: 98%
+ht-degree: 100%
 ---
 # Mit dem Enhanced MTA senden {#sending-with-enhanced-mta}
 

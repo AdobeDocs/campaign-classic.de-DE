@@ -33,7 +33,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
 ht-degree: 100%
 ---
@@ -43,7 +43,7 @@ Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-
 
 E-Mail bleibt einer der leistungsstärksten und flexibelsten Kanäle, um über Ihre App oder Website hinaus mit Benutzenden zu interagieren. Unabhängig davon, ob Sie personalisierte Inhalte, Ankündigungen oder Werbenachrichten versenden, haben Sie bei E-Mails die volle Kontrolle über die Nachricht und die Zielgruppe. Erfahren Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}, wie Sie den E-Mail-Kanal optimal konfigurieren und nutzen: Anpassen von Inhalten, Ansprechen bestimmter Benutzersegmente und Einbinden von umfangreichen Multimedia-Elementen zur Maximierung der Wirkung und Interaktion.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 

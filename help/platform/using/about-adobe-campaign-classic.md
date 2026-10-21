@@ -42,9 +42,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
 source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 82%
+ht-degree: 100%
 ---
 # Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
@@ -57,7 +57,7 @@ Mit Adobe Campaign können Sie die Erstellung von dialogorientierten Marketing-K
 
 >[!TAB Erste Schritte mit Campaign]
 
-Informationen zu den ersten Schritten mit der Adobe Campaign-Client-Konsole und ihrer Benutzeroberfläche finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Informationen zu den ersten Schritten mit der Client-Konsole von Adobe Campaign und ihrer Benutzeroberfläche finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
@@ -69,9 +69,9 @@ Informationen zu den ersten Schritten mit der Adobe Campaign-Client-Konsole und 
 
 >[!TAB Durchsuchen der Campaign-Benutzeroberfläche]
 
-* Erfahren Sie mehr über die Benutzeroberfläche [&#x200B; Adobe Campaign &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}auf dieser Seite) (Dokumentation zu Campaign v8).
+* Entdecken Sie die Benutzeroberfläche von Adobe Campaign [auf dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (Dokumentation zu Campaign v8).
 
-* Erfahren Sie, wie Sie mit [Campaign Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} arbeiten (Dokumentation zu Campaign v8).
+* Erfahren Sie, wie Sie mit dem [Campaign Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} arbeiten (Dokumentation zu Campaign v8).
 
 >[!ENDTABS]
 

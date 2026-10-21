@@ -37,9 +37,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
 source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Bereitstellung des Adobe Analytics Connectors {#adobe-analytics-connector-provisioning}
 
@@ -63,7 +63,7 @@ Damit diese Integration funktioniert, müssen Sie ein Adobe Analytics-Produktpro
 
 >[!AVAILABILITY]
 >
-> Die Berechtigung für das Service-Konto (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Programmen müssen jetzt auf OAuth-Server-zu-Server-Anmeldedaten angewiesen sein. </br>
+> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Anwendungen müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
 > * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende [Anmeldedaten für Service-Konten (JWT)](oauth-technical-account.md) funktionieren noch bis 30. Juni 2025.</br>
 >

@@ -30,15 +30,15 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
-ht-degree: 76%
+ht-degree: 100%
 ---
 # Erkennen von Tracking-URLs
 
-Adobe Campaign erkennt die URLs, die während der Versandanalyse in Ihren Inhalten nachverfolgt werden sollen.
+Adobe Campaign erkennt während der Versandanalyse in Ihrem Inhalt die zu trackenden URLs.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Erkennen von URLs und zu den zu verwendenden Mustern finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen dazu, wie URLs erkannt werden und welche Muster zu verwenden sind, finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}
 

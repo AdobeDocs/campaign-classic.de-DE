@@ -48,9 +48,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Versandleistung und Fehlerbehebung {#delivery-performance-troubleshooting}
 
@@ -124,7 +124,7 @@ Die Ursache hierfür sind Performance-Probleme, wenn die Marketing-Instanz zu la
 
 **Bei On-Premise-Installationen** führen Sie ein Vacuum durch und indizieren Sie die Datenbank neu. Weiterführende Informationen zur Wartung der Datenbank finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
-Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Siehe [diesen Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
+Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Monitoring technischer Workflows
 

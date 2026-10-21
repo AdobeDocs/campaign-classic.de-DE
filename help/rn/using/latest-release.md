@@ -38,7 +38,7 @@ topic_v2:
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
 workflow-type: tm+mt
 source-wordcount: '1451'
-ht-degree: 90%
+ht-degree: 91%
 ---
 # Aktuelle Version {#latest-release}
 
@@ -69,11 +69,11 @@ _15. Oktober 2026_
 
 _15. Oktober 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9403}
+#### Sicherheitsverbesserungen {#security-7-4-4-9403}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 
 ### Build 9402 {#build-9402}
@@ -82,11 +82,11 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart de
 
 _11. September 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9402}
+#### Sicherheitsverbesserungen {#security-7-4-4-9402}
 
-Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/au/security/products/campaign/apsb26-142.html){target="_blank"}.
+Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-142.html){target="_blank"}.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 ### Build 9401 {#build-9401}
 
@@ -94,11 +94,11 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart de
 
 _25. August 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9401}
+#### Sicherheitsverbesserungen {#security-7-4-4-9401}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-134.html){target="_blank"}.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 #### Aktualisierung der Zulassungsliste für externe URLs {#security-enhancement-url-validation-9401}
 
@@ -114,11 +114,11 @@ _11. August 2026_
 
 Dieser Build umfasst mehrere Produktverbesserungen, Sicherheitskorrekturen und das Upgrade auf die Adobe Analytics 2.0-API für den Adobe Analytics-Connector.
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-4-9400}
+#### Sicherheitsverbesserungen {#security-7-4-4-9400}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-123.html){target="_blank"}.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 #### Adobe Analytics 2.0-Upgrade {#analytics-2-0-7-4-4}
 
@@ -132,11 +132,11 @@ Adobe Analytics 1.4-APIs erreichen das Ende ihres Lebenszyklus. Wenn Sie den Ad
 
 _3. August 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-3-9399}
+#### Sicherheitsverbesserungen {#security-7-4-3-9399}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-120.html){target="_blank"}.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart des Adobe Campaign-Servers (nlserver)](../../production/using/usual-commands.md#restart-services) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart des Adobe Campaign-Servers (nlserver)](../../production/using/usual-commands.md#restart-services) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 ### Build 9398 {#build-9398}
 
@@ -144,11 +144,11 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart d
 
 _29. Juli 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-3-9398}
+#### Sicherheitsverbesserungen {#security-7-4-3-9398}
 
 Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlicht, mit denen kritische Schwachstellen behoben werden. Wir empfehlen Kundinnen und Kunden von On-Premise- und Hybridbereitstellungen, die Aktualisierungen so bald wie möglich zu installieren. Von Adobe gehostete Instanzen wurden bereits korrigiert und erfordern keine Kundenaktion. Weitere Informationen finden Sie im [Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/campaign/apsb26-114.html){target="_blank"}.
 
-Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart des Adobe Campaign-Servers (nlserver)](../../production/using/usual-commands.md#restart-services) erforderlich. Nach dem Neustart ist die Problemlösung standardmäßig aktiv.
+Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart des Adobe Campaign-Servers (nlserver)](../../production/using/usual-commands.md#restart-services) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 ### Build 9397 {#build-9397}
 
@@ -156,7 +156,7 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart d
 
 _30. Juni 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-3-9397}
+#### Sicherheitsverbesserungen {#security-7-4-3-9397}
 
 Dieser Build enthält Sicherheitskorrekturen und ersetzt die vorherigen Campaign Classic v7-Builds. Dieser Build ist jetzt für On-Premise- und Hybridbereitstellungen veraltet. Wir empfehlen Kundinnen und Kunden in diesen Bereitstellungsmodi, die Aktualisierungen so bald wie möglich zu installieren, indem sie ein Upgrade auf [Build 9398](#build-9398) oder höher durchführen.
 
@@ -192,7 +192,7 @@ Dieser Build enthält Sicherheitskorrekturen.
 
 _31. März 2026_
 
-#### Verbesserungen bezüglich der Sicherheit {#security-7-4-3}
+#### Sicherheitsverbesserungen {#security-7-4-3}
 
 * Um optimale Sicherheit, Stabilität und Compliance zu gewährleisten, wurde Debian auf Version 13 und PostgreSQL auf Version 17 aktualisiert. Weitere Informationen finden Sie in der [Kompatibilitätsmatrix](compatibility-matrix.md).
 

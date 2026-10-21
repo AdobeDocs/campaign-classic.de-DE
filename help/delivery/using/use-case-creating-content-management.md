@@ -33,9 +33,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
-ht-degree: 95%
+ht-degree: 100%
 ---
 # Anwendungsfall: Erstellen des Content-Managements{#use-case-creating-content-management}
 
@@ -82,7 +82,7 @@ Ein Datenschema ist ein mit Inhalt verknüpftes XML-Dokument. Es beschreibt die 
 
 >[!NOTE]
 >
->Weiterführende Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
+>Weitere Informationen zum Erstellen und Konfigurieren von Datenschemata in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >Die das Content-Management betreffenden Elemente werden im Kapitel [Datenschemata](data-schemas.md) erläutert.
 
@@ -108,7 +108,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -194,7 +194,7 @@ Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, in dem die
 
 >[!NOTE]
 >
->Weiterführende Informationen zum Erstellen und Konfigurieren von Formularen in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
+>Weitere Informationen zum Erstellen und Konfigurieren von Formularen in Adobe Campaign finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (Dokumentation zu Campaign v8).
 >
 >Die das Content-Management betreffenden Elemente werden im Kapitel [Formulare](input-forms.md) erläutert.
 
@@ -385,7 +385,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
 
    ![](assets/s_ncs_content_param_form_publish.png)
 

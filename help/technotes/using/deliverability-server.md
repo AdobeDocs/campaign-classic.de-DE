@@ -37,9 +37,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 93%
+ht-degree: 100%
 ---
 # Aktualisierung auf den neuen Zustellbarkeits-Server {#acc-deliverability}
 
@@ -78,7 +78,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 >[!AVAILABILITY]
 >
-> Die Berechtigung für das Service-Konto (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Programmen müssen jetzt auf OAuth-Server-zu-Server-Anmeldedaten angewiesen sein. </br>
+> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Anwendungen müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
 > * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende [Anmeldedaten für Service-Konten (JWT)](../../integrations/using/oauth-technical-account.md) sind noch bis zum 27. Januar 2025 gültig. </br>
 >
@@ -101,7 +101,7 @@ Als On-Premise-Kunde müssen Sie auch überprüfen, ob für Ihre Organisation ei
 
 1. Verbinden Sie sich als Admin mit der [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Rufen Sie den Bereich **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
-Wenn Sie **Adobe Campaign nicht sehen können** wenden Sie sich an die [Adobe](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}Kundenunterstützung, damit diese hinzugefügt wird.
+Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, damit der Eintrag hinzugefügt wird.
 1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus.
    **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen über Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
 
@@ -150,4 +150,4 @@ Campaign-Instanzen, die nicht bis zum 31. August aktualisiert wurden, können ke
 
 Wenn Sie Ihre Umgebung nicht aktualisieren, werden die E-Mail-Einstellungen nicht mehr synchronisiert (MX-Verwaltungsregeln, Regeln für eingehende E-Mails, Regeln für die Verwaltung von Domains und Regeln für die Bounce-Qualifizierung). Dies kann sich bei Ihnen im Laufe der Zeit auf die Zustellbarkeit auswirken. Wenn eine wesentliche Änderung an diesen Regeln vorgenommen wird, müssen diese ab diesem Zeitpunkt manuell angewendet werden.
 
-Bei MKT-Instanzen ist nur [Globale Unterdrückungsliste](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (Dokumentation zu Campaign v8) betroffen.
+Bei MKT-Instanzen ist nur die [globale Unterdrückungsliste](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (Dokumentation zu Campaign v8) betroffen.

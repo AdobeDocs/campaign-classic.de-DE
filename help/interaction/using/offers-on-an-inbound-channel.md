@@ -25,9 +25,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2212'
-ht-degree: 96%
+ht-degree: 100%
 ---
 # Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
@@ -47,7 +47,7 @@ Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 
 ### Erstellung einer anonymen Umgebung {#creating-an-anonymous-environment}
 
-Befolgen Sie die Anweisungen in [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8), um Ihre anonyme Umgebung anhand der Dimensionen **Besucher** zu erstellen.
+Folgen Sie dem in [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8) beschriebenen Verfahren, um Ihre anonyme, auf der **Besucher**-Dimension basierende Umgebung zu erstellen.
 
 Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
@@ -101,7 +101,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
 1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]**&#x200B;**[!UICONTROL aus]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
@@ -130,7 +130,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Um die soeben konfigurierten Angebote auf der Website sichtbar zu machen, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Website ein, um die Interaction-Engine aufzurufen (weitere Informationen finden Sie unter [Über eingehende Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Campaign v8-Dokumentation)).
+Damit die soeben konfigurierten Angebote auf der Website sichtbar sind, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Site ein, der die Interaction-Engine aufruft (weitere Informationen siehe [Über Inbound-Kanäle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (Dokumentation zu Campaign v8)).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
@@ -211,7 +211,7 @@ Gehen Sie wie folgt vor:
 
 ### Erstellung einer Umgebung für anonyme Kontakte {#creating-an-environment-for-anonymous-contacts}
 
-1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Angebotsumgebung“ &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}Dokumentation zu Campaign v8).
+1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weitere Informationen dazu finden Sie unter [Erstellen einer Angebotsumgebung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (Dokumentation zu Campaign v8).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -267,7 +267,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
@@ -276,7 +276,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
    ![](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
@@ -356,7 +356,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_013.png)
 

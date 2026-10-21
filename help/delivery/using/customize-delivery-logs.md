@@ -42,9 +42,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '587'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Fortgeschritten: Anpassen von Versandlogs {#customize-delivery-logs}
 
@@ -139,7 +139,7 @@ Rufen Sie dazu die Versandlogs auf und fügen Sie die Spalte &quot;IP-Kennung&qu
 
 >[!NOTE]
 >
->Informationen zum Konfigurieren von Listen in der Benutzeroberfläche von Campaign Classic finden Sie auf [&#x200B; Seite &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}Dokumentation zu Campaign v8).
+>Informationen zum Konfigurieren von Listen in der Campaign Classic-Oberfläche finden Sie auf [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (Dokumentation zu Campaign v8).
 
 Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen:
 
