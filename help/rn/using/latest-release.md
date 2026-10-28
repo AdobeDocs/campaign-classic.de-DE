@@ -36,38 +36,38 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1451'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # Aktuelle Version {#latest-release}
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## Version 7.4.5 {#release-7-4-5}
+## Version 7.4.5 {#release-7-4-5}
 
-### Build 9420 {#build-9420}
+### Build 9420 {#build-9420}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
 
-_15. Oktober 2026_
+_15. Oktober 2026_
 
 #### Fehlerbehebungen {#fixes-7-4-5}
 
-* Fehlerkorrektur - Das externe Analytics-Konto schlägt jetzt nicht mehr mit dem Fehler „Gone“ (410) fehl. (NEO-99019)
-* Es wurde ein Problem behoben, bei dem einige Sendungen im Status Personalisierung ausstehend bleiben konnten, obwohl die entsprechenden Nachrichten erfolgreich gesendet wurden. (NEO-94471)
-* Es wurde ein Problem behoben, bei dem ein interner Sperrmechanismus in eine Wiederholungsschleife eintreten und eine hohe CPU-Nutzung auf dem Server verursachen konnte. (NEO-94845)
-* Es wurde ein Problem behoben, bei dem Datenmodellaktualisierungen zeitweise fehlschlugen. (NEO-84347, NEO-84824)
-* Fehlerkorrektur - Beim Erstellen oder Bearbeiten eines Versands wird jetzt der Fehler „Spam-Überprüfung fehlgeschlagen“ angezeigt. (NEO-53888)
-* Es wurde ein Problem behoben, bei dem Empfänger nach wiederkehrenden Softbounces nicht wie erwartet unter Quarantäne gestellt wurden. (NEO-94422)
+* Es wurde ein Problem behoben, bei dem das externe Analytics-Konto möglicherweise mit dem Fehler „Entfernt“ (410) fehlschlug. (NEO-99019)
+* Es wurde ein Problem behoben, bei dem einige Sendungen im Status „Personalisierung ausstehend“ möglicherweise hängen blieben, obwohl die entsprechenden Nachrichten erfolgreich gesendet wurden. (NEO-94471)
+* Es wurde ein Problem behoben, bei dem ein interner Sperrmechanismus eine Wiederholungsschleife starten und eine hohe CPU-Auslastung auf dem Server verursachen konnte. (NEO-94845)
+* Es wurde ein Problem behoben, bei dem Datenmodell-Updates gelegentlich fehlschlagen konnten. (NEO-84347, NEO-84824)
+* Es wurde ein Problem behoben, durch das beim Erstellen oder Bearbeiten eines Versands fälschlicherweise der Fehler angezeigt werden konnte, dass die Spam-Prüfung fehlgeschlagen ist. (NEO-53888)
+* Es wurde ein Problem behoben, bei dem Empfangende nach wiederkehrenden Softbounces nicht wie erwartet unter Quarantäne gestellt wurden. (NEO-94422)
 
 ## Version 7.4.4 {#release-7-4-4}
 
-### Build 9403 {#build-9403}
+### Build 9403 {#build-9403}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
 
-_15. Oktober 2026_
+_15. Oktober 2026_
 
 #### Sicherheitsverbesserungen {#security-7-4-4-9403}
 
@@ -76,7 +76,7 @@ Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlich
 Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart des Adobe Campaign-Servers (nlserver) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
 
-### Build 9402 {#build-9402}
+### Build 9402 {#build-9402}
 
 [!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
@@ -124,7 +124,7 @@ Um den Build zu laden und die Bereitstellung abzuschließen, ist ein Neustart de
 
 Adobe Analytics 1.4-APIs erreichen das Ende ihres Lebenszyklus. Wenn Sie den Adobe Analytics-Connector verwenden, müssen Sie ein Upgrade auf diesen Build vornehmen und je nach Bereitstellung und Anwendungsfall einige Migrationsschritte ausführen. [Erfahren Sie, wie Sie zur Adobe Analytics 2.0-API migrieren](../../technotes/using/analytics-2-migration.md).
 
-## Version 7.4.3 {#release-7-4-3}
+## Version 7.4.3 {#release-7-4-3}
 
 ### Build 9399 {#build-9399}
 
@@ -150,7 +150,7 @@ Adobe hat Sicherheitsaktualisierungen für Adobe Campaign Classic veröffentlich
 
 Um den Build zu laden und die Bereitstellung abzuschließen, ist ein [Neustart des Adobe Campaign-Servers (nlserver)](../../production/using/usual-commands.md#restart-services) erforderlich. Nach dem Neustart ist die Fehlerbehebung standardmäßig aktiv.
 
-### Build 9397 {#build-9397}
+### Build 9397 {#build-9397}
 
 [!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
