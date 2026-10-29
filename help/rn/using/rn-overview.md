@@ -34,9 +34,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1204'
-ht-degree: 86%
+ht-degree: 100%
 ---
 # Versionsaktualisierungen {#rn-overview}
 
@@ -83,13 +83,13 @@ Wenn Sie als Kundin oder Kunde gehostet werden, profitieren Sie automatisch, ohn
 
 ## Hotfixes {#hotflixes}
 
-In Ausnahmefällen kann Adobe einen kundenspezifischen Hotfix bereitstellen, um ein Problem zu beheben, bevor eine Fehlerbehebung in einer Standardversion verfügbar ist. Hotfix-Anfragen werden von Fall zu Fall geprüft und sind nicht Teil des standardmäßigen Veröffentlichungszyklus.
+In Ausnahmefällen kann Adobe zum Beheben eines Problems einen kundenspezifischen Hotfix bereitstellen, bevor eine Fehlerbehebung in einer Standardversion verfügbar ist. Hotfix-Anfragen werden von Fall zu Fall geprüft und sind nicht Teil des standardmäßigen Veröffentlichungszyklus.
 
-Hotfix-Anfragen sollten über die Adobe-Kundenunterstützung gestellt werden. Wenn genehmigt, wird ein Hotfix für den betroffenen Kunden und die betroffene Produkt-Build vorbereitet. Ein Hotfix ist keine allgemeine Version für alle Kunden. Adobe kann die Freigabe für andere betroffene Kunden nach der Überprüfung genehmigen.
+Hotfix-Anfragen sollten über die Adobe-Kundenunterstützung gestellt werden. Wenn eine Genehmigung erteilt wird, wird ein Hotfix für die betroffene Kundin bzw. den betroffenen Kunden und den entsprechenden Produkt-Build vorbereitet. Bei einem Hotfix handelt es sich nicht um eine allgemeine Version für alle Kundinnen und Kunden. Nach einer Prüfung kann Adobe zulassen, dass er für andere betroffene freigegebn wirdfreizugeben.
 
-Hotfix-Details werden bei Bereitstellung des Hotfixes möglicherweise nicht in den öffentlichen Versionshinweisen aufgeführt. Adobe kann zu einem späteren Zeitpunkt einen Hotfix in einer Standardversion für die jeweilige Version enthalten. Inklusion und Timing sind nicht garantiert. Informationen zu den in den Standardversionen enthaltenen Änderungen finden Sie in den Versionshinweisen .
+Hotfix-Details werden bei Bereitstellung des Hotfixes möglicherweise nicht in den öffentlichen Versionshinweisen aufgeführt. Adobe kann einen Hotfix zu einem späteren Zeitpunkt in eine Standardversion für die jeweilige Version aufnehmen. Aufnahme und Zeitpunkt sind nicht garantiert. Informationen zu den in den einzelnen Standardversionen enthaltenen Änderungen finden Sie in den Versionshinweisen.
 
-Dieser kundenspezifische Hotfix-Prozess ist getrennt von der oben beschriebenen Richtlinie für kritische Sicherheits-Patches, gemäß der Adobe kritische Sicherheits-Patches ohne vorherige Ankündigung auf gehostete Umgebungen anwenden kann.
+Dieser kundenspezifische Hotfix-Prozess ist getrennt von der oben beschriebenen Richtlinie für kritische Sicherheits-Patches, die besagt, dass Adobe kritische Sicherheits-Patches ohne vorherige Ankündigung auf gehostete Umgebungen anwenden kann.
 
 ### Sicherheits-Patches für gehostete Umgebungen {#security-patching}
 
