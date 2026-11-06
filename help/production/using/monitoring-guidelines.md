@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 29%
@@ -65,7 +65,7 @@ Es stehen mehrere automatische Methoden zur Verfügung. um Sie bei der Überwach
 
 **Audit-Protokoll**
 
-Das Audit-Protokoll ermöglicht es Ihnen, den vollständigen Verlauf der Änderungen in Bezug auf Optionen, Workflows und Schemata innerhalb Ihrer Instanz zu visualisieren. [Klicken Sie hier](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8), um weitere Informationen zu erhalten.
+Das Audit-Protokoll ermöglicht es Ihnen, den vollständigen Verlauf der Änderungen in Bezug auf Optionen, Workflows und Schemata innerhalb Ihrer Instanz zu visualisieren. [Klicken Sie hier](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8), um weitere Informationen zu erhalten.
 
 **Control Panel**
 
@@ -87,7 +87,7 @@ Die Workflow-Heatmap bietet eine visuelle Darstellung aller Workflows, die auf I
 
 **Audit-Protokoll**
 
-Das Audit-Protokoll ermöglicht es Ihnen, alle Änderungen, die an Workflows vorgenommen wurden, sowie ihren aktuellen Status zu visualisieren. [Hier klicken](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8).
+Das Audit-Protokoll ermöglicht es Ihnen, alle Änderungen, die an Workflows vorgenommen wurden, sowie ihren aktuellen Status zu visualisieren. [Hier klicken](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8).
 
 **Fehlerbehebung bei Workflows**
 
@@ -113,7 +113,7 @@ SMTP-Berichte enthalten Versandstatistiken und SMTP-Fehler nach Domain. [Weitere
 
 **Best Practices**
 
-Informationen zu Best Practices für den Versand und das Design von [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
+Informationen zu Best Practices für den Versand und das Design von [ finden ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
@@ -166,7 +166,7 @@ Technische Ressourcen finden Sie in der Dokumentation zu Campaign Classic. Es wi
 
 **Allgemeine Grundsätze**
 
-* [Campaign Classic-Architektur](../../production/using/general-architecture.md)
+* [Campaign Classic-Architektur](../../production/using/architecture-and-open-ports.md)
 * [Campaign Classic-Module](../../production/using/operating-principle.md)
 * [Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md)
 * [Einrichten des automatischen Starts von Modulen](../../production/using/administration.md)

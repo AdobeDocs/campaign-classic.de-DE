@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 48%
@@ -72,7 +72,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
 * Vermeiden Sie möglichst die Vergabe der Administrator-Funktion und achten Sie darauf, dass sich nicht zu viele Benutzer in der Administrator-Gruppe befinden.
 
-[Mehr dazu](../../installation/using/access-management.md)
+[Mehr dazu](../../installation/using/secure-access-management.md)
 
 ## Richtlinien für Script-Erstellung und Codierung
 
@@ -113,7 +113,7 @@ Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfiguration
 
 * **Schutz ausgehender Verbindungen** und **Befehlsbeschränkung** (Server-seitig)
 
-* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [&#128279;](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
+* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 
