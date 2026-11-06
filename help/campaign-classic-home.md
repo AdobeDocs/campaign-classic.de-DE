@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '707'
-ht-degree: 100%
+source-git-commit: c1f8b6661065c8d5c75e38d80f6986e0c6fbdfa8
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 62%
 ---
 # Campaign Classic v7 – Dokumentation {#campaign-classic-documentation}
+
+Diese Dokumentation behandelt Campaign Classic v7 für **On-Premise- und Hybrid**-Bereitstellungen: Installation, Konfiguration, Upgrades, Vorgänge und die für v7 spezifischen Funktionen. Wenn Ihre Instanz von Adobe (Managed Cloud Services) gehostet wird, lesen Sie die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home){target="_blank"}. Inhalte, die Campaign v8 auf dieselbe Weise dokumentiert, werden hier nicht mehr dupliziert: siehe [Von v7 zu v8](#from-v7-to-v8).
 
 <!--![](platform/using/assets/do-not-localize/banner_acc_doc.jpg) -->
 
@@ -46,24 +48,17 @@ Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe
 >[!BEGINTABS]
 
 
->[!TAB Version August 2026 ist live.]
+>[!TAB Version Oktober 2026 ist live!]
 
-Der Build Campaign Classic v7.4.4 - August &#39;26 enthält Sicherheitsaktualisierungen und führt für den Adobe Analytics Connector ein Upgrade auf die Analytics 2.0-API durch.
+Campaign Classic v7.4.5 - Build 26 vom Oktober (Build 9420) liefert Fehlerbehebungen für das externe Analytics-Konto, Sendungen, die im Status „Personalisierung ausstehend“ hängen, die Nutzung der Server-CPU, zeitweise auftretende Fehler bei der Aktualisierung des Datenmodells, den Spam-Überprüfungsfehler bei der Versanderstellung und die Quarantäne wiederkehrender Softbounces.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
 >[!TAB Verschieben zu Adobe IMS]
 
-Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren.
+Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe-Identitäts-Management-System (IMS) zu migrieren.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
-
-
->[!TAB Push-Kanal-Änderungen]
-
-Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen.
-
-[![Bild](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=de){target="_blank"}
 
 
 >[!ENDTABS]
@@ -81,7 +76,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <div><strong>Profile hinzufügen und verwalten</strong><br/>Testen Sie bequem die Profilverwaltung in der Adobe Campaign v7-Datenbank. Fügen Sie Profile manuell oder durch Importieren hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
     </td>
     <td>
-    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>Mit Workflows automatisieren</strong><br/>Erfahren Sie, wie Sie Workflows nutzen können, um Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. auszuführen.
     </div></td>
     <td>
@@ -92,7 +87,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -108,7 +103,8 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/> <strong>Kundenerlebnis</strong><br/><a href="workflow/using/about-workflows.md">Mit Workflows automatisieren</a> – <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de" target="_blank">Marketing-Kampagne</a> – <a href="interaction/using/interaction-and-offer-management.md">Interaktions- und Angebotsverwaltung</a> – <a href="delivery/using/about-personalization.md">Personalisierung</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Dokumentation zu Campaign v8)
+    <br/>
+      <strong>Kundenerlebnis:</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"> mit Workflows</a> (Dokumentation zu Campaign v8) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de" target="_blank">Marketing-Kampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interaction und Angebotsverwaltung</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Dokumentation zu Campaign v8)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -128,10 +124,26 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
-      <br/> <strong>Entwicklerressourcen</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Beschreibung des Datenmodells</a> (Dokumentation zu Campaign v8) – <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> – <a href="configuration/using/editing-forms.md">Schemastruktur</a> – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/de/tools/campaign-api">JSAPI-Referenzdokumentation</a> – <a href="configuration/using/about-custom-recipient-table.md">Benutzerdefinierte Empfängertabelle</a>
+      <br/>
+      <strong>Entwicklungsressourcen</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Datenmodellbeschreibung</a> (Dokumentation zu Campaign v8) - <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> - <a href="configuration/using/editing-forms.md">Eingabeformulare</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="https://experienceleague.adobe.com/de/tools/campaign-api">JSAPI-Referenzdokumentation</a> - <a href="configuration/using/about-custom-recipient-table.md">Benutzerdefinierte Empfängertabelle</a>
     </td>
   </tr>
 </table>
+
+## Von v7 zu v8 {#from-v7-to-v8}
+
+Inhalte, die in der Campaign v8-Dokumentation dokumentiert sind, wurden aus der v7-Dokumentation entfernt. Diese Tabelle verwenden, um sie zu finden.
+
+| Wenn Sie auf der Suche nach… | Weitere Informationen finden Sie in der Dokumentation zu Campaign v8 |
+| --- | --- |
+| Die Benutzeroberfläche | [Erkunden der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
+| Profile, Listen, Import und Export | [Profile und Daten importieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} |
+| Workflows | [Über Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| Marketing-Kampagnen | [Erste Schritte mit Marketing-Kampagnen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| Sendungen erstellen und versenden | [Erstellen einer Nachricht](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
+| Integrierte Berichte | [Erste Schritte mit Reporting](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
+| Berechtigungen | [Erste Schritte mit Berechtigungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| Eingabeformulare | [Erste Schritte mit Formularen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
 
 ## Zusätzliche Ressourcen
 
