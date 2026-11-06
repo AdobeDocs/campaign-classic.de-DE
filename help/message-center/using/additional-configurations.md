@@ -37,7 +37,7 @@ ht-degree: 91%
 
 Auf dieser Seite werden zusätzliche Konfigurationen für Transaktionsnachrichten in Campaign Classic v7 behandelt.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Ereignislöschung bei Transaktionsnachrichten und zu technischen Workflows finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Ereignislöschung bei Transaktionsnachrichten und zu technischen Workflows finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
@@ -144,7 +144,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 

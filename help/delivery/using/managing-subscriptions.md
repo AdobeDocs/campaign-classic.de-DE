@@ -166,7 +166,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  Workflows und ihre Verwendung werden in [ Abschnitt (Dokumentation zu Campaign ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}8) beschrieben.
+  Workflows und ihre Verwendung werden in [&#x200B; Abschnitt (Dokumentation zu Campaign &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}8) beschrieben.
 
 ### Empfänger von einem Service abmelden {#unsubscribing-a-recipient-from-a-service}
 
