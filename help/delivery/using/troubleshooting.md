@@ -60,4 +60,4 @@ HTTP/2-Connector: Erlauben Sie die Kommunikation zu und von den folgenden Server
 
 >[!NOTE]
 >
->Weitere Informationen zu den beiden Connectoren finden Sie unter &quot;[ der Mobile App in Adobe Campaign&quot; ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings){target="_blank"}Dokumentation zu Campaign v8).
+>Weitere Informationen zu den beiden Connectoren finden Sie unter &quot;[&#x200B; der Mobile App in Adobe Campaign&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings){target="_blank"}Dokumentation zu Campaign v8).
