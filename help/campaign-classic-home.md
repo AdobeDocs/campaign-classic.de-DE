@@ -76,7 +76,7 @@ Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Ado
     <div><strong>Profile hinzufügen und verwalten</strong><br/>Testen Sie bequem die Profilverwaltung in der Adobe Campaign v7-Datenbank. Fügen Sie Profile manuell oder durch Importieren hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
     </td>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>Mit Workflows automatisieren</strong><br/>Erfahren Sie, wie Sie Workflows nutzen können, um Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. auszuführen.
     </div></td>
     <td>
@@ -87,7 +87,7 @@ Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Ado
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -104,7 +104,7 @@ Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Ado
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Kundenerlebnis:</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"> mit Workflows</a> (Dokumentation zu Campaign v8) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de" target="_blank">Marketing-Kampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interaction und Angebotsverwaltung</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Dokumentation zu Campaign v8)
+      <strong>Kundenerlebnis:</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"> mit Workflows</a> (Dokumentation zu Campaign v8) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de" target="_blank">Marketing-Kampagne</a> - <a href="interaction/using/interaction-and-offer-management.md">Interaction und Angebotsverwaltung</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Dokumentation zu Campaign v8)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -138,8 +138,8 @@ Inhalte, die in der Campaign v8-Dokumentation dokumentiert sind, wurden aus der 
 | --- | --- |
 | Die Benutzeroberfläche | [Erkunden der Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
 | Profile, Listen, Import und Export | [Profile und Daten importieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import){target="_blank"} |
-| Workflows | [Über Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
-| Marketing-Kampagnen | [Erste Schritte mit Marketing-Kampagnen](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| Workflows | [Über Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| Marketing-Kampagnen | [Erste Schritte mit Marketing-Kampagnen](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
 | Sendungen erstellen und versenden | [Erstellen einer Nachricht](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
 | Integrierte Berichte | [Erste Schritte mit Reporting](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
 | Berechtigungen | [Erste Schritte mit Berechtigungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
