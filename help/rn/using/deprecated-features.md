@@ -43,8 +43,8 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 ---
@@ -80,7 +80,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
   </tr>
   <tr>
  <td>Netsize-SMPP-Connector</td>
- <td><p>Der Netsize-SMPP-Connector wird jetzt nicht mehr unterstützt. Wir empfehlen die Migration zum <strong>erweiterten allgemeinen SMPP-Connector</strong>. Weitere Informationen dazu finden Sie auf <a href="../../delivery/using/unsupported-connector-migration.md">dieser Seite</a>.</p>
+ <td><p>Der Netsize-SMPP-Connector wird jetzt nicht mehr unterstützt. Wir empfehlen die Migration zum <strong>erweiterten allgemeinen SMPP-Connector</strong>. Weitere Informationen dazu finden Sie auf <a href="../../delivery/using/sms-set-up.md">dieser Seite</a>.</p>
 <p>Geplantes Entfernungsdatum: Januar 2027</p>
 </td>
 </tr>

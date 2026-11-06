@@ -40,10 +40,10 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '109'
-ht-degree: 100%
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 84%
 ---
 # Fehlerbehebung{#troubleshooting}
 
@@ -60,4 +60,4 @@ HTTP/2-Connector: Erlauben Sie die Kommunikation zu und von den folgenden Server
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den beiden Connectoren finden Sie unter [Konfiguration der Mobile App in Adobe Campaign](configuring-the-mobile-application.md).
+>Weitere Informationen zu den beiden Connectoren finden Sie unter &quot;[ der Mobile App in Adobe Campaign&quot; ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings){target="_blank"}Dokumentation zu Campaign v8).

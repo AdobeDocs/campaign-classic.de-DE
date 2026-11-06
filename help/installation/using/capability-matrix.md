@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 51%
+ht-degree: 53%
 ---
 # Funktionsmatrix pro Modell{#capability-matrix-per-model}
 
@@ -31,7 +31,7 @@ Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarke
 
 Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Bereitstellungen angezeigt. Die Besonderheiten von Hybridbereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren -Standorten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../installation/using/hosting-models.md).
+Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) ](../../installation/using/hosting-models.md).
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
@@ -46,7 +46,7 @@ Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../i
 | Verschlüsseln/Entschlüsseln von Daten für Dateiübertragungen | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Komprimieren/Dekomprimieren von Dateien | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
 | Delegation von Domain-Namen | On-Demand | On-Demand | Nicht verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de) |
-| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (Dokumentation zu Campaign v8) |
+| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (Dokumentation zu Campaign v8) |
 | Zugreifen auf Zustellbarkeitsberichte | Verfügbar | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Konfigurieren der LDAP-Authentifizierung | Nicht verfügbar | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/connecting-through-ldap.md) |
 
@@ -66,4 +66,4 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 * [Versionshinweise](../../rn/using/latest-release.md)
 * [Campaign Classic-Upgrades](../../rn/using/rn-overview.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
-* [Versionen [!DNL Gold Standard]](../../rn/using/gold-standard.md)
+* [Versionen [!DNL Gold Standard]](../../rn/using/rn-overview.md)
