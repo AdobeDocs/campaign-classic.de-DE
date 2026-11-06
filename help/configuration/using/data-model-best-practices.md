@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4135'
-ht-degree: 54%
+source-wordcount: '3908'
+ht-degree: 51%
 ---
 # Best Practices für Datenmodelle{#data-model-best-practices}
 
 In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adobe Campaign-Datenmodells erläutert.
 
-Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie in [&#x200B; Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}diesem Abschnitt) (Dokumentation zu Campaign v8).
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Best Practices für Datenmodelle finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie in [ Abschnitt ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}diesem Abschnitt) (Dokumentation zu Campaign v8).
 
 Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. In diesem Dokument erfahren Sie, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu erweitern](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (Dokumentation zu Campaign v8).
-
-## Überblick {#overview}
-
-Das Adobe Campaign-System ist äußerst flexibel und kann über die ursprüngliche Implementierung hinaus erweitert werden. Obwohl die Möglichkeiten unbegrenzt sind, ist es wichtig, die richtigen Entscheidungen zu treffen und eine solide Grundlage zu schaffen, um mit der Entwicklung Ihres Datenmodells zu beginnen.
-
-Dieses Dokument enthält gängige Anwendungsfälle und Best Practices, mit denen Sie Ihr Adobe Campaign-Tool ordnungsgemäß entwickeln können.
 
 ## Architektur von Datenmodellen {#data-model-architecture}
 
@@ -78,27 +76,11 @@ Dieser kundenorientierte Ansatz wird in der Grafik unten dargestellt. Die **Empf
 
 Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICONTROL &quot;Admin&quot; > &quot;Konfiguration&quot; > &quot;Datenschemata&quot;]**, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
-Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) &#x200B;](../../configuration/using/data-model-description.md).
+Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) ](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
->Mit Adobe Campaign Classic können Sie eine benutzerdefinierte Kundentabelle erstellen. In den meisten Fällen wird jedoch empfohlen, den Standard [Empfängertabelle](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Campaign v8-Dokumentation) zu nutzen, der bereits über zusätzliche vordefinierte Tabellen und Funktionen verfügt.
-
-### Daten für Adobe Campaign {#data-for-campaign}
-
-Welche Daten sollten an Adobe Campaign gesendet werden? Es ist äußerst wichtig festzustellen, welche Daten Sie für Ihre Marketing-Aktivitäten benötigen.
-
->[!NOTE]
->
->Adobe Campaign ist weder ein Data Warehouse noch ein Reporting-Tool. Versuchen Sie also nicht, alle möglichen Kunden und zugehörige Daten in Adobe Campaign zu importieren bzw. Daten zu importieren, die nur dem Erstellen von Berichten dienen werden.
-
-Um zu entscheiden, ob ein Attribut in Adobe Campaign erforderlich ist, fragen Sie sich, ob es in eine der folgenden Kategorien passt:
-
-* Für die **Segmentierung** verwendetes Attribut
-* Für **Datenverwaltungsprozesse** verwendetes Attribut (z. B. Aggregatberechnung)
-* Für die **Personalisierung** verwendetes Attribut
-
-Wenn ein Attribut nicht in eine dieser Kategorien fällt, benötigen Sie es wahrscheinlich nicht in Adobe Campaign.
+>Mit Adobe Campaign Classic können Sie eine benutzerdefinierte Kundentabelle erstellen. In den meisten Fällen wird jedoch empfohlen, den Standard [Empfängertabelle](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Campaign v8-Dokumentation) zu nutzen, der bereits über zusätzliche vordefinierte Tabellen und Funktionen verfügt.
 
 ### Auswahl von Datentypen {#data-types}
 
@@ -185,7 +167,7 @@ Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüss
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1BB. Technisch ist es möglich, eine vollständige Bandbreite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen gewechselt wird: Der Datensatz 0 wird von Adobe Campaign in generierten SQL-Abfragen normalerweise ignoriert.
 
-Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/de/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 
@@ -313,12 +295,6 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Performance siche
 * Stellen Sie sicher, dass keine der täglichen Kampagnen während des Importvorgangs oder bei der Ausführung eines manuellen Prozesses ausgeführt wird.
 * Verwenden Sie eine oder mehrere Referenztabellen, anstatt ein Feld in jeder Zeile zu duplizieren. Bei Verwendung von Schlüssel/Wert-Paaren ist es empfehlenswert, einen numerischen Schlüssel zu wählen.
 * Eine kurze Zeichenfolge ist weiterhin zulässig. Falls Verweistabellen bereits in einem externen System vorhanden sind, erleichtert die Wiederverwendung derselben die Datenintegration mit Adobe Campaign.
-
-### 1-zu-n-Beziehungen {#one-to-many-relationships}
-
-* Das Datendesign beeinflusst Benutzerfreundlichkeit und Funktionalität. Wenn Sie Ihr Datenmodell mit zahlreichen 1-zu-n-Beziehungen entwickeln, wird es für Benutzer schwieriger, in der Anwendung eine sinnvolle Logik zu erstellen. Für technisch nicht versierte Marketing-Experten kann es schwierig sein, eine 1-zu-n-Filterlogik zu entwerfen und zu verstehen.
-* Es wird empfohlen, alle wichtigen Felder in einer Tabelle zu vereinen, da Benutzer so leichter Abfragen erstellen können. Unter Umständen kann die Performance auch verbessert werden, wenn einige Felder in mehreren Tabellen dupliziert werden, wenn dadurch ein Join vermieden werden kann.
-* Bestimmte integrierte Funktionen können nicht auf 1-zu-n Beziehungen verweisen, z. B. die Angebotsgewichtungsformel und Sendungen.
 
 ## Große Tabellen {#large-tables}
 

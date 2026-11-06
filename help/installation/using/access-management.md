@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '393'
 ht-degree: 8%
 ---
 # Zugriffsverwaltung {#access-management}
@@ -62,7 +62,7 @@ Verwenden Sie keinen Admin-Operator (oder geben Sie ihn nicht frei). Erstellen S
 
 Vermeiden Sie es, zu viele Benutzer in der Administratorgruppe (oder mit spezifischen Administratorrechten) hinzuzufügen. Sie sind sehr leistungsstarke Operatoren (sie können alle SQL-Anweisungen ausführen, Befehle auf dem Server ausführen usw.).
 
-Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](../../platform/using/access-management.md#named-rights):
+Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (Dokumentation zu Campaign v8):
 
 * **ADMINISTRATION** (admin): Ermöglicht Zugriff auf alle Elemente und deren Ausführung, wobei alle spezifischen Berechtigungsprüfungen umgangen werden, sodass die Berechtigung „PROGRAMMAUSFÜHRUNG“ (createProcess) und die spezifischen SQL-Berechtigungen enthalten sind
 

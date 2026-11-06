@@ -28,14 +28,18 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: ht
-source-wordcount: '923'
-ht-degree: 100%
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 91%
 ---
 # Zusätzliche Konfigurationen {#mc-additional-configurations}
 
+Auf dieser Seite werden zusätzliche Konfigurationen für Transaktionsnachrichten in Campaign Classic v7 behandelt.
 
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Ereignislöschung bei Transaktionsnachrichten und zu technischen Workflows finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
@@ -55,63 +59,9 @@ Gehen Sie dazu wie folgt vor:
 >
 >Die Anzahl der ausstehenden Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Bereitstellungassistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
-## Ereignisse bereinigen {#purging-events}
-
-Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Bereitstellungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-assistant) konfiguriert werden.
-
-Die Ereignisbereinigung wird automatisch vom [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) durchgeführt. Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
-
-Um die Bereinigungsparameter zu ändern, nutzen Sie die aufsteigenden und absteigenden Pfeile.
-
-Bereinigungsparameter in Kontrollinstanzen:
-
-![](assets/messagecenter_delete_events_001.png)
-
-Bereinigungsparamter in Ausführungsinstanzen:
-
-![](assets/messagecenter_delete_events_002.png)
-
-Weiterführende Informationen zum Datenbankbereinigungs-Workflow finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
-
-
 ## Technische Workflows {#technical-workflows}
 
 Die technischen Workflows für Message Center sind teils in der Kontrollinstanz, teils in der oder den Ausführungsinstanz(en) enthalten.
-
-Vor Freigabe der Transaktionsnachrichten-Vorlagen muss sichergestellt werden, dass die mit Transaktionsnachrichten in Verbindung stehenden technischen Workflows (Message Center) der Kontrollinstanz und der verschiedenen Ausführungsinstanzen erstellt und gestartet sind.
-
-### Workflows der Kontrollinstanz {#control-instance-workflows}
-
-In der Kontrollinstanz müssen Sie, unabhängig davon, ob Sie eine oder mehrere Ausführungsinstanzen registriert haben, für jedes externe **[!UICONTROL Message Center Ausführungs-Instanz]**-Konto einen Archivierungs-Workflow erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
-
-![](assets/messagecenter_archiving_002.png)
-
-Diese Workflows können Sie dann über den Ordner **Administration > Betreibung > Message Center** aufrufen. Nach der Erstellung werden die Archivierungs-Workflows automatisch gestartet.
-
-<!--
-**Minimal architecture**
-
-Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
-
-![](assets/messagecenter_archiving_001.png)
--->
-
-### Workflows der Ausführungsinstanz {#execution-instance-workflows}
-
-Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows erfolgt in den Ausführungsinstanzen im Knoten **Administration > Betreibung > Message Center**. Sie müssen sie lediglich starten. Die Workflows in der Liste sind:
-
-* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): dieser Workflow teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
-* **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
-* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): dieser Workflow ordnet jedem Ereignis einen Status zu.
-
-  Folgende Status sind möglich:
-
-  * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange. Es wurde noch keine Nachrichtenvorlage zugeordnet.
-  * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
-  * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand erfolgt ist.
-  * **[!UICONTROL Vom Versand ignoriert]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
-  * **[!UICONTROL Versandfehler]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.
-  * **[!UICONTROL Ereignis wurde nicht übernommen]**: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht verarbeitet.
 
 ### Zeitplan des Archivierungs-Workflows
 

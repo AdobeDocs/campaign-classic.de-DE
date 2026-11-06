@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '1182'
-ht-degree: 100%
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 97%
 ---
 # Verwalten von Abonnements{#managing-subscriptions}
 
@@ -166,7 +166,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  Workflows und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../workflow/using/about-workflows.md) beschrieben.
+  Workflows und ihre Verwendung werden in [ Abschnitt (Dokumentation zu Campaign ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}8) beschrieben.
 
 ### Empfänger von einem Service abmelden {#unsubscribing-a-recipient-from-a-service}
 
