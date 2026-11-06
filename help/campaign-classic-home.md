@@ -69,8 +69,8 @@
 <target xml:lang="en-XX">Campaign Classic v7 – Dokumentation</target>
 </trans-unit>
 <trans-unit id="tu2" xml:space="preserve">
-<source xml:lang="en-US">This documentation covers Campaign Classic v7 for <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>on-premise and hybrid<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> deployments: installation, configuration, upgrades, operations and the features that are specific to v7. If your instance is hosted by Adobe (Managed Cloud Services), refer to the <ph id="3" ctype="x-LINK">[</ph>Campaign v8 documentation<ph id="4" ctype="x-LINK">[#$tu3]{target="_blank"}</ph>. Content that Campaign v8 documents in the same way is no longer duplicated here: see <ph id="5" ctype="x-LINK">[</ph>From v7 to v8<ph id="6" ctype="x-LINK">](#from-v7-to-v8)</ph>.</source>
-<target xml:lang="en-XX">Diese Dokumentation behandelt Campaign Classic v7 für <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>On-Premise- und Hybrid<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph>-Bereitstellungen: Installation, Konfiguration, Upgrades, Vorgänge und die für v7 spezifischen Funktionen. Wenn Ihre Instanz von Adobe (Managed Cloud Services) gehostet wird, lesen Sie die <ph id="3" ctype="x-LINK">[</ph>Campaign v8-Dokumentation<ph id="4" ctype="x-LINK">[#$tu3]{target="_blank"}</ph>. Inhalte, die Campaign v8 auf dieselbe Weise dokumentiert, werden hier nicht mehr dupliziert: siehe <ph id="5" ctype="x-LINK">[</ph>Von v7 zu v8<ph id="6" ctype="x-LINK">](#from-v7-to-v8)</ph>.</target>
+<source xml:lang="en-US">This documentation covers Campaign Classic v7 for <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>on-premise and hybrid<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph> deployments: installation, configuration, upgrades, operations and the features that are specific to v7. If your instance is hosted by Adobe (Managed Cloud Services), refer to the <ph id="3" ctype="x-LINK">&lbrack;</ph>Campaign v8 documentation<ph id="4" ctype="x-LINK">[#$tu3]{target="_blank"}</ph>. Content that Campaign v8 documents in the same way is no longer duplicated here: see <ph id="5" ctype="x-LINK">[</ph>From v7 to v8<ph id="6" ctype="x-LINK">](#from-v7-to-v8)</ph>.</source>
+<target xml:lang="en-XX">Diese Dokumentation behandelt Campaign Classic v7 für <ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>On-Premise- und Hybrid<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph>-Bereitstellungen: Installation, Konfiguration, Upgrades, Vorgänge und die für v7 spezifischen Funktionen. Wenn Ihre Instanz von Adobe (Managed Cloud Services) gehostet wird, lesen Sie die <ph id="3" ctype="x-LINK">&lbrack;</ph>Campaign v8-Dokumentation<ph id="4" ctype="x-LINK">[#$tu3]{target="_blank"}</ph>. Inhalte, die Campaign v8 auf dieselbe Weise dokumentiert, werden hier nicht mehr dupliziert: siehe <ph id="5" ctype="x-LINK">[</ph>Von v7 zu v8<ph id="6" ctype="x-LINK">](#from-v7-to-v8)</ph>.</target>
 </trans-unit>
 <trans-unit id="tu4" xml:space="preserve">
 <source xml:lang="en-US">What's New</source>
@@ -81,12 +81,12 @@
 <target xml:lang="en-XX">Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe Campaign Classic v7 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten <ph id="1" ctype="x-LINK">[</ph>Versionshinweisen<ph id="2" ctype="x-LINK">](rn/using/latest-release.md)</ph>.</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!BEGINTABS">[!BEGINTABS]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!BEGINTABS">[!BEGINTABS]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!BEGINTABS">[!BEGINTABS]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!BEGINTABS">[!BEGINTABS]</ph></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>October 2026 release is live!<ph id="2" ctype="x-LINK_REF">]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>Version Oktober 2026 ist live!<ph id="2" ctype="x-LINK_REF">]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>October 2026 release is live!<ph id="2" ctype="x-LINK_REF">]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>Version Oktober 2026 ist live!<ph id="2" ctype="x-LINK_REF">]</ph></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en-US">The Campaign Classic v7.4.5 - October '26 build (Build 9420) delivers fixes for the Analytics external account, deliveries stuck in the personalization pending status, server CPU usage, intermittent data model update failures, the spam check error in delivery creation and the quarantine of recurring soft bounces.</source>
@@ -97,8 +97,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[![</ph>Bild<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)</ph></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>Move to Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>Verschieben zu Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>Move to Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>Verschieben zu Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en-US">To reinforce security and authentication process, Adobe Campaign highly recommends to migrate end user authentication mode from the login/password native authentication to Adobe Identity Management System (IMS).</source>
@@ -109,8 +109,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[![</ph>Bild<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)</ph></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!ENDTABS">[!ENDTABS]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!ENDTABS">[!ENDTABS]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!ENDTABS">[!ENDTABS]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!ENDTABS">[!ENDTABS]</ph></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en-US">Start with the basics</source>
@@ -295,72 +295,72 @@
 <target xml:lang="en-XX">Die Benutzeroberfläche</target>
 </trans-unit>
 <trans-unit id="tu21" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Discover the user interface<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erkunden der Benutzeroberfläche<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Discover the user interface<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erkunden der Benutzeroberfläche<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu23" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Profiles, lists, import and export</source>
 <target xml:lang="en-XX">Profile, Listen, Import und Export</target>
 </trans-unit>
 <trans-unit id="tu24" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Import profiles and data<ph id="2" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Profile und Daten importieren<ph id="2" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Import profiles and data<ph id="2" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Profile und Daten importieren<ph id="2" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu26" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Workflows</source>
 <target xml:lang="en-XX">Workflows</target>
 </trans-unit>
 <trans-unit id="tu27" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>About workflows<ph id="2" ctype="x-LINK">[#$tu28]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Über Workflows<ph id="2" ctype="x-LINK">[#$tu28]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>About workflows<ph id="2" ctype="x-LINK">[#$tu28]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Über Workflows<ph id="2" ctype="x-LINK">[#$tu28]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu29" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Marketing campaigns</source>
 <target xml:lang="en-XX">Marketing-Kampagnen</target>
 </trans-unit>
 <trans-unit id="tu30" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Get started with marketing campaigns<ph id="2" ctype="x-LINK">[#$tu31]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erste Schritte mit Marketing-Kampagnen<ph id="2" ctype="x-LINK">[#$tu31]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Get started with marketing campaigns<ph id="2" ctype="x-LINK">[#$tu31]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erste Schritte mit Marketing-Kampagnen<ph id="2" ctype="x-LINK">[#$tu31]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu32" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Creating and sending deliveries</source>
 <target xml:lang="en-XX">Sendungen erstellen und versenden</target>
 </trans-unit>
 <trans-unit id="tu33" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Create a message<ph id="2" ctype="x-LINK">[#$tu34]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erstellen einer Nachricht<ph id="2" ctype="x-LINK">[#$tu34]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Create a message<ph id="2" ctype="x-LINK">[#$tu34]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erstellen einer Nachricht<ph id="2" ctype="x-LINK">[#$tu34]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu35" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Built-in reports</source>
 <target xml:lang="en-XX">Integrierte Berichte</target>
 </trans-unit>
 <trans-unit id="tu36" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Get started with reporting<ph id="2" ctype="x-LINK">[#$tu37]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erste Schritte mit Reporting<ph id="2" ctype="x-LINK">[#$tu37]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Get started with reporting<ph id="2" ctype="x-LINK">[#$tu37]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erste Schritte mit Reporting<ph id="2" ctype="x-LINK">[#$tu37]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu38" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Permissions</source>
 <target xml:lang="en-XX">Berechtigungen</target>
 </trans-unit>
 <trans-unit id="tu39" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Get started with permissions<ph id="2" ctype="x-LINK">[#$tu40]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erste Schritte mit Berechtigungen<ph id="2" ctype="x-LINK">[#$tu40]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Get started with permissions<ph id="2" ctype="x-LINK">[#$tu40]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erste Schritte mit Berechtigungen<ph id="2" ctype="x-LINK">[#$tu40]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu41" restype="x-TABLECELL_TEXT" xml:space="preserve">
 <source xml:lang="en-US">Input forms</source>
 <target xml:lang="en-XX">Eingabeformulare</target>
 </trans-unit>
 <trans-unit id="tu42" restype="x-TABLECELL_TEXT" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Get started with input forms<ph id="2" ctype="x-LINK">[#$tu43]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Erste Schritte mit Formularen<ph id="2" ctype="x-LINK">[#$tu43]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Get started with input forms<ph id="2" ctype="x-LINK">[#$tu43]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Erste Schritte mit Formularen<ph id="2" ctype="x-LINK">[#$tu43]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu44" xml:space="preserve">
 <source xml:lang="en-US">Additional resources</source>
 <target xml:lang="en-XX">Zusätzliche Ressourcen</target>
 </trans-unit>
 <trans-unit id="tu45" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Adobe Campaign Product Description<ph id="2" ctype="x-LINK">[#$tu46]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>Compatibility matrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md)</ph> - <ph id="5" ctype="x-LINK">[</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu47]{target="_blank"}</ph> - <ph id="7" ctype="x-LINK">[</ph>Control Panel for Campaign<ph id="8" ctype="x-LINK">[#$tu48]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">[</ph>Email Tracking Pixels and CNIL Guidance<ph id="10" ctype="x-LINK">[#$tu49]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Adobe Campaign – Produktbeschreibung<ph id="2" ctype="x-LINK">[#$tu46]{target="_blank"}</ph> – <ph id="3" ctype="x-LINK">[</ph>Kompatibilitätsmatrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md)</ph> – <ph id="5" ctype="x-LINK">[</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu47]{target="_blank"}</ph> – <ph id="7" ctype="x-LINK">[</ph>Control Panel für Campaign<ph id="8" ctype="x-LINK">[#$tu48]{target="_blank"}</ph> – <ph id="9" ctype="x-LINK">[</ph>E-Mail-Tracking-Pixel und CNIL-Anleitung<ph id="10" ctype="x-LINK">[#$tu49]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Adobe Campaign Product Description<ph id="2" ctype="x-LINK">[#$tu46]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>Compatibility matrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md){target="_blank"}</ph> - <ph id="5" ctype="x-LINK">&lbrack;</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu47]</ph> - <ph id="7" ctype="x-LINK">&lbrack;</ph>Control Panel for Campaign<ph id="8" ctype="x-LINK">[#$tu48]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">&lbrack;</ph>Email Tracking Pixels and CNIL Guidance<ph id="10" ctype="x-LINK">[#$tu49]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Adobe Campaign – Produktbeschreibung<ph id="2" ctype="x-LINK">[#$tu46]{target="_blank"}</ph> – <ph id="3" ctype="x-LINK">[</ph>Kompatibilitätsmatrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md){target="_blank"}</ph> – <ph id="5" ctype="x-LINK">&lbrack;</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu47]</ph> – <ph id="7" ctype="x-LINK">&lbrack;</ph>Control Panel für Campaign<ph id="8" ctype="x-LINK">[#$tu48]{target="_blank"}</ph> – <ph id="9" ctype="x-LINK">&lbrack;</ph>E-Mail-Tracking-Pixel und CNIL-Anleitung<ph id="10" ctype="x-LINK">[#$tu49]{target="_blank"}</ph></target>
 </trans-unit>
 </body>
 </file>
