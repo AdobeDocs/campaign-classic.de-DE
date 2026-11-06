@@ -3,55 +3,55 @@
 <file original="help/campaign-classic-home.md.mdsc" source-language="en-US" target-language="en-XX" datatype="x-text/markdown">
 <body>
 <trans-unit id="tu3" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/campaign-home</target>
 </trans-unit>
 <trans-unit id="tu22" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui</target>
 </trans-unit>
 <trans-unit id="tu25" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import</target>
 </trans-unit>
 <trans-unit id="tu28" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</target>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</target>
 </trans-unit>
 <trans-unit id="tu31" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns</target>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/set-up-campaigns</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-orchestration/set-up-campaigns</target>
 </trans-unit>
 <trans-unit id="tu34" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message</target>
 </trans-unit>
 <trans-unit id="tu37" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting</target>
 </trans-unit>
 <trans-unit id="tu40" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions</target>
 </trans-unit>
 <trans-unit id="tu43" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms</target>
 </trans-unit>
 <trans-unit id="tu46" xml:space="preserve">
-<source xml:lang="en-US">https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html</source>
+<source xml:lang="en-US">https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html</source>
 <target xml:lang="en-XX">https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html</target>
 </trans-unit>
 <trans-unit id="tu47" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de</target>
 </trans-unit>
 <trans-unit id="tu48" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de</target>
 </trans-unit>
 <trans-unit id="tu49" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/cnil-pixel-tracking</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/cnil-pixel-tracking</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/cnil-pixel-tracking</target>
 </trans-unit>
 <group id="sd1_ssf1" resname="sub-filter:sd1">
@@ -142,8 +142,8 @@
 <target xml:lang="en-XX"><bpt id="1" ctype="x-strong">&lt;strong></bpt>Profile hinzufügen und verwalten<ept id="1">&lt;/strong>&lt;br/></ept>Testen Sie bequem die Profilverwaltung in der Adobe Campaign v7-Datenbank. Fügen Sie Profile manuell oder durch Importieren hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</target>
 </trans-unit>
 <trans-unit id="sd1_sf1_tu6" resname="sd1_16" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</target>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</target>
 </trans-unit>
 <trans-unit id="sd1_sf1_tu5" resname="sd1_18" restype="x-td" xml:space="preserve">
 <source xml:lang="en-US">
@@ -180,8 +180,8 @@
 <target xml:lang="en-XX"></target>
 </trans-unit>
 <trans-unit id="sd1_sf1_tu13" resname="sd1_37" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</target>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</target>
 </trans-unit>
 <trans-unit id="sd1_sf1_tu12" resname="sd1_39" restype="x-td" xml:space="preserve">
 <source xml:lang="en-US"></source>
@@ -210,35 +210,35 @@
     </target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu3" resname="sd1_6" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu4" resname="sd1_7" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu5" resname="sd1_8" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu6" resname="sd1_9" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu7" resname="sd1_10" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</source>
-<target xml:lang="en-XX">https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows</target>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu8" resname="sd1_11" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu9" resname="sd1_12" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu10" resname="sd1_13" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu2" resname="sd1_14" restype="x-td" xml:space="preserve">
@@ -254,11 +254,11 @@
     </target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu12" resname="sd1_17" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu13" resname="sd1_18" restype="x-href" xml:space="preserve">
-<source xml:lang="en-US">https://experienceleague.adobe.com/en/tools/campaign-api</source>
+<source xml:lang="en-US">https://experienceleague.adobe.com/de/tools/campaign-api</source>
 <target xml:lang="en-XX">https://experienceleague.adobe.com/de/tools/campaign-api</target>
 </trans-unit>
 <trans-unit id="sd1_sf2_tu11" resname="sd1_19" restype="x-td" xml:space="preserve">

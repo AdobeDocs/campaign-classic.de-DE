@@ -62,7 +62,7 @@ Verwenden Sie keinen Admin-Operator (oder geben Sie ihn nicht frei). Erstellen S
 
 Vermeiden Sie es, zu viele Benutzer in der Administratorgruppe (oder mit spezifischen Administratorrechten) hinzuzufügen. Sie sind sehr leistungsstarke Operatoren (sie können alle SQL-Anweisungen ausführen, Befehle auf dem Server ausführen usw.).
 
-Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (Dokumentation zu Campaign v8):
+Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (Dokumentation zu Campaign v8):
 
 * **ADMINISTRATION** (admin): Ermöglicht Zugriff auf alle Elemente und deren Ausführung, wobei alle spezifischen Berechtigungsprüfungen umgangen werden, sodass die Berechtigung „PROGRAMMAUSFÜHRUNG“ (createProcess) und die spezifischen SQL-Berechtigungen enthalten sind
 

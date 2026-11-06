@@ -65,7 +65,7 @@ Es stehen mehrere automatische Methoden zur Verfügung. um Sie bei der Überwach
 
 **Audit-Protokoll**
 
-Das Audit-Protokoll ermöglicht es Ihnen, den vollständigen Verlauf der Änderungen in Bezug auf Optionen, Workflows und Schemata innerhalb Ihrer Instanz zu visualisieren. [Klicken Sie hier](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8), um weitere Informationen zu erhalten.
+Das Audit-Protokoll ermöglicht es Ihnen, den vollständigen Verlauf der Änderungen in Bezug auf Optionen, Workflows und Schemata innerhalb Ihrer Instanz zu visualisieren. [Klicken Sie hier](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8), um weitere Informationen zu erhalten.
 
 **Control Panel**
 
@@ -87,7 +87,7 @@ Die Workflow-Heatmap bietet eine visuelle Darstellung aller Workflows, die auf I
 
 **Audit-Protokoll**
 
-Das Audit-Protokoll ermöglicht es Ihnen, alle Änderungen, die an Workflows vorgenommen wurden, sowie ihren aktuellen Status zu visualisieren. [Hier klicken](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8).
+Das Audit-Protokoll ermöglicht es Ihnen, alle Änderungen, die an Workflows vorgenommen wurden, sowie ihren aktuellen Status zu visualisieren. [Hier klicken](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (Dokumentation zu Campaign v8).
 
 **Fehlerbehebung bei Workflows**
 
