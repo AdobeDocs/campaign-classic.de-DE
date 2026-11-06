@@ -46,7 +46,7 @@ Im folgenden Abschnitt finden Sie Informationen zu häufigen Problemen bei der A
 
 Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitten:
 
-* [Über Workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (Dokumentation zu Campaign v8)
+* [Über Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (Dokumentation zu Campaign v8)
 * [Workflow starten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=de){target="_blank"}.
 * [Workflow-Lebenszyklus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target="_blank"}.
 * [Best Practices bei der Verwendung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}.

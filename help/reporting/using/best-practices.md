@@ -61,7 +61,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
    * Indikatoren einem vorhandenen Bericht hinzufügen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
    * die Daten in der Datenbank anzeigen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
    * Einen neuen Versandbericht erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Exportieren von Daten aus der Adobe Campaign-Datenbank (über einen Workflow). Weitere Informationen finden [&#x200B; in diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} Campaign v8-Dokumentation.
+   * Exportieren von Daten aus der Adobe Campaign-Datenbank (über einen Workflow). Weitere Informationen finden [&#x200B; in diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} Campaign v8-Dokumentation.
    * Eine Pivot-Tabelle erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Aggregierte Daten untersuchen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/ac-cubes.md)
    * Verwenden Sie einen Assistenten, um Daten zu analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)

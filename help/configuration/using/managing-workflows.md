@@ -42,6 +42,6 @@ Wenn Ihre neuen Workflows auf einer kürzlich erstellten Vorlage basieren, wird 
 
 Alle in Ihrem Workflow verwendeten Aktivitäten verwenden somit Ihre benutzerdefinierte Tabelle, ohne dass eine zusätzliche manuelle Konfiguration erforderlich ist.
 
-Weiterführende Informationen zu Workflows finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} Campaign v8).
+Weiterführende Informationen zu Workflows finden Sie in [&#x200B; Abschnitt (Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} Campaign v8).
 
 ![](assets/cfg_external_table_workflow.png)

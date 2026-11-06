@@ -49,7 +49,7 @@ Zur Nutzung der Transaktionsnachrichten-Funktionen müssen Sie die Kontroll- und
 
 >[!IMPORTANT]
 >
->Erweiterungen von Schemata, die von [technischen Workflows von Message Center](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) auf Kontroll- oder Ausführungsinstanzen verwendet werden, müssen auf den anderen vom Transaktionsnachrichten-Modul verwendeten Instanzen dupliziert werden.
+>Erweiterungen von Schemata, die von [technischen Workflows von Message Center](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) auf Kontroll- oder Ausführungsinstanzen verwendet werden, müssen auf den anderen vom Transaktionsnachrichten-Modul verwendeten Instanzen dupliziert werden.
 
 Außerdem müssen Sie die Ausführungsinstanz(en) angeben und mit der/den Kontrollinstanz(en) verbinden.
 
