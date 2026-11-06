@@ -33,15 +33,19 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 96%
 ---
 # Fehlerbehebung bei IMS{#ims-troubleshooting}
 
 
 Mithilfe folgender Tipps können **On-Premise** und **Hybrid**-Kundinnen und -Kunden die gängigsten Probleme mit der IMS-Integretion beheben. **Gehostete** Kundinnen und Kunden wenden sich bitte an Adobe.
+
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Anmelden bei Adobe ID und zur Fehlerbehebung bei Anmeldeproblemen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 **Externes Konto**
 
@@ -106,16 +110,3 @@ Führen Sie einen Neustart des Servers durch, falls Änderungen an den obigen Ei
 * Der Benutzer kann nicht auf die Seite für die Anmeldung mit der Adobe ID zugreifen:
 
   Überprüfen Sie anhand der vorherigen Schritte die Perimeterkonfiguration.
-
-**Probleme mit WebView2-Cache**
-
-Wenn bei der Anmeldung mit Ihrer Adobe ID bei der **[!UICONTROL Client-Konsole]** Probleme auftreten, versuchen Sie, den lokalen WebView2-Cache zu löschen. In den meisten Fällen löst dies das Problem. Gehen Sie wie folgt vor:
-
-1. Schließen Sie die **[!UICONTROL Client-Konsole]** und stoppen Sie alle laufenden `nlclient`-Prozesse.
-
-1. Löschen Sie alle `webview2`- und `webview2Cache`-Ordner an den folgenden Speicherorten:
-
-   * `C:\ProgramData\Neolane\NL_5\nlclient\`
-   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
-
-1. Starten Sie die **[!UICONTROL Client-Konsole]** neu und melden Sie sich mit Ihrer Adobe ID an. Die Cache-Ordner werden beim nächsten Launch automatisch neu erstellt.

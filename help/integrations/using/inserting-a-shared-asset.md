@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 97%
 ---
 # Freigegebene Assets nutzen{#inserting-a-shared-asset}
 
@@ -64,4 +64,4 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
 >[!NOTE]
 >
->Wenn Sie die Integration mit Adobe Target nutzen, haben Sie die Möglichkeit, ein freigegebenes Bild als Standardbild zu verwenden. Mehr dazu erfahren Sie auf [dieser Seite](../../integrations/using/integrating-with-adobe-target.md).
+>Wenn Sie die Integration mit Adobe Target nutzen, haben Sie die Möglichkeit, ein freigegebenes Bild als Standardbild zu verwenden. Weitere Informationen finden Sie [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (Dokumentation zu Campaign v8).
