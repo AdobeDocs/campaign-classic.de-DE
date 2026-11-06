@@ -236,7 +236,7 @@ Auf diesem Server werden Web-Formulare, Mirrorseiten usw. gehostet. Die folgende
 
 ## Integration mit Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Für die Integration zwischen Adobe Campaign und Adobe Experience Manager müssen mehrere Ports geöffnet werden, wenn die Installation „On-Premise“ erfolgt. Weitere Informationen zur Konfiguration dieser Integration finden Sie in der [ Dokumentation ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} Campaign v8 .
+Für die Integration zwischen Adobe Campaign und Adobe Experience Manager müssen mehrere Ports geöffnet werden, wenn die Installation „On-Premise“ erfolgt. Weitere Informationen zur Konfiguration dieser Integration finden Sie in der [&#x200B; Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} Campaign v8 .
 
 <table> 
  <tbody> 
