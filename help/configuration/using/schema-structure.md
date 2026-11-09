@@ -49,9 +49,9 @@ Auf dieser Seite wird aufgelistet, wie die Adobe Campaign-Datentypen den Datenty
 
 >[!NOTE]
 >
->Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Schemastruktur finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}.
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zur Schemastruktur finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}.
 >
->[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}
 
 ## Zuordnen der Typen von Adobe Campaign-/DBMS-Daten {#mapping-the-types-of-adobe-campaign-dbms-data}
 
@@ -143,5 +143,5 @@ Weitere Informationen finden Sie unter den folgenden Links:
 
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Link-Verwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (Dokumentation zu Campaign v8)
+* [Link-Verwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (Dokumentation zu Campaign v8)
 * [Schlüssel-Management](database-keys.md)

@@ -51,9 +51,9 @@ In diesem Abschnitt wird beschrieben, wie Sie Zugriffs- und Löschanfragen erste
 
 >[!NOTE]
 >
->Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den bei der Verarbeitung von Datenschutzanfragen durchsuchten Tabellen finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}.
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den bei der Verarbeitung von Datenschutzanfragen durchsuchten Tabellen finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}.
 >
->[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
 
 ## Erstellen einer Datenschutzanfrage {#create-privacy-request-ui}
 
