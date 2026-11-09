@@ -48,7 +48,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Wenn Sie den [erweiterten Bearbeitungsmodus) ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"}Campaign v8-Dokumentation) (DCE) verwenden, gehen Sie zu einem Bildblock und wählen Sie dann über das Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
+   * Wenn Sie den [erweiterten Bearbeitungsmodus) &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"}Campaign v8-Dokumentation) (DCE) verwenden, gehen Sie zu einem Bildblock und wählen Sie dann über das Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
      ![](assets/dam_insert_image_dce.png)
 

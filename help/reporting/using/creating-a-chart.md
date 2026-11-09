@@ -143,7 +143,7 @@ Diese Art von Grafik zeigt die Konversionsrate der gemessenen Elemente.
 
 Sie können eine Aktion definieren, wenn der Benutzer auf das Diagramm klickt. Öffnen Sie das Fenster **[!UICONTROL Interaktionsereignisse]** und wählen Sie die Aktion aus, die Sie ausführen möchten.
 
-Mögliche Interaktionstypen und ihre Konfigurationen werden in ([ Abschnitt) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (Dokumentation zu Campaign v8).
+Mögliche Interaktionstypen und ihre Konfigurationen werden in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (Dokumentation zu Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
