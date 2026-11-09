@@ -48,13 +48,13 @@ ht-degree: 95%
 
 Adobe Experience Cloud ist ein umfassender Satz marktführender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Lösungen und Apps aufbauen.
 
-Weitere Informationen zu funktionalen Integrationen, die zwischen Adobe Campaign und Adobe Experience Cloud-Lösungen verfügbar sind, finden Sie auf [dieser Seite ](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank}.
+Weitere Informationen zu funktionalen Integrationen, die zwischen Adobe Campaign und Adobe Experience Cloud-Lösungen verfügbar sind, finden Sie auf [dieser Seite &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank}.
 
 Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe Campaign integriert werden können, sowie die zugehörige Dokumentation finden Sie in [diesem Abschnitt](#experience-cloud-integrations).
 
 >[!NOTE]
 >
->Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Verbinden von Campaign mit Ihren Lösungen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target=_blank}.
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Verbinden von Campaign mit Ihren Lösungen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target=_blank}.
 >
 >[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target=_blank}
 

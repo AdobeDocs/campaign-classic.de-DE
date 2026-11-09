@@ -63,7 +63,7 @@ Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern
 >
 >[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
-Informationen zum Definieren von Berechtigungen für Ordner finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}.
+Informationen zum Definieren von Berechtigungen für Ordner finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}.
 
 Die native Authentifizierung mit Login/Passwort ist in Campaign v7 noch verfügbar. Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign jedoch dringend die [Migration des Authentifizierungsmodus für Endbenutzende](../../technotes/using/ac-ims.md) von der nativen Authentifizierung auf das Adobe-Identitäts-Management-System (IMS). Hinweis: In Campaign v8 ist die Verbindung mit nativer Authentifizierung nicht zulässig.
 
