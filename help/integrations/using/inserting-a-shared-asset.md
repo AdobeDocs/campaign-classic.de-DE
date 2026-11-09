@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 97%
+source-wordcount: '292'
+ht-degree: 83%
 ---
 # Freigegebene Assets nutzen{#inserting-a-shared-asset}
 
@@ -48,7 +48,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Wenn Sie sich im [erweiterten Bearbeitungsmodus](../../web/using/about-campaign-html-editor.md) (DCE) befinden, markieren Sie einen Inhaltsbaustein und wählen Sie im Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
+   * Wenn Sie den [erweiterten Bearbeitungsmodus) ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"}Campaign v8-Dokumentation) (DCE) verwenden, gehen Sie zu einem Bildblock und wählen Sie dann über das Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
      ![](assets/dam_insert_image_dce.png)
 

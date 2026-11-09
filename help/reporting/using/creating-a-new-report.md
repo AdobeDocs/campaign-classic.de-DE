@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '967'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 91%
 ---
 # Erstellen eines neuen Berichts{#creating-a-new-report}
 
@@ -142,7 +142,7 @@ Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 * Wert, Link, HTML, Bild usw. **[!UICONTROL Statische Elemente]**.
 * **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
-Die Konfiguration einer Seite und ihrer Elemente wird in [diesem Abschnitt](../../web/using/about-web-forms.md) erläutert.
+Der Konfigurationsmodus einer Seite und ihrer Komponenten wird in ([ Abschnitt) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 Mithilfe der Symbolleiste können Sie Dialoge hinzufügen, löschen und so anordnen, wie sie auf den Seiten Ihres Berichts angezeigt werden sollen.
 
@@ -150,7 +150,7 @@ Mithilfe der Symbolleiste können Sie Dialoge hinzufügen, löschen und so anord
 
 ### Statische Elemente {#static-elements}
 
-Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elementen oder Scripts im Bericht, mit denen der Benutzer nicht interagiert. Weitere Informationen finden Sie in [diesem Abschnitt](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elementen oder Scripts im Bericht, mit denen der Benutzer nicht interagiert. Weitere Informationen finden [ in ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elemen
 
 Anhand von Eingabe- und Auswahldialogen können die im Bericht angezeigten Informationen gefiltert werden. Weitere Informationen zur Implementierung dieses Filtertyps finden Sie unter [Filteroptionen in Abfragen](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
-Die Erstellung und Konfiguration von Eingabe- und Auswahlfeldern werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
+Weitere Informationen zum Erstellen und Konfigurieren von Eingabefeldern und Auswahlfeldern finden Sie [diesem Abschnitt) ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} der Dokumentation zu Campaign v8.
 
 Sie können ein oder mehrere Eingabesteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die angezeigten Informationen nach einem eingegebenen Wert filtern.
 

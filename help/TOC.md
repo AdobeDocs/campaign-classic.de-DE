@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1395'
 ht-degree: 97%
 ---
 
@@ -354,45 +354,6 @@ ht-degree: 97%
   + Nachrichtenvorlagen {#message-templates}
     + [Testen von Nachrichtenvorlagen](message-center/using/testing-message-templates.md)
   + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
-+ Entwerfen von Web-Inhalten {#designing-content}
-  + Web-Anwendungen {#web-applications}
-    + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)
-    + [Neue Web-Anwendung erstellen](web/using/creating-a-new-web-application.md)
-    + [Web-Anwendung konzipieren](web/using/designing-a-web-application.md)
-    + [Anwendungsfälle: Erstellen von Übersichten](web/using/use-cases-creating-overviews.md)
-    + [Web-Anwendung übersetzen](web/using/translating-a-web-application.md)
-    + [Besuche in einer Web-Anwendung tracken](web/using/tracking-a-web-application.md)
-    + [Opt-out vom Web-Anwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
-  + Bearbeiten von HTML-Inhalten {#editing-html-content}
-    + [Erste Schritte mit dem HTML-Editor](web/using/about-campaign-html-editor.md)
-    + [Vorlagenverwaltung](web/using/template-management.md)
-    + [Benutzeroberfläche des Inhaltseditors](web/using/content-editor-interface.md)
-    + [Inhalte bearbeiten](web/using/editing-content.md)
-    + [Best Practices bei der Inhaltsbearbeitung](web/using/content-editing-best-practices.md)
-    + [Landingpage erstellen](web/using/creating-a-landing-page.md)
-    + [Anwendungsfall: Erstellen eines E-Mail-Versands](web/using/use-case-creating-an-email-delivery.md)
-  + Web-Formulare {#web-forms}
-    + [Erste Schritte mit Web-Formularen](web/using/about-web-forms.md)
-    + [Verwenden einer Web-Formularvorlage](web/using/using-a-web-form-template.md)
-    + [Felder zu einem Web-Formular hinzufügen](web/using/adding-fields-to-a-web-form.md)
-    + [Statische Elemente in einem Web-Formular](web/using/static-elements-in-a-web-form.md)
-    + [Layout eines Web-Formulars definieren](web/using/defining-web-forms-layout.md)
-    + [Formular-Rendering](web/using/form-rendering.md)
-    + [Seitenreihenfolge definieren](web/using/defining-web-forms-page-sequencing.md)
-    + [Web-Formularantworten speichern](web/using/web-forms-answers.md)
-    + [Web-Formular veröffentlichen](web/using/publishing-a-web-form.md)
-    + [Eigenschaften eines Web-Formulars definieren](web/using/defining-web-forms-properties.md)
-    + [Web-Formular übersetzen](web/using/translating-a-web-form.md)
-    + [Anwendungsfälle: Web-Formulare](web/using/use-cases-web-forms.md)
-+ Erstellen von Online-Umfragen {#online-surveys}
-  + [Erste Schritte mit Umfragen](surveys/using/about-surveys.md)
-  + [Wichtige Schritte zum Erstellen einer Umfrage](surveys/using/getting-started-with-surveys.md)
-  + [Umfrage entwerfen](surveys/using/building-a-survey.md)
-  + [Antworten verwalten](surveys/using/managing-answers.md)
-  + [Erfasste Daten veröffentlichen, tracken und verwenden](surveys/using/publish-track-and-use-collected-data.md)
-  + [Umfragen konfigurieren](surveys/using/configuring-surveys.md)
-  + [Anwendungsfall: Erstellen eines Empfehlungsformulars](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Verwalten von Angeboten {#managing-offers}
   + Erste Schritte mit Interaction {#interaction-overview}
     + [Interaktion und Angebotsverwaltung](interaction/using/interaction-and-offer-management.md)

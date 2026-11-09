@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '1364'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '1399'
+ht-degree: 97%
 ---
 # Erste Schritte mit dem Tracking von Nachrichten {#get-started-tracking}
 
@@ -108,11 +108,11 @@ Bei On-Premise-Installationen werden Tracking-Informationen in der Datenbank ges
 
 **Web-Anwendung tracken**
 
-Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Landingpages verwendet werden. [Weitere Informationen](../../web/using/tracking-a-web-application.md)
+Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Landingpages verwendet werden. [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Dokumentation zu Campaign v8)
 
 **Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Landingpages anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Landingpages anzuzeigen, damit Benutzer sich abmelden können. [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Dokumentation zu Campaign v8)
 
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
