@@ -44,7 +44,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 82%
@@ -55,9 +55,9 @@ Adobe Campaign nutzt die [Litmus](https://litmus.com/email-testing) Web-basierte
 
 >[!NOTE]
 >
->Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Inbox Rendering finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}.
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Inbox Rendering finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}.
 >
->[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target="_blank"}
 
 ## Inbox Rendering aktivieren {#activating-inbox-rendering}
 

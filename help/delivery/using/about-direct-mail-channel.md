@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Briefpost bleibt ein leistungsstarker Kanal für den Aufbau konkreter Beziehunge
 Weitere Informationen zum Briefpost-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target="_blank"}
 
 
 >[!TAB Erstellen eines Briefpost-Versands]

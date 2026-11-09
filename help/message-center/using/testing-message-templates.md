@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Führen Sie nach Fertigstellung Ihrer [Nachrichtenvorlage](https://experiencelea
 >
 >Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Hinzufügen von Testadressen, zur Vorschau einer Transaktionsnachricht und zum Senden eines Testversands finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}.
 >
->[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target="_blank"}
 
 ## Personalisierungsdaten {#personalization-data}
 
