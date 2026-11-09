@@ -67,7 +67,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/reporting_custom_js.png)
 
-Die referenzierten Scripts müssen in JavaScript verfasst und mit gängigen Browsern kompatibel sein, damit sie Client-seitig korrekt ausgeführt werden. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (Dokumentation zu Campaign v8).
+Die referenzierten Scripts müssen in JavaScript verfasst und mit gängigen Browsern kompatibel sein, damit sie Client-seitig korrekt ausgeführt werden. Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### Script-Aktivität hinzufügen {#script-activity}
 

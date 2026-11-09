@@ -52,7 +52,7 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Befolgen Sie diese Ri
 
   1. Geben Sie für jedes Duplikat einen Namen ein. Beispiel: webapp_brand, webapp_brand2 usw.
 
-  1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}Dokumentation zu Campaign v8).
+  1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}Dokumentation zu Campaign v8).
 
 ## Sicherheitsgruppen und Admin-Benutzer
 

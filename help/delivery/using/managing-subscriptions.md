@@ -66,7 +66,7 @@ Drei verschiedene Anmelde- bzw. Abmeldemodi stehen zur Auswahl:
 
 >[!NOTE]
 >
->Ein Beispiel für die Erstellung eines Abonnementformulars mit doppeltem Opt-in finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (Dokumentation zu Campaign v8).
+>Ein Beispiel für die Erstellung eines Abonnementformulars mit doppeltem Opt-in finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Informations-Services erstellen {#creating-an-information-service}
 
@@ -160,7 +160,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 * Empfänger melden sich persönlich über ein Webformular an.
 
-  Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Dokumentation zu Campaign v8).
+  Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Empfänger unter Verwendung eines Workflows mit der Aktivität **[!UICONTROL Abonnements]** anmelden.
 
@@ -176,7 +176,7 @@ E-Mail-Sendungen müssen per Gesetz einen Abmelde-Link enthalten. Die Empfänger
 
 Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versandassistenten bereitgestellt wird (siehe [Über die Personalisierung](about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Blockierungsliste aufgenommen (Opt-out); der Empfänger wird also von keiner Versandaktion mehr als Ziel ausgewählt.
 
-Die Empfangenden können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Web-Formular verwenden (siehe [diesen Abschnitt) &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"}Campaign v8-Dokumentation) oder einen personalisierten Abmelde-Link einfügen. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
+Die Empfangenden können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Web-Formular verwenden (siehe [diesen Abschnitt) &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"}Campaign v8-Dokumentation) oder einen personalisierten Abmelde-Link einfügen. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 
 Des Weiteren können Sie Empfangende manuell über ihr Profil abmelden. Klicken Sie hierfür auf den **[!UICONTROL Abonnements]**-Tab, markieren Sie die entsprechenden Informationsdienste und klicken Sie auf **[!UICONTROL Löschen]**.
 
