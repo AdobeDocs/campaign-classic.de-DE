@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '2395'
-ht-degree: 5%
+source-wordcount: '2409'
+ht-degree: 4%
 ---
 # Beschreibung des Campaign-Datenmodells{#data-model-description}
 
@@ -43,7 +43,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
@@ -73,7 +73,7 @@ Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführu
 
 Das Feld sCountryCode entspricht dem ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Landes, das dem Empfänger zugeordnet ist. Dieses Feld ist eigentlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), die die Länderkennzeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert „XX“ gespeichert (und anstelle eines Null-ID-Eintrags verwendet).
 
-Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (Dokumentation zu Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 
@@ -162,7 +162,7 @@ Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das d
 
 ## Reaktionsverwaltung {#response-management}
 
-Dieser Tabellensatz ist mit dem Modul **Response Manager** verknüpft, mit dem der Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle gemessen werden können. Weitere Informationen hierzu finden Sie unter [Über den Antwort-Manager](../../response/using/about-response-manager.md).
+Dieser Tabellensatz ist mit dem Modul **Response Manager** verknüpft, mit dem der Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle gemessen werden können. Weitere Informationen hierzu finden Sie unter [Über den Response Manager](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (Dokumentation zu Campaign v8).
 
 ![](assets/data-model_response.png)
 

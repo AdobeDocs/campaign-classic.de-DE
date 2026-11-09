@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1558'
 ht-degree: 97%
 ---
 
@@ -417,12 +417,6 @@ ht-degree: 97%
     + [Unterbreitungsregeln](interaction/using/presentation-rules.md)
     + [Angebot auf einem Inbound-Kanal](interaction/using/offers-on-an-inbound-channel.md)
     + [Angebot auf einem Outbound-Kanal](interaction/using/offers-on-an-outbound-channel.md)
-+ Response Manager {#response-manager}
-  + [Erste Schritte mit dem Response Manager](response/using/about-response-manager.md)
-  + [Konfigurieren von Response Manager](response/using/configure-response-manager.md)
-  + [Hypothesenvorlagen](response/using/hypothesis-templates.md)
-  + [Erstellen von Hypothesen](response/using/creating-hypotheses.md)
-  + [Hypothesenverfolgung](response/using/hypothesis-tracking.md)
 + Entwerfen und Freigeben von Berichten {#reporting}
   + Erste Schritte mit Berichten {#reporting-in-adobe-campaign}
     + [Best Practices für das Reporting](reporting/using/best-practices.md)
