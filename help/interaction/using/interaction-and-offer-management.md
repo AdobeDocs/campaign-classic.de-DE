@@ -22,10 +22,10 @@ topic_v2:
     internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 73%
 ---
 # Interaction und Angebotsverwaltung{#interaction-and-offer-management}
 
@@ -45,7 +45,7 @@ Interaction ermöglicht Ihnen die Erstellung und Verwaltung eines Angebotskatalo
 >
 >[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction){target="_blank"}
 
-Dieser Abschnitt behandelt nur die Interaction-Funktionen, die nicht in der Dokumentation zu Campaign v8 beschrieben sind: [Angebotssimulation](about-offers-simulation.md), [Angebotsunterbreitung](managing-offer-presentation.md), [Angebotsgenehmigung](approving-and-activating-an-offer.md), [Angebotsvorlagen](managing-offer-templates.md) und [erweiterte Einstellungen](using-advanced-parameters.md).
+Dieser Abschnitt behandelt nur die Interaktionsfunktionen, die nicht in der Dokumentation zu Campaign v8 beschrieben sind: [Angebotssimulation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} (Dokumentation zu Campaign v8), [Angebotsunterbreitung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/managing-offer-presentation){target="_blank"} (Dokumentation zu Campaign v8), [Angebotsgenehmigung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/approving-and-activating-an-offer){target="_blank"} (Dokumentation zu Campaign v8), [Angebotsvorlagen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/managing-offer-templates){target="_blank"} (Dokumentation zu Campaign v8) und [Erweiterte Einstellungen](using-advanced-parameters.md).
 
 ![](assets/Offermgt2.png)
 
@@ -55,6 +55,6 @@ Dieser Abschnitt behandelt nur die Interaction-Funktionen, die nicht in der Doku
 
 | Nützliche Seiten | Zusätzliche Ressourcen |
 |---|---|
-| [Schritte zur Implementierung von Interaction](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction){target="_blank"} (Dokumentation zu Campaign v8) | [Testen der Angebotsverteilung](../../interaction/using/about-offers-simulation.md) |
+| [Schritte zur Implementierung von Interaction](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction){target="_blank"} (Dokumentation zu Campaign v8) | [Testen der Angebotsverteilung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} (Dokumentation zu Campaign v8) |
 | [Live-/Design-Umgebungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env){target="_blank"} (Dokumentation zu Campaign v8) | [Hinzufügen eines Angebots zu einer E-Mail](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (Dokumentation zu Campaign v8) |
-| [Erstellen von Platzierungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Dokumentation zu Campaign v8) | [Anwendungsbeispiel: Hinzufügen eines Angebots auf einer Website](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Erstellen von Platzierungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Dokumentation zu Campaign v8) | [Anwendungsfall: Hinzufügen eines Angebots auf einer Website](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/case-study/offers-on-an-inbound-channel){target="_blank"} (Dokumentation zu Campaign v8) |

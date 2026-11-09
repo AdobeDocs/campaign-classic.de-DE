@@ -20,10 +20,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '117'
-ht-degree: 100%
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 81%
 ---
 # Erweiterte Parameter verwenden{#using-advanced-parameters}
 
@@ -36,7 +36,7 @@ Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmögl
 >Die folgenden Ausführungen richten sich vor allem an **technische Administratoren**.
 
 * Sie können zusätzliche kontextuelle Daten verwenden. Weiterführende Informationen finden Sie im Abschnitt [Zusätzliche Daten](../../interaction/using/additional-data.md).
-* Sie haben die Möglichkeit, den Anwendungskontext von Angeboten anzureichern, die über einen eingehenden Kanal vorgeschlagenen werden. Dazu muss das Interaktionsschema **nms:interaction** erweitert werden. Den vollständigen Vorgang finden Sie im Abschnitt [Beispiel einer Erweiterung](../../interaction/using/extension-example.md).
+* Sie haben die Möglichkeit, den Anwendungskontext von Angeboten anzureichern, die über einen eingehenden Kanal vorgeschlagenen werden. Dazu muss das Interaktionsschema **nms:interaction** erweitert werden. Das vollständige Verfahren finden Sie [ Abschnitt ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"}Erweiterungsbeispiel“ (Dokumentation zu Campaign v8) .
 * Das Erstellen einer Testumgebung ist im Abschnitt [Erstellung einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
 * Sie können das standardmäßige Verhalten der Moduls mithilfe von Erweiterungspunkten ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweiterungspunkte](../../interaction/using/hooks.md)
 * Die Verwendung von Interaction in verteilten Architekturen wird im Abschnitt [Verteilte Architekturmodelle](../../interaction/using/distributed-architectures.md) behandelt.

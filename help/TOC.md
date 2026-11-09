@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -357,27 +357,13 @@ ht-degree: 97%
 + Verwalten von Angeboten {#managing-offers}
   + Erste Schritte mit Interaction {#interaction-overview}
     + [Interaktion und Angebotsverwaltung](interaction/using/interaction-and-offer-management.md)
-  + Verwalten eines Angebotskatalogs {#managing-an-offer-catalog}
-    + [Angebot genehmigen und aktivieren](interaction/using/approving-and-activating-an-offer.md)
-    + [Angebotsvorlagen verwalten](interaction/using/managing-offer-templates.md)
-    + [Angebotsunterbreitung verwalten](interaction/using/managing-offer-presentation.md)
-  + Angebotssimulation{#simulating-offers}
-    + [Über die Angebotssimulation](interaction/using/about-offers-simulation.md)
-    + [Ausführungsparameter](interaction/using/execution-settings.md)
-    + [Simulationsperimeter](interaction/using/simulation-scope.md)
-    + [Simulationsverfolgung](interaction/using/simulation-tracking.md)
   + Erweiterte Parameter {#advanced-parameters}
     + [Erweiterte Parameter verwenden](interaction/using/using-advanced-parameters.md)
     + [Zusätzliche Daten](interaction/using/additional-data.md)
-    + [Beispiel einer Erweiterung](interaction/using/extension-example.md)
     + [Testumgebung erstellen](interaction/using/creating-a-test-environment.md)
     + [Ändern des Standardverhaltens der Engine](interaction/using/hooks.md)
     + [Verteilte Architekturmodelle](interaction/using/distributed-architectures.md)
     + [Konfiguration des Datenpuffers](installation/using/interaction-data-buffer.md)
-  + Anwendungsbeispiel {#case-study}
-    + [Unterbreitungsregeln](interaction/using/presentation-rules.md)
-    + [Angebot auf einem Inbound-Kanal](interaction/using/offers-on-an-inbound-channel.md)
-    + [Angebot auf einem Outbound-Kanal](interaction/using/offers-on-an-outbound-channel.md)
 + Entwerfen und Freigeben von Berichten {#reporting}
   + Erste Schritte mit Berichten {#reporting-in-adobe-campaign}
     + [Best Practices für das Reporting](reporting/using/best-practices.md)
