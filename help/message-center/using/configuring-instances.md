@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
-workflow-type: ht
-source-wordcount: '1330'
-ht-degree: 100%
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+workflow-type: tm+mt
+source-wordcount: '1347'
+ht-degree: 96%
 ---
 # Konfiguration von Instanzen {#creating-a-shared-connection}
 
@@ -49,7 +49,7 @@ Zur Nutzung der Transaktionsnachrichten-Funktionen müssen Sie die Kontroll- und
 
 >[!IMPORTANT]
 >
->Erweiterungen von Schemata, die von [technischen Workflows des Message Center-Moduls](../../message-center/using/additional-configurations.md#technical-workflows) auf Kontroll- oder Ausführungsinstanzen verwendet werden, müssen auf den anderen vom Transaktionsnachrichten-Modul verwendeten Instanzen dupliziert werden.
+>Erweiterungen von Schemata, die von [technischen Workflows von Message Center](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (Dokumentation zu Campaign v8) auf Kontroll- oder Ausführungsinstanzen verwendet werden, müssen auf den anderen vom Transaktionsnachrichten-Modul verwendeten Instanzen dupliziert werden.
 
 Außerdem müssen Sie die Ausführungsinstanz(en) angeben und mit der/den Kontrollinstanz(en) verbinden.
 

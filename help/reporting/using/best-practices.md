@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '857'
-ht-degree: 100%
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+workflow-type: tm+mt
+source-wordcount: '870'
+ht-degree: 96%
 ---
 # Best Practices für das Reporting{#best-practices-reporting}
 
@@ -61,7 +61,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
    * Indikatoren einem vorhandenen Bericht hinzufügen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
    * die Daten in der Datenbank anzeigen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
    * Einen neuen Versandbericht erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Daten aus der Adobe Campaign-Datenbank exportieren (mithilfe eines Workflows; siehe [diesen Abschnitt](../../workflow/using/about-workflows.md))
+   * Exportieren von Daten aus der Adobe Campaign-Datenbank (über einen Workflow). Weitere Informationen finden [&#x200B; in diesem Abschnitt &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} Campaign v8-Dokumentation.
    * Eine Pivot-Tabelle erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Aggregierte Daten untersuchen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/ac-cubes.md)
    * Verwenden Sie einen Assistenten, um Daten zu analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)

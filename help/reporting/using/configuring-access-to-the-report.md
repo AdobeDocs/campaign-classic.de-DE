@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '801'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 95%
 ---
 # Konfigurieren des Zugriffs auf den Bericht{#configuring-access-to-the-report}
 
@@ -135,13 +135,13 @@ Bevor Sie Ihren Bericht veröffentlichen, stellen Sie im Tab **[!UICONTROL Vorsc
 
 Wählen Sie entsprechend den Anzeigeparametern des Berichts zwischen den Optionen **[!UICONTROL Global]** und **[!UICONTROL Auswahl]**.
 
-Diese beiden Optionen werden entsprechend den Anzeigeeinstellungen des Berichts ausgewählt. Wenn der gewählte Anzeigeparameter **[!UICONTROL Global]** ist, wählen Sie die gleichnamige Vorschauoption.**** Wenn die Anzeigeeinstellungen **[!UICONTROL Einzelauswahl]** oder **[!UICONTROL Mehrfachauswahl]**, die **[!UICONTROL Auswahl]** Die Vorschauoption muss ausgewählt sein.
+Diese beiden Optionen werden entsprechend den Anzeigeeinstellungen des Berichts ausgewählt. Wenn der gewählte Anzeigeparameter **[!UICONTROL Global]** ist, wählen Sie die gleichnamige Vorschauoption.**&#x200B;** Wenn die Anzeigeeinstellungen **[!UICONTROL Einzelauswahl]** oder **[!UICONTROL Mehrfachauswahl]**, die **[!UICONTROL Auswahl]** Die Vorschauoption muss ausgewählt sein.
 
 Weitere Informationen hierzu finden Sie unter [Anzeigekontext von Berichten](#report-display-context).
 
 Es stehen zudem Parameter zur Verfügung, die eine Kontrolle der Fehler ermöglicht. Der Parameter **_uuid** ist Teil der URL des Berichts. Sie können ihm die Parameter **&amp;_preview** oder **&amp;_debug** hinzufügen.
 
-Die Funktionsweise dieser Parameter wird im Abschnitt zur Definition von **Webformular-Eigenschaften** des Kapitels [Webformulare](../../web/using/about-web-forms.md) beschrieben.
+Weitere Informationen zu diesen Einstellungen finden Sie im Abschnitt **Definieren von Web** Formulareigenschaften) des Kapitels [Web-Formulare](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Veröffentlichen des Berichts {#publishing-the-report}
 

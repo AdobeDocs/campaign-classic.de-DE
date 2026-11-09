@@ -1,7 +1,7 @@
 ---
-keywords: Campaign Classic;Startseite;beliebte Themen
+keywords: Campaign Classic;home;popular topics
 product: campaign
-title: Produktdokumentation zu Adobe Campaign Classic v7
+title: Adobe Campaign Classic v7 product documentation
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 TQID: 'https://experienceleague.adobe.com/Q6Oc24mo-1qDAxCWu2lGT4UvRLXB78Tr5X4sb2kHFw8'
 product_v2:
@@ -30,109 +30,101 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '707'
-ht-degree: 100%
 ---
-# Campaign Classic v7 – Dokumentation {#campaign-classic-documentation}
+# Campaign Classic v7 Documentation {#campaign-classic-documentation}
+
+This documentation covers Campaign Classic v7 for **on-premise and hybrid** deployments: installation, configuration, upgrades, operations and the features that are specific to v7. If your instance is hosted by Adobe (Managed Cloud Services), refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home){target="_blank"}. Content that Campaign v8 documents in the same way is no longer duplicated here: see [From v7 to v8](#from-v7-to-v8).
 
 <!--![](platform/using/assets/do-not-localize/banner_acc_doc.jpg) -->
 
-## Neue Funktionen
+## What's New
 
-Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe Campaign Classic v7 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](rn/using/latest-release.md).
+Get a glimpse of the newest enhancements in Adobe Campaign Classic v7 product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](rn/using/latest-release.md). 
 
 >[!BEGINTABS]
 
 
->[!TAB Version August 2026 ist live.]
+>[!TAB October 2026 release is live!] 
 
-Der Build Campaign Classic v7.4.4 - August &#39;26 enthält Sicherheitsaktualisierungen und führt für den Adobe Analytics Connector ein Upgrade auf die Analytics 2.0-API durch.
+The Campaign Classic v7.4.5 - October '26 build (Build 9420) delivers fixes for the Analytics external account, deliveries stuck in the personalization pending status, server CPU usage, intermittent data model update failures, the spam check error in delivery creation and the quarantine of recurring soft bounces.
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB Verschieben zu Adobe IMS]
+>[!TAB Move to Adobe IMS]
 
-Um die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren.
+To reinforce security and authentication process, Adobe Campaign highly recommends to migrate end user authentication mode from the login/password native authentication to Adobe Identity Management System (IMS).
 
-[![Bild](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
-
-
->[!TAB Push-Kanal-Änderungen]
-
-Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können dies bereits überprüfen und Maßnahmen ergreifen.
-
-[![Bild](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=de){target="_blank"}
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
 
 
 >[!ENDTABS]
 
-## Beginnen Sie mit den Grundlagen
+## Start with the basics
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
     <a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/start-launch.png"></a></a>
-    <div><strong>Adobe Campaign starten</strong><br/>Erfahren Sie, wie Sie die Campaign-Client-Konsole starten und eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen.</div>
+    <div><strong>Launch Adobe Campaign</strong><br/>Learn how to launch the Campaign Client console and connect to your Campaign application server(s).</div>
     </td>
     <td>
     <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Profile hinzufügen und verwalten</strong><br/>Testen Sie bequem die Profilverwaltung in der Adobe Campaign v7-Datenbank. Fügen Sie Profile manuell oder durch Importieren hinzu, verfeinern Sie Kundendaten und passen Sie Kampagnen mühelos an.</div>
+    <div><strong>Add & manage profiles</strong><br/>Explore profile management in the Adobe Campaign v7 database with ease. Add profiles manually or through imports, refining customer data and customizing campaigns effortlessly.</div>
     </td>
     <td>
-    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
-    <div><strong>Mit Workflows automatisieren</strong><br/>Erfahren Sie, wie Sie Workflows nutzen können, um Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. auszuführen.
+    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <div><strong>Automate with workflows</strong><br/>Learn how to leverage workflow to design processes including segmentation, campaign execution, file processing, human participation, among others.
     </div></td>
     <td>
     <a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
-    <div><strong>Sendungen erstellen</strong><br/>Hier erfahren Sie, wie Sie Nachrichten über verschiedene Kanäle senden, z. B. E-Mail, SMS, Push-Benachrichtigungen usw.</div>
+    <div><strong>Create deliveries</strong><br/>Learn how to send messages across various channels such as email, SMS, push notifications etc.</div>
     </td>
   </tr>
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
-## Erkunden Sie die Dokumentation
+## Explore the documentation
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="35px">
-    <br/>
-      <strong>Erste Schritte</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">Benutzeroberfläche</a> (Dokumentation zu Campaign v8) – <a href="platform/using/launching-adobe-campaign.md">Herstellen einer Verbindung zu Campaign</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/import" target="_blank">Import und Export von Daten</a> (Dokumentation zu Campaign v8) – <a href="platform/using/access-management.md">Berechtigungen</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/> <strong>Kundenerlebnis</strong><br/><a href="workflow/using/about-workflows.md">Mit Workflows automatisieren</a> – <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de" target="_blank">Marketing-Kampagne</a> – <a href="interaction/using/interaction-and-offer-management.md">Interaktions- und Angebotsverwaltung</a> – <a href="delivery/using/about-personalization.md">Personalisierung</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Dokumentation zu Campaign v8)
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>Administrators</strong><br/><a href="production/using/architecture-and-open-ports.md">Architecture principles</a> - <a href="production/using/syslogd-port-and-security-zones.md">Configure Campaign</a> - <a href="platform/using/launching-adobe-campaign.md">Connect to Campaign</a> - <a href="installation/using/external-accounts.md">Connect to external systems</a> - <a href="platform/using/access-management.md">Permissions</a> - <a href="platform/using/privacy-management.md">Privacy & consent</a> - <a href="production/using/build-upgrade.md">Performing a build upgrade</a> - <a href="delivery/using/about-deliverability.md">Deliverability</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
-    <br/>
-      <strong>Nachrichten senden</strong><br/><a href="delivery/using/communication-channels.md">Kommunikationskanäle</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message" target="_blank">Testversand durchführen</a> (Dokumentation zu Campaign v8) – <a href="delivery/using/get-started-a-b-testing.md">A/B-Tests</a> – <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Nachrichten-Tracking</a> – <a href="delivery/using/about-deliverability.md">Zustellbarkeit</a> – <a href="message-center/using/about-transactional-messaging.md">Transaktionsnachrichten</a>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
-      <br/> <strong>Profile und Zielgruppen</strong><br/> <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Listen erstellen</a> (Dokumentation zu Campaign v8) – <a href="delivery/using/about-services-and-subscriptions.md">Services und Abonnements</a> – <a href="platform/using/privacy-management.md">Datenschutz und Einverständnis</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
-      <strong>Architektur und Konfiguration</strong><br/><a href="production/using/general-architecture.md">Architekturgrundsätze</a> – <a href="production/using/build-upgrade.md">Build-Aktualisierung durchführen</a> – <a href="production/using/configuration.md">Kampagne konfigurieren</a> – <a href="installation/using/external-accounts.md">Verbindung zu externen Systemen herstellen</a>
+      <strong>Marketers</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">User interface</a> (Campaign v8 documentation) - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import" target="_blank">Import & export data</a> (Campaign v8 documentation) - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Create lists</a> (Campaign v8 documentation) - <a href="delivery/using/about-services-and-subscriptions.md">Services & subscriptions</a> - <a href="delivery/using/communication-channels.md">Communication channels</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message" target="_blank">Send proofs</a> (Campaign v8 documentation) - <a href="delivery/using/get-started-a-b-testing.md">A/B testing</a> - <a href="message-center/using/about-transactional-messaging.md">Transactional messaging</a> - <a href="interaction/using/interaction-and-offer-management.md">Interaction & offer management</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">Automate with workflows</a> (Campaign v8 documentation) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html" target="_blank">Marketing campaign</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Message tracking</a> (Campaign v8 documentation) - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (Campaign v8 documentation)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
-      <br/> <strong>Entwicklerressourcen</strong><br/><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Beschreibung des Datenmodells</a> (Dokumentation zu Campaign v8) – <a href="configuration/using/about-schema-reference.md">Schemastruktur</a> – <a href="configuration/using/editing-forms.md">Schemastruktur</a> – <a href="configuration/using/about-web-services.md">APIs</a> – <a href="https://experienceleague.adobe.com/de/tools/campaign-api">JSAPI-Referenzdokumentation</a> – <a href="configuration/using/about-custom-recipient-table.md">Benutzerdefinierte Empfängertabelle</a>
+      <br/>
+      <strong>Developers</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Data model description</a> (Campaign v8 documentation) - <a href="configuration/using/about-schema-reference.md">Schema structure</a> - <a href="configuration/using/editing-forms.md">Input forms</a> - <a href="configuration/using/about-web-services.md">APIs</a> - <a href="https://experienceleague.adobe.com/en/tools/campaign-api" target="_blank">JSAPI Reference Documentation</a> - <a href="configuration/using/about-custom-recipient-table.md">Custom recipient table</a>
     </td>
   </tr>
-</table>
+</table> 
 
-## Zusätzliche Ressourcen
+## From v7 to v8 {#from-v7-to-v8}
 
-[Adobe Campaign – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) – [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} – [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"} – [E-Mail-Tracking-Pixel und CNIL-Anleitung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+Content that is documented in the Campaign v8 documentation has been removed from the v7 documentation. Use this table to find it.
+
+| If you are looking for... | Go to the Campaign v8 documentation |
+| --- | --- |
+| The user interface | [Discover the user interface](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
+| Profiles, lists, import and export | [Import profiles and data](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} |
+| Workflows | [About workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| Marketing campaigns | [Get started with marketing campaigns](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| Creating and sending deliveries | [Create a message](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
+| Built-in reports | [Get started with reporting](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
+| Permissions | [Get started with permissions](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| Input forms | [Get started with input forms](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
+
+## Additional resources
+
+[Adobe Campaign Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Compatibility matrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html){target="_blank"} - [Control Panel for Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html){target="_blank"} - [Email Tracking Pixels and CNIL Guidance](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}

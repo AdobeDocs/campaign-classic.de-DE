@@ -47,8 +47,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 ---
@@ -58,7 +58,9 @@ Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Be
 
 Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, Ausführung der Kommunikation und die damit verbundenen operativen Berichte.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
@@ -67,7 +69,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumen
 Weitere Informationen zu Kommunikationskanälen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target="_blank"}
 
 
 >[!TAB Versandinhalt und -zielgruppe]

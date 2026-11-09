@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 83%
 ---
 # Freigegebene Assets nutzen{#inserting-a-shared-asset}
 
@@ -48,7 +48,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Wenn Sie sich im [erweiterten Bearbeitungsmodus](../../web/using/about-campaign-html-editor.md) (DCE) befinden, markieren Sie einen Inhaltsbaustein und wählen Sie im Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
+   * Wenn Sie den [erweiterten Bearbeitungsmodus) &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"}Campaign v8-Dokumentation) (DCE) verwenden, gehen Sie zu einem Bildblock und wählen Sie dann über das Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
      ![](assets/dam_insert_image_dce.png)
 
@@ -64,4 +64,4 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
 >[!NOTE]
 >
->Wenn Sie die Integration mit Adobe Target nutzen, haben Sie die Möglichkeit, ein freigegebenes Bild als Standardbild zu verwenden. Mehr dazu erfahren Sie auf [dieser Seite](../../integrations/using/integrating-with-adobe-target.md).
+>Wenn Sie die Integration mit Adobe Target nutzen, haben Sie die Möglichkeit, ein freigegebenes Bild als Standardbild zu verwenden. Weitere Informationen finden Sie [dieser Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} (Dokumentation zu Campaign v8).

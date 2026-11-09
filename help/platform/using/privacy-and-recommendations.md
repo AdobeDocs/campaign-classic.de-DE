@@ -41,8 +41,8 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
 ---
@@ -101,7 +101,7 @@ When managing Privacy, it is important to define what data should be handled wit
 * **Personal Data** is information that can directly or indirectly identify a living individual.
 * **Sensitive Personal Data** is information related to an individual's race, political views, religious beliefs, criminal background, genetic information, health data, sexual preference, biometric information, as well as trade union membership.
 
-When integrating Campaign with other Experience Cloud solutions where audiences can be transferred from one system to another, such as [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud Audiences](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), or with other solutions through [CRM Connectors](../../platform/using/crm-connectors.md), you need to pay extra care to personal data protection.
+When integrating Campaign with other Experience Cloud solutions where audiences can be transferred from one system to another, such as [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud Audiences](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/about-campaign-integrations.md), or with other solutions through [CRM Connectors](../../platform/using/crm-connectors.md), you need to pay extra care to personal data protection.
 
 The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
 
@@ -143,7 +143,7 @@ Here is the general flow for this use case:
 
 Adobe Campaign enables you to collect data, including personal and sensitive information. It is therefore essential that you receive and monitor consent from your recipients.
 
-* Always have recipients agree to receive communications. To do this, keep honoring opt-out requests as quickly as possible and verify consent through a double opt-in process. For more on this, see [Create a subscription form with double opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+* Always have recipients agree to receive communications. To do this, keep honoring opt-out requests as quickly as possible and verify consent through a double opt-in process. For more on this, see [Create a subscription form with double opt-in](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (Campaign v8 documentation).
 * Do not import fraudulent lists and use seed addresses to check that your client file is not being used fraudulently. For more on this, see [About seed addresses](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (Campaign v8 documentation).
 * Through consent and rights management, you can track your recipients' preferences as well as manage who within your organization can access which data. For more on this, see [this section](#consent).
 * Facilitate and manage Privacy requests from your recipients. For more on this, see [this section](#privacy-requests).
@@ -206,9 +206,9 @@ To do this, add tracked links to your messages in order to measure the impact of
 
 ### Web tracking {#web-tracking}
 
-Adobe Campaign also lets you monitor how recipients browse your website: insert tracking tags to collect information and measure visits on web application pages. For more on this, see [Tracking a web application](../../web/using/tracking-a-web-application.md).
+Adobe Campaign also lets you monitor how recipients browse your website: insert tracking tags to collect information and measure visits on web application pages. For more on this, see [Tracking a web application](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Campaign v8 documentation).
 
 The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
 
-To further manage tracking, Adobe Campaign enables you to display an opt-out banner to stop tracking web behaviors of end users who opt-out of behavioral tracking. For more on this, see [Web application tracking opt-out](../../web/using/web-application-tracking-opt-out.md).
+To further manage tracking, Adobe Campaign enables you to display an opt-out banner to stop tracking web behaviors of end users who opt-out of behavioral tracking. For more on this, see [Web application tracking opt-out](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Campaign v8 documentation).
 -->

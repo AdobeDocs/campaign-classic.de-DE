@@ -37,55 +37,26 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '751'
-ht-degree: 100%
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
+source-wordcount: '408'
+ht-degree: 91%
 ---
 # Erste Schritte mit dem App-Kanal{#about-mobile-app-channel}
 
 Richten Sie mit Adobe Campaign den Versand von Push-Benachrichtigungen ein, um personalisierte Nachrichten an Benutzende Ihrer App zu senden.
 
-Mit Push-Benachrichtigungen können Sie Benutzerinnen und Benutzer auf iOS und Android in Echtzeit ansprechen. Unabhängig davon, ob Sie Aktualisierungen, Ankündigungen oder Promotions senden, können Sie Inhalt, Timing und Zielgruppenbestimmung steuern. In der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank} erfahren Sie, wie Sie den Push-Kanal einrichten und verwenden, Abonnements verwalten, mit APNs und FCM integrieren und Nachrichten personalisieren.
-
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
-
->[!BEGINTABS]
-
->[!TAB Dokumentation zum Push-Kanal]
-
-Weitere Informationen zum Push-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=de){target=_blank}.
-
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=de){target=_blank}
-
-
->[!TAB Erstellen eines Push-Versands]
-
-Die wichtigsten Schritte zur Erstellung eines Push-Versands finden Sie in der **Dokumentation zu Campaign v8**:
-
-* [Erstellen einer Push-Benachrichtigung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=de#push-create){target="_blank"}: Erfahren Sie mehr über die verschiedenen Schritte, die zum Erstellen eines Push-Versands erforderlich sind.
-* [Senden und Überwachen einer Push-Benachrichtigung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=de#push-test){target="_blank"}: Erfahren Sie, wie Sie Ihre Sendungen validieren, senden und nachverfolgen können.
-* [Entwerfen eines Rich-Push-Versands für Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Rich-Push-Benachrichtigungen für Android-Geräte erstellen und konfigurieren.
-* [Entwerfen eines Rich-Push-Versands für iOS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Rich-Push-Benachrichtigungen für iOS-Geräte in Adobe Campaign v8 entwerfen und konfigurieren.
-
-
->[!TAB Push-Parameter]
-
-Auf den folgenden Seiten in der **Dokumentation zu Campaign v8** erfahren Sie mehr über Push-Parameter:
-
-* [Konfigurationsvoraussetzungen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de#before-starting){target="_blank"}: Erfahren Sie, wie Sie Berechtigungen einrichten und Ihre App konfigurieren.
-* [Konfigurieren der Launch-Eigenschaft](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de#launch-property){target="_blank"}: Erfahren Sie, wie Sie eine Tag-Eigenschaft „Mobile“ in der Datenerfassung von Adobe Experience Platform einrichten, um Push-Benachrichtigungen zu aktivieren.
-* [Konfigurieren von Push-Services für mobile Services](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de#push-service){target="_blank"}: Richten Sie iOS- und Android-Push-Services in Adobe ein, um zielgerichtete Push-Benachrichtigungen für Benutzende Ihrer App zu aktivieren.
-* [Konfigurieren der Erweiterung in Ihrer Mobile-Eigenschaft](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de#configure-extension){target="_blank"}: Integrieren Sie die Campaign-Erweiterung in Ihre Mobile-Eigenschaft, um Push-Benachrichtigungen zu aktivieren und Benutzerinteraktionen effektiv zu verwalten.
-
->[!ENDTABS]
-
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Push-Benachrichtigungskanal finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push){target=_blank}.
+>
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push){target="_blank"}
 
 Die folgenden Informationen gelten spezifisch für Campaign Classic.
 
 +++ **Paket-Installation**
 
-![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
 
 Wenn Sie Campaign als Hybrid- oder gehostete Bereitstellung nutzen, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Zugriff auf den Kanal für Push-Benachrichtigungen in Campaign zu erhalten.
 

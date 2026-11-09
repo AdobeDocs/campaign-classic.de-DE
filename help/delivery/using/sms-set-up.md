@@ -49,8 +49,8 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 100%
 ---
@@ -91,7 +91,7 @@ Gehen Sie dazu wie folgt vor:
 
    >[!CAUTION]
    >
-   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](unsupported-connector-migration.md).
+   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](sms-set-up.md).
 
 1. Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Log-Datei aktivieren]** können Sie den gesamten SMPP-Traffic in Protokolldateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector vornehmen und den Traffic mit dem auf Provider-Seite verzeichneten Traffic vergleichen zu können.
 

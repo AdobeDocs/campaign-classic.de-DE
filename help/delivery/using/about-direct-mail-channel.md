@@ -37,8 +37,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 ---
@@ -48,7 +48,9 @@ Erstellen Sie mit Adobe Campaign Briefpost-Sendungen, um Ihrer Zielgruppe person
 
 Briefpost bleibt ein leistungsstarker Kanal für den Aufbau konkreter Beziehungen zu Ihrer Kundschaft. Sie eignet sich ideal für die Bereitstellung gedruckter Angebote, Kataloge, Treueprogramm-Nachrichten oder personalisierter Briefe, die die Markenpräsenz über digitale Touchpoints hinaus stärken. In der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target=_blank} erfahren Sie, wie Sie Briefpostkampagnen effektiv konfigurieren und verwalten können, von der Datenvorbereitung und Dateigenerierung für Routing-Partner bis zur Verfolgung von Versandergebnissen.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
@@ -57,7 +59,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumen
 Weitere Informationen zum Briefpost-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de){target="_blank"}
 
 
 >[!TAB Erstellen eines Briefpost-Versands]

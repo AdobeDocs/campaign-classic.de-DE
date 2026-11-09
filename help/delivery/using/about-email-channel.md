@@ -32,10 +32,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 97%
 ---
 # Erste Schritte mit dem E-Mail-Kanal{#about-email-channel}
 
@@ -43,7 +43,9 @@ Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-
 
 E-Mail bleibt einer der leistungsstärksten und flexibelsten Kanäle, um über Ihre App oder Website hinaus mit Benutzenden zu interagieren. Unabhängig davon, ob Sie personalisierte Inhalte, Ankündigungen oder Werbenachrichten versenden, haben Sie bei E-Mails die volle Kontrolle über die Nachricht und die Zielgruppe. Erfahren Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}, wie Sie den E-Mail-Kanal optimal konfigurieren und nutzen: Anpassen von Inhalten, Ansprechen bestimmter Benutzersegmente und Einbinden von umfangreichen Multimedia-Elementen zur Maximierung der Wirkung und Interaktion.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
@@ -52,7 +54,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumen
 Weitere Informationen zum E-Mail-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}
 
 
 >[!TAB Erstellung eines E-Mail-Versands]
@@ -71,7 +73,7 @@ Die wichtigsten Schritte zur Erstellung eines E-Mail-Versands finden Sie in der 
 Weitere Informationen zu E-Mail-Parametern finden Sie auf diesen Seiten in der **Dokumentation zu Campaign v8**:
 
 * [Link zur Mirrorseite](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=de){target="_blank"}: Konfigurieren Sie die Mirrorseite, um sicherzustellen, dass Ihre Clients immer das beste Rendering-Erlebnis erhalten.
-* [Hinzufügen einer BCC-Adresse](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=de){target="_blank"}: Konfigurieren Sie Adobe Campaign so, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird.
+* [Hinzufügen einer BCC-Adresse](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}: Konfigurieren Sie Adobe Campaign so, dass eine Kopie der von der Plattform gesendeten E-Mails beibehalten wird.
 * [Definieren zusätzlicher E-Mail-Parameter](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email-parameters){target="_blank"}: Erfahren Sie mehr über die in den Versandeigenschaften verfügbaren Optionen und Parameter.
 
 Weitere Informationen zum Enhanced MTA finden Sie auch auf dieser [Seite](sending-with-enhanced-mta.md).

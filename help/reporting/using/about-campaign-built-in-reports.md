@@ -28,8 +28,8 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%
 ---
@@ -55,8 +55,10 @@ Folgende Berichttypen stehen zur Verfügung:
 
 Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Dashboard für Berichte oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Auf der Startseite ist eine Liste der Hauptberichte verfügbar, mit denen Sie schnell auf Versanddaten zugreifen können. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Zugriff auf und zur Verwendung von nativen Berichten finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
-
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Informationen zum Zugriff auf und zur Verwendung von nativen Berichten finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
+>
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target="_blank"}
 
 Andere Möglichkeiten zur Bearbeitung eines Berichts werden auf dieser [Seite](../../reporting/using/actions-on-reports.md) beschrieben.

@@ -36,14 +36,20 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 96%
 ---
 # Starten von Adobe Campaign {#launching-adobe-campaign}
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. Auf [dieser Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie die Clientkonsole herunterladen und konfigurieren.
+
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Herstellen einer Verbindung mit Campaign finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank}.
+>
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target="_blank"}
 
 >[!CAUTION]
 >
@@ -61,12 +67,7 @@ Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung u
 
 ### Verbinden mit Ihrer Adobe ID
 
-Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole her. Sie können für alle Adobe-Lösungen dieselbe ID verwenden. Die Verbindung wird bei Verwendung von Adobe Campaign mit anderen Lösungen gespeichert. Weitere Informationen zu Adobe IMS finden Sie [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
-
 Informationen zum Konfigurieren der Campaign Classic v7-Verbindung mit dem Adobe-Identitäts-Management-Service (IMS) finden Sie [auf dieser Seite](../../integrations/using/about-adobe-id.md).
-
-Wie Sie nach Abschluss der Konfiguration mit Ihrer Adobe ID eine Verbindung zu Campaign herstellen, erfahren Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank}.
-
 
 ### Anmeldung mit einem Login/Passwort
 
@@ -83,14 +84,6 @@ Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werde
 1. Klicken Sie zum Bestätigen auf **[!UICONTROL ANMELDEN]**.
 
 Jetzt haben Sie Zugriff auf den [Adobe Campaign-Arbeitsbereich](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (Dokumentation zu Campaign v8).
-
-## Verbindungen einrichten {#setting-up-connections}
-
-Auf die Verbindungseinstellungen des Servers können Sie über den Link über dem Eingabefeld zugreifen.
-
-![](assets/s_ncs_user_connections_management.png)
-
-Weitere Informationen zur Einrichtung von Verbindungen finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
 
 ## Benutzer und Berechtigungen {#operators-and-permissions}
 

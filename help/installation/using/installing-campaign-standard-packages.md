@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 16%
+source-wordcount: '1475'
+ht-degree: 18%
 ---
 # Installieren von integrierten Campaign Classic-Packages{#installing-campaign-standard-packages}
 
@@ -173,7 +173,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Reaktionsverwaltung<br /> </td> 
-   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="../../response/using/about-response-manager.md">Weitere Informationen</a> <br /> </td> 
+   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> AEM-Integration<br /> </td> 
-   <td> Mit können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten, um von den Inhaltsbearbeitungsfunktionen von AEM sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Weitere Informationen</a> <br /> </td> 
+   <td> Mit können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten, um von den Inhaltsbearbeitungsfunktionen von AEM sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Im Kontext einer Mid-Sourcing-Konfiguration ist Folgendes erforderlich:
 
 * Installieren Sie das [!DNL LINE]-Paket sowohl auf der Marketing- als auch auf der MID-Instanz
 
-* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
+* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Mehr erfahren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
 
 * Richten Sie die [!DNL LINE] Anmeldeinformationen im externen Konto auf der MID-Instanz ein.
 

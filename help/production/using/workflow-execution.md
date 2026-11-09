@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '779'
 ht-degree: 23%
 ---
 # Workflow-Ausführung{#workflow-execution}
@@ -46,7 +46,7 @@ Im folgenden Abschnitt finden Sie Informationen zu häufigen Problemen bei der A
 
 Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitten:
 
-* [Über Workflows](../../workflow/using/about-workflows.md)
+* [Über Workflows](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (Dokumentation zu Campaign v8)
 * [Workflow starten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=de){target="_blank"}.
 * [Workflow-Lebenszyklus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target="_blank"}.
 * [Best Practices bei der Verwendung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}.

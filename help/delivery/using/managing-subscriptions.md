@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '1182'
-ht-degree: 100%
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 90%
 ---
 # Verwalten von Abonnements{#managing-subscriptions}
 
@@ -66,7 +66,7 @@ Drei verschiedene Anmelde- bzw. Abmeldemodi stehen zur Auswahl:
 
 >[!NOTE]
 >
->Ein Muster zum Erstellen eines Anmeldeformulars mit zweifacher Bestätigung finden Sie in [diesem Abschnitt](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+>Ein Beispiel für die Erstellung eines Abonnementformulars mit doppeltem Opt-in finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Informations-Services erstellen {#creating-an-information-service}
 
@@ -160,13 +160,13 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 * Empfänger melden sich persönlich über ein Webformular an.
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/about-web-applications.md).
+  Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Dokumentation zu Campaign v8).
 
 * Empfänger unter Verwendung eines Workflows mit der Aktivität **[!UICONTROL Abonnements]** anmelden.
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  Workflows und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../workflow/using/about-workflows.md) beschrieben.
+  Workflows und ihre Verwendung werden in [&#x200B; Abschnitt (Dokumentation zu Campaign &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}8) beschrieben.
 
 ### Empfänger von einem Service abmelden {#unsubscribing-a-recipient-from-a-service}
 
@@ -176,7 +176,7 @@ E-Mail-Sendungen müssen per Gesetz einen Abmelde-Link enthalten. Die Empfänger
 
 Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versandassistenten bereitgestellt wird (siehe [Über die Personalisierung](about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Blockierungsliste aufgenommen (Opt-out); der Empfänger wird also von keiner Versandaktion mehr als Ziel ausgewählt.
 
-Die Empfangenden können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Web-Formular verwenden (siehe [diesen Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) oder einen personalisierten Abmelde-Link einfügen. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
+Die Empfangenden können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Web-Formular verwenden (siehe [diesen Abschnitt) &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"}Campaign v8-Dokumentation) oder einen personalisierten Abmelde-Link einfügen. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 
 Des Weiteren können Sie Empfangende manuell über ihr Profil abmelden. Klicken Sie hierfür auf den **[!UICONTROL Abonnements]**-Tab, markieren Sie die entsprechenden Informationsdienste und klicken Sie auf **[!UICONTROL Löschen]**.
 

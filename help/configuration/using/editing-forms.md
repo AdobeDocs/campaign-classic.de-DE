@@ -30,16 +30,22 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 1%
+source-wordcount: '1295'
+ht-degree: 10%
 ---
 # Bearbeiten von Formularen{#editing-forms}
 
 ## Übersicht
 
 Marketer und Operatoren verwenden Eingabeformulare, um Datensätze zu erstellen, zu ändern und in der Vorschau anzuzeigen. Forms zeigt eine visuelle Darstellung von Informationen an.
+
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu Eingabeformularen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}.
+>
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}
 
 Sie können Formulare erstellen und ändern:
 
@@ -101,72 +107,6 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 * Horizontale Trennung
 
   Dieses Formular zeigt eine Liste von Elementen an.
-
-## Container
-
-In Formularen können Sie Container für verschiedene Zwecke verwenden:
-
-* Organisieren von Inhalten in Formularen
-* Definieren des Zugriffs auf Eingabefelder
-* Verschachteln von Formularen in anderen Formularen
-
-[Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
-
-### Inhalt organisieren
-
-Verwenden von Containern zum Organisieren von Inhalten in Formularen:
-
-* Sie können Felder in Abschnitten gruppieren.
-* Sie können Seiten zu mehrseitigen Formularen hinzufügen.
-
-Verwenden Sie zum Einfügen eines Containers das `<container>`. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
-
-#### Felder gruppieren
-
-Verwenden Sie Container, um Eingabefelder in strukturierte Abschnitte zu gruppieren.
-
-Um einen Abschnitt in ein Formular einzufügen, verwenden Sie dieses Element: `<container type="frame">`. Um optional einen Abschnittstitel hinzuzufügen, verwenden Sie das Attribut `label` .
-
-Syntax: `<container type="frame" label="`*section_title*`"> […] </container>`
-
-In diesem Beispiel definiert ein Container den Abschnitt **Erstellung**, der die Eingabefelder **[!UICONTROL Erstellt von]** und **[!UICONTROL Name]** umfasst:
-
-```xml
-<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
-      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
-  <input xpath="@code"/>
-  <input xpath="@type"/>
-  <container label="Creation" type="frame">
-    <input xpath="createdBy"/>
-    <input xpath="createdBy/@name"/>
-  </container>
-</form>
-```
-
-![](assets/console_screen_form.png)
-
-#### Hinzufügen von Seiten zu mehrseitigen Formularen
-
-Verwenden Sie für mehrseitige Formulare einen Container , um eine Formularseite zu erstellen.
-
-Dieses Beispiel zeigt Container für die Seiten **Allgemein** und **Details** eines Formulars:
-
-```xml
-<container img="ncm:book.png" label="General">
-[…]
-</container>
-<container img="ncm:detail.png" label="Details">
-[…]
-</container>
-```
-
-### Zugriff auf Felder definieren
-
-Verwenden Sie Container, um zu definieren, was sichtbar ist, und um den Zugriff auf Felder zu definieren. Sie können Feldergruppen aktivieren oder deaktivieren.
-
-### Verschachteln von Formularen
-
-Verwenden Sie Container, um Formulare in anderen Formularen zu verschachteln. [Weitere Informationen](#add-pages-to-multipage-forms)
 
 ## Verweise auf Bilder
 
@@ -303,165 +243,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 ## Erstellen eines mehrseitigen Formulars {#create-multipage-form}
 
-Sie können mehrseitige Formulare erstellen. Sie können Formulare auch in anderen Formularen verschachteln.
-
-### Erstellen eines `iconbox` Formulars
-
-Verwenden Sie den `iconbox` Formulartyp, um Symbole auf der linken Seite des Formulars anzuzeigen, über die Benutzende zu verschiedenen Seiten im Formular gelangen.
-
-![](assets/iconbox_form_preview.png)
-
-Gehen Sie wie folgt vor, um den Typ eines vorhandenen Formulars in `iconbox` zu ändern:
-
-1. Ändern Sie das `type` des `<form>` Elements in `iconbox`:
-
-   ```xml
-   <form […] type="iconbox">
-   ```
-
-1. Legen Sie einen Container für jede Formularseite fest:
-
-   1. Fügen Sie ein `<container>` Element als untergeordnetes Element des `<form>` Elements hinzu.
-   1. Um eine Beschriftung und ein Bild für das Symbol zu definieren, verwenden Sie die Attribute `label` und `img` .
-
-      ```xml
-      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
-          <container img="xtk:properties.png" label="General">
-              <input xpath="@label"/>
-              <input xpath="@name"/>
-              […]
-          </container>
-          <container img="nms:msgfolder.png" label="Details">
-              <input xpath="@address"/>
-              […]
-          </container>
-          <container img="nms:supplier.png" label="Services">
-              […]
-          </container>
-      </form>
-      ```
-
-   Alternativ können Sie das `type="frame"`-Attribut aus den vorhandenen `<container>` entfernen.
-
-### Notebook-Formular erstellen
-
-Verwenden Sie den `notebook` Formulartyp, um Registerkarten oben im Formular anzuzeigen, über die Benutzende zu verschiedenen Seiten gelangen.
-
-![](assets/notebook_form_preview.png)
-
-Gehen Sie wie folgt vor, um den Typ eines vorhandenen Formulars in `notebook` zu ändern:
-
-1. Ändern Sie das `type` des `<form>` Elements in `notebook`:
-
-   ```xml
-   <form […] type="notebook">
-   ```
-
-1. Fügen Sie für jede Formularseite einen Container hinzu:
-
-   1. Fügen Sie ein `<container>` Element als untergeordnetes Element des `<form>` Elements hinzu.
-   1. Um die Beschriftung und das Bild für das Symbol zu definieren, verwenden Sie die Attribute `label` und `img` .
-
-   ```xml
-     <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
-         <container label="General">
-             <input xpath="@label"/>
-             <input xpath="@name"/>
-             […]
-         </container>
-         <container label="Details">
-             <input xpath="@address"/>
-             […]
-         </container>
-         <container label="Services">
-             […]
-         </container>
-     </form>
-   ```
-
-   Alternativ können Sie das `type="frame"`-Attribut aus den vorhandenen `<container>` entfernen.
-
-### Verschachteln von Formularen
-
-Sie können Formulare in anderen Formularen verschachteln. Sie können beispielsweise Notebook-Formulare in iconbox-Formularen verschachteln.
-
-Die Verschachtelungsebene steuert die Navigation. Benutzer können einen Drilldown in Teilformulare durchführen.
-
-Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie ein `<container>` ein und legen Sie das Attribut `type` auf den Formulartyp fest. Für das Formular der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` festlegen.
-
-### Beispiel
-
-Dieses Beispiel zeigt ein komplexes Formular:
-
-* Das Formular der obersten Ebene ist ein Formular für Symbolboxen. Dieses Formular enthält zwei Container mit der Beschriftung **Allgemein** und **Details**.
-
-  Daher zeigt das äußere Formular die Seiten **Allgemein** und **Details** auf der obersten Ebene an. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
-
-* Das Teilformular ist ein Notebook-Formular, das im Container **Allgemein** verschachtelt ist. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
-
-```xml
-<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
-  <container type="iconbox">
-    <container img="ncm:general.png" label="General">
-      <container type="notebook">
-        <container label="Name">
-          <input xpath="@firstName"/>
-          <input xpath="@lastName"/>
-        </container>
-        <container label="Contact">
-          <input xpath="@email"/>
-        </container>
-      </container>
-    </container>
-    <container img="ncm:detail.png" label="Details">
-      <input xpath="@birthDate"/>
-    </container>
-  </container>
-</form>
-```
-
-Daher werden auf der Seite **Allgemein** des äußeren Formulars die Registerkarten **Name** und **Kontakt** angezeigt.
-
-![](assets/nested_forms_preview.png)
-
-Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie ein `<container>` ein und legen Sie das Attribut `type` auf den Formulartyp fest. Für das Formular der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` festlegen.
-
-### Beispiel
-
-Dieses Beispiel zeigt ein komplexes Formular:
-
-* Das Formular der obersten Ebene ist ein Formular für Symbolboxen. Dieses Formular enthält zwei Container mit der Beschriftung **Allgemein** und **Details**.
-
-  Daher zeigt das äußere Formular die Seiten **Allgemein** und **Details** auf der obersten Ebene an. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
-
-* Das Teilformular ist ein Notebook-Formular, das im Container **Allgemein** verschachtelt ist. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
-
-```xml
-<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
-  <container type="iconbox">
-    <container img="ncm:general.png" label="General">
-      <container type="notebook">
-        <container label="Name">
-          <input xpath="@firstName"/>
-          <input xpath="@lastName"/>
-        </container>
-        <container label="Contact">
-          <input xpath="@email"/>
-        </container>
-      </container>
-    </container>
-    <container img="ncm:detail.png" label="Details">
-      <input xpath="@birthDate"/>
-    </container>
-  </container>
-</form>
-```
-
-Daher werden auf der Seite **Allgemein** des äußeren Formulars die Registerkarten **Name** und **Kontakt** angezeigt.
-
-![](assets/nested_forms_preview.png)
-
-
+Sie können mehrseitige Formulare erstellen. Sie können Formulare auch in anderen Formularen verschachteln. Lesen Sie mehr über [Container, Notebooks und iconbox-Formulare](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Ändern eines werkseitigen Eingabeformulars {#modify-factory-form}
 
@@ -479,16 +261,6 @@ Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
 ## Formulare validieren {#validate-forms}
 
 Sie können Validierungssteuerelemente in Formulare einbeziehen.
-
-### Nur-Lese-Zugriff auf Felder gewähren
-
-Um schreibgeschützten Zugriff auf ein Feld zu gewähren, verwenden Sie das Attribut `readOnly="true"` . Beispiel: Sie möchten den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} (Dokumentation zu Campaign v8).
-
-In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) des `nms:recipient` Schemas im schreibgeschützten Zugriff angezeigt:
-
-```xml
-<value xpath="@iRecipientId" readOnly="true"/>
-```
 
 ### Pflichtfelder überprüfen
 

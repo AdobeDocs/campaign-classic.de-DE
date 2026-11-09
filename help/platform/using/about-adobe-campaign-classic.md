@@ -41,8 +41,8 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
-workflow-type: ht
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
 ---
@@ -127,12 +127,12 @@ The following capabilities are available. Depending on your license agreement, s
 * [Interaction](../../interaction/using/interaction-and-offer-management.md) - managing offers with Campaign,
 * [Message Center](../../message-center/using/about-transactional-messaging.md) - send transactional messages by email, SMS or on mobile app,
 * [Social Marketing](../../social/using/about-social-marketing.md) - communicate on social media: Facebook, X (formerly known as Twitter),
-* [Workflow](../../workflow/using/about-workflows.md) / Data Management - automate processes and manage data with workflows,
+* [Workflow](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (Campaign v8 documentation) / Data Management - automate processes and manage data with workflows,
 * [Web applications](../../web/using/about-web-applications.md) - create web pages and forms,
 * [Survey Manager](../../surveys/using/about-surveys.md) - create online surveys and polls,
 * [Content Manager](../../delivery/using/about-content-management.md) - manage email content,
 * [Distributed Marketing](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target="_blank"} (Campaign v8 documentation) - coordinate campaigns for central/local agencies,
-* [Response Manager](../../response/using/about-response-manager.md) - manage customer response,
+* [Response Manager](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (Campaign v8 documentation) - manage customer response,
 * [Connectors](../../platform/using/about-connectors.md) - use connectors to communicate with external solutions and database engines,
 * [Web Services](../../configuration/using/about-web-services.md) - use Campaign through APIs/Web Services,
 * [Reporting](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} (Campaign v8 documentation) - access built-in reports, analyze data and design your own reports.

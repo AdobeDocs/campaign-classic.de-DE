@@ -27,8 +27,8 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 ---
@@ -66,6 +66,8 @@ Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
 1. Die Identifizierung von Populationen und deren Referenzierung in Listen.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Erstellen und Verwenden von Cubes finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}.
-
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Erstellen und Verwenden von Cubes finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}.
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target="_blank"}

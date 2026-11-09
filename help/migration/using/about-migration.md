@@ -23,12 +23,16 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: ca8baf1913cbc7f91cd34019dcaa5e499079e9e7
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 5%
+source-wordcount: '500'
+ht-degree: 4%
 ---
 # Erste Schritte mit der Migration{#about-migration}
+
+>[!NOTE]
+>
+>Dieses Handbuch behandelt die Migration von Campaign Classic v5 und v6 zu v7. Es wird nicht mehr gepflegt und nur noch zur Referenz aufbewahrt. Informationen zum Aktualisieren einer v7-Plattform auf einen neuen Build finden Sie unter [Aktualisieren auf einen neuen Build](../../production/using/upgrading.md).
 
 
 

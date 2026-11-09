@@ -40,16 +40,20 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 94%
 ---
 # Erstellen und Verwalten von Datenschutzanfragen {#privacy-request-ui}
 
-
-
 In diesem Abschnitt wird beschrieben, wie Sie Zugriffs- und Löschanfragen erstellen und wie sie in Adobe Campaign verarbeitet werden.
+
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zu den bei der Verarbeitung von Datenschutzanfragen durchsuchten Tabellen finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}.
+>
+>[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target="_blank"}
 
 ## Erstellen einer Datenschutzanfrage {#create-privacy-request-ui}
 
@@ -74,24 +78,7 @@ Die technischen Datenschutz-Workflows werden einmal täglich ausgeführt. Dabei 
 
 ![](assets/privacy-request-download.png)
 
-## Liste der Tabellen {#list-of-tables}
-
-Bei der Durchführung einer Lösch- oder Zugriffsanfrage durchsucht Adobe Campaign alle Daten der betroffenen Person auf der Basis des **[!UICONTROL Abstimmwerts]**. Gesucht wird in allen Tabellen, in denen eine Relation mit der Tabelle des Empfängers besteht (vom Typ &quot;own&quot;).
-
-Dies sind die Tabellen, die bei der Durchführung von Datenschutzanfragen standardmäßig berücksichtigt werden:
-
-* Empfänger (recipient)
-* Versandlog eines Empfängers (broadLogRcp)
-* Trackinglogs der Empfänger (trackingLogRcp)
-* Versandlog eines Ereignisses mit Verlauf (broadLogEventHisto)
-* Inhalte der Empfängerlisten (rcpGrpRel)
-* Angebotsvorschlag für einen Besucher (propositionVisitor)
-* Besucher (visitor)
-* Abonnementverlauf (subHisto)
-* Abonnements (subscription)
-* Angebotsvorschlag für einen Empfänger (propositionRcp)
-
-Wenn Sie benutzerdefinierte Tabellen erstellt haben, die über einen Link zur Empfängertabelle (eigener Typ) verfügen, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine Transaktionstabelle haben, die mit der Empfängertabelle verknüpft ist, und eine Transaktionsdetails-Tabelle, die mit der Transaktionstabelle verknüpft ist, werden beide berücksichtigt.
+## Batch-Anforderungen über Workflows
 
 >[!IMPORTANT]
 >

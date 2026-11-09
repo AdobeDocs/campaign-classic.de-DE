@@ -28,10 +28,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '553'
-ht-degree: 100%
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 96%
 ---
 # Zugriff auf Assets konfigurieren {#configuring-access-to-assets}
 
@@ -76,7 +76,7 @@ Vor der Integration von AEM Assets mit Adobe Campaign muss zunächst die Integra
 * Installation des integrierten Packages **[!UICONTROL Integration mit Adobe Experience Manager]**
 * Konfiguration eines externen Kontos speziell für Adobe Experience Manager
 
-Über die Integration von Adobe Campaign und Adobe Experience Manager erfahren Sie im [entsprechenden Handbuch](../../integrations/using/about-adobe-experience-manager.md).
+Erfahren Sie in der [&#x200B; Dokumentation (Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"}, wie Sie Adobe Campaign und Adobe Experience Manager integrieren.
 
 Nach der Integration können Sie eine neue Versandvorlage in Adobe Campaign konfigurieren, um die AEM Assets-Bibliothek zu verwenden. Gehen Sie dazu wie folgt vor:
 

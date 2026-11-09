@@ -36,8 +36,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 ---
@@ -47,7 +47,9 @@ Mit Adobe Campaign können Sie Ihre Sendungen personalisieren, um Nachrichten zu
 
 Mit Personalisierung können Sie Ihre Nachrichten relevanter und ansprechender gestalten. Sie können Empfängerdaten verwenden, um Inhalte anzupassen, dynamische Felder hinzuzufügen oder basierend auf Bedingungen unterschiedliche Informationen anzuzeigen. In der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank} erfahren Sie, wie Sie Personalisierungsfunktionen in Ihren Sendungen einrichten und verwenden.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
+>[!NOTE]
+>
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
@@ -56,7 +58,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumen
 Weitere Informationen zur Inhaltspersonalisierung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target="_blank"}
 
 
 >[!TAB Personalisierung und bedingte Inhalte]
