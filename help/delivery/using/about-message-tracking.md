@@ -108,11 +108,11 @@ Bei On-Premise-Installationen werden Tracking-Informationen in der Datenbank ges
 
 **Web-Anwendung tracken**
 
-Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Landingpages verwendet werden. [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Dokumentation zu Campaign v8)
+Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Landingpages verwendet werden. [Mehr erfahren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Dokumentation zu Campaign v8)
 
 **Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Landingpages anzuzeigen, damit Benutzer sich abmelden können. [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Dokumentation zu Campaign v8)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Landingpages anzuzeigen, damit Benutzer sich abmelden können. [Mehr erfahren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Dokumentation zu Campaign v8)
 
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 

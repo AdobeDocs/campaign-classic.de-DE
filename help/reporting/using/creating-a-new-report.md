@@ -142,7 +142,7 @@ Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 * Wert, Link, HTML, Bild usw. **[!UICONTROL Statische Elemente]**.
 * **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
-Der Konfigurationsmodus einer Seite und ihrer Komponenten wird in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
+Der Konfigurationsmodus einer Seite und ihrer Komponenten wird in ([&#x200B; Abschnitt) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 Mithilfe der Symbolleiste können Sie Dialoge hinzufügen, löschen und so anordnen, wie sie auf den Seiten Ihres Berichts angezeigt werden sollen.
 
@@ -150,7 +150,7 @@ Mithilfe der Symbolleiste können Sie Dialoge hinzufügen, löschen und so anord
 
 ### Statische Elemente {#static-elements}
 
-Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elementen oder Scripts im Bericht, mit denen der Benutzer nicht interagiert. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
+Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elementen oder Scripts im Bericht, mit denen der Benutzer nicht interagiert. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} Abschnitt (Dokumentation zu Campaign v8).
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elemen
 
 Anhand von Eingabe- und Auswahldialogen können die im Bericht angezeigten Informationen gefiltert werden. Weitere Informationen zur Implementierung dieses Filtertyps finden Sie unter [Filteroptionen in Abfragen](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
-Weitere Informationen zum Erstellen und Konfigurieren von Eingabefeldern und Auswahlfeldern finden Sie [diesem Abschnitt) &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} der Dokumentation zu Campaign v8.
+Weitere Informationen zum Erstellen und Konfigurieren von Eingabefeldern und Auswahlfeldern finden Sie [diesem Abschnitt) &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} der Dokumentation zu Campaign v8.
 
 Sie können ein oder mehrere Eingabesteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die angezeigten Informationen nach einem eingegebenen Wert filtern.
 

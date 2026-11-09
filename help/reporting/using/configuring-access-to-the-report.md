@@ -141,7 +141,7 @@ Weitere Informationen hierzu finden Sie unter [Anzeigekontext von Berichten](#re
 
 Es stehen zudem Parameter zur Verfügung, die eine Kontrolle der Fehler ermöglicht. Der Parameter **_uuid** ist Teil der URL des Berichts. Sie können ihm die Parameter **&amp;_preview** oder **&amp;_debug** hinzufügen.
 
-Weitere Informationen zu diesen Einstellungen finden Sie im Abschnitt **Definieren von Web** Formulareigenschaften) des Kapitels [Web-Formulare](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
+Weitere Informationen zu diesen Einstellungen finden Sie im Abschnitt **Definieren von Web** Formulareigenschaften) des Kapitels [Web-Formulare](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Veröffentlichen des Berichts {#publishing-the-report}
 

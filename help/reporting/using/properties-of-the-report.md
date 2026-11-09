@@ -86,7 +86,7 @@ Die Bearbeitungssprache ist die Sprache, in der Sie schreiben. Beim Hinzufügen 
 
 >[!NOTE]
 >
->Weitere Informationen zur Lokalisierung von Web-Seiten in Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (Dokumentation zu Campaign v8).
+>Weitere Informationen zur Lokalisierung von Web-Seiten in Campaign finden Sie [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (Dokumentation zu Campaign v8).
 
 ## Personalisieren des HTML-Renderings {#personalizing-html-rendering}
 

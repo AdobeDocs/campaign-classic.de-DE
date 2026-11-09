@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1489'
 ht-degree: 18%
 ---
 # Installieren von integrierten Campaign Classic-Packages{#installing-campaign-standard-packages}
@@ -163,7 +163,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Online-Umfragen (Survey Manager)<br /> </td> 
-   <td> Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren, Abmelden oder Teilnehmen an einem Gewinnspiel. Optional. <a href="../../surveys/using/about-surveys.md">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren, Abmelden oder Teilnehmen an einem Gewinnspiel. Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Reaktionsverwaltung<br /> </td> 
-   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
+   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

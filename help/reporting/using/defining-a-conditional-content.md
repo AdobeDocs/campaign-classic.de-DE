@@ -49,7 +49,7 @@ Die Anzeige von Berichtelementen wird über Sichtbarkeitsbedingungen gesteuert. 
 
 Die Sichtbarkeit kann zum Beispiel vom Status des Benutzers oder den von ihm in der Seite des Berichts ausgewählten oder angegebenen Elementen abhängen.
 
-Beispiele für die bedingte Anzeige von Elementen auf einer Seite finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (Dokumentation zu Campaign v8).
+Beispiele für die bedingte Anzeige von Elementen auf einer Seite finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (Dokumentation zu Campaign v8).
 
 Im folgenden Beispiel hängt die Anzeige von der Sprache ab:
 
@@ -72,6 +72,6 @@ Gehen Sie wie folgt vor:
 
 1. Aktivieren Sie die Option **[!UICONTROL Standard-Verzweigung aktivieren]**, um eine Transition hinzuzufügen, für den Fall dass keine der konfigurierten Bedingungen zutrifft.
 
-   Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (Dokumentation zu Campaign v8).
+   Weitere Informationen finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (Dokumentation zu Campaign v8).
 
 Eine **[!UICONTROL Test]**-Aktivität sollte zu Beginn des Diagramms positioniert werden, um die Anzeige beispielsweise vom Kontext oder dem Benutzerprofil abhängig zu machen.
