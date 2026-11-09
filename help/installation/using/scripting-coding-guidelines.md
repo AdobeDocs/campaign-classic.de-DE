@@ -96,7 +96,7 @@ Mehr dazu erfahren Sie auf diesen Seiten:
 
 Zusätzlich zum ordnerbasierten Sicherheitsmodell können Sie Benutzeraktionen auch mit spezifischen Berechtigungen einschränken:
 
-* Sie können einige Systemfilter (sysFilter) hinzufügen, um das Lesen/Schreiben Ihrer Daten zu verhindern (siehe [diese Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (Dokumentation zu Campaign v8).
+* Sie können einige Systemfilter (sysFilter) hinzufügen, um das Lesen/Schreiben Ihrer Daten zu verhindern (siehe [diese Seite](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (Dokumentation zu Campaign v8).
 
   ```
   <sysFilter name="writeAccess">    
