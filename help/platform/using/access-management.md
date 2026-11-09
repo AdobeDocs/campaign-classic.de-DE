@@ -66,7 +66,7 @@ Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern
 * Informationen zum Migrieren Ihrer Benutzer finden Sie unter [Migrieren von Benutzern zu IMS](../../technotes/using/migrate-users-to-ims.md).
 * Informationen zum Migrieren des Authentifizierungsmodus für Endbenutzer finden Sie unter [Authentifizierungsmodus für Endbenutzer migrieren](../../technotes/using/ac-ims.md).
 
-Nach dieser Migration werden die Berechtigungen mit Adobe IMS verwaltet. Wie Sie sie einrichten, erfahren Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}.
+Nach dieser Migration werden die Berechtigungen mit Adobe IMS verwaltet. Wie Sie sie einrichten, erfahren Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}.
 
 
 <!--
