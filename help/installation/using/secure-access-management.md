@@ -52,7 +52,7 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Befolgen Sie diese Ri
 
   1. Geben Sie für jedes Duplikat einen Namen ein. Beispiel: webapp_brand, webapp_brand2 usw.
 
-  1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}Dokumentation zu Campaign v8).
+  1. Duplizieren Sie eine Web-Anwendungsvorlage, um eine Vorlage pro Marke zu erhalten, und bearbeiten Sie die Eigenschaften, um den Benutzer durch Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}Dokumentation zu Campaign v8).
 
 ## Sicherheitsgruppen und Admin-Benutzer
 
@@ -62,7 +62,7 @@ Verwenden Sie keinen Admin-Operator (oder geben Sie ihn nicht frei). Erstellen S
 
 Vermeiden Sie es, zu viele Benutzer in der Administratorgruppe (oder mit spezifischen Administratorrechten) hinzuzufügen. Sie sind sehr leistungsstarke Operatoren (sie können alle SQL-Anweisungen ausführen, Befehle auf dem Server ausführen usw.).
 
-Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (Dokumentation zu Campaign v8):
+Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (Dokumentation zu Campaign v8):
 
 * **ADMINISTRATION** (admin): Ermöglicht Zugriff auf alle Elemente und deren Ausführung, wobei alle spezifischen Berechtigungsprüfungen umgangen werden, sodass die Berechtigung „PROGRAMMAUSFÜHRUNG“ (createProcess) und die spezifischen SQL-Berechtigungen enthalten sind
 
