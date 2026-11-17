@@ -1,6 +1,6 @@
 ---
-title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
-description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
+title: Migrieren von Campaign-Benutzenden zum Adobe-Identitäts-Management-System (IMS)
+description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe-Identitäts-Management-System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
 TQID: 'https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88'
 product_v2:
@@ -25,20 +25,20 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 95%
 ---
-# Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS) {#migrate-users-to-ims}
+# Migrieren von Campaign-Benutzenden zum Adobe-Identitäts-Management-System (IMS) {#migrate-users-to-ims}
 
-Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Alle Benutzenden sollten das [Identitäts-Management-System (IMS) von Adobe](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} implementieren, um eine Verbindung mit Campaign herzustellen.
+Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe-Identitäts-Management-System (IMS) zu migrieren. Alle Benutzenden sollten das [Identitäts-Management-System (IMS) von Adobe](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} implementieren, um eine Verbindung mit Campaign herzustellen.
 
 Weitere Informationen zu dieser Migration finden Sie auf [dieser Seite](ac-ims.md).
 
 ## Was hat sich geändert? {#move-to-ims-changes}
 
-Mit Campaign Classic können sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe Identity Management System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Verbindungen mit Benutzername/Passwort sind jedoch noch weiterhin verfügbar. Dies ist ab Campaign v8 nicht mehr zulässig.
+Mit Campaign Classic können sich alle regulären Anwenderinnen und Anwender bereits mit ihrer Adobe ID über das Adobe-Identitäts-Management-System (IMS) mit der Adobe Campaign Client-Konsole verbinden. Verbindungen mit Benutzername/Passwort sind jedoch noch weiterhin verfügbar. Dies ist ab Campaign v8 nicht mehr zulässig.
 
 Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Sicherheit und des Authentifizierungsprozesses die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Die Migration für technische Benutzende wird in einem speziellen Artikel beschrieben, der auf [dieser Seite](ims-migration.md) zu finden ist.
 
@@ -52,7 +52,7 @@ Dieses Verfahren gilt für alle Benutzerinnen und Benutzer von Campaign, die noc
 
 Wenn Benutzende Ihrer Organisation über ihr Login/Passwort eine Verbindung zur Campaign-Client-Konsole herstellen (auch bekannt als native Authentifizierung), sind Sie betroffen und sollten diese Benutzenden wie unten beschrieben zu Adobe IMS migrieren.
 
-Die Migration zum [Identitäts-Management-System (IMS) von Adobe](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist eine Sicherheitsanforderung, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen Adobe Experience Cloud-Lösungen und -Anwendungen bereits auf IMS installiert sind.
+Die Migration auf das [Adobe Identity Management System (IMS](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist eine Sicherheitsanforderung, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen [!DNL Adobe CX Enterprise]-Lösungen und -Apps bereits auf IMS installiert sind.
 
 Diese Änderung gilt ab Campaign Classic v7.4.1 (und für die neuesten [mit der IMS-Migration kompatiblen Versionen](ac-ims.md#ims-versions)) und ist **obligatorisch** für den Wechsel zu Adobe Campaign v8.
 

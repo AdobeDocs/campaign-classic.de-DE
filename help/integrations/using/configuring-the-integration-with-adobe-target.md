@@ -30,10 +30,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '212'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 98%
 ---
 # Konfigurieren der Integration mit Adobe Target{#configuring-the-integration-with-adobe-target}
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 Diese Integration erfordert:
 
-* Organisationen für Adobe Experience Cloud und Adobe Target;
+* Organisationen in [!DNL Adobe CX Enterprise] und Adobe Target
 * Adobe-Target-Rawbox für Adobe Campaign.
 
 Gehen Sie wie folgt vor, um diese Integration in Adobe Campaign zu konfigurieren:

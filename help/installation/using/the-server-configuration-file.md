@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
 source-wordcount: '8113'
 ht-degree: 8%
@@ -3326,7 +3326,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Organisations-ID: Eindeutige Organisationskennung innerhalb von Adobe Experience Cloud, die insbesondere für den VisitorID-Service und das IMS SSO verwendet wird. <br /> </td> 
+   <td> Organisations-ID: Eindeutige Organisationskennung innerhalb der Adobe CX Enterprise, die insbesondere für den VisitorID-Service und das IMS SSO verwendet wird. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 

@@ -29,10 +29,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
     internal-label: Configuration guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
-workflow-type: ht
-source-wordcount: '380'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 91%
 ---
 # Konfigurieren von IMS{#configuring-ims}
 
@@ -43,12 +43,12 @@ ht-degree: 100%
 
 ## Voraussetzungen {#prerequisites}
 
-* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} finden Sie Ihre Organisations-ID.
-* müssen Sie in Experience Cloud Benutzer hinzufügen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de){_blank}.
+* Sie müssen über einen [!DNL Adobe CX Enterprise] Organisationsnamen und eine Organisations-ID verfügen. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} finden Sie Ihre Organisations-ID.
+* Sie müssen Benutzer zum [!DNL CX Enterprise] hinzufügen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de){_blank}.
 
 >[!NOTE]
 >
->Vergewissern Sie sich, dass Ihre Benutzer mit Adobe Experience Cloud-Gruppen verknüpft sind, die mit Adobe Campaign synchronisiert werden. [Weitere Informationen](#configuring-the-external-account).
+>Stellen Sie sicher, dass Ihre Benutzerinnen und Benutzer mit den [!DNL CX Enterprise] Gruppen verknüpft sind, die mit Adobe Campaign synchronisiert werden. [Weitere Informationen](#configuring-the-external-account).
 
 ## Aktualisieren der Konsole {#updating-the-console}
 

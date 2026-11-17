@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 98%
 ---
 # Konfigurieren der Pipeline {#configuring-pipeline}
 
@@ -60,7 +60,7 @@ Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes v
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 
-Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich. Es wird eine Authentifizierung verwendet, die über ein Adobe Developer-Projekt unterstützt wird.
+Authentifizierung ist erforderlich, da die Pipeline in der [!DNL Adobe CX Enterprise] gehostet wird. Es wird eine Authentifizierung verwendet, die über ein Adobe Developer-Projekt unterstützt wird.
 
 ## Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#creating-adobe-io-project}
 

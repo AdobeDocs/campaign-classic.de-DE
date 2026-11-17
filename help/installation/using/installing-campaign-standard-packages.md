@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1488'
 ht-degree: 18%
 ---
 # Installieren von integrierten Campaign Classic-Packages{#installing-campaign-standard-packages}
@@ -223,12 +223,12 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Integration mit freigegebenen Adobe Experience Cloud-Zielgruppen<br /> </td> 
-   <td> Ermöglicht den Austausch und die Freigabe von Audiences/Segmenten mit Adobe Experience Cloud-Lösungen und -Programmen. IMS erforderlich. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Informationen</a> <br /> </td> 
+   <td> Ermöglicht den Austausch und die Freigabe von Audiences/Segmenten mit Adobe CX Enterprise-Lösungen und -Programmen. IMS erforderlich. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Integration mit Adobe Experience Cloud<br /> </td> 
-   <td> Ermöglicht den Import und Export von Audiences/Segmenten aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Weitere Informationen</a> </td> 
+   <td> Ermöglicht den Import und Export von Audiences/Segmenten aus verschiedenen CX Enterprise-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Weitere Informationen</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 

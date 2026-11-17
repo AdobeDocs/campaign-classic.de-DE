@@ -39,16 +39,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 95%
+source-wordcount: '794'
+ht-degree: 64%
 ---
 # Erste Schritte mit Adobe Campaign-Integrationen {#about-campaign-integrations}
 
-Adobe Experience Cloud ist ein umfassender Satz marktführender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Lösungen und Apps aufbauen.
+[!DNL Adobe CX Enterprise] ist ein umfassendes Set erstklassiger, integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit einem gemeinsamen Satz leistungsstarker Lösungen und Apps basieren.
 
-Weitere Informationen zu funktionalen Integrationen, die zwischen Adobe Campaign und Adobe Experience Cloud-Lösungen verfügbar sind, finden Sie auf [dieser Seite &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank}.
+Weitere Informationen zu funktionalen Integrationen zwischen Adobe Campaign- und [!DNL CX Enterprise]-Lösungen finden Sie [dieser Seite](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank}.
 
 Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe Campaign integriert werden können, sowie die zugehörige Dokumentation finden Sie in [diesem Abschnitt](#experience-cloud-integrations).
 
@@ -65,23 +65,23 @@ Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe 
 
 ## Verknüpfen der Lösungen {#working-with-experience-cloud-solutions}
 
-Mehrere Lösungen können mit Adobe Experience Cloud verknüpft werden. Die **Organisation** ist die Kundenentität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Single Sign-on (SSO) in Adobe Experience Cloud steuern kann. Die Organisation verhält sich wie ein Anmeldeunternehmen, das alle Experience Cloud-Produkte und -Lösungen abdeckt. Normalerweise besitzt eine Organisation den Namen ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
+Mehrere Lösungen können mit [!DNL CX Enterprise] verknüpft werden. Die **Organisation** ist die Kundenentität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Single Sign-on (SSO) in [!DNL CX Enterprise] steuern kann. Die Organisation agiert als zentrale Anmeldestelle, die sämtliche [!DNL CX Enterprise] Produkte und Lösungen umfasst. Normalerweise besitzt eine Organisation den Namen ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
-Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations){_blank} erläutert.
+Die Verwaltung von Organisationen und die Verknüpfung von [!DNL CX Enterprise]-Konten werden im [Adobe Experience Cloud-Hilfeportal“ &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Identitäts- und Cookie-Verwaltung {#id-and-cookies}
 
-Wenn Sie Adobe Campaign installieren oder eine bestehende Installation mit Adobe Experience Cloud integrieren, ist der [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/de/docs/id-service/using/home){_blank} aktiviert. Dieser Dienst ersetzt das permanente Cookie, das von Adobe Campaign in erster Linie für seine Tracking-Funktionen verwendet wird.
+Bei der Installation von Adobe Campaign oder der Integration einer bestehenden Installation mit [!DNL CX Enterprise] ist [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/de/docs/id-service/using/home){_blank} aktiviert. Dieser Dienst ersetzt das permanente Cookie, das von Adobe Campaign in erster Linie für seine Tracking-Funktionen verwendet wird.
 
-Der ID-Dienst (Adobe Experience Cloud Identity Service) liefert eine universelle und dauerhafte ID, mit der Ihre Besucher in allen Experience Cloud-Lösungen identifiziert werden können.
+Der Adobe Experience Cloud Identity Service (ID-Dienst) bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Lösungen hinweg in der [!DNL CX Enterprise].
 
 Empfängern, die Trackinglogs generieren, wird eine Unique-Visitor-ID zugewiesen. Diese ID wird im Feld **[!UICONTROL Anforderer-UUID (@sourceID)]** der **[!UICONTROL nms:trackingLogRcp]**-Tabelle gespeichert. **Die Tracking-Daten von Empfängern, die vor der Implementierung des Visitor ID-Diensts existierten, sind daher nicht mehr nutzbar**.
 
-Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die anderen Lösungen der Adobe Experience Cloud-Lösungen diese Kennung. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+Die ID wird dann von den anderen [!DNL CX Enterprise] Lösungen mit demselben CNAME erkannt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
-## Experience Cloud-Integrationen {#experience-cloud-integrations}
+## [!DNL CX Enterprise] Integrationen {#experience-cloud-integrations}
 
-Über die folgende Tabelle kann auf verfügbare Handbücher für die Experience Cloud-Integration zugegriffen werden.
+Die folgende Tabelle bietet Zugriff auf die verfügbare Dokumentation zur [!DNL CX Enterprise].
 
 <table> 
  <thead> 
@@ -97,7 +97,7 @@ Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die andere
   </tr> 
   <tr> 
    <td> <strong>Adobe-Identitäts-Management-System (IMS) – Adobe ID</strong><br /> </td> 
-   <td> Konfigurieren Sie Adobe IMS, um eine Verbindung zu Adobe Campaign mit derselben Adobe ID herzustellen wie für die anderen Adobe Experience Cloud-Lösungen.<br /> Die Anmeldung mit einer Adobe ID ist notwendig, um gewisse Funktionen im Zusammenhang mit den Adobe Experience Cloud-Integrationen nutzen zu können.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Informationen</a> zur Implementierung von Adobe ID mit Adobe Campaign.</p><br /> </td> 
+   <td> Konfigurieren Sie Adobe IMS so, dass die Verbindung zu Adobe Campaign mit derselben Adobe ID hergestellt wird wie für die anderen CX Enterprise-Lösungen.<br /> Um bestimmte mit den CX Enterprise-Integrationen verknüpfte Funktionen nutzen zu können, muss zur Anmeldung eine Adobe ID verwendet werden.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Informationen</a> zur Implementierung von Adobe ID mit Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
@@ -109,11 +109,11 @@ Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die andere
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 
-   <td> Konfigurieren Sie diese Integration, um Zielgruppen zwischen den von Ihnen verwendeten Adobe Experience Cloud-Lösungen und -Anwendungen freizugeben.<br /> <p>Erhalten Sie <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">weitere Informationen</a> zur Integration von Adobe Campaign mit Adobe Audience Manager.</p><br /> </td> 
+   <td> Konfigurieren Sie diese Integration, um Zielgruppen für die von Ihnen verwendeten CX Enterprise-Lösungen und -Programme freizugeben.<br /> <p>Erhalten Sie <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">weitere Informationen</a> zur Integration von Adobe Campaign mit Adobe Audience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Assets</strong><br /> </td> 
-   <td> Konfigurieren Sie diese Integration, um Assets aus Ihrer Adobe Experience Cloud-Bibliothek in E-Mails und Landingpages einzufügen, die in Adobe Campaign erstellt wurden.<br /> <p>Erhalten Sie <a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">weitere Informationen</a> zu Adobe Campaign – Asset-Integration</p><br /> </td> 
+   <td> Konfigurieren Sie diese Integration, um Assets aus Ihrer CX Enterprise-Bibliothek in mit Adobe Campaign erstellte E-Mails und Landingpages einzufügen.<br /> <p>Erhalten Sie <a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">weitere Informationen</a> zu Adobe Campaign – Asset-Integration</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 

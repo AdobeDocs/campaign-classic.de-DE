@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '212'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 91%
 ---
 # Arbeiten mit Adobe Campaign und Adobe Analytics {#adobe-analytics-connector-gs}
 
@@ -48,14 +48,14 @@ Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und
 
 Bevor Sie damit beginnen, mit dem Adobe Analytics-Connector von Adobe Campaign zu arbeiten, sollten Sie die folgenden Leitlinien und Voraussetzungen beachten.
 
-* Für diese Integration ist eine Verbindung zu Campaign mit dem Adobe Identity Management System (IMS) erforderlich. [Weitere Informationen](../../integrations/using/about-adobe-id.md).
+* Für diese Integration ist eine Verbindung zu Campaign mit dem Adobe-Identitäts-Management-System (IMS) erforderlich. [Weitere Informationen](../../integrations/using/about-adobe-id.md).
 
 * Der Adobe Analytics-Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
 
 * Das Add-on „Web Analytics-Connector“ muss über das dedizierte Paket in Ihrer Umgebung installiert werden.
 
   * Bei Hybrid- und On-Premise-Implementierungen müssen Sie die auf [dieser Seite](adobe-analytics-provisioning.md) beschriebenen Bereitstellungsschritte ausführen.
-  * Als Hoster oder Managed Cloud Services-Benutzende kontaktieren Sie Adobe, wenn Sie Campaign mit Adobe Experience Cloud-Services und -Lösungen verbinden möchten.
+  * Als Hoster oder Managed Cloud Services-Anwender können Sie Adobe kontaktieren , wenn Sie Campaign mit [!DNL Adobe CX Enterprise]-Services und -Lösungen verbinden möchten.
 
 
 ## Konfiguration und Verwendung {#adobe-analytics-connector-usage}

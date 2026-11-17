@@ -30,27 +30,27 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '247'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 75%
 ---
-# Freigabe von Zielgruppen mit Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
+# Audiences für [!DNL Adobe CX Enterprise] freigeben {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
->Um Zielgruppen für Adobe Experience Cloud-Lösungen freizugeben, müssen Sie Adobe Identity Management System implementieren. [Weitere Informationen zu IMS](../../integrations/using/about-adobe-id.md).
+>Um Zielgruppen für [!DNL CX Enterprise] Lösungen freizugeben, müssen Sie das Adobe Identity Management-System implementieren. [Weitere Informationen zu IMS](../../integrations/using/about-adobe-id.md).
 
-Mit Adobe Campaign können Sie Zielgruppen und Segmente für Adobe Experience Cloud-Dienste freigeben. Dazu sind zwei Optionen verfügbar:
+Mit Adobe Campaign können Sie Audiences und Segmente für [!DNL CX Enterprise]-Services freigeben. Dazu sind zwei Optionen verfügbar:
 
 1. Senden Sie Adobe Experience Platform-Segmentdaten an Adobe Campaign. Zur Implementierung dieser Integration müssen Sie Ihre Echtzeit-Kundendatenplattform mit Campaign (RTCDP) verbinden. [Weitere Informationen finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
 
 1. Integrieren Sie **Adobe Campaign** mit **Experience Cloud Audiences** oder **Adobe Audience Manager**. Anschließend können Sie:
 
-   * Importen Sie Zielgruppen/Segmente aus den verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
+   * Importieren Sie freigegebene Audiences/Segmente aus verschiedenen [!DNL CX Enterprise]-Lösungen in Adobe Campaign. Zielgruppen können über Listen in Adobe Campaign importiert werden.
 
-   * Exportieren Sie Listen in Form von freigegebenen Adobe Experience Cloud-Zielgruppen. Diese Zielgruppen können dann in den anderen von Ihnen verwendeten Adobe Experience Cloud-Lösungen genutzt werden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
+   * Exportieren Sie Listen in Form [!DNL CX Enterprise] freigegebenen Audiences. Diese Zielgruppen können in den verschiedenen [!DNL CX Enterprise]-Lösungen verwendet werden, die Sie verwenden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
 
 Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-IDs:
 
