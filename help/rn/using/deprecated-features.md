@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1813'
+ht-degree: 97%
 ---
 # Eingestellte und entfernte Funktionen {#deprecated-and-removed-features}
 
@@ -86,7 +86,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
 </tr>
 <tr>
  <td>Campaign-SDK-Vorgängerversion (Neolane)</td>
- <td><p>Das Campaign-SDK (Neolane) für mobile Anwendungen wird jetzt nicht mehr unterstützt. Verwenden Sie stattdessen das Adobe Experience Platform Mobile SDK, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. In der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings">Dokumentation zu Campaign v8</a> erfahren Sie, wie Sie den Mobile App-Kanal konfigurieren.</p>
+ <td><p>Das Campaign-SDK (Neolane) für mobile Anwendungen wird jetzt nicht mehr unterstützt. Verwenden Sie stattdessen das Adobe Experience Platform Mobile SDK, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Adobe Experience Platform Mobile SDK unterstützt Adobe CX Enterprise-Lösungen und -Services in Ihren Mobile Apps. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. In der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings">Dokumentation zu Campaign v8</a> erfahren Sie, wie Sie den Mobile App-Kanal konfigurieren.</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr>
   <tr>
   <td>Demdex-Domain<br></td>
-  <td><p> Ab Campaign Version 21.1.3 wird die Demdex-Domain, die zum Importieren und Exportieren von Zielgruppen nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Weitere Informationen</a></p> 
+  <td><p> Ab Campaign Version 21.1.3 ist die Demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe CX Enterprise verwendet wird, nicht mehr verfügbar. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Weitere Informationen</a></p> 
   </td>
   </tr>
    <tr> 

@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: ht
-source-wordcount: '1204'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 98%
 ---
 # Versionsaktualisierungen {#rn-overview}
 
@@ -198,4 +198,4 @@ Zur Unterstützung wurde ein Team aus engagierten Mitarbeitenden der Kundenunter
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 * [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
 
-Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
+Abonnieren Sie das [Adobe Priority Product Update](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen von [!DNL Adobe CX Enterprise]-Lösungen informiert zu werden.

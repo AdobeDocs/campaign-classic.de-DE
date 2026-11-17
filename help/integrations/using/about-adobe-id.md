@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 95%
 ---
 # Über die Adobe ID {#about-adobe-id}
 
@@ -45,7 +45,7 @@ Adobe-Identitäts-Management-System (IMS) hilft Administratoren beim Erstellen u
 
 Benutzerinnen und Benutzer von Campaign können mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole herstellen, statt über die [native Benutzer-/Passwort-Authentifizierung](../../platform/using/access-management-operators.md). Diese Implementierung bietet folgende Vorteile:
 
-* Verwendung ein und derselben ID für alle Adobe Experience Cloud-Lösungen.
+* Dieselbe ID kann für alle [!DNL Adobe CX Enterprise] Lösungen verwendet werden.
 * Speicherung der Verbindung bei der Verwendung von Adobe Campaign mit den verschiedenen Integrationen.
 * Sicherere Sicherheitsrichtlinien für die Passwortverwaltung anstelle der Anmeldung mit nativem Login/Passwort.
 * Verwendung von Konten des Typs Federated ID (externer ID-Provider).

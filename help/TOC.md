@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1350'
 ht-degree: 97%
 ---
 
@@ -388,7 +388,7 @@ ht-degree: 97%
     + [Zugriff auf den Bericht konfigurieren](reporting/using/configuring-access-to-the-report.md)
     + [Mit Berichten arbeiten](reporting/using/actions-on-reports.md)
   + [Berichte mit Cubes erstellen](reporting/using/ac-cubes.md)
-+ Integrieren mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ Integration mit [!DNL Adobe CX Enterprise] {#integrating-with-adobe-experience-cloud}
   + [Erste Schritte mit Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
   + [Erstellen eines technischen Adobe-Kontos](integrations/using/oauth-technical-account.md)
   + Adobe Experience Cloud-Trigger {#experience-triggers}
@@ -405,13 +405,13 @@ ht-degree: 97%
     + [Erste Schritte mit dem Adobe Analytics Connector](integrations/using/gs-aa.md)
     + [Bereitstellung des Adobe Analytics Connectors](integrations/using/adobe-analytics-provisioning.md)
   + Zielgruppenfreigabe {#audience-sharing}
-    + [Zielgruppen freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [Zielgruppen freigeben für [!DNL Adobe CX Enterprise]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [Anfrage an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
     + [Integration mit freigegebenen Zielgruppen konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
     + {hide-from-toc}[Fehlerbehebung](integrations/using/integrations-troubleshooting.md)
     + [Importieren und Exportieren von Zielgruppen](integrations/using/importing-and-exporting-audiences.md)
   + Asset-Freigabe {#asset-sharing}
-    + [Freigeben von Assets für [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [Freigeben von Assets für [!DNL Adobe CX Enterprise]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
     + [Konfiguration des Zugriffs auf  [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
     + [Ein gemeinsam genutztes Asset einfügen](integrations/using/inserting-a-shared-asset.md)
   + Adobe Experience Manager {#adobe-experience-manager}

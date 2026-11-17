@@ -30,10 +30,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
-workflow-type: ht
-source-wordcount: '648'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '642'
+ht-degree: 93%
 ---
 # Import und Export von Zielgruppen{#importing-and-exporting-audiences}
 
@@ -48,7 +48,7 @@ Der Import von Zielgruppen/Segmenten aus Audience Manager in Adobe Campaign erfo
 
    ![](assets/aam_import_audience.png)
 
-1. Klicken Sie dann im sich öffnenden Fenster auf **[!UICONTROL Freigegebene Zielgruppe auswählen]**, um auf die Liste der von anderen Adobe Experience Cloud-Lösungen freigegebenen Audiences/Segmente zugreifen zu können.
+1. Klicken Sie dann im sich öffnenden Fenster **[!UICONTROL Freigegebene Zielgruppe auswählen]**, um auf die Liste der von anderen [!DNL Adobe CX Enterprise]-Lösungen freigegebenen Zielgruppen/Segmente zugreifen zu können.
 1. Wählen Sie eine Zielgruppe aus und bestätigen Sie. Die Informationen zur Zielgruppe werden automatisch ausgefüllt.
 
    Um freigegebene Zielgruppen importieren zu können, sollte Ihnen das Produkt **[!UICONTROL Audience Library]** in der Admin Console zugewiesen worden sein. Außerdem sollten Sie in Audience Manager Administratorrechte besitzen. Weiterführende Informationen dazu finden Sie im [Handbuch zur Admin Console](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
@@ -99,7 +99,7 @@ Der Export von Zielgruppen aus Adobe Campaign in Audience Manager erfolgt mithil
 
 Die Zielgruppe wird dann exportiert. Die Aktivität „Zielgruppe speichern“ hat zwei ausgehende Transitionen. Die Haupttransition enthält die Empfängerinnen und Empfänger, die erfolgreich exportiert wurden. Die zusätzliche Transition enthält die Empfangenden, die keiner Besucher-ID oder deklarierten ID zugeordnet werden konnten.
 
-Die Synchronisation zwischen Lösungen dauert 24 bis 36 Stunden. Danach ist Ihre neue Zielgruppe auffindbar und kann in anderen Adobe Experience Cloud-Lösungen verwendet werden. Weiterführende Informationen zur Verwendung einer in Adobe Campaign freigegebenen Zielgruppe finden Sie in dieser [Dokumentation](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/create){target="_blank"}.
+Die Synchronisation zwischen Lösungen dauert 24 bis 36 Stunden. Nach diesem Zeitraum können Sie Ihre neue Zielgruppe finden und in anderen [!DNL CX Enterprise]-Lösungen wiederverwenden. Weiterführende Informationen zur Verwendung einer in Adobe Campaign freigegebenen Zielgruppe finden Sie in dieser [Dokumentation](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >
