@@ -163,7 +163,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Online-Umfragen (Survey Manager)<br /> </td> 
-   <td> Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren, Abmelden oder Teilnehmen an einem Gewinnspiel. Optional. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
+   <td> Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren, Abmelden oder Teilnehmen an einem Gewinnspiel. Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,12 +173,12 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Reaktionsverwaltung<br /> </td> 
-   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
+   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Weitere Informationen</a> (Dokumentation zu Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Im Kontext einer Mid-Sourcing-Konfiguration ist Folgendes erforderlich:
 
 * Installieren Sie das [!DNL LINE]-Paket sowohl auf der Marketing- als auch auf der MID-Instanz
 
-* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Mehr erfahren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
+* Richten Sie das externe [!DNL LINE]-Konto auf der MKT-Instanz so ein, dass es auf die MID-Instanz verweist, indem Sie den Versandmodus ändern. [Mehr erfahren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Dokumentation zu Campaign v8)
 
 * Richten Sie die [!DNL LINE] Anmeldeinformationen im externen Konto auf der MID-Instanz ein.
 
