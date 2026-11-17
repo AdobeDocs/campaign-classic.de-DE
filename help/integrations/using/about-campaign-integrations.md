@@ -54,7 +54,7 @@ Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe 
 
 >[!NOTE]
 >
->Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Verbinden von Campaign mit Ihren Lösungen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target=_blank}.
+>Im Zuge der Umstellung von Campaign v7 auf v8 wurde die Campaign Classic-Dokumentation optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar. Weitere Informationen zum Verbinden von Campaign mit Ihren Lösungen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target=_blank}.
 >
 >[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/integration){target="_blank"}
 
@@ -67,7 +67,7 @@ Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe 
 
 Mehrere Lösungen können mit [!DNL CX Enterprise] verknüpft werden. Die **Organisation** ist die Kundenentität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Single Sign-on (SSO) in [!DNL CX Enterprise] steuern kann. Die Organisation agiert als zentrale Anmeldestelle, die sämtliche [!DNL CX Enterprise] Produkte und Lösungen umfasst. Normalerweise besitzt eine Organisation den Namen ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
-Die Verwaltung von Organisationen und die Verknüpfung von [!DNL CX Enterprise]-Konten werden im [Adobe Experience Cloud-Hilfeportal“ ](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations){_blank}.
+Die Verwaltung von Organisationen und die Verknüpfung von [!DNL CX Enterprise]-Konten werden im [Adobe Experience Cloud-Hilfeportal“ &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Identitäts- und Cookie-Verwaltung {#id-and-cookies}
 
