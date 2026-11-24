@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+source-git-commit: e737155048b50f18207ab7d2f3dfd4a4b0d48557
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 98%
@@ -81,7 +81,7 @@ Deshalb ist es essenziell, dass Sie **den aktuellen stabilen Build** von Adobe C
 
 Wenn Sie als Kundin oder Kunde gehostet werden, profitieren Sie automatisch, ohne eigene Aktionen, von Aktualisierungen mit dem neuesten stabilen Build. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zunächst eine Aktualisierung auf diesen Build durchzuführen.
 
-## Hotfixes {#hotflixes}
+## Hotfixes {#hotfixes}
 
 In Ausnahmefällen kann Adobe zum Beheben eines Problems einen kundenspezifischen Hotfix bereitstellen, bevor eine Fehlerbehebung in einer Standardversion verfügbar ist. Hotfix-Anfragen werden von Fall zu Fall geprüft und sind nicht Teil des standardmäßigen Veröffentlichungszyklus.
 
